@@ -2,7 +2,7 @@
 
 ## Read in this order
 1. `README.md`: current scientific and transfer status.
-2. `analysis/review.md`: critical comparison, numbers, contradictions and limitations.
+2. `analysis/full-archive-review.md` for the full pack update, then `analysis/review.md`: critical comparison, numbers, contradictions and limitations.
 3. `inventory.json`: every received file's path, bytes and SHA-256. It is the complete file map for this publication, not a declaration that the original archives are complete.
 4. `evidence/tess/README.md` and `evidence/codex/README.md`: original run context (TESS wording cleaned as documented in `analysis/publication-notes.md`).
 5. Exact numeric artifacts below before answering a question about a candidate.
@@ -18,7 +18,7 @@
 - A test listed in the vetting plan is not evidence of completion.
 - Codex's old “nothing published” sentences are historical. This repository is the public release.
 - Codex's current README supersedes the stale TIC 358559650 rejection in `final_survivor_dispositions.csv`; rerun outputs are awaited.
-- Do not invent missing file contents. The Codex full pack and separate data archives are not yet present.
+- Do not invent missing file contents. The full Codex packs are received; bulk files are mapped to release assets, not absent.
 
 ## Exact file map
 | Question | File(s) |
@@ -42,18 +42,19 @@
 | Public modifications | `analysis/publication-notes.md` |
 | License/attribution | `SOURCES.md`, `third_party/` |
 
-## Missing files from the full Codex pack
-The supplied README refers to these, but they are not present. Paths are relative to the original `planet-search/` directory, not promises of files in this repository:
-- `requirements-core.txt`, `requirements-lock.txt`, `run_search.py`, `summarize.py`.
-- `database_expansion/kbonus/pilot_summary.csv`, `results/2103792461826460288.json`.
-- `database_expansion/kbonus_independent_audit/` (physical fits and corrected SAP errors).
-- `database_expansion/kbonus/pixels/localization.json`, all PRF/pixel input manifests and figures.
-- `database_expansion/TIMING_REANALYSIS.md`, timing-safe rerun outputs.
-- `database_expansion/kepler_known_signals.csv`, EB tables and association-paper data referenced by the novelty audit.
-- `improvements/`, `manifests/`, `results_v1/`, `results_pre_final/`.
-- Separate `planet-search-tess-data.zip` and `planet-search-kepler-data.zip` mentioned in README.
+## Full-archive file map
+All three original archives merge into a `planet-search/` folder. Their per-file hash manifests are mirrored at `evidence/codex/planet-search-{results,kepler-data,tess-data}-manifest.json`. `analysis/bulk-files.json` lists paths kept in the release archives instead of git.
+
+- `evidence/codex/database_expansion/kbonus_independent_audit/2103792461826460288.json`: corrected aperture test, discovery fits, seasonal depths.
+- `evidence/codex/database_expansion/kbonus_independent_audit/catalog_density_shape.json`: circular model-conditional radius/duration values.
+- `evidence/codex/database_expansion/kbonus_independent_audit/pixel_localization_audit.json`: official-PRF stress tests.
+- `evidence/codex/database_expansion/kbonus/pixels/localization.json`: original quarter localization.
+- `evidence/codex/database_expansion/timing_safe_all44/disposition_summary.json`: actual corrected TESS rerun dispositions.
+- `evidence/codex/database_expansion/TIMING_REANALYSIS.md`: detailed timeline of timing warnings and superseded results.
+- `analysis/kepler-sap-recheck.json`: independently executed supplied local vetter, using original FITS and matching SAP errors. Previously known ephemeris, not a blind test.
+- Requirements, original search scripts, synthetic tests, results and all modest reports are under `evidence/codex/` and searchable through `inventory.json`.
 
 ## Reproduction limits
-TESS scripts import an upstream `env`, `vet` and `lcsearch` from historical `/tmp` paths; the original complete pipeline, input target ranking and dependency lock are not in this pack. Codex bootstrap references missing requirements and scripts. Neither original run is one-command reproducible from this partial release. Preserve artifacts and provenance before any rerun, and write new results to a separate dated directory.
+TESS scripts import an upstream `env`, `vet` and `lcsearch` from historical `/tmp` paths; the original complete pipeline, input target ranking and dependency lock are not in this pack. Codex code/requirements are present; its raw data and some bulk catalogs must be merged from all three release archives. Full end-to-end reproduction has not been performed here. The TESS extension remains incomplete as a standalone historical pipeline. Preserve artifacts and provenance before any rerun, and write new results to a separate dated directory.
 
 Large FITS/data archives should become checksummed release assets or source-download manifests, not large git blobs. Check GitHub's current limits before upload. Never publish secrets, personal context or unrelated source history when filling gaps.

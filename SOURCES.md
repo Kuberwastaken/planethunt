@@ -2,7 +2,7 @@
 
 ## Received artifacts
 - TESS evidence tarball, SHA-256 `d43383ffc2d1b896cf0e1a8e41ba32e1821b9d1c77bf76b39bf320dc3825d443`, 10 October 2026. Original checksums retained; public wording edits documented.
-- Codex summary PDF and readable partial code/catalog pack, supplied by Kuber on 10 October 2026. These describe a larger pack not yet fully received. Original reports are not independently reproduced results.
+- Codex summary PDF and readable partial code/catalog pack, supplied by Kuber on 10 October 2026. The full results and separate Kepler/TESS data archives were later received through the supplied ChatGPT share on the same date. The corrected aperture local measurements were reproduced at the saved ephemeris; other reports are inspected saved outputs, not a claim of end-to-end independent reproduction.
 
 ## Primary public references checked on 10 October 2026
 - Kepler Bonus background products, authors and CC BY 4.0 attribution: https://archive.stsci.edu/hlsp/kbonus-bkg

@@ -1,3 +1,5 @@
+> Historical initial-transfer review. The missing-file status below is superseded by [the full archive audit](full-archive-review.md). Candidate caveats remain.
+
 # Scientific review - 10 October 2026
 
 ## Bottom line

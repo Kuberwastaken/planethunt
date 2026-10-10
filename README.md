@@ -10,14 +10,14 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 
 ## Current state: 10 October 2026
 
-TIC 309780779 has a repeated TESS dip and target-consistent difference imaging, but no formal false-positive probability or demonstrated held-out test in the supplied evidence. KIC 5689121 / TIC 120686465 has a Kepler candidate reported with a reserved-quarter test and official-PRF localization, but those measurement files are still awaiting the full Codex archive. The supplied summary and catalog audit can be read now; their scientific claims are not presented as independently reproduced.
+TIC 309780779 has a repeated TESS dip and target-consistent difference imaging, but no formal false-positive probability or demonstrated held-out test in the supplied evidence. KIC 5689121 / TIC 120686465 has a Kepler candidate reported with a reserved-quarter test and official-PRF localization, and the measurement files are now received. A fixed-ephemeris recheck reproduces the corrected aperture depth and held-out local SNR, but is not fresh blind validation.
 
 TIC 305054512's corrected pixel analysis is off-target and is not carried as an on-target planet candidate.
 
-This first version is an honest partial evidence release, not the full Codex pack. Missing files are listed explicitly; links to absent files are not created. Upstream historical declarations about “no publication” describe the state before this repository, not the current state.
+The full Codex results, Kepler data and TESS data archives have now been received and integrity-checked. Scientific scripts, measurements, reports and modest tables are mirrored in `evidence/codex/`; bulky source data remain in checksummed release archives. Read [`analysis/full-archive-review.md`](analysis/full-archive-review.md) for the new audit and exact corrected SAP recheck. Historical declarations about "no publication" describe the state before this repository.
 
 ## Reproducibility
 
-Historical TESS scripts retain their original scratch paths and are not a one-command rerun. Read the limitations in `planethunt.md`. Codex's bootstrap needs requirements and pipeline files not yet received. Do not silently overwrite original results or claim successful reproduction.
+Historical TESS scripts retain their original scratch paths and are not a one-command rerun. Read the limitations in `planethunt.md`. Codex's requirements and scripts are now included. Merge all three release archives and follow their reproduction instructions; a full end-to-end rerun has not been performed here. Do not silently overwrite original results or claim successful reproduction.
 
 Third-party code licenses are retained under `third_party/`; original data/product attribution is in `SOURCES.md`. No blanket license is applied to third-party artifacts.
