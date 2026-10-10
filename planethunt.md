@@ -81,3 +81,6 @@ The digest has dedicated methods/controls and all-file explorer sections, beyond
 - `evidence/tess/hits/`, `scripts/`, `logs/`, `controls/`, `manifest.json`: complete supplied extension work, including incomplete controls and uncertain remote coverage.
 
 The website's file explorer reads `inventory.json` and `analysis/bulk-files.json`, rather than maintaining a second hand-curated file list. Each entry has a SHA-256. Git entries link to files; bulk entries give exact archive-relative paths. This prevents a missing visual card from hiding an available artifact.
+
+## Extension 2026-10-11
+`analysis/kbonus-extension-20261011/README.md`: Codex's Kepler Bonus pipeline run on ranks 65-576 of the same frozen selection (497 searched) with a matched inverted control. Real and null first-screen passes are equal (10 vs 10); no second candidate; KIC 9851000 is a neighbor's known false-positive eclipse. Data in `signals_real_and_inverted.csv` and `stars_searched.csv` in that folder.

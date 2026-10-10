@@ -28,3 +28,6 @@ Third-party code licenses are retained under `third_party/`; original data/produ
 - [planet-search-tess-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip)
 
 Download all three and merge their `planet-search/` folders. All are audited, source-preserving release assets. Exact hashes are in `analysis/full-archive-review.md`.
+
+## Extension 2026-10-11
+Codex's Kepler Bonus search was extended to 497 more stars with a matched inverted control: no second candidate, and the real run passed the first screen no more often than the null (10 signals each). See `analysis/kbonus-extension-20261011/README.md`.

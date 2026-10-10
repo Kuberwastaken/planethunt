@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2828,
-      "sha256": "c0125ac5c8755ac0578fef645abd7ba31a9db0ba9b4421d79ee06927a1cee683"
+      "bytes": 3106,
+      "sha256": "acc0a629931919606d4052a20de4204eab688bda6f0f7d0694047e3b9b515e4e"
     },
     {
       "path": "SOURCES.md",
@@ -41,6 +41,31 @@
       "path": "analysis/full-archive-review.md",
       "bytes": 5501,
       "sha256": "e99d036b517547c28aaf58a86b615bff336896b56a00e63fad2a228ce924e606"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/README.md",
+      "bytes": 2816,
+      "sha256": "5f22cc35dbf71e902607bdeda6c14a651664dba43ae342c983a765066dc4ae28"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/batch2.py",
+      "bytes": 2174,
+      "sha256": "58fb84c23840b086c33fd322ae8871dd392698ceae80f3df3fedbde9c3384864"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/inv.py",
+      "bytes": 1002,
+      "sha256": "c87c3e973ece505dc2df06c4bfbb8764b709d5d364daa31a1b70ed18b8a084e9"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/signals_real_and_inverted.csv",
+      "bytes": 120686,
+      "sha256": "96a78b7b7b2c6c286f7e9e8a1efa616c3e538864d89d14d000874113bf490558"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/stars_searched.csv",
+      "bytes": 42728,
+      "sha256": "565b58e830d034020d5d5908f1f08581311bbbfb0d51dc8f9d06da788f6bb71c"
     },
     {
       "path": "analysis/kepler-sap-recheck.json",
@@ -3278,6 +3303,11 @@
       "sha256": "693107e3a20574fad0cb6fbcedccca56a510679b2a238b3ecc2c9ff372a3ba8a"
     },
     {
+      "path": "evidence/codex/database_expansion/timing_safe_all44.log",
+      "bytes": 37784,
+      "sha256": "9923d2a9d499f9dc768761080682f40e2f35a55215237f5243302bf1f83eab6f"
+    },
+    {
       "path": "evidence/codex/database_expansion/timing_safe_all44/disposition_summary.json",
       "bytes": 1405,
       "sha256": "eab6c4f7b67ea771f95e176cc799044860c76d8a4260d9aec656ca1fd87046f3"
@@ -4183,14 +4213,14 @@
       "sha256": "4a04a6ae6d67daed93725ef103de973f161810dab753aa2a4048bfb554315b55"
     },
     {
-      "path": "evidence/codex/database_expansion/timing_safe_all44.log",
-      "bytes": 37784,
-      "sha256": "9923d2a9d499f9dc768761080682f40e2f35a55215237f5243302bf1f83eab6f"
-    },
-    {
       "path": "evidence/codex/database_expansion/timing_safe_batch.py",
       "bytes": 3011,
       "sha256": "1f6e37df4c2548969179f8eaf084b6db676bce98c6da4ecca3f207a36b861856"
+    },
+    {
+      "path": "evidence/codex/database_expansion/timing_safe_repeat.py",
+      "bytes": 4038,
+      "sha256": "5c4871b22de996fc77e5f96ad70decd7b11d21e52a93bc89590be2cf333c8137"
     },
     {
       "path": "evidence/codex/database_expansion/timing_safe_repeat/358559650_timing_safe_shape.png",
@@ -4246,11 +4276,6 @@
       "path": "evidence/codex/database_expansion/timing_safe_repeat/vetting/358559650_usp_rank1.json",
       "bytes": 1512,
       "sha256": "15dce32216be485806d3f525354aad45fe4e8114ac205408bb21b2cdc30b3676"
-    },
-    {
-      "path": "evidence/codex/database_expansion/timing_safe_repeat.py",
-      "bytes": 4038,
-      "sha256": "5c4871b22de996fc77e5f96ad70decd7b11d21e52a93bc89590be2cf333c8137"
     },
     {
       "path": "evidence/codex/download_log.jsonl",
@@ -9969,13 +9994,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 26987,
-      "sha256": "39f4427892320f7663d03cf5e24d11989d5fade2d9906d47287a4457a73438cc"
+      "bytes": 27767,
+      "sha256": "caef6d1c66a12e98113209b07bdae23fe04b5a5e9a809b43379e5cb50dbead4e"
     },
     {
       "path": "planethunt.md",
-      "bytes": 8443,
-      "sha256": "c5e25a7515d4e542ce86f2926e4926da4086d902744c75c1ba26c9cfb74464d8"
+      "bytes": 8859,
+      "sha256": "c172e3c4849e74ecf893e01eec8bb585a1f37f4529efcdfbcfaa2e6f77046c87"
     },
     {
       "path": "scripts/build_visuals.py",
@@ -9992,5 +10017,6 @@
       "bytes": 1301,
       "sha256": "f35472e087ff76e4eb93c717d28a8fcfef0d1b2bdffa1fe1ccffa6d87cb1c3e9"
     }
-  ]
+  ],
+  "updated": "2026-10-11 extension added"
 }
