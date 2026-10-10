@@ -17,7 +17,7 @@
 - TESS `depth_half_ppm` does not denote a phase-0.5 secondary eclipse.
 - A test listed in the vetting plan is not evidence of completion.
 - Codex's old “nothing published” sentences are historical. This repository is the public release.
-- Codex's current README supersedes the stale TIC 358559650 rejection in `final_survivor_dispositions.csv`; rerun outputs are awaited.
+- Codex's current README supersedes the stale TIC 358559650 rejection in `final_survivor_dispositions.csv`; rerun outputs are now received under timing_safe_all44.
 - Do not invent missing file contents. The full Codex packs are received; bulk files are mapped to release assets, not absent.
 
 ## Exact file map
