@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "scope": "git-publication files; all full source archives received, bulk files mapped in analysis/bulk-files.json",
+  "scope": "git-publication files; full source archives available as release assets",
   "files": [
     {
       "path": ".gitignore",
@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2207,
-      "sha256": "b48786bf43f733131eee86809cf2517f45c28b46e432fadf40bb42e540574842"
+      "bytes": 2828,
+      "sha256": "c0125ac5c8755ac0578fef645abd7ba31a9db0ba9b4421d79ee06927a1cee683"
     },
     {
       "path": "SOURCES.md",
@@ -51,6 +51,11 @@
       "path": "analysis/publication-notes.md",
       "bytes": 1204,
       "sha256": "ddf7d96e9c3ef369f31e2cc9a31d29313a360ebdca0a291837ab50199ca4bf1b"
+    },
+    {
+      "path": "analysis/release-assets.json",
+      "bytes": 1162,
+      "sha256": "e7263ae315eed840dcefaf638a50ccbe6063401e1fe24a03cd6c6b97ed4a89e0"
     },
     {
       "path": "analysis/review.md",
@@ -9964,13 +9969,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 18474,
-      "sha256": "2288d95c21946077edfe6f887ae833d84d7035a1ccdbb10b97ed8c09cdb21423"
+      "bytes": 19065,
+      "sha256": "fd87e44fac4b6b09c749172e82db0c6f64122a4de441ee7b59fc57a3a70324f2"
     },
     {
       "path": "planethunt.md",
-      "bytes": 6099,
-      "sha256": "f290bffd6bdf0a953b887634cdd54e0a7ea560fffc8aff647ab2b5a6ea6d5172"
+      "bytes": 6681,
+      "sha256": "8c3ed2274f045033802e7e8276d9c2058e052f9e3a9331fbbff36e799a141fe1"
     },
     {
       "path": "scripts/build_visuals.py",

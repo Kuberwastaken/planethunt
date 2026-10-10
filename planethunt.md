@@ -58,3 +58,10 @@ All three original archives merge into a `planet-search/` folder. Their per-file
 TESS scripts import an upstream `env`, `vet` and `lcsearch` from historical `/tmp` paths; the original complete pipeline, input target ranking and dependency lock are not in this pack. Codex code/requirements are present; its raw data and some bulk catalogs must be merged from all three release archives. Full end-to-end reproduction has not been performed here. The TESS extension remains incomplete as a standalone historical pipeline. Preserve artifacts and provenance before any rerun, and write new results to a separate dated directory.
 
 Large FITS/data archives should become checksummed release assets or source-download manifests, not large git blobs. Check GitHub's current limits before upload. Never publish secrets, personal context or unrelated source history when filling gaps.
+
+## Source archive downloads
+- [planet-search-kepler-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-kepler-data.zip)
+- [planet-search-results.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-results.zip)
+- [planet-search-tess-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip)
+
+Merge all three at the same extraction root. Raw paths in `analysis/bulk-files.json` and the per-archive manifests then resolve.

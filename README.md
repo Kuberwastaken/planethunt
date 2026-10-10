@@ -21,3 +21,10 @@ The full Codex results, Kepler data and TESS data archives have now been receive
 Historical TESS scripts retain their original scratch paths and are not a one-command rerun. Read the limitations in `planethunt.md`. Codex's requirements and scripts are now included. Merge all three release archives and follow their reproduction instructions; a full end-to-end rerun has not been performed here. Do not silently overwrite original results or claim successful reproduction.
 
 Third-party code licenses are retained under `third_party/`; original data/product attribution is in `SOURCES.md`. No blanket license is applied to third-party artifacts.
+
+## Complete source downloads
+- [planet-search-kepler-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-kepler-data.zip)
+- [planet-search-results.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-results.zip)
+- [planet-search-tess-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip)
+
+Download all three and merge their `planet-search/` folders. All are audited, source-preserving release assets. Exact hashes are in `analysis/full-archive-review.md`.

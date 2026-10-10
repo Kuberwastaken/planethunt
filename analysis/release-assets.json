@@ -1,0 +1,25 @@
+{
+  "release_url": "https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261010",
+  "tag": "evidence-20261010",
+  "note": "Tag captures initial digest commit; assets carry full original evidence. Later main commits contain expanded digest and file map.",
+  "assets": [
+    {
+      "name": "planet-search-kepler-data.zip",
+      "bytes": 163854848,
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-kepler-data.zip",
+      "sha256": "4fd59efb1f252116b37d9f6a076c84e67a93249d00c7cb152e373d36c58640dd"
+    },
+    {
+      "name": "planet-search-results.zip",
+      "bytes": 294813531,
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-results.zip",
+      "sha256": "60e86d7e2fc42f78d6b80b5925d13c38cd07a6117467a23cb7d484e132380f3f"
+    },
+    {
+      "name": "planet-search-tess-data.zip",
+      "bytes": 448391783,
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip",
+      "sha256": "98a5dec45bb2c74fccd7788ace394c698a8d973ee63347a1c0686ad15bbfac85"
+    }
+  ]
+}
