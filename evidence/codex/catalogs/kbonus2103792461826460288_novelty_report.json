@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-10T13:46:01.976917+00:00",
+  "candidate": {
+    "gaia_dr3_id": "2103792461826460288",
+    "kic": 5689121,
+    "tic": 120686465,
+    "aperture_primary_kic": 5689116,
+    "period_days": 13.769413569662944,
+    "epoch_bkjd": 136.312889832702,
+    "ra_gaia2016": 285.90782692874626,
+    "dec_gaia2016": 40.94198844296448,
+    "gaia_ruwe": 0.98412067,
+    "gaia_nss": 0,
+    "radius_tic_rsun": 0.50748,
+    "radius_gaia_gspphot": 0.5553,
+    "radius_gaia_flame": 0.5420065,
+    "mass_gaia_flame": 0.54462016
+  },
+  "catalog_counts": {
+    "kepler_known_signal_rows": 49377,
+    "exact_host_or_primary_prior_signals": 0,
+    "kepler_known_signals_within120arcsec": 0,
+    "tess_known_signals_on_any_tic_within120arcsec": 0,
+    "tess_known_coordinate_matches_within120arcsec": 0,
+    "gaia_neighbors_within30arcsec_includingtarget": 8
+  },
+  "near_period_coincidence": {
+    "name": "Kepler-169 e",
+    "period_days": 13.767102,
+    "separation_arcsec": 263.3253286647765,
+    "phase_time_offset_days": 2.803555832895131,
+    "matches_transit_ephemeris": false
+  },
+  "literature": {
+    "SIMBAD_references": [
+      "2022AJ....164...88B"
+    ],
+    "THYME2022_membership": "Listed as candidate MELANGE-3 member, M1.6, tangent velocity offset0.795km/s; no rotation period, lithium, or RV reported. Young age not established individually.",
+    "THYME2022_planet_search": "Paper searched association light curves; host not among19candidate/falsepositive signals in Table2. Could have been searched under aperture mapping; no reported matching candidate in this paper.",
+    "search_queries": [
+      "2103792461826460288",
+      "KIC5689121",
+      "TIC120686465",
+      "5689121 planet OR eclipsing OR Kepler",
+      "13.769 Kepler planet"
+    ],
+    "public_index_result": "No relevant prior13.769d signal found in exact-ID searches; indexed search incomplete."
+  },
+  "blend_notes": [
+    "Primary KIC5689116 Gaia2103792427466721792 is7.10arcsec away (Gaia2016), G15.4776, RUWE8.7298,NSS0,parallax0.3016mas. Target parallax3.4065mas; not established physical pair.",
+    "Six other Gaia sources within30arcsec can matter for pixel localization even if absent from KBonus extracted-source catalog.",
+    "Gaia-G dilution quantities are illustrative only; Kepler bandpass, pixel aperture and PRF throughput differ.",
+    "Crossmatched rawTIC neighborhoods withTESS catalog snapshots and Kepler field catalog; no-match is not guaranteednovelty.",
+    "No planet confirmation or formal statistical validation follows from this catalog audit."
+  ],
+  "files": {
+    "catalogs/kbonus2103792461826460288_vari_rotation_modulation.csv": "987037f794ee5dbce792b94a74c98b852eb6ea13b160c099f0cdc7375c48a0eb",
+    "catalogs/tickbonus2103792461826460288_tic_cone.csv": "4862e7107aa2ceb7f0d75efade3fa563fbd526d60fafb6a7bac58dcf5e66e84c",
+    "catalogs/kbonus2103792461826460288_vari_rotation_modulation.csv.provenance.json": "f413fa94647f1f7aa1ab996e687823a0d6b45af7f5b1607ad8f090bf85669364",
+    "catalogs/kbonus2103792461826460288_thyme_membership.tsv": "723eebfa3213e02ec2479f9abb602f8362fe1a5d2bc5fa9b06f2a356ab2de03d",
+    "catalogs/kbonus2103792461826460288_vari_eclipsing_binary.csv.provenance.json": "ea4e4c4ed1911cba1ff1bd226bead0e942935ca1d98883c4c2432912b495a7c6",
+    "catalogs/kbonus2103792461826460288_vari_classifier_result.csv": "de09ca9c8292324caf467fcec02158806c5be512f2c07ce28dc8b9345b738f21",
+    "catalogs/kbonus2103792461826460288_simbad_KIC_5689121.txt": "46a5a6a8bd2586a3254538c06721a8bb2919bae770f5368c62b6047d4bc9f632",
+    "catalogs/tickbonus2103792461826460288_gaia_ap.csv.provenance.json": "579eb8e144c105b0f063b699eae8803fc3e54b9c373433bab2fdb33d8cebb52d",
+    "catalogs/tickbonus2103792461826460288_tic_cone.json": "7d1f89bb80cc14bd4b810c0de0eaa40d7eec2393f83c56f19776af9a1994d5a0",
+    "catalogs/tickbonus2103792461826460288_gaia_cone.csv.provenance.json": "93909cce4d299174d4cbe4985bae93cddaa39d653b990b3718da910742948ef3",
+    "catalogs/kbonus2103792461826460288_vari_classifier_result.csv.provenance.json": "75171ab1acfaa44b6bb06048ef804388b503b790039340cefe414636b6c079d6",
+    "catalogs/fetch_kbonus2103792461826460288.py": "72514140a0b83735cb67847790a1df07400ab8eff1e4eed6517b97fb427ae47f",
+    "catalogs/tickbonus2103792461826460288_tic_cone.json.provenance.json": "55e9d921bd872d71d5e792694a1731a3c2b602f1940a3121ce9946d9419ab08d",
+    "catalogs/tickbonus2103792461826460288_gaia_cone.csv": "32bfbb878c2a37cab6f5a6da99b5f41beb5c64c4711f9455bd3b6a9946736251",
+    "catalogs/tickbonus2103792461826460288_gaia_ap.csv": "9863454b67c1a48f070f13d9887b86aec4040682af428371da089e47d0c2a588",
+    "catalogs/kbonus2103792461826460288_simbad_Gaia_DR3_2103792461826460288.txt": "b0caebc4370312c99515f5f1c6c421c5245d7010692885935c06aa2b1990a0e2",
+    "catalogs/audit_kbonus2103792461826460288.py": "740a36fba3dd555bb465f51e2f9e10b411793ea776a9032fe098b51d968ae94b",
+    "catalogs/kbonus2103792461826460288_vari_eclipsing_binary.csv": "5048eb145a93e823a734f84005e7eb28df2d26aba4b18cebcdd5fe527921a427",
+    "database_expansion/kepler_known_signals.csv": "9dd541143a68d469f7578b55e85978d19697e950a6a1c540cc3ee8f473787a12",
+    "database_expansion/kepler_eb.csv": "a3292a12c3d401e38e2cf718718f3bc5e5d6f184f663b2c2b0b2a247c5e677ed",
+    "database_expansion/thyme2022.pdf": "bc391c3d0213a2d613b6c651b78f55880d36df3cf50d02caf55c488557adf6a7"
+  },
+  "gaia_variability": {
+    "host_has_eb_or_rotation_entry": false,
+    "neighbor_eb": [
+      {
+        "source_id": "2103792491886901632",
+        "period_days": 0.4853117976496018,
+        "separation_arcsec": 70.19053566504329,
+        "candidate_to_eb_period_ratio": 28.372303406488683
+      }
+    ],
+    "note": "Gaia neighbor EB period0.48531d has no small-integer/harmonic match to13.7694d signal; not automatically source of transit."
+  }
+}

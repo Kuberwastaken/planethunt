@@ -1,0 +1,11 @@
+targets 175 {'high_sensitivity_usp': 80, 'lower_rank_ffi': 60, 'partial_2min': 35}
+selected products 1232 stars 175
+{"tic": 154101678, "status": "ok", "n_points": 85227, "sectors": 5}
+{"tic": 3664898, "status": "ok", "n_points": 112044, "sectors": 8}
+{"tic": 247463344, "status": "ok", "n_points": 122889, "sectors": 8}
+{"tic": 358615829, "status": "ok", "n_points": 173895, "sectors": 11}
+{"tic": 95431305, "status": "ok", "n_points": 65238, "sectors": 5}
+{"tic": 278962913, "status": "ok", "n_points": 76085, "sectors": 6}
+{"tic": 365670764, "status": "ok", "n_points": 198883, "sectors": 12}
+{"tic": 266744225, "status": "ok", "n_points": 50366, "sectors": 3}
+{"tic": 436856183, "status": "ok", "n_points": 109122, "sectors": 7}

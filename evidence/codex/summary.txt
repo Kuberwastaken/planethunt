@@ -1,0 +1,154 @@
+SEARCH BREAKTHROUGH
+
+
+A credible transit candidate
+KIC 5689121 / TIC 120686465 / Gaia DR3 2103792461826460288
+
+Potentially unreported. The evidence supports a planet candidate, not a confirmed or statistically
+validated planet. Nothing has been submitted, named, or published.
+
+
+  Period                               13.7694 days (search ephemeris; uncertainty not estimated)
+
+
+  Transit duration                     About 2.1-2.4 hours
+
+
+  Conditional size                     About 3 Earth radii, if on-target and undiluted
+
+
+  Repeated events                      70 usable local events; 22 in reserved quarters
+
+
+
+
+The discovery-only shape predicts the timing and shape in four reserved quarters. Both PSF and aperture
+photometry show the dip. These are two extractions of the same observations, not two independent telescopes.
+
+Raw PSF local fit: 2165 +/- 98 ppm overall; 1929 +/- 159 ppm in reserved data. Corrected aperture uncertainties
+give local SNR 13.73 overall and 5.84 held out. These conditional scores are not global discovery probabilities.
+
+
+
+
+10 October 2026 | Public archival research | Unconfirmed candidate                                        1/3
+SOURCE AND NOVELTY CHECKS
+
+
+The signal follows the target star
+Original Kepler pixel data favor the candidate over the brighter star 7.1 arcseconds away in all 13
+observed quarters. Official Kepler PRF templates fit the difference images at the frozen 13.7694-day
+ephemeris.
+
+
+
+
+Green marker: candidate. Orange marker: brighter aperture primary. The difference-image fits remain
+consistent with the candidate when the common positional correction is removed and a spatial background
+gradient is added. The primary star independently has no dip at this ephemeris.
+
+
+
+  Identity                             KIC 5689121 = TIC 120686465 = Gaia ID above
+
+
+  Catalog star                         Radius ~0.54-0.56 solar; Gaia RUWE 0.984; NSS flag 0
+
+
+  Kepler catalogs                      No same-host KOI, TCE, confirmed planet, or EB match
+
+
+  TESS catalogs                        No matching signal in the retrieved TOI/CTOI/RAVEN checks
+
+
+  Literature                           Prior possible MELANGE-3 member; no transit report found
+
+
+  Nearby coincidences                  Kepler-169 e: similar period, but 2.80 days out of phase
+
+
+Novelty is provisional: catalog and indexed-search absence cannot establish that nobody has reported the
+signal. Exact aliases, nearby sources, published background-star candidates, and the association paper were
+checked. Full query results and source URLs are preserved in the research bundle.
+
+What remains unresolved
+An unresolved eclipsing companion or more distant blended source is not ruled out by these tests. PRF
+systematics and correlated noise are not fully calibrated. No formal false-positive probability, high-resolution
+imaging, reconnaissance spectroscopy, or new ground-based transit observation was obtained.
+
+Scientific next step: independent astronomer review, proper-motion-aware multi-source localization, formal
+blend validation, and targeted follow-up. A candidate designation or a planet name has not been assigned.
+
+
+
+
+10 October 2026 | Public archival research | Unconfirmed candidate                                         2/3
+ARCHIVES, METHOD AND REPRODUCIBILITY
+
+
+A more promising search pool
+Kepler Bonus supplied this lead. Its long light curves include hundreds of thousands of background
+sources outside the original Kepler target list. Our catalog cuts left 1,800 background M dwarfs; the
+64 brightest eligible stars were actually searched in this pilot.
+
+
+
+  Kepler Bonus                          Implemented: 64-star pilot, 0.5-25 day periods
+
+
+  TESS SPOC / QLP                       Implemented: 175 stars, two period bands
+
+
+  EVEREST / K2SFF                       Identified: complementary K2 observations; not scanned
+
+
+  TGLC                                  Identified: Gaia-informed TESS extraction; not scanned
+
+
+  CDIPS / PATHOS                        Identified: young/cluster stars; not scanned
+
+
+Archive ranking is a scientific judgment, not a quantified probability of discovery. Cluster stars often have
+stronger variability; alternate TESS extractions reuse the same photons. More data are useful only when
+quality, contamination and prior searches are accounted for.
+
+Validation of the workflow
+Known controls recovered LHS 3844 b and Kepler-138 c/d, explicitly excluded from discovery claims.
+Synthetic tests checked transit recovery and holdout separation. The initial TESS screen yielded nine signals
+and five false-screen passes in 100 inverted runs, so screen scores alone were never treated as planets.
+
+The archive review found QLP timing errors in sectors 99-104 affecting 44 selected stars. All 88 affected
+two-band runs were repeated with those QLP products removed. Original results are retained as superseded
+evidence. Revised holdouts are retrospective; earlier conclusions were corrected.
+
+The Kepler pilot reserved the last 25% of usable quarters, rounded up, before searching. Its second initial
+survivor has secondary dimming and weak aperture support. None of 64 inverted controls passed the first
+screen. These counts do not provide a formal false-alarm probability.
+
+Reproduction and provenance
+The code/results archive includes pinned upstream commits, bootstrap.sh, package versions, catalog
+snapshots, per-file hashes, complete measurements, rejected hypotheses and the independent audit. The two
+data archives include normalized light curves and the candidate pixel/calibration data. Read README.md
+before rerunning.
+
+Primary references and data services
+Kepler Bonus: Martinez-Palomera et al. (2023)
+https://arxiv.org/abs/2310.17733
+
+Kepler Bonus data (CC BY 4.0)
+https://archive.stsci.edu/hlsp/kbonus-bkg
+
+QLP documentation and timing warnings
+https://archive.stsci.edu/hlsp/qlp
+
+NASA Exoplanet Archive
+https://exoplanetarchive.ipac.caltech.edu/
+
+Gaia archive
+https://gea.esac.esa.int/archive/
+
+
+
+
+10 October 2026 | Public archival research | Unconfirmed candidate                                          3/3
+

@@ -1,0 +1,7 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Ctic_id%2Cra%2Cdec%2Cpl_orbper%2Cpl_tranmid%2Cdiscoverymethod%2Cdisc_year+from+pscomppars&format=csv",
+  "utc": "2026-10-10T13:09:22.158530+00:00",
+  "status": 200,
+  "bytes": 706842,
+  "sha256": "406429dde6bd5838f50333288765c14401f9dadbad0ff7e25ee3734a82e31ee0"
+}

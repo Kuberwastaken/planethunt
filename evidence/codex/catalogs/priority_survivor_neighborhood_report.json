@@ -1,0 +1,52 @@
+[
+  {
+    "tic": 94753488,
+    "checked_utc": "2026-10-10T13:30:05.215178+00:00",
+    "period_days": 0.4297023626680379,
+    "measured_box_duration_hr": 2.36,
+    "box_depth_ppm": 121.94092665192285,
+    "tic_radius_rsun": 0.763526,
+    "tic_radius_error": 0.0573266,
+    "gaia_radius_gspphot_rsun": 0.7742,
+    "gaia_radius_flame_rsun": 0.7753315,
+    "gaia_ruwe": 0.7778373,
+    "gaia_nss_flag": 0,
+    "central_circular_duration_hr_point_planet": 1.1873289415487684,
+    "duration_note": "Circular central transit approximation, zero planet radius; disagreement is diagnostic, not an eccentric-orbit exclusion. BLS box duration is not full physical transit fit.",
+    "tic_neighbor_count_120arcsec": 1044,
+    "capable_tic_neighbors_within21arcsec_catalog_epoch_equal_throughput": 13,
+    "aperture_note": "Potential eclipse depths assume target and neighbor have equal fractional aperture throughput; flux ratios use Tmag. Proper-motion corrected geometry is in Gaia sector table.",
+    "raw_files": {
+      "tic94753488_tic_cone.json": "6b7dd301fd657290bd47c8b9eae737fa14e0dd78329f707c4c2fbeef59a61334",
+      "tic94753488_gaia_cone.csv": "33624d66d4214bea1dfb1864a9ce486db551fefad9100cc523e7e3f380f3941b",
+      "tic94753488_gaia_ap.csv": "611591fa121f1d49637d5d57d05beac4a9bce60a31fc1991293f420c0dee1c98",
+      "tic94753488_simbad.txt": "4e17e85dbdc08093792b52d0f4dfc7b3ae0bd8286bbe7a0296a7ba3cf868380b"
+    },
+    "novelty": "No exact target or TIC-cone-neighbor known signal matches; not a complete literature or alias certification."
+  },
+  {
+    "tic": 456716455,
+    "checked_utc": "2026-10-10T13:30:05.244160+00:00",
+    "period_days": 0.40667258951482294,
+    "measured_box_duration_hr": 2.16,
+    "box_depth_ppm": 122.93454524666343,
+    "tic_radius_rsun": 0.719906,
+    "tic_radius_error": 0.0504498,
+    "gaia_radius_gspphot_rsun": NaN,
+    "gaia_radius_flame_rsun": NaN,
+    "gaia_ruwe": 0.9753683,
+    "gaia_nss_flag": 0,
+    "central_circular_duration_hr_point_planet": 1.0778615927818964,
+    "duration_note": "Circular central transit approximation, zero planet radius; disagreement is diagnostic, not an eccentric-orbit exclusion. BLS box duration is not full physical transit fit.",
+    "tic_neighbor_count_120arcsec": 147,
+    "capable_tic_neighbors_within21arcsec_catalog_epoch_equal_throughput": 2,
+    "aperture_note": "Potential eclipse depths assume target and neighbor have equal fractional aperture throughput; flux ratios use Tmag. Proper-motion corrected geometry is in Gaia sector table.",
+    "raw_files": {
+      "tic456716455_tic_cone.json": "a4f54115088859d535c6fa029292741ccfd8fa1dbff065cf3c313f1448a5e239",
+      "tic456716455_gaia_cone.csv": "bb690086c8e3d13197596db8c55d0c439f1efbb6013bfdf2efc71a4aa874b23d",
+      "tic456716455_gaia_ap.csv": "eb45bbee8558bf0c2130900a4c47a955ae2538f58cb85d51bdf6e11d3cf6adef",
+      "tic456716455_simbad.txt": "0e64a8ec51aad534a483dc90ce0f5c464cf7038b23bee0a3ecd1137626e07316"
+    },
+    "novelty": "No exact target or TIC-cone-neighbor known signal matches; not a complete literature or alias certification."
+  }
+]

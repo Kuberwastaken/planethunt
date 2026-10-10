@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-10",
+  "scientific_status": "Credible potentially unreported transit candidate; not a confirmed or validated planet",
+  "candidate": {
+    "host": "KIC5689121 / TIC120686465 / GaiaDR3 2103792461826460288",
+    "period_days": 13.769413569662944,
+    "period_uncertainty": "not estimated",
+    "conditional_radius_earth": "about3; assumes on-target undiluted planetary transit",
+    "psf_usable_events": 70,
+    "psf_holdout_events": 22,
+    "pixel_quarters_supporting_target": 13
+  },
+  "survey": {
+    "TESS_stars": 175,
+    "initial_TESS_searches": 350,
+    "timing_safe_TESS_repeat_searches": 88,
+    "TESS_inverted_searches": 100,
+    "Kepler_background_stars": 64,
+    "Kepler_inverted_searches": 64,
+    "positive_controls": "LHS3844b;Kepler138c/d;excludedfromdiscovery"
+  },
+  "known_catalog_no_match": "Provisional; not exhaustive proof of novelty",
+  "public_actions": "No submissions, naming, publication, messages or external follow-up"
+}

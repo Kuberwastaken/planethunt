@@ -1,0 +1,58 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-10T13:43:46 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-10T13:43:46	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2FAJ%2F164%2F88%2Ftable5&Gaia=2103792461826460288&-out.all=	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	MaxTuples=50000	
+
+#RESOURCE=yCat_51640088
+#Name: J/AJ/164/88
+#Title: THYME. VIII. MELANGE-3 candidate members (Barber+, 2022)
+#INFO	ivoid=ivo://cds.vizier/j/aj/164/88	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/164/88	    IVOID of underlying data collection
+#INFO	creator=Barber M.G.	    First author or institution
+#INFO	cites=bibcode:2022AJ....164...88B	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2022	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/164/88	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51640088	    Dataset identifier that can be used for citation
+#INFO	publication_date=2024-10-11	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2016:	eq_FK5 J2016
+#Table	J_AJ_164_88_table5:
+#Name: J/AJ/164/88/table5
+#Title: Candidate members of MELANGE-3
+#Column	Gaia	(I19)	Gaia EDR3 identifier	[ucd=meta.id;meta.main]
+#Column	RAJ2016	(F9.5)	[279/302] Right Ascension (J2016)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2016	(F9.5)	[30/47] Declination (J2016)	[ucd=pos.eq.dec;meta.main]
+#Column	Gmag	(F6.3)	[7.67/20.4] Gaia EDR3 G band magnitude	[ucd=phot.mag;em.opt.V]
+#Column	Voff	(F6.3)	[0/5] Tangential velocity offset	[ucd=phys.veloc.transverse]
+#Column	SpType	(A4)	Spectral type (1)	[ucd=src.spType]
+#Column	TESS?	(A1)	Has TESS light curve? (2)	[ucd=meta.code]
+#Column	Kepler?	(A1)	Has Kepler light curve? (2)	[ucd=meta.code]
+#Column	plx	(F6.3)	[2.66/3.61] Parallax	[ucd=pos.parallax.trig]
+#Column	e_plx	(F6.3)	[0.009/0.5] Uncertainty in plx	[ucd=stat.error;pos.parallax]
+#Column	Prot	(F6.3)	[0.16/44.5]? Rotational period	[ucd=time.period]
+#Column	e_Prot	(F6.3)	[0.003/6]? Uncertainty in Prot	[ucd=stat.error]
+#Column	r_Prot	(A7)	Reference flag on Prot (3)	[ucd=meta.ref;pos.frame]
+#Column	l_Li	(A1)	[<] Limit flag on Li	[ucd=meta.code.error]
+#Column	Li	(F5.1)	[20/206]? LiI 6708{AA} equivalent width (mA)	[ucd=spect.line.eqWidth]
+#Column	e_Li	(F4.1)	[9/21]? Uncertainty in mA	[ucd=stat.error]
+#Column	RVel	(F6.2)	[-71.7/18.4]? Radial velocity	[ucd=phys.veloc;pos.heliocentric]
+#Column	e_RVel	(F5.2)	[0.02/18]? Uncertainty in RVel	[ucd=stat.error;spect.dopplerVeloc]
+#Column	r_RVel	(I1)	[5/9]? Reference flag on RVel (4)	[ucd=meta.ref;pos.frame]
+#Column	_RA.icrs	(F9.5)	Right ascension (ICRS) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)	[ucd=pos.eq.ra]
+#Column	_DE.icrs	(F9.5)	Declination (ICRS) (computed by VizieR, not part of the original data. The format may include more digits than the original data because of internal accuracy requirements in VizieR and across other CDS services)	[ucd=pos.eq.dec]
+Gaia	RAJ2016	DEJ2016	Gmag	Voff	SpType	TESS?	Kepler?	plx	e_plx	Prot	e_Prot	r_Prot	l_Li	Li	e_Li	RVel	e_RVel	r_RVel	_RA.icrs	_DE.icrs
+ 	deg	deg	mag	km/s	 	 	 	mas	mas	d	d	 	 	10-13m	10-13m	km/s	km/s	 	deg	deg
+-------------------	---------	---------	------	------	----	-	-	------	------	------	------	-------	-	-----	----	------	-----	-	---------	---------
+2103792461826460288	285.90783	+40.94199	16.282	 0.795	M1.6	N	Y	 3.406	 0.040	      	      	       	 	     	    	      	     	 	285.77713	+40.91767
+

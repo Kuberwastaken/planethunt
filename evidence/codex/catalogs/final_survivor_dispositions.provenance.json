@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-10T13:32:35.822202+00:00",
+  "input_sha256": {
+    "search_summary.csv": "704d8036bd550d2c4c9f073d2ec8c737619c714d7fbfc998cffe27d5da7b992b",
+    "known_signals.csv": "e76c48536c1aee900068a7a958158e5960ad1c3b028620b81e21dec7d7ea45bc",
+    "selected_neighbor_prior_matches.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  "signals": 9,
+  "hosts": 8,
+  "aliases": [
+    "1/4",
+    "1/3",
+    "1/2",
+    "2/3",
+    "3/4",
+    "1",
+    "4/3",
+    "3/2",
+    "2",
+    "3",
+    "4"
+  ],
+  "relative_period_tolerance": 0.01,
+  "positive_control_excluded": true,
+  "epoch_note": "Reference epoch offsets only. Period precision/drift across baseline prevents definitive equality from approximate TCE values."
+}

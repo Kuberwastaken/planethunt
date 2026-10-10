@@ -1,0 +1,36 @@
+{
+  "nasa_toi.csv": {
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+toi&format=csv",
+    "utc": "2026-10-10T13:08:42.969681+00:00",
+    "status": 200,
+    "content_type": "text/plain",
+    "bytes": 5039370,
+    "sha256": "65a96fd8552218ac213aa582e6555bff356876817c38f23d9d9c6b7c6b284898"
+  },
+  "nasa_pscomppars.csv": {
+    "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Ctic_id%2Cgaia_id%2Cra%2Cdec%2Cpl_orbper%2Cpl_tranmid%2Cdiscoverymethod%2Cdisc_year+from+pscomppars&format=csv",
+    "utc": "2026-10-10T13:08:42.970655+00:00",
+    "error": "<HTTPError 400: 'Bad Request'>"
+  },
+  "exofop_toi.csv": {
+    "url": "https://exofop.ipac.caltech.edu/tess/download_toi.php?output=csv",
+    "utc": "2026-10-10T13:08:42.971509+00:00",
+    "error": "TimeoutError('The read operation timed out')"
+  },
+  "exofop_ctoi.csv": {
+    "url": "https://exofop.ipac.caltech.edu/tess/download_ctoi.php?output=csv",
+    "utc": "2026-10-10T13:08:42.972055+00:00",
+    "status": 200,
+    "content_type": "text/plain; charset=UTF-8",
+    "bytes": 2334680,
+    "sha256": "1059ac9235aa11d4bf914153ddc0278431709f090607497325a9b7c208911bb4"
+  },
+  "villanova_home.html": {
+    "url": "https://tessebs.villanova.edu/",
+    "utc": "2026-10-10T13:08:42.972627+00:00",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 76915,
+    "sha256": "b67d523fe28516a0c9abedb9c6332918805a679596357384f5b7ee60e8277993"
+  }
+}

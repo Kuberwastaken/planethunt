@@ -1,0 +1,54 @@
+diff --git a/pipeline/10_pixels.py b/pipeline/10_pixels.py
+index a859b49..1e17b8d 100644
+--- a/pipeline/10_pixels.py
++++ b/pipeline/10_pixels.py
+@@ -66,11 +66,12 @@ def tess_mag(g, bp_rp):
+ 
+ 
+ def gaia_info(tic):
+-    tg = pd.read_csv(RESULTS / "targets_ranked.csv").set_index("TIC").loc[tic]
+-    gid = int(tg["GAIA"])
+-    q = f"""SELECT source_id, ra, dec, pmra, pmdec, phot_g_mean_mag, bp_rp FROM gaiadr3.gaia_source
+-            WHERE source_id = {gid}"""
+-    me = Gaia.launch_job(q).get_results().to_pandas().iloc[0]
++    tg = pd.read_csv(RESULTS / "targets_ranked.csv", dtype={"GAIA": str}).set_index("TIC").loc[tic]
++    q0 = f"""SELECT TOP 1 source_id, ra, dec, pmra, pmdec, phot_g_mean_mag, bp_rp FROM gaiadr3.gaia_source
++            WHERE 1 = CONTAINS(POINT('ICRS', ra, dec), CIRCLE('ICRS', {tg["ra"]}, {tg["dec"]}, {4/3600}))
++            ORDER BY phot_g_mean_mag"""
++    me = Gaia.launch_job(q0).get_results().to_pandas().iloc[0]
++    gid = int(me.source_id)
+     me["tic_ra"], me["tic_dec"] = tg["ra"], tg["dec"]
+     me["tmag"] = tess_mag(me.phot_g_mean_mag, me.bp_rp)
+     q = f"""SELECT source_id, ra, dec, pmra, pmdec, phot_g_mean_mag, bp_rp, ruwe FROM gaiadr3.gaia_source
+diff --git a/pipeline/lcsearch.py b/pipeline/lcsearch.py
+index 2a65f7b..4e2d12c 100644
+--- a/pipeline/lcsearch.py
++++ b/pipeline/lcsearch.py
+@@ -16,14 +16,14 @@ MAX_SECTOR_NOISE_1HR = 0.01  # sectors noisier than 1% per hour can't show a ~50
+ SECTOR_NOISE_RATIO = 3.0  # ...or 3x noisier than the star's typical sector
+ FLARE_CLIP_SIGMA = 3.0  # upward outliers only; downward points could be transits
+ DROPOUT_CLIP_SIGMA = 10.0  # single deep points are artifacts; a small planet is a few sigma
+-BIN_S = 600  # bin fast cadences to 10 min for search speed
+-PERIOD_MIN_D = 0.5
++BIN_S = 1200  # bin fast cadences to 10 min for search speed
++PERIOD_MIN_D = 1.0
+ PERIOD_MAX_D = 25.0
+ MIN_TRANSITS = 3
+-OVERSAMPLE = 3  # transit-time drift across the baseline stays below duration/OVERSAMPLE
++OVERSAMPLE = 1.5  # transit-time drift across the baseline stays below duration/OVERSAMPLE
+ SDE_THRESHOLD = 7.0
+ SNR_THRESHOLD = 6.0
+-MAX_SIGNALS = 3
++MAX_SIGNALS = 1
+ 
+ 
+ def robust_std(x):
+@@ -121,7 +121,7 @@ def period_grid(baseline, rho_sun, pmin=PERIOD_MIN_D, pmax=PERIOD_MAX_D, oversam
+     return np.sort(1 / np.array(freqs))
+ 
+ 
+-def duration_grid(rho_sun, pmin=PERIOD_MIN_D, pmax=PERIOD_MAX_D, n=7):
++def duration_grid(rho_sun, pmin=PERIOD_MIN_D, pmax=PERIOD_MAX_D, n=5):
+     lo = 0.35 * duration_days(pmin, rho_sun)
+     hi = min(1.3 * duration_days(pmax, rho_sun), 0.4 * pmin)
+     return np.geomspace(max(lo, 0.02), hi, n)
