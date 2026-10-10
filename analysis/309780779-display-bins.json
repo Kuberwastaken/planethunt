@@ -1,0 +1,187 @@
+{
+  "purpose": "presentation at saved ephemeris; not independent validation",
+  "detrend_window_days": 0.75,
+  "bad_sectors": [],
+  "bins": [
+    {
+      "hours": -2.9,
+      "flux_ppm": 124.85339684533284,
+      "standard_error_ppm": 81.4717067241783,
+      "cadences": 98
+    },
+    {
+      "hours": -2.7,
+      "flux_ppm": -50.76430709741948,
+      "standard_error_ppm": 71.75587002977068,
+      "cadences": 97
+    },
+    {
+      "hours": -2.5,
+      "flux_ppm": -96.0407632257447,
+      "standard_error_ppm": 75.07420823759298,
+      "cadences": 98
+    },
+    {
+      "hours": -2.3,
+      "flux_ppm": -96.72102459299435,
+      "standard_error_ppm": 73.29051710285144,
+      "cadences": 97
+    },
+    {
+      "hours": -2.1,
+      "flux_ppm": 30.823283253913797,
+      "standard_error_ppm": 79.93010106703595,
+      "cadences": 96
+    },
+    {
+      "hours": -1.9,
+      "flux_ppm": 77.38633391402904,
+      "standard_error_ppm": 77.83076611738278,
+      "cadences": 100
+    },
+    {
+      "hours": -1.6999999999999997,
+      "flux_ppm": -17.390708297039865,
+      "standard_error_ppm": 75.94422128504566,
+      "cadences": 99
+    },
+    {
+      "hours": -1.5,
+      "flux_ppm": 24.32370529623332,
+      "standard_error_ppm": 74.09160605242874,
+      "cadences": 101
+    },
+    {
+      "hours": -1.2999999999999998,
+      "flux_ppm": 45.97373969265593,
+      "standard_error_ppm": 75.8325101679247,
+      "cadences": 98
+    },
+    {
+      "hours": -1.1,
+      "flux_ppm": -71.15522120554961,
+      "standard_error_ppm": 80.83581664477927,
+      "cadences": 97
+    },
+    {
+      "hours": -0.8999999999999999,
+      "flux_ppm": 75.17067989769032,
+      "standard_error_ppm": 74.8536494384894,
+      "cadences": 100
+    },
+    {
+      "hours": -0.6999999999999997,
+      "flux_ppm": -6.6868526604116525,
+      "standard_error_ppm": 81.28881606153303,
+      "cadences": 97
+    },
+    {
+      "hours": -0.4999999999999998,
+      "flux_ppm": -191.15043914585073,
+      "standard_error_ppm": 72.63908641507483,
+      "cadences": 100
+    },
+    {
+      "hours": -0.2999999999999998,
+      "flux_ppm": -398.17915214094495,
+      "standard_error_ppm": 76.28201698093592,
+      "cadences": 97
+    },
+    {
+      "hours": -0.09999999999999987,
+      "flux_ppm": -708.6037159658554,
+      "standard_error_ppm": 94.09035858324572,
+      "cadences": 97
+    },
+    {
+      "hours": 0.10000000000000009,
+      "flux_ppm": -429.2709063795743,
+      "standard_error_ppm": 71.30228652322836,
+      "cadences": 99
+    },
+    {
+      "hours": 0.30000000000000027,
+      "flux_ppm": -193.60872023184743,
+      "standard_error_ppm": 78.8614194099501,
+      "cadences": 98
+    },
+    {
+      "hours": 0.5000000000000002,
+      "flux_ppm": -68.27675211314445,
+      "standard_error_ppm": 80.97967006371495,
+      "cadences": 100
+    },
+    {
+      "hours": 0.7000000000000002,
+      "flux_ppm": 193.8194630540666,
+      "standard_error_ppm": 74.77839692289346,
+      "cadences": 98
+    },
+    {
+      "hours": 0.9000000000000001,
+      "flux_ppm": -21.988149602666464,
+      "standard_error_ppm": 82.52481801800046,
+      "cadences": 96
+    },
+    {
+      "hours": 1.1,
+      "flux_ppm": 31.47181505558715,
+      "standard_error_ppm": 64.9249337959518,
+      "cadences": 97
+    },
+    {
+      "hours": 1.3000000000000003,
+      "flux_ppm": 138.62303457902883,
+      "standard_error_ppm": 68.91796928489465,
+      "cadences": 98
+    },
+    {
+      "hours": 1.5000000000000004,
+      "flux_ppm": -104.15066908325718,
+      "standard_error_ppm": 82.21484906976657,
+      "cadences": 100
+    },
+    {
+      "hours": 1.7000000000000006,
+      "flux_ppm": -143.66205683221258,
+      "standard_error_ppm": 68.6604177639385,
+      "cadences": 98
+    },
+    {
+      "hours": 1.9000000000000004,
+      "flux_ppm": -53.1181925399734,
+      "standard_error_ppm": 71.85910110227468,
+      "cadences": 97
+    },
+    {
+      "hours": 2.1,
+      "flux_ppm": -30.48085033749175,
+      "standard_error_ppm": 75.54776935976494,
+      "cadences": 99
+    },
+    {
+      "hours": 2.3000000000000003,
+      "flux_ppm": -8.615392871033688,
+      "standard_error_ppm": 74.73946723816482,
+      "cadences": 98
+    },
+    {
+      "hours": 2.5000000000000004,
+      "flux_ppm": 103.83522071023792,
+      "standard_error_ppm": 76.07829526890028,
+      "cadences": 99
+    },
+    {
+      "hours": 2.7000000000000006,
+      "flux_ppm": -54.08294189169,
+      "standard_error_ppm": 72.60532449804826,
+      "cadences": 98
+    },
+    {
+      "hours": 2.9000000000000004,
+      "flux_ppm": 74.88601395548994,
+      "standard_error_ppm": 79.85812042310849,
+      "cadences": 97
+    }
+  ]
+}
