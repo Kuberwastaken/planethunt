@@ -1,0 +1,6 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.nss_two_body_orbit+WHERE+source_id%3D5418555552665758080",
+  "query": "SELECT * FROM gaiadr3.nss_two_body_orbit WHERE source_id=5418555552665758080",
+  "sha256": "94624a15e17c05bdf5000d96375440e83eca594ad8fd6a175ca97630095c9aa2",
+  "retrieved_utc": "2026-10-10T13:41:23.251237+00:00"
+}

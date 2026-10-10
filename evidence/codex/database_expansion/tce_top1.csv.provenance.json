@@ -1,0 +1,5 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+1+%2A+from+q1_q17_dr25_tce&format=csv",
+  "utc": "2026-10-10T13:35:45.818512+00:00",
+  "sha256": "39064b99c0941c002e8a40d996c5d19372b2641f45009adff414c9e8bcf4f1a9"
+}

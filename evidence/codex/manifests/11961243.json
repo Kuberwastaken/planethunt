@@ -1,0 +1,44 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0006/target/0000/0000/1196/1243/hlsp_tess-spoc_tess_phot_0000000011961243-s0006_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0006/target/0000/0000/1196/1243/hlsp_tess-spoc_tess_phot_0000000011961243-s0006_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 6,
+    "sha256": "f6a8733366e7bc6bf06a1960a3ddff65d6073a5e31b4f10546f241d3cd32ca97",
+    "bytes": 135360,
+    "fetched_utc": "2026-10-10T13:26:50.606300+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0033/target/0000/0000/1196/1243/hlsp_tess-spoc_tess_phot_0000000011961243-s0033_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0033/target/0000/0000/1196/1243/hlsp_tess-spoc_tess_phot_0000000011961243-s0033_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 33,
+    "sha256": "bd5d62ae2501bfb5aa2ebda6daf14343c832934de596f0dbdcbd0710a5ef5400",
+    "bytes": 403200,
+    "fetched_utc": "2026-10-10T13:26:50.599107+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0087/0000/0000/1196/1243/hlsp_qlp_tess_ffi_s0087-0000000011961243_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0087/0000/0000/1196/1243/hlsp_qlp_tess_ffi_s0087-0000000011961243_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 87,
+    "sha256": "d5e7b290ce3485cec88b8023334adb6a4123278e253688bc09807c4ded8cbc79",
+    "bytes": 691200,
+    "fetched_utc": "2026-10-10T13:26:58.109987+00:00",
+    "flux_column": "SYS_RM_FLUX",
+    "error_source": "empirical_point_scatter_in_selected_flux_units",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

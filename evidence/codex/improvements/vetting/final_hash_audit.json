@@ -1,0 +1,83 @@
+[
+  {
+    "tic": 113710966,
+    "mode": "usp",
+    "rank": 2,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/113710966_broad_diagnostic_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 201293664,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/201293664_usp_rank1_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 201293664,
+    "mode": "usp",
+    "rank": 2,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/201293664_usp_rank2_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 241606913,
+    "mode": "regular",
+    "rank": 2,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/241606913_regular_rank2_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 259999047,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/259999047_usp_rank1_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 358559650,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/358559650_usp_rank1_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 456716455,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/456716455_broad_diagnostic_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 467361658,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/467361658_usp_rank1_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  },
+  {
+    "tic": 94753488,
+    "mode": "usp",
+    "rank": 1,
+    "search_input_current": true,
+    "effective_vet_file": "vetting/94753488_broad_diagnostic_v3.json",
+    "vet_source_search_current": true,
+    "vet_input_current": true
+  }
+]

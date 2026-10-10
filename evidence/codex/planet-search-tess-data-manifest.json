@@ -1,0 +1,1122 @@
+[
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/111882162.npz",
+    "bytes": 402880,
+    "sha256": "ed8f66c25d812d128a48668f450711174eb10b7b92992da7210fe3a26b0003f7"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/117545429.npz",
+    "bytes": 951322,
+    "sha256": "62ba26558b51b31f9c44243487e30955a926cd77cfebb61ec0d852b43b7ddfa0"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/151639678.npz",
+    "bytes": 759825,
+    "sha256": "e93c04769b1ba5a307129cf81baef07fec9c982fa2c752ff7dca14e5131bea17"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/160197982.npz",
+    "bytes": 1789124,
+    "sha256": "da0abf73eb9cee69975defe9b397ecb01eff28feb89eac05c84c5f7abfbfb8c9"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/178626040.npz",
+    "bytes": 645526,
+    "sha256": "be0e63857f65adfa0fd4e1bbed428540ce63b3d3e18f66f605c14f83a5737325"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/186579346.npz",
+    "bytes": 1559956,
+    "sha256": "cb2720fc331e71c17235bc2565b625a94c3a7523f2a8bc2b620775d0f6ec8372"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/188087957.npz",
+    "bytes": 1569974,
+    "sha256": "93a4e7c8b6a6e26315b1c3947bb15d739931c198a3549066630900e1edb63acf"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/19976193.npz",
+    "bytes": 1003056,
+    "sha256": "25e7eb2f6475be2becff5c4de8410a3241192ea2b469668a85ffa8913d471395"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/201726620.npz",
+    "bytes": 607926,
+    "sha256": "1fe60e04972651e3441704f91cf21938624b5864ec06421ab1fe3657174f568f"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/20325431.npz",
+    "bytes": 2138613,
+    "sha256": "b188963f97c14993730aca89748474fc8676d6b2961598a8edc85d4f75d913ea"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/21867163.npz",
+    "bytes": 511650,
+    "sha256": "71dc9e3308f4f9b727a8b6badaaaa6fc0064b44a99527869aafffa5b2b573650"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/231865504.npz",
+    "bytes": 836665,
+    "sha256": "f8e2cf8789ee3c7b3a77152b8a19dc99a90046e9c1aa5fa5cf2a94639f6e710f"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/241606913.npz",
+    "bytes": 730993,
+    "sha256": "ac9f61c9cefeba08da3bde2b65741f9e58f327ac39bcecc84e92a7c7158b7887"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/241655722.npz",
+    "bytes": 1360473,
+    "sha256": "29c165d189f15a1a9d8e5deee6db21e9279aaa75a7b342e70b6eb6c03a14b4cc"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/244869034.npz",
+    "bytes": 1732928,
+    "sha256": "1b5cd7db3b1fcca44d066b6605d758727d39acc63f3d5e5a4935c176d57ce9e2"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/256160507.npz",
+    "bytes": 1377891,
+    "sha256": "a9dac29b33c1ab15aaf236a5fde032f89381b1d7bf1d20ac700c0f4e162466ab"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/260795157.npz",
+    "bytes": 4637970,
+    "sha256": "71a947bdac98f839d6768152ee7441c0995bad6fff6b828816d358b41ffb42fc"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/260795451.npz",
+    "bytes": 3645573,
+    "sha256": "5eae6358a7d83076263599a27768e496c64f4d110bfb9d4f6f43cbf320a91476"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/273418879.npz",
+    "bytes": 4146219,
+    "sha256": "304a4ed347d9dbdc68a18481de68fc66df5ba76116cd497b7bf3b48a57ffa11f"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/277716959.npz",
+    "bytes": 2484070,
+    "sha256": "52ba97521a2a94819b5a5107479875174e9a138e428c1a0b1f6d430f6ad20098"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/281764250.npz",
+    "bytes": 2386915,
+    "sha256": "04fec8aae30caadaa44ecffe4244c8bace6d251b32feaf338896a7c8e1f2ed33"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/290653184.npz",
+    "bytes": 914738,
+    "sha256": "e90ecf251f90a26f3e237a4dbdd48d8e898ff21c6257bc3ef60b054374e8799a"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/303550934.npz",
+    "bytes": 509395,
+    "sha256": "a3a3a3d6629f877b8db981624ccbac45ff35563854546eaef2c4a3a5233af97a"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/315094546.npz",
+    "bytes": 650520,
+    "sha256": "af20045a42c3b1f0a2bb13bc1e9dc2b0197dec51ebe37790c65d6b1cf74edf22"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/316935835.npz",
+    "bytes": 1703962,
+    "sha256": "0e65ec511b1d3b67b2806cffe52bba73b114e4f21bf4d4b4f864433be78c17e4"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/322777782.npz",
+    "bytes": 1272593,
+    "sha256": "5699ea5c7f3c54010b9c11a06b07e0b8048186967e3d02e27a5044021af1fbc9"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/327857952.npz",
+    "bytes": 1992361,
+    "sha256": "90c785282b303f05340e3f6d94d108e057a20fd4fe9340ac8ca8e1f90b993e6b"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/334644751.npz",
+    "bytes": 1526284,
+    "sha256": "61f8848bf0b6460fe6ab3a728b07fef14f19c55f3fd0c1628297243c57a99877"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/358559650.npz",
+    "bytes": 1240458,
+    "sha256": "4a34db31f9d7060f5719063068dabc26808bdfd917020075a7d104dd4b6b725c"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/3657911.npz",
+    "bytes": 1669546,
+    "sha256": "00ce6792113f8c4695670f46e9752696a0b351a25d5fb616fd03a3ec764129d7"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/394015919.npz",
+    "bytes": 3461407,
+    "sha256": "4b52e868456a1ccf63e17e3ffe1675bf23c2d8afad288569d47dd1b945fcc242"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/394517838.npz",
+    "bytes": 504402,
+    "sha256": "bf089d750d78cf56431c0ba28b1e6a600a80b9944bf4c61d2ef7a76c3be2bdd7"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/396810588.npz",
+    "bytes": 1967449,
+    "sha256": "81f6cb5115047742ac0502fbebb02e1e6c16c9281c702910cac263b03837be40"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/401667290.npz",
+    "bytes": 3241333,
+    "sha256": "e5901ea0fecff03367b22c02b63fcf4fff1bded1463ba78e896902df859a9675"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/406343361.npz",
+    "bytes": 2486201,
+    "sha256": "faebb24db656dc568a5ab9afa9d3081640675cc6767ba2500d616f84df23b69b"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/407559875.npz",
+    "bytes": 1587200,
+    "sha256": "cdb37a5d612965f932569ce0fb06f7bf2e9bda6ab03c75d8f548036b4c3937b3"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/410441291.npz",
+    "bytes": 650429,
+    "sha256": "74a089086e8e0c9c146cb8169bb49baaa57fde3469e2bd1e6e04ac3f9adbdb3a"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/4263857.npz",
+    "bytes": 784189,
+    "sha256": "a31721dd0d31ab2f91afccb694e14cd065711b292e50f1f18b1594cc11e0d6a8"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/469905613.npz",
+    "bytes": 1907089,
+    "sha256": "c23ee83a850ab3c278667d890c2d0bc1e834dcedd614b425ddacb2f952753586"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/48368656.npz",
+    "bytes": 716606,
+    "sha256": "c5b5708f2da5e8c4c8c3fae997ca8dc1125f3a41cc081a6db6a104338e1ad0ce"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/72604026.npz",
+    "bytes": 1232642,
+    "sha256": "e1561a5104df547d4eec2418fc81b9ebfa5b52d22e9e729eaee3df618169db1c"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/7412956.npz",
+    "bytes": 489400,
+    "sha256": "d6711f88abd4567de921076488510e7f381f6e5a4cfb6470fed36b00b09f6174"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/93534003.npz",
+    "bytes": 550491,
+    "sha256": "b51ebf1d5a783be647efd77236b077760ef475a8d144049dfd19d16ec33c38a5"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_all44/lightcurves/93716498.npz",
+    "bytes": 1760091,
+    "sha256": "4b622ce381fd4ebd28ab1370d36b24d9dd4ef45334647dce85f7e61574393c98"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_repeat/lightcurves/241606913.npz",
+    "bytes": 730993,
+    "sha256": "ac9f61c9cefeba08da3bde2b65741f9e58f327ac39bcecc84e92a7c7158b7887"
+  },
+  {
+    "path": "planet-search/database_expansion/timing_safe_repeat/lightcurves/358559650.npz",
+    "bytes": 1240458,
+    "sha256": "4a34db31f9d7060f5719063068dabc26808bdfd917020075a7d104dd4b6b725c"
+  },
+  {
+    "path": "planet-search/lightcurves/103068804.npz",
+    "bytes": 2156316,
+    "sha256": "289436857adcbf541073d3331bda53596774558a2f2e328a2b9a86a58c63b95f"
+  },
+  {
+    "path": "planet-search/lightcurves/111882162.npz",
+    "bytes": 559589,
+    "sha256": "f543f804364044cd4f3feb27fe103438e93d9d7400bb78f006f657569b03167d"
+  },
+  {
+    "path": "planet-search/lightcurves/113710966.npz",
+    "bytes": 3078668,
+    "sha256": "9c39e8935b03fb235a7b12c6a68bea18a1f9500bacd0acc05c7e513b2a5e7ba5"
+  },
+  {
+    "path": "planet-search/lightcurves/116151398.npz",
+    "bytes": 960268,
+    "sha256": "4e506b1b51ecbcb13a0ef0d7387329c07a8c058b6ff6f0f58ec475c54f8241e7"
+  },
+  {
+    "path": "planet-search/lightcurves/117545429.npz",
+    "bytes": 1107547,
+    "sha256": "44367f62ecaed4bae845f96a0f2b7108a7c42094911a05992c053ce1f64b5acc"
+  },
+  {
+    "path": "planet-search/lightcurves/11961243.npz",
+    "bytes": 322267,
+    "sha256": "08401763b7a6ee31912fb9a7b5b0543a7d041196c35f72620ce76fd271984571"
+  },
+  {
+    "path": "planet-search/lightcurves/121820668.npz",
+    "bytes": 700399,
+    "sha256": "f2d652149da9a96eb377089b682e6ad970286afdf868d57098a2dfcce53ca5e5"
+  },
+  {
+    "path": "planet-search/lightcurves/122574885.npz",
+    "bytes": 3730644,
+    "sha256": "67ec8125a2acffe65cbf3dacda11dba5f6fb7ae12973588bdb453caeb2ba04fc"
+  },
+  {
+    "path": "planet-search/lightcurves/123366965.npz",
+    "bytes": 1971853,
+    "sha256": "d04438f387e8a1f2e3567bea8629215a773a1d4b9f5487e9554566e638967f8f"
+  },
+  {
+    "path": "planet-search/lightcurves/123480394.npz",
+    "bytes": 3396512,
+    "sha256": "22a2bc2a368bf03913bb290ad694b11994502d3b900b848849c7f1c3455274cd"
+  },
+  {
+    "path": "planet-search/lightcurves/125736050.npz",
+    "bytes": 2918216,
+    "sha256": "1703d49f7d4589f3fa66024dc38a3c096c1de1fba983ba44eafd738b739b247e"
+  },
+  {
+    "path": "planet-search/lightcurves/125838647.npz",
+    "bytes": 2082288,
+    "sha256": "8fd3c527c737b0e7ba6fff90d90acf184884007e2b1b12e8728b1efa99ea0680"
+  },
+  {
+    "path": "planet-search/lightcurves/138421058.npz",
+    "bytes": 4561376,
+    "sha256": "f3944180afac5201fb821d068a9fd25c762e8554c74401ca3f5ac43f09990ac4"
+  },
+  {
+    "path": "planet-search/lightcurves/139770629.npz",
+    "bytes": 3598455,
+    "sha256": "912c7eb6a5218a842c8a7548bd2dc32466371f11af3d5163d85df72ca5f760f1"
+  },
+  {
+    "path": "planet-search/lightcurves/142439879.npz",
+    "bytes": 2228332,
+    "sha256": "ab452d3391c8debf69d082decf2319c103aaeb8c630687e9e45e47021c30ab34"
+  },
+  {
+    "path": "planet-search/lightcurves/142439883.npz",
+    "bytes": 2168653,
+    "sha256": "27513abbef079db03fdf77160539c63c88bb63a8a0e1b2aa9e89241fd6de6283"
+  },
+  {
+    "path": "planet-search/lightcurves/151639678.npz",
+    "bytes": 1088161,
+    "sha256": "f3f6d23b0dcebde51e453e870139ba216251e2b2aed13477bd557f8d2a5034fe"
+  },
+  {
+    "path": "planet-search/lightcurves/154101678.npz",
+    "bytes": 1472948,
+    "sha256": "28c96786fa0cc10ba093e4dd0077e8723d5b384b44a4c65ecb2e433820bfdc37"
+  },
+  {
+    "path": "planet-search/lightcurves/154874920.npz",
+    "bytes": 6528908,
+    "sha256": "d2c6aef7b765c464e7b532de9c0979802d66c3ba8b49a296698194ed9a7adcbf"
+  },
+  {
+    "path": "planet-search/lightcurves/155753765.npz",
+    "bytes": 1596954,
+    "sha256": "27e3b2cace4133bf718a90ef8bda761a0a12e410d5c01e88c87246c9a15002ff"
+  },
+  {
+    "path": "planet-search/lightcurves/157247704.npz",
+    "bytes": 897040,
+    "sha256": "cc7448429aa83819142763618ca1c09fbac631728c7815ffd0f9dfb8296fdd13"
+  },
+  {
+    "path": "planet-search/lightcurves/160197982.npz",
+    "bytes": 2262902,
+    "sha256": "7942e71fce9d4a0595f5af53e4456aa0f7aad57cfaeb0bfdb3eb338577524ca6"
+  },
+  {
+    "path": "planet-search/lightcurves/160329609.npz",
+    "bytes": 1669654,
+    "sha256": "42466b8e0dca06df4e8891d680f8554a8c336b791c06863bd05f2722ef3793fe"
+  },
+  {
+    "path": "planet-search/lightcurves/170434229.npz",
+    "bytes": 1023500,
+    "sha256": "8c279fbd8f62dfb0045a9d11a0d8568a9e27204647b829afa47bbb9e528be420"
+  },
+  {
+    "path": "planet-search/lightcurves/17558287.npz",
+    "bytes": 1981934,
+    "sha256": "0ce539b2a77defc0b542f55754208396f2b3ef7836c99b459495314c562239d6"
+  },
+  {
+    "path": "planet-search/lightcurves/177129015.npz",
+    "bytes": 329941,
+    "sha256": "06e6497deb3878ac479e5f4d3228097bdce3b079a7ecd0809a1b6d1b50b9405c"
+  },
+  {
+    "path": "planet-search/lightcurves/178626040.npz",
+    "bytes": 767062,
+    "sha256": "0b8b071702469e2a370ae262b14bc4273005fead5e16a52acd332d36179b87c7"
+  },
+  {
+    "path": "planet-search/lightcurves/179068307.npz",
+    "bytes": 533821,
+    "sha256": "e052638b733bbd0f8ab595e41ab109230d07a05298aa5ee6385a29b9d22bc8ba"
+  },
+  {
+    "path": "planet-search/lightcurves/181015118.npz",
+    "bytes": 1693633,
+    "sha256": "f571ffe61dc56aef3d13e2da7a1785885b6234f226fe64f3bfbf90b17a2b524f"
+  },
+  {
+    "path": "planet-search/lightcurves/185022145.npz",
+    "bytes": 845698,
+    "sha256": "3d7facc9d983255a3cfa1d8270d9f83511f4a8a346962296913ff4336f2503fb"
+  },
+  {
+    "path": "planet-search/lightcurves/186579346.npz",
+    "bytes": 2177831,
+    "sha256": "d639b7d6def86634d1dbfb949cb8db59720d6432022340276c50ecb8c8a57ae8"
+  },
+  {
+    "path": "planet-search/lightcurves/188087957.npz",
+    "bytes": 1714627,
+    "sha256": "2072a76397f5bf8fdec12812c475cef1bd9d7043d3180e8a1872ac9bf40dbbb4"
+  },
+  {
+    "path": "planet-search/lightcurves/193188152.npz",
+    "bytes": 1567124,
+    "sha256": "21c3ad6dae402c2ea2e995724a905559623fd97ba1ac84ae17138a6c963eb83a"
+  },
+  {
+    "path": "planet-search/lightcurves/193603077.npz",
+    "bytes": 1720833,
+    "sha256": "da2e6aacd95055320f28aecf5bcbf284c6bd05d831f3490ac221ffc615ac0423"
+  },
+  {
+    "path": "planet-search/lightcurves/198315173.npz",
+    "bytes": 4460331,
+    "sha256": "4eed932979c9cdf2031a400f6899a6308a05d019bb255f07fcd1c79b22330984"
+  },
+  {
+    "path": "planet-search/lightcurves/199609132.npz",
+    "bytes": 3966741,
+    "sha256": "b3f32effbcde460865fb5797a7779adf6cc8230c521ee04ef9ce748a566d0188"
+  },
+  {
+    "path": "planet-search/lightcurves/19976193.npz",
+    "bytes": 1057656,
+    "sha256": "e6392ab90c82f6c15f1f6597e74f6c5ca3ae86dcb5e71f727d7633710549cf67"
+  },
+  {
+    "path": "planet-search/lightcurves/201293664.npz",
+    "bytes": 3142363,
+    "sha256": "59ab0784db310ed5b86ffe622d68e8079037f8aa633cfba3aa32646f1329ee4e"
+  },
+  {
+    "path": "planet-search/lightcurves/201726620.npz",
+    "bytes": 937898,
+    "sha256": "28a2414af3885d80f862faf5c3a321e9a63b6a1a52fc496531e80f6ba5e4c329"
+  },
+  {
+    "path": "planet-search/lightcurves/202380743.npz",
+    "bytes": 4533021,
+    "sha256": "f000515b32d3388ee9ff9be34ec6af22c420041a6428a97ae56f384d75a3e99e"
+  },
+  {
+    "path": "planet-search/lightcurves/20325431.npz",
+    "bytes": 2312754,
+    "sha256": "48609d97d6f8c2fb785ccaa630ef9eec0f481173b7055b5e7bac978acdcf8095"
+  },
+  {
+    "path": "planet-search/lightcurves/207556694.npz",
+    "bytes": 1921202,
+    "sha256": "f3e149fe4c7961ffd3a3c0fac5ac1fccb08f23a90a1d0cea721407e8b2a0c4b4"
+  },
+  {
+    "path": "planet-search/lightcurves/209805666.npz",
+    "bytes": 276492,
+    "sha256": "eaf4d5f296e8e72d34c4e588513f45b5cbb908eea259a7de9af55e185526cc28"
+  },
+  {
+    "path": "planet-search/lightcurves/21867163.npz",
+    "bytes": 972822,
+    "sha256": "66a565c12927301366e6e1ce1bc9bfa5352171d3095443e41265ab30ff1bb85f"
+  },
+  {
+    "path": "planet-search/lightcurves/219004642.npz",
+    "bytes": 2765094,
+    "sha256": "14e402d50b853f79c9f67da91112ec19dddd863a48bee8af872ee5da4dfde593"
+  },
+  {
+    "path": "planet-search/lightcurves/219085795.npz",
+    "bytes": 2505349,
+    "sha256": "f7960dd6ddee440420fef4755b433c70d05be89fecd6b25fc479bb72dae1c25b"
+  },
+  {
+    "path": "planet-search/lightcurves/219223742.npz",
+    "bytes": 1813446,
+    "sha256": "73ccbe4fa835b76bf00da4ae20a0513908c2da015cb02861b96980d7b15be4b9"
+  },
+  {
+    "path": "planet-search/lightcurves/219234564.npz",
+    "bytes": 2082133,
+    "sha256": "ed518ea4407c137fffa2aa82e2776267811c2c0edaa0d24975db0ba7173e31f4"
+  },
+  {
+    "path": "planet-search/lightcurves/219463771.npz",
+    "bytes": 3631756,
+    "sha256": "52bb6a9cec6f2777da054e6f60d5e6caa6095da576eaecf163dfe2f887e0cf3e"
+  },
+  {
+    "path": "planet-search/lightcurves/22750743.npz",
+    "bytes": 1809450,
+    "sha256": "e71271d892fe0e598fa6dab3ea8e625ab3de0bc8f8045c2c4b31c734ae7c48ee"
+  },
+  {
+    "path": "planet-search/lightcurves/229376639.npz",
+    "bytes": 315130,
+    "sha256": "7dcf7147bfb2ddc1a164bd737b80a9933ae2eb5df7456caa80a49568039f86a1"
+  },
+  {
+    "path": "planet-search/lightcurves/231861553.npz",
+    "bytes": 3348774,
+    "sha256": "963e35883de8e2331a7bbdeb9880ad535e29136e4d90d080af7f84463e520d39"
+  },
+  {
+    "path": "planet-search/lightcurves/231865504.npz",
+    "bytes": 1158534,
+    "sha256": "73cbf67a43566964975f4b8900517198eff7e372b8fc653c34a6fa121a950424"
+  },
+  {
+    "path": "planet-search/lightcurves/237759550.npz",
+    "bytes": 312412,
+    "sha256": "458184c2ddd4d0fbadf16515ddfff8df81ed834cbd40abd2618d2a0ba83a8dc6"
+  },
+  {
+    "path": "planet-search/lightcurves/238870740.npz",
+    "bytes": 5718281,
+    "sha256": "ff8f181cdc832f94bd22e3398e381e5433a5056ed5926070a7f76cbfaa213ef4"
+  },
+  {
+    "path": "planet-search/lightcurves/238950307.npz",
+    "bytes": 5821037,
+    "sha256": "bf13ecde637cdf80f454f8638365767bc11f5c3fe5376f24f8c697343c52b504"
+  },
+  {
+    "path": "planet-search/lightcurves/239137106.npz",
+    "bytes": 4063948,
+    "sha256": "3bca817c5695636d6a4756bdd41cd379b65065ea237be94b087cd984bb01a5d8"
+  },
+  {
+    "path": "planet-search/lightcurves/241606913.npz",
+    "bytes": 877279,
+    "sha256": "c8ae2a0897eb1dae9b73420a45397aa7fe635bef0c514b86439f08c6b932020b"
+  },
+  {
+    "path": "planet-search/lightcurves/241655722.npz",
+    "bytes": 1971261,
+    "sha256": "1b4223a9f3eaea6eb2ad95b00077088397d453ee9ac12ec643507768e8fbd759"
+  },
+  {
+    "path": "planet-search/lightcurves/242941982.npz",
+    "bytes": 2080082,
+    "sha256": "b31c05bb582e3c1aba50ca31c091b1fbac97a1f68e49995aa100f4df0852500b"
+  },
+  {
+    "path": "planet-search/lightcurves/244869034.npz",
+    "bytes": 2203583,
+    "sha256": "d9269bcb46a539435cc874a262b937024ee6c6a54a60410c15c96f17efff28cb"
+  },
+  {
+    "path": "planet-search/lightcurves/247042708.npz",
+    "bytes": 2037614,
+    "sha256": "512a0030dda161a93dc47eb3d59fcf44308f50d8257d9e5b2f81d05ba2a060c1"
+  },
+  {
+    "path": "planet-search/lightcurves/247463344.npz",
+    "bytes": 3922735,
+    "sha256": "f7d93cfec5f7d054a1db87cc81f8ae040703a9529b3d9faecc3c765285104767"
+  },
+  {
+    "path": "planet-search/lightcurves/256160507.npz",
+    "bytes": 1696654,
+    "sha256": "77c270f7b88da16d2b8863721d9c43a8e4502b17b064dd819105fdefdeaf6060"
+  },
+  {
+    "path": "planet-search/lightcurves/259999047.npz",
+    "bytes": 1920388,
+    "sha256": "1d82628cece7a06d038f1d3fbab5345db558ade0796264d09ffb8a1acdb6ca2c"
+  },
+  {
+    "path": "planet-search/lightcurves/260795157.npz",
+    "bytes": 4791825,
+    "sha256": "ca45f3bf5bcd8cbd3ae0911abdadcc6a3d8f1f76626b4c6e8624d4c04e1eeebf"
+  },
+  {
+    "path": "planet-search/lightcurves/260795451.npz",
+    "bytes": 4113433,
+    "sha256": "decbfbbf362805ce368733a93b0a6299ec7fe34f7a60a2d448ddaa2f03757351"
+  },
+  {
+    "path": "planet-search/lightcurves/266744225.npz",
+    "bytes": 872940,
+    "sha256": "4b39f295d281e41b6d410d2e90b8b5fe46351ba15007fbf57b85417de71e5936"
+  },
+  {
+    "path": "planet-search/lightcurves/26968755.npz",
+    "bytes": 3592654,
+    "sha256": "a05bfb8c808693f2402d423fe5a3ab5dab11dee0e96b7aa9b8abd6cd81fd15a0"
+  },
+  {
+    "path": "planet-search/lightcurves/270415707.npz",
+    "bytes": 1292781,
+    "sha256": "7472418fc39335b9a1e4b50e80fb33ecd6ef3b6d99091f72b78568c70ad119d7"
+  },
+  {
+    "path": "planet-search/lightcurves/273418879.npz",
+    "bytes": 4305392,
+    "sha256": "c81c5c2a9a94b27423e92e387d462f48c9ad6747bda3cb0bf9672e493818f7a5"
+  },
+  {
+    "path": "planet-search/lightcurves/273864083.npz",
+    "bytes": 3643358,
+    "sha256": "68475b33d586af9af71dd55957fb377ab0f74b4d57ca00c5aa7df3081a5dc5f6"
+  },
+  {
+    "path": "planet-search/lightcurves/277716959.npz",
+    "bytes": 2794247,
+    "sha256": "54cb0f968eaf1f1cb666255dd6b7fb2dc9dd089d164c66330dbdc54124404ffe"
+  },
+  {
+    "path": "planet-search/lightcurves/278962913.npz",
+    "bytes": 1283694,
+    "sha256": "e09f231424c92a9b7a06e6b962769971139c273aaa8f376768db6b1044d89ec7"
+  },
+  {
+    "path": "planet-search/lightcurves/279442159.npz",
+    "bytes": 2721264,
+    "sha256": "5623356bce75e4cd730483135a03c0c8ee877c336144eb427363960342d7011e"
+  },
+  {
+    "path": "planet-search/lightcurves/281764250.npz",
+    "bytes": 2696049,
+    "sha256": "7f4de5282adda78c0c925435e8f2d0cacaaf516a87cc0ae16cea84366dbbc143"
+  },
+  {
+    "path": "planet-search/lightcurves/283410775.npz",
+    "bytes": 1833321,
+    "sha256": "0d894c47da099234b019e4d5a068d162cf640dd8bd0153cbff052317e4ab3247"
+  },
+  {
+    "path": "planet-search/lightcurves/283729692.npz",
+    "bytes": 1063490,
+    "sha256": "9a45401ad333c66ffdf166b990fb8de22aa70dada956890499929cd6029e82dd"
+  },
+  {
+    "path": "planet-search/lightcurves/289527642.npz",
+    "bytes": 2622268,
+    "sha256": "744d734008070f3327fbaf8d7b87152f7504de8ab1be99e4bc61dfff7e3e854c"
+  },
+  {
+    "path": "planet-search/lightcurves/290653184.npz",
+    "bytes": 1043364,
+    "sha256": "1568e07e6c1906bcb7eab657caf7bded0412c9cfc2235b02e5e9689f62914b11"
+  },
+  {
+    "path": "planet-search/lightcurves/303550934.npz",
+    "bytes": 1162214,
+    "sha256": "2f0429ea06cfaaeb190ec21da7ebd38d484542cdec646b0d8e037a078dea4dc2"
+  },
+  {
+    "path": "planet-search/lightcurves/303655974.npz",
+    "bytes": 3478784,
+    "sha256": "bf4ac733d34cd26faed0e8213dc78733c894d1f9aa31df81dccc30ffb0832810"
+  },
+  {
+    "path": "planet-search/lightcurves/308616801.npz",
+    "bytes": 3175987,
+    "sha256": "1c7916ce9f9d930ffa655be442166067d20dc7770f50118edab907dd53ac1593"
+  },
+  {
+    "path": "planet-search/lightcurves/310000679.npz",
+    "bytes": 6439890,
+    "sha256": "08c77a814f75977f5b2cc24fe9c63d8464c6b1449ab1750fcf5e8e412a12ce55"
+  },
+  {
+    "path": "planet-search/lightcurves/310990132.npz",
+    "bytes": 1613757,
+    "sha256": "fac6da047d766051a023bd4a2c1910bdb6589cc2465308d813414613afab56de"
+  },
+  {
+    "path": "planet-search/lightcurves/315094546.npz",
+    "bytes": 798006,
+    "sha256": "59db38815dcfd3b3cecd92f03d9736b16223b967e5ced85ac8a5f1ecfe9ac55e"
+  },
+  {
+    "path": "planet-search/lightcurves/316935835.npz",
+    "bytes": 2176237,
+    "sha256": "2aa5ab0e494e41025ae584140f04d87a230f17edcf2a0233e8efe20fff7037c2"
+  },
+  {
+    "path": "planet-search/lightcurves/317177585.npz",
+    "bytes": 1901458,
+    "sha256": "d615b8bfe862b88be70eec29cf0c35343377658ce5cb5d71f1bf77740b60de1e"
+  },
+  {
+    "path": "planet-search/lightcurves/318967377.npz",
+    "bytes": 632421,
+    "sha256": "cb724c6ea50451f7e7ef7c2347959dfdc2d6ce09544793d7080c026e925aa56b"
+  },
+  {
+    "path": "planet-search/lightcurves/319609760.npz",
+    "bytes": 2615309,
+    "sha256": "ec0531e9518d5ed9439ba302a76cbbedc73756d3a0f7d5e925250ce5343b54d3"
+  },
+  {
+    "path": "planet-search/lightcurves/31974572.npz",
+    "bytes": 683214,
+    "sha256": "93142ecd53dcfc685fc9d18435df38d647d655610bca36545f68db7931a77ce0"
+  },
+  {
+    "path": "planet-search/lightcurves/321439183.npz",
+    "bytes": 1567035,
+    "sha256": "45dd3047bb853e5b63ca59248099abbf2b2d1911f9eb70e7f2b43499fdb77ed6"
+  },
+  {
+    "path": "planet-search/lightcurves/321684341.npz",
+    "bytes": 3955186,
+    "sha256": "f72c670f14dd0e876efe90304de3fd9c38fd458d0dd84b89203efaf52a4af00a"
+  },
+  {
+    "path": "planet-search/lightcurves/322777782.npz",
+    "bytes": 1445387,
+    "sha256": "b9184d9a2439332ced0d40f79061f366806c87602f3cb6eb2371c8a9b4a0aaf8"
+  },
+  {
+    "path": "planet-search/lightcurves/327701300.npz",
+    "bytes": 742884,
+    "sha256": "4d6fd10cd0431d7881f74f04d14353e3cc57b09d905eb4205ee42f95a2eb7788"
+  },
+  {
+    "path": "planet-search/lightcurves/327857952.npz",
+    "bytes": 2469160,
+    "sha256": "5e279582e31e329846470c2cad20fae9df0965e86a305be76483bda5d8f36942"
+  },
+  {
+    "path": "planet-search/lightcurves/331366716.npz",
+    "bytes": 1717846,
+    "sha256": "58659e08c3d7bcc5333cee52bc7e7529acd79f0a1d68310fade4e06ef32d4fa3"
+  },
+  {
+    "path": "planet-search/lightcurves/334644751.npz",
+    "bytes": 1847631,
+    "sha256": "dede2068e3b34af7e0d442057ee59ee2e135a6f8b41c895b3c3b655602fb6bfb"
+  },
+  {
+    "path": "planet-search/lightcurves/33911249.npz",
+    "bytes": 498879,
+    "sha256": "b7794afa06268c9e8a54543619708d0d492fd8faabe9b497b6dc533d9be2d65e"
+  },
+  {
+    "path": "planet-search/lightcurves/340665347.npz",
+    "bytes": 608196,
+    "sha256": "45a4b78360ae03ec6b32e52186d4f1be6edfdbe8555daf333b27d2e89d1abb98"
+  },
+  {
+    "path": "planet-search/lightcurves/344099041.npz",
+    "bytes": 2159928,
+    "sha256": "e25cabdd1eaf8b826d835f0cd1835e4abfbf90d3c679e4318ea946a178739d08"
+  },
+  {
+    "path": "planet-search/lightcurves/349920500.npz",
+    "bytes": 1393482,
+    "sha256": "732bd1b6a2116420a369dec5d43dd32c78d8c506a5f7484ec5434732c406f865"
+  },
+  {
+    "path": "planet-search/lightcurves/357012570.npz",
+    "bytes": 1182558,
+    "sha256": "380b9c0946fb09c55035e61db82e61088fd0894349f1126723ea30fa9d0414dd"
+  },
+  {
+    "path": "planet-search/lightcurves/357373129.npz",
+    "bytes": 3243923,
+    "sha256": "e35ea6afa8daf4865e16e78177508a7faf44ef5a899f0c0706367c047321f43e"
+  },
+  {
+    "path": "planet-search/lightcurves/357936741.npz",
+    "bytes": 2352144,
+    "sha256": "a121f1584f66b8283f70c526c75e614a25060485f73a07eb0728c3bbc2d37a2e"
+  },
+  {
+    "path": "planet-search/lightcurves/358015762.npz",
+    "bytes": 5346581,
+    "sha256": "1e086dc3f9a4c92c1b0c73348489eea49e7426d4a2f0857984fcb67a8c22a80a"
+  },
+  {
+    "path": "planet-search/lightcurves/358559650.npz",
+    "bytes": 1390499,
+    "sha256": "51a8ec80bd46d3c74de47cd302e051bd37e545381d03b0d1769fda41dc6d1d5b"
+  },
+  {
+    "path": "planet-search/lightcurves/358615829.npz",
+    "bytes": 2993689,
+    "sha256": "0c24c972210028adab36178af9d958f5ce83c70c1972aad7c628fbbb829ef1ce"
+  },
+  {
+    "path": "planet-search/lightcurves/364308178.npz",
+    "bytes": 704363,
+    "sha256": "fa09796484ae7b35e8454cea303c0c56cdc9ecbab12a19ae44c4d82d8d25652a"
+  },
+  {
+    "path": "planet-search/lightcurves/365670764.npz",
+    "bytes": 3326025,
+    "sha256": "0088de27c8509af64d9880499d6ec7555fcaf6910c36de75625568413429c1f5"
+  },
+  {
+    "path": "planet-search/lightcurves/3657911.npz",
+    "bytes": 1835467,
+    "sha256": "1eebb06dc8b698f695d1eeeabe17227b6ca197a8ede13703e68d8de023b0b7d7"
+  },
+  {
+    "path": "planet-search/lightcurves/366306106.npz",
+    "bytes": 925450,
+    "sha256": "141bf7f3c2f33bf97af0a358caf0472ce33cec6e69751b195d13f6741b1f2f9f"
+  },
+  {
+    "path": "planet-search/lightcurves/3664898.npz",
+    "bytes": 3704053,
+    "sha256": "642faaac7bb1ac24fe054afe005bb732f700e1514c4b79aef3a8fe12ef4a8fa0"
+  },
+  {
+    "path": "planet-search/lightcurves/372549530.npz",
+    "bytes": 613039,
+    "sha256": "fc554c979e69d0c63cca63c60859bc558541402063c4319beaa49934b8b0c448"
+  },
+  {
+    "path": "planet-search/lightcurves/372795449.npz",
+    "bytes": 3625771,
+    "sha256": "fff952c7c4ec2bf4ed114ef7d3797b1df6038e102e4ef38ca679b8fe11a4ca76"
+  },
+  {
+    "path": "planet-search/lightcurves/385444964.npz",
+    "bytes": 2698255,
+    "sha256": "219c53178389273e414bef6ded80548c6f1bf44e07c796420fc51cede639ddcc"
+  },
+  {
+    "path": "planet-search/lightcurves/387467675.npz",
+    "bytes": 2478288,
+    "sha256": "a93e3a99491cf2b067053d9bb9a1d6fa87bd9295f9b2557dca04d5aa9f57b31d"
+  },
+  {
+    "path": "planet-search/lightcurves/394015919.npz",
+    "bytes": 3941637,
+    "sha256": "1ddb1c24397333d003c68e3b1cbfdde634e98ce5be6c01438198e501adee2889"
+  },
+  {
+    "path": "planet-search/lightcurves/394517838.npz",
+    "bytes": 1188807,
+    "sha256": "13e9375e2bd49764d5c5b8098324306496dc9c468fb2c3341b3a5a7d5dcb32f1"
+  },
+  {
+    "path": "planet-search/lightcurves/396742365.npz",
+    "bytes": 2905583,
+    "sha256": "dcc564a0946acd16632b2ee9fcbaa2551720cf3d6fc993daf778f145e5044649"
+  },
+  {
+    "path": "planet-search/lightcurves/396810588.npz",
+    "bytes": 2262412,
+    "sha256": "0e31560ab598cdff49527bee7fcb9c6e42622a2e507107c451d986a48571f745"
+  },
+  {
+    "path": "planet-search/lightcurves/401667290.npz",
+    "bytes": 3568138,
+    "sha256": "908e6c8eaafe9d474d4e3819e1367d262bb9880250dd88a6d40071dba37cfb09"
+  },
+  {
+    "path": "planet-search/lightcurves/402099449.npz",
+    "bytes": 719636,
+    "sha256": "37f8171db2e5d366833ddb4876d8c3cb92abef44c66332f83295c82cf541fa08"
+  },
+  {
+    "path": "planet-search/lightcurves/402104884.npz",
+    "bytes": 2150493,
+    "sha256": "db4c4bbb445ccb742f60ff1d3099ff788fe32d2c4bc6b35061f130b0397d743a"
+  },
+  {
+    "path": "planet-search/lightcurves/403802333.npz",
+    "bytes": 2486289,
+    "sha256": "16ce02f592a37bf2387b62cf9da1ef18137f9eb6101c0b208d3c0aa44392ae20"
+  },
+  {
+    "path": "planet-search/lightcurves/406343361.npz",
+    "bytes": 3129580,
+    "sha256": "63904141f5928805113b7a30ac618e210eb37d786af19d7ade37f065ec601e2d"
+  },
+  {
+    "path": "planet-search/lightcurves/407559875.npz",
+    "bytes": 2201442,
+    "sha256": "151d008bdbb8651cf38145159abd7d7a942fff6c9f9306a707246fb6dacf9e36"
+  },
+  {
+    "path": "planet-search/lightcurves/407688400.npz",
+    "bytes": 1397458,
+    "sha256": "059d42a0320feee89a8ba7e1ef71d6d52cfd47b110c2e9667ed4841ea16ce830"
+  },
+  {
+    "path": "planet-search/lightcurves/408549305.npz",
+    "bytes": 3700367,
+    "sha256": "1509d11f93ec13999932f68835ae7d7e7bee603cc7312e088c6a907f9d30d881"
+  },
+  {
+    "path": "planet-search/lightcurves/410153553.npz",
+    "bytes": 3247343,
+    "sha256": "249e176100f9b2a084e2cff2cb43d3e891665c9f95ac1aea98384b98181e6c0a"
+  },
+  {
+    "path": "planet-search/lightcurves/410441291.npz",
+    "bytes": 1330069,
+    "sha256": "d2fc48d4e2d5694214c76519f5738b7c0478a89c431eec88ca5d4adb22d1604d"
+  },
+  {
+    "path": "planet-search/lightcurves/415508270.npz",
+    "bytes": 2356015,
+    "sha256": "aa3527c4d60c357d8be3628dec6780debc2a44c5c1cb69ed45375c83c0b5b3db"
+  },
+  {
+    "path": "planet-search/lightcurves/415563103.npz",
+    "bytes": 3610588,
+    "sha256": "b448c4a27e612ff19dfb8afc8564c31c82aabc62f82e3c751cda2570b678c196"
+  },
+  {
+    "path": "planet-search/lightcurves/415733167.npz",
+    "bytes": 2809740,
+    "sha256": "3ba489674c164e442fa92115e158884fed6679eeee62858ba64c226d65072e6c"
+  },
+  {
+    "path": "planet-search/lightcurves/416714970.npz",
+    "bytes": 932286,
+    "sha256": "7ee62e9aba562d8148e93c8338162c1196b1abede957428b824ded32a0f0c1c6"
+  },
+  {
+    "path": "planet-search/lightcurves/418206213.npz",
+    "bytes": 1856776,
+    "sha256": "914920d3543093c18971a16daa6d671ed425144d7902130b4096219e78a36ee8"
+  },
+  {
+    "path": "planet-search/lightcurves/42071226.npz",
+    "bytes": 4266117,
+    "sha256": "239c7cdeae22a03c98c489343ec5661f0ea110805f1c4a38c8fcb8506d642106"
+  },
+  {
+    "path": "planet-search/lightcurves/4263857.npz",
+    "bytes": 935036,
+    "sha256": "b3ccec2b2ec30ac6fe8bf81794b7b28d26e305f162d1a8b666bd4c173ae36ab8"
+  },
+  {
+    "path": "planet-search/lightcurves/427162854.npz",
+    "bytes": 2106292,
+    "sha256": "6076cae11d019c95eed2912095ea838674cb1426f146813481479fb1cecb8ab9"
+  },
+  {
+    "path": "planet-search/lightcurves/427289369.npz",
+    "bytes": 1159041,
+    "sha256": "eddad563988c6a0665c767e9c775455efb0c6c87dc4d3160e72d423368f2c788"
+  },
+  {
+    "path": "planet-search/lightcurves/428988656.npz",
+    "bytes": 7193867,
+    "sha256": "8b6008290a8e4e0e0bc0c8de7f27d3e4cb7cca5fb5592615c9448c77d46d4ef1"
+  },
+  {
+    "path": "planet-search/lightcurves/430044614.npz",
+    "bytes": 2051787,
+    "sha256": "82bd4003f90c69469d4f7ff2f3befd049909d516a2766bfc2ae3c7550205402e"
+  },
+  {
+    "path": "planet-search/lightcurves/435903825.npz",
+    "bytes": 2184307,
+    "sha256": "2cbc2437d0bb715fa17924baa1656a97f26b95143cd18bae92836670964e3e81"
+  },
+  {
+    "path": "planet-search/lightcurves/436248798.npz",
+    "bytes": 1876676,
+    "sha256": "869c4f30a1013f8f550911fd0ca82fb47b46018d3f0e14cb6c165a98c91ec437"
+  },
+  {
+    "path": "planet-search/lightcurves/436248822.npz",
+    "bytes": 1781826,
+    "sha256": "1ee5fb52998125876f69106595ea44a7fb2a3d91c60af10aac442a0eeb16e80b"
+  },
+  {
+    "path": "planet-search/lightcurves/436452961.npz",
+    "bytes": 904050,
+    "sha256": "e7bccd22dea39e80c31c5a4c945eef191654a43003b3ceae3d2c84cf5436d723"
+  },
+  {
+    "path": "planet-search/lightcurves/436856183.npz",
+    "bytes": 1830066,
+    "sha256": "db64f3110f47539a2ba34ac59d449696bd6447363298c3ae71e8b490930b3e0e"
+  },
+  {
+    "path": "planet-search/lightcurves/443170340.npz",
+    "bytes": 325917,
+    "sha256": "99d5e5094ae555e813c87f1872ddb84ae7165ebf71074a3a54304b56ba9ca8be"
+  },
+  {
+    "path": "planet-search/lightcurves/452465896.npz",
+    "bytes": 5459689,
+    "sha256": "7a250042bf95d268811da75d1285c051d302641bc744e02d5f2f9d7413bfc4ad"
+  },
+  {
+    "path": "planet-search/lightcurves/452500048.npz",
+    "bytes": 1546327,
+    "sha256": "be9df00a3cab7dd39e3fb416c6849c20a1a80188f813ecda3156d7b0a5e5b81c"
+  },
+  {
+    "path": "planet-search/lightcurves/452846176.npz",
+    "bytes": 638628,
+    "sha256": "093bbcc5dbba073ff07e04bbec03d03e0b79f8cd4382858793481f0a5a40d7cb"
+  },
+  {
+    "path": "planet-search/lightcurves/454012528.npz",
+    "bytes": 1937198,
+    "sha256": "a4687609a7c3b6b06a35cd281d8715b815cc6bcb431b4933906d48de32204f42"
+  },
+  {
+    "path": "planet-search/lightcurves/456716455.npz",
+    "bytes": 813109,
+    "sha256": "9fa72bcf38354c406a08bcea1122474b4fea86a2a3f1bb6e96cd799b094c4c25"
+  },
+  {
+    "path": "planet-search/lightcurves/467361658.npz",
+    "bytes": 3298300,
+    "sha256": "306ab0138ed323925d95492ad2cb7284fda35327b55672582ac3fbe8bb212279"
+  },
+  {
+    "path": "planet-search/lightcurves/469905613.npz",
+    "bytes": 2235702,
+    "sha256": "b8a2cfd708762c77f665b71915940b8631f760c07e0edea45030c595f4a513dc"
+  },
+  {
+    "path": "planet-search/lightcurves/47423224.npz",
+    "bytes": 2072556,
+    "sha256": "3d1d6a09828163af48ce5189a25ff2f0f91938f26c26ef8ca7ccaa00d40810a3"
+  },
+  {
+    "path": "planet-search/lightcurves/48368656.npz",
+    "bytes": 863914,
+    "sha256": "2bb1de709803cb31d9971e9b2cd4d85ba354d56e2fcb67005371a408f9f90525"
+  },
+  {
+    "path": "planet-search/lightcurves/50726077.npz",
+    "bytes": 989037,
+    "sha256": "c27a7b872febfdb7ff820766184084f953effbd2bc0195f3a5027672fd7b2319"
+  },
+  {
+    "path": "planet-search/lightcurves/53558817.npz",
+    "bytes": 353102,
+    "sha256": "9465973ed21885f67c7612e9e9b07bcc0708e8d646a33635caa4f9d3216a392e"
+  },
+  {
+    "path": "planet-search/lightcurves/57746634.npz",
+    "bytes": 1961888,
+    "sha256": "0b24a14b778d0d6f586ab033004b261533fa6b8df8930a64ad4dfc48f42bc595"
+  },
+  {
+    "path": "planet-search/lightcurves/68396286.npz",
+    "bytes": 1665516,
+    "sha256": "d85a1425b2adeee2dc663a7a1658efd75a73008f3d2c341dc87f21278f683275"
+  },
+  {
+    "path": "planet-search/lightcurves/69912980.npz",
+    "bytes": 1929680,
+    "sha256": "77658adc7dbb4bef84a5db1909af17f82e5957424db65ecd536fc424a4b1c0da"
+  },
+  {
+    "path": "planet-search/lightcurves/72604026.npz",
+    "bytes": 1380944,
+    "sha256": "ccc6fd590727e1a11d27da631274a43a24f764e83560202a1e1622a5f1e91d2b"
+  },
+  {
+    "path": "planet-search/lightcurves/73232846.npz",
+    "bytes": 1404785,
+    "sha256": "16911b80c128c5d185133069428a22742c5a3305eed7f51e83ea972f7a331948"
+  },
+  {
+    "path": "planet-search/lightcurves/7412956.npz",
+    "bytes": 648282,
+    "sha256": "13f76b6bce2e42a7d8f5479b2f52222854d8f07f40a861dd6ca582cbdce7357f"
+  },
+  {
+    "path": "planet-search/lightcurves/77612635.npz",
+    "bytes": 2002645,
+    "sha256": "90c1edcb31f344eb1cfa6719c6187229906c2904fef85d5b2671ba288d9ec185"
+  },
+  {
+    "path": "planet-search/lightcurves/7810044.npz",
+    "bytes": 705972,
+    "sha256": "3d3916cb27a6afe74d3e7c8efb4dcfd2c533a3e66d4a5bfdd826c00e95c51f94"
+  },
+  {
+    "path": "planet-search/lightcurves/78674847.npz",
+    "bytes": 364904,
+    "sha256": "e30fd7446c40913c96df6f36277be23da2ee94fa0e6a6ddc41738f5009a418f1"
+  },
+  {
+    "path": "planet-search/lightcurves/87869909.npz",
+    "bytes": 803487,
+    "sha256": "063ec6fa868905eb88bb9e3839e7220f6410dc20d62367a23b000d211f7225f6"
+  },
+  {
+    "path": "planet-search/lightcurves/93534003.npz",
+    "bytes": 859503,
+    "sha256": "7eb6805555dac1bd60f84bcb11fbd23d1fbd0ffcbd6eb266f38f896744834587"
+  },
+  {
+    "path": "planet-search/lightcurves/93716498.npz",
+    "bytes": 2066881,
+    "sha256": "b214709320ad3b0e36de61d387d44f53b31c51930ee355177648a844bbd00117"
+  },
+  {
+    "path": "planet-search/lightcurves/94122818.npz",
+    "bytes": 651645,
+    "sha256": "af6dcd8243137070d4607a4c1b38f6b28821f9a4a7b0ad560b7682750a6b9878"
+  },
+  {
+    "path": "planet-search/lightcurves/94753488.npz",
+    "bytes": 585978,
+    "sha256": "3a62b7759925df4908e1097aba526a497e3e79b173ac2f805ed97b15cb116936"
+  },
+  {
+    "path": "planet-search/lightcurves/95431305.npz",
+    "bytes": 2173666,
+    "sha256": "159ca79ae2f51a9386ba7fcf7cd138817aa9b2622667d2155d4249c2883743d3"
+  },
+  {
+    "path": "planet-search/lightcurves/95618424.npz",
+    "bytes": 2127629,
+    "sha256": "cf43d34b5a4362c89f2fb587a20b6040fb82b1fa146a9cb35fb6a2bf148238e8"
+  },
+  {
+    "path": "planet-search/lightcurves/99937206.npz",
+    "bytes": 1581783,
+    "sha256": "3435e2ec3e4f2a7e18ffe9717af56f54046af490e3b1e1ff7ca110124f7be246"
+  },
+  {
+    "path": "planet-search/pixels/94753488_difference.npz",
+    "bytes": 4290,
+    "sha256": "0d2eea8dbc7fc54639daf75450b2538c8c7101bd6bde2c4aacbeee4298a908cc"
+  },
+  {
+    "path": "planet-search/pixels/tess-s0039-1-4_250.328904_-35.008769_11x11_astrocut.fits",
+    "bytes": 9685440,
+    "sha256": "8403564b8297124d95c42f92bd17234cc25a65527b7a67839eb73ac8b45705ee"
+  }
+]

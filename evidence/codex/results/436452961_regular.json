@@ -1,0 +1,185 @@
+{
+  "tic": 436452961,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 14.41837022511315,
+      "t0": 1697.4002829617752,
+      "duration_hr": 1.7521915898436493,
+      "depth_ppm": 4381.129943702875,
+      "bls_snr": 13.231545694521369,
+      "coarse_snr": 13.229106540046397,
+      "coarse_grid_count": 3801,
+      "rp_earth_approx": 4.837061370379375,
+      "discovery": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": 0.004381106567262068,
+        "depth_err": 0.00033111248261175617,
+        "snr": 13.2314750948218,
+        "odd_even_sigma": NaN,
+        "secondary": -7.789005527270696e-05,
+        "secondary_err": 8.232469814052376e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1697.40028,
+            4381.1,
+            331.1,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 4,
+        "n_good_events": 3,
+        "depth": -2.3467078591375525e-05,
+        "depth_err": 8.950153271788636e-05,
+        "snr": -0.26219750521306734,
+        "odd_even_sigma": 1.8825906786573932,
+        "secondary": -3.0535439210224053e-06,
+        "secondary_err": 7.96987788424534e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.75,
+        "events": [
+          [
+            126,
+            3514.11493,
+            -1009.7,
+            391.6,
+            0.19
+          ],
+          [
+            127,
+            3528.5333,
+            -16.5,
+            152.4,
+            1.0
+          ],
+          [
+            128,
+            3542.95167,
+            -117.7,
+            159.2,
+            1.0
+          ],
+          [
+            129,
+            3557.37004,
+            251.1,
+            167.0,
+            0.95
+          ]
+        ]
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 20.17847503977967,
+      "t0": 1699.9388673417834,
+      "duration_hr": 4.611181107379217,
+      "depth_ppm": 560.5670637047939,
+      "bls_snr": 8.896663339773115,
+      "coarse_snr": 8.773407926312116,
+      "coarse_grid_count": 3801,
+      "rp_earth_approx": 1.7302239482168402,
+      "discovery": {
+        "n_events": 4,
+        "n_good_events": 4,
+        "depth": 0.000560007851808755,
+        "depth_err": 6.300868564945467e-05,
+        "snr": 8.887788184066045,
+        "odd_even_sigma": 3.5699017780639677,
+        "secondary": 5.0348107282466154e-05,
+        "secondary_err": 5.865738408731023e-05,
+        "max_ses_frac": 0.7560330382236525,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1699.93887,
+            130.2,
+            220.7,
+            0.98
+          ],
+          [
+            36,
+            2426.36397,
+            337.5,
+            107.7,
+            0.9
+          ],
+          [
+            37,
+            2446.54244,
+            913.0,
+            123.6,
+            0.69
+          ],
+          [
+            55,
+            2809.75499,
+            621.2,
+            112.0,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": -2.495184017810252e-05,
+        "depth_err": 7.143103240806961e-05,
+        "snr": -0.3493137273385355,
+        "odd_even_sigma": 0.28459419006592207,
+        "secondary": 6.469388318791463e-05,
+        "secondary_err": 7.856904235389929e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            91,
+            3536.1801,
+            -45.8,
+            102.3,
+            0.98
+          ],
+          [
+            92,
+            3556.35857,
+            -5.1,
+            99.8,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "e7bccd22dea39e80c31c5a4c945eef191654a43003b3ceae3d2c84cf5436d723",
+  "holdout_sectors": [
+    81,
+    82
+  ],
+  "discovery_sectors": [
+    14,
+    41,
+    55
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 8112,
+  "n_holdout": 6316,
+  "rho_sun": 2.1280928334311446,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 3.43
+}

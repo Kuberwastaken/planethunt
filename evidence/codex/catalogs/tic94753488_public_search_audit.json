@@ -1,0 +1,25 @@
+{
+  "tic": 94753488,
+  "checked_utc": "2026-10-10T13:32:47.412656+00:00",
+  "identity_source": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=TIC+94753488&output.format=ASCII",
+  "verified_aliases": [
+    "L 483-1",
+    "NLTT 43334",
+    "TYC 7354-660-1",
+    "2MASS J16411894-3500314",
+    "Gaia DR3 6020784528217088000"
+  ],
+  "public_search_queries": [
+    "\"TIC 94753488\" planet OR transit OR TESS",
+    "\"94753488\" site:github.com",
+    "\"94753488\" site:x.com",
+    "\"TYC 7354-660-1\" OR \"NLTT 43334\" OR \"L 483-1\" astronomy planet",
+    "\"L 483-1\" \"TESS\"",
+    "\"NLTT 43334\"",
+    "\"2MASS J16411894-3500314\"",
+    "\"TYC 7354-660-1\" planet"
+  ],
+  "result": "No relevant published planet/transit report identified. Some broad alias queries returned unrelated legal pages. Exact TIC/site-limited queries returned no results.",
+  "limitations": "Search engine coverage of X and GitHub is incomplete; no authenticated internal searches were performed. No-match does not establish novelty. Primary SIMBAD and Gaia identity/astrometry were retrieved; no primary planet-discovery paper for this target was found.",
+  "scientific_status": "Unresolved periodic photometric signal; no planet claim."
+}

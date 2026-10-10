@@ -1,0 +1,7 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.astrophysical_parameters+WHERE+source_id%3D6020784528217088000",
+  "requested_utc": "2026-10-10T13:28:12.540811+00:00",
+  "status": 200,
+  "bytes": 5393,
+  "sha256": "611591fa121f1d49637d5d57d05beac4a9bce60a31fc1991293f420c0dee1c98"
+}

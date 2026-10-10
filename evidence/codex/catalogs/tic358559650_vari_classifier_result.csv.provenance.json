@@ -1,0 +1,6 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+v.%2A+FROM+gaiadr3.vari_classifier_result+v+JOIN+gaiadr3.gaia_source+g+ON+v.source_id%3Dg.source_id+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cg.ra%2Cg.dec%29%2CCIRCLE%28%27ICRS%27%2C151.184405%2C-42.183957%2C0.03333333333333333%29%29",
+  "query": "SELECT v.* FROM gaiadr3.vari_classifier_result v JOIN gaiadr3.gaia_source g ON v.source_id=g.source_id WHERE 1=CONTAINS(POINT('ICRS',g.ra,g.dec),CIRCLE('ICRS',151.184405,-42.183957,0.03333333333333333))",
+  "sha256": "b4daba49fea64b7fffb91c75741f685401161cacc95440b4cab0c4cb7f2fc5d9",
+  "retrieved_utc": "2026-10-10T13:42:30.375339+00:00"
+}

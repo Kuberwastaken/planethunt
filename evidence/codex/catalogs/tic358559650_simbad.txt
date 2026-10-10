@@ -1,0 +1,50 @@
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.10CEST15:31:46
+
+TIC 358559650
+-------------
+
+Object L 391-38  ---  PM*  ---  OID=@8871718   (@@-1,255)  ---  coobox=20560
+
+Coordinates(ICRS,ep=J2000,eq=2000): 10 04 44.0405581512  -42 10 59.920690872 (Opt ) A [0.1021 0.1109 90] 2020yCat.1350....0G
+Coordinates(FK4,ep=B1950,eq=1950): 10 02 38.9262155035  -41 56 16.594006478
+Coordinates(Gal,ep=J2000,eq=2000): 272.8332112804156  +10.7417490542737
+hierarchy counts: #parents=0, #children=0, #siblings=0
+Proper motions: 150.470 -145.206 [0.130 0.146 90] A 2020yCat.1350....0G
+Parallax: 20.3587 [0.1453] A 2020yCat.1350....0G
+Radial Velocity: 7.16 [0.85] A 2020AJ....160...83S
+Redshift: 0.000024 [0.000003] A 2020AJ....160...83S
+cz: 7.16 [0.85] A 2020AJ....160...83S
+Flux B : 13.27 [0.05] D 2012yCat.1322....0Z
+Flux V : 11.99 [0.02] D 2012yCat.1322....0Z
+Flux G : 11.459099 [0.002774] C 2020yCat.1350....0G
+Flux R : 11.62 [0.05] E 2009yCat.1315....0Z
+Flux I : 10.43 [0.09] C 2005yCat.2263....0D
+Flux J : 9.260 [0.023] C 2003yCat.2246....0C
+Flux H : 8.58 [0.05] C 2003yCat.2246....0C
+Flux K : 8.374 [0.024] C 2003yCat.2246....0C
+Flux g : 12.67 [0.03] D 2012yCat.1322....0Z
+Flux r : 11.46 [0.03] D 2012yCat.1322....0Z
+Flux i : 10.77 [0.01] D 2012yCat.1322....0Z
+Spectral type: ~ ~ ~
+Morphological type: ~ ~ ~
+Angular size:     ~     ~   ~ (~)  ~ ~
+
+Identifiers (14):
+   TIC 358559650                        GALAH 170507006201397                Gaia DR3 5418555552665758080       
+   RAVE J100444.0-421100                2MASS J10044404-4211000              UCAC3 96-90646                     
+   UCAC4 240-041820                     USNO-B1.0 0478-00254911              USNO-B1.0 0478-00254910            
+   DENIS J100443.9-421059               PPMX J100444.0-421100                Gaia DR2 5418555552665758080       
+   NLTT 23358                           L 391-38                                                                
+
+Bibcodes  1850-2026 () (9):
+  2025PASP..137j4402T  2024AJ....167..139T  2023AJ....165..267H  2021A&A...649A...6G
+  2021MNRAS.506..150B  2020AJ....160...83S  2017AJ....153...75K  2013AJ....146..134K
+  1995yCat.1098....0L                                    
+
+Measures (distance:4  Fe_H:4  PLX:3  PM:2  velocities:3  ):
+distance:4Fe_H:4PLX:3PM:2velocities:3
+
+Notes (0) :
+
+================================================================================
+

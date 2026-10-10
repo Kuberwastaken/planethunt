@@ -1,0 +1,168 @@
+{
+  "tic": 3657911,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 16.263430736805404,
+      "t0": 1643.123593630531,
+      "duration_hr": 4.231526332283676,
+      "depth_ppm": 305.8444088825912,
+      "bls_snr": 11.425679393014773,
+      "coarse_snr": 11.25677485039574,
+      "coarse_grid_count": 5522,
+      "rp_earth_approx": 0.7648584164872135,
+      "discovery": {
+        "n_events": 3,
+        "n_good_events": 3,
+        "depth": 0.00030555506236666137,
+        "depth_err": 2.6768159543280454e-05,
+        "snr": 11.414870038884093,
+        "odd_even_sigma": 2.115070851720464,
+        "secondary": -8.87332066346779e-06,
+        "secondary_err": 2.0423272139114856e-05,
+        "max_ses_frac": 0.6941587526573162,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1643.12359,
+            565.7,
+            62.6,
+            0.75
+          ],
+          [
+            88,
+            3074.3055,
+            120.8,
+            41.9,
+            1.0
+          ],
+          [
+            89,
+            3090.56893,
+            373.7,
+            41.9,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 0,
+        "n_good_events": 0,
+        "depth": NaN,
+        "depth_err": NaN,
+        "snr": NaN,
+        "odd_even_sigma": NaN,
+        "secondary": 0.0001548140493947517,
+        "secondary_err": 0.00020916738241262783,
+        "max_ses_frac": NaN,
+        "frac_neg_events": NaN,
+        "events": []
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 13.084922651967835,
+      "t0": 1628.573388783719,
+      "duration_hr": 2.8112754201809125,
+      "depth_ppm": 212.4825812163659,
+      "bls_snr": 8.659940218864412,
+      "coarse_snr": 8.930269310372712,
+      "coarse_grid_count": 5522,
+      "rp_earth_approx": 0.637517989126504,
+      "discovery": {
+        "n_events": 5,
+        "n_good_events": 5,
+        "depth": 0.00021206107167815797,
+        "depth_err": 2.453626420578559e-05,
+        "snr": 8.642761175849847,
+        "odd_even_sigma": 0.5735308938274666,
+        "secondary": -5.535245947102594e-05,
+        "secondary_err": 2.4308000400313637e-05,
+        "max_ses_frac": 0.6558913278333435,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1628.57339,
+            160.3,
+            74.0,
+            1.0
+          ],
+          [
+            57,
+            2374.41398,
+            185.2,
+            51.9,
+            1.0
+          ],
+          [
+            58,
+            2387.4989,
+            296.5,
+            51.0,
+            1.0
+          ],
+          [
+            111,
+            3080.9998,
+            207.4,
+            53.4,
+            0.95
+          ],
+          [
+            112,
+            3094.08473,
+            181.4,
+            51.8,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": 0.00010961364142196866,
+        "depth_err": 0.0001373789567067586,
+        "snr": 0.7978925160710295,
+        "odd_even_sigma": NaN,
+        "secondary": -9.474885941549153e-05,
+        "secondary_err": 0.0001373789567067586,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            194,
+            4167.04838,
+            109.6,
+            137.4,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 2,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "holdout_sectors": [
+    103
+  ],
+  "discovery_sectors": [
+    12,
+    39,
+    65
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 10335,
+  "n_holdout": 1452,
+  "rho_sun": 6.08973998520925,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 11.68
+}

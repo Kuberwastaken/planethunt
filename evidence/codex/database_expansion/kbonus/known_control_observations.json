@@ -1,0 +1,198 @@
+{
+  "status": "COMPLETE",
+  "msg": "",
+  "data": [
+    {
+      "intentType": "science",
+      "obs_collection": "HLSP",
+      "provenance_name": "KBONUS-BKG",
+      "instrument_name": "Kepler Photometer",
+      "project": "Kepler",
+      "filters": "KEPLER",
+      "wave_region": "Optical",
+      "target_name": "Gaia DR3 2102053446751282944",
+      "target_classification": null,
+      "obs_id": "hlsp_kbonus-bkg_kepler_kepler_kic-007603200_kepler_v1.0",
+      "s_ra": 290.3814445584306,
+      "s_dec": 43.29303835492146,
+      "dataproduct_type": "timeseries",
+      "proposal_pi": "Jorge martinez-Palomera",
+      "calib_level": 4,
+      "t_min": 54953.03907252848,
+      "t_max": 56423.50139254052,
+      "t_exptime": 1765.464,
+      "wavelength_region": "Optical",
+      "em_min": 418.4,
+      "em_max": 905,
+      "obs_title": null,
+      "t_obs_release": 60151.64557861,
+      "proposal_id": "N/A",
+      "proposal_type": null,
+      "sequence_number": -999,
+      "s_region": "CIRCLE 290.3814445584306 43.29303835492146 0.0011111111111111111",
+      "jpegURL": null,
+      "dataURL": "mast:HLSP/kbonus-bkg/lcs/0076/007603200/hlsp_kbonus-bkg_kepler_kepler_kic-007603200_kepler_v1.0_lc.fits",
+      "dataRights": "PUBLIC",
+      "mtFlag": false,
+      "srcDen": null,
+      "obsid": 186980104,
+      "objID": 338429015,
+      "wave_min": 418.4,
+      "wave_max": 905
+    }
+  ],
+  "fields": [
+    {
+      "name": "intentType",
+      "type": "string"
+    },
+    {
+      "name": "obs_collection",
+      "type": "string"
+    },
+    {
+      "name": "provenance_name",
+      "type": "string"
+    },
+    {
+      "name": "instrument_name",
+      "type": "string"
+    },
+    {
+      "name": "project",
+      "type": "string"
+    },
+    {
+      "name": "filters",
+      "type": "string"
+    },
+    {
+      "name": "wave_region",
+      "type": "string"
+    },
+    {
+      "name": "target_name",
+      "type": "string"
+    },
+    {
+      "name": "target_classification",
+      "type": "string"
+    },
+    {
+      "name": "obs_id",
+      "type": "string"
+    },
+    {
+      "name": "s_ra",
+      "type": "float"
+    },
+    {
+      "name": "s_dec",
+      "type": "float"
+    },
+    {
+      "name": "dataproduct_type",
+      "type": "string"
+    },
+    {
+      "name": "proposal_pi",
+      "type": "string"
+    },
+    {
+      "name": "calib_level",
+      "type": "int"
+    },
+    {
+      "name": "t_min",
+      "type": "float"
+    },
+    {
+      "name": "t_max",
+      "type": "float"
+    },
+    {
+      "name": "t_exptime",
+      "type": "float"
+    },
+    {
+      "name": "wavelength_region",
+      "type": "string"
+    },
+    {
+      "name": "em_min",
+      "type": "float"
+    },
+    {
+      "name": "em_max",
+      "type": "float"
+    },
+    {
+      "name": "obs_title",
+      "type": "string"
+    },
+    {
+      "name": "t_obs_release",
+      "type": "float"
+    },
+    {
+      "name": "proposal_id",
+      "type": "string"
+    },
+    {
+      "name": "proposal_type",
+      "type": "string"
+    },
+    {
+      "name": "sequence_number",
+      "type": "int"
+    },
+    {
+      "name": "s_region",
+      "type": "string"
+    },
+    {
+      "name": "jpegURL",
+      "type": "string"
+    },
+    {
+      "name": "dataURL",
+      "type": "string"
+    },
+    {
+      "name": "dataRights",
+      "type": "string"
+    },
+    {
+      "name": "mtFlag",
+      "type": "boolean"
+    },
+    {
+      "name": "srcDen",
+      "type": "float"
+    },
+    {
+      "name": "obsid",
+      "type": "string"
+    },
+    {
+      "name": "objID",
+      "type": "string"
+    },
+    {
+      "name": "wave_min",
+      "type": "float"
+    },
+    {
+      "name": "wave_max",
+      "type": "float"
+    }
+  ],
+  "paging": {
+    "page": 1,
+    "pageSize": 20,
+    "pagesFiltered": 1,
+    "rows": 1,
+    "rowsFiltered": 1,
+    "rowsTotal": 1
+  }
+}

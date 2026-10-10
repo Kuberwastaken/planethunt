@@ -1,0 +1,26 @@
+{
+  "identifiers": [
+    "HD 870",
+    "GJ 2001",
+    "HIP 1031",
+    "Gaia DR3 4918476567469050624"
+  ],
+  "simbad_type": "high proper motion star",
+  "simbad_children": 0,
+  "searched_periods_days": [
+    0.4817802814643777,
+    0.38298222843494045
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/2209.01125",
+      "primary_source_checked": "https://wrap.warwick.ac.uk/id/eprint/168911/7/WRAP-RVSPY-Radial-Velocity-Survey-for-Planets-around-Young-Stars-Target-characterization-high-cadence-survey-2022.pdf",
+      "section": "Table 4, paper page 22",
+      "finding": "HD870: RV rms 5.8m/s, TESS periods 5.7d,9.7d,3.8d; adopted rotation 10+/-1d. No listed RV periodicity."
+    }
+  ],
+  "conclusion": "No published match for either short period identified. Known longer-period photometric variability may affect detrending.",
+  "checked_utc": "2026-10-10T13:22:19.970064+00:00",
+  "simbad_file": "tic201293664_simbad.txt",
+  "simbad_sha256": "b80f69cb767c3a8af5383a0c73af7d0324a7426082b3e61dd5bbcd98fd7482fd"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Ctic_id%2Cpl_orbper%2Cpl_orbpererr1%2Cpl_orbpererr2%2Cpl_tranmid%2Cpl_tranmiderr1%2Cpl_tranmiderr2%2Cpl_trandur%2Cpl_trandurerr1%2Cpl_trandurerr2%2Ctran_flag%2Cpl_refname%2Cdisc_facility+from+ps+where+default_flag%3D1+and+tic_id+in+%28%27TIC+279741379%27%2C%27TIC+425997655%27%2C%27TIC+300812741%27%2C%27TIC+300710077%27%2C%27TIC+307210830%27%29&format=csv",
+  "retrieved_utc": "2026-10-10T13:39:51.054749+00:00",
+  "sha256": "6e1f68132d05fafda95e7fa527323fbcd63aca910851bb5a3991c1be222cea80",
+  "query": "select pl_name,hostname,tic_id,pl_orbper,pl_orbpererr1,pl_orbpererr2,pl_tranmid,pl_tranmiderr1,pl_tranmiderr2,pl_trandur,pl_trandurerr1,pl_trandurerr2,tran_flag,pl_refname,disc_facility from ps where default_flag=1 and tic_id in ('TIC 279741379','TIC 425997655','TIC 300812741','TIC 300710077','TIC 307210830')"
+}

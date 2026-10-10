@@ -1,0 +1,6 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.nss_acceleration_astro+WHERE+source_id%3D5418555552665758080",
+  "query": "SELECT * FROM gaiadr3.nss_acceleration_astro WHERE source_id=5418555552665758080",
+  "sha256": "520367912bb795277a88f0fa8b71d8fca80d28d749daabb77cdfb19aedec79a4",
+  "retrieved_utc": "2026-10-10T13:41:24.429887+00:00"
+}

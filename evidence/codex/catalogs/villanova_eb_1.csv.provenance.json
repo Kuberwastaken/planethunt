@@ -1,0 +1,7 @@
+{
+  "url": "https://tessebs.villanova.edu/search_results?display_format=csv&order_by=tic__tess_id&then_order_by=none&incat_only=on&c=tic__tess_id&c=tic__ra&c=tic__dec&c=bjd0&c=period&c=morph_coeff",
+  "requested_utc": "2026-10-10T13:11:39.164087+00:00",
+  "status": 200,
+  "bytes": 1762059,
+  "sha256": "5cb433378d72c922c358d9242b9cb9155baa2a2cfe63084a4c212af41f44f0ad"
+}

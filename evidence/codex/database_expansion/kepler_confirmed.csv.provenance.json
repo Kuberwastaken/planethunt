@@ -1,0 +1,7 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2Chostname%2Cgaia_dr2_id%2Cgaia_dr3_id%2Ctic_id%2Cra%2Cdec%2Cpl_orbper%2Cpl_tranmid+from+pscomppars+where+discoverymethod%3D%27Transit%27+and+ra+between+275+and+305+and+dec+between+35+and+55&format=csv",
+  "query": "select pl_name,hostname,gaia_dr2_id,gaia_dr3_id,tic_id,ra,dec,pl_orbper,pl_tranmid from pscomppars where discoverymethod='Transit' and ra between 275 and 305 and dec between 35 and 55",
+  "retrieved_utc": "2026-10-10T13:37:48.646209+00:00",
+  "sha256": "20cbc2bdebf7b70f41973af6758b63c29af4c12d4f0cd23688c0c378de9da295",
+  "bytes": 445676
+}

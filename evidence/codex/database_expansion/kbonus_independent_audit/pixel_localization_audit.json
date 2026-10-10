@@ -1,0 +1,667 @@
+{
+  "source_id": "2103792461826460288",
+  "scope": "Independent re-fit of root saved per-quarter difference images, tests no empirical WCS shift and spatial-plane nuisance. This shares root event differences, so not a fully independent pixel extraction.",
+  "pixel_coordinate_audit": "FITSCRPIX1P/2P=1,CRVAL1P/2P detector origin. WCS all_world2pix(origin0) returns zero-based center coordinates. LightkurvePRF uses detector sample coordinates column+0.5,row+0.5, therefore root conversion plus0.5 correct.",
+  "calibration_caution": "PRF interpolation inverse-distance positions and detector channel supplied correctly. Unmodeled faint neighbors, PRF mismatch, interpixel covariance remain. No planetFPP interpretation.",
+  "summary": {
+    "no_shift_constant": {
+      "sum_delta_chi2": 797.7196231988288,
+      "n_target_preferred": 13,
+      "minimum_target_amplitude": 6.43898974821098
+    },
+    "no_shift_plane": {
+      "sum_delta_chi2": 579.269910866078,
+      "n_target_preferred": 13,
+      "minimum_target_amplitude": 4.795031628904025
+    },
+    "mean_shift_constant": {
+      "sum_delta_chi2": 799.1979870977257,
+      "n_target_preferred": 13,
+      "minimum_target_amplitude": 6.389260843299064
+    },
+    "mean_shift_plane": {
+      "sum_delta_chi2": 581.0602015779996,
+      "n_target_preferred": 13,
+      "minimum_target_amplitude": 4.943857996976874
+    }
+  },
+  "quarters": [
+    {
+      "quarter": 1,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 6.5317876543908095,
+            "chi2": 10.869413791996587
+          },
+          "primary": {
+            "amplitude": -0.9975015139959106,
+            "chi2": 18.32970714018281
+          },
+          "delta_chi2_primary_minus_target": 7.460293348186221
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 4.795031628904025,
+            "chi2": 7.48938341251325
+          },
+          "primary": {
+            "amplitude": 1.8376610565796327,
+            "chi2": 10.784061523267834
+          },
+          "delta_chi2_primary_minus_target": 3.2946781107545835
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 6.700433709407316,
+            "chi2": 10.803271248647425
+          },
+          "primary": {
+            "amplitude": -0.999583622090568,
+            "chi2": 18.319109897344298
+          },
+          "delta_chi2_primary_minus_target": 7.515838648696873
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 4.943857996976874,
+            "chi2": 7.40924565967866
+          },
+          "primary": {
+            "amplitude": 1.601245960794853,
+            "chi2": 10.811042412614746
+          },
+          "delta_chi2_primary_minus_target": 3.401796752936087
+        }
+      }
+    },
+    {
+      "quarter": 2,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 8.465636744044234,
+            "chi2": 9.82432630309851
+          },
+          "primary": {
+            "amplitude": -0.7507366580721888,
+            "chi2": 43.241310721094614
+          },
+          "delta_chi2_primary_minus_target": 33.416984417996105
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 7.429239234497933,
+            "chi2": 6.980529799041208
+          },
+          "primary": {
+            "amplitude": -0.7536732854525509,
+            "chi2": 25.290185408593157
+          },
+          "delta_chi2_primary_minus_target": 18.30965560955195
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 8.575998133613298,
+            "chi2": 9.650097068847877
+          },
+          "primary": {
+            "amplitude": -0.6840508382859477,
+            "chi2": 43.30060653229997
+          },
+          "delta_chi2_primary_minus_target": 33.650509463452096
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 7.545771140116797,
+            "chi2": 6.87009698613507
+          },
+          "primary": {
+            "amplitude": -0.7335358207339073,
+            "chi2": 25.306757539898086
+          },
+          "delta_chi2_primary_minus_target": 18.436660553763016
+        }
+      }
+    },
+    {
+      "quarter": 3,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 9.112840642371467,
+            "chi2": 11.063505660152208
+          },
+          "primary": {
+            "amplitude": 0.43562007869244324,
+            "chi2": 84.77449756269635
+          },
+          "delta_chi2_primary_minus_target": 73.71099190254415
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 9.022735392346673,
+            "chi2": 11.03313614911225
+          },
+          "primary": {
+            "amplitude": 0.9845780033485138,
+            "chi2": 65.20648973455526
+          },
+          "delta_chi2_primary_minus_target": 54.17335358544301
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 9.108733635854136,
+            "chi2": 10.832610255768902
+          },
+          "primary": {
+            "amplitude": 0.3679615798419013,
+            "chi2": 84.81353974975067
+          },
+          "delta_chi2_primary_minus_target": 73.98092949398178
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 8.949081164970547,
+            "chi2": 10.75499123872139
+          },
+          "primary": {
+            "amplitude": 0.9509220942592943,
+            "chi2": 65.24938125140793
+          },
+          "delta_chi2_primary_minus_target": 54.49439001268654
+        }
+      }
+    },
+    {
+      "quarter": 4,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 10.128809338183933,
+            "chi2": 9.826468859431168
+          },
+          "primary": {
+            "amplitude": -1.2497596819219108,
+            "chi2": 117.52853284002543
+          },
+          "delta_chi2_primary_minus_target": 107.70206398059426
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 10.316305610563237,
+            "chi2": 9.557603445435003
+          },
+          "primary": {
+            "amplitude": -1.2651124088344812,
+            "chi2": 94.96393187132355
+          },
+          "delta_chi2_primary_minus_target": 85.40632842588855
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 10.176047249353342,
+            "chi2": 9.72489019870895
+          },
+          "primary": {
+            "amplitude": -1.2756013409112337,
+            "chi2": 117.4971185547949
+          },
+          "delta_chi2_primary_minus_target": 107.77222835608595
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 10.370704411074586,
+            "chi2": 9.412185351162194
+          },
+          "primary": {
+            "amplitude": -1.2806095307118355,
+            "chi2": 94.9523088540558
+          },
+          "delta_chi2_primary_minus_target": 85.54012350289361
+        }
+      }
+    },
+    {
+      "quarter": 6,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 9.843472849114058,
+            "chi2": 19.982004214371045
+          },
+          "primary": {
+            "amplitude": 2.038193313668711,
+            "chi2": 87.77808051501799
+          },
+          "delta_chi2_primary_minus_target": 67.79607630064694
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 8.898261031263903,
+            "chi2": 18.092794231240724
+          },
+          "primary": {
+            "amplitude": 2.394320406176942,
+            "chi2": 57.348566732313024
+          },
+          "delta_chi2_primary_minus_target": 39.2557725010723
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 9.837531725288047,
+            "chi2": 19.92553094777378
+          },
+          "primary": {
+            "amplitude": 2.0247117709714666,
+            "chi2": 87.81099099031569
+          },
+          "delta_chi2_primary_minus_target": 67.88546004254191
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 8.893791840246395,
+            "chi2": 18.03570183473158
+          },
+          "primary": {
+            "amplitude": 2.388336244731022,
+            "chi2": 57.36514423963449
+          },
+          "delta_chi2_primary_minus_target": 39.329442404902906
+        }
+      }
+    },
+    {
+      "quarter": 7,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 8.644473942336933,
+            "chi2": 13.349957751199451
+          },
+          "primary": {
+            "amplitude": -0.021254434047341328,
+            "chi2": 88.4002653956521
+          },
+          "delta_chi2_primary_minus_target": 75.05030764445264
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 8.996835146250072,
+            "chi2": 12.34514576307977
+          },
+          "primary": {
+            "amplitude": -0.057522555471361474,
+            "chi2": 76.44372134614801
+          },
+          "delta_chi2_primary_minus_target": 64.09857558306824
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 8.657782377455561,
+            "chi2": 12.425290176710076
+          },
+          "primary": {
+            "amplitude": -0.07366749957440978,
+            "chi2": 88.39450132367779
+          },
+          "delta_chi2_primary_minus_target": 75.96921114696771
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 8.97266730586279,
+            "chi2": 11.51892007780679
+          },
+          "primary": {
+            "amplitude": -0.10075027247830064,
+            "chi2": 76.4359901598923
+          },
+          "delta_chi2_primary_minus_target": 64.9170700820855
+        }
+      }
+    },
+    {
+      "quarter": 8,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 8.918988488325267,
+            "chi2": 16.417194820917288
+          },
+          "primary": {
+            "amplitude": 1.1336161583606683,
+            "chi2": 62.02909157650649
+          },
+          "delta_chi2_primary_minus_target": 45.6118967555892
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 9.066317537644444,
+            "chi2": 16.351495925319902
+          },
+          "primary": {
+            "amplitude": 0.8333435721554444,
+            "chi2": 49.164175575216625
+          },
+          "delta_chi2_primary_minus_target": 32.81267964989672
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 8.848522211439745,
+            "chi2": 16.70628545474092
+          },
+          "primary": {
+            "amplitude": 1.125486053565526,
+            "chi2": 62.0479174416371
+          },
+          "delta_chi2_primary_minus_target": 45.341631986896175
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 8.972877686111266,
+            "chi2": 16.65958918203026
+          },
+          "primary": {
+            "amplitude": 0.8048001297374163,
+            "chi2": 49.19878942148597
+          },
+          "delta_chi2_primary_minus_target": 32.53920023945571
+        }
+      }
+    },
+    {
+      "quarter": 10,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 6.577365406027734,
+            "chi2": 23.317027457482414
+          },
+          "primary": {
+            "amplitude": 0.7262821158090169,
+            "chi2": 50.861383897459845
+          },
+          "delta_chi2_primary_minus_target": 27.54435643997743
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 6.276679642130431,
+            "chi2": 23.162374109822764
+          },
+          "primary": {
+            "amplitude": 0.8578237392566355,
+            "chi2": 40.93332716626197
+          },
+          "delta_chi2_primary_minus_target": 17.770953056439204
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 6.601644448505755,
+            "chi2": 23.16447189834396
+          },
+          "primary": {
+            "amplitude": 0.7271031927128794,
+            "chi2": 50.86135392824084
+          },
+          "delta_chi2_primary_minus_target": 27.696882029896877
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 6.294023700420832,
+            "chi2": 22.998519933083372
+          },
+          "primary": {
+            "amplitude": 0.8683627249071445,
+            "chi2": 40.91697926926392
+          },
+          "delta_chi2_primary_minus_target": 17.918459336180547
+        }
+      }
+    },
+    {
+      "quarter": 11,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 10.300961584179552,
+            "chi2": 19.39052101884618
+          },
+          "primary": {
+            "amplitude": -0.16993802037177694,
+            "chi2": 139.0105662132298
+          },
+          "delta_chi2_primary_minus_target": 119.62004519438361
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 11.060562214975226,
+            "chi2": 17.589131306747888
+          },
+          "primary": {
+            "amplitude": 0.08359348939249182,
+            "chi2": 118.89102555814836
+          },
+          "delta_chi2_primary_minus_target": 101.30189425140047
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 10.364071438528534,
+            "chi2": 18.95881596978815
+          },
+          "primary": {
+            "amplitude": -0.1941278860352277,
+            "chi2": 139.0028162985315
+          },
+          "delta_chi2_primary_minus_target": 120.04400032874337
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 11.090810099148404,
+            "chi2": 17.281240533491776
+          },
+          "primary": {
+            "amplitude": 0.07776079759583467,
+            "chi2": 118.89179384918468
+          },
+          "delta_chi2_primary_minus_target": 101.6105533156929
+        }
+      }
+    },
+    {
+      "quarter": 12,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 6.43898974821098,
+            "chi2": 18.21301647826483
+          },
+          "primary": {
+            "amplitude": 1.001353497179192,
+            "chi2": 51.6029600978784
+          },
+          "delta_chi2_primary_minus_target": 33.389943619613575
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 6.587882779293796,
+            "chi2": 18.14405479531283
+          },
+          "primary": {
+            "amplitude": 1.122472570643885,
+            "chi2": 44.78839337444465
+          },
+          "delta_chi2_primary_minus_target": 26.644338579131823
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 6.389260843299064,
+            "chi2": 18.581204689566807
+          },
+          "primary": {
+            "amplitude": 0.9006274150466784,
+            "chi2": 51.72335231618146
+          },
+          "delta_chi2_primary_minus_target": 33.14214762661466
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 6.528051548520808,
+            "chi2": 18.51263596609827
+          },
+          "primary": {
+            "amplitude": 1.0288185240095191,
+            "chi2": 44.915269432921406
+          },
+          "delta_chi2_primary_minus_target": 26.402633466823136
+        }
+      }
+    },
+    {
+      "quarter": 14,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 7.842641253773542,
+            "chi2": 18.766501002445363
+          },
+          "primary": {
+            "amplitude": 1.3113996408327162,
+            "chi2": 59.69789072772285
+          },
+          "delta_chi2_primary_minus_target": 40.931389725277484
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 7.556229583870268,
+            "chi2": 18.297151282726
+          },
+          "primary": {
+            "amplitude": 1.7303507528166047,
+            "chi2": 45.90001880559403
+          },
+          "delta_chi2_primary_minus_target": 27.60286752286803
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 7.806390849283927,
+            "chi2": 18.64370314666075
+          },
+          "primary": {
+            "amplitude": 1.2141363879056657,
+            "chi2": 59.77516183719721
+          },
+          "delta_chi2_primary_minus_target": 41.13145869053646
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 7.507344347140786,
+            "chi2": 18.171642657336452
+          },
+          "primary": {
+            "amplitude": 1.6786319120347084,
+            "chi2": 45.941843274454946
+          },
+          "delta_chi2_primary_minus_target": 27.770200617118494
+        }
+      }
+    },
+    {
+      "quarter": 15,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 8.123026601330661,
+            "chi2": 17.745464398150602
+          },
+          "primary": {
+            "amplitude": -0.6953253433816375,
+            "chi2": 86.05974236874543
+          },
+          "delta_chi2_primary_minus_target": 68.31427797059483
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 6.938677672259022,
+            "chi2": 11.88870358281307
+          },
+          "primary": {
+            "amplitude": -0.23624013452105547,
+            "chi2": 51.87933600847607
+          },
+          "delta_chi2_primary_minus_target": 39.990632425663
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 8.083903503680867,
+            "chi2": 17.800084575987768
+          },
+          "primary": {
+            "amplitude": -0.7407006027106132,
+            "chi2": 85.97941844823129
+          },
+          "delta_chi2_primary_minus_target": 68.17933387224352
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 6.898078219502068,
+            "chi2": 11.539502324813258
+          },
+          "primary": {
+            "amplitude": -0.26158567742022815,
+            "chi2": 51.86464866137276
+          },
+          "delta_chi2_primary_minus_target": 40.325146336559506
+        }
+      }
+    },
+    {
+      "quarter": 16,
+      "checks": {
+        "no_shift_constant": {
+          "target": {
+            "amplitude": 9.962975072393752,
+            "chi2": 13.26309909050585
+          },
+          "primary": {
+            "amplitude": -0.3118123675720729,
+            "chi2": 110.43409498947824
+          },
+          "delta_chi2_primary_minus_target": 97.1709958989724
+        },
+        "no_shift_plane": {
+          "target": {
+            "amplitude": 9.673111705735067,
+            "chi2": 12.883126780584876
+          },
+          "primary": {
+            "amplitude": -0.43903084629468564,
+            "chi2": 81.49130834548504
+          },
+          "delta_chi2_primary_minus_target": 68.60818156490016
+        },
+        "mean_shift_constant": {
+          "target": {
+            "amplitude": 9.89154848024752,
+            "chi2": 13.557795765989871
+          },
+          "primary": {
+            "amplitude": -0.2590157105516652,
+            "chi2": 110.44615117705823
+          },
+          "delta_chi2_primary_minus_target": 96.88835541106836
+        },
+        "mean_shift_plane": {
+          "target": {
+            "amplitude": 9.587708808067736,
+            "chi2": 13.117256062666717
+          },
+          "primary": {
+            "amplitude": -0.43584184925483654,
+            "chi2": 81.49178101956838
+          },
+          "delta_chi2_primary_minus_target": 68.37452495690167
+        }
+      }
+    }
+  ]
+}

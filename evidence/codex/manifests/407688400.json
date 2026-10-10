@@ -1,0 +1,47 @@
+[
+  {
+    "uri": "mast:TESS/product/tess2019226182529-s0015-0000000407688400-0151-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0015/0000/0004/0768/8400/tess2019226182529-s0015-0000000407688400-0151-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 15,
+    "sha256": "9a05e3e649bc2ab1ddacf4e36ccae4b7a84b20bbde9d7fe5340579a084205b7c",
+    "bytes": 1906560,
+    "fetched_utc": "2026-10-10T13:13:03.356041+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2019253231442-s0016-0000000407688400-0152-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0016/0000/0004/0768/8400/tess2019253231442-s0016-0000000407688400-0152-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 16,
+    "sha256": "2c12870bd1edb849c74bdfc91ad643087dc67eff4baa544a5af60e2d2bf758e2",
+    "bytes": 1805760,
+    "fetched_utc": "2026-10-10T13:13:03.415169+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2022244194134-s0056-0000000407688400-0243-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0056/0000/0004/0768/8400/tess2022244194134-s0056-0000000407688400-0243-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 56,
+    "sha256": "6a706c7c36254af834b320423ca7659fc654ff0bfbd98826553212c7a35891c9",
+    "bytes": 2039040,
+    "fetched_utc": "2026-10-10T13:13:10.547418+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2024223182411-s0082-0000000407688400-0278-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0082/0000/0004/0768/8400/tess2024223182411-s0082-0000000407688400-0278-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 82,
+    "sha256": "e756ca359a76683f20a6519629b37b242d82516456623333c5e417ac2566c5ca",
+    "bytes": 1892160,
+    "fetched_utc": "2026-10-10T13:13:10.542177+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2024249191853-s0083-0000000407688400-0280-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0083/0000/0004/0768/8400/tess2024249191853-s0083-0000000407688400-0280-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 83,
+    "sha256": "b65949791912fadf2891b4b1250ce01bbb49152d7eab8561c35a6e5752c52dd2",
+    "bytes": 1825920,
+    "fetched_utc": "2026-10-10T13:13:18.831905+00:00"
+  }
+]

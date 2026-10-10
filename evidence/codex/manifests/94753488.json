@@ -1,0 +1,44 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0039/target/0000/0000/9475/3488/hlsp_tess-spoc_tess_phot_0000000094753488-s0039_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0039/target/0000/0000/9475/3488/hlsp_tess-spoc_tess_phot_0000000094753488-s0039_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 39,
+    "sha256": "f2b314852972f9aab17f13c0a1c4b90d9493ccd15c80fdbafbcf9da4b52283ad",
+    "bytes": 432000,
+    "fetched_utc": "2026-10-10T13:23:27.817174+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0066/target/0000/0000/9475/3488/hlsp_tess-spoc_tess_phot_0000000094753488-s0066_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0066/target/0000/0000/9475/3488/hlsp_tess-spoc_tess_phot_0000000094753488-s0066_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 66,
+    "sha256": "572af4906d7306929870db8e7f579176fec3df7313a11242bd076c6c6f2a6344",
+    "bytes": 1272960,
+    "fetched_utc": "2026-10-10T13:23:28.155136+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0093/0000/0000/9475/3488/hlsp_qlp_tess_ffi_s0093-0000000094753488_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0093/0000/0000/9475/3488/hlsp_qlp_tess_ffi_s0093-0000000094753488_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 93,
+    "sha256": "a3ce908bc44e9e0739ef35fc49f519a010312860cacd85a7272812e445a9d529",
+    "bytes": 673920,
+    "fetched_utc": "2026-10-10T13:23:35.103861+00:00",
+    "flux_column": "SYS_RM_FLUX",
+    "error_source": "empirical_point_scatter_in_selected_flux_units",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

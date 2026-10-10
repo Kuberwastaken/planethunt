@@ -1,0 +1,26 @@
+{
+  "scope": "Retrospective repeat of all44 previously timing-confounded targets, both original period bands, dropping entire QLP99-104 products. All original175 products/results remain unchanged.",
+  "original_survey_stars": 175,
+  "original_unaffected_stars": 131,
+  "timing_affected_stars": 44,
+  "repeat_searches": 88,
+  "errors": 0,
+  "screen_survivors": [
+    {
+      "tic": 244869034,
+      "mode": "regular",
+      "rank": 2,
+      "disposition": "Not a robust transit candidate: raw local combined3.89sigma and reassigned holdout0.19sigma.",
+      "independent_vet": "vetting/244869034_regular_rank2.json"
+    },
+    {
+      "tic": 358559650,
+      "mode": "usp",
+      "rank": 1,
+      "disposition": "Persistent timing-clean dimming but too broad for catalog-density circular transit and much deeper in latest seasons; Gaia closecompanion/RUWE10.38 reported by catalog agent. Source/nature unresolved; not a defensible planet detection.",
+      "independent_diagnostics": "../timing_safe_repeat/vetting/358559650_broad_diagnostic.json; ../timing_safe_repeat/shape_comparison.json"
+    }
+  ],
+  "non_surviving_target_count": 42,
+  "caution": "Timing-safe subset results supersede timing-confounded vetoes only for this restricted data. Reassigned holdouts were inspected in previous pipeline development and are retrospective. No survey completeness or uniformly robust planet-absence claim."
+}

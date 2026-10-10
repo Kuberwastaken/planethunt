@@ -1,0 +1,1476 @@
+                                                 Draft version December 14, 2021
+                                                 Typeset using LATEX twocolumn style in AASTeX631
+
+
+
+
+                                                                   Kepler Bonus: Aperture Photometry Light Curves of EXBA Sources
+                                                 Jorge Martı́nez-Palomera         ,1, 2 Christina Hedges ,1, 2 Joseph E. Rodriguez          ,3 Geert Barentsen     ,1, 2 and
+                                                                                                    Jessie Dotson 2
+                                                                    1 Bay Area Environmental Research Institute, P.O. Box 25, Moffett Field, CA 94035, USA.
+                                                                                    2 NASA Ames Research Center, Moffett Field, CA, USA
+                                                                3 Department of Physics and Astronomy, Michigan State University, East Lansing, MI 48824, USA
+arXiv:2112.06683v1 [astro-ph.EP] 13 Dec 2021
+
+
+
+
+                                                                                                        ABSTRACT
+                                                         NASA’s Kepler mission observed background regions across its field of view for more than three
+                                                       consecutive years using custom designed super apertures (EXBA masks). Since these apertures were
+                                                       designed to capture a region of the sky rather than single targets, the Kepler Science Data Processing
+                                                       pipeline produced Target Pixel Files, but did not produce light curves for the sources within these back-
+                                                       ground regions. In this work we produce light curves for 9, 327 sources observed in the EXBA masks.
+                                                       These light curves are generated using aperture photometry estimated from the instrument’s Pixel
+                                                       Response Function (PRF) profile computed from Kepler ’s full-frame images. The PRF models enable
+                                                       the creation of apertures that follow the characteristic shapes of the PSF in the image and the compu-
+                                                       tation of flux completeness and contamination metrics. The light curves are available at MAST as a
+                                                       High Level Science Product (kbonus-apexba). Alongside this dataset, we present kepler-apertures,
+                                                       a Python library to compute PRF models and use them to perform aperture photometry on Kepler -like
+                                                       data. Using light curves from the EXBA masks we found an exoplanet candidate around Gaia EDR3
+                                                       2077240046296834304 consistent with a large planet companion with a 0.81RJ radius. Additionally,
+                                                       we report a catalog of 69 eclipsing binaries. We encourage the community to exploit this new dataset
+                                                       to perform in depth time domain analysis, such as eclipsing binaries demographic and others.
+
+
+                                                       Keywords: Time Domain Astronomy – Light Curves – Exoplanets – Eclipsing Binaries – Astronomy
+                                                                 databases
+
+                                                                 1. INTRODUCTION                                   into seventeen 93-days periods. These observation peri-
+                                                 NASA’s Kepler mission delivered to the community                  ods are named quarters. The Kepler Science Data Pro-
+                                               one of the finest time series datasets ever produced. Ke-           cessing Pipeline (Jenkins et al. 2010), produced two sci-
+                                               pler observed more than 400, 000 target stars (Borucki              ence products. First, the Kepler pipeline produced Tar-
+                                               et al. 2010) Kepler found more than 4, 000 exoplanet                get Pixel Files (TPFs), which are cutout images of each
+                                               candidates (Thompson et al. 2018), observed numerous                observed target. A TPF contains all observed cadences
+                                               supernovae from earliest stages of explosion (Olling et al.         for the target in a single quarter as well as information
+                                               2015; Garnavich et al. 2016; Li et al. 2019), and more              on which pixels fall into the aperture of each target star.
+                                               than 2, 900 eclipsing binary systems (Kirk et al. 2016),            Secondly, the Light Curve Files (LCFs), which are flux
+                                               to name some examples. The Kepler mission mainly                    time series of the target of interest. The LCFs contain
+                                               downlinked image data around selected targets (KIC,                 two types of light curves, one is Simple Aperture Pho-
+                                               Brown et al. 2011). These target cutouts are centered               tometry (SAP), where the flux is measured within an
+                                               on the object of interest and usually cover a few pixels            aperture selected to minimize contamination from back-
+                                               around the source. Kepler observations are organized                ground sources. The second type are Presearch Data
+                                                                                                                   Conditioned Simple Aperture Photometry (PDCSAP)
+                                                                                                                   light curves (Smith et al. 2012) that corrects the SAP
+                                               Corresponding author: Jorge Martı́nez-Palomera                      light curves for systematics of the instrument.
+                                               palomera@baeri.org, jorgemarpa@ug.uchile.cl                            Kepler ’s mission also downlinked single cadence ob-
+                                                                                                                   servations of the entire Kepler field each month. These
+2                                             Martı́nez-Palomera et al.
+
+Full Frame Images (FFIs) contain more than 1 million          aperture photometry by creating custom apertures that
+sources per image. They were observed mainly for cal-         follow the PRF profile of the image. This PRF mod-
+ibration and diagnostic purposes (Van Cleve & Cald-           els are computed using Kepler ’s FFIs and evaluated
+well 2016). Although the FFIs covered the entire focal        on every EXBA source. Until now, the EXBA masks
+plane of the instrument, the time resolution is not com-      have not been systematically analyzed and the Kepler
+parable to the main targets observed with a cadence of        pipeline did not produce LCFs for observed sources. In
+1 or 30 minutes. Montet et al. (2017) used Kepler ’s          this work, we produce light curves for more than 9, 300
+FFIs to study long-term variability of Sun-like stars due     sources detected in the EXBA masks. We follow the
+to magnetic cycles. Additionally, two types of custom         procedures introduced by the Linearized Field Deblend-
+aperture targets were observed using the 30 min cadence       ing (LFD) photometry method (Hedges et al. 2021a)
+mode. First, aperture masks covering two open clusters,       to obtain a detailed, yet fast to compute and evalu-
+NGC 6819 (Stello et al. 2010; Balona et al. 2013; Brewer      ate, model of the PRF profile for all the channels in
+et al. 2013) and NGC 6791 (Stello et al. 2011; Corsaro        the focal plane of Kepler. Evaluating the PRF models
+et al. 2012; McClure et al. 2021). The second custom          on the EXBA sources provide a model of the object,
+masks are the background super apertures, or EXBA             which is used to define the photometric aperture and
+masks. The EXBA masks cover relatively dark regions           compute flux metrics. All the light curves produced in
+of the sky at a common location on all CCD channels,          this work are publicly available to the community as
+and were observed continuously between quarters 5 and         FITS Light Curve Files and can be accessed through-
+17. The scientific motivation to collect these images         out the Mikulski Archive for Space Telescopes (MAST)
+was to obtain an unbiased characterization of the back-       archive1 . We present kepler-apertures2 (Martı́nez-
+ground Eclipsing Binary (EB) rate in the Kepler field         Palomera 2021) a the set of Python tools to compute
+(Barentsen et al. 2018).                                      and use PRF models to perform aperture photometry
+  The Kepler pipeline relied upon aperture photometry         on Kepler -like data. As an example of the opportunities
+to create the flux time series of the targets. There are      that this new light-curve dataset provides, we perform a
+multiple ways to define the shape and the size of a pho-      search of exoplanet transiting signals using the BLS pe-
+tometric aperture. The simplest approach is defining          riodogram method. We identify a candidate around the
+circular apertures that enclose the source flux. A cir-       source Gaia EDR3 2077240046296834304 that shows a
+cular aperture would work well for isolated sources and       transiting signal consistent with a large planet or sub-
+where the instrument’s Pixel Response Function (PRF)          stellar companion. Our search also provide a catalog of
+profile is symmetric (typically found in Kepler at the        69 EBs observed in the EXBA masks.
+center of the focal plane). But a circular aperture will        This article is structured as follows. Section 3 details
+lose considerable flux where the PRF shape becomes dis-       the characteristics of the data used for this work as well
+torted (typically when moving away from the center of         as the steps followed to compute the PRF models, aper-
+the image) Aperture photometry can be improved by al-         ture photometry, flux metrics, and light curves. In Sec-
+lowing for elliptical or non-circular shapes, e.g. isophote   tion 4 we present our results: high-level science products
+apertures. Regardless of shape simple apertures become        consisting of light curve files, and the search for transit-
+sub-optimal in crowded regions, where source contam-          ing signals which resulted in an exoplanet candidate and
+ination is the dominant factor. Bryson et al. (2010)          a catalog of EBs. In Section 5 we discuss the opportu-
+shows that Kepler ’s PRF profiles are distorted at the        nities that this new unexplored dataset provides to the
+edges of the focal plane, with elongated shapes in mul-       community, as well as its limitations. Finally, Section 6
+tiple directions. Therefore, the simple aperture meth-        summarizes this work.
+ods will perform poorly. The Kepler pipeline performed
+photometry by computing optimized apertures for every                      2. KEPLER OBSERVATIONS
+target source and providing metrics that characterize the
+                                                                The Kepler mission observed an specific area of
+completeness of the flux, and amount of contamination
+                                                              the sky centered at R.A.= 19h 22m 40s and Dec=
+within the aperture.
+                                                              +44◦ 300 0000 (J2000) between 2009 and 2013. The obser-
+  The EXBA masks were chosen to have an unbiased
+                                                              vations were split into quarters and taken in two cadence
+representation of the Kepler field. The number of Gaia
+sources (brighter than 20th magnitude in the G band)
+per channel mask fluctuates from less populated regions         1 Kepler  Bonus, APEXBA, https://doi.org/10.17909/t9-d5wy-
+with a few dozens of objects to more crowded ones with            e535
+                                                                2 https://github.com/jorgemarpa/kepler-apertures/releases/tag/
+a couple of hundred stars. In this work, we implement
+                                                                  v0.1.0
+                                              AASTeX v6.3.1 Sample article                                                                  3
+                                                                                                                       103
+mode, a short 1-minute cadence and a long 30-minute
+cadence. The telescope camera is an array of 21 mod-                                                                   6 × 102
+                                                                              42°10'
+ules with two CCDs each. A CCD has two read-out
+                                                                                                                       4 × 102
+channels adding to a total of 84 CCD channels. Kepler
+                                                                                                                       3 × 102
+telescope has an aperture of 0.95 meters, a 105 square
+deg field-of-view, and the instrument has a pixel scale                                                                2 × 102
+
+of 3.98 arcsec per pixel.                                                        09'
+
+
+
+
+                                                                                                                             Flux (e s 1)
+                                                                  Dec [deg]
+   Typically three FFIs were downlinked during quar-                                                                   102
+ter 5 and 17, one at the beginning, middle, and end of
+the quarter. A single FFI channel has 1100 × 1024 pix-
+els, adding to a total of 95 mega pixels for the entire                          08'
+focal plane. Each FFI has an exposure time of 27 min-
+utes. Kepler ’s FFIs can be downloaded from the MAST
+archive3 .
+   The EXBA images were observed continuously be-
+tween quarters 5 and 17 of Kepler ’s prime mission using                         07'
+                                                                                                                       0
+the long cadence setup. These data consist in 4 cus-                                      19h31m00s          06s
+tom mask of 9 × 60 pixels per channel, each of these 4                                         R.A. [hh:mm:ss]
+tiles are located next to each other in the CCD produc-
+                                                              Figure 1. Example full EXBA mask (four tiles) for channel
+ing a 36 × 60 pixel image per channel. Kepler EXBA
+                                                              48 observed during quarter 5. The image shown here is 36
+images can be downloaded from the MAST archive4 , by          x 60 pixels and the flux values averaged across cadences.
+searching with the EXBA keyword in the Investigation ID       123 sources obtained from the Gaia EDR3 catalog down to
+field. An example of the tiled EXBA mask for channel          G ≤ 20 magnitude are marked with red circles (see Section
+48 is shown in Figure 1. Valid data exist for 80 out of       3.2). The brightest visible star is G = 13.7 magnitudes. Our
+84 channels. The four channel are missing because of          pipeline filters out all contaminating sources within 200 to fit
+failure of circuitry powering in module 3 of the camera       the PRF models. Sources outside the coverage of the mask
+                                                              (up to 400 ) are allowed and extracted for photometry.
+(Van Cleve et al. 2016).
+
+                 3. DATA PROCESSING                              5. Finally, compute multi-aperture photometry for
+  To obtain light curves based on aperture photometry               every source, then compile and save the flux time
+that meet similar standards as those provided by Ke-                series in FITS files following a similar structure as
+pler ’s pipeline in the main target LCFs, we follow these           the LCFs.
+steps:                                                          The following sections describe these steps in detail.
+   1. Create a detailed model of the PRF profile for each                              3.1. Modeling the PRF Profile
+      channel and quarter combination using Kepler ’s
+      FFIs.                                                     Kepler ’s FFIs contain more than 1.1 million sources
+                                                              in total, on average ∼ 12, 000 sources can be detected
+   2. Use Gaia catalogs to obtain accurate positions of       in each channel. The large amount of sources available
+      the sources observed in the EXBA mask with a            enables the creation of detailed PRF models for every
+      limiting magnitude of G = 20.                           channel.
+                                                                To compute PRF models of each channel, we use the
+   3. Obtain a flux-normalized model of each source by        PRF scene modeling described in the LFD photometry
+      evaluating the PRF model on all Gaia sources ob-        method (Hedges et al. 2021a). This LFD photometry
+      served in the EXBA mask.                                method uses Gaia catalogs to find and fix the coordinate
+                                                              position of sources in the image and models the scene
+   4. Define multiple aperture masks according to the
+                                                              PRF profile by fitting a linear model with spline basis to
+      flux normalized source models and compute flux
+                                                              the data in polar coordinates. The PRF modeling done
+      metrics that characterize them.
+                                                              by the LFD method assumes the following: it relies upon
+                                                              the accurate astrometry done by Gaia catalogs; the PRF
+  3 https://archive.stsci.edu/missions-and-data/kepler/       shapes do not vary significantly over the spatial scale of
+   kepler-bulk-downloads                                      the detector channel; and the PRF shapes do not change
+  4 https://archive.stsci.edu/kepler/
+                                                              in time within each quarter.
+4                                                  Martı́nez-Palomera et al.
+
+
+
+
+                                 4            3                                    12         11
+
+
+
+                                 1            2                                    9          10
+
+
+
+           15         14         20           19         24         23             25         28       29          32
+
+
+
+           16         13         17           18         21         22             26         27       30          31
+
+
+
+           35         34         39           38         43         42             45         48       49          52
+
+
+
+           36         33         40           37         44         41             46         47       50          51
+
+
+
+           55         54         59           58         62         61             66         65       69          72
+
+
+
+           56         53         60           57         63         64             67         68       70          71
+
+                                                                                                            2000
+
+
+                                 74           73         78         77             82         81
+
+
+
+                                 75           76         79         80             83         84
+
+                                 2.2    2.0        1.8    1.6      1.4       1.2        1.0    0.8   0.6
+                                                         log10 Normalized Flux
+
+Figure 2. PRF models across the focal plane computed from Kepler ’s FFIs as described in 3.1. The models are based on
+data observed during quarter 5. Each cell in the figure grid represents a single CCD channel (number in red). In a cell, each
+data point represents the pixel position from the reference source in Cartesian coordinates, while the color represents the pixel
+flux value normalized by the total flux of the corresponding reference source. As discussed in Hedges et al. (2021a), the PRF
+profiles show steep gradients and are elongated, particularly as we move away from the center of the focal plane. Note that in
+this figure the CCD channels have the axis origin at each cell’s lower-left corner, then the orientations of the plotted PRFs do
+not reflect the axis origin of the CCD channels on Kepler ’s focal plane which are arranged to be invariant under rotation. This
+is only aesthetics and does not affect the use of our models.
+
+  Figure 2 shows the PRF models for all 80 channels                      der. These characteristics of the data are conveniently
+with available FFI data during quarter 5. At the cen-                    captured by the model thanks to the use of polar coor-
+ter of the focal plane, the PRF shape is fairly circu-                   dinates, where the radial symmetry benefits the fit of a
+lar, smooth, and shows angular symmetry. As we move                      smoother model.
+away from the center, the PRF profile starts gradually                     In Hedges et al. (2021a), the PRF profile is modeled
+showing elongation in both radial and tangential axis,                   using ∼ 500 Gaia sources and around 7, 000 pixel data
+this effect becomes extreme in the channels at the bor-                  points. The LFD method only uses pixel where flux
+                                               AASTeX v6.3.1 Sample article                                                                                                 5
+
+from the sources is detected and removes all background                curve (Van Cleve & Caldwell 2016), it present an appro-
+pixels. Here, in contrast, thanks to the large number                  priate proxy for Kepler magnitudes and can be used as
+of sources (∼ 12, 000) in each FFIs channel image, the                 a observed source catalog. We query the Gaia catalog
+number of pixels reach a larger value ∼ 100, 000, al-                  with a limiting magnitude of G = 20 and account for
+lowing for more dense and robust representation of the                 the source proper motions between each Kepler ’s quar-
+PRF. Additionally, Hedges et al. (2021a) models the                    ter and the Gaia EDR3 epoch. We flag contaminated
+drift in position of all sources due to velocity aberration,           sources (< 5%) in crowded regions where the separation
+this correction is only necessary when doing LFD pho-                  between sources is < 200 (0.5 of a pixel), and we allow
+tometry on all cadences of a TPF stack to obtain light                 for sources outside the limits of the EXBA mask up to
+curves. In this work, we only follow the LFD method                    400 (1 pixel). Only non-flagged sources will be extracted,
+to obtain the PRF models from the FFIs and fitting the                 but contaminants are considered when computing flux
+scene motion it is not only limited by the low number of               metrics (see following section for details). After this, a
+FFI cadences but also out of the scope of this use-case.               total of 9, 327 (non-flagged) sources are found in the sky
+Computing the PRF models from Kepler FFIs can be                       area covered by the EXBA mask (∼ 0.2 sq. deg.) across
+computationally expensive, fortunately, the convenience                all quarters. A CCD channel covers the same sky area
+use of scipy’s sparse matrices (Virtanen et al. 2020),                 every four quarters due to the rotation of the spacecraft
+keeps the memory use low (∼ 450M B for a single PRF                    between quarters. This effect, combined with the mask
+model) and computing time in the order of 100 seconds                  alignment in the rotational symmetric channels, leads to
+when using a modern personal laptop5 . Evaluation of a                 sources near the borders of the mask (within 2000 ) to fall
+PRF model is faster, for the same machine it takes ∼ 1                 outside of it in certain quarters. As a result, 45% of the
+milliseconds per source.                                               sources have observations in all 13 quarters while 13%
+  Our pipeline produce a total of 1, 080 PRF models,                   of the sources have data in either 6, 7, or 11 quarters
+one for every channel and quarter combination where the                (see Figure 3 for details).
+EXBA masks were collected. These PRF models can be
+later evaluated for a grid of positions (in Cartesian co-                                                                                                            4339
+ordinates) to obtain a flux normalized model for either a                                      4000
+single source or a set of sources in any Kepler -like data,
+                                                                           Number of Sources
+
+
+
+
+e.g. TPFs, FFI, and SuperStamps6 files. Modeling the                                           3000
+PRFs for every quarter capture the natural time degra-
+dation in sensitivity of the CCDs. The later is a factor                                       2000
+that could have not been taken into account in Bryson
+                                                                                                                                1238 1189             1255
+et al. (2010) works due to the data availability, at the                                       1000             704
+time of their work, only commissioning data was avail-
+                                                                                                                      221                       252
+able. Furthermore, our PRF models use a small num-                                                    109   5               3               5                6   1
+                                                                                                  0
+                                                                                                       1
+                                                                                                       2
+                                                                                                       3
+                                                                                                       4
+                                                                                                       5
+                                                                                                       6
+                                                                                                       7
+                                                                                                       8
+                                                                                                       9
+                                                                                                      10
+                                                                                                      11
+                                                                                                      12
+                                                                                                      13
+ber of linear components which can be evaluated faster
+than grid-based models and are forced to be smooth with
+                                                                                                                Number of Observed Quarters
+no edge effects. We direct the reader to Hedges et al.                 Figure 3. The number of EXBA sources with the total
+(2021a) for further discussion.                                        number of observed quarters. 46.5% of the total sources have
+                                                                       observations in all 13 quarters that Kepler used the EXBA
+                 3.2. The EXBA Sources                                 masks. The rest have 12 or fewer quarters available.
+
+  We use Gaia EDR3 (Gaia Collaboration et al. 2021)
+as source catalog. This catalog provides high precision                  Figure 4 shows the Color Magnitude Diagram (CMD)
+astrometry and source completeness, 0.5 mas at G = 20                  for both, main Kepler Targets and the EXBA sources.
+and, complete between G = 12 and G = 17, respectively                  The object photometry comes from Gaia EDR3 cata-
+(Fabricius et al. 2021). Although Gaia G band (Jordi                   log and their distances computed by Bailer-Jones et al.
+et al. 2010) does not exactly matches Kepler ’s response               (2021). The EXBA sources follow the distribution of Ke-
+                                                                       pler ’s main targets except for the horizontal and asymp-
+  5 2020 MacbookPro, 16 GB RAM, 2 GHz Quad-Core Intel Core i5
+                                                                       totic branches. A large fraction of the EXBA sources
+   processor.                                                          are located in the main sequence and binary sequence
+  6 Cody et al. (2018) created SuperStamp FITS files for K2 observa-   regions while a small fraction are evolved stars. The
+   tion of open clusters (M35, M67, Ruprecht 147, and NGC 6530)        EXBA masks were chosen to be representative of the
+   and the Galactic bulge.                                             background field in comparison with the selection bias of
+6                                                           Martı́nez-Palomera et al.
+
+Kepler ’s mission that specifically targeted evolved stars                 uating the PRF model for all sources and given their
+(Batalha et al. 2010).                                                     photometric aperture, we can compute both crowding
+                                                                           and completeness metrics for every source.
+          5.0                                         Main Kepler             We use isophotes to define the boundaries of the pho-
+                                                      EXBA sources         tometric apertures. The boundary of each isophote for
+                                                      G304
+          2.5                                                              a given source is defined by the flux value at a cer-
+                                                                           tain percentile of the normalized flux distribution. The
+          0.0
+                                                                           seven percentiles are 0, 15, 30, 45, 60, 75 and 90. This
+          2.5                                                              leads to seven different apertures that follow the char-
+                                                                           acteristic PRF shape and enclose different levels of flux
+    MG
+
+
+
+
+          5.0
+                                                                           completeness and contamination. Per definition, larger
+          7.5                                                              percentile values lead to smaller apertures and therefore
+                                                                           less contamination (larger CROWDSAP values) but less
+         10.0                                                              flux completeness (smaller FLFRCSAP values). Ad-
+                                                                           ditionally, we include an extra aperture in which the
+         12.5
+                                                                           percentile that defines the isophote value is computed
+         15.0                                                              by simultaneously optimizing both metrics, FLFRCSAP
+                0.0    0.5   1.0   1.5   2.0    2.5   3.0   3.5      4.0
+                                   Gaia BP-RP                              and CROWDSAP. This scalar optimization is performed
+                                                                           with scipy’s Brent’s method7 . After the target value is
+Figure 4. Color Magnitude Diagram of the EXBA sources                      reached for either of the metrics, a softening term8 is
+(9,327 sources in blue) in comparison with the main tar-
+                                                                           applied to allow the optimization to focus in the second
+gets (213,393 sources) of Kepler ’s mission (density plot in
+black). The red marker represents the location of Gaia EDR3                metric until both reach their respective target scores, in-
+2077240046296834304 (see Section 4.2.3) that falls in the bi-              stead of driving a single metric to the optimal point. We
+nary sequence.                                                             optimize the aperture size by targeting for a CROWD-
+                                                                           SAP > 0.8 and a FLFRCSAP > 0.5.
+                                                                              Providing multiple aperture photometry allows the
+                      3.3. Aperture Photometry                             users to choose the most suitable one depending on their
+                                                                           scientific goal. Each aperture photometry has its associ-
+   With the detailed PRF models computed from the
+                                                                           ated FLFRCSAP and CROWDSAP metrics. Later, as
+FFI data for every channel and quarter combination we
+                                                                           indicated in Kepler Archive Manual (Thompson et al.
+are able to evaluate them for every source in the EXBA
+                                                                           2016), crowding corrected fluxes can be computed by
+images. We evaluate the PRF model on the Cartesian
+                                                                           applying the following equation:
+grid of pixel coordinates of the image data and with a
+maximum distance up to six pixels from the center of
+the source (obtained from the Gaia astrometry). The
+                                                                               Fcorrected = F − med(F )(1 − CROWDSAP)                   (1)
+PRF model evaluation leads to a normalized (to sum 1)
+flux model of the source. In this work we evaluate the
+                                                                             where F is the original flux as provided in the light
+PRF model to obtain a normalized model of the sources
+                                                                           curve files, CROWDSAP is the crowding metric, and
+aiming to capture the characteristic shape of the PRF,
+                                                                           med(F ) is the median value of the uncorrected fluxes.
+in contrast with the LFD photometry method where the
+                                                                           Finally, both metrics can be used to stitch and adjust
+evaluation aims to obtain the total flux of the source.
+                                                                           the light curves from different quarters to account for
+   Following Kepler ’s crowding and flux loss (CROWD-
+                                                                           aperture variations due to changes in the PRF profile.
+SAP and FLFRCSAP respectively, Kinemuchi et al.
+2012) metrics that the pipeline calculated for the pho-
+                                                                                                   4. RESULTS
+tometric aperture of every primary target, we compute
+two equivalent metrics. Per definition, FLFRCSAP is                                            4.1. Data Products
+the fraction of target flux contained in the photometric
+aperture over the total target flux. While CROWD-
+                                                                             7 https://docs.scipy.org/doc/scipy/reference/generated/scipy.
+SAP is the ratio of target flux relative to the total flux
+                                                                              optimize.minimize scalar.html
+within the photometric aperture including contaminat-                        8 We redefine the updated metric value as metric0      = target +
+ing sources. Therefore a CROWDSAP value of 1 means                            leakF actor(metric − target) where the target is the desired tar-
+no contamination and a FLFRCSAP value of 1 means                              get value for the metric (e.g. 0.9), metric is the current value,
+the aperture contains the entire flux of the source. Eval-                    and leakF actor is a user defined value (e.g. 0.001).
+                                             AASTeX v6.3.1 Sample article                                                     7
+
+  In this work we produce two high-level data products.             fects. Not only that, numerous stars show stellar activ-
+First, a data set of light curves with multiple aperture            ity due to rotation or pulsation, these signals need to be
+photometry for 9, 327 sources observed by Kepler in the             removed to isolate small variations of the incoming flux
+EXBA masks. We defined the multi-apertures as seven                 originated from transit events. Removing these types of
+different isophote levels of the PRF model evaluated at             signals is often refer as detrending.
+every source. Secondly, a set of Python tools that al-                 We use the Cotrending Basis Vectors (CBVs, Smith
+low the use of our precomputed PRF models to perform                et al. 2012) to account for the systematic signals intro-
+aperture photometry in any Kepler -like data, such as               duced by the instrument. CBVs are a series of 16 basis
+TPFs and the EXBA data.                                             vectors that capture most of the known correlated fea-
+  The light curves provided in this work are stored at              tures in a reference ensemble of flux time series. The
+the MAST archive9 and can be accessed similarly as                  Kepler pipeline computed these basis vectors for every
+the main Kepler ’s LCFs. Each FITS file contains light              quarter and output channel combination. As shown in
+curves of a single EXBA source observed during a quar-              Smith et al. (2012), the first 8 CBV components capture
+ter. The FITS files are multi-extension, with a table con-          most of the systematic errors, therefore for this work we
+taining the flux time series from multi-aperture photom-            only use the first eight basis vectors. To capture variabil-
+etry, and 8 extra image extension containing the aper-              ity due to stellar activity, such as rotation or pulsation,
+ture mask used for every photometric aperture. There                we use a set of basis splines. Similar to Vanderburg
+are a total of 90, 224 LCFs, which accounts for the num-            & Johnson (2014) we found that the number of knots
+ber of observed sources and the number of quarters each             for the spline basis equivalent to a spacing of 1 day al-
+source was observed. Each file header contain relevant              lows fitting variability in short time scales without losing
+keywords such as Gaia’s source information, EXBA ori-               transit-like signals. Combining the aforementioned set
+gin file, and the completeness and contamination metrics            of basis vectors we defined a design matrix that is fit-
+for all the photometric apertures. Alongside the LCFs,              ted using linear regression to the data and obtain the
+a catalog with all observed Gaia sources for each chan-             corrected time series. We perform this detrending cor-
+nel and quarter is also available. Appendix A details the           rection for all the source light curves on a per quarter
+structure and content of each EXBA LCF.                             basis. As an example, Figure 5 shows the flux time series
+  Accompanying this dataset of light curves we re-                  of Gaia EDR3 2077240046296834304. The light curve
+lease kepler-apertures10 , a Python library that al-                corrected only with the CBVs (upper panel) shows clear
+lows to reproduce the results presented in this work.               stellar variability in the scale of days. The light curve
+The PRF models computed from Kepler ’s FFIs are in-                 after full detrending (middle panel) preserves the tran-
+cluded in the library. Through using the this PRF mod-              siting signal. Although the fully corrected light curve
+els users can build aperture masks and compute flux                 still shows residual stellar variability (as seen in the 1
+metrics for any type of Kepler ’s prime mission data.               day binned light curve shown in black), the amplitude
+kepler-apertures also provides the functionalities to               is significantly smaller that the transiting signal.
+compute new PRF models from FFI data by using the
+LFD method.
+                                                                               4.2.2. Box Least Square Periodogram
+             4.2. Finding Transiting Signals
+  As planned, the Kepler pipeline only produced TPFs                  We perform a search for periodic transiting signals
+for the EXBA mask and no light curves were extracted.               using the Box Least Square Periodogram (BLS, Kovács
+Thus, the EXBA data has never been systematically                   et al. 2002). The BLS method searches for periodic vari-
+analyzed to search for exoplanet candidates, or any other           ability by fitting the data with an upside-down top hat
+time domain studies. We follow a standard approach to               periodic model. The model is parameterized by the pe-
+search for transiting signals.                                      riod, transit duration, and the time at mid-transit.
+                                                                      Due to the structure of our light curves, which are sep-
+                     4.2.1. Detrending                              arated by quarters, we compute the BLS periodograms
+  Before analyzing each light curve for scientific pur-             in two time regimes. First, on a per quarter basis search
+poses, we process them to correct for instrumental ef-              using a grid periods between 0.2 and 30 days. The grid
+                                                                    consist in 60, 000 values evenly spaced in frequency. The
+  9 Kepler
+                                                                    upper limit allows for detecting at least three transits
+            Bonus, APEXBA, https://doi.org/10.17909/t9-d5wy-
+    e535                                                            within the ∼ 90 days time window of each quarter. Sec-
+  10 https://github.com/jorgemarpa/kepler-apertures/releases/tag/   ondly, we search for signals with periods ranging from 60
+     v0.1.0                                                         to 360 days, for this we use the object light curves from
+8                                                                                      Martı́nez-Palomera et al.
+
+all available quarters. The BLS periodogram return us                                                shape and depth of a large planet or a sub-stellar com-
+the parameters of the model that best fits the data.                                                 panion. Figure 5 shows both time-based (quarter 7) and
+  To remove periodic signals originated from high-                                                   phase folded light curve of G...304.
+amplitude eclipsing binary systems and other types of
+periodic pulsators we filtered the BLS parameters re-                                                                4.2.3. Gaia EDR3 2077240046296834304
+sults. This filtering isolates transiting signal potentially                                            G...304 was observed in the EXBA masks during
+originated from small companions. We only consider                                                   quarters 7, 8, 11, 12, 15, and 16, and it is located outside
+sources with the following BLS results: 1) transit depth                                             the coverage of the mask (within 1 pixel from the mask
+lower than 10% in normalized flux units, 2) a signal-to-                                             border) according to Gaia astrometry. Moreover, it was
+noise ratio of the periodogram maximum power larger                                                  also observed as a background source in the main TPF
+than 20, and 3) a periodogram maximum power larger                                                   of KIC 7214804 continuously between quarters 2 and 17.
+than 20 after standardizing the periodogram by the                                                   As shown in Figure 6, Gaia astrometry (solid red dot in
+mean and standard deviation of the ensemble of peri-                                                 the figure) locates G...304 inside the TPF, but sufficient
+odograms.                                                                                            flux is contained in the EXBA data to detect the transit
+                                                                                                     events.
+                      1.0075
+                      1.0050                                                                                                                             2 × 103
+    Normalized FLux
+
+
+
+
+                      1.0025                                                                                         579
+                      1.0000
+                                                                                                                                                         103
+                      0.9975                                                                                         576
+                      0.9950
+                                                                                                                                                         6 × 102
+                      0.9925
+                                                                                                                     573
+
+
+
+
+                                                                                                                                                               Flux (e s 1)
+                                                                                                         Pixel Row
+                      0.9900
+                                       640         660            680            700          720
+                                                   Time - 2454833 [BKJD]                                             570                                 4 × 102
+
+                         1.002                                                                                                                           3 × 102
+                                                                                                                     567
+       Normalized FLux
+
+
+
+
+                         1.000
+                                                                                                                                                         2 × 102
+                         0.998                                                                                       564
+                         0.996                                                                                                                           102
+
+                         0.994
+                                                                                                                     561
+                                                                                                                                                         0
+                                                                                                                           552 555 558 561 564 567 570
+                                       640         660            680
+                                                   Time - 2454833 [BKJD]
+                                                                                 700          720
+                                                                                                                                 Pixel Column
+                         1.004
+                         1.002                                                                       Figure 6.      Image in pixel space of the EXBA data
+       Normalized Flux
+
+
+
+
+                         1.000
+                                                                                                     (Pixel Column ≥ 556) and the KIC 7214804 TPF
+                         0.998
+                         0.996
+                                                                                                     (Pixel Column < 556) where the host candidate Gaia EDR3
+                         0.994                                                                       2077240046296834304 is located. The flux data is an average
+                         0.992                                                                       of cadences observed during quarter 7. Red circles show Gaia
+                         0.990
+                                 0.4         0.2            0.0            0.2          0.4
+                                                                                                     EDR3 sources, while the solid circle locates the host candi-
+                                                          Phase                                      date. The red squares illustrate the aperture mask used for
+                                                                                                     this work.
+Figure 5. Time-based light curve (top two panels) and
+phase-folded light curve (bottom panel) of Gaia EDR3
+2077240046296834304. Blue markers are the flux measure-                                                 Because the EXBA masks did not capture G...304
+ments, while black markers are the binned light curves using                                         during quarters 2 through 6, 9, 10, 13, 14, and 17,
+a time bin size of 1 day for the time light curve. The top                                           we decided to work only with quarters that have both
+and middle panels show the CBV-only corrected and fully
+                                                                                                     EXBA and TPF data. Combining the EXBA and TPF
+detrended (CBVs and splines) light curves both respectively,
+for observations during quarter 7. The phase-folded light                                            pixel data we are able to create a ”stitched” pixel im-
+curve contains data from all quarters as described in Section                                        age which improves flux completeness leading to a more
+4.2.3. The transit u-like shape and depth (∼ 0.5%) evidence                                          accurate photometry. Not using all available quarters
+the possibility of a large planet candidate or a sub-stellar                                         does not impact the number of observed transits in a
+companion. The parameters that characterize the best tran-                                           significant amount and allows to obtain accurate model
+sit model are listed in Table 1.                                                                     fitting. We compute a new photometric aperture from
+                                                                                                     the combined image that maximizes the transiting signal
+  After a visual inspection of less than two hundred light                                           using the contaminante11 (Hedges et al. 2021b) Python
+curves after the aforementioned filtering, one source
+stands out. Gaia EDR3 2077240046296834304 (here
+                                                                                                       11 https://github.com/christinahedges/contaminante
+and after G...304 ) exhibits the characteristic transit
+                                           AASTeX v6.3.1 Sample article                                                   9
+
+package. Given a period value and transit reference           dius (R∗ ), density (ρ∗ ) and Limb Darkening, and for the
+time, contaminante creates an aperture mask by find-          orbital parameters such as period (P ), transit reference
+ing which pixels contain the transiting signal at high        time (t0 ), impact parameter (b) and the ratio between
+significance, marginalizing over known instrument sys-        the planet and the star (Rp / R∗ ). In a similar manner
+tematics.                                                     as Sandford & Kipping (2017) and including the stellar
+   We defined the orbital parameters of G...304 using         parameter results from the SED fitting for this system,
+the BLS algorithm at a finer period grid. We found a          we adopt the following priors:
+transit period of 4.99667 days, a transit reference time of
+2455468.058 Julian days, a duration of 0.091 days, and a          •   t0 : a uniform prior bounded by t0,BLS − 0.5 days
+normalized transit depth of 0.005. An odd-even transit                and t0,BLS + 0.5, where t0,BLS is the transit time
+depth test (Wu et al. 2010) helps to separate transit sig-            at maximum power from the BLS periodogram.
+nals originated from eclipsing binaries. We perform this          •   P : a uniform prior from 0.9PBLS to 1.1PBLS days,
+test with the best BLS model parameters resulting in
+                                                                      where PBLS is the period at maximum power from
+a test statistic value of 0.00235 and significance level of
+                                                                      the BLS periodogram.
+96.17% indicating the odd and even transits are statis-
+tically consistent. The transiting signal is a viable case        •   b: a uniform prior from 0 to 2.
+for a transiting planet (see Figure 5, lower panel), with
+a transit-like shape and a transit depth consistent with
+                                                                  •   Rp / R∗ : a uniform prior from 0 to 1.
+a large planet or sub-stellar companion. G...304 light            •   quadratic Limb Darkening coefficients, u1 and u2 ,
+curve also evidences significant variability due to stellar           following the uninformative prior defined by Kip-
+activity in the scale of days.                                        ping (2013).
+   Unfortunately, Gaia DR2 and EDR3 do not provide
+estimates of the stellar radius, luminosity, or line-of-          •   ρ∗ : reparameterized as log10 (ρ∗ [kg/m3 ]) and a
+sight extinction for G...304, only an estimate of the                 uniform prior in log space between 0 and 3.5,
+effective temperature (Tef f = 4, 358 K). To constrain                which is the stellar density from the SED fitting
+the host star parameters and understand the evolu-                    in units of [kg/m3 ].
+tionary state of G...304, we perform a spectral energy            •   R∗ : a uniform prior between 0 and 1.1R∗,SED .
+distribution (SED) analysis of the available Gaia (G,
+BP , and RP , (Gaia Collaboration et al. 2018)), 2MASS          G...304 locates close to the binary sequence in the
+(J2M , H2M , and K2M (Cutri et al. 2003)), and WISE           HR diagram (red marker in Figure 4) and has a large
+(W1 and W2, Cutri & et al. 2012) photometry using             value of Gaia’s Renormalized Unit Weigh Error (RUWE
+the publicly available exoplanet fitting suite, EXOFASTv2     = 4.2)12 suggesting that the target could be an unre-
+(Eastman et al. 2013, 2019). We included the MESA             solved binary system. Considering the relation between
+Isochrones and Stellar Tracks (MIST) stellar evolution        the RUWE and the photocentre perturbation derived by
+models (Paxton et al. 2011, 2013, 2015; Choi et al. 2016;     Belokurov et al. (2020), G...304 has a centroid perturba-
+Dotter 2016) within the fit to precisely estimate the host    tion of ∼ 2 mas (∼ 2 AU at 970 pc distance). Consider-
+star parameters. A Gaussian prior on the parallax from        ing a physically possible binary systems with a K-dwarf
+Gaia DR2 of 1.05010±0.22882 mas (corrected for the -          primary (as the SED fitting suggested) and a K-dwarf
+30 µas offset reported by Lindegren et al. (2018) was         (or a smaller M-dwarf) secondary with a 5-day period
+enforced on the fit and we also include an upper limit        orbit and an estimated 0.065 AU semi-major axis (as-
+of 0.6677 mag on the line-of-sight extinction (AV ) from      suming non-eccentric Keplerian orbit) can not account
+Schlegel et al. (1998) & Schlafly & Finkbeiner (2011).        for a 0.5% transit depth and the measured astrometric
+Lastly, we assume a solar metallicity prior of 0.0±0.25       scatter. Therefore, the transits must be produced by a
+dex. Our analysis showed that G...304 is a K-dwarf star       third body orbiting one of the stars in the binary sys-
+with a mass of 0.749M , a stellar radius of 0.720R , ef-      tem. We added a dilution term to our light curve model
+fective temperature of 4, 410 K consistent with the value     that accounts for the flux provided by a companion fol-
+provided by Gaia DR2, and a density of 2.83g/cm3 . Ta-        lowing the parametrization suggested by Espinoza et al.
+ble 1 summarizes these results.                               (2019):
+   We model the light curve of G...304 using the
+exoplanet library (Foreman-Mackey et al. 2021) and
+                                                                12 https://gea.esac.esa.int/archive/documentation/GDR2/
+pymc3 (Salvatier et al. 2016). These tools allow to set
+                                                                  Gaia archive/chap datamodel/sec dm main tables/
+priors for the stellar parameters, such as the stellar ra-
+                                                                  ssec dm ruwe.html
+10                                             Martı́nez-Palomera et al.
+
+                                                            typically very well defined. EAs are the major source of
+                                            1                 contamination when searching for exoplanets using the
+        M(t) = [T (t)D + (1 − D)]                      (2)
+                                         1 + DM               transiting method.
+   where T (t) is the transit model defined by the stellar
+and orbital parameters, D is the dilution term, and M
+is the out-of-transit target flux.
+   The results of the model fitting are presented in Ta-
+ble 1 while the joint posterior distributions are shown
+in Figure 7. The inferred parameters for the radius
+0.81+0.54
+     −0.54 RJ of the candidate (with a maximum radius
+of 2.2RJ from the posterior distribution), indicate the
+transits are produced by a substellar companion orbit-
+ing at 0.034 AU. Subtracting the most representative
+model to the data shows no remaining signal, as shown
+in Figure 8. The inferred stellar density (2.60g/cm3 )
+is in agreement (within the errors) with the value ob-
+tained from the SED fitting. The mean value in the
+stellar parameters inferred from the model fitting (R∗ =
+                                +0.54
+0.4 ± 0.26R and M∗ = 0.116−0.11       M ) differ with those
+                                             +0.048
+find from the SED fitting (R∗,SED = 0.720−0.046     R and
+                  +0.048
+M∗,SED = 0.749−0.049 M ) due to the inclusion of the
+dilution term. During the SED fitting, we treated the
+target as a single star. Including the dilution term also
+affected the width of the posterior distributions, enlarg-
+ing the derived uncertainties for stellar radius and mass.
+
+
+
+                 4.3. Eclipsing Binaries
+  The EXBA masks were designed and observed to es-
+timate the unbiased occurrence fraction of EBs in the
+Kepler field. Although in this work we do not pursue
+a thorough and complete search of this type of vari-
+ables, during the exoplanet search previously describe
+we found many EBs. Here we present a catalog of EBs
+and their eclipsing parameters derived from the BLS pe-
+riodogram. Table 2 lists 69 EB systems found in the
+EXBA masks. The model parameters period, transit
+depth, reference time, and duration are derived from the
+best BLS fitting. We perform a visual inspection to re-
+move clear contaminated sources and a cross-reference
+search with the literature (Simbad search). The two
+types of EBs are present in this catalog. One of them are
+contact systems (EWs, see Figure 9) where both com-
+ponents are in contact and sharing a common envelope.
+EWs have light curves in which both minima are of simi-
+lar depth and their typical periods are shorter than a day
+showing large-amplitude variability. The second type
+are detached systems (EAs, see Figure 9), where both
+components are of different spectral type. Therefore,
+both the primary and secondary minima have different
+depths, and the beginning and end of the eclipses are
+                                                                                          AASTeX v6.3.1 Sample article                                                                                                                      11
+
+
+
+
+                                P [d] = 5.00+0.00
+                                             0.00
+
+
+
+
+                                                    t0 [bkjd] = 635.05+0.00
+                                                                       0.00
+                       56
+                      5.0
+         t0 [bkjd]
+                 63
+                       54
+                      5.0
+                 63
+                       52
+
+
+
+
+                                                                              Rp [RJ] = 0.81+0.54
+                      5.0
+
+
+
+
+                                                                                             0.54
+                 63
+                        2
+         Rp [RJ]
+                        1
+
+
+
+
+                                                                                                    Rp/R * = 0.21+0.03
+                                                                                                                  0.03
+                       0.3 0
+         Rp/R *
+                        4
+                      0.2
+                        8
+                      0.1
+
+
+
+
+                                                                                                                         b = 0.20+0.17
+                                                                                                                                  0.14
+                       0.4
+         b
+                       0.2
+
+
+
+
+                                                                                                                                         a/R * = 17.48+0.00
+                                                                                                                                                       0.00
+                        0 1
+                       78
+         17 7.47 17.4
+                 a/R *
+                    5
+                 80
+               1
+
+
+
+
+                                                                                                                                                              * [g/cm 3] = 2.60+0.23
+         3 8
+
+
+
+
+                                                                                                                                                                                0.38
+           .47
+         * [g/cm 3]
+                       2.5
+
+
+
+
+                                                                                                                                                                                       u1 = 0.65+0.13
+                        2
+
+
+
+
+                                                                                                                                                                                                 0.15
+                       0.8
+         u1
+                       0.4
+
+
+
+
+                                                                                                                                                                                                         u2 = 0.13+0.24
+                                                                                                                                                                                                                   0.28
+                        0
+                       0.5
+         u2
+                        0
+
+
+
+
+                                                                                                                                                                                                                            D = 0.09+0.03
+                                                                                                                                                                                                                                     0.02
+                         4 .5
+                      0.2 -0
+         D
+                        6
+                      0.1
+                        8
+                      0.0
+
+
+
+
+                                                                                                                                                                                                                           8
+
+                                                                                                                                                                                                                                 6
+                                   71
+
+                                          72
+
+
+                                                        52
+
+                                                               54
+
+                                                                      56
+
+
+
+
+                                                                                                       8
+
+                                                                                                       4
+                                                                                                                 0.3
+                                                                                                                   0
+
+                                                                                                                          0.2
+
+                                                                                                                                        0.4
+
+                                                                                                                                          8
+
+                                                                                                                                   17 5
+                                                                                                                                         81
+                                                                                                                                          2
+
+                                                                                                                                                                     2.5
+
+                                                                                                                                                                              3
+                                                                                                                                                                              0
+
+                                                                                                                                                                                        0.4
+
+                                                                                                                                                                                                  0.8
+                                                                                                                                                                                                     5
+                                                                                                                                                                                                          0
+                                                                                                                                                                                                                 0.5
+                                                                                   1
+                                                                       0
+
+
+
+                                                                                           2
+
+
+
+
+                                                                                                                                                                                                                                        4
+                                                                                                                                                                                                                          0.0
+
+                                                                                                                                                                                                                                0.1
+                                                                                                    0.1
+
+                                                                                                    0.2
+
+
+
+
+                                                                                                                                      .47
+
+                                                                                                                                        80
+
+
+
+
+                                                                                                                                                                                                 -0.
+
+
+
+
+                                                                                                                                                                                                                                      0.2
+                                   96
+
+                                           96
+
+
+                                                      5.0
+
+                                                              5.0
+
+                                                                      5.0
+
+
+
+
+                                                                                                                                     .47
+                                                                                                                                    .47
+                                                                                                                                    17
+                                4.9
+
+                                        4.9
+
+
+                                                    63
+
+                                                            63
+
+                                                                    63
+
+
+
+
+                                                                                                                                  17
+
+
+
+
+                                    P [d]                t0 [bkjd]                Rp [RJ]               Rp/R *                b               a/R *               * [g/cm 3]                u1                u2                 D
+
+Figure 7. Posterior distributions of inferred stellar and transit parameters for the transiting signal observed around Gaia EDR3
+2077240046296834304. The model fitting was performed using the exoplanet Python package following the priors described in
+Section 4.2.3. The posteriors suggest the eclipse signal is produced by a large planet with a radius < 2RJ .
+12                                           Martı́nez-Palomera et al.
+
+
+
+
+     Table 1. Best model parameters from the SED fitting (first block) and the transit-
+     ing signal fitting using the exoplanet library (second and third block) around Gaia
+     EDR3 2077240046296834304. The last block details the host Gaia EDR3 values.
+
+      Parameter                                 Description                                               Value
+      R∗,SED . .         Radius [R ] . . . . . . . . . . . . . . . . . . . . . . . . .          0.720+0.048
+                                                                                                     −0.046
+      M∗,SED . .         Mass [M ] . . . . . . . . . . . . . . . . . . . . . . . . . .          0.749+0.048
+                                                                                                     −0.049
+      L∗ . . . . . .     Luminosity [L ] . . . . . . . . . . . . . . . . . . . .                0.175+0.044
+                                                                                                     −0.034
+      ρ∗,SED . . .       Stellar density [g/cm3 ] . . . . . . . . . . . . . .                   2.83+0.48
+                                                                                                    −0.40
+      log(g) . . .       Surface gravity [cm/s2 ] . . . . . . . . . . . . . .                   4.598 ± 0.04
+      Teff,SED . .       Effective Temperature, SED [K] . . . . .                               4410+150
+                                                                                                     −140
+      [Fe/H] . . .       Metallicity (dex) . . . . . . . . . . . . . . . . . . . .              0.32+0.15
+                                                                                                    −0.18
+      R∗ . . . . . .     Radius [R ] . . . . . . . . . . . . . . . . . . . . . . . . .          0.400+0.26
+                                                                                                     −0.26
+      M∗ . . . . . .     Mass [M ] . . . . . . . . . . . . . . . . . . . . . . . . . .          0.116+0.39
+                                                                                                     −0.11
+      ρ∗ . . . . . . .   Stellar density [g/cm3 ] . . . . . . . . . . . . . .                   2.60+0.23
+                                                                                                    −0.38
+      u1 . . . . . . .   Limb Darkening Coefficient 1 . . . . . . . .                           0.65+0.13
+                                                                                                    −0.15
+      u2 . . . . . . .   Limb Darkening Coefficient 2 . . . . . . . .                           0.13+0.24
+                                                                                                    −0.28
+      D .......          Dilution . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     0.09+0.03
+                                                                                                    −0.02
+      RP . . . . . .     Radius [RJup ] . . . . . . . . . . . . . . . . . . . . . . .           0.81+0.54
+                                                                                                    −0.54
+      P .......          Period [days] . . . . . . . . . . . . . . . . . . . . . . . .          4.99671123 ± 4.66 × 10−6
+      t0 . . . . . . .   Transit Mid Point [BKJD] . . . . . . . . . .                           635.0541 ± 0.0005
+      t14 . . . . . .    Duration [hours] . . . . . . . . . . . . . . . . . . . .               0.1 ± 1 × 10−6
+      b ........         Impact parameter . . . . . . . . . . . . . . . . . . .                 0.2+0.17
+                                                                                                   −014
+      a ........         Semi-Major Axis [AU] . . . . . . . . . . . . . . .                     0.032+0.02
+                                                                                                     −0.02
+      a/R∗ . . . .       Semi-Major Axis / R∗ . . . . . . . . . . . . . . .                     17.48 ± 1 × 10−5
+      αJ2000 . . .       R.A. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   295.859489 ± 0.000132
+      δJ2000 . . .       Decl. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    42.713179 ± 0.000142
+      µα . . . . . . .   Proper Motion RA [mas/yr] . . . . . . . . .                            −1.99 ± 0.17
+      µδ . . . . . . .   Proper Motion Dec [mas/yr] . . . . . . . .                             −9.40 ± 0.20
+      π ........         Parallax [mas/yr] . . . . . . . . . . . . . . . . . . .                1.03 ± 0.15
+      Teff,Gaia .        Effective Temperature, Gaia DR2 [K]                                    4358.5+244.7
+                                                                                                       −351.5
+      G .......          Gaia EDR3 G magnitude . . . . . . . . . . .                            16.5922
+      RP . . . . . .     Gaia EDR3 RP magnitude . . . . . . . . . .                             15.6498
+      BP . . . . . .     Gaia EDR3 BP magnitude . . . . . . . . . .                             17.2516
+                                                                             AASTeX v6.3.1 Sample article                                                                13
+
+
+
+                                                                                      Gaia EDR3 2077240046296834304
+                                     1.004
+
+                                     1.002
+
+                                     1.000
+                     relative flux
+
+
+
+
+                                     0.998
+
+                                     0.996
+
+                                     0.994
+
+                                     0.992                                                                                                                   model
+                                               period = 4.99671123 +/- 4.66e-06 d                                                                            data
+               relative flux
+
+
+
+
+                                     0.000
+
+                                     0.005
+                                         0.20              0.15              0.10             0.05          0.00            0.05          0.10        0.15        0.20
+                                                                                                  time since transit [days]
+
+Figure 8. Transit model fitted using the exoplanet tool. The upper panel shows the light curve data (black markers), the
+median model (solid blue line), and the 3rd and 97th percentile (in orange) from the posterior distribution. Residuals are shown
+in the lower panel with no clear evidence of a remaining signal. The transit shape and depth are typical of a large planet
+companion.
+
+
+
+
+                                             Gaia EDR3 2077246024892437120                                   1.2      Gaia EDR3 2100490555389337984
+                           1.02              P = 12.06298 d                                                           P = 0.29018 d
+         Normalized Flux
+
+
+
+
+                                                                                                             1.1
+                           1.00
+                                                                                                             1.0
+                           0.98
+                                                                                                             0.9
+                           0.96
+                                                                                                             0.8
+                               1.2           Gaia EDR3 2100240347774313728                                            Gaia EDR3 2101753619371695872
+                                             P = 3.34547 d                                                            P = 0.44284 d
+            Normalized Flux
+
+
+
+
+                               1.1                                                                          1.05
+                               1.0
+                                                                                                            1.00
+                               0.9
+                               0.8                                                                          0.95
+                               0.7                                                                          0.90
+                                             1.5     1.0     0.5     0.0        0.5     1.0        1.5               0.2           0.1        0.0      0.1       0.2
+                                                                   Phase                                                                    Phase
+Figure 9. Examples of Eclipsing Binaries found in Kepler ’s EXBA masks. Detached systems (EAs) show well defined primary
+and secondary eclipses and are the major source of false positive when looking for exoplanet candidates. Contact systems (EWs)
+show continuous eclipses and typically have shorter periods than detached EBs.
+14                                   Martı́nez-Palomera et al.
+
+
+
+     Table 2. Catalog of 69 Eclipsing Binary systems found in the EXBA masks. This EB
+     catalog represents an incomplete search for this type of variables and is only presented as an
+     illustration of the opportunities that this data presents. These EBs are a result of a search for
+     periodic transiting signal limited to periods between 0.2 and 100 days and with a standardized
+     periodogram peak value larger than 20, see Section 4.2.2 for further details.
+
+
+                       Gaia ID                   Period       BKJD0       Duration      Depth
+
+                                                  days          days         days          %
+         Gaia EDR3 2051774184464360064           0.816420   443.893508        0.099     1.030747
+         Gaia EDR3 2051871182004752512           0.531408   443.762933        0.450     2.848130
+         Gaia EDR3 2052499488484831616           0.523529   630.445491        0.450     6.528912
+         Gaia EDR3 2052503164977145088           0.551766   443.795923        0.450     0.104680
+         Gaia EDR3 2052503164977145472           0.551766   443.795923        0.450    12.661261
+         Gaia EDR3 2052524429346526464           0.969631   540.414513        0.099     9.448619
+         Gaia EDR3 2053614118393506176           0.532076   443.725578        0.099    18.842998
+         Gaia EDR3 2053614182812468480           0.532076   443.725578        0.099     0.997837
+         Gaia EDR3 2073608428123884416           0.707867   443.657609        0.150     0.096724
+         Gaia EDR3 2073608462478158848           2.006032   445.105109        0.099     0.198396
+         Gaia EDR3 2073608462483635968           2.006032   445.105109        0.099     0.205073
+         Gaia EDR3 2073682438989499392           0.707867   443.660681        0.126     0.056299
+         Gaia EDR3 2073682438989966592           0.707867   443.660681        0.126     0.042618
+         Gaia EDR3 2073682640842559360           0.707867   630.538708        0.126     5.968305
+         Gaia EDR3 2073682645147919616           0.707867   443.840681        0.450     7.558699
+         Gaia EDR3 2075404789599593088           3.034506   444.869691        0.330     2.204107
+         Gaia EDR3 2075405133185880704           0.541367   443.837691        0.450     0.821595
+         Gaia EDR3 2075405133185894656           0.541367   443.837691        0.450     0.230565
+         Gaia EDR3 2075406541944219520           0.630683   443.765691        0.450     0.072754
+         Gaia EDR3 2076208292075451136           0.646481   443.890268        0.399     0.829846
+         Gaia EDR3 2076209357217808384           0.618034   443.722268        0.399     5.536100
+         Gaia EDR3 2076209456001789056           6.810999   445.073768        0.150     1.027946
+         Gaia EDR3 2076505018468886784           0.542118   443.714849        0.450     0.707253
+         Gaia EDR3 2076789723264283008          13.362883   446.483764        0.450     1.503108
+         Gaia EDR3 2076789727566520192           3.524663   445.685764        0.450     0.800765
+         Gaia EDR3 2076836727387736576           3.554231   542.873966        0.201     2.813851
+         Gaia EDR3 2076836864825475456           0.707867   443.663764        0.126     1.174416
+         Gaia EDR3 2077245814431169792           0.637804   630.807001        0.051    32.182456
+         Gaia EDR3 2077246024892437120          12.062975   445.235872        0.450     0.831434
+         Gaia EDR3 2077810555389602176           0.604800   539.753960        0.399     2.754031
+         Gaia EDR3 2078117181696007296           0.983511   444.397464        0.099    11.280642
+         Gaia EDR3 2078734140854317440           0.525966   735.642432        0.450     6.108658
+         Gaia EDR3 2078735858841858816           2.414770   445.490808        0.174     1.672115
+         Gaia EDR3 2079019292324040704           0.628500   443.743214        0.051     1.849365
+
+
+                                           Table 2 continued
+                          AASTeX v6.3.1 Sample article                                     15
+                                  Table 2 (continued)
+
+                Gaia ID                 Period      BKJD0       Duration    Depth
+
+                                         days           days      days        %
+    Gaia EDR3 2079399006085883008      11.236515   446.155307      0.099    1.319522
+    Gaia EDR3 2080297753770786944       2.170456   443.921954      0.126    1.089285
+    Gaia EDR3 2080297753770788864       0.827853   444.160454      0.051    4.862135
+    Gaia EDR3 2082091568328182528       0.701906   443.740152      0.051    2.486457
+    Gaia EDR3 2086516449796423936       2.632309   443.777988      0.174   18.155153
+    Gaia EDR3 2086516454099067776       2.632309   443.780988      0.126    0.191745
+    Gaia EDR3 2086592354758573568       6.359473   444.454549      0.399    1.276964
+    Gaia EDR3 2100240347774313728       1.672736   443.540000      0.099   10.979652
+    Gaia EDR3 2100490555389337984       0.580361   443.824932      0.051   11.126328
+    Gaia EDR3 2101033920292227584       3.734361   447.016742      0.051    6.638635
+    Gaia EDR3 2101136415390982528       0.752610   443.745168      0.450    1.506718
+    Gaia EDR3 2101136419694167040       0.752610   443.754168      0.450    1.984499
+    Gaia EDR3 2101752936479788544       0.552366   443.755662      0.051    9.413652
+    Gaia EDR3 2101753516292218624       0.530687   443.817162      0.450    7.978087
+    Gaia EDR3 2101753520591885568       0.530687   443.817162      0.450    7.094880
+    Gaia EDR3 2101753619371695872       0.885682   444.205662      0.099    4.122006
+    Gaia EDR3 2102900959754861440       1.481648   443.734874      0.099    3.322106
+    Gaia EDR3 2103827298302304128       0.533752   539.746877      0.450    1.101425
+    Gaia EDR3 2104814389164263168       0.595171   443.855354      0.051    4.316045
+    Gaia EDR3 2106327622103110784      20.544483   463.879921      0.450    5.975260
+    Gaia EDR3 2107265956496766208       0.604584   443.898714      0.450    5.087825
+    Gaia EDR3 2107266536313762816       1.640355   444.341214      0.099   12.684281
+    Gaia EDR3 2126083788772171648       0.608346   539.695481      0.450    0.021125
+    Gaia EDR3 2126085369316699648       0.601366   539.876981      0.399    2.233859
+    Gaia EDR3 2126085369320144640       0.841974   539.699981      0.051    3.655029
+    Gaia EDR3 2126955323535081728       0.608346   539.695419      0.450   16.312343
+    Gaia EDR3 2127956149696086272       0.601936   539.759749      0.399    1.934922
+    Gaia EDR3 2127957734541969152       0.658113   443.884613      0.051   10.867783
+    Gaia EDR3 2128160285200885888       0.562013   443.844143      0.450    5.224848
+    Gaia EDR3 2128267968619535872       0.515723   443.959706      0.051    0.231262
+    Gaia EDR3 2128268587094813056       0.585238   443.715206      0.450    1.411582
+    Gaia EDR3 2129514093249096832       0.875163   444.168417      0.450    1.554462
+    Gaia EDR3 2130912843839236224      25.235131   460.013006      0.249    3.355718
+    Gaia EDR3 2133602451140200192       0.985036   444.216754      0.174    2.357031
+    Gaia EDR3 2134814804448660608       0.707178   444.006163      0.150   10.898769
+Note—The BKJD0 , duration, and depth are the results from the best BLS model and
+ account for the primary eclipse. The BKJD0 correspond to the Barycentric Kepler Julian
+ Day (BKJD = BJD − 2, 454, 833.0). These parameters were obtained from fitting the
+ BLS model with a broad period and duration grid, therefore are not necessarily the most
+ accurate results.
+
+
+                                                                   5. DISCUSSION
+16                                             Martı́nez-Palomera et al.
+
+  In this section, we will discuss the relevant assump-       ric reported in this work as an upper limit, but the flux
+tions of our work as well as its limitations.                 contribution from sources fainter than 20th magnitude is
+  The use of custom apertures that follow the PRF             minimal in Kepler observations. The Gaia search could
+shape becomes important when its profile are elongated        be relaxed in future works to allow fainter sources.
+and a significant fraction of the flux falls in the wings
+of the profile. Elongated PRF profiles are particularly                            6. SUMMARY
+true for Kepler as we move away from the center of
+                                                                 In this work, we extracted source light curves from Ke-
+the focal plane (see Figure 2). Although these aper-
+                                                              pler ’s EXBA masks for the first time. The EXBA masks
+ture masks are more complex than standard circular-like
+                                                              are a set of custom masks observed by Kepler during its
+apertures, photometry in crowded regions where mul-
+                                                              prime mission between quarters 5 and 17, which has
+tiple sources are located within pixel distance is sub-
+                                                              never been analyzed before. We created light curve files
+optimal. Under these circumstances, PSF/PRF pho-
+                                                              for 9, 327 Gaia sources observed in the EXBA masks. In
+tometry is recommended, such as the LFD photometry
+                                                              our processing pipeline, we used the method described
+method. Nonetheless, for isolated sources, custom aper-
+                                                              in the LFD photometry (Hedges et al. 2021a) to model
+tures represent a fast and accurate method to extract
+                                                              the PRF profile of all channels using Kepler ’s full frame
+their photometry.
+                                                              images. We capitalized on the large number of sources
+  As discussed in Hedges et al. (2021a), fitting the PRF
+                                                              observed in these FFIs (∼ 10, 000 per channel) to ob-
+model follows a series of assumptions. Two of them are
+                                                              tained detailed PRF models. We evaluated the PRF
+relevant to our work: the PRF does not change with
+                                                              models for every source in the EXBA masks to define
+time during each quarter and is uniform across each
+                                                              photometric aperture. These aperture masks follow the
+channel. Both assumptions are reasonable up to some
+                                                              characteristics shapes of the PRF and enabled to com-
+limit, the PRF shape can suffer changes in time due
+                                                              pute flux completeness and crowdedness metrics. The
+to focus recalibration of the instrument and spatially
+                                                              light curves files produced in this work are available for
+within a channel.
+                                                              public access through the MAST archive. The PRF pro-
+  The time dependency can be mostly corrected using
+                                                              file models built from the FFIs are a sub-product of our
+the CBVs as they capture the instrument systematics.
+                                                              work. The Python library kepler-apertures enables
+Another approach is to introduce a time dependency to
+                                                              user to utilize our precomputed PRF models (included
+the PRF model, although this can not be done using
+                                                              in the package) to perform aperture photometry on Ke-
+Kepler ’s FFIs due to their limited observing cadence.
+                                                              pler like data.
+This strategy is feasible if using Kepler ’s clusters aper-
+                                                                 As an example of what can be accomplished with
+tures (e.g. NGC 6819), where the number of sources is
+                                                              these high-level science products, we present two scien-
+high enough to provide a smooth PRF model (∼ 2, 000
+                                                              tific cases. First, we find evidence of an exoplanet can-
+sources and ∼ 40, 000 pixel data points) and the ob-
+                                                              didate around Gaia EDR3 2077240046296834304. The
+served cadence is in long mode (∼ 4400 cadences).
+                                                              results of the transit model fitting suggest that the ob-
+  The PRF profile can slightly change across a single
+                                                              ject producing this transit has a size smaller than 2.2RJ .
+channel, these variations are averaged when estimating
+                                                              Further investigations need to be conducted to constrain
+the shape model for the full CCD. As the typical scale
+                                                              the stellar properties of the host as well as the param-
+of a PRF model is < 4 pixels and its variations within
+                                                              eters of the transiting objects in order to confirm its
+the channel happen at a smaller scale (1 to 2 pixels),
+                                                              planetary nature. As a second case, we presented a cat-
+the effect in the photometric apertures defined from the
+                                                              alog of Eclipsing Binaries found during the search for
+PRF profile is minimal, especially for the small size of
+                                                              transiting signals. The EXBA masks were designed with
+the EXBA masks (36 x 60 pixels) compared to the FFIs
+                                                              the primary purpose of estimating the fraction of back-
+(1, 024 x 1, 100 pixels). If needed, the spatial change of
+                                                              ground EBs systems in the Kepler field. EBs are the
+the PRF profile can be model by including a spatial de-
+                                                              major source of false positives when searching for exo-
+pendency to the PRF model or by dividing the channel
+                                                              planets. Although in this work we did not attempt a
+image into a grid where each cell contains a dedicated
+                                                              complete search of EBs, we found a significant number
+model of the PRF.
+                                                              (69) of them and compute its basic parameters using the
+  The catalog of light curves for 9, 327 sources presented
+                                                              BLS periodogram. A more thorough search and analy-
+in this work is based on a Gaia search done at a limiting
+                                                              sis of the EXBA light curves to estimate the occurrence
+magnitude of G = 20. Thus, fainter sources not only
+                                                              fraction of EBs is left to the community.
+do not have time series but also are not considered for
+                                                                 This work presents the tools to perform aperture pho-
+contamination metrics. This sets the CROWDSAP met-
+                                                              tometry of Kepler data in a similar fashion as the Kepler
+                                         AASTeX v6.3.1 Sample article                                              17
+
+pipeline and provides to the community a new dataset           Facilities: Kepler
+that has not been systematically explored yet. This
+                                                               Software: astropy (Astropy Collaboration et al.
+methodology can be applied systematically to all the
+                                                             2013), lightkurve (Lightkurve Collaboration et al. 2018),
+background sources found in the Kepler targets, which
+                                                             scipy (Virtanen et al. 2020), psfmachine (Hedges &
+are estimated to contain more than 129, 000 sources. Al-
+                                                             Martı́nez-Palomera 2021), kepler-apertures (Martı́nez-
+though a large fraction of them are blended sources and
+                                                             Palomera 2021), numpy (Harris et al. 2020), exoplanet
+a fully PSF photometry approach is more suitable (e.g.
+                                                             (Foreman-Mackey et al. 2021), pymc3 (Salvatier et al.
+LFD photometry), numerous of these sources are iso-
+                                                             2016), contaminante (Hedges et al. 2021b),
+lated, and fast aperture photometry is the optimal ap-
+proach. Even more, the K2 mission shares similar data
+characteristics as Kepler ’s prime mission and the appli-
+cation of these tools extends naturally.
+
+   This paper includes data collected by the Kepler mis-
+sion and obtained from the MAST data archive at the
+Space Telescope Science Institute (STScI). Funding for
+the Kepler mission is provided by the NASA Science
+Mission Directorate. STScI is operated by the Associ-
+ation of Universities for Research in Astronomy, Inc.,
+under NASA contract NAS 5–26555. This work has
+made use of data from the European Space Agency
+(ESA) mission Gaia (https://www.cosmos.esa.int/gaia),
+processed by the Gaia Data Processing and Analy-
+sis Consortium (DPAC, https://www.cosmos.esa.int/
+web/gaia/dpac/consortium). Funding for the DPAC
+has been provided by national institutions, in partic-
+ular the institutions participating in the Gaia Multi-
+lateral Agreement. This research made use of exo-
+planet (Foreman-Mackey et al. 2021) and its dependen-
+cies(Astropy Collaboration et al. 2013, 2018; Kipping
+2013; The Theano Development Team et al. 2016; Sal-
+vatier et al. 2016; Luger et al. 2019; Kumar et al. 2019;
+Agol et al. 2020; Foreman-Mackey et al. 2021). Fund-
+ing for this work for JMP and CH is provided by grant
+number 80NSSC20K0874, through NASA ROSES.
+
+                                                     APPENDIX
+
+
+                                          A. EXBA LIGHT CURVE FILES
+  Each EXBA Light Curve File (LCF) contains the light curve of a single source and the aperture
+masks used for the photometry of a single quarter.        Each LCF is named under the following pattern
+hlsp kbonus-apexba kepler kepler <gaia source id>-q<quarter> kepler v1.0 lc.fits where the fields are the
+Gaia EDR3 source id and the quarter number, respectively. Each LCF is a multi-extension FITS file that contains
+the following:
+
+   • The primary header unit. This extension contain the main metadata necessary to identify the object.
+
+   • The LIGHTCURVE extension. A binary table header unit containing the flux time series information. The
+     columns of the table are detailed in Table 3.
+
+   • The APERTURE extensions. Eight image header units containing the aperture masks used for the eight different
+     apertures as described in Section 3.3: first an optimized aperture (0) and then 7 apertures with decreasing size
+18                                             Martı́nez-Palomera et al.
+
+       as percentile increase. Each aperture mask matches the shape of the 4 tiled EXBA masks (36 x 60 pixels) for a
+       given channel.
+
+  Accompanying the EXBA LCFs for a given quarter and channel combination, there are the
+hlsp kbonus-apexba kepler kepler exba-mask-ch<channel>-q<quarter> kepler v1.0 sup.fits files. These are
+support files used for plotting purposes. Each file contains three extensions:
+
+     • The primary header unit containing basic information of the EXBA mask such as center R.A. and Dec coordinates
+       and pixel reference position.
+
+     • An image header unit with an averaged image across cadences of the tiled EXBA mask (36 x 60 pixels).
+
+     • A binary table unit containing the Gaia EDR3 catalog of sources observed in the EXBA mask.
+
+
+      Table 3. Description of the columns available in the Binary Table header unit containing the flux time series of
+      sources in every EXBA Light Curve File.
+
+       Column        Field      Format        Units                               Description
+       1         Time           float32   BJD - 2454833   Time value.
+       2         Cadenceno      int64           -         Cadence number.
+       3         Flux           float32       e− /s       Flux from the optimized aperture.
+       4         Flux0          float32       e− /s       Flux from the 1st aperture at percentile 0.
+       5         Flux15         float32       e− /s       Flux from the 2nd aperture at percentile 15.
+       6         Flux30         float32       e− /s       Flux from the 3rd aperture at percentile 30.
+       7         Flux45         float32       e− /s       Flux from the 4th aperture at percentile 45.
+       8         Flux60         float32       e− /s       Flux from the 5th aperture at percentile 60.
+       9         Flux75         float32       e− /s       Flux from the 6th aperture at percentile 75.
+       10        Flux90         float32       e− /s       Flux from the 7th aperture at percentile 90.
+       11        Flux err       float32       e− /s       Flux error from the optimized aperture.
+       12        Flux err0      float32       e− /s       Flux error from the 1st aperture at percentile 0.
+       13        Flux err15     float32       e− /s       Flux error from the 2nd aperture at percentile 15.
+       14        Flux err30     float32       e− /s       Flux error from the 3rd aperture at percentile 30.
+       15        Flux err45     float32       e− /s       Flux error from the 4th aperture at percentile 45.
+       16        Flux err60     float32       e− /s       Flux error from the 5th aperture at percentile 60.
+       17        Flux err75     float32       e− /s       Flux error from the 6th aperture at percentile 75.
+       18        Flux err90     float32       e− /s       Flux error from the 7th aperture at percentile 90.
+       19        Quality        int64           -         Quality flag from the TPF.
+       20        SAP Quality    int64           -         Quality flag introduced by lightkurve.KeplerLightCurve.
+
+
+
+
+                                                      REFERENCES
+Agol, E., Luger, R., & Foreman-Mackey, D. 2020, The              Astropy Collaboration, Robitaille, T. P., Tollerud, E. J.,
+                                                                   et al. 2013, A&A, 558, A33,
+  Astronomical Journal, 159, 123,                                  doi: 10.1051/0004-6361/201322068
+
+  doi: 10.3847/1538-3881/ab4fee                                  Astropy Collaboration, Price-Whelan, A. M., Sipőcz, B. M.,
+                                                                   et al. 2018, AJ, 156, 123, doi: 10.3847/1538-3881/aabc4f
+                                           AASTeX v6.3.1 Sample article                                                      19
+
+Bailer-Jones, C. A. L., Rybizki, J., Fouesneau, M.,             Gaia Collaboration, Brown, A. G. A., Vallenari, A., et al.
+  Demleitner, M., & Andrae, R. 2021, AJ, 161, 147,               2018, A&A, 616, A1, doi: 10.1051/0004-6361/201833051
+  doi: 10.3847/1538-3881/abd806                                 —. 2021, A&A, 649, A1, doi: 10.1051/0004-6361/202039657
+Balona, L. A., Medupe, T., Abedigamba, O. P., et al. 2013,      Garnavich, P. M., Tucker, B. E., Rest, A., et al. 2016, ApJ,
+  MNRAS, 430, 3472, doi: 10.1093/mnras/stt148                    820, 23, doi: 10.3847/0004-637X/820/1/23
+Barentsen, G., Hedges, C., Saunders, N., et al. 2018, arXiv     Harris, C. R., Millman, K. J., van der Walt, S. J., et al.
+  e-prints, arXiv:1810.12554.                                     2020, Nature, 585, 357, doi: 10.1038/s41586-020-2649-2
+  https://arxiv.org/abs/1810.12554                              Hedges, C., Luger, R., Martinez-Palomera, J., Dotson, J., &
+Batalha, N. M., Borucki, W. J., Koch, D. G., et al. 2010,         Barentsen, G. 2021a, AJ, 162, 107,
+  ApJL, 713, L109, doi: 10.1088/2041-8205/713/2/L109              doi: 10.3847/1538-3881/ac0825
+Belokurov, V., Penoyre, Z., Oh, S., et al. 2020, Monthly        Hedges, C., & Martı́nez-Palomera, J. 2021,
+  Notices of the Royal Astronomical Society, 496, 1922,           SSDataLab/psfmachine: Initial Release with Paper,
+  doi: 10.1093/mnras/staa1522                                     v1.0.0, Zenodo, doi: 10.5281/zenodo.4784073
+Borucki, W. J., Koch, D., Basri, G., et al. 2010, Science,      Hedges, C., Saunders, N., & Martı́nez-Palomera, J. 2021b,
+  327, 977, doi: 10.1126/science.1185402                          Research Notes of the American Astronomical Society, 5,
+Brewer, L., Sandquist, E. L., Mathieu, R. D., et al. 2013, in     260, doi: 10.3847/2515-5172/ac3765
+  American Astronomical Society Meeting Abstracts, Vol.
+                                                                Jenkins, J. M., Caldwell, D. A., Chandrasekaran, H., et al.
+  221, American Astronomical Society Meeting Abstracts
+                                                                  2010, The Astrophysical Journal, 713, L87,
+  #221, 250.36
+                                                                  doi: 10.1088/2041-8205/713/2/l87
+Brown, T. M., Latham, D. W., Everett, M. E., & Esquerdo,
+                                                                Jordi, C., Gebran, M., Carrasco, J. M., et al. 2010, A&A,
+  G. A. 2011, AJ, 142, 112,
+                                                                  523, A48, doi: 10.1051/0004-6361/201015441
+  doi: 10.1088/0004-6256/142/4/112
+                                                                Kinemuchi, K., Barclay, T., Fanelli, M., et al. 2012, PASP,
+Bryson, S. T., Tenenbaum, P., Jenkins, J. M., et al. 2010,
+                                                                  124, 963, doi: 10.1086/667603
+  ApJL, 713, L97, doi: 10.1088/2041-8205/713/2/L97
+                                                                Kipping, D. M. 2013, MNRAS, 435, 2152,
+Choi, J., Dotter, A., Conroy, C., et al. 2016, ApJ, 823, 102,
+                                                                  doi: 10.1093/mnras/stt1435
+  doi: 10.3847/0004-637X/823/2/102
+                                                                Kirk, B., Conroy, K., Prša, A., et al. 2016, AJ, 151, 68,
+Cody, A. M., Barentsen, G., Hedges, C., Gully-Santiago,
+                                                                  doi: 10.3847/0004-6256/151/3/68
+  M., & Cardoso, J. V. d. M. 2018, Research Notes of the
+                                                                Kovács, G., Zucker, S., & Mazeh, T. 2002, A&A, 391, 369,
+  American Astronomical Society, 2, 25,
+                                                                 doi: 10.1051/0004-6361:20020802
+  doi: 10.3847/2515-5172/aaac30
+                                                                Kumar, R., Carroll, C., Hartikainen, A., & Martin, O. 2019,
+Corsaro, E., Stello, D., Huber, D., et al. 2012, ApJ, 757,
+  190, doi: 10.1088/0004-637X/757/2/190                          Journal of Open Source Software, 4, 1143,
+Cutri, R. M., & et al. 2012, VizieR Online Data Catalog,         doi: 10.21105/joss.01143
+  II/311                                                        Li, W., Wang, X., Vinkó, J., et al. 2019, ApJ, 870, 12,
+Cutri, R. M., Skrutskie, M. F., van Dyk, S., et al. 2003,         doi: 10.3847/1538-4357/aaec74
+  VizieR Online Data Catalog, II/246                            Lightkurve Collaboration, Cardoso, J. V. d. M., Hedges, C.,
+Dotter, A. 2016, ApJS, 222, 8,                                    et al. 2018, Lightkurve: Kepler and TESS time series
+  doi: 10.3847/0067-0049/222/1/8                                  analysis in Python, Astrophysics Source Code Library.
+Eastman, J., Gaudi, B. S., & Agol, E. 2013, PASP, 125, 83,        http://ascl.net/1812.013
+  doi: 10.1086/669497                                           Lindegren, L., Hernández, J., Bombrun, A., et al. 2018,
+Eastman, J. D., Rodriguez, J. E., Agol, E., et al. 2019,          A&A, 616, A2, doi: 10.1051/0004-6361/201832727
+  arXiv e-prints, arXiv:1907.09480.                             Luger, R., Agol, E., Foreman-Mackey, D., et al. 2019, AJ,
+  https://arxiv.org/abs/1907.09480                                157, 64, doi: 10.3847/1538-3881/aae8e5
+Espinoza, N., Kossakowski, D., & Brahm, R. 2019,                Martı́nez-Palomera, J. 2021, jorgemarpa/kepler-apertures:
+  MNRAS, 490, 2262, doi: 10.1093/mnras/stz2688                   Kepler-apertures first release, v0.1.0, Zenodo,
+Fabricius, C., Luri, X., Arenou, F., et al. 2021, A&A, 649,      doi: 10.5281/zenodo.5062871
+  A5, doi: 10.1051/0004-6361/202039834                          McClure, R. L., Soares, M., Mathieu, R., & Moore, C.
+Foreman-Mackey, D., Savel, A., Luger, R., et al. 2021,           2021, in American Astronomical Society Meeting
+  exoplanet-dev/exoplanet v0.4.5,                                Abstracts, Vol. 53, American Astronomical Society
+  doi: 10.5281/zenodo.1998447                                    Meeting Abstracts, 140.06
+20                                               Martı́nez-Palomera et al.
+
+Montet, B. T., Tovar, G., & Foreman-Mackey, D. 2017, The        The Theano Development Team, Al-Rfou, R., Alain, G.,
+  Astrophysical Journal, 851, 116,                                et al. 2016, arXiv e-prints, arXiv:1605.02688.
+  doi: 10.3847/1538-4357/aa9e00                                   https://arxiv.org/abs/1605.02688
+Olling, R. P., Mushotzky, R., Shaya, E. J., et al. 2015,        Thompson, S. E., Fraquelli, D., Van Cleve, J. E., &
+  Nature, 521, 332, doi: 10.1038/nature14455                      Caldwell, D. A. 2016, Kepler Archive Manual, Kepler
+Paxton, B., Bildsten, L., Dotter, A., et al. 2011, ApJS, 192,     Science Document KDMC-10008-006
+  3, doi: 10.1088/0067-0049/192/1/3                             Thompson, S. E., Coughlin, J. L., Hoffman, K., et al. 2018,
+Paxton, B., Cantiello, M., Arras, P., et al. 2013, ApJS, 208,     The Astrophysical Journal Supplement Series, 235, 38,
+  4, doi: 10.1088/0067-0049/208/1/4                               doi: 10.3847/1538-4365/aab4f9
+Paxton, B., Marchant, P., Schwab, J., et al. 2015, ApJS,        Van Cleve, J. E., & Caldwell, D. A. 2016, Kepler
+  220, 15, doi: 10.1088/0067-0049/220/1/15                        Instrument Handbook, Kepler Science Document
+Salvatier, J., Wiecki, T. V., & Fonnesbeck, C. 2016, PeerJ        KSCI-19033-002
+  Computer Science, 2, e55, doi: 10.7717/peerj-cs.55            Van Cleve, J. E., Christiansen, J. L., Jenkins, J. M., et al.
+Sandford, E., & Kipping, D. 2017, The Astronomical                2016, Kepler Data Characteristics Handbook, Kepler
+  Journal, 154, 228, doi: 10.3847/1538-3881/aa94bf                Science Document KSCI-19040-005
+Schlafly, E. F., & Finkbeiner, D. P. 2011, ApJ, 737, 103,       Vanderburg, A., & Johnson, J. A. 2014, PASP, 126, 948,
+  doi: 10.1088/0004-637X/737/2/103                                doi: 10.1086/678764
+Schlegel, D. J., Finkbeiner, D. P., & Davis, M. 1998, ApJ,
+                                                                Virtanen, P., Gommers, R., Oliphant, T. E., et al. 2020,
+  500, 525, doi: 10.1086/305772
+                                                                  Nature Methods, 17, 261, doi: 10.1038/s41592-019-0686-2
+Smith, J. C., Stumpe, M. C., Van Cleve, J. E., et al. 2012,
+                                                                Wu, H., Twicken, J. D., Tenenbaum, P., et al. 2010, in
+  PASP, 124, 1000, doi: 10.1086/667697
+                                                                  Society of Photo-Optical Instrumentation Engineers
+Stello, D., Basu, S., Bruntt, H., et al. 2010, ApJL, 713,
+                                                                  (SPIE) Conference Series, Vol. 7740, Software and
+  L182, doi: 10.1088/2041-8205/713/2/L182
+                                                                  Cyberinfrastructure for Astronomy, ed. N. M. Radziwill
+Stello, D., Huber, D., Kallinger, T., et al. 2011, ApJL, 737,
+                                                                  & A. Bridger, 774019, doi: 10.1117/12.856630
+  L10, doi: 10.1088/2041-8205/737/1/L10
+

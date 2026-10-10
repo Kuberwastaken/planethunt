@@ -1,0 +1,6 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.nss_non_linear_spectro+WHERE+source_id%3D5418555552665758080",
+  "query": "SELECT * FROM gaiadr3.nss_non_linear_spectro WHERE source_id=5418555552665758080",
+  "sha256": "ae782a1256c4e599730c3e9ede6b783c48446994640c50ace457607a6160b1a7",
+  "retrieved_utc": "2026-10-10T13:41:24.289020+00:00"
+}

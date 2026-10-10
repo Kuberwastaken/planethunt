@@ -1,0 +1,54 @@
+{
+  "ephemeris": {
+    "period_days": 0.28466141760274966,
+    "epoch_btjd": 1544.6153845910512,
+    "duration_hours": 1.56
+  },
+  "assessment": "Transit-like signal vetting only; no claim of planet confirmation or novelty.",
+  "primary": {
+    "n_events": 0
+  },
+  "odd": {
+    "n_events": 0
+  },
+  "even": {
+    "n_events": 0
+  },
+  "odd_even_sigma": null,
+  "secondary": {
+    "n_events": 0
+  },
+  "controls": {
+    "n_controls": 0,
+    "note": "Correlated conditional phase controls; rank is not a survey false-alarm probability."
+  },
+  "phase_control_measurements": [],
+  "per_sector": {},
+  "events": [],
+  "flags": [
+    "fewer_than_three_usable_events",
+    "local_fit_unavailable",
+    "holdout_local_fit_unavailable"
+  ],
+  "holdout": {
+    "sectors": [
+      89,
+      90
+    ],
+    "status": "retrospective; not independent validation",
+    "measurement": {
+      "n_events": 0
+    },
+    "discovery_subset_measurement": {
+      "n_events": 0
+    }
+  },
+  "tic": 358559650,
+  "rank": 1,
+  "mode": "usp",
+  "analysis_branch": "timing_safe_reanalysis",
+  "source_search": "/workspace/scratch/c73e045af8ef/planet-search/database_expansion/timing_safe_repeat/results/358559650_usp.json",
+  "source_search_sha256": "a64746b5dd9a151ff483db938d985b56e7d6598e4c3d711d730f8835c85e8365",
+  "source_npz": "/workspace/scratch/c73e045af8ef/planet-search/database_expansion/timing_safe_repeat/lightcurves/358559650.npz",
+  "source_npz_sha256": "4a34db31f9d7060f5719063068dabc26808bdfd917020075a7d104dd4b6b725c"
+}

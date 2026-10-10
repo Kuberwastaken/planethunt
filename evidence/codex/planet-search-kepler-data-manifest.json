@@ -1,0 +1,512 @@
+[
+  {
+    "path": "planet-search/database_expansion/kbonus/fits/2102053446751282944.fits",
+    "bytes": 11511360,
+    "sha256": "4f23bb59d585edd6232f22e923edf80621ec073a09c29db7cdd19fd4dd445f63"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/fits/2103789438169485056.fits",
+    "bytes": 3044160,
+    "sha256": "14aafdf55a9c231db5b31e8858c4f77249b67625f40eeaa1c2e0d4d69e6da07a"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/fits/2103792427466721792.fits",
+    "bytes": 8847360,
+    "sha256": "67ca0e7545f2ddb8bf051b30dabdf63a87fa6acc86d513f2ade5b1e6812382d3"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/fits/2103792461826460288.fits",
+    "bytes": 8847360,
+    "sha256": "44980afb7843a4507c898eb1ce5d5733029a0f4658f6b96d6196db49df37c06f"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2052257149247654528.npz",
+    "bytes": 1104694,
+    "sha256": "76e61a06e293af82837be032113414637b2eb582423beb60071a484d1d6e429e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2052483064529982336.npz",
+    "bytes": 1705877,
+    "sha256": "32fe6635db614bc47e12dbdee27d0e634b065a31f651c2e6fb552cc3e2d9ec1e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2052610195556994688.npz",
+    "bytes": 1134119,
+    "sha256": "111db68c1934b5ab3b833cc407bf931f5a605e393c9d3d9634ae85ec42776d18"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2053242242945211264.npz",
+    "bytes": 1696092,
+    "sha256": "04f43095a6019693e2a2a05dde901052de2810f452903454ee3f27e22914355d"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2073896294004902272.npz",
+    "bytes": 1972183,
+    "sha256": "9830377812db09c17c2c15e8dbc8c9148e69b8ec13df62440a948d34b637d637"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2075374484307610496.npz",
+    "bytes": 1897827,
+    "sha256": "4a907b3a1131ae1d1b96ec71f8c7d4ce15954ee72ec6ae60e9592e6538c848c8"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2076502136555701504.npz",
+    "bytes": 771991,
+    "sha256": "ddb5281a2c07c438e731d73971f91f874b26988e85e7105e6eb9002d33b5af47"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2076531754650736000.npz",
+    "bytes": 1094864,
+    "sha256": "7da625ae352dd45d9718ac9258a3cfb00a531f9092fe2d0058f0db026baf6e5e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2076841748211863168.npz",
+    "bytes": 807351,
+    "sha256": "88bbd954e685fa36f388d2e91f11ed0e9c8e2bbf56c16c97999c7aa78b4c2baa"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2077645766083817472.npz",
+    "bytes": 2138212,
+    "sha256": "9963a8e18d30e599ab3262c601dd0b50d34ca459c2f78ada47170ddd1bfec3e5"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2078523107649106304.npz",
+    "bytes": 1997775,
+    "sha256": "1cef25124d657046cbdd7027e49bf62df62bc210ad44f9f45d7dc8a67424aaa3"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2078528467768607232.npz",
+    "bytes": 2172173,
+    "sha256": "ef25f8c1eb213d3821abc05a5c130483cf91db341443effe96fa92c7a68e89e4"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2078654086970321408.npz",
+    "bytes": 798997,
+    "sha256": "89815e6150a74303935539d53d27ca2c7a8c9ceb7d7b0d38e1680cb31234fc5e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2078913159395662080.npz",
+    "bytes": 2157644,
+    "sha256": "8508677d59db8abd311405d147c9cdf1c8776a6a69eb61036c181fd149e292fc"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2079129179070054656.npz",
+    "bytes": 2144963,
+    "sha256": "e71ab69c95d8ec59dc2d163efe015914a349f049fecd2acafc65789a2a91428f"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2079722984067307648.npz",
+    "bytes": 2024615,
+    "sha256": "eff571a380d1b3ac9bcadc10fba14cb6a3375925455c7d99facad9cd747ce564"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2080097883172437888.npz",
+    "bytes": 1194579,
+    "sha256": "4281c08e8276ad634e83d01b0d1bd3ad024f4ce6816b19a69129934460fd21b6"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2080285246825475712.npz",
+    "bytes": 1403210,
+    "sha256": "a7fc9944b61b02b6d80d76e0081f669c727c1eb78a4e4c9f3faad72c2237ac17"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2080452132074076928.npz",
+    "bytes": 1263100,
+    "sha256": "d6c64d35718bd8831571b624d3519ac637c4d836079e3861f8578cc388ca0aaa"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2080644237372354048.npz",
+    "bytes": 1725652,
+    "sha256": "70a79ef97e4555b77d06742e956785292b1a033cfa4cc4a23efcf4837f594877"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2085274761875611648.npz",
+    "bytes": 1749898,
+    "sha256": "4d1cc6f1d5b37f4413c7802a81b9a1e3fd48e1bc923ece8631d39e64497ee452"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2086642279460095872.npz",
+    "bytes": 1684577,
+    "sha256": "9c4baa298913b28784c2001157b4c13213e8a375ee3e60d0b06c0c6071af8691"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2100246055790121216.npz",
+    "bytes": 123897,
+    "sha256": "960b9c0742ba3a2c2db7c2e8d4bebe60641f414b4a40692889d68697f6ad4333"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2100924557545692160.npz",
+    "bytes": 2192787,
+    "sha256": "4f0e5997a658e3f4972023fd56c9f2a6b4ea2057ac3aa113bf35d17f785ab1bb"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2101270731909806976.npz",
+    "bytes": 1073266,
+    "sha256": "5adde4436136da5857ebf4b844adc3e15fb1c5a357de378fa1a555761661379d"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2101487232622888832.npz",
+    "bytes": 1257630,
+    "sha256": "8a127d60aad9b4ddcae1571ce6de3a1be33b8f7f075e45b933a74b6034cebc68"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2101806812548048512.npz",
+    "bytes": 1704505,
+    "sha256": "e261c5ca4e0a9047c47a72b82e627208d137ba993a4a13f81772b2d30b470ba3"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2102053446751282944.npz",
+    "bytes": 1940649,
+    "sha256": "53fa10e5322de6fa0eca865024dc6974ce7c7b688f330cd5e3795de15aeab39c"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2102708309003676288.npz",
+    "bytes": 2086220,
+    "sha256": "8318bd94fe12a46984c440fa0e9564653a25897296373cbe59805c54ac3d5dbe"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103306512046793984.npz",
+    "bytes": 1576445,
+    "sha256": "2c0167ee6dbfa518e717d2a540219b941d1c4c5ff17bd5ae99ae6ee3cb2f8ad8"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103453498711571200.npz",
+    "bytes": 1255017,
+    "sha256": "6b39deab42469c3708e8d5cea997f1a11528356c6564081db98f16084d01fda0"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103701752116539776.npz",
+    "bytes": 1370788,
+    "sha256": "b18e8f3760b974461be3603eb9feed545eae8fed1b1e6d79ec0b3b385f63ab7a"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103789438169485056.npz",
+    "bytes": 529706,
+    "sha256": "ad847cad12631d91c5b6562d30bd818fae70a11a8f3f73204843d3e1ac02fe21"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103792427466721792.npz",
+    "bytes": 1644759,
+    "sha256": "c50b10dd11ecb4b34e35ad917fe65da4bdae46a9bac4a6417b5503df90e99fb0"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2103792461826460288.npz",
+    "bytes": 1676562,
+    "sha256": "40572717857c4f03a1f0944287987aba1b9f671c62a3de57991ce9159e3f3fd1"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2105301782052654592.npz",
+    "bytes": 913285,
+    "sha256": "98c4f520e4bc6a1586ae7299aef837f5b82a346048e905c004bda4d00813f623"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2106008591934450176.npz",
+    "bytes": 1217644,
+    "sha256": "37e108116b93bf9f4055ab067acd953e8f8a68a8d1b68109cd059ec211827400"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2106145932106229120.npz",
+    "bytes": 1986528,
+    "sha256": "c4420a2daf19710bafb62cd0bb7c297c9d119b0773add3c47a88e54516c95252"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2106478259494644992.npz",
+    "bytes": 1111322,
+    "sha256": "19da9390dd2437687ce3ce84fa282477ff88ef55b16915e0b9adf1487d10627f"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2107611924701726080.npz",
+    "bytes": 2094124,
+    "sha256": "168eb02ce839905ce43b2ad309fe6c2df4c3effd1248887b238e4c1ac8d92ed8"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2126223598546448640.npz",
+    "bytes": 1041881,
+    "sha256": "cf838b83ba21c017c21e3c560afc3b2043b7035ff3eff93c90d353cd456836a2"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2126568158001969536.npz",
+    "bytes": 2086463,
+    "sha256": "51896064f69d9d5904c5f5aac0385b157364d24e6945069a0fd36cfe9eb7187a"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2127832699452073600.npz",
+    "bytes": 1857305,
+    "sha256": "445cec8713777855bd0a3d84d3a6d9e48c22f24266fe5988294b8320585af3cb"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2127907019564081408.npz",
+    "bytes": 2143624,
+    "sha256": "19975a71eb1c8812a0b74e4470761b474b7011fda37100424fb18da3228f27fb"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2127957700182224256.npz",
+    "bytes": 112974,
+    "sha256": "ae5f1c70a3c4348daaebc33c2577a5df1f80bf3dea30bac029acbdc85c9a244e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2128058271137789312.npz",
+    "bytes": 1322430,
+    "sha256": "7d24c6ec2c27de7debf49281de45e6245d77d6e2fbb89f0bb80fcda546552faa"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2128084659416803584.npz",
+    "bytes": 2040628,
+    "sha256": "3173d43dbcea691ab0dd24e37e1981488582f86339f0c19621ae49b7722759c5"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2128887268543526656.npz",
+    "bytes": 2118175,
+    "sha256": "26ccf19412712d6d2b961d6237b8041f8128c900048f40259d93ea230422084a"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2129196368749534208.npz",
+    "bytes": 1694950,
+    "sha256": "1a094c3b04a8b89330a14be0f0e009178ef1b6f193c5120b373fa6d1c76dfe97"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2129216709714868992.npz",
+    "bytes": 1380218,
+    "sha256": "6eb63fb6d2ef5aa2b9974b457cb5065af0cf0d84e3f144e2589e92a223553316"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2129404966720268672.npz",
+    "bytes": 2076125,
+    "sha256": "15393e1b043ef70f8bb3fc8016b813dac67b379717b96b413cfb2b23ec951f3a"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2129959940917208704.npz",
+    "bytes": 2027759,
+    "sha256": "9bad9d6c72b63b65c2b78c845ceff381742abb7818f6562e1eba2c24009661e6"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2130212867248059008.npz",
+    "bytes": 1757546,
+    "sha256": "03004b3799e2b133264b1aa2e6f872c796dc0c9de4136610eb424f988f5148a5"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2130789767255224960.npz",
+    "bytes": 2078771,
+    "sha256": "0ec27008d70c06cb91745441d1a356d8eb78c2c0ca02332aa6075ef062b9593e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2130855841032290304.npz",
+    "bytes": 1980966,
+    "sha256": "9590d9647f71dd79ac0eee0a449d3a3a88430b55d99318cddcb93c9d3235f552"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2131521732761358720.npz",
+    "bytes": 1405955,
+    "sha256": "4f0cbaa821cb051d1ec505a91cc43ab54922225a120dcd19951567b258ae7144"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2131620310850181632.npz",
+    "bytes": 1813552,
+    "sha256": "33a1e417eb2f4d040bc44bbd2874635455f369a462f792edca4f0a1481eb90e2"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2131801592829364864.npz",
+    "bytes": 1247149,
+    "sha256": "1ab262b9f4db84a205accc99d0e0c2ffcad69ffbee4a84bc1ce3b02e0c4cca7f"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2132183982357568640.npz",
+    "bytes": 1505361,
+    "sha256": "ba341e1b2a33ef562d3f93134289616cd01a589568dd71bcbb05c67ec79a8ccb"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2132228512578805888.npz",
+    "bytes": 1517596,
+    "sha256": "3359fd3e2fd1d7dc3ccaa811a27b8437a563870748068de4a722cbae86dd4e39"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2132638389899343616.npz",
+    "bytes": 2123325,
+    "sha256": "332f0cf02a9992ddefda0ec3cbde3b27bdde1eff77e2e24604f05ecb17c77c57"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2133059949528637184.npz",
+    "bytes": 678344,
+    "sha256": "734ad2b7a5f4759717a65572e486d9cc80ab0283ef52671c6366c02fcabc306b"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2133289365203000320.npz",
+    "bytes": 1785057,
+    "sha256": "140fac13839fe6d49b81a483f79083051e87bee6a7b45cf77bcd8ee52802575d"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2133620459939952768.npz",
+    "bytes": 1662071,
+    "sha256": "17e9a4681c6fb20b27c8e7946dcdfce14c5a3f60fabe16f0e05b72cf3ef4aafc"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2135288316002062976.npz",
+    "bytes": 1771572,
+    "sha256": "95992cde21eac801fe71af7ad40ffb1b2da203d97b47a5e430394d806bdc2f28"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2135376861048401792.npz",
+    "bytes": 2169738,
+    "sha256": "8a501916381908bbb15826b82563fd26cb3011631c7e8aa6ec93267ad8d3a9ff"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/lightcurves/2143761594981845504.npz",
+    "bytes": 2032842,
+    "sha256": "a78a718f63a8b2ef04c1558384d0d960b43920723a61f8198738b6f511cd77e9"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q1.npz",
+    "bytes": 1772,
+    "sha256": "6084edc7b976a6ba9834eab620ef700c946464ebc5b12bffbf30afe3f13c34ee"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q10.npz",
+    "bytes": 1769,
+    "sha256": "586aec2701971aee879e9575fb778b668d5fc9f26e18f2156b6a9e5e87a486ad"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q11.npz",
+    "bytes": 1945,
+    "sha256": "573264777522cb4a9dff42ac03190b154d7a91c933b46c58a89bc71bc052adb7"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q12.npz",
+    "bytes": 1769,
+    "sha256": "ab640c15be890fafa2e47f2f81d870cd615f2a1648c11bbb9c05462ffb5f13e2"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q14.npz",
+    "bytes": 1770,
+    "sha256": "c09ef16de3755d4416f0bb6425362f494d41be369e64b7bb77620cf0e93c61c3"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q15.npz",
+    "bytes": 1934,
+    "sha256": "902acfa0a0d5950e0f521143fc5acf413b75bf451d9d8c0a1cc11973b5444f3d"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q16.npz",
+    "bytes": 1771,
+    "sha256": "9abf63088d7ba8ec1962a19ae65c0e2a1bd49612c83fe81ac3b00dccb009fd34"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q2.npz",
+    "bytes": 1773,
+    "sha256": "9f09d27bf875e9ad739aa10cee4ec543be805d31b6b91277f598865bec2c5a02"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q3.npz",
+    "bytes": 1943,
+    "sha256": "dbdbe1125ed3b6bc771eebb68bbe50e3bad466971684c5c66c7df44c47075137"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q4.npz",
+    "bytes": 1771,
+    "sha256": "9b12d49141e8c70bd4af0008c0e837419c024cf3d5e6368d9c4a049cb62494d4"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q6.npz",
+    "bytes": 1772,
+    "sha256": "1408811b386a42a23273ecb5ba968a67d61487d161ed7e7ae3d1c45877a95807"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q7.npz",
+    "bytes": 1933,
+    "sha256": "6e8f6c75a21c32dc36724588dc5466c2c80c57448a9db40259e99fa7172d4322"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/difference_q8.npz",
+    "bytes": 1772,
+    "sha256": "5df90e36b9ec39371a7dbcfa90d840eec7c5562a41a42a6685f05299fc827844"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2009166043257_lpd-targ.fits.gz",
+    "bytes": 536501,
+    "sha256": "8b11e08c57389772526ff873bdfb3fe48ee6a670ecfb81a02dd8f7ddde448e77"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2009259160929_lpd-targ.fits.gz",
+    "bytes": 1669308,
+    "sha256": "2b9272743ef746abe494fa23343e71db1afdbf6a1bb86824b1ce55ab8a359232"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2009350155506_lpd-targ.fits.gz",
+    "bytes": 2008405,
+    "sha256": "160308f6b71b928dcf28a4e0f7e68d7404261d457591b1a05664eafb8d4487c7"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2010078095331_lpd-targ.fits.gz",
+    "bytes": 1679245,
+    "sha256": "178851f642d2f98db2d16e9c2035da4e437687dd6a4a31707df634c1ea17716e"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2010265121752_lpd-targ.fits.gz",
+    "bytes": 1707049,
+    "sha256": "dd27f3336336403a6782f0f07681aff12e02235b382f0a5651703c08a74dad29"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2010355172524_lpd-targ.fits.gz",
+    "bytes": 2041188,
+    "sha256": "806a5cbc25bd0c1a5369f0f8d285f6601f413b932ccc842771bef385a8c12292"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2011073133259_lpd-targ.fits.gz",
+    "bytes": 1274739,
+    "sha256": "46c28c046c2ffa701d6b7f4f7cbcb21ed08fa23cf8c17d8ba2c73248796b8c34"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2011271113734_lpd-targ.fits.gz",
+    "bytes": 1777918,
+    "sha256": "cf3e4cc427e7112a0160b197049287be10b52d31d27eb9599837bac23ebde1a5"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2012004120508_lpd-targ.fits.gz",
+    "bytes": 2167415,
+    "sha256": "81d868108e44607a35697135a8694533ff744cc52c4daf9d076987efaee27b22"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2012088054726_lpd-targ.fits.gz",
+    "bytes": 1609036,
+    "sha256": "b67abba8b5457d684b563fb3240bbb955491e057415e8128eeca3edc60b574ce"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2012277125453_lpd-targ.fits.gz",
+    "bytes": 1755990,
+    "sha256": "f472b3f7658c8e6d30117b9ae0a6f282969faf5b3cf1a00eaad6d2f27b6feab7"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2013011073258_lpd-targ.fits.gz",
+    "bytes": 2120486,
+    "sha256": "32c24a3c1a2562814ea26933218a536220c606874eb43bde5dfa289f5abb58c3"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr005689116-2013098041711_lpd-targ.fits.gz",
+    "bytes": 1448743,
+    "sha256": "28dbf1b7ab3d1e3cfa52453714ebef3389593704f07f7a9889ef6f907992376b"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr03.2_2011265_prf.fits",
+    "bytes": 6079680,
+    "sha256": "2a3c2d25e2e59fd5758600d1ae1982f955f2c118dbbd2b38d11c2df1c33d8ba4"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr11.2_2011265_prf.fits",
+    "bytes": 6079680,
+    "sha256": "baeb3de954304425e761dbcf5d5dbc394d3a4707176e1568253b0ac6782f29f4"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr15.2_2011265_prf.fits",
+    "bytes": 6079680,
+    "sha256": "a6d7656122d35087d13b160e6a2ff7a8332ed6e74ff3efdbf0a2c8724ee05b3d"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus/pixels/kplr23.2_2011265_prf.fits",
+    "bytes": 6079680,
+    "sha256": "94f259ce3b32d1df5e5c3f5d55a9a869859c7a701058cc60605d70e6db0029b5"
+  },
+  {
+    "path": "planet-search/database_expansion/kbonus_independent_audit/2103792461826460288_correct_errors.npz",
+    "bytes": 1464326,
+    "sha256": "b4504f182b3ffc24cb5d48f2820c166e3ebb4f78e3e55c3e5e533f0f9853bb6d"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "all44_search_sha256": "7beb3b928ff6bbb94f5cf2c1db17c64d673ca769897636920f5ce8e6493a3b85",
+  "arrays_equal_to_special_repeat": true,
+  "primary_ephemeris_equal": true,
+  "prior_broad_report": "../../timing_safe_repeat/vetting/358559650_broad_diagnostic.json",
+  "prior_shape_report": "../../timing_safe_repeat/shape_comparison.json"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0014/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0014_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0014/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0014_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 14,
+    "sha256": "fcd3873aff75a5e1c7e34acbb197b30185cca41ab783259c4bcf42e645da1d86",
+    "bytes": 158400,
+    "fetched_utc": "2026-10-10T13:26:58.059324+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0041/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0041_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0041/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0041_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 41,
+    "sha256": "cda8e23103463ad3204206cf5ee3c99f03ad69e77b8c1b6069c9aff15d8d3153",
+    "bytes": 411840,
+    "fetched_utc": "2026-10-10T13:26:57.999371+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0054/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0054_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0054/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0054_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 54,
+    "sha256": "afb814326ba2e246efbec2408d8209e47189aadf63ccd358954a99e08a2891cf",
+    "bytes": 408960,
+    "fetched_utc": "2026-10-10T13:27:05.502067+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0055/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0055_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0055/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0055_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 55,
+    "sha256": "9f06174e31ca007ca4c0352ad31829a79af16293be641b896041cb0702c95128",
+    "bytes": 420480,
+    "fetched_utc": "2026-10-10T13:27:05.671359+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0081/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0081_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0081/target/0000/0003/6430/8178/hlsp_tess-spoc_tess_phot_0000000364308178-s0081_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 81,
+    "sha256": "732ba44de7f5b350d942d17f7036bc99833a9f7227cdaee1ec45ff089780f0cf",
+    "bytes": 1180800,
+    "fetched_utc": "2026-10-10T13:27:12.789443+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

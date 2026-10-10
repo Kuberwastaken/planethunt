@@ -1,0 +1,56 @@
+{
+  "ephemeris": {
+    "period_days": 0.40667258951482294,
+    "epoch_btjd": 2797.3675149357614,
+    "duration_hours": 2.16
+  },
+  "assessment": "Transit-like signal vetting only; no claim of planet confirmation or novelty.",
+  "primary": {
+    "n_events": 0
+  },
+  "odd": {
+    "n_events": 0
+  },
+  "even": {
+    "n_events": 0
+  },
+  "odd_even_sigma": null,
+  "secondary": {
+    "n_events": 0
+  },
+  "controls": {
+    "n_controls": 0,
+    "note": "Correlated conditional phase controls; rank is not a survey false-alarm probability."
+  },
+  "phase_control_measurements": [],
+  "per_sector": {},
+  "events": [],
+  "flags": [
+    "fewer_than_three_usable_events",
+    "local_fit_unavailable",
+    "holdout_local_fit_unavailable"
+  ],
+  "holdout": {
+    "sectors": [
+      81,
+      82
+    ],
+    "status": "retrospective; not independent validation",
+    "measurement": {
+      "n_events": 0
+    },
+    "discovery_subset_measurement": {
+      "n_events": 0
+    }
+  },
+  "tic": 456716455,
+  "mode": "usp",
+  "rank": 1,
+  "pipeline_version": 3,
+  "source_search": "/workspace/scratch/c73e045af8ef/planet-search/results/456716455_usp.json",
+  "source_search_sha256": "525b2c96d7d455116d17b690cbf8e9643d3054ec3510935a319636796e98ac34",
+  "source_npz": "/workspace/scratch/c73e045af8ef/planet-search/lightcurves/456716455.npz",
+  "source_npz_sha256": "9fa72bcf38354c406a08bcea1122474b4fea86a2a3f1bb6e96cd799b094c4c25",
+  "source_holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "limitation": "About 22% duty; local side-baseline window has insufficient samples. No usable local fits is not evidence of no observed transits. This method is inconclusive here."
+}

@@ -1,0 +1,96 @@
+{
+  "tic": 318967377,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 24.5045291417323,
+      "t0": 1433.5415277442705,
+      "duration_hr": 2.443350825506774,
+      "depth_ppm": 555.3960922067157,
+      "bls_snr": 6.657259147349082,
+      "coarse_snr": 6.093961903654625,
+      "coarse_grid_count": 10813,
+      "rp_earth_approx": 1.7370187428507657,
+      "discovery": {
+        "n_events": 3,
+        "n_good_events": 3,
+        "depth": 0.0005548876589016456,
+        "depth_err": 8.342714019596004e-05,
+        "snr": 6.651164807978352,
+        "odd_even_sigma": 1.7227749485832573,
+        "secondary": -0.00017562586719404224,
+        "secondary_err": 7.762996402315086e-05,
+        "max_ses_frac": 0.7443775827620229,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1433.54153,
+            622.0,
+            160.5,
+            0.82
+          ],
+          [
+            42,
+            2462.73175,
+            343.3,
+            131.3,
+            0.96
+          ],
+          [
+            43,
+            2487.23628,
+            761.6,
+            146.1,
+            0.89
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": -5.9607799334926056e-05,
+        "depth_err": 0.00012655941137094406,
+        "snr": -0.470986698572865,
+        "odd_even_sigma": NaN,
+        "secondary": -2.221128819344439e-05,
+        "secondary_err": 0.00012655941137094406,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            73,
+            3222.37216,
+            -59.6,
+            126.6,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "cb724c6ea50451f7e7ef7c2347959dfdc2d6ce09544793d7080c026e925aa56b",
+  "holdout_sectors": [
+    70
+  ],
+  "discovery_sectors": [
+    4,
+    42,
+    43,
+    44
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 9632,
+  "n_holdout": 3106,
+  "rho_sun": 2.171409354999041,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 1.91
+}

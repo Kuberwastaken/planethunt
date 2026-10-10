@@ -1,0 +1,5 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+1+%2A+from+keplerstellar&format=csv",
+  "utc": "2026-10-10T13:35:45.743669+00:00",
+  "sha256": "231667f27cfd328f545da69b7596322bf33a2bdee8904202475761e41b31a43d"
+}

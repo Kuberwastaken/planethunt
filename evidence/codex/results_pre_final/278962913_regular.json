@@ -1,0 +1,170 @@
+{
+  "tic": 278962913,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 13.136401554570575,
+      "t0": 1421.2066468064297,
+      "duration_hr": 1.1344519692486246,
+      "depth_ppm": 793.5997380676063,
+      "bls_snr": 9.172165223208875,
+      "coarse_snr": 9.166971119379577,
+      "coarse_grid_count": 12536,
+      "rp_earth_approx": 0.8578850963377218,
+      "discovery": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": 0.0007936909848800612,
+        "depth_err": 8.652261693449725e-05,
+        "snr": 9.173219823909537,
+        "odd_even_sigma": 6.19747080294187,
+        "secondary": -3.299574880584907e-05,
+        "secondary_err": 4.293064018796031e-05,
+        "max_ses_frac": 0.9811117841080061,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            1,
+            1434.34305,
+            261.1,
+            121.9,
+            0.88
+          ],
+          [
+            82,
+            2498.39157,
+            1333.6,
+            122.8,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 0,
+        "n_good_events": 0,
+        "depth": NaN,
+        "depth_err": NaN,
+        "snr": NaN,
+        "odd_even_sigma": NaN,
+        "secondary": 0.000134095852348575,
+        "secondary_err": 8.105809281083775e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": NaN,
+        "events": []
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 22.970077256934577,
+      "t0": 1414.6711237708105,
+      "duration_hr": 2.2550230686176764,
+      "depth_ppm": 258.7283303769174,
+      "bls_snr": 6.625587891691436,
+      "coarse_snr": 6.582033793416656,
+      "coarse_grid_count": 12518,
+      "rp_earth_approx": 0.4898356144375305,
+      "discovery": {
+        "n_events": 5,
+        "n_good_events": 5,
+        "depth": 0.00025873010590005715,
+        "depth_err": 3.904986766553417e-05,
+        "snr": 6.625633359787672,
+        "odd_even_sigma": 1.4976912756144405,
+        "secondary": 9.389347773820375e-06,
+        "secondary_err": 5.0401820994909495e-05,
+        "max_ses_frac": 0.7519642092344115,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1414.67112,
+            83.2,
+            86.2,
+            0.89
+          ],
+          [
+            32,
+            2149.7136,
+            267.2,
+            88.9,
+            0.96
+          ],
+          [
+            45,
+            2448.3246,
+            168.1,
+            87.3,
+            0.96
+          ],
+          [
+            46,
+            2471.29468,
+            287.2,
+            87.3,
+            0.96
+          ],
+          [
+            47,
+            2494.26475,
+            490.0,
+            86.8,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": -7.247662861468076e-05,
+        "depth_err": 5.997680261590405e-05,
+        "snr": -1.208411009817021,
+        "odd_even_sigma": 0.28919415732041887,
+        "secondary": -0.00018599967614918737,
+        "secondary_err": 6.000518262241206e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            79,
+            3229.30723,
+            -54.5,
+            86.4,
+            0.96
+          ],
+          [
+            80,
+            3252.2773,
+            -89.2,
+            83.4,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 2,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "holdout_sectors": [
+    70,
+    71
+  ],
+  "discovery_sectors": [
+    4,
+    31,
+    42,
+    43
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 9936,
+  "n_holdout": 6023,
+  "rho_sun": 11.628486019230579,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 7.9
+}

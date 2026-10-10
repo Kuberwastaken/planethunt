@@ -1,0 +1,18 @@
+{
+  "tic": 94753488,
+  "sector": 39,
+  "fits_sha256": "8403564b8297124d95c42f92bd17234cc25a65527b7a67839eb73ac8b45705ee",
+  "events": 61,
+  "target_xy": [
+    5.816778934864295,
+    5.821330745694671
+  ],
+  "positive_difference_centroid_within_2px": [
+    6.509987184689789,
+    6.06854387592429
+  ],
+  "max_pixel_snr": 2.4600337536332417,
+  "caveat": "Exploratory difference imaging. Clipped positive centroid is biased, conditional, aperture-limited and has no calibrated uncertainty. Cannot rule out nearby or unresolved blends.",
+  "period": 0.4297023626680379,
+  "duration_hours": 2.36
+}

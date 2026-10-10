@@ -1,0 +1,42 @@
+{
+  "tic": 358559650,
+  "gaia_dr3_id": "5418555552665758080",
+  "period_days": 0.28466141760274966,
+  "depth_ppm": 199.51841271910655,
+  "duration_hr": 1.56,
+  "gaia_ruwe": 10.380118,
+  "gaia_non_single_star": 1,
+  "nss_type": "Acceleration9",
+  "nss_significance": 46.149204,
+  "nss_acceleration_ra": -8.16682688253165,
+  "nss_acceleration_dec": 4.088448998874901,
+  "nss_period_available": false,
+  "radius_tic": 0.618739,
+  "radius_tic_error": 0.018514,
+  "gaia_radius_available": false,
+  "tic_neighbors_120arcsec": 163,
+  "gaia_neighbors_120arcsec": 170,
+  "exact_prior_count": 0,
+  "neighbor_exact_tic_prior_count": 0,
+  "neighbor_coordinate_prior_count": 0,
+  "background_source": {
+    "tic": 870703559,
+    "gaia_dr3_id": "5418555552665758336",
+    "Tmag": 13.4241,
+    "delta_Tmag": 2.936,
+    "parallax_mas": 1.0300108277338342,
+    "max_eclipse_depth_ppm_equal_throughput": 62728.56889278851,
+    "required_eclipse_fraction_equal_throughput": 0.0031806625950627078,
+    "min_tess_epoch_sep_arcsec": 4.470800207760421,
+    "max_tess_epoch_sep_arcsec": 5.781424601746308
+  },
+  "notes": [
+    "Gaia NSS acceleration solution identifies an astrometric non-single star; not a measured 0.28466d orbit and not proof that transit-like signal is binary.",
+    "TIC870703559 parallax and proper motion differ strongly from target, so it is background blend rather than established physical companion.",
+    "Gaia propagation uses linear five-parameter proper motion; target has acceleration solution so these positions are approximate, not precision predictions.",
+    "Equal-aperture-throughput dilution assumes target plus one contaminant; actual aperture/PRF throughput and all neighboring flux require pixel modelling.",
+    "No matching catalog signal does not establish novelty; catalog coordinates have different epochs and literature may be incomplete."
+  ],
+  "files": {},
+  "retrieved_utc": "2026-10-10T13:42:16.570480+00:00"
+}

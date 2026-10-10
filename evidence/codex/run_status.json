@@ -1,0 +1,14 @@
+{
+  "selected_stars": 175,
+  "complete_two_band_stars": 175,
+  "incomplete_tics": [],
+  "valid_real_search_runs": 350,
+  "valid_inverted_search_runs": 100,
+  "real_signal_records": 556,
+  "real_screen_survivors": 9,
+  "inverted_signal_records": 181,
+  "inverted_screen_survivors": 5,
+  "positive_control": "LHS3844 b; known; never count as novel",
+  "discovery_claim": "NONE; no confirmed new planet",
+  "invalid_or_superseded_files": 0
+}

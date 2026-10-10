@@ -1,0 +1,77 @@
+{
+  "source_id": "2052610195556994688",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/kbonus-bkg/lcs/0027/002709261/hlsp_kbonus-bkg_kepler_kepler_kic-002709261_kepler_v1.0_lc.fits",
+  "fits_sha256": "7cb22b4f19783b649d93d3ac6685ac593af4b1d2ef086a398110ad118be7dfab",
+  "quarters": [
+    {
+      "quarter": 1,
+      "psffrac": 0.841983039476089,
+      "crowdsap": 1.0,
+      "points": 1351
+    },
+    {
+      "quarter": 2,
+      "psffrac": 0.9495277897757466,
+      "crowdsap": 0.9530417962,
+      "points": 2826
+    },
+    {
+      "quarter": 5,
+      "psffrac": 0.9582907149040015,
+      "crowdsap": 0.9653134,
+      "points": 3847
+    },
+    {
+      "quarter": 6,
+      "psffrac": 0.9386291708522928,
+      "crowdsap": 0.9397917208,
+      "points": 3083
+    },
+    {
+      "quarter": 7,
+      "psffrac": 0.9244212840572918,
+      "crowdsap": 0.9109608218,
+      "points": 3287
+    },
+    {
+      "quarter": 11,
+      "psffrac": 0.7639038035842295,
+      "crowdsap": 0.890174028,
+      "points": 3056
+    },
+    {
+      "quarter": 13,
+      "psffrac": 0.7334097951397442,
+      "crowdsap": 0.9470698802,
+      "points": 3623
+    },
+    {
+      "quarter": 14,
+      "psffrac": 0.8901396780156243,
+      "crowdsap": 0.944615173,
+      "points": 2982
+    },
+    {
+      "quarter": 15,
+      "psffrac": 0.7768715475941751,
+      "crowdsap": 0.8586243766,
+      "points": 3415
+    },
+    {
+      "quarter": 16,
+      "psffrac": 0.6787161263235594,
+      "crowdsap": 1.0,
+      "points": 3134
+    },
+    {
+      "quarter": 17,
+      "psffrac": 0.7542294226058813,
+      "crowdsap": 0.9389515046,
+      "points": 1129
+    }
+  ],
+  "time": "BTJD = BKJD - 2167; TDB",
+  "quality": "SAP_QUALITY == 0",
+  "flux_column": "FLUX (corrected PSF)",
+  "fetched_utc": "2026-10-10T13:40:13.803687+00:00"
+}

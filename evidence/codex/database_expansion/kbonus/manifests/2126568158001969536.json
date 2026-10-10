@@ -1,0 +1,113 @@
+{
+  "source_id": "2126568158001969536",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/kbonus-bkg/lcs/0085/008559807/hlsp_kbonus-bkg_kepler_kepler_kic-008559807_kepler_v1.0_lc.fits",
+  "fits_sha256": "17fe94ce77cacd2e822d9cec539d0da229d79121ad9099e0e88f1c2b8dc82359",
+  "quarters": [
+    {
+      "quarter": 1,
+      "psffrac": 0.8067449747004107,
+      "crowdsap": 0.7210144985,
+      "points": 1441
+    },
+    {
+      "quarter": 2,
+      "psffrac": 0.8914865943336734,
+      "crowdsap": 0.7898973468,
+      "points": 3657
+    },
+    {
+      "quarter": 3,
+      "psffrac": 0.7714499870844062,
+      "crowdsap": 0.7576237497,
+      "points": 3687
+    },
+    {
+      "quarter": 4,
+      "psffrac": 0.8485071102765191,
+      "crowdsap": 0.7461444768,
+      "points": 3222
+    },
+    {
+      "quarter": 5,
+      "psffrac": 0.8393776740367175,
+      "crowdsap": 0.941263419,
+      "points": 4146
+    },
+    {
+      "quarter": 6,
+      "psffrac": 0.8975918302710841,
+      "crowdsap": 0.9696353548,
+      "points": 3972
+    },
+    {
+      "quarter": 7,
+      "psffrac": 0.778725616450593,
+      "crowdsap": 0.7580645026,
+      "points": 3738
+    },
+    {
+      "quarter": 8,
+      "psffrac": 0.8525029824208206,
+      "crowdsap": 0.7473587441,
+      "points": 2910
+    },
+    {
+      "quarter": 9,
+      "psffrac": 0.811588144181258,
+      "crowdsap": 0.7363654518,
+      "points": 4319
+    },
+    {
+      "quarter": 10,
+      "psffrac": 0.9003572292330806,
+      "crowdsap": 0.9696557286,
+      "points": 4056
+    },
+    {
+      "quarter": 11,
+      "psffrac": 0.7789636106093613,
+      "crowdsap": 0.7390673511,
+      "points": 3744
+    },
+    {
+      "quarter": 12,
+      "psffrac": 0.8620672587011227,
+      "crowdsap": 0.7580850102,
+      "points": 3196
+    },
+    {
+      "quarter": 13,
+      "psffrac": 0.8146875966089873,
+      "crowdsap": 0.7383278572,
+      "points": 3848
+    },
+    {
+      "quarter": 14,
+      "psffrac": 0.9029832611509948,
+      "crowdsap": 0.9696797283,
+      "points": 4006
+    },
+    {
+      "quarter": 15,
+      "psffrac": 0.781042815903722,
+      "crowdsap": 0.7669018058,
+      "points": 4044
+    },
+    {
+      "quarter": 16,
+      "psffrac": 0.8648171709904958,
+      "crowdsap": 0.7680851147,
+      "points": 3348
+    },
+    {
+      "quarter": 17,
+      "psffrac": 0.8335393761048423,
+      "crowdsap": 0.9124334968,
+      "points": 1198
+    }
+  ],
+  "time": "BTJD = BKJD - 2167; TDB",
+  "quality": "SAP_QUALITY == 0",
+  "flux_column": "FLUX (corrected PSF)",
+  "fetched_utc": "2026-10-10T13:43:50.145332+00:00"
+}

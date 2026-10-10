@@ -1,0 +1,23 @@
+{
+  "source": "https://archive.stsci.edu/hlsp/qlp",
+  "audit_scope": "Actual final acquisition manifests, successful QLP products only",
+  "used_qlp_products": 203,
+  "potentially_affected_products": 91,
+  "affected_stars": 44,
+  "affected_holdout_products": 90,
+  "affected_holdout_stars": 44,
+  "affected_sectors": [
+    99,
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "affected_survivors": [
+    358559650,
+    241606913
+  ],
+  "unaffected_priority_signal": 94753488,
+  "qualification": "44 of the 175 surveyed stars used timing-warning QLP products, so the full survey cannot be characterized as an uniformly timing-clean null result. No claim that the warning explains any particular anomaly without corrected data."
+}

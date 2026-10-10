@@ -1,0 +1,8 @@
+{
+  "url": "https://keplerebs.villanova.edu/",
+  "method": "POST observed Download Catalog form with format=file_csv",
+  "retrieved_utc": "2026-10-10T13:44:09.324425+00:00",
+  "sha256_raw": "c255a181bfb0674a38331b67479c7779f1ef090ac81e5782cae117f688f3f12a",
+  "coordinate_source": "kepler_primary_targets.csv",
+  "catalog_revision_printed": "Aug.8,2019"
+}

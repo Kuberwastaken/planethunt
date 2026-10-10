@@ -1,0 +1,11 @@
+TIC,branch,period,epoch_BJD,ra,dec,status,catalog,source_file,name,period_ratio
+95431305,high_sensitivity_usp,12.7014,2459527.1,,,,SPOC TCE,tess2021311000057-s0045-s0045_dvr-tcestats.csv,,53.71122400788289
+95431305,high_sensitivity_usp,33.2962,2459527.31,,,,SPOC TCE,tess2018235142541-s0002-s0072_dvr-tcestats.csv,,140.80177435647016
+95431305,high_sensitivity_usp,60.1122,2459571.42,,,,SPOC TCE,tess2018235142541-s0002-s0072_dvr-tcestats.csv,,254.20031176143243
+95431305,high_sensitivity_usp,51.3022,2459526.36,,,,SPOC TCE,tess2018235142541-s0002-s0072_dvr-tcestats.csv,,216.94490027061659
+95431305,high_sensitivity_usp,16.5983,2459526.36,,,,SPOC TCE,tess2018235142541-s0002-s0072_dvr-tcestats.csv,,70.19029472735623
+95431305,high_sensitivity_usp,37.3816,2459539.27,,,,SPOC TCE,tess2018235142541-s0002-s0072_dvr-tcestats.csv,,158.07796710386847
+95431305,high_sensitivity_usp,9.57386,2459608.4,,,,SPOC TCE,tess2022028101454-s0048-s0048_dvr-tcestats.csv,,40.485595216284004
+95431305,high_sensitivity_usp,11.8528,2459527.27,,,,SPOC TCE,tess2021233042500-s0042-s0046_dvr-tcestats.csv,,50.12269481479477
+95431305,high_sensitivity_usp,12.7127,2459536.55,,,,SPOC TCE,tess2019199201929-s0014-s0050_dvr-tcestats.csv,,53.75900904191764
+95431305,high_sensitivity_usp,12.5859,2459525.94,,,,SPOC TCE,tess2019199201929-s0014-s0050_dvr-tcestats.csv,,53.22280175735063

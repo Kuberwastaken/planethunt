@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+<script type="text/javascript" src="/includes/jquery-latest.js"></script> 
+<script type="text/javascript" src="/includes/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/includes/jquery.tablesorter.pager.js"></script>
+
+<script type="javascript">
+$(function())
+    { 
+        $("table")
+			.tablesorter()
+); 
+</script>
+-->
+
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Kepler Eclipsing Binaries</title>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link href="/includes/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34740719-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+  
+</script>
+<style>
+	#expandheader h2{
+		display:inline;	
+	}
+	#lightbox {
+		position:fixed; /* keeps the lightbox window in the current viewport */
+		top:0; 
+		left:0; 
+		width:100%; 
+		height:100%; 
+		background:url(/includes/wen/overlay.png) repeat; 
+		text-align:center;
+	}
+	#lightbox p {
+		text-align:right; 
+		color:#fff; 
+		margin-right:20px; 
+		font-size:12px; 
+	}
+	#lightbox img {
+		box-shadow:0 0 25px #111;
+		-webkit-box-shadow:0 0 25px #111;
+		-moz-box-shadow:0 0 25px #111;
+		max-width:940px;
+	}
+	.expandheader {
+		margin: 1px;
+		padding: 3px 10px;
+		cursor: pointer;
+		background-color:#F0F0F6;
+	}
+</style>
+
+</head>
+<body>
+	<div id="menu-wrapper">
+		<div id="menu">
+			<ul>
+				<li><a href="/">Catalog</a></li>
+				
+
+				
+
+				<li class="current"><a href="/search">Search</a></li>
+				
+
+				<li><a href="/papers">Papers</a></li>
+				
+
+				
+
+				<li><a href="/charter">Charter</a></li>
+				
+
+				<li><a href="/about">Help</a></li>
+				
+
+				
+					<li class='login'><a href="/accounts/login?next=/user/home">Login</a></li>
+				
+				
+				
+				
+<!--
+				
+-->
+			</ul>
+		</div>
+	</div><!-- end #menu-wrapper -->
+
+	<div id="page">
+		<div id="main" name="top">
+			<BR></BR>
+			
+	<H1>Search</H1>
+	<BR></BR>
+<!--
+	<p>All search entries are optional and if left blank will not be applied.  Fields with a single input box filter for an exact match, fields with two input boxes (min, max) filter on the inclusive range</p>
+	<BR></BR>
+-->
+
+	<form action="/process_search" method="post" enctype="multipart/form-data">
+	<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='fkmTY0QBZvM8lHxrXFFnJoamvf13rwLU' /></div>
+
+	For explanations of the search fields, see the <a href="/about#OnlineCatalog">help</a> page
+
+	<table id="search_tbl">
+	<tr>
+		<th>  show  </th>
+		<th>  sort  </th>
+		<th></th>
+		<th>value</th>
+		<th>list</th>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_kic" checked /></td>
+		<td><input type="radio" name="sort" value="kic" /></td>
+		<td>Kepler: KIC/EPIC</td>
+		<td><input type="text" name="kic_single" value="" /></td>
+		<td><input type="file" name="kic_file" id="kic_file" size="chars"></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_koiid" /></td>
+		<td><input type="radio" name="sort" value="koiid" /></td>
+		<td>Kepler: KOI (integer)</td>
+		<td><input type="text" name="koiid_single" value="" /></td>
+		<td><input type="file" name="koiid_file" id="koiid_file" size="chars"></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_camp" /></td>
+		<td><input type="radio" name="sort" value="camp" /></td>
+		<td>Kepler: campaign</td>
+		<td>
+			<input type="checkbox" name="campaign_-2" checked>Kepler (original mission)</input>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td>
+			<input type="checkbox" name="campaign_-1" >K2 Engineering </input>
+			<input type="checkbox" name="campaign_0"  >C0 </input>
+			<input type="checkbox" name="campaign_1"  >C1 </input>
+			<input type="checkbox" name="campaign_2"  >C2 </input>
+		</td>
+		<td>
+
+			<input type="checkbox" name="campaign_3" >C3 </input>
+			<input type="checkbox" name="campaign_4" >C4 </input>
+			<input type="checkbox" name="campaign_5" >C5 </input>
+			<input type="checkbox" name="campaign_6" disabled >C6 </input>
+			<input type="checkbox" name="campaign_7" disabled >C7 </input>
+                        <input type="checkbox" name="campaign_8" disabled >C8 </input>
+
+		</td>
+		<td>
+                        <input type="checkbox" name="campaign_9" disabled >C9 </input>
+                        <input type="checkbox" name="campaign_10" disabled >C10 </input>
+
+		</td>
+	</tr>
+
+
+	</tr>
+	<tr><td><BR></td></tr>
+	<tr>
+		<th>  show  </th>
+		<th>  sort  </th>
+		<th></th>
+		<th>min</th>
+		<th>max</th>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_n"/></td>
+		<td><input type="radio" name="sort" value="n" /></td>
+		<td>Number of Ephemerides</td>
+		<td><input type="text" name="range_n_min" /></td>
+		<td><input type="text" name="range_n_max" /></td>
+	<tr>
+		<td><input type="checkbox" name="col_p" checked /></td>
+		<td><input type="radio" name="sort" value="p" checked /></td>
+		<td>Period</td>
+		<td><input type="text" name="range_p_min" /></td>
+		<td><input type="text" name="range_p_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_perr" checked /></td>
+		<td><input type="radio" name="sort" value="perr" /></td>
+		<td>Period error</td>
+		<td><input type="text" name="range_perr_min" /></td>
+		<td><input type="text" name="range_perr_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_bjd0" checked /></td>
+		<td><input type="radio" name="sort" value="bjd0" /></td>
+		<td>BJD<sub>0</sub></td>
+		<td><input type="text" name="range_bjd0_min" /></td>
+		<td><input type="text" name="range_bjd0_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_bjd0err" checked /></td>
+		<td><input type="radio" name="sort" value="bjd0err" /></td>
+		<td>BJD<sub>0</sub> error</td>
+		<td><input type="text" name="range_bjd0err_min" /></td>
+		<td><input type="text" name="range_bjd0err_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_pdepth" /></td>
+		<td><input type="radio" name="sort" value="pdepth" /></td>
+		<td>Polyfit: pdepth</td>
+		<td><input type="text" name="range_pdepth_min"  /></td>
+		<td><input type="text" name="range_pdepth_max"  /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_sdepth" /></td>
+		<td><input type="radio" name="sort" value="sdepth" /></td>
+		<td>Polyfit: sdepth</td>
+		<td><input type="text" name="range_sdepth_min"  /></td>
+		<td><input type="text" name="range_sdepth_max"  /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_pwidth" /></td>
+		<td><input type="radio" name="sort" value="pwidth" /></td>
+		<td>Polyfit: pwidth</td>
+		<td><input type="text" name="range_pwidth_min"  /></td>
+		<td><input type="text" name="range_pwidth_max"  /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_swidth" /></td>
+		<td><input type="radio" name="sort" value="swidth" /></td>
+		<td>Polyfit: swidth</td>
+		<td><input type="text" name="range_swidth_min"  /></td>
+		<td><input type="text" name="range_swidth_max"  /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_sep" /></td>
+		<td><input type="radio" name="sort" value="sep" /></td>
+		<td>Polyfit: separation</td>
+		<td><input type="text" name="range_sep_min" /></td>
+		<td><input type="text" name="range_sep_max" /></td>
+	</tr>
+
+
+	<tr>
+		<td><input type="checkbox" name="col_morph" checked /></td>
+		<td><input type="radio" name="sort" value="morph" /></td>
+		<td>LLE: Morph</td>
+		<td><input type="text" name="range_morph_min" /></td>
+		<td><input type="text" name="range_morph_max" /></td>
+	</tr>
+	<tr>
+
+	<tr>
+		<td><input type="checkbox" name="col_ra"/></td>
+		<td><input type="radio" name="sort" value="ra" /></td>
+		<td>Kepler: RA</td>
+		<td><input type="text" name="range_ra_min" /></td>
+		<td><input type="text" name="range_ra_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_dec"/></td>
+		<td><input type="radio" name="sort" value="dec" /></td>
+		<td>Kepler: DEC</td>
+		<td><input type="text" name="range_dec_min" /></td>
+		<td><input type="text" name="range_dec_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_glon" checked/></td>
+		<td><input type="radio" name="sort" value="glon" /></td>
+		<td>Kepler: galactic longitude</td>
+		<td><input type="text" name="range_glon_min" /></td>
+		<td><input type="text" name="range_glon_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_glat" checked/></td>
+		<td><input type="radio" name="sort" value="glat" /></td>
+		<td>Kepler: galactic latitude</td>
+		<td><input type="text" name="range_glat_min" /></td>
+		<td><input type="text" name="range_glat_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_kmag" checked/></td>
+		<td><input type="radio" name="sort" value="kmag" /></td>
+		<td>Kepler: magnitude</td>
+		<td><input type="text" name="range_kmag_min" /></td>
+		<td><input type="text" name="range_kmag_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_keff" checked/></td>
+		<td><input type="radio" name="sort" value="keff" /></td>
+		<td>Kepler: Teff</td>
+		<td><input type="text" name="range_keff_min" /></td>
+		<td><input type="text" name="range_keff_max" /></td>
+	</tr>
+
+	<tr>
+		<td><input type="checkbox" name="col_pteff" /></td>
+		<td><input type="radio" name="sort" value="pteff" /></td>
+		<td>Pinsonneault: Teff</td>
+		<td><input type="text" name="range_pteff_min" /></td>
+		<td><input type="text" name="range_pteff_max" /></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_cteff" /></td>
+		<td><input type="radio" name="sort" value="cteff" /></td>
+		<td>Casagrande: Teff</td>
+		<td><input type="text" name="range_cteff_min" /></td>
+		<td><input type="text" name="range_cteff_max" /></td>
+	</tr>
+
+
+	
+	<tr><td><BR></td></tr>
+	<tr>
+		<th>  show  </th>
+		<th></th>
+		<th></th>
+		<th>Search Filters</th>
+		<th></th>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_koi" /></td>
+		<td></td>
+		<td>Kepler: KOI (boolean)</td>
+		<td><input type="checkbox" name="search_koi" />Require KOI</td>
+		<td><input type="checkbox" name="search_koifp" /><a href="/about#KOI_flags">FP</a> <input type="checkbox" name="search_koipc" /><a href="/about#KOI_flags">PC</a> <input type="checkbox" name="search_koipl" /><a href="/about#KOI_flags">Pl</a></td>
+	</tr>	
+	<tr>
+	<tr>
+		<td><input type="checkbox" name="col_mast"/></td>
+		<td></td>
+		<td>MAST: Links*</td>
+		<td></td>
+		<td></td>
+	</tr>	
+	<tr>
+		<td><input type="checkbox" name="col_lcdata" checked /></td>
+		<td></td>
+		<td>LC Data*</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_scdata" checked /></td>
+		<td></td>
+		<td>SC Data**</td>
+		<td><input type="checkbox" name="search_sc" />Require SC</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_figs" checked /></td>
+		<td></td>
+		<td>Plots*</td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_etv" /></td>
+		<td></td>
+		<td>ETV: Catalog</td>
+		<td><input type="checkbox" name="search_etvlong" checked />Include long</td>
+		<td><input type="checkbox" name="search_etvshort" checked />Include short</td>
+	</tr>
+	
+	<tr>
+		<td><input type="checkbox" name="col_pubs"/></td>
+		<td></td>
+		<td>Publications*</td>
+		<td><input type="checkbox" name="search_pubs"/>Require Publication</td>
+		<td></td>
+	</tr>
+	<tr><td><BR></td></tr>
+	<tr>
+		<td><input type="checkbox" name="col_incat" /></td>
+		<td></td>
+		<td>In Catalog</td>
+		<td><input type="checkbox" name="search_incat1" checked />Include True</td>
+		<td><input type="checkbox" name="search_incat0" />Include False</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="col_flags"  /></td>
+		<td></td>
+		<td>Flags:* (<a href="/about#flags">about</a>)</td>
+		<td>
+			<input type="checkbox" name="search_UNCflag" />UNC - Uncertain
+		</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_HBflag" />HB
+		<input type="checkbox" name="search_TPflag" />TP
+	</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		
+		<input type="checkbox" name="search_Mflag" />M
+	</td>
+	</tr>
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_QAMflag" />QAM
+		<input type="checkbox" name="search_Puflag" />Pu
+		<input type="checkbox" name="search_Spflag" />Sp
+		<input type="checkbox" name="search_REFflag" />REF
+	</td>
+	</tr>
+
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_FBflag" />FB
+		<input type="checkbox" name="search_OCCflag" />OCC
+		<input type="checkbox" name="search_SPDflag" />SPD
+	
+	</td>
+	</tr>
+
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_TMflag" />TM
+		<input type="checkbox" name="search_TAflag" />TA
+		<input type="checkbox" name="search_TTflag" />TT
+		<input type="checkbox" name="search_TIflag" />TI
+	
+	</td>
+	</tr>
+	
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_DVflag" />DV
+	
+	</td>
+	</tr>
+	
+	<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>
+		<input type="checkbox" name="search_Lflag" />L
+		<input type="checkbox" name="search_Pflag" />Pl
+		<input type="checkbox" name="search_FPflag" />FP
+		<input type="checkbox" name="search_Rflag" />R
+	</td>
+	</tr>
+	
+	
+	
+	
+	<tr>
+	<td></td>
+	<td></td>
+	<td>Other:</td>
+	<td>
+		<input type="checkbox" name="search_multiple" />Multiple (eclipse or ETV)
+	</td>
+	</tr>
+
+	
+	</table>
+	<BR></BR>
+	<p>Results per page*  
+	<select name="perpage">
+		<option value="50">50</option>
+		<option value="100">100</option>
+		<option value="250">250</option>
+		<option value="500">500</option>
+		<option value="1000">1000</option>
+		<option value="all">all</option>
+	</select>
+	</p>
+	<select name="format">
+		<option value="html">HTML Table</option>
+		<option value="csv">comma-separated values</option>
+		<option value="tsv">tab-separated values</option>
+		<option value="ascii">space-separated values</option>
+		<option value="file_csv">File: comma-separated values</option>
+		<option value="file_tsv">File: tab-separated values</option>
+		<option value="file_ascii">File: space-separated values</option>
+	</select>
+
+	<input type="submit", value="Search" />
+	</form>
+	<p>* HTML Table Only</p>
+	<p>** Will only show True/False for formats other than HTML Table</p>
+	<BR><BR>
+	
+
+		</div>
+
+		<div id="table", name="results">
+			
+
+		</div>
+		
+		
+	</div>
+	<!-- end #page -->
+</div>
+</body>
+
+
+<script type="text/javascript" src="/includes/jsscripts/jquery.expander.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('div.readmore').expander({
+			slicePoint: 400,
+			expandText: 'Show More',
+			userCollapseText: 'Show Less',
+			widow: 40,
+			//detailClass: 'expandedtext',
+		});
+	});
+</script>
+<script>
+jQuery(document).ready(function($) {
+	
+	$('.lightbox_trigger').click(function(e) {
+		
+		//prevent default action (hyperlink)
+		e.preventDefault();
+		
+		//Get clicked link href
+		var image_href = $(this).attr("href");
+		
+		/* 	
+		If the lightbox window HTML already exists in document, 
+		change the img src to to match the href of whatever link was clicked
+		
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+		
+		if ($('#lightbox').length > 0) { // #lightbox exists
+			
+			//place href as img src value
+			$('#content').html('<img src="' + image_href + '" style="max-width:80%;max-height:80%;"/>');
+		   	
+			//show lightbox window - you could use .show('fast') for a transition
+			$('#lightbox').show();
+		}
+		
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+			
+			//create HTML markup for lightbox window
+			var lightbox = 
+			'<div id="lightbox">' +
+				'<br><br><p>Click to close</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" style="max-width:80%;max-height:80%;"/>' +
+				'</div>' +	
+			'</div>';
+				
+			//insert lightbox HTML into page
+			$('body').append(lightbox);
+		}
+		
+	});
+	
+	//Click anywhere on the page to get rid of lightbox window
+	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('#lightbox').hide();
+	});
+
+});
+</script>
+
+
+</html>
+

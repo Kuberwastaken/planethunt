@@ -1,0 +1,48 @@
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.10CEST15:31:46
+
+TIC 467361658
+-------------
+
+Object HD 217142  ---  *  ---  OID=@265430   (@@5842,0)  ---  coobox=950
+
+Coordinates(ICRS,ep=J2000,eq=2000): 22 56 04.3624138080  +75 56 22.328313360 (Opt ) A [0.0124 0.0129 90] 2020yCat.1350....0G
+Coordinates(FK4,ep=B1950,eq=1950): 22 54 43.5859844175  +75 40 21.733206865
+Coordinates(Gal,ep=J2000,eq=2000): 115.9744943489119  +14.6505865954576
+hierarchy counts: #parents=0, #children=0, #siblings=0
+Proper motions: 34.035 -36.232 [0.019 0.018 90] A 2020yCat.1350....0G
+Parallax: 40.6827 [0.0143] A 2020yCat.1350....0G
+Radial Velocity: -9.31 [0.20] A 2018yCat.1345....0G
+Redshift: -0.000031 [0.000001] A 2018yCat.1345....0G
+cz: -9.31 [0.20] A 2018yCat.1345....0G
+Flux B : 9.23 [0.02] D 2000A&A...355L..27H
+Flux V : 8.28 [0.01] D 2000A&A...355L..27H
+Flux G : 8.001969 [0.002796] C 2020yCat.1350....0G
+Flux J : 6.569 [0.020] C 2003yCat.2246....0C
+Flux H : 6.134 [0.031] C 2003yCat.2246....0C
+Flux K : 6.034 [0.021] C 2003yCat.2246....0C
+Spectral type: G5 E 1993yCat.3135....0C
+Morphological type: ~ ~ ~
+Angular size:     ~     ~   ~ (~)  ~ ~
+
+Identifiers (18):
+   TIC 467361658                        Gaia DR3 2281114756485256704         CNS5 5658                          
+   AG+75 983                            BD+75 862                            GSC 04601-01671                    
+   HD 217142                            PPM 11424                            SAO 10561                          
+   TYC 4601-1671-1                      uvby98 100217142                     2MASS J22560434+7556222            
+   Gaia DR1 2281114752187769984         GEN# +1.00217142                     Gaia DR2 2281114756485256704       
+   1RXS J225600.8+755619                ** GAT 30A                           WDS J22561+7556A                   
+
+Bibcodes  1850-2026 () (18):
+  2025PASP..137j4402T  2024AJ....167..139T  2023A&A...670A..19G  2023AJ....165..267H
+  2022ApJ...936..109P  2020ApJS..247...11R  2019MNRAS.490.3158C  2018A&A...609A.116R
+  2017ApJ...848...34H  2016A&A...591A.118S  2016ApJ...826..171G  2015A&A...580A..23P
+  2014ASPC..485..223B  2011A&A...530A.138C  2009A&A...501..941H  2005yCat.3244....0G
+  2004A&A...418..989N  1993yCat.3135....0C                        
+
+Measures (distance:2  Fe_H:1  MK:1  PLX:3  PM:3  ROT:1  velocities:2  ):
+distance:2Fe_H:1MK:1PLX:3PM:3ROT:1velocities:2
+
+Notes (0) :
+
+================================================================================
+

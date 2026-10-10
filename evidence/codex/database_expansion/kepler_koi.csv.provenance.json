@@ -1,0 +1,7 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ckepoi_name%2Ckepler_name%2Cra%2Cdec%2Ckoi_disposition%2Ckoi_pdisposition%2Ckoi_period%2Ckoi_time0bk%2Ckoi_duration%2Ckoi_depth%2Ckoi_tce_plnt_num+from+cumulative&format=csv",
+  "query": "select kepid,kepoi_name,kepler_name,ra,dec,koi_disposition,koi_pdisposition,koi_period,koi_time0bk,koi_duration,koi_depth,koi_tce_plnt_num from cumulative",
+  "retrieved_utc": "2026-10-10T13:37:49.089267+00:00",
+  "sha256": "b47503b0e0b612ccec6ed5d285a1b3786cc5b10306b98ae3a61acb9f677ce5e3",
+  "bytes": 1059330
+}

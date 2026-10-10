@@ -1,0 +1,163 @@
+{
+  "tic": 188087957,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 24.988615074960315,
+      "t0": 1544.2734399530343,
+      "duration_hr": 2.768898919498939,
+      "depth_ppm": 1149.5262457941722,
+      "bls_snr": 31.62468564674128,
+      "coarse_snr": 31.393824489547786,
+      "coarse_grid_count": 4566,
+      "rp_earth_approx": 2.048991095775438,
+      "discovery": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": 0.001149909635821946,
+        "depth_err": 3.6349017303595663e-05,
+        "snr": 31.635233112841167,
+        "odd_even_sigma": 24.826165428245787,
+        "secondary": 2.4756669322073875e-05,
+        "secondary_err": 3.864196255075586e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.5,
+        "events": [
+          [
+            0,
+            1544.27344,
+            1836.7,
+            45.7,
+            1.0
+          ],
+          [
+            59,
+            3018.60173,
+            -35.8,
+            60.0,
+            0.96
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 0,
+        "n_good_events": 0,
+        "depth": NaN,
+        "depth_err": NaN,
+        "snr": NaN,
+        "odd_even_sigma": NaN,
+        "secondary": 9.843968452471609e-06,
+        "secondary_err": 5.3337311210279234e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": NaN,
+        "events": []
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 23.23843335915625,
+      "t0": 1551.8961675089342,
+      "duration_hr": 3.185311573537723,
+      "depth_ppm": 171.39443754143178,
+      "bls_snr": 8.089417781407324,
+      "coarse_snr": 7.713523109232768,
+      "coarse_grid_count": 4566,
+      "rp_earth_approx": 0.7911867161830546,
+      "discovery": {
+        "n_events": 5,
+        "n_good_events": 5,
+        "depth": 0.0001714419249452697,
+        "depth_err": 2.1187487427756488e-05,
+        "snr": 8.091659076133476,
+        "odd_even_sigma": 1.9744258162416382,
+        "secondary": -2.1040025272438583e-05,
+        "secondary_err": 2.2628065133921078e-05,
+        "max_ses_frac": 0.6122271790639566,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1551.89617,
+            162.2,
+            43.2,
+            0.99
+          ],
+          [
+            32,
+            2295.52604,
+            218.0,
+            41.0,
+            1.0
+          ],
+          [
+            63,
+            3015.91747,
+            26.1,
+            54.5,
+            0.99
+          ],
+          [
+            64,
+            3039.1559,
+            240.9,
+            56.5,
+            0.99
+          ],
+          [
+            95,
+            3759.54734,
+            181.4,
+            47.3,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": -1.2738782885703816e-06,
+        "depth_err": 4.995496890746477e-05,
+        "snr": -0.025500532107828537,
+        "odd_even_sigma": NaN,
+        "secondary": -4.897161732788994e-05,
+        "secondary_err": 4.995496890746477e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            109,
+            4084.8854,
+            -1.3,
+            50.0,
+            0.99
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "2072a76397f5bf8fdec12812c475cef1bd9d7043d3180e8a1872ac9bf40dbbb4",
+  "holdout_sectors": [
+    100
+  ],
+  "discovery_sectors": [
+    9,
+    36,
+    63,
+    90
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 13236,
+  "n_holdout": 2748,
+  "rho_sun": 4.174386514100395,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 8.34
+}

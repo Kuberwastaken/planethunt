@@ -1,0 +1,45 @@
+{
+  "ephemeris": {
+    "period_days": 0.23647571312349702,
+    "epoch_btjd": 2526.339970009487,
+    "duration_hours": 1.2799999999999998
+  },
+  "assessment": "Transit-like signal vetting only; no claim of planet confirmation or novelty.",
+  "primary": {
+    "n_events": 0
+  },
+  "odd": {
+    "n_events": 0
+  },
+  "even": {
+    "n_events": 0
+  },
+  "odd_even_sigma": null,
+  "secondary": {
+    "n_events": 0
+  },
+  "controls": {
+    "n_controls": 0,
+    "note": "Correlated conditional phase controls; rank is not a survey false-alarm probability."
+  },
+  "phase_control_measurements": [],
+  "per_sector": {},
+  "events": [],
+  "flags": [
+    "fewer_than_three_usable_events",
+    "weak_local_depth",
+    "weak_fixed_ephemeris_holdout"
+  ],
+  "holdout": {
+    "sectors": [
+      1751
+    ],
+    "status": "unseen only as declared by caller",
+    "measurement": {
+      "n_events": 0
+    },
+    "discovery_subset_measurement": {
+      "n_events": 0
+    }
+  }
+}

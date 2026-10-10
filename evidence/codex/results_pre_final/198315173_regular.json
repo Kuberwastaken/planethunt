@@ -1,0 +1,12 @@
+{
+  "tic": 198315173,
+  "mode": "regular",
+  "inverted": false,
+  "status": "error",
+  "signals": [],
+  "pipeline_version": 2,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "error": "No data left in file",
+  "trace": "Traceback (most recent call last):\n  File \"/workspace/scratch/c73e045af8ef/planet-search/run_search.py\", line 26, in one\n    d=dict(np.load(ROOT/'lightcurves'/f'{tic}.npz'));bad=[]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py\", line 463, in load\n    raise EOFError(\"No data left in file\")\nEOFError: No data left in file\n",
+  "seconds": 0.0
+}

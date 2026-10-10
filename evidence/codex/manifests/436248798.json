@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0006/target/0000/0004/3624/8798/hlsp_tess-spoc_tess_phot_0000000436248798-s0006_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0006/target/0000/0004/3624/8798/hlsp_tess-spoc_tess_phot_0000000436248798-s0006_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 6,
+    "sha256": "4231ed4974853d56e815627d306f4b373c356086ed5d1462c55fd123c42d383a",
+    "bytes": 135360,
+    "fetched_utc": "2026-10-10T13:21:42.821545+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2023289093419-s0071-0000000436248798-0266-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0071/0000/0004/3624/8798/tess2023289093419-s0071-0000000436248798-0266-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 71,
+    "sha256": "d2f077280a6d41afaf27aae38578703702718e3df01e232bdad7bc8f6ee0584e",
+    "bytes": 1897920,
+    "fetched_utc": "2026-10-10T13:21:43.155567+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2023315124025-s0072-0000000436248798-0267-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0072/0000/0004/3624/8798/tess2023315124025-s0072-0000000436248798-0267-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 72,
+    "sha256": "50e5eda08f06d5d4592fec5fbbe3029e4b3094b36db5b2e54fe72329878e7f58",
+    "bytes": 1860480,
+    "fetched_utc": "2026-10-10T13:21:50.476930+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2025312202959-s0098-0000000436248798-0298-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0098/0000/0004/3624/8798/tess2025312202959-s0098-0000000436248798-0298-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 98,
+    "sha256": "315f8ee8feb14ab8af90320bd435e63a2cab873af130a05a73331566c7bdf4c6",
+    "bytes": 4164480,
+    "fetched_utc": "2026-10-10T13:21:50.411463+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

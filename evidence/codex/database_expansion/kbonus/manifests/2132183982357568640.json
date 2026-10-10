@@ -1,0 +1,89 @@
+{
+  "source_id": "2132183982357568640",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HLSP/kbonus-bkg/lcs/0113/011390946/hlsp_kbonus-bkg_kepler_kepler_kic-011390946_kepler_v1.0_lc.fits",
+  "fits_sha256": "e1e118487c8fe1278289dfc3eb6c9b4f23c854e2b700937eec47235a327690f3",
+  "quarters": [
+    {
+      "quarter": 1,
+      "psffrac": 0.8143625184119654,
+      "crowdsap": 0.748839937,
+      "points": 1452
+    },
+    {
+      "quarter": 2,
+      "psffrac": 0.797492352792472,
+      "crowdsap": 0.9534449509,
+      "points": 3730
+    },
+    {
+      "quarter": 3,
+      "psffrac": 0.828631614062061,
+      "crowdsap": 0.7923518719,
+      "points": 3718
+    },
+    {
+      "quarter": 5,
+      "psffrac": 0.8068831375469712,
+      "crowdsap": 0.7595743029,
+      "points": 4203
+    },
+    {
+      "quarter": 6,
+      "psffrac": 0.7962473325353084,
+      "crowdsap": 0.9552255071,
+      "points": 3251
+    },
+    {
+      "quarter": 7,
+      "psffrac": 0.8315724417617929,
+      "crowdsap": 0.7972922385,
+      "points": 3740
+    },
+    {
+      "quarter": 9,
+      "psffrac": 0.804550765754094,
+      "crowdsap": 0.7531989149,
+      "points": 4413
+    },
+    {
+      "quarter": 10,
+      "psffrac": 0.7943236225393935,
+      "crowdsap": 0.9553198089,
+      "points": 1951
+    },
+    {
+      "quarter": 11,
+      "psffrac": 0.8314779484801997,
+      "crowdsap": 0.797443163,
+      "points": 3803
+    },
+    {
+      "quarter": 13,
+      "psffrac": 0.8016509971580991,
+      "crowdsap": 0.7536971195,
+      "points": 3948
+    },
+    {
+      "quarter": 14,
+      "psffrac": 0.7916936291564838,
+      "crowdsap": 0.950896537,
+      "points": 3345
+    },
+    {
+      "quarter": 15,
+      "psffrac": 0.8333437960168344,
+      "crowdsap": 0.7940992803,
+      "points": 4113
+    },
+    {
+      "quarter": 17,
+      "psffrac": 0.8347635167002458,
+      "crowdsap": 0.741613539,
+      "points": 1226
+    }
+  ],
+  "time": "BTJD = BKJD - 2167; TDB",
+  "quality": "SAP_QUALITY == 0",
+  "flux_column": "FLUX (corrected PSF)",
+  "fetched_utc": "2026-10-10T13:40:13.848173+00:00"
+}

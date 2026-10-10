@@ -1,0 +1,5 @@
+jobs 4 workers 2
+{"tic": 358615829, "mode": "usp", "inverted": false, "status": "ok", "seconds": 16.09, "error": null, "signals": [{"period": 0.42920272855669817, "snr": 6.030480495108135, "holdout_snr": 1.0537211056803024, "screen_pass": false}]}
+{"tic": 358615829, "mode": "regular", "inverted": false, "status": "ok", "seconds": 19.46, "error": null, "signals": [{"period": 19.925011928027132, "snr": 6.1467970201805695, "holdout_snr": -1.4246460358455972, "screen_pass": false}]}
+{"tic": 154101678, "mode": "usp", "inverted": false, "status": "ok", "seconds": 3.42, "error": null, "signals": [{"period": 0.4845228419869934, "snr": 19.336756145997562, "holdout_snr": -7.844602837302453, "screen_pass": false}, {"period": 0.3962574839228046, "snr": 20.556325387280893, "holdout_snr": -5.103317319283728, "screen_pass": false}]}
+{"tic": 154101678, "mode": "regular", "inverted": false, "status": "ok", "seconds": 4.64, "error": null, "signals": [{"period": 4.3689327059911145, "snr": 46.04412483099445, "holdout_snr": 25.35614618728812, "screen_pass": false}, {"period": 4.3658751817034895, "snr": 40.30315877552462, "holdout_snr": -16.01639921731213, "screen_pass": false}]}

@@ -1,0 +1,44 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0014/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0014_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0014/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0014_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 14,
+    "sha256": "39bf034393e9c91af08e54a32849c82e94d65645069261e1d8a7c580b46701c0",
+    "bytes": 158400,
+    "fetched_utc": "2026-10-10T13:24:43.297762+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0041/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0041_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0041/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0041_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 41,
+    "sha256": "c9a2b6b387568dbc32c3c402ede3d5a0217b87f94d9a8768275b2294b7aea725",
+    "bytes": 411840,
+    "fetched_utc": "2026-10-10T13:24:43.381054+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0054/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0054_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0054/target/0000/0002/0980/5666/hlsp_tess-spoc_tess_phot_0000000209805666-s0054_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 54,
+    "sha256": "70f557cff64ad2eb58f76c448507c1d9f4388cfddab1bd3ce0ce8c5b0e5374f6",
+    "bytes": 408960,
+    "fetched_utc": "2026-10-10T13:24:49.278752+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

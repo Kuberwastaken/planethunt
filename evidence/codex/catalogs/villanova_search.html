@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <title>  TESS EB search form  </title>
+    <link rel="stylesheet" href="/static/catalog/styles.css">
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="banner">
+            <div class="logo">
+                <img src="/static/catalog/logo.png">
+            </div>
+            <div class="banner-title">
+                Live version of the TESS EB catalog
+            </div>
+            <div class="banner-buttons">
+                
+                    <button onclick="location.href='/'">Home</button>
+                    <button onclick="location.href='search'">Search</button>
+                    <button onclick="location.href='/accounts/login'">Login</button>
+                
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+
+Quick search by TIC:
+<form action="/search_results" method="get">
+    <input name="tic" type="text" placeholder="Search...">
+</form>
+<br>
+
+
+
+
+<h1> Search </h1>
+
+Use the form below to narrow your TESS EB catalog search results.<br><br>
+
+
+
+<form action="/search_results" method="get">
+    <label for="order_by">Order by:</label>
+    <select id="order_by" name="order_by">
+        <option value="tic__tess_id">TESS ID</option>
+        <option value="ephemeris__period" selected>Period</option>
+        <option value="morph_coeff">Morphology</option>
+        <option value="tic__ra">Right ascension</option>
+        <option value="tic__dec">Declination</option>
+        <option value="tic__glon">Galactic longitude</option>
+        <option value="tic__glat">Galactic latitude</option>
+        <option value="tic__teff">Effective temperature</option>
+        <option value="tic__logg">Surface gravity</option>
+        <option value="tic__abun">Chemical abundances</option>
+        <option value="tic__Tmag">TIC magnitude</option>
+    </select>
+    <label for="then_order_by">then by:</label>
+    <select id="then_order_by" name="then_order_by">
+        <option value="none"></option>
+        <option value="tic__tess_id">TESS ID</option>
+        <option value="ephemeris__period">Period</option>
+        <option value="morph_coeff">Morphology</option>
+        <option value="tic__ra">Right ascension</option>
+        <option value="tic__dec">Declination</option>
+        <option value="tic__glon">Galactic longitude</option>
+        <option value="tic__glat">Galactic latitude</option>
+        <option value="tic__teff">Effective temperature</option>
+        <option value="tic__logg">Surface gravity</option>
+        <option value="tic__abun">Chemical abundances</option>
+        <option value="tic__Tmag">TIC magnitude</option>
+    </select> 
+    <input type="checkbox" id="incat_only" name="incat_only" checked="1"> Query confirmed EBs only
+    <!-- <input type="checkbox" id="ambiguous" name="ambiguous" checked="1"> Include ambiguous
+    <input type="checkbox" id="single" name="single" checked="1"> Include single events
+    <input type="checkbox" id="pulsating" name="pulsating" checked="1"> Include pulsating components
+    <input type="checkbox" id="heartbeat" name="heartbeat" checked="1"> Include hearbeats
+    <input type="checkbox" id="multis" name="multis" checked="1"> Include multis -->
+    <br><br>
+
+    <table>
+        <tr>
+            <td>t<sub>0</sub> [days]</td><td><input type="number" id="ephemeris__bjd0_min" name="ephemeris__bjd0_min" value="" min="0.0" max="10000.0" step="0.001"></td><td><input type="number" id="ephemeris__bjd0_max" name="ephemeris__bjd0_max" value="" min="0.0" max="10000.0" step="0.001"></td>
+            <td>T<sub>eff</sub> [K]</td><td><input type="number" id="tic__teff_min" name="tic__teff_min" value="" min="2000" max="100000" step="1"></td><td><input type="number" id="tic__teff_max" name="tic__teff_max" value="" min="2000" max="100000" step="1"></td>
+        </tr>
+        <tr>
+            <td>Period [days]</td><td><input type="number" id="ephemeris__period_min" name="ephemeris__period_min" value="" min="0" max="10000" step="0.001"></td><td><input type="number" id="ephemeris__period_max" name="ephemeris__period_max" value=""  min="0" max="10000" step="0.001"></td>
+            <td>log(g) [dex]</td><td><input type="number" id="tic__logg_min" name="tic__logg_min" value="" min="0.0" max="8.0" step="0.01"></td><td><input type="number" id="tic__logg_max" name="tic__logg_max" value="" min="0.0" max="8.0" step="0.01"></td>
+        </tr>
+        <tr>
+            <td>Morphology</td><td><input type="number" id="morph_coeff_min" name="morph_coeff_min" value="" min="0.0" max="1.0" step="0.001"></td><td><input type="number" id="morph_coeff_max" name="morph_coeff_max" value="" min="0.0" max="1.0" step="0.001"></td>
+            <td>Abundances [dex]</td><td><input type="number" id="tic__abun_min" name="tic__abun_min" value="" min="-4.0" max="1.0" step="0.01"></td><td><input type="number" id="tic__abun_max" name="tic__abun_max" value="" min="-4.0" max="1.0" step="0.01"></td>
+        </tr>
+        <tr>
+            <td>R.A. [deg]</td><td><input type="number" id="tic__ra_min" name="tic__ra_min" value="" min="0.0" max="360.0" step="0.001"></td><td><input type="number" id="tic__ra_max" name="tic__ra_max" value="" min="0.0" max="360.0" step="0.001"></td>
+            <td>Tmag</td><td><input type="number" id="tic__Tmag_min" name="tic__Tmag_min" value="" min="3.0" max="18.0" step="0.01"></td><td><input type="number" id="tic__Tmag_max" name="tic__Tmag_max" value="" min="3.0" max="18.0" step="0.01"></td>
+        </tr>
+        <tr>
+            <td>Dec [deg]</td><td><input type="number" id="tic__dec_min" name="tic__dec_min" value="" min="-90.0" max="90.0" step="0.001"></td><td><input type="number" id="tic__dec_max" name="tic__dec_max" value="" min="-90.0" max="90.0" step="0.001"></td>
+            <td>Sector IDs</td><td><input type="number" id="sec_min" name="sec_min" value="" min="1" max="55" step="1"></td><td><input type="number" id="sec_max" name="sec_max" value="" min="1" max="55" step="1"></td>
+        </tr>
+        <tr>
+            <td>Gal. long. [deg]</td><td><input type="number" id="tic__glon_min" name="tic__glon_min" value="" min="0.0" max="360.0" step="0.001"></td><td><input type="number" id="tic__glon_max" name="tic__glon_max" value="" min="0.0" max="360.0" step="0.001"></td>
+            <td>Num. of sectors</td><td><input type="number" id="nsec_min" name="nsec_min" value="" min="1" max="55" step="1"></td><td><input type="number" id="nsec_max" name="nsec_max" value="" min="1" max="55" step="1"></td>
+        </tr>
+        <tr>
+            <td>Gal. lat. [deg]</td><td><input type="number" id="tic__glat_min" name="tic__glat_min" value="" min="-90.0" max="90.0" step="0.001"></td><td><input type="number" id="tic__glat_max" name="tic__glat_max" value="" min="-90.0" max="90.0" step="0.001"></td>
+            <td>Signal ID</td><td><input type="number" id="sigid_min" name="sigid_min" value="" min="1" max="5" step="1"></td><td><input type="number" id="sigid_max" name="sigid_max" value="" min="1" max="5" step="1"></td>
+        </tr>
+    </table>
+    
+    <br>
+    <br>
+
+    <label for="display_format">Display as:</label>
+    <select id="display_format" name="display_format">
+        <option value="html" selected>html</option>
+        <option value="csv">csv</option>
+    </select>
+    &nbsp; &nbsp; &nbsp;
+    <label for="c">Columns to include:</label>
+    <select name="c" id="c" multiple>
+        <option value="in_catalog"> In catalog </option>
+        <option value="tic__tess_id" selected="true"> TESS ID </option>
+        <option value="date_added"> Date added </option>
+        <option value="date_modified"> Date modified </option>
+        <option value="sectors"> Sectors </option>
+        <option value="tic__provenances"> Provenances </option>
+        <option value="tic__ra" selected> R.A. </option>
+        <option value="tic__dec" selected> Dec </option>
+        <option value="tic__Tmag" selected> Tmag </option>
+        <option value="tic__glat"> Galactic latitude </option>
+        <option value="tic__glon"> Galactic longitude </option>
+        <option value="tic__pmra"> PM in R.A. </option>
+        <option value="tic__pmdec"> PM in Dec </option>
+        <option value="bjd0" selected> bjd0 </option>
+        <option value="bjd0_uncert"> bjd0 uncert </option>
+        <option value="period" selected> Orbital period </option>
+        <option value="period_uncert"> Period uncertainty </option>
+        <option value="morph_coeff" selected> morph </option>
+        <option value="tic__teff"> Teff </option>
+        <option value="tic__logg"> log(g) </option>
+        <option value="tic__abun"> [M/H] </option>
+        <option value="source"> Source </option>
+        <option value="flags"> Flags </option>
+    </select>
+    &nbsp; &nbsp; &nbsp;
+    <input type="submit" value="Search">
+</form>
+
+
+
+</body>
+</html>

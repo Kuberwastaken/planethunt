@@ -1,0 +1,16 @@
+{
+  "tic": 113710966,
+  "mode": "usp",
+  "rank": 2,
+  "status": "vet_error",
+  "error": "ValueError('Require period>0 and 0<duration<period/4')",
+  "pipeline_version": 3,
+  "source_search": "/workspace/scratch/c73e045af8ef/planet-search/results/113710966_usp.json",
+  "source_search_sha256": "4626b06f19c8efc19d4c3f8bff221855fec477f3f172696ba6363ea8a923f945",
+  "interpretation": "Diagnostic unavailable: duration exceeds its quarter-period limit. This is not evidence of absent observed transits.",
+  "ephemeris": {
+    "period_days": 0.3428908563341501,
+    "duration_hours": 2.28,
+    "duty_fraction": 0.2770560901379699
+  }
+}

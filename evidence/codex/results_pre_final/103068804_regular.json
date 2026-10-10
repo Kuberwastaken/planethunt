@@ -1,0 +1,12 @@
+{
+  "tic": 103068804,
+  "mode": "regular",
+  "inverted": false,
+  "status": "error",
+  "signals": [],
+  "pipeline_version": 2,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "error": "File is not a zip file",
+  "trace": "Traceback (most recent call last):\n  File \"/workspace/scratch/c73e045af8ef/planet-search/run_search.py\", line 26, in one\n    d=dict(np.load(ROOT/'lightcurves'/f'{tic}.npz'));bad=[]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py\", line 471, in load\n    ret = NpzFile(fid, own_fid=own_fid, allow_pickle=allow_pickle,\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py\", line 197, in __init__\n    _zip = zipfile_factory(fid)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py\", line 112, in zipfile_factory\n    return zipfile.ZipFile(file, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/zipfile/__init__.py\", line 1371, in __init__\n    self._RealGetContents()\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/zipfile/__init__.py\", line 1438, in _RealGetContents\n    raise BadZipFile(\"File is not a zip file\")\nzipfile.BadZipFile: File is not a zip file\n",
+  "seconds": 0.0
+}

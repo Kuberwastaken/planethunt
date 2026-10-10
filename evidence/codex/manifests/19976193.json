@@ -1,0 +1,47 @@
+[
+  {
+    "uri": "mast:TESS/product/tess2019032160000-s0008-0000000019976193-0136-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0008/0000/0000/1997/6193/tess2019032160000-s0008-0000000019976193-0136-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 8,
+    "sha256": "cd1481ee36f871d017e786071d1c426fda247b4e68ba65544489b806eace7580",
+    "bytes": 1805760,
+    "fetched_utc": "2026-10-10T13:18:37.643584+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2021039152502-s0035-0000000019976193-0205-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0035/0000/0000/1997/6193/tess2021039152502-s0035-0000000019976193-0205-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 35,
+    "sha256": "e8a1a567542eb881b004c46e5e0fa5c6bfacb51ae9197f0ed48e6dba64639621",
+    "bytes": 1828800,
+    "fetched_utc": "2026-10-10T13:18:37.658540+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2023018032328-s0061-0000000019976193-0250-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0061/0000/0000/1997/6193/tess2023018032328-s0061-0000000019976193-0250-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 61,
+    "sha256": "e523383a0869f6d174325c32980e53bdd93af7a1ef2cd14093ade2f6a2079b3d",
+    "bytes": 1860480,
+    "fetched_utc": "2026-10-10T13:18:44.871021+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2025014115807-s0088-0000000019976193-0285-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0088/0000/0000/1997/6193/tess2025014115807-s0088-0000000019976193-0285-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 88,
+    "sha256": "c85432bc313cfd93e30f8d545e9f3f02f957685a4d1daa75391252c78d483f6b",
+    "bytes": 2030400,
+    "fetched_utc": "2026-10-10T13:18:44.884933+00:00"
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0099/0000/0000/1997/6193/hlsp_qlp_tess_ffi_s0099-0000000019976193_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0099/0000/0000/1997/6193/hlsp_qlp_tess_ffi_s0099-0000000019976193_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 99,
+    "sha256": "b9c5ee0dfcb500108f46449ad7c85dbd39ef5ffa3d0c4ac58c6aadda4a830301",
+    "bytes": 527040,
+    "fetched_utc": "2026-10-10T13:18:51.703042+00:00"
+  }
+]

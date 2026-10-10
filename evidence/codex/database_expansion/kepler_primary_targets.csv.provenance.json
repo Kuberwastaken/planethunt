@@ -1,0 +1,7 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+distinct+kepid%2Cra%2Cdec+from+keplerstellar&format=csv",
+  "query": "select distinct kepid,ra,dec from keplerstellar",
+  "retrieved_utc": "2026-10-10T13:37:53.302231+00:00",
+  "sha256": "47dbda6fc24f6e5c9ee6c42ccf30da8a004bf1c6c7175b19a4b528606ed4910e",
+  "bytes": 5850219
+}

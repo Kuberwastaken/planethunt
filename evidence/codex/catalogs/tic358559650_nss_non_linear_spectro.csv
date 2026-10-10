@@ -1,0 +1,1 @@
+solution_id,source_id,nss_solution_type,mean_velocity,mean_velocity_error,first_deriv_velocity,first_deriv_velocity_error,second_deriv_velocity,second_deriv_velocity_error,rv_n_obs_primary,rv_n_good_obs_primary,bit_index,corr_vec,obj_func,goodness_of_fit,flags

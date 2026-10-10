@@ -1,0 +1,67 @@
+[
+  {
+    "file": "kplr005689116-2009166043257_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2009166043257_lpd-targ.fits.gz",
+    "sha256": "8b11e08c57389772526ff873bdfb3fe48ee6a670ecfb81a02dd8f7ddde448e77"
+  },
+  {
+    "file": "kplr005689116-2009259160929_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2009259160929_lpd-targ.fits.gz",
+    "sha256": "2b9272743ef746abe494fa23343e71db1afdbf6a1bb86824b1ce55ab8a359232"
+  },
+  {
+    "file": "kplr005689116-2009350155506_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2009350155506_lpd-targ.fits.gz",
+    "sha256": "160308f6b71b928dcf28a4e0f7e68d7404261d457591b1a05664eafb8d4487c7"
+  },
+  {
+    "file": "kplr005689116-2010078095331_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2010078095331_lpd-targ.fits.gz",
+    "sha256": "178851f642d2f98db2d16e9c2035da4e437687dd6a4a31707df634c1ea17716e"
+  },
+  {
+    "file": "kplr005689116-2010265121752_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2010265121752_lpd-targ.fits.gz",
+    "sha256": "dd27f3336336403a6782f0f07681aff12e02235b382f0a5651703c08a74dad29"
+  },
+  {
+    "file": "kplr005689116-2010355172524_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2010355172524_lpd-targ.fits.gz",
+    "sha256": "806a5cbc25bd0c1a5369f0f8d285f6601f413b932ccc842771bef385a8c12292"
+  },
+  {
+    "file": "kplr005689116-2011073133259_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2011073133259_lpd-targ.fits.gz",
+    "sha256": "46c28c046c2ffa701d6b7f4f7cbcb21ed08fa23cf8c17d8ba2c73248796b8c34"
+  },
+  {
+    "file": "kplr005689116-2011271113734_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2011271113734_lpd-targ.fits.gz",
+    "sha256": "cf3e4cc427e7112a0160b197049287be10b52d31d27eb9599837bac23ebde1a5"
+  },
+  {
+    "file": "kplr005689116-2012004120508_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2012004120508_lpd-targ.fits.gz",
+    "sha256": "81d868108e44607a35697135a8694533ff744cc52c4daf9d076987efaee27b22"
+  },
+  {
+    "file": "kplr005689116-2012088054726_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2012088054726_lpd-targ.fits.gz",
+    "sha256": "b67abba8b5457d684b563fb3240bbb955491e057415e8128eeca3edc60b574ce"
+  },
+  {
+    "file": "kplr005689116-2012277125453_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2012277125453_lpd-targ.fits.gz",
+    "sha256": "f472b3f7658c8e6d30117b9ae0a6f282969faf5b3cf1a00eaad6d2f27b6feab7"
+  },
+  {
+    "file": "kplr005689116-2013011073258_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2013011073258_lpd-targ.fits.gz",
+    "sha256": "32c24a3c1a2562814ea26933218a536220c606874eb43bde5dfa289f5abb58c3"
+  },
+  {
+    "file": "kplr005689116-2013098041711_lpd-targ.fits.gz",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:KEPLER/url/missions/kepler/target_pixel_files/0056/005689116/kplr005689116-2013098041711_lpd-targ.fits.gz",
+    "sha256": "28dbf1b7ab3d1e3cfa52453714ebef3389593704f07f7a9889ef6f907992376b"
+  }
+]

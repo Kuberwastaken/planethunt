@@ -1,0 +1,5 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+table_name%2Ccolumn_name%2Cdatatype+from+TAP_SCHEMA.columns+where+table_name+in+%28%27k2pandc%27%2C%27cumulative%27%2C%27q1_q17_dr25_koi%27%2C%27q1_q17_dr25_tce%27%29&format=csv",
+  "utc": "2026-10-10T13:34:55.608303+00:00",
+  "sha256": "87bca155ad261a1b48b318cf0f5d26e49ab378f58516e58ad4c0b0ac74ede038"
+}

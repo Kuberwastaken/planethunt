@@ -1,0 +1,7 @@
+{
+  "url": "https://archive.stsci.edu/missions/tess/catalogs/tce/tess2026192221110-s0106-s0106_dvr-tcestats.csv",
+  "requested_utc": "2026-10-10T13:14:44.782242+00:00",
+  "status": 200,
+  "bytes": 1165177,
+  "sha256": "075d464ff562131a16e9028d921b49ebd8acc22f89532a199d926671e3694808"
+}

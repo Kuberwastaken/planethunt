@@ -1,0 +1,70 @@
+{
+  "mass_solar": 0.5446,
+  "radius_solar": 0.5553,
+  "stellar_parameter_source": "GaiaDR3 values independently retrieved by catalog agent; parent holds source response. Values have uncertainty not propagated here.",
+  "a_over_rstar": 35.553634497363184,
+  "density_solar": 3.180494263415331,
+  "fit_scope": "Discovery quarters only; approximate fixed limb darkening; no dilution. Diagonal phase-bin residuals descriptive, not validation odds.",
+  "fits": [
+    {
+      "baseline_degree": 1,
+      "fixed_limb_darkening": [
+        0.5,
+        0.2
+      ],
+      "chi2_diagonal_bins": 44.71416565512976,
+      "n_bins": 48,
+      "radius_ratio": 0.05085717093853467,
+      "impact_parameter": 0.6599722124790076,
+      "epoch_shift_days": 0.0014725194001739396,
+      "offset_ppm": -23.93206293536729,
+      "duration_contact_hours": 2.420102663943001,
+      "illustrative_undiluted_planet_radius_Earth": 3.0804139004300293
+    },
+    {
+      "baseline_degree": 1,
+      "fixed_limb_darkening": [
+        0.3,
+        0.2
+      ],
+      "chi2_diagonal_bins": 44.7595498381261,
+      "n_bins": 48,
+      "radius_ratio": 0.05099423747712134,
+      "impact_parameter": 0.6833773388769886,
+      "epoch_shift_days": 0.001445992634216406,
+      "offset_ppm": -24.460846087460855,
+      "duration_contact_hours": 2.363079790147009,
+      "illustrative_undiluted_planet_radius_Earth": 3.0887160073493565
+    },
+    {
+      "baseline_degree": 2,
+      "fixed_limb_darkening": [
+        0.5,
+        0.2
+      ],
+      "chi2_diagonal_bins": 46.4577260445546,
+      "n_bins": 48,
+      "radius_ratio": 0.04915575536570286,
+      "impact_parameter": 0.7466085176750539,
+      "epoch_shift_days": -0.0020431319838710997,
+      "offset_ppm": -11.57005123340335,
+      "duration_contact_hours": 2.18142847138418,
+      "illustrative_undiluted_planet_radius_Earth": 2.9773593245612004
+    },
+    {
+      "baseline_degree": 2,
+      "fixed_limb_darkening": [
+        0.3,
+        0.2
+      ],
+      "chi2_diagonal_bins": 45.76055154004266,
+      "n_bins": 48,
+      "radius_ratio": 0.04884999984630503,
+      "impact_parameter": 0.7611971023331412,
+      "epoch_shift_days": -0.0016876577810302782,
+      "offset_ppm": -11.48346999968446,
+      "duration_contact_hours": 2.13550954053603,
+      "illustrative_undiluted_planet_radius_Earth": 2.9588397424707105
+    }
+  ]
+}

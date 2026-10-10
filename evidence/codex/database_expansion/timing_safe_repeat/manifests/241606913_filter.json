@@ -1,0 +1,18 @@
+{
+  "tic": 241606913,
+  "removed_qlp_sectors": [
+    102
+  ],
+  "original_npz": "/workspace/scratch/c73e045af8ef/planet-search/lightcurves/241606913.npz",
+  "original_sha256": "c8ae2a0897eb1dae9b73420a45397aa7fe635bef0c514b86439f08c6b932020b",
+  "filtered_sha256": "ac9f61c9cefeba08da3bde2b65741f9e58f327ac39bcecc84e92a7c7158b7887",
+  "retained_sectors": [
+    11,
+    38,
+    64,
+    65
+  ],
+  "reason": "MAST QLP warning: barycentric timing errors for second half S99 through S104; whole sector products omitted conservatively.",
+  "source": "https://archive.stsci.edu/hlsp/qlp",
+  "interpretation": "Retrospective rerun; new holdout assigned before this period refit, but its data were seen in previous pipeline development."
+}

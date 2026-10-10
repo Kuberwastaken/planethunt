@@ -1,0 +1,6 @@
+{
+  "url": "https://mast.stsci.edu/api/v0/invoke",
+  "body": "request=%7B%22service%22%3A+%22Mast.Catalogs.Tic.Cone%22%2C+%22params%22%3A+%7B%22ra%22%3A+151.183479%2C+%22dec%22%3A+-42.1833%2C+%22radius%22%3A+0.03333333333333333%7D%2C+%22format%22%3A+%22json%22%2C+%22pagesize%22%3A+5000%2C+%22page%22%3A+1%7D",
+  "sha256": "8f7cbcd4bfd61a7c83082ba1591969d5735664e060fed7e4d0db358f2eff03d6",
+  "retrieved_utc": "2026-10-10T13:40:39.075241+00:00"
+}

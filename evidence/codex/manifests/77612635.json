@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "mast:TESS/product/tess2019032160000-s0008-0000000077612635-0136-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0008/0000/0000/7761/2635/tess2019032160000-s0008-0000000077612635-0136-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 8,
+    "sha256": "9e07ee72d2de40e8ee5294e8675ecb0ece3f185b81f537248c6827cecb51f347",
+    "bytes": 1805760,
+    "fetched_utc": "2026-10-10T13:15:43.168397+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2021039152502-s0035-0000000077612635-0205-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0035/0000/0000/7761/2635/tess2021039152502-s0035-0000000077612635-0205-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 35,
+    "sha256": "4298759116bbda037cf1239505bc5331b67b8fdb99472ad45db9f82118a905fb",
+    "bytes": 1828800,
+    "fetched_utc": "2026-10-10T13:15:43.080628+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2023043185947-s0062-0000000077612635-0254-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0062/0000/0000/7761/2635/tess2023043185947-s0062-0000000077612635-0254-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 62,
+    "sha256": "4ed3ecf6fd382b66bd089343179678621c3d7304d86f2819d3716be606a074d0",
+    "bytes": 1880640,
+    "fetched_utc": "2026-10-10T13:15:50.059045+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2025042113628-s0089-0000000077612635-0286-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0089/0000/0000/7761/2635/tess2025042113628-s0089-0000000077612635-0286-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 89,
+    "sha256": "aacf7c002febd559dc6369a262ad716e1272ec8d1015e7dcd0e05cc1c9f67e33",
+    "bytes": 2105280,
+    "fetched_utc": "2026-10-10T13:15:49.933821+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

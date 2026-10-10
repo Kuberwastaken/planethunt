@@ -1,0 +1,44 @@
+[
+  {
+    "uri": "mast:HLSP/tess-spoc/s0002/target/0000/0000/3391/1249/hlsp_tess-spoc_tess_phot_0000000033911249-s0002_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0002/target/0000/0000/3391/1249/hlsp_tess-spoc_tess_phot_0000000033911249-s0002_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 2,
+    "sha256": "31c77709a1f814b903c58112fd115a4503b6549d73f6f39971fcf8ffaa95c677",
+    "bytes": 161280,
+    "fetched_utc": "2026-10-10T13:25:46.194740+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0069/target/0000/0000/3391/1249/hlsp_tess-spoc_tess_phot_0000000033911249-s0069_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0069/target/0000/0000/3391/1249/hlsp_tess-spoc_tess_phot_0000000033911249-s0069_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 69,
+    "sha256": "b0729085c494573e102f5282f3d831abcd1e0c9e738b1cf07279b86cb6bc2225",
+    "bytes": 1143360,
+    "fetched_utc": "2026-10-10T13:25:46.400229+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0096/0000/0000/3391/1249/hlsp_qlp_tess_ffi_s0096-0000000033911249_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0096/0000/0000/3391/1249/hlsp_qlp_tess_ffi_s0096-0000000033911249_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 96,
+    "sha256": "4fd166b1c6564adc8a93d2135367f224298f10fb468ef60faec185c6f3b8b1b8",
+    "bytes": 659520,
+    "fetched_utc": "2026-10-10T13:25:53.217037+00:00",
+    "flux_column": "SYS_RM_FLUX",
+    "error_source": "empirical_point_scatter_in_selected_flux_units",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

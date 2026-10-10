@@ -1,0 +1,18 @@
+{
+  "retrieved_utc": "2026-10-10T13:39:16.990829+00:00",
+  "notes": [
+    "Bienias KIC IDs label aperture primary, NOT planet host. Do not join these to host KIC as same object.",
+    "Source Table1 corrects contradictory exampleID in mainpaperintro; quoted period/epochs Table4 finalcolumn.",
+    "Gaia IDs must be strings. BKJD=BJD-2454833.0.",
+    "All objects are prior reports regardless of validation status."
+  ],
+  "files": {
+    "bienias2025_appendixA.pdf": "c9edf3a39ff82d31d8360a214913721eb75853dadbebcee623f73ab74411f935",
+    "apexba2022.pdf": "2a0884f2f3a2e1a88480d2fe6976316934666d33ff8d48993af7088cd0ad9a36"
+  },
+  "counts": {
+    "MartinezPalomera2022_APEXBA_EB": 69,
+    "Bienias_Szabo2025_background_candidate": 7,
+    "MartinezPalomera2022_APEXBA_candidate": 1
+  }
+}

@@ -1,0 +1,33 @@
+Independent audit: Gaia DR3 2103792461826460288 / KIC 5689121
+
+Conditional transit candidate, not a confirmed or validated planet. Novelty and catalog provenance are separately handled by the catalog agent. The following checks do not establish an astrophysical false-positive probability.
+
+Pipeline review
+- Original FITS TIME is BJD-2454833 in TDB. Subtracting 2167 yields BTJD correctly.
+- Last 4 of 13 usable quarters are selected before fitting. Discovery period/epoch uses earlier quarters only. Rank2 masking also uses discovery data only.
+- Long-cadence exposure is 1765.464 seconds. Shape fits integrate over the actual exposure rather than treating samples as instantaneous.
+- Pilot SAP vet inherited PSF FLUX_ERR. This is a genuine uncertainty mismatch, repaired here by reading SAP_FLUX_ERR independently. Corrected local SAP detection is 1438+/-105 ppm (13.73 sigma); held-out 22 events are 1265+/-216 ppm (5.84 sigma). The signal survives the correction. Original pilot outputs remain unchanged and must not be quoted as corrected SAP significance.
+- Corrected arrays saved as 2103792461826460288_correct_errors.npz with both flux_err and sap_flux_err. Reusable direct-FITS reader is load_column in ../audit_kbonus_candidate.py.
+- An assumed search density of 5 solar is merely a duration-grid prior, not a stellar measurement. No radius inference comes from that assumption.
+- The inverted pilot negates PSF but leaves SAP flux unchanged. If an inverted search ever passes the screen, its SAP vet is not a matched inverted-data diagnostic. This does not affect this ordinary positive-flux search.
+
+Independent shape check
+- Protected local linear or quadratic baselines use only points outside twice the BLS full duration; no transit clipping and no global detrending are used for the shape plots.
+- Period remains 13.769413569662944 days. Physical shape parameters fit discovery quarters only; holdout shape is frozen except an independent depth scale and constant baseline.
+- The signal is visibly U-shaped in both PSF and aperture photometry. Held-out amplitude is about 80% of the discovery template.
+- With catalog-agent Gaia values M=0.5446 and R=0.5553 solar, a/R=35.55 and circular central maximum duration about3.10h. Fixed-density fits give b=0.66-0.76, contact duration2.14-2.42h, radius ratio0.04885-0.05099. Approximate undiluted target-hosted radius would be2.96-3.09Earth radii. Stellar errors, eccentricity, dilution, unresolved companions, and limb-darkening uncertainties prevent treating this as a measurement with validated error bars.
+- Free-density fits are degenerate with limb darkening/impact parameter at this cadence. Do not present them as a precise density measurement.
+- SAP depths depend strongly on spacecraft orientation, while PSF depths are more consistent; this motivates pixel localization and crowding assessment.
+
+Pixel localization audit
+- Root difference images use original primary-target Kepler TPF pixels with official calibrated Kepler PRFs. Correct row/column order and +0.5 convention verified against installed Lightkurve source and original FITS physical WCS headers.
+- Root two-source quiescent-image common astrometric offset is small. Independent fits to saved difference images without that offset retain candidate preference in all13quarters, sum delta chi2=797.72.
+- Replacing a constant background with an independent spatial plane retains candidate preference in all13quarters, sum delta chi2=579.27 with no offset and581.06 with offset. Every fitted target amplitude is positive.
+- This supports localization near the candidate relative to the bright star7.09arcsec away. It does not rule out an unresolved background/companion eclipsing binary at the candidate position. Shared root difference images mean this is a model stress test, not a second independent extraction.
+- PRF mismatch, neighboring unmodeled sources, and interpixel covariances remain; delta chi2 values are descriptive only, not calibrated FPP or discovery odds.
+
+Files
+2103792461826460288.json: corrected SAP vet, discovery shape fits, seasonal depths.
+2103792461826460288_shape.png: four-panel shape and depth diagnostics.
+catalog_density_shape.json: fixed measured-density conditional fits.
+pixel_localization_audit.json: no-shift and spatial-plane localization stress tests.

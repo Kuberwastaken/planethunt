@@ -1,0 +1,7 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2Ctce_plnt_num%2Cra%2Cdec%2Ctce_period%2Ctce_time0bk%2Ctce_duration%2Ctce_depth%2Ctce_model_snr%2Ctce_max_mult_ev%2Ctce_nkoi+from+q1_q17_dr25_tce&format=csv",
+  "query": "select kepid,tce_plnt_num,ra,dec,tce_period,tce_time0bk,tce_duration,tce_depth,tce_model_snr,tce_max_mult_ev,tce_nkoi from q1_q17_dr25_tce",
+  "retrieved_utc": "2026-10-10T13:37:50.041672+00:00",
+  "sha256": "a2220d6871bbabb77e86bebdd8f26c4bb66f0921a4a10d056a4ff7d2fe1dd0a4",
+  "bytes": 2464195
+}

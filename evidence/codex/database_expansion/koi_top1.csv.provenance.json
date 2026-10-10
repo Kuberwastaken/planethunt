@@ -1,0 +1,5 @@
+{
+  "url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+top+1+%2A+from+cumulative&format=csv",
+  "utc": "2026-10-10T13:35:50.769095+00:00",
+  "sha256": "5b68dc28377576cea29f7714c0002acc046146403fd27867d79ad7ecaa7d6e4b"
+}

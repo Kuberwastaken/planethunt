@@ -1,0 +1,5 @@
+{
+  "url": "https://tessebs.villanova.edu/search_results?display_format=csv&order_by=tic__tess_id&c=tic__tess_id&c=tic__ra&c=tic__dec&c=bjd0&c=period&c=morph_coeff&c=flags&c=in_catalog",
+  "requested_utc": "2026-10-10T13:11:12.216187+00:00",
+  "error": "<HTTPError 500: 'Internal Server Error'>"
+}

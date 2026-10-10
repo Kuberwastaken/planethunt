@@ -1,0 +1,7 @@
+{
+  "holdout_quarters": [
+    15,
+    16
+  ],
+  "rule": "last ceil(25%) usable quarters, minimum2, chosen before search"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "mast:TESS/product/tess2021065132309-s0036-0000000322777782-0207-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0036/0000/0003/2277/7782/tess2021065132309-s0036-0000000322777782-0207-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 36,
+    "sha256": "8f7763daf43dc60fc175ba8745f882c382d15163426451d5640396cb0f2734b6",
+    "bytes": 1837440,
+    "fetched_utc": "2026-10-10T13:22:19.116040+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:TESS/product/tess2023069172124-s0063-0000000322777782-0255-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0063/0000/0003/2277/7782/tess2023069172124-s0063-0000000322777782-0255-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 63,
+    "sha256": "f708b86a0bfbc19fdddcc189540e81d87ec9fa07c60a2737d2e5f5363d273a66",
+    "bytes": 1941120,
+    "fetched_utc": "2026-10-10T13:22:19.040871+00:00",
+    "flux_column": "PDCSAP_FLUX",
+    "error_source": "PDCSAP_FLUX_ERR",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0090/0000/0003/2277/7782/hlsp_qlp_tess_ffi_s0090-0000000322777782_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0090/0000/0003/2277/7782/hlsp_qlp_tess_ffi_s0090-0000000322777782_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 90,
+    "sha256": "ef8565c931c8b78229b6621489b085bc3ea52b70501dbab70e4fd979b7d511a1",
+    "bytes": 705600,
+    "fetched_utc": "2026-10-10T13:22:26.331510+00:00",
+    "flux_column": "SYS_RM_FLUX",
+    "error_source": "empirical_point_scatter_in_selected_flux_units",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  },
+  {
+    "uri": "mast:HLSP/qlp/s0100/0000/0003/2277/7782/hlsp_qlp_tess_ffi_s0100-0000000322777782_tess_v01_llc.fits",
+    "url": "https://archive.stsci.edu/hlsps/qlp/s0100/0000/0003/2277/7782/hlsp_qlp_tess_ffi_s0100-0000000322777782_tess_v01_llc.fits",
+    "provenance": "QLP",
+    "sector": 100,
+    "sha256": "9a679f85b87f570112636d271602448e7b63638fde130038cbb796ee9bff95f9",
+    "bytes": 679680,
+    "fetched_utc": "2026-10-10T13:22:26.185450+00:00",
+    "flux_column": "SYS_RM_FLUX",
+    "error_source": "empirical_point_scatter_in_selected_flux_units",
+    "exposure_source": "TIMEDEL",
+    "raw_flux_fallback": false,
+    "quality_column_missing": false
+  }
+]

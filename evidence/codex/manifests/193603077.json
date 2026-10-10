@@ -1,0 +1,56 @@
+[
+  {
+    "uri": "mast:TESS/product/tess2020133194932-s0025-0000000193603077-0182-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0025/0000/0001/9360/3077/tess2020133194932-s0025-0000000193603077-0182-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 25,
+    "sha256": "49cae86c96ce196e8834344c868eabe83f7ebaa098077a131bd624cf15b29521",
+    "bytes": 1877760,
+    "fetched_utc": "2026-10-10T13:14:44.336329+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2020160202036-s0026-0000000193603077-0188-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0026/0000/0001/9360/3077/tess2020160202036-s0026-0000000193603077-0188-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 26,
+    "sha256": "3dbaefbafc2c58049275841a03bf408e2de07866a875cede24ae5ad084691d6c",
+    "bytes": 1820160,
+    "fetched_utc": "2026-10-10T13:14:44.351008+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2021175071901-s0040-0000000193603077-0211-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0040/0000/0001/9360/3077/tess2021175071901-s0040-0000000193603077-0211-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 40,
+    "sha256": "191b54ce796267c1dd93778673146b0b61e7a44b491abd4caf432e4ac630adbd",
+    "bytes": 2062080,
+    "fetched_utc": "2026-10-10T13:14:51.829969+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2022138205153-s0052-0000000193603077-0224-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0052/0000/0001/9360/3077/tess2022138205153-s0052-0000000193603077-0224-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 52,
+    "sha256": "08e81bc997f23c3a83f8e6f1949b1c8d9c16ec4a6f48df33e4d511f67f234006",
+    "bytes": 1791360,
+    "fetched_utc": "2026-10-10T13:14:51.970681+00:00"
+  },
+  {
+    "uri": "mast:TESS/product/tess2022164095748-s0053-0000000193603077-0226-s_lc.fits",
+    "url": "https://archive.stsci.edu/missions/tess/tid/s0053/0000/0001/9360/3077/tess2022164095748-s0053-0000000193603077-0226-s_lc.fits",
+    "provenance": "SPOC",
+    "sector": 53,
+    "sha256": "9473942b58f7df8aba2949d9cad88069fe4b5bb1a4df1539eca5e87393c59ab7",
+    "bytes": 1828800,
+    "fetched_utc": "2026-10-10T13:14:58.043413+00:00"
+  },
+  {
+    "uri": "mast:HLSP/tess-spoc/s0079/target/0000/0001/9360/3077/hlsp_tess-spoc_tess_phot_0000000193603077-s0079_tess_v1_lc.fits",
+    "url": "https://archive.stsci.edu/hlsps/tess-spoc/s0079/target/0000/0001/9360/3077/hlsp_tess-spoc_tess_phot_0000000193603077-s0079_tess_v1_lc.fits",
+    "provenance": "TESS-SPOC",
+    "sector": 79,
+    "sha256": "ae6ce11a53e3ab63376639a1fdba79804fb0ca5311e6b8cc57b75c2f311fb229",
+    "bytes": 1203840,
+    "fetched_utc": "2026-10-10T13:14:58.067791+00:00"
+  }
+]

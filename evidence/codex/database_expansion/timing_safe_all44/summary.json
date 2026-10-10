@@ -1,0 +1,2656 @@
+{
+  "retrospective": true,
+  "target_count": 44,
+  "search_count": 88,
+  "results": [
+    {
+      "tic": 7412956,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.2657653178057852,
+          "duration_hr": 0.4799999999999999,
+          "depth_ppm": 128.83159598175854,
+          "bls_snr": 5.811203504679606,
+          "screen_pass": false,
+          "holdout_snr": 1.4349971776360793
+        }
+      ]
+    },
+    {
+      "tic": 4263857,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        9,
+        35,
+        36,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4684365153850798,
+          "duration_hr": 0.8,
+          "depth_ppm": 166.82345835952202,
+          "bls_snr": 6.487832978769438,
+          "screen_pass": false,
+          "holdout_snr": -1.7225565932377491
+        }
+      ]
+    },
+    {
+      "tic": 7412956,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 2.600193997974439,
+          "duration_hr": 0.6527181887426741,
+          "depth_ppm": 302.0452070441151,
+          "bls_snr": 5.248763299989869,
+          "screen_pass": false,
+          "holdout_snr": 0.5984943403685543
+        }
+      ]
+    },
+    {
+      "tic": 3657911,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        12,
+        39
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.43832140849175166,
+          "duration_hr": 1.5199999999999998,
+          "depth_ppm": 53.390058826331604,
+          "bls_snr": 7.183127839926287,
+          "screen_pass": false,
+          "holdout_snr": -1.9424634092269475
+        }
+      ]
+    },
+    {
+      "tic": 19976193,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        61
+      ],
+      "holdout_sectors": [
+        88
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3075293476914198,
+          "duration_hr": 1.8399999999999999,
+          "depth_ppm": 577.9385718996764,
+          "bls_snr": 55.95120106905099,
+          "screen_pass": false,
+          "holdout_snr": 42.69651159513816
+        },
+        {
+          "rank": 2,
+          "period": 0.20501969093264555,
+          "duration_hr": 1.48,
+          "depth_ppm": 1047.932462530773,
+          "bls_snr": 70.07575917729899,
+          "screen_pass": false,
+          "holdout_snr": 5.233750023323636
+        }
+      ]
+    },
+    {
+      "tic": 19976193,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        61
+      ],
+      "holdout_sectors": [
+        88
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.6150603644392858,
+          "duration_hr": 2.28,
+          "depth_ppm": 1113.4484632436813,
+          "bls_snr": 84.53227193622982,
+          "screen_pass": false,
+          "holdout_snr": 56.56398491280588
+        },
+        {
+          "rank": 2,
+          "period": 0.6150606830176245,
+          "duration_hr": 2.28,
+          "depth_ppm": 1348.6385867444906,
+          "bls_snr": 102.9132554396929,
+          "screen_pass": false,
+          "holdout_snr": 56.04811842096332
+        }
+      ]
+    },
+    {
+      "tic": 21867163,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.20224621687887015,
+          "duration_hr": 0.6399999999999999,
+          "depth_ppm": 145.14465531589576,
+          "bls_snr": 6.179750366774603,
+          "screen_pass": false,
+          "holdout_snr": -0.20535146638610502
+        }
+      ]
+    },
+    {
+      "tic": 4263857,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        9,
+        35,
+        36,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 13.683438919004,
+          "duration_hr": 4.066007967612834,
+          "depth_ppm": 907.9170075745245,
+          "bls_snr": 9.644768515634842,
+          "screen_pass": false,
+          "holdout_snr": 2.8856338460927398
+        },
+        {
+          "rank": 2,
+          "period": 9.83632790545383,
+          "duration_hr": 2.5576095210682985,
+          "depth_ppm": 450.37304969429124,
+          "bls_snr": 6.170175094476814,
+          "screen_pass": false,
+          "holdout_snr": 0.9958606491242249
+        }
+      ]
+    },
+    {
+      "tic": 21867163,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 3.03862230459083,
+          "duration_hr": 1.5990355413950037,
+          "depth_ppm": 341.74430777919,
+          "bls_snr": 6.143295695947946,
+          "screen_pass": false,
+          "holdout_snr": 1.0172690256400427
+        }
+      ]
+    },
+    {
+      "tic": 20325431,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4970995432144554,
+          "duration_hr": 1.5199999999999998,
+          "depth_ppm": 49.11598752305917,
+          "bls_snr": 8.389559701713463,
+          "screen_pass": false,
+          "holdout_snr": -0.028925174766739076
+        },
+        {
+          "rank": 2,
+          "period": 0.3257918132223,
+          "duration_hr": 0.9199999999999999,
+          "depth_ppm": 43.85724285735991,
+          "bls_snr": 6.187208109913637,
+          "screen_pass": false,
+          "holdout_snr": -0.6793997428808387
+        }
+      ]
+    },
+    {
+      "tic": 48368656,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        35,
+        36,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4602925797324327,
+          "duration_hr": 1.44,
+          "depth_ppm": 153.86332195880854,
+          "bls_snr": 6.2201977808173705,
+          "screen_pass": false,
+          "holdout_snr": 0.1307803508220695
+        }
+      ]
+    },
+    {
+      "tic": 72604026,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        62,
+        63
+      ],
+      "holdout_sectors": [
+        89,
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.23972450996696806,
+          "duration_hr": 0.7599999999999999,
+          "depth_ppm": 110.74920896723584,
+          "bls_snr": 6.607330277682891,
+          "screen_pass": false,
+          "holdout_snr": 0.4252068060989616
+        }
+      ]
+    },
+    {
+      "tic": 72604026,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        62,
+        63
+      ],
+      "holdout_sectors": [
+        89,
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 18.65670459099015,
+          "duration_hr": 2.033934132488289,
+          "depth_ppm": 524.5111864103749,
+          "bls_snr": 5.965893340612918,
+          "screen_pass": false,
+          "holdout_snr": 1.3647521273527896
+        }
+      ]
+    },
+    {
+      "tic": 93534003,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37,
+        64
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 19.47139120715406,
+          "duration_hr": 2.277251347370425,
+          "depth_ppm": 860.4468864181861,
+          "bls_snr": 6.2970449126544255,
+          "screen_pass": false,
+          "holdout_snr": -0.8638262587447799
+        }
+      ]
+    },
+    {
+      "tic": 48368656,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        35,
+        36,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 15.573211319069934,
+          "duration_hr": 1.1109845196566699,
+          "depth_ppm": 1455.899478852185,
+          "bls_snr": 8.62197000175036,
+          "screen_pass": false,
+          "holdout_snr": 1.5778958073541143
+        },
+        {
+          "rank": 2,
+          "period": 13.179366614434073,
+          "duration_hr": 5.029266511858639,
+          "depth_ppm": 433.9626262214132,
+          "bls_snr": 6.238484007397393,
+          "screen_pass": false,
+          "holdout_snr": -1.5272591842504373
+        }
+      ]
+    },
+    {
+      "tic": 93534003,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37,
+        64
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.22233011163656918,
+          "duration_hr": 0.5199999999999999,
+          "depth_ppm": 195.4487043827243,
+          "bls_snr": 6.2479534615076116,
+          "screen_pass": false,
+          "holdout_snr": -0.9361377624414017
+        }
+      ]
+    },
+    {
+      "tic": 3657911,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        12,
+        39
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 9.698701638827943,
+          "duration_hr": 2.5443008856758844,
+          "depth_ppm": 277.32430123332813,
+          "bls_snr": 9.650042546942737,
+          "screen_pass": false,
+          "holdout_snr": -2.221696463860495
+        },
+        {
+          "rank": 2,
+          "period": 15.958136975858196,
+          "duration_hr": 0.901055058073566,
+          "depth_ppm": 446.91609322885694,
+          "bls_snr": 8.11979312831638,
+          "screen_pass": false,
+          "holdout_snr": 0.6850352689354566
+        }
+      ]
+    },
+    {
+      "tic": 111882162,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.22694595832149456,
+          "duration_hr": 0.6,
+          "depth_ppm": 151.96342464858583,
+          "bls_snr": 4.8700982527756365,
+          "screen_pass": false,
+          "holdout_snr": 0.35539089574226085
+        }
+      ]
+    },
+    {
+      "tic": 111882162,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 5.002167682098206,
+          "duration_hr": 1.5415974340486076,
+          "depth_ppm": 469.63444447126057,
+          "bls_snr": 5.1747251303334325,
+          "screen_pass": false,
+          "holdout_snr": 0.9648589744545369
+        }
+      ]
+    },
+    {
+      "tic": 117545429,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.40407531612900005,
+          "duration_hr": 1.48,
+          "depth_ppm": 29.33949066165264,
+          "bls_snr": 6.140623888431404,
+          "screen_pass": false,
+          "holdout_snr": 0.19562989729793026
+        }
+      ]
+    },
+    {
+      "tic": 93716498,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37,
+        64
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.23295633173901428,
+          "duration_hr": 0.4,
+          "depth_ppm": 144.04546162981643,
+          "bls_snr": 13.057715037412065,
+          "screen_pass": false,
+          "holdout_snr": 12.190313832311482
+        },
+        {
+          "rank": 2,
+          "period": 0.2328938179939689,
+          "duration_hr": 0.4,
+          "depth_ppm": 141.0149313411861,
+          "bls_snr": 12.819101630845436,
+          "screen_pass": false,
+          "holdout_snr": 9.429954897045242
+        }
+      ]
+    },
+    {
+      "tic": 151639678,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        10,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3945543851677476,
+          "duration_hr": 0.44,
+          "depth_ppm": 318.23266425603595,
+          "bls_snr": 6.518910757269441,
+          "screen_pass": false,
+          "holdout_snr": 0.3307981941004147
+        }
+      ]
+    },
+    {
+      "tic": 93716498,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        37,
+        64
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 1.2036677417442898,
+          "duration_hr": 0.4,
+          "depth_ppm": 268.2240997469304,
+          "bls_snr": 10.898469177098722,
+          "screen_pass": false,
+          "holdout_snr": 7.255931102013333
+        },
+        {
+          "rank": 2,
+          "period": 1.2036062777537229,
+          "duration_hr": 0.4,
+          "depth_ppm": 257.6949250328094,
+          "bls_snr": 10.371179881014008,
+          "screen_pass": false,
+          "holdout_snr": 7.134458073397858
+        }
+      ]
+    },
+    {
+      "tic": 160197982,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        11,
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.28350825795189927,
+          "duration_hr": 1.0,
+          "depth_ppm": 49.49495257448546,
+          "bls_snr": 7.449700982510768,
+          "screen_pass": false,
+          "holdout_snr": -1.9999857329610748
+        }
+      ]
+    },
+    {
+      "tic": 117545429,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.525985401273825,
+          "duration_hr": 5.391763759929438,
+          "depth_ppm": 213.99304935570706,
+          "bls_snr": 7.068021435859906,
+          "screen_pass": false,
+          "holdout_snr": -0.14418326435321438
+        }
+      ]
+    },
+    {
+      "tic": 178626040,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        7,
+        34,
+        61
+      ],
+      "holdout_sectors": [
+        88
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.45327246744050326,
+          "duration_hr": 0.4,
+          "depth_ppm": 184.65192385578763,
+          "bls_snr": 6.235686345521578,
+          "screen_pass": false,
+          "holdout_snr": 0.28454836715576703
+        }
+      ]
+    },
+    {
+      "tic": 151639678,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        10,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 19.846642562868237,
+          "duration_hr": 5.430571593360747,
+          "depth_ppm": 892.470380504544,
+          "bls_snr": 9.671177166988187,
+          "screen_pass": false,
+          "holdout_snr": -1.1686220251010861
+        },
+        {
+          "rank": 2,
+          "period": 12.554342324244477,
+          "duration_hr": 3.270327627655327,
+          "depth_ppm": 967.5532185216725,
+          "bls_snr": 8.931172374570822,
+          "screen_pass": false,
+          "holdout_snr": -1.9884691016675746
+        }
+      ]
+    },
+    {
+      "tic": 160197982,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        10,
+        11,
+        37
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 10.071227787685705,
+          "duration_hr": 3.7344264567368253,
+          "depth_ppm": 176.9366237834982,
+          "bls_snr": 9.304887464931996,
+          "screen_pass": false,
+          "holdout_snr": -0.1444168741118006
+        },
+        {
+          "rank": 2,
+          "period": 14.85482337285455,
+          "duration_hr": 0.9108712297911816,
+          "depth_ppm": 583.6103818081261,
+          "bls_snr": 9.053174167135781,
+          "screen_pass": false,
+          "holdout_snr": -0.5737141812724663
+        }
+      ]
+    },
+    {
+      "tic": 20325431,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 18.950611475863045,
+          "duration_hr": 2.837743046675274,
+          "depth_ppm": 1302.1220195070086,
+          "bls_snr": 22.353140939666538,
+          "screen_pass": false,
+          "holdout_snr": -1.1271382620621881
+        },
+        {
+          "rank": 2,
+          "period": 24.598087417062313,
+          "duration_hr": 2.2512376287785303,
+          "depth_ppm": 577.1998154455731,
+          "bls_snr": 14.529038775258469,
+          "screen_pass": false,
+          "holdout_snr": -0.09945041720530116
+        }
+      ]
+    },
+    {
+      "tic": 186579346,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3612022456220009,
+          "duration_hr": 0.6399999999999999,
+          "depth_ppm": 35.098890905226014,
+          "bls_snr": 5.747231935155152,
+          "screen_pass": false,
+          "holdout_snr": -1.4128303777241893
+        }
+      ]
+    },
+    {
+      "tic": 178626040,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        7,
+        34,
+        61
+      ],
+      "holdout_sectors": [
+        88
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 22.04492090832112,
+          "duration_hr": 5.157088595171412,
+          "depth_ppm": 765.161644402233,
+          "bls_snr": 12.282658485422436,
+          "screen_pass": false,
+          "holdout_snr": -0.21043944558654226
+        },
+        {
+          "rank": 2,
+          "period": 13.711515693818153,
+          "duration_hr": 6.275764197770726,
+          "depth_ppm": 483.80382792037636,
+          "bls_snr": 10.857030064823325,
+          "screen_pass": false,
+          "holdout_snr": 1.4688652886643796
+        }
+      ]
+    },
+    {
+      "tic": 201726620,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        13,
+        27,
+        67
+      ],
+      "holdout_sectors": [
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.21032180275724746,
+          "duration_hr": 0.4,
+          "depth_ppm": 189.61988671671716,
+          "bls_snr": 5.833284010468897,
+          "screen_pass": false,
+          "holdout_snr": -2.3343944371668126
+        }
+      ]
+    },
+    {
+      "tic": 188087957,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.40741433387803094,
+          "duration_hr": 1.6799999999999997,
+          "depth_ppm": 36.321767363802934,
+          "bls_snr": 7.406633060101757,
+          "screen_pass": false,
+          "holdout_snr": -0.2784418322314892
+        }
+      ]
+    },
+    {
+      "tic": 231865504,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        2,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95,
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.38758752623492104,
+          "duration_hr": 0.4,
+          "depth_ppm": 264.6677796387891,
+          "bls_snr": 5.472683344145184,
+          "screen_pass": false,
+          "holdout_snr": -1.5290147409692076
+        }
+      ]
+    },
+    {
+      "tic": 241606913,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        64,
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4665769436832021,
+          "duration_hr": 1.76,
+          "depth_ppm": 249.35821551176542,
+          "bls_snr": 11.038673693717778,
+          "screen_pass": false,
+          "holdout_snr": -0.06573228284428344
+        },
+        {
+          "rank": 2,
+          "period": 0.468067745583174,
+          "duration_hr": 1.76,
+          "depth_ppm": 297.82237497527785,
+          "bls_snr": 13.089487008584761,
+          "screen_pass": false,
+          "holdout_snr": -1.7186620879035743
+        }
+      ]
+    },
+    {
+      "tic": 186579346,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 6.534994773689436,
+          "duration_hr": 2.958797111594411,
+          "depth_ppm": 100.16050546665545,
+          "bls_snr": 7.9651305131178125,
+          "screen_pass": false,
+          "holdout_snr": -3.396204915333305
+        },
+        {
+          "rank": 2,
+          "period": 0.6804913450685195,
+          "duration_hr": 2.390512080445539,
+          "depth_ppm": 35.234506688145665,
+          "bls_snr": 8.10084920852492,
+          "screen_pass": false,
+          "holdout_snr": -1.3972291406151953
+        }
+      ]
+    },
+    {
+      "tic": 231865504,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        2,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95,
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 12.261895887804753,
+          "duration_hr": 1.220858237218533,
+          "depth_ppm": 931.6546839197725,
+          "bls_snr": 6.267183130161774,
+          "screen_pass": false,
+          "holdout_snr": -0.1765708078975439
+        }
+      ]
+    },
+    {
+      "tic": 201726620,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        13,
+        27,
+        67
+      ],
+      "holdout_sectors": [
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 12.391489444336571,
+          "duration_hr": 1.2997569801530808,
+          "depth_ppm": 942.855126011811,
+          "bls_snr": 5.788331022664939,
+          "screen_pass": false,
+          "holdout_snr": -4.076230586665058
+        }
+      ]
+    },
+    {
+      "tic": 241606913,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        64,
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.866967388339162,
+          "duration_hr": 5.451811052445322,
+          "depth_ppm": 1171.133151612056,
+          "bls_snr": 9.639229086071403,
+          "screen_pass": false,
+          "holdout_snr": 1.3854962705237683
+        },
+        {
+          "rank": 2,
+          "period": 1.864180147178612,
+          "duration_hr": 2.7541909422933397,
+          "depth_ppm": 312.4861857679823,
+          "bls_snr": 8.326637455329887,
+          "screen_pass": false,
+          "holdout_snr": -0.23110073161109093
+        }
+      ]
+    },
+    {
+      "tic": 241655722,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.6635683741985414,
+          "duration_hr": 2.12,
+          "depth_ppm": 315.5610550585107,
+          "bls_snr": 37.299356101894205,
+          "screen_pass": false,
+          "holdout_snr": 1.204396895424281
+        },
+        {
+          "rank": 2,
+          "period": 0.6637900331036289,
+          "duration_hr": 1.56,
+          "depth_ppm": 116.25018806607213,
+          "bls_snr": 10.800229662583018,
+          "screen_pass": false,
+          "holdout_snr": 1.389085722445312
+        }
+      ]
+    },
+    {
+      "tic": 188087957,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.972606109504675,
+          "duration_hr": 2.7683094088654823,
+          "depth_ppm": 1225.9292456859098,
+          "bls_snr": 33.85795855213192,
+          "screen_pass": false,
+          "holdout_snr": 1.02892841167462
+        },
+        {
+          "rank": 2,
+          "period": 19.953625622628458,
+          "duration_hr": 2.201868276198584,
+          "depth_ppm": 346.5875260007477,
+          "bls_snr": 8.857403081718623,
+          "screen_pass": false,
+          "holdout_snr": -1.281149555407682
+        }
+      ]
+    },
+    {
+      "tic": 241655722,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3317862988985684,
+          "duration_hr": 1.7199999999999998,
+          "depth_ppm": 207.4379823026561,
+          "bls_snr": 31.035445528396046,
+          "screen_pass": false,
+          "holdout_snr": 0.5474078380592462
+        },
+        {
+          "rank": 2,
+          "period": 0.329936319475959,
+          "duration_hr": 1.5199999999999998,
+          "depth_ppm": 80.98372724935614,
+          "bls_snr": 7.906078883303125,
+          "screen_pass": false,
+          "holdout_snr": 0.7036036770398653
+        }
+      ]
+    },
+    {
+      "tic": 256160507,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        12,
+        13,
+        39,
+        66
+      ],
+      "holdout_sectors": [
+        93,
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.47123125977962665,
+          "duration_hr": 2.4399999999999995,
+          "depth_ppm": 35.824631568160044,
+          "bls_snr": 7.829065136111524,
+          "screen_pass": false,
+          "holdout_snr": 1.1499246480769016
+        },
+        {
+          "rank": 2,
+          "period": 0.42475698440554976,
+          "duration_hr": 2.36,
+          "depth_ppm": 66.82777458566434,
+          "bls_snr": 11.494615026804045,
+          "screen_pass": false,
+          "holdout_snr": -2.591552085522148
+        }
+      ]
+    },
+    {
+      "tic": 244869034,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        37,
+        38
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.45565122639463246,
+          "duration_hr": 2.32,
+          "depth_ppm": 26.06144889831434,
+          "bls_snr": 7.05283882089884,
+          "screen_pass": false,
+          "holdout_snr": -0.11531348816275366
+        }
+      ]
+    },
+    {
+      "tic": 244869034,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        37,
+        38
+      ],
+      "holdout_sectors": [
+        64
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.80703270006338,
+          "duration_hr": 8.701849578825701,
+          "depth_ppm": 156.00806149199738,
+          "bls_snr": 10.181968015830927,
+          "screen_pass": false,
+          "holdout_snr": -0.7550976445150119
+        },
+        {
+          "rank": 2,
+          "period": 6.516555066872587,
+          "duration_hr": 4.660191557061606,
+          "depth_ppm": 77.64900115885999,
+          "bls_snr": 8.055588429603095,
+          "screen_pass": true,
+          "holdout_snr": 3.009676602964446
+        }
+      ]
+    },
+    {
+      "tic": 256160507,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        12,
+        13,
+        39,
+        66
+      ],
+      "holdout_sectors": [
+        93,
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 21.668565697985635,
+          "duration_hr": 7.1916349592809805,
+          "depth_ppm": 583.5529468726004,
+          "bls_snr": 27.49127467896108,
+          "screen_pass": false,
+          "holdout_snr": 2.457575958857863
+        },
+        {
+          "rank": 2,
+          "period": 17.843194005303825,
+          "duration_hr": 8.065069083926275,
+          "depth_ppm": 221.8621372258693,
+          "bls_snr": 16.155180359058146,
+          "screen_pass": false,
+          "holdout_snr": 4.307826219291714
+        }
+      ]
+    },
+    {
+      "tic": 260795451,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 13.661617659508067,
+          "duration_hr": 1.9247815901391068,
+          "depth_ppm": 506.64613599242114,
+          "bls_snr": 33.359784051247246,
+          "screen_pass": false,
+          "holdout_snr": 0.31406194673326077
+        },
+        {
+          "rank": 2,
+          "period": 13.304466266708959,
+          "duration_hr": 2.289574568350832,
+          "depth_ppm": 964.118113640315,
+          "bls_snr": 25.713118923842753,
+          "screen_pass": false,
+          "holdout_snr": -1.0378802419676134
+        }
+      ]
+    },
+    {
+      "tic": 260795451,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3588275034319922,
+          "duration_hr": 1.96,
+          "depth_ppm": 28.952116061529555,
+          "bls_snr": 12.318578282550668,
+          "screen_pass": false,
+          "holdout_snr": 2.4024106813985697
+        },
+        {
+          "rank": 2,
+          "period": 0.47532220250029605,
+          "duration_hr": 2.12,
+          "depth_ppm": 41.4593896878563,
+          "bls_snr": 11.86924596501783,
+          "screen_pass": false,
+          "holdout_snr": -1.8312751574102502
+        }
+      ]
+    },
+    {
+      "tic": 273418879,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        13,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4528140736021415,
+          "duration_hr": 1.4,
+          "depth_ppm": 32.35952628427745,
+          "bls_snr": 8.553274490620117,
+          "screen_pass": false,
+          "holdout_snr": -1.3496958546101792
+        },
+        {
+          "rank": 2,
+          "period": 0.473819691131923,
+          "duration_hr": 1.6,
+          "depth_ppm": 29.416240674336716,
+          "bls_snr": 7.0783581041661705,
+          "screen_pass": false,
+          "holdout_snr": 4.029686306542571
+        }
+      ]
+    },
+    {
+      "tic": 260795157,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68,
+        94,
+        95
+      ],
+      "holdout_sectors": [
+        103,
+        104
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.868253650259813,
+          "duration_hr": 1.8303581345844768,
+          "depth_ppm": 297.6764311869595,
+          "bls_snr": 13.667963877075058,
+          "screen_pass": false,
+          "holdout_snr": 2.5089516063537824
+        },
+        {
+          "rank": 2,
+          "period": 16.652367980431148,
+          "duration_hr": 3.1085850817587906,
+          "depth_ppm": 149.73052745680627,
+          "bls_snr": 12.590399734679533,
+          "screen_pass": false,
+          "holdout_snr": 0.7463420827898788
+        }
+      ]
+    },
+    {
+      "tic": 277716959,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 20.869201890157115,
+          "duration_hr": 3.4068664305627525,
+          "depth_ppm": 572.847180260327,
+          "bls_snr": 15.915757547945597,
+          "screen_pass": false,
+          "holdout_snr": -0.13507120321078522
+        },
+        {
+          "rank": 2,
+          "period": 24.440528909587854,
+          "duration_hr": 3.590881534431774,
+          "depth_ppm": 661.2995949236392,
+          "bls_snr": 15.92105709151127,
+          "screen_pass": false,
+          "holdout_snr": -0.4123007278703227
+        }
+      ]
+    },
+    {
+      "tic": 273418879,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        13,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.86051018171068,
+          "duration_hr": 1.2604579119474353,
+          "depth_ppm": 781.9244592400757,
+          "bls_snr": 25.2016014626491,
+          "screen_pass": false,
+          "holdout_snr": -0.6959846187208426
+        },
+        {
+          "rank": 2,
+          "period": 24.180937967844304,
+          "duration_hr": 0.8920264079349427,
+          "depth_ppm": 317.33580641124803,
+          "bls_snr": 9.907704344836947,
+          "screen_pass": false,
+          "holdout_snr": -0.7481832117454373
+        }
+      ]
+    },
+    {
+      "tic": 281764250,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        2,
+        28,
+        29,
+        68,
+        69
+      ],
+      "holdout_sectors": [
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4556485562571177,
+          "duration_hr": 1.7999999999999998,
+          "depth_ppm": 86.163559229686,
+          "bls_snr": 17.709949686856536,
+          "screen_pass": false,
+          "holdout_snr": 0.6956927328024419
+        },
+        {
+          "rank": 2,
+          "period": 0.46617294563982575,
+          "duration_hr": 1.8399999999999999,
+          "depth_ppm": 76.28988116126853,
+          "bls_snr": 12.325239600336992,
+          "screen_pass": false,
+          "holdout_snr": 2.067682577077791
+        }
+      ]
+    },
+    {
+      "tic": 290653184,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        45,
+        46,
+        61
+      ],
+      "holdout_sectors": [
+        72
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.46331590975414616,
+          "duration_hr": 1.76,
+          "depth_ppm": 168.59700654173477,
+          "bls_snr": 7.5510542633328575,
+          "screen_pass": false,
+          "holdout_snr": -0.21261245423970498
+        },
+        {
+          "rank": 2,
+          "period": 0.3717136616627181,
+          "duration_hr": 1.44,
+          "depth_ppm": 191.36728829986814,
+          "bls_snr": 7.107691774094132,
+          "screen_pass": false,
+          "holdout_snr": 1.1390368318481654
+        }
+      ]
+    },
+    {
+      "tic": 303550934,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        39,
+        66
+      ],
+      "holdout_sectors": [
+        93
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4282191730938899,
+          "duration_hr": 0.6,
+          "depth_ppm": 274.6018363576134,
+          "bls_snr": 5.8302069976369495,
+          "screen_pass": false,
+          "holdout_snr": 0.05275421924035556
+        }
+      ]
+    },
+    {
+      "tic": 260795157,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68,
+        94,
+        95
+      ],
+      "holdout_sectors": [
+        103,
+        104
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.43179056008931826,
+          "duration_hr": 1.88,
+          "depth_ppm": 21.09213902354542,
+          "bls_snr": 8.449583340819002,
+          "screen_pass": false,
+          "holdout_snr": 2.8431716557439426
+        },
+        {
+          "rank": 2,
+          "period": 0.3019170268041849,
+          "duration_hr": 1.1199999999999999,
+          "depth_ppm": 25.8545064819613,
+          "bls_snr": 7.611175570167088,
+          "screen_pass": false,
+          "holdout_snr": 0.16474382457166156
+        }
+      ]
+    },
+    {
+      "tic": 303550934,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        39,
+        66
+      ],
+      "holdout_sectors": [
+        93
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 13.690998262582827,
+          "duration_hr": 4.045420317338166,
+          "depth_ppm": 628.6971083562707,
+          "bls_snr": 6.930292239697831,
+          "screen_pass": false,
+          "holdout_snr": 2.046281374574312
+        }
+      ]
+    },
+    {
+      "tic": 281764250,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        2,
+        28,
+        29,
+        68,
+        69
+      ],
+      "holdout_sectors": [
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 12.8693625540537,
+          "duration_hr": 5.482054665976994,
+          "depth_ppm": 787.7702553766776,
+          "bls_snr": 29.527498350067614,
+          "screen_pass": false,
+          "holdout_snr": -3.558487295947194
+        },
+        {
+          "rank": 2,
+          "period": 22.861479659007813,
+          "duration_hr": 3.9635312101366384,
+          "depth_ppm": 578.3016826858106,
+          "bls_snr": 27.62889866009785,
+          "screen_pass": false,
+          "holdout_snr": 1.3173609788722889
+        }
+      ]
+    },
+    {
+      "tic": 277716959,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.47099004597101035,
+          "duration_hr": 0.88,
+          "depth_ppm": 49.44517037146988,
+          "bls_snr": 7.752901413456279,
+          "screen_pass": false,
+          "holdout_snr": -0.3664124941878046
+        },
+        {
+          "rank": 2,
+          "period": 0.33325159011144606,
+          "duration_hr": 1.56,
+          "depth_ppm": 34.19676455303291,
+          "bls_snr": 7.767618048862245,
+          "screen_pass": false,
+          "holdout_snr": -0.9860178339489701
+        }
+      ]
+    },
+    {
+      "tic": 315094546,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 14.881267050124112,
+          "duration_hr": 3.107939439444534,
+          "depth_ppm": 549.0624844428899,
+          "bls_snr": 7.2209880130927235,
+          "screen_pass": false,
+          "holdout_snr": -1.4270466302810765
+        }
+      ]
+    },
+    {
+      "tic": 315094546,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.23751507728568735,
+          "duration_hr": 0.7599999999999999,
+          "depth_ppm": 99.79312886279494,
+          "bls_snr": 5.865188844997108,
+          "screen_pass": false,
+          "holdout_snr": 1.4612627207032929
+        }
+      ]
+    },
+    {
+      "tic": 316935835,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95,
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.37241598286774014,
+          "duration_hr": 1.8399999999999999,
+          "depth_ppm": 70.41821843555702,
+          "bls_snr": 15.277705227811317,
+          "screen_pass": false,
+          "holdout_snr": -1.3049317027530338
+        },
+        {
+          "rank": 2,
+          "period": 0.49744957185816796,
+          "duration_hr": 2.36,
+          "depth_ppm": 87.91971812528675,
+          "bls_snr": 14.421990325194662,
+          "screen_pass": false,
+          "holdout_snr": -0.8098550135667335
+        }
+      ]
+    },
+    {
+      "tic": 290653184,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        45,
+        46,
+        61
+      ],
+      "holdout_sectors": [
+        72
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 13.64521288537648,
+          "duration_hr": 5.3939510470902015,
+          "depth_ppm": 3060.8426665392485,
+          "bls_snr": 19.905583272883018,
+          "screen_pass": false,
+          "holdout_snr": NaN
+        },
+        {
+          "rank": 2,
+          "period": 24.261913569756025,
+          "duration_hr": 6.534236380962467,
+          "depth_ppm": 1342.8070667157917,
+          "bls_snr": 16.142095420317656,
+          "screen_pass": false,
+          "holdout_snr": -9.416599954379398
+        }
+      ]
+    },
+    {
+      "tic": 322777782,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.49834829474059655,
+          "duration_hr": 2.12,
+          "depth_ppm": 45.68957507486774,
+          "bls_snr": 6.210598274678992,
+          "screen_pass": false,
+          "holdout_snr": -0.2727188205722954
+        }
+      ]
+    },
+    {
+      "tic": 327857952,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        27,
+        28
+      ],
+      "holdout_sectors": [
+        67,
+        68
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4402185677197676,
+          "duration_hr": 1.4,
+          "depth_ppm": 23.864687952556558,
+          "bls_snr": 5.316892746643739,
+          "screen_pass": false,
+          "holdout_snr": 1.283567802333641
+        }
+      ]
+    },
+    {
+      "tic": 334644751,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.2991374756261645,
+          "duration_hr": 0.4799999999999999,
+          "depth_ppm": 38.64055937920055,
+          "bls_snr": 6.233467827124289,
+          "screen_pass": false,
+          "holdout_snr": -0.977823678846382
+        }
+      ]
+    },
+    {
+      "tic": 316935835,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        28,
+        68
+      ],
+      "holdout_sectors": [
+        95,
+        96
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.865380429900778,
+          "duration_hr": 3.05864135212787,
+          "depth_ppm": 2554.3779794053535,
+          "bls_snr": 54.167639882837356,
+          "screen_pass": false,
+          "holdout_snr": 2.194821248327711
+        },
+        {
+          "rank": 2,
+          "period": 20.631433550991453,
+          "duration_hr": 8.02382094630985,
+          "depth_ppm": 844.2268052943365,
+          "bls_snr": 35.86815468052394,
+          "screen_pass": false,
+          "holdout_snr": -2.398137840322019
+        }
+      ]
+    },
+    {
+      "tic": 334644751,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 22.076634829135532,
+          "duration_hr": 5.8993983956057505,
+          "depth_ppm": 94.31913889408638,
+          "bls_snr": 7.9110467581271,
+          "screen_pass": false,
+          "holdout_snr": -0.5515167637126759
+        },
+        {
+          "rank": 2,
+          "period": 2.442678353412065,
+          "duration_hr": 2.4148628996782833,
+          "depth_ppm": 57.90712404778124,
+          "bls_snr": 7.385329941071438,
+          "screen_pass": false,
+          "holdout_snr": -1.8181986670077608
+        }
+      ]
+    },
+    {
+      "tic": 327857952,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        27,
+        28
+      ],
+      "holdout_sectors": [
+        67,
+        68
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 10.74587722047676,
+          "duration_hr": 3.142226844978425,
+          "depth_ppm": 89.52027455451238,
+          "bls_snr": 5.858249958928077,
+          "screen_pass": false,
+          "holdout_snr": -0.6933229591377118
+        }
+      ]
+    },
+    {
+      "tic": 358559650,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        62,
+        63
+      ],
+      "holdout_sectors": [
+        89,
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.28466141760274966,
+          "duration_hr": 1.56,
+          "depth_ppm": 199.51841271910655,
+          "bls_snr": 15.996796881938689,
+          "screen_pass": true,
+          "holdout_snr": 27.777450287620997
+        },
+        {
+          "rank": 2,
+          "period": 0.4982687784719877,
+          "duration_hr": 1.56,
+          "depth_ppm": 129.08265673785706,
+          "bls_snr": 5.766994885320065,
+          "screen_pass": false,
+          "holdout_snr": -0.8388061057991328
+        }
+      ]
+    },
+    {
+      "tic": 394517838,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        67
+      ],
+      "holdout_sectors": [
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.2808656399934304,
+          "duration_hr": 0.4799999999999999,
+          "depth_ppm": 307.8665372916684,
+          "bls_snr": 5.644673650907756,
+          "screen_pass": false,
+          "holdout_snr": -1.6627865729514646
+        }
+      ]
+    },
+    {
+      "tic": 322777782,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        36,
+        63
+      ],
+      "holdout_sectors": [
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 16.533539651122666,
+          "duration_hr": 2.0326091213439503,
+          "depth_ppm": 1914.2674347568513,
+          "bls_snr": 15.969470077743075,
+          "screen_pass": false,
+          "holdout_snr": -0.14881008391683487
+        },
+        {
+          "rank": 2,
+          "period": 15.073143826588678,
+          "duration_hr": 3.941536726938673,
+          "depth_ppm": 350.07859541945004,
+          "bls_snr": 8.995042827027724,
+          "screen_pass": false,
+          "holdout_snr": 0.2363931453862154
+        }
+      ]
+    },
+    {
+      "tic": 358559650,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        9,
+        36,
+        62,
+        63
+      ],
+      "holdout_sectors": [
+        89,
+        90
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 23.933463891550687,
+          "duration_hr": 4.597768872904473,
+          "depth_ppm": 679.6274254517099,
+          "bls_snr": 10.441547273385712,
+          "screen_pass": false,
+          "holdout_snr": 0.5740405794060519
+        },
+        {
+          "rank": 2,
+          "period": 0.5693245823891611,
+          "duration_hr": 1.0399999999999998,
+          "depth_ppm": 239.36455667990685,
+          "bls_snr": 11.18727165730764,
+          "screen_pass": false,
+          "holdout_snr": 21.86950226153336
+        }
+      ]
+    },
+    {
+      "tic": 394015919,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.49796867772608694,
+          "duration_hr": 1.9199999999999997,
+          "depth_ppm": 30.249947161373314,
+          "bls_snr": 8.455280691770938,
+          "screen_pass": false,
+          "holdout_snr": -3.3117422699783714
+        },
+        {
+          "rank": 2,
+          "period": 0.34096884178357884,
+          "duration_hr": 1.3199999999999998,
+          "depth_ppm": 30.117153120953528,
+          "bls_snr": 6.986063447445183,
+          "screen_pass": false,
+          "holdout_snr": 0.9376163586325182
+        }
+      ]
+    },
+    {
+      "tic": 394517838,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        67
+      ],
+      "holdout_sectors": [
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 13.27944782542388,
+          "duration_hr": 2.235146120550655,
+          "depth_ppm": 1590.1542795815249,
+          "bls_snr": 6.749225055386371,
+          "screen_pass": false,
+          "holdout_snr": NaN
+        }
+      ]
+    },
+    {
+      "tic": 396810588,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 21.832481411309246,
+          "duration_hr": 2.3460692253579705,
+          "depth_ppm": 207.2004003362438,
+          "bls_snr": 7.596100211257505,
+          "screen_pass": false,
+          "holdout_snr": -1.0649293642007998
+        },
+        {
+          "rank": 2,
+          "period": 12.73596292099441,
+          "duration_hr": 1.3886170091437822,
+          "depth_ppm": 205.54608317867047,
+          "bls_snr": 6.691693157648395,
+          "screen_pass": false,
+          "holdout_snr": -0.27044511990061393
+        }
+      ]
+    },
+    {
+      "tic": 396810588,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        8,
+        35,
+        62
+      ],
+      "holdout_sectors": [
+        89
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4119555304147527,
+          "duration_hr": 0.88,
+          "depth_ppm": 48.56102795401242,
+          "bls_snr": 6.62768725314114,
+          "screen_pass": false,
+          "holdout_snr": 0.8638766447281335
+        }
+      ]
+    },
+    {
+      "tic": 394015919,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.844451951048182,
+          "duration_hr": 2.5132802553116447,
+          "depth_ppm": 292.64848696199124,
+          "bls_snr": 12.397973885498951,
+          "screen_pass": false,
+          "holdout_snr": 4.156997921524628
+        },
+        {
+          "rank": 2,
+          "period": 24.47710755208167,
+          "duration_hr": 5.835271229961908,
+          "depth_ppm": 397.39697916911285,
+          "bls_snr": 11.192926581719027,
+          "screen_pass": false,
+          "holdout_snr": 1.384456733115938
+        }
+      ]
+    },
+    {
+      "tic": 407559875,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.43822451240988347,
+          "duration_hr": 0.7599999999999999,
+          "depth_ppm": 67.02884033273196,
+          "bls_snr": 5.92824525055915,
+          "screen_pass": false,
+          "holdout_snr": -1.4647800845205285
+        }
+      ]
+    },
+    {
+      "tic": 401667290,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        27,
+        39,
+        66,
+        67
+      ],
+      "holdout_sectors": [
+        93,
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3781360766066216,
+          "duration_hr": 0.6799999999999999,
+          "depth_ppm": 55.64491728617986,
+          "bls_snr": 5.493900757613079,
+          "screen_pass": false,
+          "holdout_snr": 1.7616111154970826
+        }
+      ]
+    },
+    {
+      "tic": 406343361,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4216518717069779,
+          "duration_hr": 1.8399999999999999,
+          "depth_ppm": 27.991742607811545,
+          "bls_snr": 6.347905850819012,
+          "screen_pass": false,
+          "holdout_snr": 4.728390628806284
+        }
+      ]
+    },
+    {
+      "tic": 410441291,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        67
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.3522816614376321,
+          "duration_hr": 0.8,
+          "depth_ppm": 266.75317189109626,
+          "bls_snr": 6.106424747037466,
+          "screen_pass": false,
+          "holdout_snr": 0.034219374647518556
+        }
+      ]
+    },
+    {
+      "tic": 410441291,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        67
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 7.537913935605695,
+          "duration_hr": 0.6058126923943867,
+          "depth_ppm": 1275.4445219405509,
+          "bls_snr": 6.128108276823598,
+          "screen_pass": false,
+          "holdout_snr": 10.292089087487026
+        }
+      ]
+    },
+    {
+      "tic": 401667290,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        27,
+        39,
+        66,
+        67
+      ],
+      "holdout_sectors": [
+        93,
+        94
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 1.821169317705685,
+          "duration_hr": 1.4,
+          "depth_ppm": 93.83545648856061,
+          "bls_snr": 6.073983904470218,
+          "screen_pass": false,
+          "holdout_snr": 2.5166174947900566
+        }
+      ]
+    },
+    {
+      "tic": 407559875,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        11,
+        38
+      ],
+      "holdout_sectors": [
+        65
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 8.310675358963161,
+          "duration_hr": 2.2187184002152676,
+          "depth_ppm": 201.2189135129213,
+          "bls_snr": 6.793311133894002,
+          "screen_pass": false,
+          "holdout_snr": 0.22158321287985644
+        }
+      ]
+    },
+    {
+      "tic": 469905613,
+      "mode": "usp",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 0.4760526649727826,
+          "duration_hr": 1.7199999999999998,
+          "depth_ppm": 25.307474451207053,
+          "bls_snr": 6.88730036376477,
+          "screen_pass": false,
+          "holdout_snr": -0.9537353077523072
+        }
+      ]
+    },
+    {
+      "tic": 406343361,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.027298040012276,
+          "duration_hr": 1.4568776829183503,
+          "depth_ppm": 214.8984753297718,
+          "bls_snr": 6.811162242524622,
+          "screen_pass": false,
+          "holdout_snr": 3.41063706940217
+        }
+      ]
+    },
+    {
+      "tic": 469905613,
+      "mode": "regular",
+      "status": "ok",
+      "error": null,
+      "discovery_sectors": [
+        1,
+        27,
+        28,
+        67,
+        68
+      ],
+      "holdout_sectors": [
+        94,
+        95
+      ],
+      "signals": [
+        {
+          "rank": 1,
+          "period": 24.675936015164247,
+          "duration_hr": 6.099406473697142,
+          "depth_ppm": 179.1924889380939,
+          "bls_snr": 11.44352794635781,
+          "screen_pass": false,
+          "holdout_snr": 3.5964856019848352
+        },
+        {
+          "rank": 2,
+          "period": 23.641649556081102,
+          "duration_hr": 6.012942278580745,
+          "depth_ppm": 155.72216986850177,
+          "bls_snr": 10.759798545499155,
+          "screen_pass": false,
+          "holdout_snr": -1.7846490344729815
+        }
+      ]
+    }
+  ]
+}

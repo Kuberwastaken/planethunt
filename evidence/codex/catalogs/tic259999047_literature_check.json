@@ -1,0 +1,25 @@
+{
+  "identifiers": [
+    "GJ 358",
+    "HIP 47425",
+    "CD-40 5404"
+  ],
+  "simbad_type": "double/multiple star",
+  "simbad_children": 2,
+  "searched_period_days": 0.496673,
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/1906.04644",
+      "section": "A.21",
+      "finding": "RV periodicity 24.966d attributed to rotation; ASAS photometry ~25.23d."
+    },
+    {
+      "url": "https://arxiv.org/abs/1606.01775",
+      "finding": "Included in stellar-activity/Zeeman-Doppler imaging sample."
+    }
+  ],
+  "conclusion": "No published ~0.496673d planet identified in targeted searches. Activity and multiplicity require vetting.",
+  "checked_utc": "2026-10-10T13:22:19.969844+00:00",
+  "simbad_file": "tic259999047_simbad.txt",
+  "simbad_sha256": "832f05d4727c8f0304ce90c27fd92a235ae08335d5b4094bdc3c2f72f73ab9ce"
+}

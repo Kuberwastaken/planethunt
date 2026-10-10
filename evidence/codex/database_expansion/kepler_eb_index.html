@@ -1,0 +1,3548 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!--
+<script type="text/javascript" src="/includes/jquery-latest.js"></script> 
+<script type="text/javascript" src="/includes/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="/includes/jquery.tablesorter.pager.js"></script>
+
+<script type="javascript">
+$(function())
+    { 
+        $("table")
+			.tablesorter()
+); 
+</script>
+-->
+
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Kepler Eclipsing Binaries</title>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link href="/includes/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<script src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-34740719-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+  
+</script>
+<style>
+	#expandheader h2{
+		display:inline;	
+	}
+	#lightbox {
+		position:fixed; /* keeps the lightbox window in the current viewport */
+		top:0; 
+		left:0; 
+		width:100%; 
+		height:100%; 
+		background:url(/includes/wen/overlay.png) repeat; 
+		text-align:center;
+	}
+	#lightbox p {
+		text-align:right; 
+		color:#fff; 
+		margin-right:20px; 
+		font-size:12px; 
+	}
+	#lightbox img {
+		box-shadow:0 0 25px #111;
+		-webkit-box-shadow:0 0 25px #111;
+		-moz-box-shadow:0 0 25px #111;
+		max-width:940px;
+	}
+	.expandheader {
+		margin: 1px;
+		padding: 3px 10px;
+		cursor: pointer;
+		background-color:#F0F0F6;
+	}
+</style>
+
+</head>
+<body>
+	<div id="menu-wrapper">
+		<div id="menu">
+			<ul>
+				<li class="current"><a href="/">Catalog</a></li>
+				
+
+				
+
+				<li><a href="/search">Search</a></li>
+				
+
+				<li><a href="/papers">Papers</a></li>
+				
+
+				
+
+				<li><a href="/charter">Charter</a></li>
+				
+
+				<li><a href="/about">Help</a></li>
+				
+
+				
+					<li class='login'><a href="/accounts/login?next=/user/home">Login</a></li>
+				
+				
+				
+				
+<!--
+				
+-->
+			</ul>
+		</div>
+	</div><!-- end #menu-wrapper -->
+
+	<div id="page">
+		<div id="main" name="top">
+			<BR></BR>
+			
+	<H1>Kepler Eclipsing Binary Catalog - Third Revision</H1>
+	<BR></BR>
+	
+		<H2>The previous version of the catalog (V2) can be found <a href="/v2">here</a>.</H2>
+		<br><H2>The table of re-extracted light curves from False Positives can be found <a href="/indirect">here</a>.</H2>
+	
+	
+	<BR></BR>
+
+	
+		<form action="/" method="post" enctype="multipart/form-data">
+		<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='xz1m1FM8tpVjaTxzV8wnebe5H5dpvii7' /></div>
+			<select name="format">
+	<!--
+				<option value="csv">comma-separated values</option>
+				<option value="tsv">tab-separated values</option>
+				<option value="ascii">space-separated values</option>
+	-->
+				<option value="file_csv">File: comma-separated values</option>
+				<option value="file_tsv">File: tab-separated values</option>
+				<option value="file_ascii">File: space-separated values</option>
+			</select>
+			<input type="submit", value="Download Catalog" />&nbsp;&nbsp;or <a href="/search">search</a> for more options
+		</form>
+		<br>
+	
+	<form action="/overview/" method="post" enctype="multipart/form-data">
+	<div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='xz1m1FM8tpVjaTxzV8wnebe5H5dpvii7' /></div>
+		<b>KIC / EPIC / KOI</b>: <input type="text" name="quickkid"/>
+		<input type="submit", value="Quick Search" />
+	</form>
+	<BR>
+
+		</div>
+
+		<div id="table", name="results">
+			
+			
+				<p>Last update: Aug. 8, 2019, 2:28 p.m.</p>
+			
+				
+					
+						<p>Showing 50 of 2920 results</p>
+					
+					<div class="pagination">
+						<span class="step-links">
+						
+
+						
+							<span class="current">
+								Page 1 of 59
+							</span>
+						
+
+						
+							<a href="?page=2">next</a>
+						
+						</span>
+					</div>	
+
+				
+					<ul>
+					<table id='tbl' class='tablesorter' border="0">
+						<thead>  
+							<tr>
+							<th scope="cols">KIC/EPIC</th>
+							
+							
+							
+							
+							
+							<th scope="cols">period</th>
+							<th scope="cols">period error</th>
+							<th scope="cols">bjd<sub>0</sub></th>
+							<th scope="cols">bjd<sub>0</sub> error</th>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<th scope="cols">morph</th>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<th scope="col">GLon</th>
+							<th scope="col">GLat</th>
+							<th scope="col">kmag</th>
+							<th scope="col">Teff</th>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<th scope="col">LC data</th>
+							<th scope="col">SC data</th>							
+							<th scope="col">LC Figs</th><th scope="col">SC Figs</th>
+							
+							
+							
+							
+
+							
+
+							</tr>
+						</thead>
+						<tbody>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=3863594">3863594</a></td>
+								
+								
+								
+								
+								
+								<td>0.0532682</td>
+								<td>0.0000000</td>
+								<td>55000</td>
+								<td>0.004327</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.79</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>-1.0000</td>
+								<td>-1.0000</td>
+								<td>-1.0000</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=3863594.00&cadence=lc&data=data">data</a> <a href="/data/?k=3863594.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=3863594.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=3863594.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=3863594.00&cadence=lc">all</a> <a href="/plots/?k=3863594.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=3863594.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=3863594.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=3863594.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=3863594.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=10417986">10417986</a></td>
+								
+								
+								
+								
+								
+								<td>0.0737309</td>
+								<td>0.0000000</td>
+								<td>55000.027476</td>
+								<td>0.004231</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.0390</td>
+								<td>11.0820</td>
+								<td>9.1280</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10417986.00&cadence=lc&data=data">data</a> <a href="/data/?k=10417986.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10417986.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10417986.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=10417986.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=10417986.00&cadence=lc">all</a> <a href="/plots/?k=10417986.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10417986.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10417986.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10417986.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10417986.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=10417986.00&cadence=sc">all</a> <a href="/plots/?k=10417986.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=10417986.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=10417986.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=8912468">8912468</a></td>
+								
+								
+								
+								
+								
+								<td>0.0948380</td>
+								<td>0.0000000</td>
+								<td>54953.576945</td>
+								<td>0.005326</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.98</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>80.1095</td>
+								<td>7.8882</td>
+								<td>11.7510</td>
+								<td>6194.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8912468.00&cadence=lc&data=data">data</a> <a href="/data/?k=8912468.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8912468.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8912468.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8912468.00&cadence=lc">all</a> <a href="/plots/?k=8912468.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8912468.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8912468.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8912468.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8912468.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=8758716">8758716</a></td>
+								
+								
+								
+								
+								
+								<td>0.1072049</td>
+								<td>0.0000000</td>
+								<td>54953.672989</td>
+								<td>0.006197</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>1.00</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.7478</td>
+								<td>11.6565</td>
+								<td>13.5310</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8758716.00&cadence=lc&data=data">data</a> <a href="/data/?k=8758716.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8758716.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8758716.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8758716.00&cadence=lc">all</a> <a href="/plots/?k=8758716.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8758716.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8758716.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8758716.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8758716.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=10855535">10855535</a></td>
+								
+								
+								
+								
+								
+								<td>0.1127824</td>
+								<td>0.0000000</td>
+								<td>54964.629315</td>
+								<td>0.006374</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>79.3949</td>
+								<td>15.9212</td>
+								<td>13.8700</td>
+								<td>7555.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10855535.00&cadence=lc&data=data">data</a> <a href="/data/?k=10855535.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10855535.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10855535.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=10855535.00&cadence=lc">all</a> <a href="/plots/?k=10855535.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10855535.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10855535.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10855535.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10855535.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=9472174">9472174</a></td>
+								
+								
+								
+								
+								
+								<td>0.1257653</td>
+								<td>0.0000001</td>
+								<td>54953.643178</td>
+								<td>0.018318</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.78</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>79.0187</td>
+								<td>11.6745</td>
+								<td>12.2640</td>
+								<td>10645.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9472174.00&cadence=lc&data=data">data</a> <a href="/data/?k=9472174.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9472174.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9472174.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=9472174.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=9472174.00&cadence=lc">all</a> <a href="/plots/?k=9472174.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9472174.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9472174.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9472174.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9472174.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=9472174.00&cadence=sc">all</a> <a href="/plots/?k=9472174.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=9472174.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=9472174.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=9612468">9612468</a></td>
+								
+								
+								
+								
+								
+								<td>0.1334715</td>
+								<td>0.0000001</td>
+								<td>54953.603803</td>
+								<td>0.007796</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.0112</td>
+								<td>8.5285</td>
+								<td>11.5310</td>
+								<td>7202.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9612468.00&cadence=lc&data=data">data</a> <a href="/data/?k=9612468.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9612468.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9612468.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9612468.00&cadence=lc">all</a> <a href="/plots/?k=9612468.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9612468.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9612468.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9612468.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9612468.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=6613627">6613627</a></td>
+								
+								
+								
+								
+								
+								<td>0.1507996</td>
+								<td>0.0000001</td>
+								<td>55115.344848</td>
+								<td>0.008552</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.98</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.1606</td>
+								<td>10.2517</td>
+								<td>12.5480</td>
+								<td>7090.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6613627.00&cadence=lc&data=data">data</a> <a href="/data/?k=6613627.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6613627.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6613627.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6613627.00&cadence=lc">all</a> <a href="/plots/?k=6613627.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6613627.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6613627.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6613627.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6613627.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=5302006">5302006</a></td>
+								
+								
+								
+								
+								
+								<td>0.1511712</td>
+								<td>0.0000001</td>
+								<td>54980.509040</td>
+								<td>0.007895</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.97</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.3495</td>
+								<td>6.6449</td>
+								<td>15.0500</td>
+								<td>6536.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=5302006.00&cadence=lc&data=data">data</a> <a href="/data/?k=5302006.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=5302006.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=5302006.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=5302006.00&cadence=lc">all</a> <a href="/plots/?k=5302006.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=5302006.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=5302006.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=5302006.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=5302006.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=9898401">9898401</a></td>
+								
+								
+								
+								
+								
+								<td>0.1527742</td>
+								<td>0.0000001</td>
+								<td>54964.733972</td>
+								<td>0.008810</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>79.6654</td>
+								<td>11.8375</td>
+								<td>12.0730</td>
+								<td>7376.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9898401.00&cadence=lc&data=data">data</a> <a href="/data/?k=9898401.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9898401.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9898401.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9898401.00&cadence=lc">all</a> <a href="/plots/?k=9898401.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9898401.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9898401.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9898401.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9898401.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=7375612">7375612</a></td>
+								
+								
+								
+								
+								
+								<td>0.1600729</td>
+								<td>0.0000001</td>
+								<td>54953.638704</td>
+								<td>0.008521</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.97</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>76.4714</td>
+								<td>9.6904</td>
+								<td>12.0410</td>
+								<td>6682.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7375612.00&cadence=lc&data=data">data</a> <a href="/data/?k=7375612.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7375612.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7375612.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7375612.00&cadence=lc">all</a> <a href="/plots/?k=7375612.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7375612.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7375612.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7375612.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7375612.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=5872696">5872696</a></td>
+								
+								
+								
+								
+								
+								<td>0.1726132</td>
+								<td>0.0000001</td>
+								<td>54953.798710</td>
+								<td>0.009822</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>73.2243</td>
+								<td>12.1282</td>
+								<td>11.8540</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=5872696.00&cadence=lc&data=data">data</a> <a href="/data/?k=5872696.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=5872696.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=5872696.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=5872696.00&cadence=lc">all</a> <a href="/plots/?k=5872696.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=5872696.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=5872696.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=5872696.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=5872696.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=7767774">7767774</a></td>
+								
+								
+								
+								
+								
+								<td>0.1733883</td>
+								<td>0.0000001</td>
+								<td>55007.740259</td>
+								<td>0.009929</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.99</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.3150</td>
+								<td>9.3041</td>
+								<td>12.5110</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7767774.00&cadence=lc&data=data">data</a> <a href="/data/?k=7767774.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7767774.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7767774.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7767774.00&cadence=lc">all</a> <a href="/plots/?k=7767774.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7767774.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7767774.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7767774.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7767774.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=12350008">12350008</a></td>
+								
+								
+								
+								
+								
+								<td>0.1845296</td>
+								<td>0.0000001</td>
+								<td>55002.014438</td>
+								<td>0.007796</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.71</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.7612</td>
+								<td>18.1985</td>
+								<td>14.6020</td>
+								<td>6108.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=12350008.00&cadence=lc&data=data">data</a> <a href="/data/?k=12350008.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=12350008.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=12350008.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=12350008.00&cadence=lc">all</a> <a href="/plots/?k=12350008.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=12350008.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=12350008.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=12350008.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=12350008.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=10684673">10684673</a></td>
+								
+								
+								
+								
+								
+								<td>0.1925563</td>
+								<td>0.0000001</td>
+								<td>55026.598808</td>
+								<td>0.010851</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>1.00</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.9764</td>
+								<td>10.3016</td>
+								<td>11.1250</td>
+								<td>7106.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10684673.00&cadence=lc&data=data">data</a> <a href="/data/?k=10684673.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10684673.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10684673.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=10684673.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=10684673.00&cadence=lc">all</a> <a href="/plots/?k=10684673.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10684673.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10684673.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10684673.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10684673.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=10684673.00&cadence=sc">all</a> <a href="/plots/?k=10684673.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=10684673.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=10684673.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=9532219">9532219</a></td>
+								
+								
+								
+								
+								
+								<td>0.1981551</td>
+								<td>0.0000001</td>
+								<td>55001.945386</td>
+								<td>0.011223</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.77</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>78.9874</td>
+								<td>11.9849</td>
+								<td>16.1180</td>
+								<td>5031.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9532219.00&cadence=lc&data=data">data</a> <a href="/data/?k=9532219.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9532219.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9532219.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9532219.00&cadence=lc">all</a> <a href="/plots/?k=9532219.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9532219.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9532219.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9532219.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9532219.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=6699679">6699679</a></td>
+								
+								
+								
+								
+								
+								<td>0.2012033</td>
+								<td>0.0000001</td>
+								<td>54953.612834</td>
+								<td>0.011484</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>1.00</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.3042</td>
+								<td>10.2256</td>
+								<td>11.5740</td>
+								<td>-1.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6699679.00&cadence=lc&data=data">data</a> <a href="/data/?k=6699679.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6699679.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6699679.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6699679.00&cadence=lc">all</a> <a href="/plots/?k=6699679.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6699679.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6699679.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6699679.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6699679.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=6287172">6287172</a></td>
+								
+								
+								
+								
+								
+								<td>0.2038732</td>
+								<td>0.0000001</td>
+								<td>54953.651911</td>
+								<td>0.010821</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.95</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>74.2716</td>
+								<td>11.0419</td>
+								<td>12.7140</td>
+								<td>6646.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6287172.00&cadence=lc&data=data">data</a> <a href="/data/?k=6287172.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6287172.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6287172.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6287172.00&cadence=lc">all</a> <a href="/plots/?k=6287172.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6287172.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6287172.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6287172.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6287172.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=11825204">11825204</a></td>
+								
+								
+								
+								
+								
+								<td>0.2096356</td>
+								<td>0.0000001</td>
+								<td>54964.746093</td>
+								<td>0.012214</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.98</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>83.3887</td>
+								<td>12.1048</td>
+								<td>13.7970</td>
+								<td>7074.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=11825204.00&cadence=lc&data=data">data</a> <a href="/data/?k=11825204.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=11825204.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=11825204.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=11825204.00&cadence=lc">all</a> <a href="/plots/?k=11825204.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=11825204.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=11825204.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=11825204.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=11825204.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=4921906">4921906</a></td>
+								
+								
+								
+								
+								
+								<td>0.2137324</td>
+								<td>0.0000001</td>
+								<td>54964.617446</td>
+								<td>0.011635</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.96</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>72.4130</td>
+								<td>11.2310</td>
+								<td>15.2030</td>
+								<td>4800.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=4921906.00&cadence=lc&data=data">data</a> <a href="/data/?k=4921906.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=4921906.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=4921906.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=4921906.00&cadence=lc">all</a> <a href="/plots/?k=4921906.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=4921906.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=4921906.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=4921906.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=4921906.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=6387887">6387887</a></td>
+								
+								
+								
+								
+								
+								<td>0.2169003</td>
+								<td>0.0000008</td>
+								<td>54999.968602</td>
+								<td>0.005577</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.58</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>76.4069</td>
+								<td>7.3539</td>
+								<td>17.0370</td>
+								<td>10648.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6387887.00&cadence=lc&data=data">data</a> <a href="/data/?k=6387887.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6387887.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6387887.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6387887.00&cadence=lc">all</a> <a href="/plots/?k=6387887.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6387887.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6387887.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6387887.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6387887.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=8288741">8288741</a></td>
+								
+								
+								
+								
+								
+								<td>0.2197664</td>
+								<td>0.0000001</td>
+								<td>55000.119225</td>
+								<td>0.006874</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.64</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.1191</td>
+								<td>15.5587</td>
+								<td>14.4990</td>
+								<td>5557.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8288741.00&cadence=lc&data=data">data</a> <a href="/data/?k=8288741.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8288741.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8288741.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8288741.00&cadence=lc">all</a> <a href="/plots/?k=8288741.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8288741.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8288741.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8288741.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8288741.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=12055255">12055255</a></td>
+								
+								
+								
+								
+								
+								<td>0.2209394</td>
+								<td>0.0000001</td>
+								<td>54964.525184</td>
+								<td>0.011640</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.90</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.2592</td>
+								<td>17.7243</td>
+								<td>15.8660</td>
+								<td>4093.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=12055255.00&cadence=lc&data=data">data</a> <a href="/data/?k=12055255.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=12055255.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=12055255.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=12055255.00&cadence=lc">all</a> <a href="/plots/?k=12055255.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=12055255.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=12055255.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=12055255.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=12055255.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=11013201">11013201</a></td>
+								
+								
+								
+								
+								
+								<td>0.2273937</td>
+								<td>0.0000001</td>
+								<td>55001.990706</td>
+								<td>0.013106</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.98</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.9525</td>
+								<td>20.5223</td>
+								<td>9.2750</td>
+								<td>7779.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=11013201.00&cadence=lc&data=data">data</a> <a href="/data/?k=11013201.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=11013201.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=11013201.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=11013201.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=11013201.00&cadence=lc">all</a> <a href="/plots/?k=11013201.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=11013201.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=11013201.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=11013201.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=11013201.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=11013201.00&cadence=sc">all</a> <a href="/plots/?k=11013201.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=11013201.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=11013201.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=8108785">8108785</a></td>
+								
+								
+								
+								
+								
+								<td>0.2288269</td>
+								<td>0.0000001</td>
+								<td>54964.640700</td>
+								<td>0.012704</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.76</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.4115</td>
+								<td>10.0745</td>
+								<td>14.7570</td>
+								<td>4354.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8108785.00&cadence=lc&data=data">data</a> <a href="/data/?k=8108785.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8108785.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8108785.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8108785.00&cadence=lc">all</a> <a href="/plots/?k=8108785.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8108785.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8108785.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8108785.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8108785.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=1572353">1572353</a></td>
+								
+								
+								
+								
+								
+								<td>0.2289313</td>
+								<td>0.0000001</td>
+								<td>54964.674573</td>
+								<td>0.013123</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.91</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>69.7485</td>
+								<td>9.9451</td>
+								<td>15.2340</td>
+								<td>4470.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=1572353.00&cadence=lc&data=data">data</a> <a href="/data/?k=1572353.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=1572353.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=1572353.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=1572353.00&cadence=lc">all</a> <a href="/plots/?k=1572353.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=1572353.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=1572353.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=1572353.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=1572353.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=10288502">10288502</a></td>
+								
+								
+								
+								
+								
+								<td>0.2301847</td>
+								<td>0.0000001</td>
+								<td>54964.677419</td>
+								<td>0.013599</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.97</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.0008</td>
+								<td>10.8364</td>
+								<td>14.7940</td>
+								<td>6116.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10288502.00&cadence=lc&data=data">data</a> <a href="/data/?k=10288502.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10288502.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10288502.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=10288502.00&cadence=lc">all</a> <a href="/plots/?k=10288502.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10288502.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10288502.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10288502.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10288502.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=10453521">10453521</a></td>
+								
+								
+								
+								
+								
+								<td>0.2307783</td>
+								<td>0.0000067</td>
+								<td>55000</td>
+								<td>0.040797</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.36</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.4985</td>
+								<td>19.0744</td>
+								<td>14.2080</td>
+								<td>6541.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10453521.00&cadence=lc&data=data">data</a> <a href="/data/?k=10453521.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10453521.00&cadence=lc&data=freq">freq</a></td>
+								<td></td>
+								<td><a href="/plots/?k=10453521.00&cadence=lc">all</a> <a href="/plots/?k=10453521.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10453521.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10453521.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10453521.00&cadence=lc&kind=freq">freq</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=9238207">9238207</a></td>
+								
+								
+								
+								
+								
+								<td>0.2313530</td>
+								<td>0.0000002</td>
+								<td>55001.966607</td>
+								<td>0.012257</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.75</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>79.9056</td>
+								<td>9.0882</td>
+								<td>15.6100</td>
+								<td>4910.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9238207.00&cadence=lc&data=data">data</a> <a href="/data/?k=9238207.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9238207.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9238207.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9238207.00&cadence=lc">all</a> <a href="/plots/?k=9238207.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9238207.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9238207.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9238207.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9238207.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=5166136">5166136</a></td>
+								
+								
+								
+								
+								
+								<td>0.2339477</td>
+								<td>0.0000001</td>
+								<td>54964.809081</td>
+								<td>0.013922</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.82</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>70.3939</td>
+								<td>16.2799</td>
+								<td>15.3490</td>
+								<td>4986.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=5166136.00&cadence=lc&data=data">data</a> <a href="/data/?k=5166136.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=5166136.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=5166136.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=5166136.00&cadence=lc">all</a> <a href="/plots/?k=5166136.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=5166136.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=5166136.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=5166136.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=5166136.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=8555795">8555795</a></td>
+								
+								
+								
+								
+								
+								<td>0.2345234</td>
+								<td>0.0000001</td>
+								<td>55000.099196</td>
+								<td>0.008403</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.63</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>76.3279</td>
+								<td>13.8353</td>
+								<td>15.9190</td>
+								<td>5002.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8555795.00&cadence=lc&data=data">data</a> <a href="/data/?k=8555795.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8555795.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8555795.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8555795.00&cadence=lc">all</a> <a href="/plots/?k=8555795.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8555795.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8555795.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8555795.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8555795.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=6144827">6144827</a></td>
+								
+								
+								
+								
+								
+								<td>0.2346497</td>
+								<td>0.0000001</td>
+								<td>54964.644135</td>
+								<td>0.013294</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.82</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.8604</td>
+								<td>7.7098</td>
+								<td>14.9970</td>
+								<td>5217.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6144827.00&cadence=lc&data=data">data</a> <a href="/data/?k=6144827.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6144827.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6144827.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6144827.00&cadence=lc">all</a> <a href="/plots/?k=6144827.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6144827.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6144827.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6144827.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6144827.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=10030943">10030943</a></td>
+								
+								
+								
+								
+								
+								<td>0.2357801</td>
+								<td>0.0000001</td>
+								<td>54953.674633</td>
+								<td>0.012916</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>1.00</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>81.1019</td>
+								<td>9.7171</td>
+								<td>11.3260</td>
+								<td>6704.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10030943.00&cadence=lc&data=data">data</a> <a href="/data/?k=10030943.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10030943.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10030943.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=10030943.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=10030943.00&cadence=lc">all</a> <a href="/plots/?k=10030943.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10030943.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10030943.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10030943.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10030943.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=10030943.00&cadence=sc">all</a> <a href="/plots/?k=10030943.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=10030943.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=10030943.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=10965091">10965091</a></td>
+								
+								
+								
+								
+								
+								<td>0.2358555</td>
+								<td>0.0000001</td>
+								<td>54964.696236</td>
+								<td>0.013589</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.76</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>78.7688</td>
+								<td>17.9309</td>
+								<td>15.2800</td>
+								<td>4718.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=10965091.00&cadence=lc&data=data">data</a> <a href="/data/?k=10965091.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=10965091.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=10965091.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=10965091.00&cadence=lc">all</a> <a href="/plots/?k=10965091.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=10965091.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=10965091.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=10965091.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=10965091.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=2715417">2715417</a></td>
+								
+								
+								
+								
+								
+								<td>0.2364399</td>
+								<td>0.0000001</td>
+								<td>54964.666158</td>
+								<td>0.013583</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.77</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>70.7256</td>
+								<td>9.7376</td>
+								<td>14.0700</td>
+								<td>5189.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=2715417.00&cadence=lc&data=data">data</a> <a href="/data/?k=2715417.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=2715417.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=2715417.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=2715417.00&cadence=lc">all</a> <a href="/plots/?k=2715417.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=2715417.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=2715417.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=2715417.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=2715417.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=11413213">11413213</a></td>
+								
+								
+								
+								
+								
+								<td>0.2374665</td>
+								<td>0.0000002</td>
+								<td>55002.094949</td>
+								<td>0.014974</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.87</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>82.5467</td>
+								<td>12.0281</td>
+								<td>15.8610</td>
+								<td>4213.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=11413213.00&cadence=lc&data=data">data</a> <a href="/data/?k=11413213.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=11413213.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=11413213.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=11413213.00&cadence=lc">all</a> <a href="/plots/?k=11413213.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=11413213.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=11413213.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=11413213.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=11413213.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=9077796">9077796</a></td>
+								
+								
+								
+								
+								
+								<td>0.2380804</td>
+								<td>0.0000001</td>
+								<td>54964.645249</td>
+								<td>0.010138</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.72</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>76.1139</td>
+								<td>16.4436</td>
+								<td>15.4390</td>
+								<td>3516.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9077796.00&cadence=lc&data=data">data</a> <a href="/data/?k=9077796.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9077796.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9077796.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9077796.00&cadence=lc">all</a> <a href="/plots/?k=9077796.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9077796.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9077796.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9077796.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9077796.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=6050116">6050116</a></td>
+								
+								
+								
+								
+								
+								<td>0.2399081</td>
+								<td>0.0000001</td>
+								<td>54964.708006</td>
+								<td>0.015182</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.79</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>74.5792</td>
+								<td>9.8170</td>
+								<td>14.2580</td>
+								<td>4569.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6050116.00&cadence=lc&data=data">data</a> <a href="/data/?k=6050116.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6050116.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6050116.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6050116.00&cadence=lc">all</a> <a href="/plots/?k=6050116.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6050116.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6050116.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6050116.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6050116.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=12458797">12458797</a></td>
+								
+								
+								
+								
+								
+								<td>0.2413212</td>
+								<td>0.0000002</td>
+								<td>55182.791088</td>
+								<td>0.014134</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.94</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>82.7162</td>
+								<td>16.3581</td>
+								<td>13.8950</td>
+								<td>4583.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=12458797.00&cadence=lc&data=data">data</a> <a href="/data/?k=12458797.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=12458797.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=12458797.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=12458797.00&cadence=lc">all</a> <a href="/plots/?k=12458797.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=12458797.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=12458797.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=12458797.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=12458797.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=6350020">6350020</a></td>
+								
+								
+								
+								
+								
+								<td>0.2417928</td>
+								<td>0.0000001</td>
+								<td>54964.613787</td>
+								<td>0.012586</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.74</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>72.4528</td>
+								<td>15.0395</td>
+								<td>15.3830</td>
+								<td>5592.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=6350020.00&cadence=lc&data=data">data</a> <a href="/data/?k=6350020.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=6350020.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=6350020.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=6350020.00&cadence=lc">all</a> <a href="/plots/?k=6350020.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=6350020.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=6350020.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=6350020.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=6350020.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=7198474">7198474</a></td>
+								
+								
+								
+								
+								
+								<td>0.2423046</td>
+								<td>0.0000001</td>
+								<td>55000.068173</td>
+								<td>0.037166</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.76</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>74.8344</td>
+								<td>12.3585</td>
+								<td>15.5560</td>
+								<td>5759.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7198474.00&cadence=lc&data=data">data</a> <a href="/data/?k=7198474.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7198474.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7198474.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7198474.00&cadence=lc">all</a> <a href="/plots/?k=7198474.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7198474.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7198474.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7198474.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7198474.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=7546791">7546791</a></td>
+								
+								
+								
+								
+								
+								<td>0.2423615</td>
+								<td>0.0000001</td>
+								<td>54964.604015</td>
+								<td>0.014505</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.94</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>77.0974</td>
+								<td>8.9391</td>
+								<td>13.5660</td>
+								<td>5038.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7546791.00&cadence=lc&data=data">data</a> <a href="/data/?k=7546791.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7546791.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7546791.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7546791.00&cadence=lc">all</a> <a href="/plots/?k=7546791.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7546791.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7546791.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7546791.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7546791.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=7871200">7871200</a></td>
+								
+								
+								
+								
+								
+								<td>0.2429038</td>
+								<td>0.0000001</td>
+								<td>54953.677320</td>
+								<td>0.013169</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.75</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>73.2458</td>
+								<td>18.4483</td>
+								<td>12.7990</td>
+								<td>4644.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7871200.00&cadence=lc&data=data">data</a> <a href="/data/?k=7871200.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7871200.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7871200.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7871200.00&cadence=lc">all</a> <a href="/plots/?k=7871200.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7871200.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7871200.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7871200.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7871200.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=7959612">7959612</a></td>
+								
+								
+								
+								
+								
+								<td>0.2432138</td>
+								<td>0.0000026</td>
+								<td>55000.095587</td>
+								<td>0.014191</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.81</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>75.9245</td>
+								<td>12.5288</td>
+								<td>16.8890</td>
+								<td>5187.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=7959612.00&cadence=lc&data=data">data</a> <a href="/data/?k=7959612.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=7959612.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=7959612.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=7959612.00&cadence=lc">all</a> <a href="/plots/?k=7959612.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=7959612.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=7959612.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=7959612.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=7959612.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=3972629">3972629</a></td>
+								
+								
+								
+								
+								
+								<td>0.2442402</td>
+								<td>0.0000001</td>
+								<td>54964.812585</td>
+								<td>0.016796</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.85</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>73.1772</td>
+								<td>7.5111</td>
+								<td>14.9310</td>
+								<td>5076.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=3972629.00&cadence=lc&data=data">data</a> <a href="/data/?k=3972629.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=3972629.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=3972629.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=3972629.00&cadence=lc">all</a> <a href="/plots/?k=3972629.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=3972629.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=3972629.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=3972629.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=3972629.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=9345163">9345163</a></td>
+								
+								
+								
+								
+								
+								<td>0.2451223</td>
+								<td>0.0000001</td>
+								<td>54964.757218</td>
+								<td>0.014487</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.77</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>78.2595</td>
+								<td>12.6186</td>
+								<td>15.4580</td>
+								<td>4799.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=9345163.00&cadence=lc&data=data">data</a> <a href="/data/?k=9345163.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=9345163.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=9345163.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=9345163.00&cadence=lc">all</a> <a href="/plots/?k=9345163.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=9345163.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=9345163.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=9345163.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=9345163.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=8816790">8816790</a></td>
+								
+								
+								
+								
+								
+								<td>0.2458562</td>
+								<td>0.0000001</td>
+								<td>55001.999460</td>
+								<td>0.014076</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.79</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>76.9241</td>
+								<td>13.4819</td>
+								<td>13.6930</td>
+								<td>6226.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=8816790.00&cadence=lc&data=data">data</a> <a href="/data/?k=8816790.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=8816790.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=8816790.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=8816790.00&cadence=lc">all</a> <a href="/plots/?k=8816790.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=8816790.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=8816790.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=8816790.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=8816790.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=12216817">12216817</a></td>
+								
+								
+								
+								
+								
+								<td>0.2462731</td>
+								<td>0.0000001</td>
+								<td>55002.067959</td>
+								<td>0.014126</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>1.00</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>83.7802</td>
+								<td>13.1896</td>
+								<td>10.6620</td>
+								<td>6681.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=12216817.00&cadence=lc&data=data">data</a> <a href="/data/?k=12216817.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=12216817.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=12216817.00&cadence=lc&data=etv">etv</a></td>
+								<td><a href="/data/?k=12216817.00&cadence=sc&data=data">data</a></td>
+								<td><a href="/plots/?k=12216817.00&cadence=lc">all</a> <a href="/plots/?k=12216817.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=12216817.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=12216817.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=12216817.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=12216817.00&cadence=lc&kind=etv">etv</a></td><td><a href="/plots/?k=12216817.00&cadence=sc">all</a> <a href="/plots/?k=12216817.00&cadence=sc&kind=raw">raw</a> <a href="/plots/?k=12216817.00&cadence=sc&kind=dtr">dtr</a> <a href="/plots/?k=12216817.00&cadence=sc&kind=pf">pf</a></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="odd">
+								<td><a href="/overview/?k=11494583">11494583</a></td>
+								
+								
+								
+								
+								
+								<td>0.2483419</td>
+								<td>0.0000001</td>
+								<td>54964.685201</td>
+								<td>0.015511</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.94</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>79.4133</td>
+								<td>19.3495</td>
+								<td>15.4390</td>
+								<td>4385.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=11494583.00&cadence=lc&data=data">data</a> <a href="/data/?k=11494583.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=11494583.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=11494583.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=11494583.00&cadence=lc">all</a> <a href="/plots/?k=11494583.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=11494583.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=11494583.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=11494583.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=11494583.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+								<tr class="even">
+								<td><a href="/overview/?k=4738426">4738426</a></td>
+								
+								
+								
+								
+								
+								<td>0.2488352</td>
+								<td>0.0000001</td>
+								<td>54964.659616</td>
+								<td>0.014520</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>0.96</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td>71.5806</td>
+								<td>12.4784</td>
+								<td>15.3350</td>
+								<td>6016.0000</td>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								<td><a href="/data/?k=4738426.00&cadence=lc&data=data">data</a> <a href="/data/?k=4738426.00&cadence=lc&data=pf">pf</a> <a href="/data/?k=4738426.00&cadence=lc&data=freq">freq</a> <a href="/data/?k=4738426.00&cadence=lc&data=etv">etv</a></td>
+								<td></td>
+								<td><a href="/plots/?k=4738426.00&cadence=lc">all</a> <a href="/plots/?k=4738426.00&cadence=lc&kind=raw">raw</a> <a href="/plots/?k=4738426.00&cadence=lc&kind=dtr">dtr</a> <a href="/plots/?k=4738426.00&cadence=lc&kind=pf">pf</a> <a href="/plots/?k=4738426.00&cadence=lc&kind=freq">freq</a> <a href="/plots/?k=4738426.00&cadence=lc&kind=etv">etv</a></td><td></td>
+								
+								
+								
+								
+
+								
+
+								</tr>
+							
+							
+						</tbody>
+					</table> 
+					</ul>
+				
+				<div class="pagination">
+					<span class="step-links">
+					
+
+						
+							<span class="current">
+								Page 1 of 59
+							</span>
+						
+
+					
+						<a href="?page=2">next</a>
+					
+					</span>
+				</div>	
+			
+
+			
+			
+		</div>
+		
+		
+	</div>
+	<!-- end #page -->
+</div>
+</body>
+
+
+<script type="text/javascript" src="/includes/jsscripts/jquery.expander.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$('div.readmore').expander({
+			slicePoint: 400,
+			expandText: 'Show More',
+			userCollapseText: 'Show Less',
+			widow: 40,
+			//detailClass: 'expandedtext',
+		});
+	});
+</script>
+<script>
+jQuery(document).ready(function($) {
+	
+	$('.lightbox_trigger').click(function(e) {
+		
+		//prevent default action (hyperlink)
+		e.preventDefault();
+		
+		//Get clicked link href
+		var image_href = $(this).attr("href");
+		
+		/* 	
+		If the lightbox window HTML already exists in document, 
+		change the img src to to match the href of whatever link was clicked
+		
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+		
+		if ($('#lightbox').length > 0) { // #lightbox exists
+			
+			//place href as img src value
+			$('#content').html('<img src="' + image_href + '" style="max-width:80%;max-height:80%;"/>');
+		   	
+			//show lightbox window - you could use .show('fast') for a transition
+			$('#lightbox').show();
+		}
+		
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+			
+			//create HTML markup for lightbox window
+			var lightbox = 
+			'<div id="lightbox">' +
+				'<br><br><p>Click to close</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" style="max-width:80%;max-height:80%;"/>' +
+				'</div>' +	
+			'</div>';
+				
+			//insert lightbox HTML into page
+			$('body').append(lightbox);
+		}
+		
+	});
+	
+	//Click anywhere on the page to get rid of lightbox window
+	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('#lightbox').hide();
+	});
+
+});
+</script>
+
+
+</html>
+

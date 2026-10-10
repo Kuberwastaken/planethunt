@@ -1,0 +1,3 @@
+2103789438169485056 {'n_events': 24, 'depth_ppm': 25.59383672134279, 'error_ppm': 47.087717073207486, 'white_error_ppm': 47.087717073207486, 'local_snr': 0.5435353062785341, 'positive_event_fraction': 0.6666666666666666, 'max_positive_depth_contribution': 0.14327694719644338, 'min_leave_one_event_out_snr': 0.29720354987802905}
+2103792427466721792 {'n_events': 70, 'depth_ppm': -12.78512215763911, 'error_ppm': 36.857281123001435, 'white_error_ppm': 35.10878820644998, 'local_snr': -0.346881858023443, 'positive_event_fraction': 0.5857142857142857, 'max_positive_depth_contribution': 0.10184960931916914, 'min_leave_one_event_out_snr': -0.6373321140401382}
+pixel quarters 13

@@ -1,0 +1,7 @@
+{
+  "tic": 113710966,
+  "mode": "usp",
+  "rank": 2,
+  "status": "vet_error",
+  "error": "ValueError('Require period>0 and 0<duration<period/4')"
+}

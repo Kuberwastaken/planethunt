@@ -1,0 +1,541 @@
+{
+  "source_id": "2103792461826460288",
+  "method": "local per-event pixel baseline fits; official Kepler PRF templates; quiescent two-source fit calibrates common WCS offset",
+  "caveat": "Conditional diagnostic only. Pixel covariances and PRF-model mismatch not calibrated; chi-square differences are not a planet false-positive probability. Gaia2016 coordinates not proper-motion propagated here.",
+  "quarters": [
+    {
+      "quarter": 1,
+      "events": 2,
+      "target_xy": [
+        1.3548493688318368,
+        0.3266625558731726
+      ],
+      "primary_xy": [
+        2.479376119679848,
+        1.7154274419775906
+      ],
+      "mean_astrometric_offset": [
+        0.0388036360868402,
+        0.007422592461174427
+      ],
+      "target_prf": {
+        "amplitude": 6.7004337094073145,
+        "amplitude_error": 2.4310672845615593,
+        "chi2": 10.803271248647425
+      },
+      "primary_prf": {
+        "amplitude": -0.999583622090568,
+        "amplitude_error": 3.520181488884583,
+        "chi2": 18.3191098973443
+      },
+      "delta_chi2_primary_minus_target": 7.515838648696876,
+      "free_center_xy": [
+        1.538137066090642,
+        0.24317764129805852
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.1444840611719649,
+        -0.09090750703628851
+      ],
+      "free_fit": {
+        "amplitude": 6.806056207689472,
+        "amplitude_error": 2.438764319503051,
+        "chi2": 10.611285543866277
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 2,
+      "events": 6,
+      "target_xy": [
+        1.1262182049950624,
+        0.12990716539181113
+      ],
+      "primary_xy": [
+        2.250988227606244,
+        1.5185955551001644
+      ],
+      "mean_astrometric_offset": [
+        -0.00646049908361581,
+        -0.019823648011514018
+      ],
+      "target_prf": {
+        "amplitude": 8.575998133613298,
+        "amplitude_error": 1.4717573231994443,
+        "chi2": 9.650097068847877
+      },
+      "primary_prf": {
+        "amplitude": -0.6840508382859476,
+        "amplitude_error": 1.2407389065344858,
+        "chi2": 43.30060653229998
+      },
+      "delta_chi2_primary_minus_target": 33.6505094634521,
+      "free_center_xy": [
+        1.0770208539078536,
+        -0.24748179093725867
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.042736852003592986,
+        -0.35756530831755573
+      ],
+      "free_fit": {
+        "amplitude": 12.99017926789317,
+        "amplitude_error": 2.1773898631440813,
+        "chi2": 8.012115220930175
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 3,
+      "events": 5,
+      "target_xy": [
+        1.5856959403414064,
+        0.6907055371646509
+      ],
+      "primary_xy": [
+        2.711086816622624,
+        2.0788468350580245
+      ],
+      "mean_astrometric_offset": [
+        0.02876875856631884,
+        0.012919081549716323
+      ],
+      "target_prf": {
+        "amplitude": 9.108733635854135,
+        "amplitude_error": 1.0582872228392202,
+        "chi2": 10.832610255768905
+      },
+      "primary_prf": {
+        "amplitude": 0.3679615798419013,
+        "amplitude_error": 1.161146862521319,
+        "chi2": 84.81353974975067
+      },
+      "delta_chi2_primary_minus_target": 73.98092949398176,
+      "free_center_xy": [
+        1.593064893979105,
+        0.7308802850790795
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.021399804928620213,
+        0.02725566636471233
+      ],
+      "free_fit": {
+        "amplitude": 9.249928968465666,
+        "amplitude_error": 1.07213147711371,
+        "chi2": 10.4783607150858
+      },
+      "valid_pixels": 23
+    },
+    {
+      "quarter": 4,
+      "events": 5,
+      "target_xy": [
+        1.2237072231186543,
+        0.11246668225348899
+      ],
+      "primary_xy": [
+        2.3490165238369123,
+        1.5005191105018465
+      ],
+      "mean_astrometric_offset": [
+        0.016306426032757948,
+        -0.0029116184182188596
+      ],
+      "target_prf": {
+        "amplitude": 10.176047249353342,
+        "amplitude_error": 0.975220087123714,
+        "chi2": 9.72489019870895
+      },
+      "primary_prf": {
+        "amplitude": -1.2756013409112337,
+        "amplitude_error": 1.2113009465691338,
+        "chi2": 117.4971185547949
+      },
+      "delta_chi2_primary_minus_target": 107.77222835608595,
+      "free_center_xy": [
+        1.2170318383208907,
+        0.022705393934733666
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.022981810830521587,
+        -0.08684966990053647
+      ],
+      "free_fit": {
+        "amplitude": 9.939704308077106,
+        "amplitude_error": 0.9488410101300898,
+        "chi2": 8.867347227774266
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 6,
+      "events": 6,
+      "target_xy": [
+        1.1466206903183154,
+        0.08212089741549233
+      ],
+      "primary_xy": [
+        2.2714344414275254,
+        1.4707278951249636
+      ],
+      "mean_astrometric_offset": [
+        0.001453868672671478,
+        0.0016526614434844446
+      ],
+      "target_prf": {
+        "amplitude": 9.837531725288047,
+        "amplitude_error": 1.172181505759954,
+        "chi2": 19.92553094777378
+      },
+      "primary_prf": {
+        "amplitude": 2.0247117709714657,
+        "amplitude_error": 1.2682784025872238,
+        "chi2": 87.81099099031567
+      },
+      "delta_chi2_primary_minus_target": 67.8854600425419,
+      "free_center_xy": [
+        1.394803480225608,
+        0.3682759603668567
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.24672892123462112,
+        0.2845024015078799
+      ],
+      "free_fit": {
+        "amplitude": 9.601127173913937,
+        "amplitude_error": 1.095878499706229,
+        "chi2": 13.602275102677995
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 7,
+      "events": 7,
+      "target_xy": [
+        1.5969272957111205,
+        0.6937955892170928
+      ],
+      "primary_xy": [
+        2.7222824463964277,
+        2.0819779973087886
+      ],
+      "mean_astrometric_offset": [
+        0.012606801263217011,
+        0.009452326623286659
+      ],
+      "target_prf": {
+        "amplitude": 8.657782377455566,
+        "amplitude_error": 0.9932758963492756,
+        "chi2": 12.425290176710073
+      },
+      "primary_prf": {
+        "amplitude": -0.07366749957440966,
+        "amplitude_error": 0.9293315343108579,
+        "chi2": 88.39450132367779
+      },
+      "delta_chi2_primary_minus_target": 75.96921114696771,
+      "free_center_xy": [
+        1.7279843196801632,
+        0.7660334914009066
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.11845022270582573,
+        0.06278557556052711
+      ],
+      "free_fit": {
+        "amplitude": 8.346297101760733,
+        "amplitude_error": 0.9375986474576528,
+        "chi2": 9.159093724276659
+      },
+      "valid_pixels": 23
+    },
+    {
+      "quarter": 8,
+      "events": 5,
+      "target_xy": [
+        1.2350865506436204,
+        0.11952358519336648
+      ],
+      "primary_xy": [
+        2.3603962891306014,
+        1.5075651658420126
+      ],
+      "mean_astrometric_offset": [
+        0.0077288708634167,
+        -0.010390262766098144
+      ],
+      "target_prf": {
+        "amplitude": 8.848522211439745,
+        "amplitude_error": 1.3021579241565062,
+        "chi2": 16.70628545474092
+      },
+      "primary_prf": {
+        "amplitude": 1.1254860535655264,
+        "amplitude_error": 1.2323111515806284,
+        "chi2": 62.0479174416371
+      },
+      "delta_chi2_primary_minus_target": 45.341631986896175,
+      "free_center_xy": [
+        1.0485863871165617,
+        0.05994834618765221
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.19422903439047537,
+        -0.049184976239616124
+      ],
+      "free_fit": {
+        "amplitude": 9.464847104594234,
+        "amplitude_error": 1.3495682388592949,
+        "chi2": 13.696511220674779
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 10,
+      "events": 7,
+      "target_xy": [
+        1.140086992294119,
+        0.08045009612368226
+      ],
+      "primary_xy": [
+        2.264834232925568,
+        1.4689250834472478
+      ],
+      "mean_astrometric_offset": [
+        0.011849880870397355,
+        3.635681244268895e-05
+      ],
+      "target_prf": {
+        "amplitude": 6.601644448505751,
+        "amplitude_error": 1.241854663574761,
+        "chi2": 23.16447189834396
+      },
+      "primary_prf": {
+        "amplitude": 0.7271031927128794,
+        "amplitude_error": 0.969467835794811,
+        "chi2": 50.861353928240845
+      },
+      "delta_chi2_primary_minus_target": 27.696882029896884,
+      "free_center_xy": [
+        1.1636802395726358,
+        -0.24712747174388763
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.011743366408119394,
+        -0.32761392468001255
+      ],
+      "free_fit": {
+        "amplitude": 9.906520551256074,
+        "amplitude_error": 1.8082108727961659,
+        "chi2": 21.408457398752038
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 11,
+      "events": 5,
+      "target_xy": [
+        1.6143474526754504,
+        0.6873218719687588
+      ],
+      "primary_xy": [
+        2.739564609242299,
+        2.075382121240976
+      ],
+      "mean_astrometric_offset": [
+        -0.004070469472285304,
+        0.014272908732929442
+      ],
+      "target_prf": {
+        "amplitude": 10.364071438528534,
+        "amplitude_error": 0.9458034424579522,
+        "chi2": 18.95881596978815
+      },
+      "primary_prf": {
+        "amplitude": -0.19412788603522813,
+        "amplitude_error": 1.0723070694160175,
+        "chi2": 139.0028162985315
+      },
+      "delta_chi2_primary_minus_target": 120.04400032874337,
+      "free_center_xy": [
+        1.6567284720717106,
+        0.7227491939208733
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.04645148886854546,
+        0.02115441321918507
+      ],
+      "free_fit": {
+        "amplitude": 10.323787476455704,
+        "amplitude_error": 0.9383990775093171,
+        "chi2": 18.002822538949648
+      },
+      "valid_pixels": 23
+    },
+    {
+      "quarter": 12,
+      "events": 6,
+      "target_xy": [
+        1.288823216413281,
+        0.1620117062408577
+      ],
+      "primary_xy": [
+        2.4142949653851016,
+        1.5500430694893677
+      ],
+      "mean_astrometric_offset": [
+        0.016058806682990413,
+        -0.0025492750641181545
+      ],
+      "target_prf": {
+        "amplitude": 6.389260843299068,
+        "amplitude_error": 1.1016986212051905,
+        "chi2": 18.581204689566803
+      },
+      "primary_prf": {
+        "amplitude": 0.9006274150466784,
+        "amplitude_error": 1.2844782606116099,
+        "chi2": 51.72335231618146
+      },
+      "delta_chi2_primary_minus_target": 33.14214762661466,
+      "free_center_xy": [
+        1.1664945319600775,
+        0.08141545241748953
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.13838749113619386,
+        -0.07804697875925001
+      ],
+      "free_fit": {
+        "amplitude": 6.30118201958792,
+        "amplitude_error": 1.0614890962934598,
+        "chi2": 16.97684065053141
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 14,
+      "events": 5,
+      "target_xy": [
+        1.1418144766884004,
+        0.06625092067587457
+      ],
+      "primary_xy": [
+        2.266668752307179,
+        1.4548687401597769
+      ],
+      "mean_astrometric_offset": [
+        0.012987123545682107,
+        0.013542228160609932
+      ],
+      "target_prf": {
+        "amplitude": 7.806390849283927,
+        "amplitude_error": 1.209111500227237,
+        "chi2": 18.64370314666075
+      },
+      "primary_prf": {
+        "amplitude": 1.2141363879056657,
+        "amplitude_error": 1.6335858954603995,
+        "chi2": 59.77516183719721
+      },
+      "delta_chi2_primary_minus_target": 41.13145869053646,
+      "free_center_xy": [
+        1.234859417722441,
+        -0.07678044723837733
+      ],
+      "free_center_offset_from_target_pixels": [
+        0.0800578174883585,
+        -0.15657359607486185
+      ],
+      "free_fit": {
+        "amplitude": 9.504545431873481,
+        "amplitude_error": 1.4505031506560757,
+        "chi2": 17.391186051035756
+      },
+      "valid_pixels": 20
+    },
+    {
+      "quarter": 15,
+      "events": 6,
+      "target_xy": [
+        1.605493260561988,
+        0.6824652093155419
+      ],
+      "primary_xy": [
+        2.7306964375364533,
+        2.0705952709868543
+      ],
+      "mean_astrometric_offset": [
+        0.01244076112383159,
+        0.014461463646112976
+      ],
+      "target_prf": {
+        "amplitude": 8.083903503680869,
+        "amplitude_error": 0.974560679995947,
+        "chi2": 17.800084575987764
+      },
+      "primary_prf": {
+        "amplitude": -0.7407006027106132,
+        "amplitude_error": 0.9358917533988926,
+        "chi2": 85.97941844823127
+      },
+      "delta_chi2_primary_minus_target": 68.1793338722435,
+      "free_center_xy": [
+        1.5595236902645961,
+        0.701566673675588
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.058410331421223496,
+        0.00464000071393314
+      ],
+      "free_fit": {
+        "amplitude": 8.274117906959178,
+        "amplitude_error": 0.9943136236988501,
+        "chi2": 17.35948386147805
+      },
+      "valid_pixels": 23
+    },
+    {
+      "quarter": 16,
+      "events": 5,
+      "target_xy": [
+        1.3050306597475938,
+        0.1529936851132785
+      ],
+      "primary_xy": [
+        2.430380372646795,
+        1.5411645381084256
+      ],
+      "mean_astrometric_offset": [
+        0.0026725394633814853,
+        -0.014698391783042173
+      ],
+      "target_prf": {
+        "amplitude": 9.891548480247527,
+        "amplitude_error": 1.004769312969466,
+        "chi2": 13.557795765989871
+      },
+      "primary_prf": {
+        "amplitude": -0.25901571055166733,
+        "amplitude_error": 1.5555671804729612,
+        "chi2": 110.4461511770582
+      },
+      "delta_chi2_primary_minus_target": 96.88835541106833,
+      "free_center_xy": [
+        1.227671280930214,
+        0.16051176134630915
+      ],
+      "free_center_offset_from_target_pixels": [
+        -0.08003191828076135,
+        0.022216468016072834
+      ],
+      "free_fit": {
+        "amplitude": 9.878322292081302,
+        "amplitude_error": 0.9958069139774144,
+        "chi2": 12.06911596846183
+      },
+      "valid_pixels": 20
+    }
+  ],
+  "sum_delta_chi2_primary_minus_target": 799.1979870977257
+}

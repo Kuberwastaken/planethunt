@@ -1,0 +1,13 @@
+{
+  "tic": 247042708,
+  "rule": "last season separated by >20d gaps",
+  "holdout_sectors": [
+    70,
+    71
+  ],
+  "discovery_sectors": [
+    42,
+    43,
+    44
+  ]
+}

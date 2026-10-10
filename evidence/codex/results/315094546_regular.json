@@ -1,0 +1,81 @@
+{
+  "tic": 315094546,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 22.959576953665188,
+      "t0": 1533.9136814499523,
+      "duration_hr": 4.35279071778072,
+      "depth_ppm": 655.2592533253959,
+      "bls_snr": 6.366589877332224,
+      "coarse_snr": 6.310119434119286,
+      "coarse_grid_count": 4406,
+      "rp_earth_approx": 1.726018800081835,
+      "discovery": {
+        "n_events": 2,
+        "n_good_events": 1,
+        "depth": 0.0006550067505840926,
+        "depth_err": 0.00010292154292178751,
+        "snr": 6.364136525643106,
+        "odd_even_sigma": NaN,
+        "secondary": -5.211612445878965e-05,
+        "secondary_err": 5.5704145549925655e-05,
+        "max_ses_frac": 0.9366558768787517,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            64,
+            3003.32661,
+            648.4,
+            108.7,
+            1.0
+          ],
+          [
+            96,
+            3738.03307,
+            711.5,
+            319.1,
+            0.15
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 0,
+        "n_good_events": 0,
+        "depth": NaN,
+        "depth_err": NaN,
+        "snr": NaN,
+        "odd_even_sigma": NaN,
+        "secondary": 3.5901868718583445e-05,
+        "secondary_err": 6.775269165435056e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": NaN,
+        "events": []
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "59db38815dcfd3b3cecd92f03d9736b16223b967e5ced85ac8a5f1ecfe9ac55e",
+  "holdout_sectors": [
+    99
+  ],
+  "discovery_sectors": [
+    8,
+    35,
+    62,
+    89
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 10415,
+  "n_holdout": 2692,
+  "rho_sun": 2.8785135444457577,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 2.89
+}

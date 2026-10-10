@@ -1,0 +1,6 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cparallax%2Cpmra%2Cpmdec%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cruwe%2Cnon_single_star%2Cteff_gspphot%2Clogg_gspphot+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C151.183479%2C-42.1833%2C0.03333333333333333%29%29",
+  "body": null,
+  "sha256": "4fd9c974b5cd0b4d3e73eabb9967fc049cd63298d71379c0d73b26261715fb3d",
+  "retrieved_utc": "2026-10-10T13:40:43.566842+00:00"
+}

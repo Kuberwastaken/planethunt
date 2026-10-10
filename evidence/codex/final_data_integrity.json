@@ -1,0 +1,2189 @@
+[
+  {
+    "file": "lightcurves/177129015.npz",
+    "sha256": "06e6497deb3878ac479e5f4d3228097bdce3b079a7ecd0809a1b6d1b50b9405c",
+    "points": 13719,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/241655722.npz",
+    "sha256": "1b4223a9f3eaea6eb2ad95b00077088397d453ee9ac12ec643507768e8fbd759",
+    "points": 75633,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/3657911.npz",
+    "sha256": "1eebb06dc8b698f695d1eeeabe17227b6ca197a8ede13703e68d8de023b0b7d7",
+    "points": 60327,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/436452961.npz",
+    "sha256": "e7bccd22dea39e80c31c5a4c945eef191654a43003b3ceae3d2c84cf5436d723",
+    "points": 27039,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/95618424.npz",
+    "sha256": "cf43d34b5a4362c89f2fb587a20b6040fb82b1fa146a9cb35fb6a2bf148238e8",
+    "points": 65233,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/117545429.npz",
+    "sha256": "44367f62ecaed4bae845f96a0f2b7108a7c42094911a05992c053ce1f64b5acc",
+    "points": 41945,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/289527642.npz",
+    "sha256": "744d734008070f3327fbaf8d7b87152f7504de8ab1be99e4bc61dfff7e3e854c",
+    "points": 78486,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/11961243.npz",
+    "sha256": "08401763b7a6ee31912fb9a7b5b0543a7d041196c35f72620ce76fd271984571",
+    "points": 13424,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/125736050.npz",
+    "sha256": "1703d49f7d4589f3fa66024dc38a3c096c1de1fba983ba44eafd738b739b247e",
+    "points": 89780,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/77612635.npz",
+    "sha256": "90c1edcb31f344eb1cfa6719c6187229906c2904fef85d5b2671ba288d9ec185",
+    "points": 62096,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/3664898.npz",
+    "sha256": "642faaac7bb1ac24fe054afe005bb732f700e1514c4b79aef3a8fe12ef4a8fa0",
+    "points": 110222,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/436248822.npz",
+    "sha256": "1ee5fb52998125876f69106595ea44a7fb2a3d91c60af10aac442a0eeb16e80b",
+    "points": 61002,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/266744225.npz",
+    "sha256": "4b39f295d281e41b6d410d2e90b8b5fe46351ba15007fbf57b85417de71e5936",
+    "points": 50366,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/281764250.npz",
+    "sha256": "7f4de5282adda78c0c925435e8f2d0cacaaf516a87cc0ae16cea84366dbbc143",
+    "points": 92564,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/283410775.npz",
+    "sha256": "0d894c47da099234b019e4d5a068d162cf640dd8bd0153cbff052317e4ab3247",
+    "points": 54014,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/242941982.npz",
+    "sha256": "b31c05bb582e3c1aba50ca31c091b1fbac97a1f68e49995aa100f4df0852500b",
+    "points": 62563,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/443170340.npz",
+    "sha256": "99d5e5094ae555e813c87f1872ddb84ae7165ebf71074a3a54304b56ba9ca8be",
+    "points": 13425,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/69912980.npz",
+    "sha256": "77658adc7dbb4bef84a5db1909af17f82e5957424db65ecd536fc424a4b1c0da",
+    "points": 58222,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/401667290.npz",
+    "sha256": "908e6c8eaafe9d474d4e3819e1367d262bb9880250dd88a6d40071dba37cfb09",
+    "points": 116979,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/357936741.npz",
+    "sha256": "a121f1584f66b8283f70c526c75e614a25060485f73a07eb0728c3bbc2d37a2e",
+    "points": 75030,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/21867163.npz",
+    "sha256": "66a565c12927301366e6e1ce1bc9bfa5352171d3095443e41265ab30ff1bb85f",
+    "points": 40416,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/321684341.npz",
+    "sha256": "f72c670f14dd0e876efe90304de3fd9c38fd458d0dd84b89203efaf52a4af00a",
+    "points": 234669,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/315094546.npz",
+    "sha256": "59db38815dcfd3b3cecd92f03d9736b16223b967e5ced85ac8a5f1ecfe9ac55e",
+    "points": 31961,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/50726077.npz",
+    "sha256": "c27a7b872febfdb7ff820766184084f953effbd2bc0195f3a5027672fd7b2319",
+    "points": 59046,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/151639678.npz",
+    "sha256": "f3f6d23b0dcebde51e453e870139ba216251e2b2aed13477bd557f8d2a5034fe",
+    "points": 43788,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/364308178.npz",
+    "sha256": "fa09796484ae7b35e8454cea303c0c56cdc9ecbab12a19ae44c4d82d8d25652a",
+    "points": 20892,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/244869034.npz",
+    "sha256": "d9269bcb46a539435cc874a262b937024ee6c6a54a60410c15c96f17efff28cb",
+    "points": 79681,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/201293664.npz",
+    "sha256": "59ab0784db310ed5b86ffe622d68e8079037f8aa633cfba3aa32646f1329ee4e",
+    "points": 186700,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/123480394.npz",
+    "sha256": "22a2bc2a368bf03913bb290ad694b11994502d3b900b848849c7f1c3455274cd",
+    "points": 107013,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/125838647.npz",
+    "sha256": "8fd3c527c737b0e7ba6fff90d90acf184884007e2b1b12e8728b1efa99ea0680",
+    "points": 62368,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/327701300.npz",
+    "sha256": "4d6fd10cd0431d7881f74f04d14353e3cc57b09d905eb4205ee42f95a2eb7788",
+    "points": 25318,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/365670764.npz",
+    "sha256": "0088de27c8509af64d9880499d6ec7555fcaf6910c36de75625568413429c1f5",
+    "points": 198883,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/170434229.npz",
+    "sha256": "8c279fbd8f62dfb0045a9d11a0d8568a9e27204647b829afa47bbb9e528be420",
+    "points": 40255,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/247042708.npz",
+    "sha256": "512a0030dda161a93dc47eb3d59fcf44308f50d8257d9e5b2f81d05ba2a060c1",
+    "points": 62953,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/402099449.npz",
+    "sha256": "37f8171db2e5d366833ddb4876d8c3cb92abef44c66332f83295c82cf541fa08",
+    "points": 25581,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/57746634.npz",
+    "sha256": "0b24a14b778d0d6f586ab033004b261533fa6b8df8930a64ad4dfc48f42bc595",
+    "points": 60729,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/181015118.npz",
+    "sha256": "f571ffe61dc56aef3d13e2da7a1785885b6234f226fe64f3bfbf90b17a2b524f",
+    "points": 97908,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/4263857.npz",
+    "sha256": "b3ccec2b2ec30ac6fe8bf81794b7b28d26e305f162d1a8b666bd4c173ae36ab8",
+    "points": 35992,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/123366965.npz",
+    "sha256": "d04438f387e8a1f2e3567bea8629215a773a1d4b9f5487e9554566e638967f8f",
+    "points": 117010,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/113710966.npz",
+    "sha256": "9c39e8935b03fb235a7b12c6a68bea18a1f9500bacd0acc05c7e513b2a5e7ba5",
+    "points": 104087,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/154874920.npz",
+    "sha256": "d2c6aef7b765c464e7b532de9c0979802d66c3ba8b49a296698194ed9a7adcbf",
+    "points": 201189,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/358015762.npz",
+    "sha256": "1e086dc3f9a4c92c1b0c73348489eea49e7426d4a2f0857984fcb67a8c22a80a",
+    "points": 165582,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/407559875.npz",
+    "sha256": "151d008bdbb8651cf38145159abd7d7a942fff6c9f9306a707246fb6dacf9e36",
+    "points": 83438,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/247463344.npz",
+    "sha256": "f7d93cfec5f7d054a1db87cc81f8ae040703a9529b3d9faecc3c765285104767",
+    "points": 121066,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/273418879.npz",
+    "sha256": "c81c5c2a9a94b27423e92e387d462f48c9ad6747bda3cb0bf9672e493818f7a5",
+    "points": 137299,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/7412956.npz",
+    "sha256": "13f76b6bce2e42a7d8f5479b2f52222854d8f07f40a861dd6ca582cbdce7357f",
+    "points": 23431,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/179068307.npz",
+    "sha256": "e052638b733bbd0f8ab595e41ab109230d07a05298aa5ee6385a29b9d22bc8ba",
+    "points": 20030,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/435903825.npz",
+    "sha256": "2cbc2437d0bb715fa17924baa1656a97f26b95143cd18bae92836670964e3e81",
+    "points": 74927,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/229376639.npz",
+    "sha256": "7dcf7147bfb2ddc1a164bd737b80a9933ae2eb5df7456caa80a49568039f86a1",
+    "points": 12889,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/308616801.npz",
+    "sha256": "1c7916ce9f9d930ffa655be442166067d20dc7770f50118edab907dd53ac1593",
+    "points": 135255,
+    "groups": 24,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/256160507.npz",
+    "sha256": "77c270f7b88da16d2b8863721d9c43a8e4502b17b064dd819105fdefdeaf6060",
+    "points": 67125,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/122574885.npz",
+    "sha256": "67ec8125a2acffe65cbf3dacda11dba5f6fb7ae12973588bdb453caeb2ba04fc",
+    "points": 114665,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/207556694.npz",
+    "sha256": "f3e149fe4c7961ffd3a3c0fac5ac1fccb08f23a90a1d0cea721407e8b2a0c4b4",
+    "points": 116579,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/407688400.npz",
+    "sha256": "059d42a0320feee89a8ba7e1ef71d6d52cfd47b110c2e9667ed4841ea16ce830",
+    "points": 80418,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/427162854.npz",
+    "sha256": "6076cae11d019c95eed2912095ea838674cb1426f146813481479fb1cecb8ab9",
+    "points": 63978,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/103068804.npz",
+    "sha256": "289436857adcbf541073d3331bda53596774558a2f2e328a2b9a86a58c63b95f",
+    "points": 125217,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/26968755.npz",
+    "sha256": "a05bfb8c808693f2402d423fe5a3ab5dab11dee0e96b7aa9b8abd6cd81fd15a0",
+    "points": 107227,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/188087957.npz",
+    "sha256": "2072a76397f5bf8fdec12812c475cef1bd9d7043d3180e8a1872ac9bf40dbbb4",
+    "points": 60241,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/396742365.npz",
+    "sha256": "dcc564a0946acd16632b2ee9fcbaa2551720cf3d6fc993daf778f145e5044649",
+    "points": 90647,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/138421058.npz",
+    "sha256": "f3944180afac5201fb821d068a9fd25c762e8554c74401ca3f5ac43f09990ac4",
+    "points": 144493,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/366306106.npz",
+    "sha256": "141bf7f3c2f33bf97af0a358caf0472ce33cec6e69751b195d13f6741b1f2f9f",
+    "points": 30600,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/48368656.npz",
+    "sha256": "2bb1de709803cb31d9971e9b2cd4d85ba354d56e2fcb67005371a408f9f90525",
+    "points": 34332,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/42071226.npz",
+    "sha256": "239c7cdeae22a03c98c489343ec5661f0ea110805f1c4a38c8fcb8506d642106",
+    "points": 128289,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/452500048.npz",
+    "sha256": "be9df00a3cab7dd39e3fb416c6849c20a1a80188f813ecda3156d7b0a5e5b81c",
+    "points": 55260,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/87869909.npz",
+    "sha256": "063ec6fa868905eb88bb9e3839e7220f6410dc20d62367a23b000d211f7225f6",
+    "points": 24136,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/387467675.npz",
+    "sha256": "a93e3a99491cf2b067053d9bb9a1d6fa87bd9295f9b2557dca04d5aa9f57b31d",
+    "points": 74476,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/358559650.npz",
+    "sha256": "51a8ec80bd46d3c74de47cd302e051bd37e545381d03b0d1769fda41dc6d1d5b",
+    "points": 54814,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/283729692.npz",
+    "sha256": "9a45401ad333c66ffdf166b990fb8de22aa70dada956890499929cd6029e82dd",
+    "points": 39344,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/160197982.npz",
+    "sha256": "7942e71fce9d4a0595f5af53e4456aa0f7aad57cfaeb0bfdb3eb338577524ca6",
+    "points": 80045,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/418206213.npz",
+    "sha256": "914920d3543093c18971a16daa6d671ed425144d7902130b4096219e78a36ee8",
+    "points": 63128,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/154101678.npz",
+    "sha256": "28c96786fa0cc10ba093e4dd0077e8723d5b384b44a4c65ecb2e433820bfdc37",
+    "points": 85227,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/201726620.npz",
+    "sha256": "28a2414af3885d80f862faf5c3a321e9a63b6a1a52fc496531e80f6ba5e4c329",
+    "points": 39687,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/185022145.npz",
+    "sha256": "3d7facc9d983255a3cfa1d8270d9f83511f4a8a346962296913ff4336f2503fb",
+    "points": 37347,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/310000679.npz",
+    "sha256": "08c77a814f75977f5b2cc24fe9c63d8464c6b1449ab1750fcf5e8e412a12ce55",
+    "points": 194563,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/7810044.npz",
+    "sha256": "3d3916cb27a6afe74d3e7c8efb4dcfd2c533a3e66d4a5bfdd826c00e95c51f94",
+    "points": 30629,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/238870740.npz",
+    "sha256": "ff8f181cdc832f94bd22e3398e381e5433a5056ed5926070a7f76cbfaa213ef4",
+    "points": 176271,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/278962913.npz",
+    "sha256": "e09f231424c92a9b7a06e6b962769971139c273aaa8f376768db6b1044d89ec7",
+    "points": 76085,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/277716959.npz",
+    "sha256": "54cb0f968eaf1f1cb666255dd6b7fb2dc9dd089d164c66330dbdc54124404ffe",
+    "points": 100954,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/231865504.npz",
+    "sha256": "73cbf67a43566964975f4b8900517198eff7e372b8fc653c34a6fa121a950424",
+    "points": 50429,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/219085795.npz",
+    "sha256": "f7960dd6ddee440420fef4755b433c70d05be89fecd6b25fc479bb72dae1c25b",
+    "points": 141839,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/111882162.npz",
+    "sha256": "f543f804364044cd4f3feb27fe103438e93d9d7400bb78f006f657569b03167d",
+    "points": 21867,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/202380743.npz",
+    "sha256": "f000515b32d3388ee9ff9be34ec6af22c420041a6428a97ae56f384d75a3e99e",
+    "points": 145686,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/73232846.npz",
+    "sha256": "16911b80c128c5d185133069428a22742c5a3305eed7f51e83ea972f7a331948",
+    "points": 81873,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/33911249.npz",
+    "sha256": "b7794afa06268c9e8a54543619708d0d492fd8faabe9b497b6dc533d9be2d65e",
+    "points": 18880,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/279442159.npz",
+    "sha256": "5623356bce75e4cd730483135a03c0c8ee877c336144eb427363960342d7011e",
+    "points": 86109,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/428988656.npz",
+    "sha256": "8b6008290a8e4e0e0bc0c8de7f27d3e4cb7cca5fb5592615c9448c77d46d4ef1",
+    "points": 213725,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/31974572.npz",
+    "sha256": "93142ecd53dcfc685fc9d18435df38d647d655610bca36545f68db7931a77ce0",
+    "points": 28896,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/372549530.npz",
+    "sha256": "fc554c979e69d0c63cca63c60859bc558541402063c4319beaa49934b8b0c448",
+    "points": 18422,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/157247704.npz",
+    "sha256": "cc7448429aa83819142763618ca1c09fbac631728c7815ffd0f9dfb8296fdd13",
+    "points": 40305,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/415563103.npz",
+    "sha256": "b448c4a27e612ff19dfb8afc8564c31c82aabc62f82e3c751cda2570b678c196",
+    "points": 109925,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/155753765.npz",
+    "sha256": "27e3b2cace4133bf718a90ef8bda761a0a12e410d5c01e88c87246c9a15002ff",
+    "points": 49295,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/237759550.npz",
+    "sha256": "458184c2ddd4d0fbadf16515ddfff8df81ed834cbd40abd2618d2a0ba83a8dc6",
+    "points": 13088,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/372795449.npz",
+    "sha256": "fff952c7c4ec2bf4ed114ef7d3797b1df6038e102e4ef38ca679b8fe11a4ca76",
+    "points": 111600,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/334644751.npz",
+    "sha256": "dede2068e3b34af7e0d442057ee59ee2e135a6f8b41c895b3c3b655602fb6bfb",
+    "points": 65429,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/20325431.npz",
+    "sha256": "48609d97d6f8c2fb785ccaa630ef9eec0f481173b7055b5e7bac978acdcf8095",
+    "points": 76005,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/452846176.npz",
+    "sha256": "093bbcc5dbba073ff07e04bbec03d03e0b79f8cd4382858793481f0a5a40d7cb",
+    "points": 23522,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/318967377.npz",
+    "sha256": "cb724c6ea50451f7e7ef7c2347959dfdc2d6ce09544793d7080c026e925aa56b",
+    "points": 18973,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/430044614.npz",
+    "sha256": "82bd4003f90c69469d4f7ff2f3befd049909d516a2766bfc2ae3c7550205402e",
+    "points": 62183,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/186579346.npz",
+    "sha256": "d639b7d6def86634d1dbfb949cb8db59720d6432022340276c50ecb8c8a57ae8",
+    "points": 83430,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/99937206.npz",
+    "sha256": "3435e2ec3e4f2a7e18ffe9717af56f54046af490e3b1e1ff7ca110124f7be246",
+    "points": 93340,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/331366716.npz",
+    "sha256": "58659e08c3d7bcc5333cee52bc7e7529acd79f0a1d68310fade4e06ef32d4fa3",
+    "points": 52892,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/142439883.npz",
+    "sha256": "27513abbef079db03fdf77160539c63c88bb63a8a0e1b2aa9e89241fd6de6283",
+    "points": 125383,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/410153553.npz",
+    "sha256": "249e176100f9b2a084e2cff2cb43d3e891665c9f95ac1aea98384b98181e6c0a",
+    "points": 95649,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/270415707.npz",
+    "sha256": "7472418fc39335b9a1e4b50e80fb33ecd6ef3b6d99091f72b78568c70ad119d7",
+    "points": 77126,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/415508270.npz",
+    "sha256": "aa3527c4d60c357d8be3628dec6780debc2a44c5c1cb69ed45375c83c0b5b3db",
+    "points": 70387,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/322777782.npz",
+    "sha256": "b9184d9a2439332ced0d40f79061f366806c87602f3cb6eb2371c8a9b4a0aaf8",
+    "points": 52509,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/121820668.npz",
+    "sha256": "f2d652149da9a96eb377089b682e6ad970286afdf868d57098a2dfcce53ca5e5",
+    "points": 23942,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/357012570.npz",
+    "sha256": "380b9c0946fb09c55035e61db82e61088fd0894349f1126723ea30fa9d0414dd",
+    "points": 39645,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/199609132.npz",
+    "sha256": "b3f32effbcde460865fb5797a7779adf6cc8230c521ee04ef9ce748a566d0188",
+    "points": 123207,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/394517838.npz",
+    "sha256": "13e9375e2bd49764d5c5b8098324306496dc9c468fb2c3341b3a5a7d5dcb32f1",
+    "points": 52430,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/47423224.npz",
+    "sha256": "3d1d6a09828163af48ce5189a25ff2f0f91938f26c26ef8ca7ccaa00d40810a3",
+    "points": 61936,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/78674847.npz",
+    "sha256": "e30fd7446c40913c96df6f36277be23da2ee94fa0e6a6ddc41738f5009a418f1",
+    "points": 14677,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/385444964.npz",
+    "sha256": "219c53178389273e414bef6ded80548c6f1bf44e07c796420fc51cede639ddcc",
+    "points": 87237,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/241606913.npz",
+    "sha256": "c8ae2a0897eb1dae9b73420a45397aa7fe635bef0c514b86439f08c6b932020b",
+    "points": 34112,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/219463771.npz",
+    "sha256": "52bb6a9cec6f2777da054e6f60d5e6caa6095da576eaecf163dfe2f887e0cf3e",
+    "points": 204141,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/416714970.npz",
+    "sha256": "7ee62e9aba562d8148e93c8338162c1196b1abede957428b824ded32a0f0c1c6",
+    "points": 27738,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/94753488.npz",
+    "sha256": "3a62b7759925df4908e1097aba526a497e3e79b173ac2f805ed97b15cb116936",
+    "points": 21485,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/193188152.npz",
+    "sha256": "21c3ad6dae402c2ea2e995724a905559623fd97ba1ac84ae17138a6c963eb83a",
+    "points": 74579,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/142439879.npz",
+    "sha256": "ab452d3391c8debf69d082decf2319c103aaeb8c630687e9e45e47021c30ab34",
+    "points": 128746,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/358615829.npz",
+    "sha256": "0c24c972210028adab36178af9d958f5ce83c70c1972aad7c628fbbb829ef1ce",
+    "points": 173895,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/427289369.npz",
+    "sha256": "eddad563988c6a0665c767e9c775455efb0c6c87dc4d3160e72d423368f2c788",
+    "points": 37701,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/454012528.npz",
+    "sha256": "a4687609a7c3b6b06a35cd281d8715b815cc6bcb431b4933906d48de32204f42",
+    "points": 113742,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/316935835.npz",
+    "sha256": "2aa5ab0e494e41025ae584140f04d87a230f17edcf2a0233e8efe20fff7037c2",
+    "points": 84734,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/93716498.npz",
+    "sha256": "b214709320ad3b0e36de61d387d44f53b31c51930ee355177648a844bbd00117",
+    "points": 71254,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/290653184.npz",
+    "sha256": "1568e07e6c1906bcb7eab657caf7bded0412c9cfc2235b02e5e9689f62914b11",
+    "points": 33518,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/340665347.npz",
+    "sha256": "45a4b78360ae03ec6b32e52186d4f1be6edfdbe8555daf333b27d2e89d1abb98",
+    "points": 21940,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/344099041.npz",
+    "sha256": "e25cabdd1eaf8b826d835f0cd1835e4abfbf90d3c679e4318ea946a178739d08",
+    "points": 65287,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/198315173.npz",
+    "sha256": "4eed932979c9cdf2031a400f6899a6308a05d019bb255f07fcd1c79b22330984",
+    "points": 133491,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/303655974.npz",
+    "sha256": "bf4ac733d34cd26faed0e8213dc78733c894d1f9aa31df81dccc30ffb0832810",
+    "points": 113253,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/456716455.npz",
+    "sha256": "9fa72bcf38354c406a08bcea1122474b4fea86a2a3f1bb6e96cd799b094c4c25",
+    "points": 24274,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/403802333.npz",
+    "sha256": "16ce02f592a37bf2387b62cf9da1ef18137f9eb6101c0b208d3c0aa44392ae20",
+    "points": 81200,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/160329609.npz",
+    "sha256": "42466b8e0dca06df4e8891d680f8554a8c336b791c06863bd05f2722ef3793fe",
+    "points": 94670,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/231861553.npz",
+    "sha256": "963e35883de8e2331a7bbdeb9880ad535e29136e4d90d080af7f84463e520d39",
+    "points": 105611,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/95431305.npz",
+    "sha256": "159ca79ae2f51a9386ba7fcf7cd138817aa9b2622667d2155d4249c2883743d3",
+    "points": 63415,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/68396286.npz",
+    "sha256": "d85a1425b2adeee2dc663a7a1658efd75a73008f3d2c341dc87f21278f683275",
+    "points": 93929,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/310990132.npz",
+    "sha256": "fac6da047d766051a023bd4a2c1910bdb6589cc2465308d813414613afab56de",
+    "points": 56585,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/219004642.npz",
+    "sha256": "14e402d50b853f79c9f67da91112ec19dddd863a48bee8af872ee5da4dfde593",
+    "points": 159561,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/321439183.npz",
+    "sha256": "45dd3047bb853e5b63ca59248099abbf2b2d1911f9eb70e7f2b43499fdb77ed6",
+    "points": 47740,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/319609760.npz",
+    "sha256": "ec0531e9518d5ed9439ba302a76cbbedc73756d3a0f7d5e925250ce5343b54d3",
+    "points": 107417,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/357373129.npz",
+    "sha256": "e35ea6afa8daf4865e16e78177508a7faf44ef5a899f0c0706367c047321f43e",
+    "points": 101612,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/317177585.npz",
+    "sha256": "d615b8bfe862b88be70eec29cf0c35343377658ce5cb5d71f1bf77740b60de1e",
+    "points": 56432,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/260795157.npz",
+    "sha256": "ca45f3bf5bcd8cbd3ae0911abdadcc6a3d8f1f76626b4c6e8624d4c04e1eeebf",
+    "points": 151277,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/406343361.npz",
+    "sha256": "63904141f5928805113b7a30ac618e210eb37d786af19d7ade37f065ec601e2d",
+    "points": 119060,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/467361658.npz",
+    "sha256": "306ab0138ed323925d95492ad2cb7284fda35327b55672582ac3fbe8bb212279",
+    "points": 195067,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/219223742.npz",
+    "sha256": "73ccbe4fa835b76bf00da4ae20a0513908c2da015cb02861b96980d7b15be4b9",
+    "points": 106231,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/469905613.npz",
+    "sha256": "b8a2cfd708762c77f665b71915940b8631f760c07e0edea45030c595f4a513dc",
+    "points": 84123,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/19976193.npz",
+    "sha256": "e6392ab90c82f6c15f1f6597e74f6c5ca3ae86dcb5e71f727d7633710549cf67",
+    "points": 63737,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/259999047.npz",
+    "sha256": "1d82628cece7a06d038f1d3fbab5345db558ade0796264d09ffb8a1acdb6ca2c",
+    "points": 113441,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/116151398.npz",
+    "sha256": "4e506b1b51ecbcb13a0ef0d7387329c07a8c058b6ff6f0f58ec475c54f8241e7",
+    "points": 28845,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/219234564.npz",
+    "sha256": "ed518ea4407c137fffa2aa82e2776267811c2c0edaa0d24975db0ba7173e31f4",
+    "points": 126130,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/402104884.npz",
+    "sha256": "db4c4bbb445ccb742f60ff1d3099ff788fe32d2c4bc6b35061f130b0397d743a",
+    "points": 128840,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/94122818.npz",
+    "sha256": "af6dcd8243137070d4607a4c1b38f6b28821f9a4a7b0ad560b7682750a6b9878",
+    "points": 23521,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/303550934.npz",
+    "sha256": "2f0429ea06cfaaeb190ec21da7ebd38d484542cdec646b0d8e037a078dea4dc2",
+    "points": 58337,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/436248798.npz",
+    "sha256": "869c4f30a1013f8f550911fd0ca82fb47b46018d3f0e14cb6c165a98c91ec437",
+    "points": 56256,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/415733167.npz",
+    "sha256": "3ba489674c164e442fa92115e158884fed6679eeee62858ba64c226d65072e6c",
+    "points": 86516,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/53558817.npz",
+    "sha256": "9465973ed21885f67c7612e9e9b07bcc0708e8d646a33635caa4f9d3216a392e",
+    "points": 14351,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/452465896.npz",
+    "sha256": "7a250042bf95d268811da75d1285c051d302641bc744e02d5f2f9d7413bfc4ad",
+    "points": 167843,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/394015919.npz",
+    "sha256": "1ddb1c24397333d003c68e3b1cbfdde634e98ce5be6c01438198e501adee2889",
+    "points": 134304,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/193603077.npz",
+    "sha256": "da2e6aacd95055320f28aecf5bcbf284c6bd05d831f3490ac221ffc615ac0423",
+    "points": 99156,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/209805666.npz",
+    "sha256": "eaf4d5f296e8e72d34c4e588513f45b5cbb908eea259a7de9af55e185526cc28",
+    "points": 8151,
+    "groups": 3,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/139770629.npz",
+    "sha256": "912c7eb6a5218a842c8a7548bd2dc32466371f11af3d5163d85df72ca5f760f1",
+    "points": 110897,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/260795451.npz",
+    "sha256": "decbfbbf362805ce368733a93b0a6299ec7fe34f7a60a2d448ddaa2f03757351",
+    "points": 137444,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/436856183.npz",
+    "sha256": "db64f3110f47539a2ba34ac59d449696bd6447363298c3ae71e8b490930b3e0e",
+    "points": 109122,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/17558287.npz",
+    "sha256": "0ce539b2a77defc0b542f55754208396f2b3ef7836c99b459495314c562239d6",
+    "points": 62449,
+    "groups": 4,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/408549305.npz",
+    "sha256": "1509d11f93ec13999932f68835ae7d7e7bee603cc7312e088c6a907f9d30d881",
+    "points": 118163,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/273864083.npz",
+    "sha256": "68475b33d586af9af71dd55957fb377ab0f74b4d57ca00c5aa7df3081a5dc5f6",
+    "points": 111375,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/178626040.npz",
+    "sha256": "0b8b071702469e2a370ae262b14bc4273005fead5e16a52acd332d36179b87c7",
+    "points": 29973,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/349920500.npz",
+    "sha256": "732bd1b6a2116420a369dec5d43dd32c78d8c506a5f7484ec5434732c406f865",
+    "points": 59374,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/239137106.npz",
+    "sha256": "3bca817c5695636d6a4756bdd41cd379b65065ea237be94b087cd984bb01a5d8",
+    "points": 123546,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/396810588.npz",
+    "sha256": "0e31560ab598cdff49527bee7fcb9c6e42622a2e507107c451d986a48571f745",
+    "points": 77792,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/327857952.npz",
+    "sha256": "5e279582e31e329846470c2cad20fae9df0965e86a305be76483bda5d8f36942",
+    "points": 88935,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/22750743.npz",
+    "sha256": "e71271d892fe0e598fa6dab3ea8e625ab3de0bc8f8045c2c4b31c734ae7c48ee",
+    "points": 103966,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/410441291.npz",
+    "sha256": "d2fc48d4e2d5694214c76519f5738b7c0478a89c431eec88ca5d4adb22d1604d",
+    "points": 62919,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/93534003.npz",
+    "sha256": "7eb6805555dac1bd60f84bcb11fbd23d1fbd0ffcbd6eb266f38f896744834587",
+    "points": 42496,
+    "groups": 6,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/238950307.npz",
+    "sha256": "bf13ecde637cdf80f454f8638365767bc11f5c3fe5376f24f8c697343c52b504",
+    "points": 175263,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "lightcurves/72604026.npz",
+    "sha256": "ccc6fd590727e1a11d27da631274a43a24f764e83560202a1e1622a5f1e91d2b",
+    "points": 54571,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2106008591934450176.npz",
+    "sha256": "37e108116b93bf9f4055ab067acd953e8f8a68a8d1b68109cd059ec211827400",
+    "points": 34003,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2100924557545692160.npz",
+    "sha256": "4f0e5997a658e3f4972023fd56c9f2a6b4ea2057ac3aa113bf35d17f785ab1bb",
+    "points": 60054,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2129216709714868992.npz",
+    "sha256": "6eb63fb6d2ef5aa2b9974b457cb5065af0cf0d84e3f144e2589e92a223553316",
+    "points": 39257,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2075374484307610496.npz",
+    "sha256": "4a907b3a1131ae1d1b96ec71f8c7d4ce15954ee72ec6ae60e9592e6538c848c8",
+    "points": 52564,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103453498711571200.npz",
+    "sha256": "6b39deab42469c3708e8d5cea997f1a11528356c6564081db98f16084d01fda0",
+    "points": 35250,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103306512046793984.npz",
+    "sha256": "2c0167ee6dbfa518e717d2a540219b941d1c4c5ff17bd5ae99ae6ee3cb2f8ad8",
+    "points": 42633,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103789438169485056.npz",
+    "sha256": "ad847cad12631d91c5b6562d30bd818fae70a11a8f3f73204843d3e1ac02fe21",
+    "points": 14858,
+    "groups": 5,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2085274761875611648.npz",
+    "sha256": "4d1cc6f1d5b37f4413c7802a81b9a1e3fd48e1bc923ece8631d39e64497ee452",
+    "points": 49788,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2126223598546448640.npz",
+    "sha256": "cf838b83ba21c017c21e3c560afc3b2043b7035ff3eff93c90d353cd456836a2",
+    "points": 29528,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2130789767255224960.npz",
+    "sha256": "0ec27008d70c06cb91745441d1a356d8eb78c2c0ca02332aa6075ef062b9593e",
+    "points": 58786,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2128058271137789312.npz",
+    "sha256": "7d24c6ec2c27de7debf49281de45e6245d77d6e2fbb89f0bb80fcda546552faa",
+    "points": 37283,
+    "groups": 10,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103792461826460288.npz",
+    "sha256": "40572717857c4f03a1f0944287987aba1b9f671c62a3de57991ce9159e3f3fd1",
+    "points": 46523,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2102053446751282944.npz",
+    "sha256": "53fa10e5322de6fa0eca865024dc6974ce7c7b688f330cd5e3795de15aeab39c",
+    "points": 56050,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2080285246825475712.npz",
+    "sha256": "a7fc9944b61b02b6d80d76e0081f669c727c1eb78a4e4c9f3faad72c2237ac17",
+    "points": 39419,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2073896294004902272.npz",
+    "sha256": "9830377812db09c17c2c15e8dbc8c9148e69b8ec13df62440a948d34b637d637",
+    "points": 55804,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2080452132074076928.npz",
+    "sha256": "d6c64d35718bd8831571b624d3519ac637c4d836079e3861f8578cc388ca0aaa",
+    "points": 35114,
+    "groups": 12,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2086642279460095872.npz",
+    "sha256": "9c4baa298913b28784c2001157b4c13213e8a375ee3e60d0b06c0c6071af8691",
+    "points": 46810,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2080644237372354048.npz",
+    "sha256": "70a79ef97e4555b77d06742e956785292b1a033cfa4cc4a23efcf4837f594877",
+    "points": 47992,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2105301782052654592.npz",
+    "sha256": "98c4f520e4bc6a1586ae7299aef837f5b82a346048e905c004bda4d00813f623",
+    "points": 25707,
+    "groups": 16,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2130855841032290304.npz",
+    "sha256": "9590d9647f71dd79ac0eee0a449d3a3a88430b55d99318cddcb93c9d3235f552",
+    "points": 55610,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2078523107649106304.npz",
+    "sha256": "1cef25124d657046cbdd7027e49bf62df62bc210ad44f9f45d7dc8a67424aaa3",
+    "points": 55127,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2076502136555701504.npz",
+    "sha256": "ddb5281a2c07c438e731d73971f91f874b26988e85e7105e6eb9002d33b5af47",
+    "points": 21290,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103701752116539776.npz",
+    "sha256": "b18e8f3760b974461be3603eb9feed545eae8fed1b1e6d79ec0b3b385f63ab7a",
+    "points": 38556,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2100246055790121216.npz",
+    "sha256": "960b9c0742ba3a2c2db7c2e8d4bebe60641f414b4a40692889d68697f6ad4333",
+    "points": 3266,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2106478259494644992.npz",
+    "sha256": "19da9390dd2437687ce3ce84fa282477ff88ef55b16915e0b9adf1487d10627f",
+    "points": 31109,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2076841748211863168.npz",
+    "sha256": "88bbd954e685fa36f388d2e91f11ed0e9c8e2bbf56c16c97999c7aa78b4c2baa",
+    "points": 22305,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2106145932106229120.npz",
+    "sha256": "c4420a2daf19710bafb62cd0bb7c297c9d119b0773add3c47a88e54516c95252",
+    "points": 54218,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2077645766083817472.npz",
+    "sha256": "9963a8e18d30e599ab3262c601dd0b50d34ca459c2f78ada47170ddd1bfec3e5",
+    "points": 60393,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2102708309003676288.npz",
+    "sha256": "8318bd94fe12a46984c440fa0e9564653a25897296373cbe59805c54ac3d5dbe",
+    "points": 58480,
+    "groups": 16,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2131801592829364864.npz",
+    "sha256": "1ab262b9f4db84a205accc99d0e0c2ffcad69ffbee4a84bc1ce3b02e0c4cca7f",
+    "points": 34525,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2103792427466721792.npz",
+    "sha256": "c50b10dd11ecb4b34e35ad917fe65da4bdae46a9bac4a6417b5503df90e99fb0",
+    "points": 46523,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2078654086970321408.npz",
+    "sha256": "89815e6150a74303935539d53d27ca2c7a8c9ceb7d7b0d38e1680cb31234fc5e",
+    "points": 22254,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2135288316002062976.npz",
+    "sha256": "95992cde21eac801fe71af7ad40ffb1b2da203d97b47a5e430394d806bdc2f28",
+    "points": 50171,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2127832699452073600.npz",
+    "sha256": "445cec8713777855bd0a3d84d3a6d9e48c22f24266fe5988294b8320585af3cb",
+    "points": 51361,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2133059949528637184.npz",
+    "sha256": "734ad2b7a5f4759717a65572e486d9cc80ab0283ef52671c6366c02fcabc306b",
+    "points": 19433,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2143761594981845504.npz",
+    "sha256": "a78a718f63a8b2ef04c1558384d0d960b43920723a61f8198738b6f511cd77e9",
+    "points": 56561,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2130212867248059008.npz",
+    "sha256": "03004b3799e2b133264b1aa2e6f872c796dc0c9de4136610eb424f988f5148a5",
+    "points": 48204,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2078913159395662080.npz",
+    "sha256": "8508677d59db8abd311405d147c9cdf1c8776a6a69eb61036c181fd149e292fc",
+    "points": 59816,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2053242242945211264.npz",
+    "sha256": "04f43095a6019693e2a2a05dde901052de2810f452903454ee3f27e22914355d",
+    "points": 47343,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2076531754650736000.npz",
+    "sha256": "7da625ae352dd45d9718ac9258a3cfb00a531f9092fe2d0058f0db026baf6e5e",
+    "points": 29707,
+    "groups": 8,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2127957700182224256.npz",
+    "sha256": "ae5f1c70a3c4348daaebc33c2577a5df1f80bf3dea30bac029acbdc85c9a244e",
+    "points": 2974,
+    "groups": 7,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2101806812548048512.npz",
+    "sha256": "e261c5ca4e0a9047c47a72b82e627208d137ba993a4a13f81772b2d30b470ba3",
+    "points": 47066,
+    "groups": 15,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2107611924701726080.npz",
+    "sha256": "168eb02ce839905ce43b2ad309fe6c2df4c3effd1248887b238e4c1ac8d92ed8",
+    "points": 59302,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2079722984067307648.npz",
+    "sha256": "eff571a380d1b3ac9bcadc10fba14cb6a3375925455c7d99facad9cd747ce564",
+    "points": 55074,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2133289365203000320.npz",
+    "sha256": "140fac13839fe6d49b81a483f79083051e87bee6a7b45cf77bcd8ee52802575d",
+    "points": 49881,
+    "groups": 16,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2135376861048401792.npz",
+    "sha256": "8a501916381908bbb15826b82563fd26cb3011631c7e8aa6ec93267ad8d3a9ff",
+    "points": 60185,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2126568158001969536.npz",
+    "sha256": "51896064f69d9d5904c5f5aac0385b157364d24e6945069a0fd36cfe9eb7187a",
+    "points": 58532,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2131620310850181632.npz",
+    "sha256": "33a1e417eb2f4d040bc44bbd2874635455f369a462f792edca4f0a1481eb90e2",
+    "points": 50876,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2078528467768607232.npz",
+    "sha256": "ef25f8c1eb213d3821abc05a5c130483cf91db341443effe96fa92c7a68e89e4",
+    "points": 59888,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2132638389899343616.npz",
+    "sha256": "332f0cf02a9992ddefda0ec3cbde3b27bdde1eff77e2e24604f05ecb17c77c57",
+    "points": 58226,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2101487232622888832.npz",
+    "sha256": "8a127d60aad9b4ddcae1571ce6de3a1be33b8f7f075e45b933a74b6034cebc68",
+    "points": 34809,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2080097883172437888.npz",
+    "sha256": "4281c08e8276ad634e83d01b0d1bd3ad024f4ce6816b19a69129934460fd21b6",
+    "points": 33369,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2132228512578805888.npz",
+    "sha256": "3359fd3e2fd1d7dc3ccaa811a27b8437a563870748068de4a722cbae86dd4e39",
+    "points": 42344,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2101270731909806976.npz",
+    "sha256": "5adde4436136da5857ebf4b844adc3e15fb1c5a357de378fa1a555761661379d",
+    "points": 30435,
+    "groups": 9,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2129196368749534208.npz",
+    "sha256": "1a094c3b04a8b89330a14be0f0e009178ef1b6f193c5120b373fa6d1c76dfe97",
+    "points": 47423,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2132183982357568640.npz",
+    "sha256": "ba341e1b2a33ef562d3f93134289616cd01a589568dd71bcbb05c67ec79a8ccb",
+    "points": 42893,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2079129179070054656.npz",
+    "sha256": "e71ab69c95d8ec59dc2d163efe015914a349f049fecd2acafc65789a2a91428f",
+    "points": 60519,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2128084659416803584.npz",
+    "sha256": "3173d43dbcea691ab0dd24e37e1981488582f86339f0c19621ae49b7722759c5",
+    "points": 57406,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2133620459939952768.npz",
+    "sha256": "17e9a4681c6fb20b27c8e7946dcdfce14c5a3f60fabe16f0e05b72cf3ef4aafc",
+    "points": 46707,
+    "groups": 13,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2127907019564081408.npz",
+    "sha256": "19975a71eb1c8812a0b74e4470761b474b7011fda37100424fb18da3228f27fb",
+    "points": 60354,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2128887268543526656.npz",
+    "sha256": "26ccf19412712d6d2b961d6237b8041f8128c900048f40259d93ea230422084a",
+    "points": 59895,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2131521732761358720.npz",
+    "sha256": "4f0cbaa821cb051d1ec505a91cc43ab54922225a120dcd19951567b258ae7144",
+    "points": 39408,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2052257149247654528.npz",
+    "sha256": "76e61a06e293af82837be032113414637b2eb582423beb60071a484d1d6e429e",
+    "points": 30533,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2129959940917208704.npz",
+    "sha256": "9bad9d6c72b63b65c2b78c845ceff381742abb7818f6562e1eba2c24009661e6",
+    "points": 56656,
+    "groups": 17,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2129404966720268672.npz",
+    "sha256": "15393e1b043ef70f8bb3fc8016b813dac67b379717b96b413cfb2b23ec951f3a",
+    "points": 57211,
+    "groups": 18,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2052483064529982336.npz",
+    "sha256": "32fe6635db614bc47e12dbdee27d0e634b065a31f651c2e6fb552cc3e2d9ec1e",
+    "points": 48083,
+    "groups": 14,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  },
+  {
+    "file": "database_expansion/kbonus/lightcurves/2052610195556994688.npz",
+    "sha256": "111db68c1934b5ab3b833cc407bf931f5a605e393c9d3d9634ae85ec42776d18",
+    "points": 31733,
+    "groups": 11,
+    "finite_t_flux_error": true,
+    "positive_errors": true,
+    "sorted_time": true
+  }
+]

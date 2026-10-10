@@ -1,0 +1,19 @@
+{
+  "tic": 273418879,
+  "removed_qlp_sectors": [
+    102
+  ],
+  "original_sha256": "c81c5c2a9a94b27423e92e387d462f48c9ad6747bda3cb0bf9672e493818f7a5",
+  "filtered_sha256": "304a4ed347d9dbdc68a18481de68fc66df5ba76116cd497b7bf3b48a57ffa11f",
+  "retained_sectors": [
+    1,
+    13,
+    27,
+    28,
+    67,
+    68,
+    94,
+    95
+  ],
+  "interpretation": "Retrospective rerun: last retained season assigned before refitting but previously examined data. Omits entire QLP99-104 products conservatively."
+}

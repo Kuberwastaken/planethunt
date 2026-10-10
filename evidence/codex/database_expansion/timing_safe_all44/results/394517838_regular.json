@@ -1,0 +1,87 @@
+{
+  "tic": 394517838,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 13.27944782542388,
+      "t0": 1331.237083695212,
+      "duration_hr": 2.235146120550655,
+      "depth_ppm": 1590.1542795815249,
+      "bls_snr": 6.749225055386371,
+      "coarse_snr": 6.736372450329463,
+      "coarse_grid_count": 5776,
+      "rp_earth_approx": 1.6283523532669149,
+      "discovery": {
+        "n_events": 3,
+        "n_good_events": 3,
+        "depth": 0.0015901201464695828,
+        "depth_err": 0.00023560546085398673,
+        "snr": 6.749080181358946,
+        "odd_even_sigma": 1.8228534959413105,
+        "secondary": -0.00013344197994232936,
+        "secondary_err": 0.00016645003462480005,
+        "max_ses_frac": 0.8106374106719761,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1331.23708,
+            915.2,
+            438.9,
+            0.89
+          ],
+          [
+            1,
+            1344.51653,
+            1562.7,
+            438.9,
+            0.89
+          ],
+          [
+            137,
+            3150.52144,
+            2068.0,
+            362.0,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 0,
+        "n_good_events": 0,
+        "depth": NaN,
+        "depth_err": NaN,
+        "snr": NaN,
+        "odd_even_sigma": NaN,
+        "secondary": NaN,
+        "secondary_err": NaN,
+        "max_ses_frac": NaN,
+        "frac_neg_events": NaN,
+        "events": []
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "bf089d750d78cf56431c0ba28b1e6a600a80b9944bf4c61d2ef7a76c3be2bdd7",
+  "holdout_sectors": [
+    95
+  ],
+  "discovery_sectors": [
+    1,
+    27,
+    67
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 7230,
+  "n_holdout": 1319,
+  "rho_sun": 6.9047421787264245,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 6.02
+}

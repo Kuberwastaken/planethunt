@@ -1,0 +1,81 @@
+{
+  "source_id": "2100246055790121216",
+  "kic": 3936481,
+  "tpforg": 100002328,
+  "inverted": true,
+  "signals": [
+    {
+      "rank": 1,
+      "period": 7.475786539672866,
+      "t0_btjd": -1353.09864729986,
+      "duration_hr": 0.6228816842798431,
+      "depth_ppm": 10743.325482518327,
+      "bls_snr": 8.04003573245184,
+      "discovery": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": 0.010741402300417242,
+        "depth_err": 0.0013362285741038676,
+        "snr": 8.038596471132111,
+        "odd_even_sigma": NaN,
+        "secondary": NaN,
+        "secondary_err": NaN,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            47,
+            -1001.73668,
+            10741.4,
+            1336.2,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": -0.0007302736124683374,
+        "depth_err": 0.0008968457642498369,
+        "snr": -0.8142688983753765,
+        "odd_even_sigma": 0.3232171752445407,
+        "secondary": NaN,
+        "secondary_err": NaN,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            77,
+            -777.46308,
+            -1013.3,
+            1253.5,
+            1.0
+          ],
+          [
+            92,
+            -665.32629,
+            -433.4,
+            1283.7,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline": "kbonus_pilot_v1",
+  "status": "ok",
+  "input_sha256": "960b9c0742ba3a2c2db7c2e8d4bebe60641f414b4a40692889d68697f6ad4333",
+  "holdout_quarters": [
+    15,
+    16
+  ],
+  "discovery_quarters": [
+    9,
+    10,
+    12,
+    13,
+    14
+  ],
+  "seconds": 3.534111261367798
+}

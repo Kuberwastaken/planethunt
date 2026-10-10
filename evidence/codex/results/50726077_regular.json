@@ -1,0 +1,162 @@
+{
+  "tic": 50726077,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 13.140827155143924,
+      "t0": 1477.2894476628528,
+      "duration_hr": 3.51135149056622,
+      "depth_ppm": 474.32914924657507,
+      "bls_snr": 23.364900260592503,
+      "coarse_snr": 23.1816881453817,
+      "coarse_grid_count": 4131,
+      "rp_earth_approx": 1.3334566879866514,
+      "discovery": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": 0.00047421015583082657,
+        "depth_err": 2.030092762889229e-05,
+        "snr": 23.35903878382042,
+        "odd_even_sigma": NaN,
+        "secondary": -1.0014345560856811e-05,
+        "secondary_err": 1.0049713299764057e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            55,
+            2200.03494,
+            474.2,
+            20.3,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 4,
+        "n_good_events": 4,
+        "depth": -3.488491527109373e-06,
+        "depth_err": 1.1366450025688041e-05,
+        "snr": -0.3069112624632514,
+        "odd_even_sigma": 1.8846710787598298,
+        "secondary": 9.39427451464282e-05,
+        "secondary_err": 2.2732900051376083e-05,
+        "max_ses_frac": 0.8696495396756695,
+        "frac_neg_events": 0.25,
+        "events": [
+          [
+            192,
+            4000.32826,
+            21.4,
+            22.7,
+            1.0
+          ],
+          [
+            193,
+            4013.46909,
+            45.5,
+            22.7,
+            1.0
+          ],
+          [
+            194,
+            4026.60992,
+            14.5,
+            22.7,
+            1.0
+          ],
+          [
+            195,
+            4039.75074,
+            -95.3,
+            22.7,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 24.780764028501025,
+      "t0": 1493.060825693542,
+      "duration_hr": 1.084472174996641,
+      "depth_ppm": 842.3688242913033,
+      "bls_snr": 19.3628256819014,
+      "coarse_snr": 19.35606715823734,
+      "coarse_grid_count": 4092,
+      "rp_earth_approx": 1.777011136062758,
+      "discovery": {
+        "n_events": 1,
+        "n_good_events": 1,
+        "depth": 0.0008424423282473708,
+        "depth_err": 4.350443670412592e-05,
+        "snr": 19.36451525569286,
+        "odd_even_sigma": NaN,
+        "secondary": 9.73875136015183e-07,
+        "secondary_err": 2.0586530303870202e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            -1,
+            1468.28006,
+            842.4,
+            43.5,
+            0.61
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": 2.463614287569041e-05,
+        "depth_err": 2.784200274978045e-05,
+        "snr": 0.8848552705456751,
+        "odd_even_sigma": NaN,
+        "secondary": NaN,
+        "secondary_err": NaN,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.5,
+        "events": [
+          [
+            101,
+            3995.91799,
+            143.5,
+            39.4,
+            1.0
+          ],
+          [
+            103,
+            4045.47952,
+            -94.2,
+            39.4,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "c27a7b872febfdb7ff820766184084f953effbd2bc0195f3a5027672fd7b2319",
+  "holdout_sectors": [
+    98
+  ],
+  "discovery_sectors": [
+    6,
+    32
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 6406,
+  "n_holdout": 5444,
+  "rho_sun": 3.13984316318812,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 3.9
+}

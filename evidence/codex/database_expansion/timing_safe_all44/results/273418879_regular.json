@@ -1,0 +1,223 @@
+{
+  "tic": 273418879,
+  "mode": "regular",
+  "inverted": false,
+  "status": "ok",
+  "signals": [
+    {
+      "rank": 1,
+      "period": 24.86051018171068,
+      "t0": 1339.8649475139687,
+      "duration_hr": 1.2604579119474353,
+      "depth_ppm": 781.9244592400757,
+      "bls_snr": 25.2016014626491,
+      "coarse_snr": 18.799518348867355,
+      "coarse_grid_count": 10185,
+      "rp_earth_approx": 1.291238102204289,
+      "discovery": {
+        "n_events": 5,
+        "n_good_events": 5,
+        "depth": 0.0007821831860366994,
+        "depth_err": 3.102677662762603e-05,
+        "snr": 25.209940285587024,
+        "odd_even_sigma": 11.008740643269336,
+        "secondary": -5.83928663555241e-06,
+        "secondary_err": 3.4853255401720734e-05,
+        "max_ses_frac": 0.8556836352289182,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1339.86495,
+            81.0,
+            68.6,
+            0.93
+          ],
+          [
+            13,
+            1663.05158,
+            63.8,
+            72.3,
+            0.93
+          ],
+          [
+            30,
+            2085.68025,
+            1306.5,
+            66.9,
+            1.0
+          ],
+          [
+            72,
+            3129.82168,
+            49.7,
+            72.5,
+            0.93
+          ],
+          [
+            74,
+            3179.5427,
+            2178.8,
+            67.2,
+            1.0
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": -4.984110371613025e-05,
+        "depth_err": 7.161236380156466e-05,
+        "snr": -0.6959846187208426,
+        "odd_even_sigma": 1.857849833834015,
+        "secondary": -1.937914155885347e-05,
+        "secondary_err": 5.273962609104996e-05,
+        "max_ses_frac": 1.0,
+        "frac_neg_events": 0.5,
+        "events": [
+          [
+            102,
+            3875.63699,
+            -293.4,
+            149.4,
+            0.53
+          ],
+          [
+            103,
+            3900.4975,
+            22.8,
+            81.6,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    },
+    {
+      "rank": 2,
+      "period": 24.180937967844304,
+      "t0": 1337.2701779687031,
+      "duration_hr": 0.8920264079349427,
+      "depth_ppm": 317.33580641124803,
+      "bls_snr": 9.907704344836947,
+      "coarse_snr": 9.573605625304346,
+      "coarse_grid_count": 10171,
+      "rp_earth_approx": 0.8225900892991271,
+      "discovery": {
+        "n_events": 7,
+        "n_good_events": 7,
+        "depth": 0.00031741890574372305,
+        "depth_err": 3.202919620594116e-05,
+        "snr": 9.910298831815343,
+        "odd_even_sigma": 3.3767630769855135,
+        "secondary": -2.4143560706250152e-06,
+        "secondary_err": 4.066844773119363e-05,
+        "max_ses_frac": 0.6875238191309149,
+        "frac_neg_events": 0.0,
+        "events": [
+          [
+            0,
+            1337.27018,
+            35.6,
+            81.1,
+            0.93
+          ],
+          [
+            14,
+            1675.80331,
+            167.7,
+            85.5,
+            0.93
+          ],
+          [
+            29,
+            2038.51738,
+            76.1,
+            87.1,
+            0.93
+          ],
+          [
+            30,
+            2062.69832,
+            172.6,
+            84.6,
+            0.93
+          ],
+          [
+            74,
+            3126.65959,
+            808.3,
+            84.2,
+            1.0
+          ],
+          [
+            75,
+            3150.84053,
+            215.4,
+            78.4,
+            1.0
+          ],
+          [
+            76,
+            3175.02146,
+            883.8,
+            95.1,
+            0.75
+          ]
+        ]
+      },
+      "holdout": {
+        "n_events": 2,
+        "n_good_events": 2,
+        "depth": -5.059671234417942e-05,
+        "depth_err": 6.76260995300099e-05,
+        "snr": -0.7481832117454373,
+        "odd_even_sigma": 0.646718104922906,
+        "secondary": -1.2978981275865838e-05,
+        "secondary_err": 9.908514423644674e-05,
+        "max_ses_frac": NaN,
+        "frac_neg_events": 1.0,
+        "events": [
+          [
+            105,
+            3876.26866,
+            -3.8,
+            99.1,
+            0.93
+          ],
+          [
+            106,
+            3900.4496,
+            -91.4,
+            92.5,
+            1.0
+          ]
+        ]
+      },
+      "screen_pass": false
+    }
+  ],
+  "pipeline_version": 3,
+  "holdout_caveat": "Previously processed targets have retrospective holdout after parser correction; inspect results_v1 to identify them.",
+  "input_sha256": "304a4ed347d9dbdc68a18481de68fc66df5ba76116cd497b7bf3b48a57ffa11f",
+  "holdout_sectors": [
+    94,
+    95
+  ],
+  "discovery_sectors": [
+    1,
+    13,
+    27,
+    28,
+    67,
+    68
+  ],
+  "rejected_sectors": [],
+  "rejected_discovery_sectors": [],
+  "n_train": 19853,
+  "n_holdout": 6214,
+  "rho_sun": 5.503419708142857,
+  "pmin": 0.5,
+  "pmax": 25.0,
+  "seconds": 12.27
+}

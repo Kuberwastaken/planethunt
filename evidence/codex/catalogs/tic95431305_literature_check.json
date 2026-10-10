@@ -1,0 +1,27 @@
+{
+  "TIC": 95431305,
+  "identity": [
+    "AD Leo",
+    "GJ 388",
+    "Gaia DR3 625453654702751872"
+  ],
+  "tested_period_days": 0.23647571312349702,
+  "exact_host_catalog_matches": [
+    "SPOC TCE"
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/2303.16712",
+      "finding": "Rotation 2.2305 +/- 0.0016 d; no evidence for previously proposed co-rotating planet"
+    },
+    {
+      "url": "https://arxiv.org/abs/2209.05814",
+      "finding": "Activity tests of 2.23 d RV signal"
+    },
+    {
+      "url": "https://arxiv.org/abs/1802.06064",
+      "finding": "Original 2.23 d proposed planet"
+    }
+  ],
+  "interpretation": "No 0.236475713 d published planet identified in queries. Highly active flare star; must reject activity/detrending false alarms. Existing 2.23 d claim is a different signal."
+}
