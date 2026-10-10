@@ -9969,13 +9969,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 19065,
-      "sha256": "fd87e44fac4b6b09c749172e82db0c6f64122a4de441ee7b59fc57a3a70324f2"
+      "bytes": 26987,
+      "sha256": "39f4427892320f7663d03cf5e24d11989d5fade2d9906d47287a4457a73438cc"
     },
     {
       "path": "planethunt.md",
-      "bytes": 6681,
-      "sha256": "8c3ed2274f045033802e7e8276d9c2058e052f9e3a9331fbbff36e799a141fe1"
+      "bytes": 8443,
+      "sha256": "c5e25a7515d4e542ce86f2926e4926da4086d902744c75c1ba26c9cfb74464d8"
     },
     {
       "path": "scripts/build_visuals.py",

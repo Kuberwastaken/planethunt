@@ -65,3 +65,19 @@ Large FITS/data archives should become checksummed release assets or source-down
 - [planet-search-tess-data.zip](https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip)
 
 Merge all three at the same extraction root. Raw paths in `analysis/bulk-files.json` and the per-archive manifests then resolve.
+
+## Complete work coverage
+The digest has dedicated methods/controls and all-file explorer sections, beyond the lead-candidate summary. Use these records for the whole run:
+- `evidence/codex/search_summary.csv`: all recorded TESS signal rows, including inverted runs and old caveats.
+- `evidence/codex/database_expansion/kbonus/pilot_summary.csv`: real and inverted Kepler signal rows.
+- `evidence/codex/improvements/SEARCH_AUDIT.md`: synthetic recovery, holdout leakage check, parser changes, limitations.
+- `evidence/codex/improvements/BROAD_SIGNAL_DIAGNOSTICS.md`: rejected/broad TESS hypotheses.
+- `evidence/codex/improvements/README.md`: local fixed-ephemeris vetter semantics.
+- `evidence/codex/database_expansion/timing_safe_all44/`: complete corrected-subset rerun summaries, results and vetting.
+- `evidence/codex/results_v1/` and `results_pre_final/`: superseded results, not current discovery evidence.
+- `evidence/codex/catalogs/README.md`: snapshot scope, novelty exclusions and remaining catalog gaps.
+- `evidence/codex/database_expansion/`: implemented Kepler scan, alternative archive seed lists, source/identity checks. A seed list is not a completed scan.
+- `evidence/codex/requirements-{core,lock,report}.txt`, `bootstrap.sh`: pinned runtime/package context.
+- `evidence/tess/hits/`, `scripts/`, `logs/`, `controls/`, `manifest.json`: complete supplied extension work, including incomplete controls and uncertain remote coverage.
+
+The website's file explorer reads `inventory.json` and `analysis/bulk-files.json`, rather than maintaining a second hand-curated file list. Each entry has a SHA-256. Git entries link to files; bulk entries give exact archive-relative paths. This prevents a missing visual card from hiding an available artifact.
