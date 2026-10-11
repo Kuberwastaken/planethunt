@@ -14,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6121,
-      "sha256": "5011f099bb81d41e82dc5ae99e47c9c6c75dbffc3726916eef2e5de03b37e0d7"
+      "bytes": 7428,
+      "sha256": "7373d79923db84b31253ab6b1495df68d6dd1f555954e356b6320c111ee987d8"
     },
     {
       "path": "SOURCES.md",
-      "bytes": 2380,
-      "sha256": "7e1a7285984654dc469e42b1428bc59a3c35696837018a50d6a50b8ca9ea1bcb"
+      "bytes": 3940,
+      "sha256": "841e7cb9294e975784abc484300266fce98ec6774c5a376317a1a943983c537e"
     },
     {
       "path": "analysis/305054512-display-bins.json",
@@ -104,8 +104,8 @@
     },
     {
       "path": "analysis/site-redesign-20261012.md",
-      "bytes": 5940,
-      "sha256": "02ef121a24128bf377b7157fbd490d7d60f978ac27909574e1cb2b149301bf02"
+      "bytes": 7859,
+      "sha256": "9894f1210018f8b7b1377ee6c53b6d3674b7666c51cdf3d3a12285e86cd548e2"
     },
     {
       "path": "analysis/validation-20261011/LINKS.md",
@@ -909,8 +909,8 @@
     },
     {
       "path": "docs/charts/kepler-centroid.svg",
-      "bytes": 4103,
-      "sha256": "06fc4f2de5cf614dffcd25d74eadd9bb27d9fccab504a0c0afa51c7431f80c97"
+      "bytes": 6684,
+      "sha256": "5ec9dcfe18ea97e7d873baa4d8a5b00c2668756af9e43253627bb3125ccfb09f"
     },
     {
       "path": "docs/charts/kepler-diffimage.svg",
@@ -983,6 +983,11 @@
       "sha256": "e73c01a8080e64df65943661fa94053f732a7a767e92d165ab930db315150563"
     },
     {
+      "path": "docs/derived/planet-comparisons.json",
+      "bytes": 1407,
+      "sha256": "8001116d638774c85d7299fae3bb342784465ef68cef329a6dd881e80434731c"
+    },
+    {
       "path": "docs/derived/quarter-coverage.csv",
       "bytes": 637,
       "sha256": "2ad37095f72b8d006d2b39c2409d5edd5ced23d6b9d52a64dd185e84d97c02b2"
@@ -993,9 +998,34 @@
       "sha256": "b183f772881678d2d7df5897c3e70471c6c3e89115006d6b2ec9eb03cb2d1da5"
     },
     {
+      "path": "docs/favicon-180.png",
+      "bytes": 5692,
+      "sha256": "a02642a50107926ccdd74c028abc23ce59568adc4e097d9fff8516f7ba927fc2"
+    },
+    {
+      "path": "docs/favicon-192.png",
+      "bytes": 6146,
+      "sha256": "0366b4b60d8cabf4bd8dc6230e2cf0eeb70bd3cd57ec64fca5800f3fd2008398"
+    },
+    {
+      "path": "docs/favicon-32.png",
+      "bytes": 915,
+      "sha256": "e315827a13b5a16a837aa28a9e7960f90616daef325d5e251bb1d5cd2e7b4420"
+    },
+    {
+      "path": "docs/favicon-48.png",
+      "bytes": 1352,
+      "sha256": "3a3f79de2e71f1bdf04bab03adc0a2fabc4d3aaaa1dd7739012a2c12ba5f6404"
+    },
+    {
+      "path": "docs/favicon-512.png",
+      "bytes": 21910,
+      "sha256": "48cd2222db3374aae76a8aa5ec8a57ba3f6128297fe001159e8056b0cb3559c4"
+    },
+    {
       "path": "docs/favicon.svg",
-      "bytes": 253,
-      "sha256": "7da3ab776c7c95b974fc1f636455193603be47e7290c05b7f14fc94ac07234ae"
+      "bytes": 384,
+      "sha256": "ecd4da28f0f7110a26662ac105dab36a231d6cd948d10154b88de5e9f305e5d8"
     },
     {
       "path": "docs/fonts/BarlowCondensed-Light.ttf",
@@ -1016,6 +1046,81 @@
       "path": "docs/fonts/IBMPlexMono-Regular.ttf",
       "bytes": 135580,
       "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "docs/planet/PROVENANCE.json",
+      "bytes": 8946,
+      "sha256": "e294fe26e30ada94c427886bd529d438d348b558c18b5485e332cea211c15152"
+    },
+    {
+      "path": "docs/planet/SHARE-PROMPT.txt",
+      "bytes": 1314,
+      "sha256": "5cc9af48927520a2660aec33c2fa75722089f64fefccadb7fbf5df521ddc8431"
+    },
+    {
+      "path": "docs/planet/atmosphere-724.webp",
+      "bytes": 25460,
+      "sha256": "7c039332c1874c0a742d2f483a161c9888fa8ac1a2c2678a7f27a4ba3d8ecde1"
+    },
+    {
+      "path": "docs/planet/atmosphere.png",
+      "bytes": 1743071,
+      "sha256": "e592ad827435b4243c1dcf9486d75cf4c224ee1bb7fad2804b63aea75cabf061"
+    },
+    {
+      "path": "docs/planet/atmosphere.webp",
+      "bytes": 84484,
+      "sha256": "bda8e6cf3ac04105f042ae4164ce4ee42757a33b419aa99ae0c9187bf9b25008"
+    },
+    {
+      "path": "docs/planet/exterior-724.webp",
+      "bytes": 16794,
+      "sha256": "2659607dfc36e718bd433b5f13b25f706cf9ffd2b8501d8fb2f711f902a47ed6"
+    },
+    {
+      "path": "docs/planet/exterior.png",
+      "bytes": 1263037,
+      "sha256": "60c99aecdcd96135bd3a7fb7a972abf927ccac0c9630b9f17b36b90474df6ae9"
+    },
+    {
+      "path": "docs/planet/exterior.webp",
+      "bytes": 54784,
+      "sha256": "b8680c60457e65597605bc08be41c57a536a712bf25f8ce63a357d52ebc33d51"
+    },
+    {
+      "path": "docs/planet/interior-724.webp",
+      "bytes": 23846,
+      "sha256": "2789b0fac2d09b178f929a1d0b50e8aeb3899382fd818e31a27a0672e058d110"
+    },
+    {
+      "path": "docs/planet/interior.png",
+      "bytes": 1366770,
+      "sha256": "31410b44b8683a7569c81e47300b3e7d9056da9ad0c370bc4a6af1c47ca75635"
+    },
+    {
+      "path": "docs/planet/interior.webp",
+      "bytes": 70758,
+      "sha256": "d89b7e6605f130b039f811d1b7dfb4a7d8bee32bc15aa4e99f952bcde4fde567"
+    },
+    {
+      "path": "docs/planet/share.png",
+      "bytes": 1238168,
+      "sha256": "c27a2fc9b0301ee1bf252fcc6dbc64f0b57120b726652d3d147d78e46be555b6"
+    },
+    {
+      "path": "docs/planet/system-724.webp",
+      "bytes": 6496,
+      "sha256": "2d43b5cc88ac3656a569e460663f0f1c331e636479a5e7a4a56351b36f3af791"
+    },
+    {
+      "path": "docs/planet/system.png",
+      "bytes": 1234706,
+      "sha256": "0f14d9ff7440d4870fda8f28399e6fcc91a6a5d3f236ef997eaa9c3e95152815"
+    },
+    {
+      "path": "docs/planet/system.webp",
+      "bytes": 21222,
+      "sha256": "64513933201694308246f5c776527034390151561f7c5d194ae7f8a2df63a7da"
     },
     {
       "path": "docs/site-data.json",
@@ -10908,9 +11013,14 @@
       "sha256": "05582e08239ea7f49435544c341a563f97fc0ab5b8b0bd9de44c105feef92413"
     },
     {
+      "path": "favicon.ico",
+      "bytes": 937,
+      "sha256": "634a217a3224dddde27334d604da7d52307526c3328104d3e32d86c49303fbed"
+    },
+    {
       "path": "index.html",
-      "bytes": 194594,
-      "sha256": "d26ce3fd9f5bf7912358c67e7177f7676ff5543ebf2cd6efe04f7b1af8d01862"
+      "bytes": 206930,
+      "sha256": "aa1aadb63abe47aecc30d1bbd0710bf9d9730e2357b109950a3c8bec46bf9489"
     },
     {
       "path": "planethunt.md",
@@ -10924,13 +11034,13 @@
     },
     {
       "path": "scripts/site/build_site.py",
-      "bytes": 3165,
-      "sha256": "eb2ccb968c126b1a89d865d3ddc0d371532101863e05c3b01e092b90a93c9c2c"
+      "bytes": 3289,
+      "sha256": "d7c3ab302bd620d3a7c80db2a92e3a3688855340f319f02b43980f811e17a2a2"
     },
     {
       "path": "scripts/site/charts.py",
-      "bytes": 23095,
-      "sha256": "2757a68a527ade8efe40706772f885ee67679812c6bb37f84447074d97d97e13"
+      "bytes": 23247,
+      "sha256": "d00b283440558e1fd2c50234fe01ca471d6426ab9a20cdd4df7c937db05d6ea4"
     },
     {
       "path": "scripts/site/evidence_atlas.py",
@@ -10938,14 +11048,29 @@
       "sha256": "9aae68d7c2ba41e9c488dfaefe04dbf0cfd9ab518fb7a395d977a161fabc21ca"
     },
     {
+      "path": "scripts/site/favicon.js",
+      "bytes": 1149,
+      "sha256": "ac968beaf89a721099dde315d687fc2ce2b0e6e07f639a6af7f75af91ef42269"
+    },
+    {
       "path": "scripts/site/legacy_sections.html",
       "bytes": 28474,
       "sha256": "b2a2596f8118bf2177bc82ece44115e6ac940e001fd8ebfe6aa962cb43790596"
     },
     {
+      "path": "scripts/site/optimize_planet.js",
+      "bytes": 417,
+      "sha256": "3caa2eabab8eb718d6b456c875ba9f6f7541f7310b38e938414699f85a9bd3b2"
+    },
+    {
       "path": "scripts/site/page.html",
-      "bytes": 37201,
-      "sha256": "23b3f7bc71a6b576840a70e409dd3d0867d66993fb61a656bf40bd1a661988c0"
+      "bytes": 46956,
+      "sha256": "9940411bc81be4b4c7cf09e78d07041b193fd10ed2f85ff6779c5ba143b7957e"
+    },
+    {
+      "path": "scripts/site/planet_facts.py",
+      "bytes": 1856,
+      "sha256": "270ede92ae57a06298ce14191825b000134bbf89107121537a10e837e09d4cc3"
     },
     {
       "path": "scripts/site/refresh_manifests.py",
@@ -10954,18 +11079,23 @@
     },
     {
       "path": "scripts/site/site.css",
-      "bytes": 27624,
-      "sha256": "67fb72a8e7f61097b4a11d6d602fab8f52f36a01ebfa7113900f824b3244b9c7"
+      "bytes": 31090,
+      "sha256": "a12edaaa2f9b924557a4504c09fbae54ec44bd86fa7e9570a740f225a0966b34"
     },
     {
       "path": "scripts/site/site.js",
-      "bytes": 16484,
-      "sha256": "e9e4282cc22ef1ee81557290607cfc0adaf621deb8d138b8867d25f287cfc4f2"
+      "bytes": 17951,
+      "sha256": "86680dd33179778c0803e763854767349488ec1cd055b4172fe0b0995fca9f90"
     },
     {
       "path": "scripts/site/sky.py",
       "bytes": 3534,
       "sha256": "fe0e50bf4f2fe21c8f6396b871f26f64e1211f3c2211743c33612928b3218dcc"
+    },
+    {
+      "path": "sitemap.xml",
+      "bytes": 192,
+      "sha256": "01716d1caca792a8b8321559335c24c36e6afc2e1c405733f132aa28a7b464f1"
     },
     {
       "path": "third_party/eumemic-LICENSE.txt",
