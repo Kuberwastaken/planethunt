@@ -5,9 +5,9 @@ V = 'analysis/validation-20261011/'
 D = V + 'post/data/'
 OUT = 'docs/charts/'
 os.makedirs(OUT, exist_ok=True)
-BG, PANEL, LINE, TXT, MUT = '#181a19', '#181a19', '#343733', '#eeeae2', '#a8aea5'
-OR, BL, GR, RD, YE = '#eda878', '#b4c6b2', '#9fc5ac', '#db998b', '#d7c18d'
-FONT = 'font-family="Helvetica Neue,Helvetica,sans-serif"'
+BG, PANEL, LINE, TXT, MUT = '#080808', '#080808', '#303030', '#ffffff', '#aaaaaa'
+OR, BL, GR, RD, YE = '#ffffff', '#aaaaaa', '#dddddd', '#888888', '#ffffff'
+FONT = 'font-family="IBM Plex Mono,monospace"'
 
 def rcsv(p): return list(csv.DictReader(open(p)))
 def rjson(p): return json.load(open(p))
@@ -48,7 +48,7 @@ class Plot:
     def svg(s, title, desc):
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {s.w} {s.h}" role="img" aria-labelledby="t d">'
                 f'<title id="t">{esc(title)}</title><desc id="d">{esc(desc)}</desc>'
-                f'<rect width="{s.w}" height="{s.h}" fill="{BG}" rx="10"/>' + ''.join(s.o) + '</svg>')
+                f'<rect width="{s.w}" height="{s.h}" fill="{BG}" rx="0"/>' + ''.join(s.o) + '</svg>')
 
 def esc(t): return str(t).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 def save(name, svg): open(OUT + name + '.svg', 'w').write(svg)
@@ -65,11 +65,11 @@ def fold():
     p.yaxis([-3000, -2000, -1000, 0, 1000], 'Flux change (ppm)'); p.xaxis([-8, -4, 0, 4, 8], 'Hours from mid-transit', grid=True)
     for r in b:
         x, y, e = float(r['hours_from_mid']), float(r['flux_ppm']), float(r['err_ppm'])
-        ebar(p, x, y, e, '#667864'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        ebar(p, x, y, e, '#666666'); p.circ(p.X(x), p.Y(y), 3.4, BL)
     pts = ' '.join(f'{p.X(float(r["hours_from_mid"])):.1f},{p.Y(float(r["model_ppm"])):.1f}' for r in m[::4])
     p.add(f'<polyline points="{pts}" fill="none" stroke="{OR}" stroke-width="2.4"/>')
     p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, saved full-series fold, 15-minute bins', 13, TXT)
-    p.text(p.l + 10, p.t + 38, 'orange: MCMC transit model, depth about 2,400 ppm (0.24%)', 13, OR)
+    p.text(p.l + 10, p.t + 38, 'white line: MCMC transit model, depth about 2,400 ppm (0.24%)', 13, OR)
     save('kepler-fold', p.svg('KIC 5689121 folded transit', 'Folded Kepler photometry of KIC 5689121 with the fitted transit model, about 0.24 percent deep and 2.2 hours long.'))
 
 def depths():
@@ -152,7 +152,7 @@ def gaia_map():
         dx = (float(q['ra']) - ra0) * math.cos(math.radians(de0)) * 3600; dy = (float(q['dec']) - de0) * 3600
         g = float(q['phot_g_mean_mag']); rad = max(1.8, 7 - 0.42 * (g - 14))
         nb = abs(float(q['sep']) - 7.1) < .3
-        p.circ(p.X(dx), p.Y(dy), rad, GR if nb else '#899485', op=.85)
+        p.circ(p.X(dx), p.Y(dy), rad, GR if nb else '#888888', op=.85)
     p.circ(p.X(0), p.Y(0), 7.5, 'none', OR, 2.5)
     p.text(p.X(0) + 12, p.Y(0) - 10, 'KIC 5689121', 13, OR, weight='600')
     p.text(p.X(-7.1) + 4, p.Y(0) + 24, 'KIC 5689116 (7.1")', 12, GR)
@@ -167,8 +167,8 @@ def fpp():
         x = p.X(v); p.line(x, p.t + 20, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, f'{v:.1f}', 13, anchor='middle')
     p.text((p.l + p.w) / 2, p.h - 6, 'False-positive probability (TRICERATOPS). Each dot is one run of 1,000,000 draws', 12, anchor='middle')
     x = p.X(.015); p.line(x, p.t + 10, x, p.h - p.b, GR, 2); p.text(x + 6, p.t + 18, 'validation threshold 0.015', 12, GR)
-    rows = [('KIC 5689121, observed data', 'kepler G21', OR), ('KIC 5689121, with a hypothetical AO curve', 'kepler G21+hypoAO', '#c9a27e'),
-            ('TIC 309780779, observed data', 'tess', RD), ('TIC 309780779, with a hypothetical speckle curve', 'tess+hypoSpeckle', '#c98080')]
+    rows = [('KIC 5689121, observed data', 'kepler G21', OR), ('KIC 5689121, with a hypothetical AO curve', 'kepler G21+hypoAO', '#bbbbbb'),
+            ('TIC 309780779, observed data', 'tess', RD), ('TIC 309780779, with a hypothetical speckle curve', 'tess+hypoSpeckle', '#888888')]
     rh = (p.h - p.t - p.b - 44) / 4
     for i, (lab, k, c) in enumerate(rows):
         y = p.t + 52 + rh * i + 16
@@ -182,7 +182,7 @@ def scenarios():
     S = rjson(V + 'results/triceratops/fpp_summary.json')
     def agg(mp, keys): return sum(mp.get(k, 0) for k in keys)
     cats = [('Planet on target', ['TP'], GR), ('Planet on a bound companion (STP)', ['STP'], YE), ('Planet on unrelated nearby star (PTP/DTP/BTP)', ['PTP', 'DTP', 'BTP'], BL),
-            ('Eclipsing binary bound to target (SEB)', ['SEB', 'SEBx2P'], RD), ('Other binary scenarios', ['EB', 'EBx2P', 'PEB', 'PEBx2P', 'DEB', 'DEBx2P', 'BEB', 'BEBx2P'], '#a070c8')]
+            ('Eclipsing binary bound to target (SEB)', ['SEB', 'SEBx2P'], RD), ('Other binary scenarios', ['EB', 'EBx2P', 'PEB', 'PEBx2P', 'DEB', 'DEBx2P', 'BEB', 'BEBx2P'], '#555555')]
     p = Plot(640, 330, l=20, r=20, t=18, b=20, xr=(0, 1), yr=(0, 1))
     for j, (lab, k) in enumerate([('KIC 5689121 (Kepler)', 'kepler G21'), ('TIC 309780779 (TESS)', 'tess')]):
         mp = S[k]['mean_probs']; y = 24 + j * 62; x = p.l
@@ -191,13 +191,13 @@ def scenarios():
         for cl, keys, c in cats:
             v = agg(mp, keys) / tot; w = v * (p.w - p.l - p.r)
             p.rect(x, y + 8, w, 26, c, 0)
-            if v > .06: p.text(x + w / 2, y + 26, f'{v*100:.0f}%', 13, '#10172a', 'middle', '700')
+            if v > .06: p.text(x + w / 2, y + 26, f'{v*100:.0f}%', 13, '#080808', 'middle', '700')
             x += w
     y = 170
     for cl, keys, c in cats:
         p.rect(p.l, y - 11, 13, 13, c, 2); p.text(p.l + 22, y, cl, 13); y += 24
     p.text(p.l, p.h - 22, 'Share of total scenario probability (mean of runs).', 12)
-    p.text(p.l, p.h - 6, 'False-positive probability = everything except the green block.', 12)
+    p.text(p.l, p.h - 6, 'FPP excludes the planet-on-target scenarios (TP, PTP and DTP).', 12)
     save('fpp-scenarios', p.svg('Scenario probabilities', 'For the Kepler candidate most probability is a planet on target; the remaining mass is mostly a planet around an unseen bound companion. For the TESS lead the largest block is an eclipsing binary.'))
 
 def tess_fold():
@@ -206,7 +206,7 @@ def tess_fold():
     p.yaxis([-600, -400, -200, 0, 200, 400], 'Flux change (ppm)'); p.xaxis([-3, -2, -1, 0, 1, 2, 3], 'Hours from mid-transit', grid=True)
     for r in d:
         x, y, e = r['hours'], r['flux_ppm'], r['standard_error_ppm']
-        ebar(p, x, y, e, '#667864'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        ebar(p, x, y, e, '#666666'); p.circ(p.X(x), p.Y(y), 3.4, BL)
     p.text(p.l + 10, p.t + 20, 'TESS, P = 8.72361 d, presentation fold of 46 events', 13, TXT)
     p.text(p.l + 10, p.t + 38, 'dip is shallow (about 400 ppm) and short (about 1 h)', 13, OR)
     save('tess-fold', p.svg('TIC 309780779 folded dip', 'Folded TESS photometry of TIC 309780779 showing a shallow dip of about 400 parts per million.'))
@@ -237,7 +237,7 @@ def bls():
         y = p.t + rh * i + 6
         p.text(p.l, y + 10, lab, 13, TXT)
         p.rect(p.l, y + 16, p.X(a) - p.l, 14, OR, 2); p.text(p.X(a) + 6, y + 28, f'{a} real', 12, MUT)
-        if b: p.rect(p.l, y + 34, p.X(b) - p.l, 14, '#4a5570', 2); p.text(p.X(b) + 6, y + 46, f'{b} inverted', 12, MUT)
+        if b: p.rect(p.l, y + 34, p.X(b) - p.l, 14, '#666666', 2); p.text(p.X(b) + 6, y + 46, f'{b} inverted', 12, MUT)
         else: p.text(p.l, y + 46, 'inverted peak not saved for this half', 12, MUT)
     save('tess-bls', p.svg('Blind period search, real versus inverted', 'The real TESS light curve gives a strong 8.72 day peak in the full data and in each half; the inverted light curve gives weaker peaks.'))
 
@@ -252,7 +252,7 @@ def nullc():
         y = p.t + rh * i + 4
         p.text(p.l, y + 12, lab, 13, TXT)
         p.rect(p.l, y + 18, p.X(a) - p.l, 16, OR, 2); p.text(p.X(a) + 6, y + 31, f'{a} real', 12, MUT)
-        p.rect(p.l, y + 38, p.X(b) - p.l, 16, '#4a5570', 2); p.text(p.X(b) + 6, y + 51, f'{b} inverted (null)', 12, MUT)
+        p.rect(p.l, y + 38, p.X(b) - p.l, 16, '#666666', 2); p.text(p.X(b) + 6, y + 51, f'{b} inverted (null)', 12, MUT)
     save('null-control', p.svg('Real versus inverted searches', 'Real Kepler searches find no more first-screen signals than matched inverted null searches.'))
 
 def model():
@@ -284,10 +284,10 @@ def diffimg():
         p.text(ox, 20, f'Season {i}', 13, TXT, weight='600')
         for r_, row in enumerate(g):
             for c_, v in enumerate(row):
-                t = max(0, min(1, v / 7)); col = lerp((18, 28, 52), (255, 138, 80), t) if v > 0 else ('#121412' if v < -8 else '#222922')
+                t = max(0, min(1, v / 7)); col = lerp((24, 24, 24), (255, 255, 255), t) if v > 0 else ('#080808' if v < -8 else '#222222')
                 p.rect(ox + c_ * cw, 30 + r_ * cw, cw - 2, cw - 2, col, 2)
-                if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#10172a' if t > .45 else TXT, 'middle', '700')
-    p.text(8, 200, 'Signal-to-noise of the light lost during transit, per Kepler pixel (orange = most missing light).', 12)
+                if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#080808' if t > .45 else TXT, 'middle', '700')
+    p.text(8, 200, 'Signal-to-noise of the light lost during transit, per Kepler pixel (white = most missing light).', 12)
     p.text(8, 220, 'Pixel stamp as stored; the sky overlay figure above gives the orientation.', 12)
     save('kepler-diffimage', p.svg('Missing-light pixels by season', 'Per-pixel signal to noise of the light lost during transit in four Kepler seasons, peaking on a few pixels.'))
 
@@ -295,7 +295,7 @@ def rcsv_nohdr(p): return [[float(x) if x.strip() else -9 for x in r] for r in c
 def lerp(a, b, t): return '#%02x%02x%02x' % tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
 def coverage():
-    rows = [('Kepler Bonus: pilot + extension (matched null control)', 1736, OR), ('TESS extension, assigned targets', 540, BL), ('Upstream TESS results inherited (not redone)', 526, '#899485'), ('Codex TESS pilot', 175, GR)]
+    rows = [('Kepler Bonus: pilot + extension (matched null control)', 1736, OR), ('TESS extension, assigned targets', 540, BL), ('Upstream TESS results inherited (not redone)', 526, '#888888'), ('Codex TESS pilot', 175, GR)]
     p = Plot(640, 250, l=20, r=20, t=10, b=30, xr=(0, 1900), yr=(0, 1))
     rh = (p.h - p.t - p.b) / 4
     for i, (lab, n, c) in enumerate(rows):

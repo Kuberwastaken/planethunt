@@ -5,8 +5,11 @@ from pathlib import Path
 import csv
 import json
 import re
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+subprocess.run([sys.executable, str(ROOT/'scripts/site/evidence_atlas.py')], cwd=ROOT, check=True)
 V = 'analysis/validation-20261011/'
 D = ROOT / V / 'post/data'
 
