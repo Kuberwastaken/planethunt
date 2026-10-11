@@ -12,7 +12,7 @@ function getData() {
   return dataPromise;
 }
 function svgPlot({title, xr, yr, xticks, yticks, xlabel, ylabel}) {
-  const w=Math.max(320,Math.round($('signal-chart').clientWidth)),compact=w<600,h=compact?310:350,L=compact?64:76,R=compact?12:24,T=30,B=compact?58:64;
+  const w=Math.max(320,Math.round($('signal-chart').clientWidth)),compact=w<600,h=compact?310:350,L=compact?64:94,R=compact?12:24,T=30,B=compact?58:64;
   if(compact) xticks=xticks.filter((_,i)=>i%2===0);
   const X=x=>L+(x-xr[0])/(xr[1]-xr[0])*(w-L-R);
   const Y=y=>h-B-(y-yr[0])/(yr[1]-yr[0])*(h-T-B);
@@ -95,14 +95,23 @@ function renderSky(){
 document.querySelectorAll('[data-survey]').forEach(b=>b.addEventListener('click',()=>{survey=b.dataset.survey;renderSky();}));$('sky-labels').addEventListener('change',renderSky);renderSky();
 $('survey-colour').addEventListener('click',()=>{const active=$('survey-colour').getAttribute('aria-pressed')!=='true';$('survey-colour').setAttribute('aria-pressed',String(active));$('survey-frame').classList.toggle('show-colour',active);$('survey-colour').textContent=active?'Monochrome display':'Original colour';});
 const dialog=$('image-dialog');
+const expandIcon='<svg data-ui-icon viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
+const chartSVG=fig=>fig.querySelector('svg:not([data-ui-icon])');
 // Native dialog gives Escape handling, focus trapping and focus restoration.
 document.querySelectorAll('figure').forEach(fig=>{
- if(!fig.querySelector('svg')||fig.classList.contains('hero-figure')||fig.querySelector('#survey-frame'))return;
- const button=document.createElement('button');button.className='enlarge';button.textContent='Enlarge chart ↗';button.setAttribute('aria-label','Enlarge '+(fig.querySelector('h3,svg title')?.textContent||'chart'));
- button.addEventListener('click',()=>{const source=fig.querySelector('svg');if(!source)return;const clone=source.cloneNode(true);clone.querySelectorAll('[id]').forEach(el=>{const old=el.id;el.id='dialog-'+old;clone.querySelectorAll('[clip-path]').forEach(c=>{if(c.getAttribute('clip-path')===`url(#${old})`)c.setAttribute('clip-path',`url(#dialog-${old})`);});});clone.removeAttribute('aria-labelledby');clone.setAttribute('aria-label',source.querySelector('title')?.textContent||'Enlarged chart');dialog.querySelector('.dialog-media').replaceChildren(clone);window.chartInspector.copy(source,clone);$('dialog-title').textContent=fig.querySelector('h3,svg title')?.textContent||'Measurement';$('dialog-caption').textContent=fig.querySelector('figcaption')?.textContent||'';dialog.showModal();});fig.append(button);
+ if(!chartSVG(fig)||fig.classList.contains('hero-figure')||fig.querySelector('#survey-frame'))return;
+ const button=document.createElement('button');button.className='figure-expand';button.innerHTML=expandIcon;
+ const label='Enlarge '+(fig.querySelector('h3,svg title')?.textContent||'chart');button.setAttribute('aria-label',label);button.title=label;
+ // Give every figure a single tool rail; keep controls outside horizontal plot scrolling.
+ let rail=fig.querySelector('.plate-label')||fig.closest('.transit-plate')?.querySelector('.plate-label');
+ if(!rail){rail=document.createElement('div');rail.className='figure-heading';const heading=fig.querySelector('h3');if(heading)rail.append(heading);fig.prepend(rail);}
+ if(fig.querySelector('#signal-chart'))rail.append($('signal-download'));
+ rail.append(button);fig.classList.add('has-expand');
+ button.addEventListener('click',()=>{const source=chartSVG(fig);if(!source)return;const clone=source.cloneNode(true);clone.style.setProperty('--chart-reveal',1);clone.classList.add('expanded-chart');clone.querySelectorAll('[id]').forEach(el=>{const old=el.id;el.id='dialog-'+old;clone.querySelectorAll('[clip-path]').forEach(c=>{if(c.getAttribute('clip-path')===`url(#${old})`)c.setAttribute('clip-path',`url(#dialog-${old})`);});});clone.removeAttribute('aria-labelledby');clone.setAttribute('aria-label',source.querySelector('title')?.textContent||'Enlarged chart');dialog.querySelector('.dialog-media').replaceChildren(clone);window.chartInspector.copy(source,clone);$('dialog-title').textContent=fig.querySelector('h3,svg title')?.textContent||'Measurement';$('dialog-caption').textContent=fig.querySelector('figcaption')?.textContent||'';dialog.showModal();});
 });
 let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(dataPromise)renderSignal();},160);});
-$('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
+$('enlarge-sky').innerHTML=expandIcon;$('survey-frame').append($('enlarge-sky'));
+$('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelector('.figure-expand')?.remove();copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
 $('close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 
 document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener('click',()=>{
@@ -120,7 +129,10 @@ planetImages.forEach(el=>planetObserver.observe(el));
 window.addEventListener('scroll',()=>{planetScrollStarted=true;planetImages.forEach(el=>{planetObserver.unobserve(el);planetObserver.observe(el);});},{once:true,passive:true});
 planetImages.forEach(button=>button.addEventListener('click',()=>{const img=button.querySelector('img').cloneNode(true);img.removeAttribute('srcset');img.removeAttribute('sizes');img.className='planet-detail';dialog.querySelector('.dialog-media').replaceChildren(img);$('dialog-title').textContent=button.dataset.planetImage+' / artist’s interpretation';$('dialog-caption').textContent=button.closest('.planet-card').querySelector('.planet-copy>p').textContent;dialog.showModal();}));
 $('planet-colour').addEventListener('click',()=>{const active=$('planet-colour').getAttribute('aria-pressed')!=='true';$('planet-colour').setAttribute('aria-pressed',String(active));document.querySelector('.planet-gallery').classList.toggle('colour-on',active);$('planet-colour').textContent=active?'Colour follows interaction':'Keep colour on';});
-$('albedo').addEventListener('input',()=>{const a=Number($('albedo').value);$('albedo-output').textContent=a+'%';$('temperature').textContent=Math.round(417.4280973054799*Math.pow(1-a/100,.25))+' K';});
+function updateTemperature(){const a=Number($('albedo').value);$('albedo-output').textContent=a+'%';$('temperature').textContent=Math.round(417.4280973054799*Math.pow(1-a/100,.25))+' K';}
+let albedoManual=false;
+['pointerdown','focus','input'].forEach(type=>$('albedo').addEventListener(type,()=>{albedoManual=true;}));
+$('albedo').addEventListener('input',updateTemperature);
 
 let files=null,limit=30,fileLoading=false;
 async function loadFiles(){
@@ -167,6 +179,31 @@ function advanceComparisons(){
  });
 }
 addEventListener('scroll',()=>{if(!comparisonFrame)comparisonFrame=requestAnimationFrame(advanceComparisons);},{passive:true});
+// Scroll reveals data marks while axes stay fixed. Inspection always shows final values.
+const growingCharts=[...document.querySelectorAll('svg')].filter(svg=>svg.querySelector('.chart-grow-bar,.chart-grow-horizontal')).map(svg=>({svg,progress:0}));
+growingCharts.forEach(rule=>{
+ const complete=()=>{rule.progress=1;rule.svg.style.setProperty('--chart-reveal',1);};
+ ['pointerover','focusin','touchstart'].forEach(type=>rule.svg.addEventListener(type,complete,{passive:true}));
+});
+let detailFrame=0;
+function paintDetails(){
+ detailFrame=0;
+ growingCharts.forEach(rule=>{
+  const rect=rule.svg.getBoundingClientRect();if(!rect.height)return;
+  const progress=reduceMotion.matches?1:Math.max(0,Math.min(1,(innerHeight*.9-rect.top)/(Math.min(rect.height,innerHeight)*.65)));
+  rule.progress=Math.max(rule.progress,progress);rule.svg.style.setProperty('--chart-reveal',rule.progress);
+ });
+ if(reduceMotion.matches||dialog.open||albedoManual)return;
+ const rect=document.querySelector('.temperature-lab').getBoundingClientRect();
+ if(rect.bottom<=0||rect.top>=innerHeight)return;
+ const progress=Math.max(0,Math.min(1,(innerHeight*.8-rect.top)/(innerHeight*.55)));
+ const value=String(Math.round(progress*16)*5);
+ if($('albedo').value!==value){$('albedo').value=value;updateTemperature();}
+}
+addEventListener('scroll',()=>{if(!detailFrame)detailFrame=requestAnimationFrame(paintDetails);},{passive:true});
+addEventListener('resize',paintDetails);reduceMotion.addEventListener('change',paintDetails);
+// Run after layout; no-JS and reduced-motion views show complete charts.
+requestAnimationFrame(paintDetails);
 // Illustrative orbits keep the period ratio; no motion is applied to measured points.
 const orbitObserver=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('is-in-view',entry.isIntersecting)),{threshold:.15});
 document.querySelectorAll('.orbit-diagram').forEach(svg=>orbitObserver.observe(svg));

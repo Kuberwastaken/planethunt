@@ -38,7 +38,14 @@ html = (ROOT/'scripts/site/page.html').read_text()
 for name in re.findall(r'\{\{chart:([\w-]+)\}\}',html):
     svg = (ROOT/f'docs/charts/{name}.svg').read_text()
     svg=svg.replace('aria-labelledby="t d"', f'aria-labelledby="{name}-t {name}-d"').replace('id="t"',f'id="{name}-t"').replace('id="d"',f'id="{name}-d"')
-    html=html.replace('{{chart:'+name+'}}',svg)
+    html=html.replace('{{chart:'+name+'}}','<div class="chart-viewport">'+svg+'</div>')
+# Compact, accessible data controls; source paths remain in the links.
+download_icon='<svg data-ui-icon="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>'
+def compact_download(match):
+    tag,_=match.groups()
+    return tag.replace(' download>', '>').replace('<a ', '<a class="data-download" aria-label="Download plotted data" title="Download plotted data" download ')+download_icon+'</a>'
+html=re.sub(r'(<a id="signal-download"[^>]*>)(.*?)</a>',compact_download,html)
+html=re.sub(r'(<div class="plate-label">)(.*?)(</div>)',lambda m:m[1]+re.sub(r'(<a [^>]*>)(.*?)</a>',compact_download,m[2])+m[3],html)
 # Retain the earlier methods/evidence, with dated caveats, in an accessible appendix.
 legacy=(ROOT/'scripts/site/legacy_sections.html').read_text()
 appendices=[]

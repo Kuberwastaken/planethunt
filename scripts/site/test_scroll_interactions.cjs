@@ -5,7 +5,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const source=fs.readFileSync(__dirname+'/site.js','utf8');
 const start=source.indexOf('// Scroll advances comparison views');
-const end=source.indexOf('// Illustrative orbits');
+const end=source.indexOf('// Scroll reveals data marks');
 assert(start>=0&&end>start,'Scroll controller boundaries must remain identifiable');
 function setup(){
  const events={},frames=[];
@@ -34,4 +34,35 @@ test('reduced motion and an open dialog suppress automatic changes',()=>{
 test('offscreen plots do not change; filtering locks the visible plot',()=>{
  const t=setup();t.scroll(1200);assert.equal(t.context.currentView,'fold');
  const filter=setup();filter.nodes.quarter.events.change();filter.scroll(500);assert.equal(filter.context.currentView,'fold');
+});
+
+function setupDetails(){
+ const events={},frames=[];
+ function element(){return {events:{},style:{values:{},setProperty(k,v){this.values[k]=v;}},addEventListener(type,fn){(this.events[type]??=[]).push(fn);},fire(type){this.events[type]?.forEach(fn=>fn());},getBoundingClientRect(){return this.rect;}};}
+ const albedo=element();albedo.value='0';
+ const nodes={albedo,'albedo-output':{},temperature:{}};
+ const lab=element();lab.rect={top:900,bottom:1250,height:350};
+ const svg=element();svg.rect={top:1000,bottom:1360,height:360};svg.querySelector=()=>true;
+ const context={document:{querySelectorAll:()=>[svg],querySelector:()=>lab},$:id=>nodes[id],innerHeight:1000,reduceMotion:{matches:false,addEventListener(){}},dialog:{open:false},requestAnimationFrame(fn){frames.push(fn);return frames.length;},addEventListener(type,fn){events[type]=fn;}};
+ vm.createContext(context);
+ const inputCode=source.slice(source.indexOf('function updateTemperature'),source.indexOf('let files=null'));
+ const motionCode=source.slice(source.indexOf('// Scroll reveals data marks'),source.indexOf('// Illustrative orbits'));
+ vm.runInContext(inputCode+motionCode,context);
+ const paint=()=>vm.runInContext('paintDetails()',context);
+ return {context,albedo,nodes,lab,svg,paint};
+}
+test('scroll moves reflectivity through its bounds; manual keyboard control wins',()=>{
+ const t=setupDetails();t.paint();assert.equal(t.albedo.value,'0');
+ t.lab.rect={top:525,bottom:875,height:350};t.paint();assert.equal(t.albedo.value,'40');assert.equal(t.nodes.temperature.textContent,'367 K');
+ t.lab.rect={top:150,bottom:500,height:350};t.paint();assert.equal(t.albedo.value,'80');
+ t.albedo.fire('focus');t.albedo.value='35';t.albedo.fire('input');t.lab.rect={top:900,bottom:1250,height:350};t.paint();assert.equal(t.albedo.value,'35');
+});
+test('bar entrance grows once, never shrinks, and inspection reveals the full data',()=>{
+ const t=setupDetails();t.paint();assert.equal(t.svg.style.values['--chart-reveal'],0);
+ t.svg.rect={top:800,bottom:1160,height:360};t.paint();const partial=t.svg.style.values['--chart-reveal'];assert(partial>0&&partial<1);
+ t.svg.rect={top:950,bottom:1310,height:360};t.paint();assert.equal(t.svg.style.values['--chart-reveal'],partial);
+ t.svg.fire('focusin');assert.equal(t.svg.style.values['--chart-reveal'],1);
+});
+test('reduced motion completes the plot and preserves the chosen temperature',()=>{
+ const t=setupDetails();t.context.reduceMotion.matches=true;t.lab.rect={top:100,bottom:450,height:350};t.paint();assert.equal(t.svg.style.values['--chart-reveal'],1);assert.equal(t.albedo.value,'0');
 });

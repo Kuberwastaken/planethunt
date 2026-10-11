@@ -13,7 +13,7 @@ def rcsv(p): return list(csv.DictReader(open(p)))
 def rjson(p): return json.load(open(p))
 
 class Plot:
-    def __init__(s, w=640, h=360, l=62, r=16, t=16, b=46, xr=(0, 1), yr=(0, 1), xlog=False):
+    def __init__(s, w=640, h=360, l=88, r=16, t=16, b=58, xr=(0, 1), yr=(0, 1), xlog=False):
         s.w, s.h, s.l, s.r, s.t, s.b, s.xr, s.yr, s.xlog = w, h, l, r, t, b, xr, yr, xlog
         s.o = []; s.hits = []
     def X(s, v):
@@ -48,7 +48,7 @@ class Plot:
         for v in ticks:
             x = s.X(v)
             if grid: s.line(x, s.t, x, s.h - s.b, LINE, 1)
-            s.text(x, s.h - s.b + 20, fmt(v), 13, anchor='middle')
+            s.text(x, s.h - s.b + 26, fmt(v), 13, anchor='middle')
         s.text((s.l + s.w - s.r) / 2, s.h - 8, label, 13, anchor='middle')
     def svg(s, title, desc):
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {s.w} {s.h}" role="img" aria-labelledby="t d">'
@@ -66,7 +66,7 @@ def ebar(p, x, y, e, c, lo=None, hi=None):
 
 def fold():
     b = rcsv(D + 'kic5689121_folded_15min_bins.csv'); m = rcsv(D + 'kic5689121_transit_model.csv')
-    p = Plot(640, 380, xr=(-8.5, 8.5), yr=(-3300, 1100))
+    p = Plot(640, 380, t=72, xr=(-8.5, 8.5), yr=(-3300, 1100))
     p.yaxis([-3000, -2000, -1000, 0, 1000], 'Flux change (ppm)'); p.xaxis([-8, -4, 0, 4, 8], 'Hours from mid-transit', grid=True)
     for r in b:
         x, y, e = float(r['hours_from_mid']), float(r['flux_ppm']), float(r['err_ppm'])
@@ -74,13 +74,13 @@ def fold():
         p.point(p.X(x),p.Y(y),'Transit bin', [('Time',f'{x:.3f} hours'),('Flux',f'{y:,.2f} ppm'),('Uncertainty',f'±{e:,.2f} ppm')])
     pts = ' '.join(f'{p.X(float(r["hours_from_mid"])):.1f},{p.Y(float(r["model_ppm"])):.1f}' for r in m[::4])
     p.add(f'<polyline points="{pts}" fill="none" stroke="{OR}" stroke-width="2.4"/>')
-    p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, saved full-series fold, 15-minute bins', 13, TXT)
-    p.text(p.l + 10, p.t + 38, 'white line: MCMC transit model, depth about 2,400 ppm (0.24%)', 13, OR)
+    p.text(p.l + 10, 24, 'Kepler PSF flux, saved full-series fold, 15-minute bins', 13, TXT)
+    p.text(p.l + 10, 44, 'white line: MCMC transit model, depth about 2,400 ppm (0.24%)', 13, OR)
     save('kepler-fold', p.svg('KIC 5689121 folded transit', 'Folded Kepler photometry of KIC 5689121 with the fitted transit model, about 0.24 percent deep and 2.2 hours long.'))
 
 def depths():
     r = rcsv(D + 'kic5689121_per_transit_depths.csv')
-    p = Plot(640, 380, xr=(-50, 28), yr=(-3000, 11000))
+    p = Plot(640, 380, t=72, xr=(-50, 28), yr=(-3000, 11000))
     p.yaxis([0, 2000, 4000, 6000, 8000], 'Depth per event (ppm)', lambda v: f'{v:,.0f}')
     p.xaxis([-48, -36, -24, -12, 0, 12, 24], 'Transit number from epoch 0 (about 13.77 days each)', grid=False)
     p.rect(p.X(-50), p.Y(2400) - 1, p.X(28) - p.X(-50), 2, OR, 0, .7)
@@ -89,15 +89,15 @@ def depths():
         c = YE if ho else BL
         ebar(p, e, d, s, c, -3000, 11000); p.circ(p.X(e), p.Y(d), 3.6, c)
         p.point(p.X(e),p.Y(d),f"Event {e} / Q{q['quarter']}",[('Depth',f'{d:,.2f} ppm'),('Uncertainty',f'±{s:,.2f} ppm'),('Selection','Reserved' if ho else 'Search')])
-    p.text(p.l + 10, p.t + 18, 'every measurable transit, one dot each', 13, TXT)
-    p.circ(p.l + 14, p.t + 34, 4, BL); p.text(p.l + 24, p.t + 39, 'discovery events (51)', 13)
-    p.circ(p.l + 178, p.t + 34, 4, YE); p.text(p.l + 188, p.t + 39, 'held-out quarters (23)', 13)
-    p.line(p.l + 350, p.t + 34, p.l + 372, p.t + 34, OR, 2); p.text(p.l + 378, p.t + 39, 'fit depth', 13)
+    p.text(p.l + 10, 24, 'every measurable transit, one dot each', 13, TXT)
+    p.circ(p.l + 14, 43, 4, BL); p.text(p.l + 24, 48, 'discovery events (51)', 13)
+    p.circ(p.l + 178, 43, 4, YE); p.text(p.l + 188, 48, 'held-out quarters (23)', 13)
+    p.line(p.l + 350, 43, p.l + 372, 43, OR, 2); p.text(p.l + 378, 48, 'fit depth', 13)
     save('kepler-event-depths', p.svg('Per-transit depths', 'Depth of each of 74 Kepler transit events with error bars, discovery and held-out quarters, scattered around the fitted depth.'))
 
 def dilution():
     q = rjson(V + 'results/kepler/kcrowd.json')
-    p = Plot(640, 400, l=62, xr=(0, len(q) + 1), yr=(-400, 4400))
+    p = Plot(640, 480, l=88, t=60, b=54, xr=(0, len(q) + 1), yr=(-400, 4400))
     p.yaxis([0, 1000, 2000, 3000, 4000], 'Transit depth (ppm)', lambda v: f'{v:,.0f}')
     p.xaxis([], 'Kepler quarter')
     bw = (p.w - p.l - p.r) / (len(q) + 1)
@@ -108,10 +108,10 @@ def dilution():
             if n < 2: continue
             ye = min(d + e, 4400); ys = max(d - e, -400)
             p.line(x + off, p.Y(ye), x + off, p.Y(ys), c, 1.2); p.circ(x + off, p.Y(d), 3.6, c)
-        p.hit(x-16,p.t+40,32,p.h-p.b-p.t-40,f"Quarter {r['q']}", [('PSF depth',f"{r['psf'][1]:,.1f} ± {r['psf'][2]:,.1f} ppm"),('SAP depth',f"{r['sap'][1]:,.1f} ± {r['sap'][2]:,.1f} ppm"),('PSF / SAP count',f"{r['psf'][0]} / {r['sap'][0]}")])
+        p.hit(x-16,p.t,32,p.h-p.b-p.t,f"Quarter {r['q']}", [('PSF depth',f"{r['psf'][1]:,.1f} ± {r['psf'][2]:,.1f} ppm"),('SAP depth',f"{r['sap'][1]:,.1f} ± {r['sap'][2]:,.1f} ppm"),('PSF / SAP count',f"{r['psf'][0]} / {r['sap'][0]}")])
         p.text(x, p.h - p.b + 18, f"Q{r['q']}", 12, anchor='middle')
-    p.circ(p.l + 14, p.t + 14, 4, BL); p.text(p.l + 24, p.t + 19, 'PSF / target', 13)
-    p.circ(p.l + 230, p.t + 14, 4, OR); p.text(p.l + 240, p.t + 19, 'SAP / blended aperture', 13)
+    p.circ(p.l + 14, 24, 4, BL); p.text(p.l + 24, 29, 'PSF / target', 13)
+    p.circ(p.l + 230, 24, 4, OR); p.text(p.l + 240, 29, 'SAP / blended aperture', 13)
     save('kepler-dilution', p.svg('Depth per quarter, PSF versus SAP', 'Per quarter transit depth in PSF and aperture photometry; aperture depths are shallower in quarters where the aperture holds more contaminating light.'))
 
 def ephem_null():
@@ -120,7 +120,7 @@ def ephem_null():
             ('Kepler-169 c', d['target_psf_at_K169c'], BL), ('Kepler-169 b', d['target_psf_at_K169b'], BL),
             ('Kepler-169 d', d['target_psf_at_K169d'], BL), ('Kepler-169 f', d['target_psf_at_K169f'], BL),
             ('Neighbour KIC 5689116 at candidate ephemeris', d['neighbor5689116_psf_at_candidate'], GR)]
-    p = Plot(640, 360, l=16, r=16, t=16, b=40, xr=(-500, 2700), yr=(0, 1))
+    p = Plot(640, 380, l=16, r=16, t=16, b=56, xr=(-500, 2700), yr=(0, 1))
     for v in [0, 1000, 2000]:
         x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE if v else MUT)
         p.text(x, p.h - p.b + 18, f'{v:,}', 13, anchor='middle')
@@ -136,29 +136,29 @@ def ephem_null():
 
 def centroid():
     rows = rcsv(V + 'results/kepler/kcentroid_all_sources.csv')[1:]
-    p = Plot(960, 570, l=322, r=104, t=60, b=64, xr=(100, 30000), yr=(0, 1), xlog=True)
-    p.text(24,28,'RESOLVED SOURCE',12,MUT)
-    p.text(932,28,'Δχ²',13,TXT,'end')
+    p = Plot(720, 540, l=250, r=86, t=60, b=64, xr=(100, 30000), yr=(0, 1), xlog=True)
+    p.text(24,28,'RESOLVED SOURCE',11,MUT)
+    p.text(696,28,'Δχ²',12,TXT,'end')
     for value in [100, 1000, 10000]:
-        x=p.X(value);p.line(x,48,x,492,LINE)
-        p.text(x,524,f'{value:,}',12,MUT,'middle')
+        x=p.X(value);p.line(x,48,x,464,LINE)
+        p.text(x,494,f'{value:,}',11,MUT,'middle')
     for i,r in enumerate(rows):
-        y=82+i*61;value=float(r['dchi2_vs_target']);colour=TXT if i==0 else MUT
-        p.text(24,y-2,'Gaia '+r['source_id'][-6:],15,colour)
-        note=f"{float(r['sep']):.1f}″  /  G {float(r['phot_g_mean_mag']):.1f}"+('  /  bright neighbour' if i==0 else '')
-        p.text(24,y+18,note,11,MUT)
+        y=76+i*56;value=float(r['dchi2_vs_target']);colour=TXT if i==0 else MUT
+        p.text(24,y-2,'Gaia '+r['source_id'][-6:],14,colour)
+        note=f"{float(r['sep']):.1f}″ / G {float(r['phot_g_mean_mag']):.1f}"+(' / bright' if i==0 else '')
+        p.text(24,y+17,note,11,MUT)
         p.line(p.l,y+3,p.X(value),y+3,colour,3)
-        p.circ(p.X(value),y+3,5,colour)
-        p.text(932,y+8,f'{value:,.0f}',16,colour,'end')
-        p.line(24,y+34,936,y+34,LINE,.5)
-        p.hit(24,y-22,912,55,'Gaia '+r['source_id'], [('Separation',f"{float(r['sep']):.3f} arcsec"),('G magnitude',f"{float(r['phot_g_mean_mag']):.3f}"),('Δχ² vs target',f'{value:,.3f}'),('χ²',f"{float(r['centroid_chi2']):,.3f}")])
-    p.text(576,558,'Δχ² versus target · logarithmic scale · larger = poorer fit',12,MUT,'middle')
+        p.circ(p.X(value),y+3,4,colour)
+        p.text(696,y+8,f'{value:,.0f}',14,colour,'end')
+        p.line(24,y+32,696,y+32,LINE,.5)
+        p.hit(24,y-20,672,52,'Gaia '+r['source_id'], [('Separation',f"{float(r['sep']):.3f} arcsec"),('G magnitude',f"{float(r['phot_g_mean_mag']):.3f}"),('Δχ² vs target',f'{value:,.3f}'),('χ²',f"{float(r['centroid_chi2']):,.3f}")])
+    p.text(250,524,'Δχ² · log scale · larger = poorer fit',11,MUT)
     save('kepler-centroid',p.svg('Raw-pixel centroid source comparison','Seven resolved Gaia sources within 30 arcseconds, each compared with the target model. The closest bright neighbour has delta chi-square 934; other sources fit still worse. Numeric values are aligned at right; logarithmic lollipop positions show relative scale.'))
 
 def gaia_map():
     r = rcsv(D + 'kic5689121_gaia_neighbours_120arcsec.csv')
     ra0, de0 = 285.907827, 40.941988
-    p = Plot(520, 520, l=20, r=20, t=20, b=24, xr=(130, -130), yr=(-130, 130))
+    p = Plot(720, 540, l=120, r=120, t=30, b=30, xr=(130, -130), yr=(-130, 130))
     for rad in (30, 60, 120):
         cx, cy = p.X(0), p.Y(0); rr = abs(p.X(rad) - cx)
         p.add(f'<circle cx="{cx}" cy="{cy}" r="{rr:.1f}" fill="none" stroke="{LINE}" stroke-dasharray="4 4"/>')
@@ -172,7 +172,7 @@ def gaia_map():
     p.circ(p.X(0), p.Y(0), 7.5, 'none', OR, 2.5)
     p.text(p.X(0) + 12, p.Y(0) - 10, 'KIC 5689121', 13, OR, weight='600')
     p.text(p.X(-7.1) + 4, p.Y(0) + 24, 'KIC 5689116 (7.1")', 12, GR)
-    p.text(p.w - 22, p.h - 6, 'North up, east left · dot size = brightness', 12, anchor='end')
+    p.text(24, p.h - 6, 'North up, east left · dot size = brightness', 12)
     p.text(24, 18, '114 Gaia DR3 stars within 120"', 13, TXT)
     save('gaia-field', p.svg('Gaia stars around KIC 5689121', 'Map of 114 Gaia DR3 sources within 2 arcminutes of the candidate, the brighter neighbour 7.1 arcseconds west marked.'))
 
@@ -200,7 +200,7 @@ def scenarios():
     def agg(mp, keys): return sum(mp.get(k, 0) for k in keys)
     cats = [('Planet on target (TP / PTP / DTP)', ['TP', 'PTP', 'DTP'], GR), ('Planet on a bound companion (STP)', ['STP'], YE), ('Planet on background star (BTP)', ['BTP'], BL),
             ('Eclipsing binary bound to target (SEB)', ['SEB', 'SEBx2P'], RD), ('Other binary scenarios', ['EB', 'EBx2P', 'PEB', 'PEBx2P', 'DEB', 'DEBx2P', 'BEB', 'BEBx2P'], '#555555')]
-    p = Plot(640, 330, l=20, r=20, t=18, b=20, xr=(0, 1), yr=(0, 1))
+    p = Plot(640, 350, l=20, r=20, t=18, b=20, xr=(0, 1), yr=(0, 1))
     for j, (lab, k) in enumerate([('KIC 5689121 (Kepler)', 'kepler G21'), ('TIC 309780779 (TESS)', 'tess')]):
         mp = S[k]['mean_probs']; y = 24 + j * 62; x = p.l
         p.text(p.l, y, lab, 14, TXT, weight='600')
@@ -214,27 +214,27 @@ def scenarios():
     y = 170
     for cl, keys, c in cats:
         p.rect(p.l, y - 11, 13, 13, c, 2); p.text(p.l + 22, y, cl, 13); y += 24
-    p.text(p.l, p.h - 22, 'Share of total scenario probability (mean of runs).', 12)
+    p.text(p.l, p.h - 32, 'Share of total scenario probability (mean of runs).', 12)
     p.text(p.l, p.h - 6, 'FPP excludes the planet-on-target scenarios (TP, PTP and DTP).', 12)
     save('fpp-scenarios', p.svg('Scenario probabilities', 'For the Kepler candidate most probability is a planet on target; the remaining mass is mostly a planet around an unseen bound companion. For the TESS lead the largest block is an eclipsing binary.'))
 
 def tess_fold():
     d = rjson('analysis/309780779-display-bins.json')['bins']
-    p = Plot(640, 360, xr=(-3.1, 3.1), yr=(-800, 500))
+    p = Plot(640, 360, t=72, xr=(-3.1, 3.1), yr=(-800, 500))
     p.yaxis([-600, -400, -200, 0, 200, 400], 'Flux change (ppm)'); p.xaxis([-3, -2, -1, 0, 1, 2, 3], 'Hours from mid-transit', grid=True)
     for r in d:
         x, y, e = r['hours'], r['flux_ppm'], r['standard_error_ppm']
         ebar(p, x, y, e, '#666666'); p.circ(p.X(x), p.Y(y), 3.4, BL)
         p.point(p.X(x),p.Y(y),'Transit bin', [('Time',f'{x:.3f} hours'),('Flux',f'{y:,.2f} ppm'),('Uncertainty',f'±{e:,.2f} ppm')])
-    p.text(p.l + 10, p.t + 20, 'TESS, P = 8.72361 d, presentation fold of 46 events', 13, TXT)
-    p.text(p.l + 10, p.t + 38, 'dip is shallow (about 400 ppm) and short (about 1 h)', 13, OR)
+    p.text(p.l + 10, 24, 'TESS, P = 8.72361 d, presentation fold of 46 events', 13, TXT)
+    p.text(p.l + 10, 44, 'dip is shallow (about 400 ppm) and short (about 1 h)', 13, OR)
     save('tess-fold', p.svg('TIC 309780779 folded dip', 'Folded TESS photometry of TIC 309780779 showing a shallow dip of about 400 parts per million.'))
 
 def tess_depths():
     rows = [('All 46 events', 401, 30, OR), ('Odd transits (25)', 365, 41, BL), ('Even transits (21)', 444, 42, BL),
             ('Sectors 1-11, 30-min data', 367, 67, GR), ('Sectors 28-38, 10-min data', 423, 55, GR), ('Sectors 61-90, 200-s data', 408, 44, GR),
             ('Held out: sectors 61-90 at frozen ephemeris from 1-38', 450, 47, YE)]
-    p = Plot(640, 380, l=16, r=24, t=14, b=40, xr=(150, 600), yr=(0, 1))
+    p = Plot(640, 400, l=16, r=24, t=14, b=56, xr=(150, 600), yr=(0, 1))
     for v in [200, 300, 400, 500, 600]:
         x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, str(v), 13, anchor='middle')
     p.text((p.l + p.w) / 2, p.h - 6, 'Transit depth (ppm, ±1σ)', 12, anchor='middle')
@@ -248,7 +248,7 @@ def tess_depths():
 
 def bls():
     rows = [('Full data', 19.6, 7.8), ('Sectors 1-38 only', 12.6, 6.0), ('Sectors 61-90 only', 12.9, None)]
-    p = Plot(640, 280, l=20, r=20, t=16, b=40, xr=(0, 22), yr=(0, 1))
+    p = Plot(640, 300, l=20, r=20, t=16, b=60, xr=(0, 22), yr=(0, 1))
     for v in [0, 5, 10, 15, 20]:
         x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, str(v), 13, anchor='middle')
     p.text((p.l + p.w) / 2, p.h - 6, 'Peak strength (SDE): 8.7236 d signal versus inverted-data peak', 12, anchor='middle')
@@ -264,7 +264,7 @@ def bls():
 
 def nullc():
     rows = [('Kepler ranks 65-576', 10, 10), ('Kepler ranks 577-1800', 19, 22)]
-    p = Plot(640, 220, l=20, r=20, t=14, b=34, xr=(0, 32), yr=(0, 1))
+    p = Plot(640, 240, l=20, r=20, t=14, b=56, xr=(0, 32), yr=(0, 1))
     for v in [0, 5, 10, 15, 20, 25]:
         x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, str(v), 13, anchor='middle')
     p.text((p.l + p.w) / 2, p.h - 4, 'First-screen signals found', 12, anchor='middle')
@@ -272,8 +272,8 @@ def nullc():
     for i, (lab, a, b) in enumerate(rows):
         y = p.t + rh * i + 4
         p.text(p.l, y + 12, lab, 13, TXT)
-        p.rect(p.l, y + 18, p.X(a) - p.l, 16, OR, 2); p.text(p.X(a) + 6, y + 31, f'{a} real', 12, MUT)
-        p.rect(p.l, y + 38, p.X(b) - p.l, 16, '#666666', 2); p.text(p.X(b) + 6, y + 51, f'{b} inverted (null)', 12, MUT)
+        p.add(f'<g class="chart-grow-horizontal" style="transform-origin:{p.l}px 0px">');p.rect(p.l, y + 18, p.X(a) - p.l, 16, OR, 0);p.add('</g>'); p.text(p.X(a) + 6, y + 31, f'{a} real', 12, MUT)
+        p.add(f'<g class="chart-grow-horizontal" style="transform-origin:{p.l}px 0px">');p.rect(p.l, y + 38, p.X(b) - p.l, 16, '#666666', 0);p.add('</g>'); p.text(p.X(b) + 6, y + 51, f'{b} inverted (null)', 12, MUT)
         p.hit(p.l,y,p.w-p.l-p.r,rh,lab,[('Real first-screen signals',str(a)),('Inverted first-screen signals',str(b))])
     save('null-control', p.svg('Real versus inverted searches', 'Real Kepler searches find no more first-screen signals than matched inverted null searches.'))
 
@@ -299,20 +299,20 @@ def model():
 
 def diffimg():
     seas = [rcsv_nohdr(D + f'kic5689121_diffimage_season{i}_snr.csv') for i in range(4)]
-    p = Plot(640, 230, l=0, r=0, t=0, b=0)
-    cw = 28; x0 = 8
+    p = Plot(640, 480, l=0, r=0, t=0, b=0)
+    cw = 28; x0 = 28
     for i, g in enumerate(seas):
-        ox = x0 + i * 158
-        p.text(ox, 20, f'Season {i}', 13, TXT, weight='600')
+        ox = x0 + (i % 2) * 310; oy = (i // 2) * 210
+        p.text(ox, oy + 20, f'Season {i}', 13, TXT, weight='600')
         for r_, row in enumerate(g):
             for c_, saved in enumerate(row):
                 v = -9 if saved is None else saved
                 t = max(0, min(1, v / 7)); col = lerp((24, 24, 24), (255, 255, 255), t) if v > 0 else ('#080808' if v < -8 else '#222222')
-                p.rect(ox + c_ * cw, 30 + r_ * cw, cw - 2, cw - 2, col, 2)
-                p.hit(ox+c_*cw,30+r_*cw,cw-2,cw-2,f'Season {i} / pixel [{r_}, {c_}]',[('Lost-light S/N',f'{v:.3f}' if saved is not None else 'Not available'),('Index convention','Row, column; zero-based')])
-                if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#080808' if t > .45 else TXT, 'middle', '700')
-    p.text(8, 200, 'Lost-light S/N per Kepler pixel. White ≥ 7; numbers give S/N.', 12)
-    p.text(8, 220, 'Stored pixel orientation; see the registered sky overlay below.', 12)
+                p.rect(ox + c_ * cw, oy + 30 + r_ * cw, cw - 2, cw - 2, col, 2)
+                p.hit(ox+c_*cw,oy+30+r_*cw,cw-2,cw-2,f'Season {i} / pixel [{r_}, {c_}]',[('Lost-light S/N',f'{v:.3f}' if saved is not None else 'Not available'),('Index convention','Row, column; zero-based')])
+                if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, oy + 30 + r_ * cw + 18, f'{v:.0f}', 11, '#080808' if t > .45 else TXT, 'middle', '700')
+    p.text(28, 450, 'Lost-light S/N per Kepler pixel. White ≥ 7; numbers give S/N.', 12)
+    p.text(28, 472, 'Stored pixel orientation; see the registered sky overlay below.', 12)
     save('kepler-diffimage', p.svg('Missing-light pixels by season', 'Per-pixel signal to noise of the light lost during transit in four Kepler seasons, peaking on a few pixels.'))
 
 def rcsv_nohdr(p): return [[float(x) if x.strip() else None for x in r] for r in csv.reader(open(p)) if r]
