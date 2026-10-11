@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3106,
-      "sha256": "acc0a629931919606d4052a20de4204eab688bda6f0f7d0694047e3b9b515e4e"
+      "bytes": 3089,
+      "sha256": "9aba57af73b95b5bf736a979ca6d492c29415bdba65391fb5b47d37e4ed4fb73"
     },
     {
       "path": "SOURCES.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "analysis/kbonus-extension-20261011/README.md",
-      "bytes": 2816,
-      "sha256": "5f22cc35dbf71e902607bdeda6c14a651664dba43ae342c983a765066dc4ae28"
+      "bytes": 4744,
+      "sha256": "08af1552e9d1ce5ffae1f62a6bbcf400074fe7fcc54729ae75a0219c85906968"
     },
     {
       "path": "analysis/kbonus-extension-20261011/batch2.py",
@@ -56,6 +56,21 @@
       "path": "analysis/kbonus-extension-20261011/inv.py",
       "bytes": 1002,
       "sha256": "c87c3e973ece505dc2df06c4bfbb8764b709d5d364daa31a1b70ed18b8a084e9"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/ranks577-1800/inv3.py",
+      "bytes": 1004,
+      "sha256": "b09c0ff34ebf48fa6fd9b526c003ce57f6fe0f162b70ffb3243916141ec03a7b"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/ranks577-1800/signals_real_and_inverted.csv",
+      "bytes": 284871,
+      "sha256": "fa508391d81757d24c30e262266b89fdeba702338ac2efd920d889002d60dfab"
+    },
+    {
+      "path": "analysis/kbonus-extension-20261011/ranks577-1800/stars_searched.csv",
+      "bytes": 109699,
+      "sha256": "a8bb4d23103f8e92726c7cebb38501b4607654b066860a9e791ea1dd1b541868"
     },
     {
       "path": "analysis/kbonus-extension-20261011/signals_real_and_inverted.csv",
@@ -9994,13 +10009,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 27767,
-      "sha256": "caef6d1c66a12e98113209b07bdae23fe04b5a5e9a809b43379e5cb50dbead4e"
+      "bytes": 28032,
+      "sha256": "f15a8d0904677ccc00f6bc865e57402425f2a9f812bb02f45f942f10cdcfd6cb"
     },
     {
       "path": "planethunt.md",
-      "bytes": 8859,
-      "sha256": "c172e3c4849e74ecf893e01eec8bb585a1f37f4529efcdfbcfaa2e6f77046c87"
+      "bytes": 8962,
+      "sha256": "574cc057ecbfe69203e5f671f69339d2dcce8c757456b301a2304fa94a7a3424"
     },
     {
       "path": "scripts/build_visuals.py",

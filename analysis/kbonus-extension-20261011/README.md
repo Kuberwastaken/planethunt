@@ -34,3 +34,26 @@ Nothing here approaches KIC 5689121 (BLS SNR 26.7, holdout 15.5 in the same pipe
 - The catalog check for KIC 9851000 and 6629201 used the Exoplanet Archive KOI/TCE tables only.
 - The strict-screen analysis (period > 1.5 d, 12.5-14.5 d excluded, holdout SNR >= 5, event-sign and single-event limits) was tuned after seeing these results, so it is descriptive, not a clean test.
 - No candidate was named, submitted or announced.
+
+## Second stage: ranks 577-1800 (added 2026-10-11)
+Same code, same frozen ranking (`batch2.py --lo 576 --hi 1800`, inverted with `ranks577-1800/inv3.py`). Tables in `ranks577-1800/`.
+
+- 1224 stars selected: 1175 searched, 49 not searched (48 with fewer than 6 usable quarters, 1 MAST read timeout, not retried).
+- Matched inverted run on the same 1175 stars.
+- First-screen passes: real 19 signals on 18 stars, inverted null 22 signals on 19 stars. No excess over the null.
+- With a stricter screen (P > 1.5 d, outside 12.5-14.5 d, holdout SNR >= 5): real 6 signals on 5 stars, inverted 7 signals on 6 stars. This screen was chosen after seeing the earlier batch, so it is descriptive, not a clean test.
+
+Real strict passes and what checks say (NASA Exoplanet Archive TCE/KOI cone, ~108 arcsec, same period or 2x/0.5x):
+| KIC | P (d) | depth ppm | result |
+|---|---|---|---|
+| 4544570 | 2.189 | ~5200-6950 | Rejected: four KOI false positives at the same 2.189 d within 85 arcsec |
+| 11724208 | 5.746 | ~5600 | Rejected: KOI K06244.01 (KIC 11724210, 5.746 d, false positive, 9.6 arcsec away) |
+| 12164160 | 19.42 | 5398 | No catalog match. G 18.4 background star with a 0.5% depth: too deep for a planet-size dip on an M dwarf, so likely an uncataloged blend or eclipsing binary |
+| 8743279 | 21.96 | 9917 | Same: G 18.6, ~1% depth, likely a blend/EB |
+| 8803342 | 5.010 | 2928 | Same: G 18.8, likely a blend/EB |
+
+No pixel/PRF localization was done on these. None is a candidate, and nothing was named or submitted.
+
+## Combined picture
+Across ranks 65-1800 (1,672 stars searched, plus Codex's 64) the real search never produced more first-screen passes than the matched inverted null. The only strong signal remains KIC 5689121 from the original Codex run.
+Totals: ranks 65-576: 497 searched; ranks 577-1800: 1175 searched; sum 1,672. One unresolved weak item from the first stage: KIC 6629201 (2.638 d, faint, unlocalized).
