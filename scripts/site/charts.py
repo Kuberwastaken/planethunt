@@ -102,8 +102,8 @@ def dilution():
             ye = min(d + e, 4400); ys = max(d - e, -400)
             p.line(x + off, p.Y(ye), x + off, p.Y(ys), c, 1.2); p.circ(x + off, p.Y(d), 3.6, c)
         p.text(x, p.h - p.b + 18, f"Q{r['q']}", 12, anchor='middle')
-    p.circ(p.l + 14, p.t + 14, 4, BL); p.text(p.l + 24, p.t + 19, 'PSF photometry (target only)', 13)
-    p.circ(p.l + 230, p.t + 14, 4, OR); p.text(p.l + 240, p.t + 19, 'SAP aperture (includes neighbours)', 13)
+    p.circ(p.l + 14, p.t + 14, 4, BL); p.text(p.l + 24, p.t + 19, 'PSF / target', 13)
+    p.circ(p.l + 230, p.t + 14, 4, OR); p.text(p.l + 240, p.t + 19, 'SAP / blended aperture', 13)
     save('kepler-dilution', p.svg('Depth per quarter, PSF versus SAP', 'Per quarter transit depth in PSF and aperture photometry; aperture depths are shallower in quarters where the aperture holds more contaminating light.'))
 
 def ephem_null():
@@ -181,7 +181,7 @@ def fpp():
 def scenarios():
     S = rjson(V + 'results/triceratops/fpp_summary.json')
     def agg(mp, keys): return sum(mp.get(k, 0) for k in keys)
-    cats = [('Planet on target', ['TP'], GR), ('Planet on a bound companion (STP)', ['STP'], YE), ('Planet on unrelated nearby star (PTP/DTP/BTP)', ['PTP', 'DTP', 'BTP'], BL),
+    cats = [('Planet on target (TP / PTP / DTP)', ['TP', 'PTP', 'DTP'], GR), ('Planet on a bound companion (STP)', ['STP'], YE), ('Planet on background star (BTP)', ['BTP'], BL),
             ('Eclipsing binary bound to target (SEB)', ['SEB', 'SEBx2P'], RD), ('Other binary scenarios', ['EB', 'EBx2P', 'PEB', 'PEBx2P', 'DEB', 'DEBx2P', 'BEB', 'BEBx2P'], '#555555')]
     p = Plot(640, 330, l=20, r=20, t=18, b=20, xr=(0, 1), yr=(0, 1))
     for j, (lab, k) in enumerate([('KIC 5689121 (Kepler)', 'kepler G21'), ('TIC 309780779 (TESS)', 'tess')]):
@@ -231,7 +231,7 @@ def bls():
     p = Plot(640, 280, l=20, r=20, t=16, b=40, xr=(0, 22), yr=(0, 1))
     for v in [0, 5, 10, 15, 20]:
         x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, str(v), 13, anchor='middle')
-    p.text((p.l + p.w) / 2, p.h - 6, 'Best BLS peak strength (SDE) at 8.7236 d versus the best peak in the inverted light curve', 12, anchor='middle')
+    p.text((p.l + p.w) / 2, p.h - 6, 'Peak strength (SDE): 8.7236 d signal versus inverted-data peak', 12, anchor='middle')
     rh = (p.h - p.t - p.b) / 3
     for i, (lab, a, b) in enumerate(rows):
         y = p.t + rh * i + 6
@@ -287,8 +287,8 @@ def diffimg():
                 t = max(0, min(1, v / 7)); col = lerp((24, 24, 24), (255, 255, 255), t) if v > 0 else ('#080808' if v < -8 else '#222222')
                 p.rect(ox + c_ * cw, 30 + r_ * cw, cw - 2, cw - 2, col, 2)
                 if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#080808' if t > .45 else TXT, 'middle', '700')
-    p.text(8, 200, 'Signal-to-noise of the light lost during transit, per Kepler pixel (white = most missing light).', 12)
-    p.text(8, 220, 'Pixel stamp as stored; the sky overlay figure above gives the orientation.', 12)
+    p.text(8, 200, 'Lost-light S/N per Kepler pixel. White ≥ 7; numbers give S/N.', 12)
+    p.text(8, 220, 'Stored pixel orientation; see the registered sky overlay below.', 12)
     save('kepler-diffimage', p.svg('Missing-light pixels by season', 'Per-pixel signal to noise of the light lost during transit in four Kepler seasons, peaking on a few pixels.'))
 
 def rcsv_nohdr(p): return [[float(x) if x.strip() else -9 for x in r] for r in csv.reader(open(p)) if r]

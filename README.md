@@ -10,7 +10,7 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 
 ## Current state: 11 October 2026
 
-KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The public site (`index.html`) was rebuilt on 12 October as an interactive field report. Scientific status remains the 11 October evidence snapshot; no new validation is implied.
+KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The public site (`index.html`) was rebuilt on 12 October as a monochrome evidence atlas. Scientific status remains the 11 October evidence snapshot; no new validation is implied.
 
 ## Earlier state: 10 October 2026
 
@@ -54,11 +54,15 @@ Open `http://127.0.0.1:8765/`. The build runs offline from the saved evidence.
 
 - `scripts/site/page.html`: public narrative and accessible HTML template.
 - `scripts/site/site.css`, `site.js`: responsive styles and browser interactions.
-- `docs/charts/`: reproducible SVG diagnostics, including a Lyra locator.
+- `docs/charts/`: 20 reproducible SVG diagnostics, including a Lyra locator.
+- `scripts/site/evidence_atlas.py`: five additional diagnostics, run automatically by the
+  page build. Derived residuals, event histogram and quarter coverage have CSV sidecars
+  in `docs/derived/`. No scientific fitting is rerun.
+- `docs/fonts/`: self-hosted Barlow Condensed Light and IBM Plex Mono, with OFL licenses.
 - `docs/site-data.json`: compact export of the actual folded bins, transit model,
   74 event measurements, and all 46,523 original detrended cadences.
 - Survey switching uses local, unaltered cutouts with separate SVG markers, scale bars,
-  and orientation. Credits and fetch parameters are in `docs/sky/SOURCES.json`.
+  and orientation. The presentation defaults to monochrome, with an original-colour toggle. Credits and fetch parameters are in `docs/sky/SOURCES.json`.
 - The page preserves the original evidence sections in dated expandable appendices.
   The file explorer reads `inventory.json` and `analysis/bulk-files.json` on demand.
 

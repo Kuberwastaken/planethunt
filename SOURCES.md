@@ -17,3 +17,10 @@ The QLP warning is independently visible on the archive documentation. The candi
 
 ## Licenses
 Third-party code license notices are retained in `third_party/`. Paras's repository distinguishes MIT source code from CC BY 4.0 text, figures and videos. Kepler Bonus high-level data products are CC BY 4.0. Attribute NASA/MAST, the named product authors, Gaia/ESA, and the upstream search authors when reusing their material. No blanket license here overrides third-party rights. Repository synthesis and source reports are separate from upstream code.
+
+## Website typography
+
+Self-hosted [Barlow Condensed Light](https://github.com/google/fonts/tree/main/ofl/barlowcondensed)
+and [IBM Plex Mono Regular](https://github.com/google/fonts/tree/main/ofl/ibmplexmono),
+obtained from the official Google Fonts repository on 12 October 2026. Both use the
+SIL Open Font License 1.1; the complete notices are retained in `docs/fonts/`.
