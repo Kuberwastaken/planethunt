@@ -11099,13 +11099,13 @@
     },
     {
       "path": "scripts/site/site.css",
-      "bytes": 48671,
-      "sha256": "2103aa3e589cde9baf8d3d99f9970964deda0e99dda08bef4d7a6331fb29fefd"
+      "bytes": 49473,
+      "sha256": "88a9d3f72d84749db86c62372ca0669b2b3e3ef94da9364c10c87ca567b9f230"
     },
     {
       "path": "scripts/site/site.js",
-      "bytes": 25198,
-      "sha256": "596dc2da58fe6254e74bbdc65594a7b02a51fcaba55795c93c90cc62d8af4cb0"
+      "bytes": 25727,
+      "sha256": "be6daa4738568f2489bcb8db4fc0bc7072d9ef8d5781266b39a3708f3e4fc287"
     },
     {
       "path": "scripts/site/sky.py",
@@ -11119,8 +11119,8 @@
     },
     {
       "path": "scripts/site/test_scroll_interactions.cjs",
-      "bytes": 5616,
-      "sha256": "eed197e4f71484e01f37654fd82aa200e0171a2616888c45260aed4b586f6520"
+      "bytes": 6128,
+      "sha256": "de638ee1f8b29fdd0839a362c947ada2f061c1c79ed38a38b87ba4ae34599d2f"
     },
     {
       "path": "sitemap.xml",
