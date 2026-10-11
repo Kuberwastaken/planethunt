@@ -14,13 +14,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 7488,
-      "sha256": "e5204852bb824d4cd976b82e33650b0ebcea5b9ef8885c8ca7948ef04518f552"
+      "bytes": 7798,
+      "sha256": "8aef0e155385272ef2927d728a332286469c3fa133ffe8e6b1f7fc0f6de76a7c"
     },
     {
       "path": "SOURCES.md",
-      "bytes": 3954,
-      "sha256": "7ee5ae5dde30e2a951a5be4b1a263d30fe986245ab56be495f950702aa1df5b8"
+      "bytes": 4134,
+      "sha256": "d665dd135e5f858182c4c2ad598b6495097f0fb37ab6c523f15c712c20b68dd6"
     },
     {
       "path": "analysis/305054512-display-bins.json",
@@ -1051,6 +1051,16 @@
       "path": "docs/fonts/IBMPlexMono-Regular.ttf",
       "bytes": 135580,
       "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+    },
+    {
+      "path": "docs/icons/github.svg",
+      "bytes": 822,
+      "sha256": "7421820090b50ac79d7c2bf7c951a433d7098a8a9c474809207bdd45f62d9d46"
+    },
+    {
+      "path": "docs/icons/octicons-LICENSE.txt",
+      "bytes": 1068,
+      "sha256": "da259c8bd0de62713ccdcf88910aebca810644f98c2c912bad814fc79ea778df"
     },
     {
       "path": "docs/planet/PROVENANCE.json",
@@ -11024,8 +11034,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 408321,
-      "sha256": "3555d4a5012c005581678a3c14800f71326693119eaefa53810b80233b1bdba6"
+      "bytes": 413227,
+      "sha256": "ca3e6b020167e8c9d07c24ee3f432c2a87ce0a27150fc3c81fbde4f345213e99"
     },
     {
       "path": "planethunt.md",
@@ -11074,8 +11084,8 @@
     },
     {
       "path": "scripts/site/page.html",
-      "bytes": 47645,
-      "sha256": "8cbd1b8e7d95fa2982d0f88567d24f35b9db47980bba1d5aeb0897c85781cb8b"
+      "bytes": 52551,
+      "sha256": "748279a4c429a773084b8706397084ab128f15cfa1c64cffccd0ec487c4e8b16"
     },
     {
       "path": "scripts/site/planet_facts.py",
@@ -11089,13 +11099,13 @@
     },
     {
       "path": "scripts/site/site.css",
-      "bytes": 34204,
-      "sha256": "e68dedd6a1bdc3e39c9f11f5e7243e039f2567e11fd6a635f8a1be26c062e6d4"
+      "bytes": 41195,
+      "sha256": "6a5f3d0321c467229e9727246782af0e9b993875f583c2d98705b45bb6de8741"
     },
     {
       "path": "scripts/site/site.js",
-      "bytes": 19890,
-      "sha256": "e1414ce8c6a68cd62d69baf4d116674537a4efe8b80c44161a3318a95198901f"
+      "bytes": 22446,
+      "sha256": "68c2822089f35cf9a5812a34bd135770b2b88c595b8a9592acbf4ff37f4f7908"
     },
     {
       "path": "scripts/site/sky.py",
@@ -11106,6 +11116,11 @@
       "path": "scripts/site/test_chart_data.py",
       "bytes": 3451,
       "sha256": "13fd8435ed0619f14789096e2dfe11563947e767a61a5333f092cd401ad58a60"
+    },
+    {
+      "path": "scripts/site/test_scroll_interactions.cjs",
+      "bytes": 3000,
+      "sha256": "414a04e1a303112eb8982060d01aa7a1d3101a6142ac72f4968bd3b2ae89ddc5"
     },
     {
       "path": "sitemap.xml",
