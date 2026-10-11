@@ -8,7 +8,11 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 - Original evidence: [`evidence/tess/`](evidence/tess/) and [`evidence/codex/`](evidence/codex/).
 - Completeness and file-level checksums: [`inventory.json`](inventory.json) and `SHA256SUMS`.
 
-## Current state: 10 October 2026
+## Current state: 11 October 2026
+
+KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The site (`index.html`) was redesigned on 11 October with charts and sky images; details in the validation pack below.
+
+## Earlier state: 10 October 2026
 
 TIC 309780779 has a repeated TESS dip and target-consistent difference imaging, but no formal false-positive probability or demonstrated held-out test in the supplied evidence. KIC 5689121 / TIC 120686465 has a Kepler candidate reported with a reserved-quarter test and official-PRF localization, and the measurement files are now received. A fixed-ephemeris recheck reproduces the corrected aperture depth and held-out local SNR, but is not fresh blind validation.
 
