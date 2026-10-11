@@ -126,19 +126,24 @@ def ephem_null():
     save('kepler-ephemeris-null', p.svg('Depth at candidate and Kepler-169 ephemerides', 'The target shows a 2,350 ppm dip at the candidate ephemeris and no depth at any of the five Kepler-169 planet ephemerides or in the neighbour light curve.'))
 
 def centroid():
-    rows = list(csv.DictReader(open(V + 'results/kepler/kcentroid_all_sources.csv')))
-    rows = rows[1:]
-    p = Plot(640, 330, l=16, r=24, t=16, b=44, xr=(100, 30000), yr=(0, 1), xlog=True)
-    for v in [100, 1000, 10000]:
-        x = p.X(v); p.line(x, p.t, x, p.h - p.b, LINE); p.text(x, p.h - p.b + 18, f'{v:,}', 13, anchor='middle')
-    p.text((p.l + p.w) / 2, p.h - 6, 'Δχ² of centroid fit versus the target (log scale, higher = worse fit)', 12, anchor='middle')
-    rh = (p.h - p.t - p.b) / len(rows)
-    for i, r in enumerate(rows):
-        y = p.t + rh * i + 4; dc = float(r['dchi2_vs_target']); nb = i == 0
-        p.rect(p.l, y + 10, p.X(max(dc, 100)) - p.l, rh - 14, GR if nb else BL, 3, .85)
-        p.text(p.l + 6, y + 8, f"Gaia {r['source_id'][-6:]} · {float(r['sep']):.1f}\" · G {float(r['phot_g_mean_mag']):.1f}" + ('  (the bright neighbour)' if nb else ''), 12, TXT)
-        p.text(p.X(max(dc, 100)) + 5, y + rh - 5, f'{dc:,.0f}', 12, MUT)
-    save('kepler-centroid', p.svg('Raw-pixel centroid test', 'Every Gaia source within 30 arcseconds is rejected relative to the target by at least 934 in chi-square; the bright neighbour is the least bad at 934.'))
+    rows = rcsv(V + 'results/kepler/kcentroid_all_sources.csv')[1:]
+    p = Plot(960, 570, l=322, r=104, t=60, b=64, xr=(100, 30000), yr=(0, 1), xlog=True)
+    p.text(24,28,'RESOLVED SOURCE',12,MUT)
+    p.text(932,28,'Δχ²',13,TXT,'end')
+    for value in [100, 1000, 10000]:
+        x=p.X(value);p.line(x,48,x,492,LINE)
+        p.text(x,524,f'{value:,}',12,MUT,'middle')
+    for i,r in enumerate(rows):
+        y=82+i*61;value=float(r['dchi2_vs_target']);colour=TXT if i==0 else MUT
+        p.text(24,y-2,'Gaia '+r['source_id'][-6:],15,colour)
+        note=f"{float(r['sep']):.1f}″  /  G {float(r['phot_g_mean_mag']):.1f}"+('  /  bright neighbour' if i==0 else '')
+        p.text(24,y+18,note,11,MUT)
+        p.line(p.l,y+3,p.X(value),y+3,colour,3)
+        p.circ(p.X(value),y+3,5,colour)
+        p.text(932,y+8,f'{value:,.0f}',16,colour,'end')
+        p.line(24,y+34,936,y+34,LINE,.5)
+    p.text(576,558,'Δχ² versus target · logarithmic scale · larger = poorer fit',12,MUT,'middle')
+    save('kepler-centroid',p.svg('Raw-pixel centroid source comparison','Seven resolved Gaia sources within 30 arcseconds, each compared with the target model. The closest bright neighbour has delta chi-square 934; other sources fit still worse. Numeric values are aligned at right; logarithmic lollipop positions show relative scale.'))
 
 def gaia_map():
     r = rcsv(D + 'kic5689121_gaia_neighbours_120arcsec.csv')

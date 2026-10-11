@@ -85,3 +85,31 @@ scientific qualifications. The public HTML template has approximately 29% fewer 
 (excluding SVG content and the unchanged historical appendices). Typography and styles are
 unchanged. Rebuilt the page, checked local references and data fidelity, and inspected the
 updated desktop and narrow layouts plus runtime captions.
+
+## Planet gallery, share assets and source-chart spacing
+
+Added four 4:3 generated planet views: exterior, atmospheric limb, hypothetical cutaway and
+star/planet perspective. Every scene is labelled as an interpretation; exact structure and
+composition remain unknown. A matched wide share card, code-native SVG favicon, PNG sizes
+and ICO fallback are included. Full-size gallery WebPs total 231,248 bytes; PNG originals and
+all prompts remain in the repository. Responsive sources use native 4:3 dimensions.
+
+The existing physical-model section now pairs images with derived comparisons and keeps
+equations, fitted parameters and code-rendered scale diagrams accessible. Added values are
+computed from saved inputs, with circular-orbit and spherical-volume assumptions explicit.
+The earlier rounded post values are represented by the saved 417 K equilibrium model and
+approximately 1040 CE light-emission epoch. Mass and gravity are not inferred.
+
+Rebuilt the crowded centroid figure as a full-width source ranking with dedicated source,
+logarithmic mark and value columns. Values remain unchanged. The chart scrolls within its
+container on small screens and retains the enlarged view.
+
+SEO: descriptive title/description, canonical URL, Open Graph and X large-image metadata,
+actual share-image dimensions, WebPage/ImageObject JSON-LD, sitemap and icon links. The live
+canonical URL and domain robots permission were checked; nothing was deployed or submitted
+to a search engine. Search rankings and cached social previews are outside this local check.
+
+Validation: all 135 local page references; original data fidelity; derived arithmetic; PNG
+aspect ratios; WebP sizes; metadata dimensions; JSON-LD/XML parsing; no invalid SVG values.
+Inspected desktop and mobile layouts, source-chart enlargement, planet-image enlargement,
+colour modes, Escape dismissal and temperature slider. Browser console showed no errors.

@@ -104,6 +104,14 @@ document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener(
  $('fpp-caption').textContent=hypothetical?'Simulated Keck K-band imaging. Two runs: 2.2–3.2%; still above the validation threshold.':'Modelled false-positive probability. Four runs: 5.8–8.9%. Conditional on model inputs.';
  document.querySelectorAll('[data-fpp]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
 }));
+// Colour appears on interaction; the first static presentation remains monochrome.
+const planetImages=[...document.querySelectorAll('.planet-image')];
+let planetScrollStarted=false;
+const planetObserver=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('is-revealed',planetScrollStarted && entry.isIntersecting)),{rootMargin:'-20% 0px -20% 0px',threshold:.25});
+planetImages.forEach(el=>planetObserver.observe(el));
+window.addEventListener('scroll',()=>{planetScrollStarted=true;planetImages.forEach(el=>{planetObserver.unobserve(el);planetObserver.observe(el);});},{once:true,passive:true});
+planetImages.forEach(button=>button.addEventListener('click',()=>{const img=button.querySelector('img').cloneNode(true);img.removeAttribute('srcset');img.removeAttribute('sizes');img.className='planet-detail';dialog.querySelector('.dialog-media').replaceChildren(img);$('dialog-title').textContent=button.dataset.planetImage+' / artist’s interpretation';$('dialog-caption').textContent=button.closest('.planet-card').querySelector('.planet-copy>p').textContent;dialog.showModal();}));
+$('planet-colour').addEventListener('click',()=>{const active=$('planet-colour').getAttribute('aria-pressed')!=='true';$('planet-colour').setAttribute('aria-pressed',String(active));document.querySelector('.planet-gallery').classList.toggle('colour-on',active);$('planet-colour').textContent=active?'Colour follows interaction':'Keep colour on';});
 $('albedo').addEventListener('input',()=>{const a=Number($('albedo').value);$('albedo-output').textContent=a+'%';$('temperature').textContent=Math.round(417.4280973054799*Math.pow(1-a/100,.25))+' K';});
 
 let files=null,limit=30,fileLoading=false;

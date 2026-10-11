@@ -1,0 +1,57 @@
+{
+  "assumption": "Planet orbits the adopted host. Circular orbit for speed; no mass or composition inference.",
+  "inputs": {
+    "period_days": 13.769448251493595,
+    "a_AU": 0.0895562602330138,
+    "radius_earth_range": [
+      2.5,
+      3.0
+    ],
+    "distance_pc": 298
+  },
+  "constants": {
+    "AU_km": 149597870.7,
+    "c_km_s": 299792.458,
+    "earth_mean_radius_km": 6371,
+    "julian_year_days": 365.25,
+    "mercury_a_AU": 0.387
+  },
+  "orbit_radius_km": 13397425.83871395,
+  "circular_orbit_speed_km_s": 70.75725061337556,
+  "orbits_per_earth_year": 26.526117338098913,
+  "star_to_orbit_light_seconds": 44.68900227874962,
+  "mercury_distance_fraction": 0.23141152514990646,
+  "diameter_km_range": [
+    31855.0,
+    38226.0
+  ],
+  "volume_earth_range": [
+    15.625,
+    27.0
+  ],
+  "equilibrium_temperature_K": 417.4280973054799,
+  "equilibrium_temperature_C": 144.27809730547995,
+  "light_travel_years": 971.946005546,
+  "emission_epoch_CE_range": [
+    1037.053994454,
+    1041.053994454
+  ],
+  "stellar_angular_diameter_deg": 3.019779679281134,
+  "apparent_star_width_vs_sun": 5.665627916099688,
+  "transit_fraction_range": [
+    0.0063546482329463515,
+    0.007262455123367258
+  ],
+  "unknown": [
+    "mass",
+    "density",
+    "gravity",
+    "composition",
+    "cloud colour",
+    "atmospheric structure",
+    "interior layer boundaries",
+    "rotation",
+    "moons",
+    "rings"
+  ]
+}

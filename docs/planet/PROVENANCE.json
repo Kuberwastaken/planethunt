@@ -1,0 +1,50 @@
+{
+  "created": "2026-10-12",
+  "method": "OpenAI built-in image_gen",
+  "classification": "AI-generated artist interpretations, not observations or physical simulations",
+  "inputs": [
+    "analysis/validation-20261011/post/data/kic5689121_key_numbers.json",
+    "analysis/validation-20261011/post/data/kic5689121_model_numbers.json"
+  ],
+  "sources": [
+    "https://science.nasa.gov/exoplanets/neptune-like/",
+    "https://arxiv.org/abs/2010.11867"
+  ],
+  "caveats": [
+    "Clouds, colour, haze and internal composition are hypothetical.",
+    "Cutaway layer boundaries and system perspective are not to scale.",
+    "The stellar disc in the atmosphere scene is illustrative; use the code-rendered angular comparison for quantitative scale.",
+    "No measurements establish rings, moons or additional planets."
+  ],
+  "images": [
+    {
+      "file": "exterior.png",
+      "prompt": "Use case: scientific-educational. Asset: premium astronomy editorial illustration for a black industrial evidence website. Output one landscape image exactly 4:3, ideally 1536x1152, full-bleed, no text, labels, numbers, borders, logos or watermark. This depicts a hypothetical interpretation of unconfirmed KIC 5689121's transit candidate, NOT a photograph or measured atmospheric appearance. Consistent planet across set: a 2.5\u20133 Earth-radius sub-Neptune with a restrained ivory/slate-grey cloudy gas envelope and subtle warm taupe shading, fine physically plausible atmospheric texture, not blue Neptune copied wholesale. Host star: 3633 K, 0.507 solar radius; orbit 0.08956 AU, 13.76945 days; 5.04 Earth irradiance, equilibrium 417 K at zero albedo and full redistribution. Actual composition, cloud color, spin, magnetic field, rings, moons, mass and interior are unknown. Do not add continents, liquid surface, lava, rings, moons, other planets, flares, aurora, city lights, fantasy nebulae or spacecraft. Distinguish solid dark space and physically lit material; natural understated color that remains excellent in grayscale. Scene: one complete spherical planet isolated against nearly black space, 3/4 illuminated from upper left, terminator at right. Sphere diameter 76% of image height centered slightly left. Sharp curved limb, subtle thin haze, detailed soft non-periodic clouds, no giant Jupiter bands or great spots, no visible surface. A dignified planetary portrait, NASA science visualisation quality, realistic light scattering and black nightside with only soft reflected-light transition. Star off-frame. No stars visible at this exposure.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "file": "atmosphere.png",
+      "prompt": "Use case: scientific-educational. Asset: premium astronomy editorial illustration for a black industrial evidence website. Output one landscape image exactly 4:3, ideally 1536x1152, full-bleed, no text, labels, numbers, borders, logos or watermark. This depicts a hypothetical interpretation of unconfirmed KIC 5689121's transit candidate, NOT a photograph or measured atmospheric appearance. Consistent planet across set: a 2.5\u20133 Earth-radius sub-Neptune with a restrained ivory/slate-grey cloudy gas envelope and subtle warm taupe shading, fine physically plausible atmospheric texture, not blue Neptune copied wholesale. Host star: 3633 K, 0.507 solar radius; orbit 0.08956 AU, 13.76945 days; 5.04 Earth irradiance, equilibrium 417 K at zero albedo and full redistribution. Actual composition, cloud color, spin, magnetic field, rings, moons, mass and interior are unknown. Do not add continents, liquid surface, lava, rings, moons, other planets, flares, aurora, city lights, fantasy nebulae or spacecraft. Distinguish solid dark space and physically lit material; natural understated color that remains excellent in grayscale. Scene: close spacecraft-style view above the atmospheric limb, not on a surface. Sweeping convex curved horizon through bottom two-thirds, deep layered pale grey and muted sand cloud decks, very thin luminous atmospheric edge. Single small warm white/peach stellar disc above horizon at upper right, angular diameter exactly about 3 degrees in a 60-degree horizontal field: disc diameter about 5% of image width, not a huge red fireball. Direction of star and illuminated clouds physically consistent. Space black, no background stars at this exposure. Horizon reveals spherical planet; atmospheric thickness artistic, not to scale. Quiet physically plausible warm illumination, very detailed but restrained.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "file": "interior.png",
+      "prompt": "Use case: scientific-educational. Asset: premium astronomy editorial illustration for a black industrial evidence website. Output one landscape image exactly 4:3, ideally 1536x1152, full-bleed, no text, labels, numbers, borders, logos or watermark. This depicts a hypothetical interpretation of unconfirmed KIC 5689121's transit candidate, NOT a photograph or measured atmospheric appearance. Consistent planet across set: a 2.5\u20133 Earth-radius sub-Neptune with a restrained ivory/slate-grey cloudy gas envelope and subtle warm taupe shading, fine physically plausible atmospheric texture, not blue Neptune copied wholesale. Host star: 3633 K, 0.507 solar radius; orbit 0.08956 AU, 13.76945 days; 5.04 Earth irradiance, equilibrium 417 K at zero albedo and full redistribution. Actual composition, cloud color, spin, magnetic field, rings, moons, mass and interior are unknown. Do not add continents, liquid surface, lava, rings, moons, other planets, flares, aurora, city lights, fantasy nebulae or spacecraft. Distinguish solid dark space and physically lit material; natural understated color that remains excellent in grayscale. Scene: educational 3D cutaway of the same cloudy sphere, centered on black, a clean quarter wedge removed facing camera-right reveals a conceptual family of interior layers: thin cloudy exterior over a broad fluid envelope in subdued smoky blue-grey, gradually denser material in muted ochre-grey, a compact dark mineral-rich central region. NO glowing molten lava, surface crust, oceans, grid, arrows or labels. Exposed layers shown as smooth softly differentiated volume textures, not sharply measured geological boundaries; radial layer thicknesses are explicitly schematic, not inferred. Diameter 78% image height. This is ONE possible gas-envelope interior scenario, not an established structure. Match an elegant natural-history museum scientific model, exquisite lighting, soft neutral warm highlights.",
+      "aspect_ratio": "4:3"
+    },
+    {
+      "file": "system.png",
+      "prompt": "Use case: scientific-educational. Asset: premium astronomy editorial illustration for a black industrial evidence website. Output one landscape image exactly 4:3, ideally 1536x1152, full-bleed, no text, labels, numbers, borders, logos or watermark. This depicts a hypothetical interpretation of unconfirmed KIC 5689121's transit candidate, NOT a photograph or measured atmospheric appearance. Consistent planet across set: a 2.5\u20133 Earth-radius sub-Neptune with a restrained ivory/slate-grey cloudy gas envelope and subtle warm taupe shading, fine physically plausible atmospheric texture, not blue Neptune copied wholesale. Host star: 3633 K, 0.507 solar radius; orbit 0.08956 AU, 13.76945 days; 5.04 Earth irradiance, equilibrium 417 K at zero albedo and full redistribution. Actual composition, cloud color, spin, magnetic field, rings, moons, mass and interior are unknown. Do not add continents, liquid surface, lava, rings, moons, other planets, flares, aurora, city lights, fantasy nebulae or spacecraft. Distinguish solid dark space and physically lit material; natural understated color that remains excellent in grayscale. Scene: a coherent distant view of the star-planet system, with a small fully visible pale cloud-covered planet in foreground at lower right (diameter 18% of frame width) and its warm-white peach M dwarf at upper left (diameter 12% frame width due to different camera distances). The planet is illuminated on upper-left-facing hemisphere only, near-half phase, terminator correct for star direction. Huge black negative space conveying a compact orbit but do NOT draw orbit lines, grids or extra bodies: precise orbital diagram will be separately made in SVG. Star photosphere softly textured, modest physically restrained glow, no dramatic solar flares, no saturated red coloration. This is a perspective composition, not a shared size scale. Minimal cinematic planetary science still.",
+      "aspect_ratio": "4:3"
+    }
+  ],
+  "delivery": "Responsive WebP files are encoded from preserved PNG originals. Monochrome is a CSS filter; colour pixels are unchanged.",
+  "share_image": {
+    "file": "share.png",
+    "prompt_file": "SHARE-PROMPT.txt",
+    "reference": "exterior.png",
+    "width": 1672,
+    "height": 941,
+    "method": "Built-in image_gen; complete image including typography"
+  }
+}

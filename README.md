@@ -59,6 +59,14 @@ Open `http://127.0.0.1:8765/`. The build runs offline from the saved evidence.
   page build. Derived residuals, event histogram and quarter coverage have CSV sidecars
   in `docs/derived/`. No scientific fitting is rerun.
 - `docs/fonts/`: self-hosted Barlow Condensed Light and IBM Plex Mono, with OFL licenses.
+- `docs/planet/`: four generated 4:3 artist interpretations, responsive WebP encodings,
+  social share image, and full prompt/assumption provenance. PNG originals are preserved.
+- `scripts/site/planet_facts.py`: reproducible physical comparisons exported as JSON.
+- `sitemap.xml`, canonical/Open Graph/X metadata and JSON-LD identify the public
+  `https://kuber.studio/planethunt/` page. No keyword stuffing or confirmation claim.
+- `scripts/site/favicon.js` and `optimize_planet.js` use `sharp` for icon rendering and
+  delivery encodings; generated assets are committed and these are not required for a
+  normal offline rebuild.
 - `docs/site-data.json`: compact export of the actual folded bins, transit model,
   74 event measurements, and all 46,523 original detrended cadences.
 - Survey switching uses local, unaltered cutouts with separate SVG markers, scale bars,
@@ -75,3 +83,12 @@ Do not rerun scientific analyses just to rebuild the website.
 
 After changing tracked presentation files, run `python3 scripts/site/refresh_manifests.py`
 to update the root inventory/checksums. Original evidence-pack checksums remain unchanged.
+
+The planet gallery starts monochrome and reveals colour on hover, focus or scroll. A manual
+colour control and enlarged-image dialog work with keyboard input; reduced-motion preferences
+disable the transition. The data, atmosphere colours and schematic interior are clearly separated.
+
+SEO metadata uses the existing live canonical URL (checked on 12 October 2026). The domain's
+existing robots.txt permits crawling. This repository provides its own sitemap; after deployment,
+it can be submitted at `https://kuber.studio/planethunt/sitemap.xml`. Search indexing, ranking and
+social-cache refreshes depend on the consuming service and are not guaranteed by local validation.

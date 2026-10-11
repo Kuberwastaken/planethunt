@@ -24,3 +24,25 @@ Self-hosted [Barlow Condensed Light](https://github.com/google/fonts/tree/main/o
 and [IBM Plex Mono Regular](https://github.com/google/fonts/tree/main/ofl/ibmplexmono),
 obtained from the official Google Fonts repository on 12 October 2026. Both use the
 SIL Open Font License 1.1; the complete notices are retained in `docs/fonts/`.
+
+## Planet illustrations and derived comparisons
+
+The four planet scenes and share card were generated with the built-in OpenAI image tool on
+12 October 2026. They are artist interpretations, not observations or physical simulations.
+Prompts, assumptions and source inputs are retained in `docs/planet/PROVENANCE.json`; the
+share prompt is in `docs/planet/SHARE-PROMPT.txt`. Atmospheric colour and cloud structure are
+not measured. The cutaway shows one possible interior; layer dimensions are schematic.
+
+The saved on-target transit and stellar model supplies radius, period, separation, irradiation
+and equilibrium temperature. `planet_facts.py` derives diameter, spherical volume, circular
+orbital speed, light-travel time and years-per-Earth-year with explicit constants in its output.
+No mass, density, gravity, rotation, atmosphere composition or companion count is inferred.
+
+Context references checked on 12 October 2026:
+- [NASA: Neptunian planets](https://science.nasa.gov/exoplanets/neptune-like/)
+- [Bean, Raymond & Owen: The nature and origins of sub-Neptune size planets](https://arxiv.org/abs/2010.11867)
+- [NASA: sub-Neptune atmosphere observations](https://science.nasa.gov/missions/webb/nasas-james-webb-space-telescope-primed-to-lift-the-haze-surrounding-sub-neptunes/)
+
+Social metadata follows the [Open Graph protocol](https://ogp.me/); search metadata follows
+[Google Search Central guidance](https://developers.google.com/search/docs/appearance/site-names).
+The favicon is an original code-rendered planetary mark, not a measured phase.
