@@ -40,6 +40,17 @@ files_sec = leg('files')
 script = re.search(r'<script>.*?</script>', legacy, re.S).group(0).replace('#eae9ea', '#2a3552')
 
 CSS = open('scripts/site/site.css').read()
+SITEJS = open('scripts/site/site.js').read()
+CHAPS = [('summary','Verdict','what we know'),('sky','The sky','six real images'),('kepler','The signal','Kepler transit'),('vetting','Vetting','8 checks'),('fpp','False positives','FPP 0.07'),('planet','The planet','if it is real'),('tess','TESS lead','probably binary'),('search','Searches','null controls'),('verify','Independent check','integrity'),('next','Next steps','what is blocked'),('deep','Deep dive','original evidence'),('explore','File explorer','every path'),('links','Links','data and credits')]
+SHEET = ''.join(f'<a class="press" href="#{i}"><b>{n:02d}</b>{t}<small>{d}</small></a>' for n,(i,t,d) in enumerate(CHAPS,1))
+METER = ('<figure class="meter wide"><svg viewBox="0 0 720 170" role="img" aria-labelledby="mt md"><title id="mt">False-positive probability against the validation line</title><desc id="md">Scale from 0 to 0.10. Kepler candidate at about 0.07, TESS lead at 0.57 off the scale, validation line at 0.015.</desc>'
+ '<rect x="20" y="62" width="680" height="16" rx="8" fill="rgba(255,255,255,.1)"/><rect x="20" y="62" width="476" height="16" rx="8" fill="#ff9f5a"/>'
+ '<line x1="122" y1="44" x2="122" y2="96" stroke="#62d8a6" stroke-width="3"/><text x="122" y="32" fill="#62d8a6" font-size="21" font-weight="600" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif">0.015 validation line</text>'
+ '<text x="496" y="32" fill="#ff9f5a" font-size="21" font-weight="600" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif">0.07 KIC 5689121</text><line x1="496" y1="40" x2="496" y2="58" stroke="#ff9f5a" stroke-width="2"/>'
+ '<g fill="rgba(235,238,248,.5)" font-size="18" font-family="system-ui,-apple-system,sans-serif" text-anchor="middle"><text x="20" y="128">0</text><text x="360" y="128">0.05</text><text x="700" y="128">0.10</text></g>'
+ '<text x="700" y="160" fill="#ff7b7b" font-size="18" text-anchor="end" font-family="system-ui,-apple-system,sans-serif">TESS lead TIC 309780779: 0.57, off this scale</text></svg>'
+ '<figcaption>Where the Kepler candidate sits against the bar for statistical validation. Both numbers are TRICERATOPS outputs from the 11 October validation pass.</figcaption></figure>')
+SHEET_IDS = {i:t for i,t,d in CHAPS}
 
 PS1 = 'https://alasky.cds.unistra.fr/hips-image-services/hips2fits?hips=CDS%2FP%2FPanSTARRS%2FDR1%2Fcolor-z-zg-g&width=1200&height=1200&fov=0.0333&projection=TAN&coordsys=icrs&ra=285.907827&dec=40.941988&format=png'
 PS1_10 = PS1.replace('fov=0.0333', 'fov=0.1667')
@@ -57,18 +68,24 @@ html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name
 <meta name="description" content="Two archival transit searches: one well-vetted Kepler planet candidate (KIC 5689121), one TESS signal that is probably an eclipsing binary. Every test, chart, image and link.">
 <meta name="theme-color" content="#0b1020"><title>Planethunt | A planet candidate, and everything we checked</title>
 <style>{CSS}</style></head><body>
-<header class="top"><a class="brand" href="#top">Planethunt</a><nav aria-label="Sections">
-<a href="#summary">Summary</a><a href="#sky">The sky</a><a href="#kepler">Kepler signal</a><a href="#vetting">Vetting</a><a href="#fpp">False positives</a><a href="#planet">The planet</a><a href="#tess">TESS lead</a><a href="#search">Searches</a><a href="#next">Next</a><a href="#deep">Deep dive</a><a href="#links">Links</a></nav></header>
+<div class="edge" aria-hidden="true"></div>
+<header class="top"><a class="brand press" href="#top">Planethunt</a><span class="now" aria-live="off"></span><button class="menu press" type="button" aria-expanded="false" aria-controls="sheet"><i></i>Sections</button><span class="prog" aria-hidden="true"></span></header>
+<div class="scrim" aria-hidden="true"></div>
+<nav class="sheet" id="sheet" aria-label="Sections"><div class="grab"></div><h2>Jump to</h2>
+{SHEET}</nav>
 <main id="top">
 
 <section class="hero">
-<div class="hero-text"><div class="eyebrow">Archival research · updated 11 October 2026</div>
-<h1>One planet candidate.<br><span>Everything we checked.</span></h1>
-<p class="lead">A Kepler star in Lyra dims by 0.24% every 13.77 days. After 24 tasks of checks it still looks like a planet around a faint red dwarf. It is not confirmed, and the main open question is a hidden companion star.</p>
-<div class="pills"><span class="pill ok">Candidate, not a discovery</span><span class="pill">False-positive probability about 0.07</span><span class="pill warn">Validation needs below 0.015</span></div></div>
-<figure class="hero-img">{img('docs/sky/ps1-2arcmin.jpg','Pan-STARRS colour image 2 arcminutes wide centred on KIC 5689121, the target ringed in orange and the brighter neighbour KIC 5689116 in blue dashed',1000,1000)}
-<figcaption>KIC 5689121 (orange ring) and its brighter neighbour KIC 5689116 (blue dashed, 7.1″ away). Real Pan-STARRS DR1 image, 2′ wide, north up, east left. Credit: Pan-STARRS1 / STScI via CDS hips2fits.</figcaption></figure>
+<div><span class="eyebrow">Archival research · updated 11 October 2026</span>
+<h1>One planet candidate. <span>Everything we checked.</span></h1>
+<p class="lead">A faint red dwarf in Lyra dims by 0.24% every 13.77 days. After 24 tasks of checks it still looks like a planet. It is not confirmed, and the main open question is a hidden companion star.</p>
+<div class="pills"><span class="pill ok">Candidate, not a discovery</span><span class="pill warn">False-positive probability about 0.07</span><span class="pill">Validation needs below 0.015</span></div></div>
+<figure class="lensfig"><div class="lens"><div class="ph">{img('docs/sky/ps1-2arcmin.jpg','Pan-STARRS colour image 2 arcminutes wide centred on KIC 5689121, the target ringed in orange and the brighter neighbour KIC 5689116 in blue dashed',1000,1000)}</div></div>
+<figcaption>KIC 5689121 (orange ring) and its brighter neighbour KIC 5689116 (blue dashed, 7.1″ west). Real Pan-STARRS DR1 image, 2′ wide, north up, east left. Credit: Pan-STARRS1 / STScI via CDS hips2fits.</figcaption></figure>
 </section>
+
+<div class="stats rv"><div><b>13.769<em> d</em></b><span>orbital period, ±0.000065</span></div><div><b>0.24<em>%</em></b><span>transit depth, 70 transits</span></div><div><b>6<em>/8</em></b><span>vetting checks passed, 2 open</span></div><div><b>0.07</b><span>false-positive probability. Validation needs 0.015</span></div></div>
+<div class="path rv"><a class="press" href="#summary"><b>Verdict</b><span>What we know, see and don't</span></a><a class="press" href="#sky"><b>See it</b><span>Six real sky images</span></a><a class="press" href="#vetting"><b>Test it</b><span>Eight checks, 14 charts</span></a><a class="press" href="#links"><b>Get the data</b><span>Every link and file</span></a></div>
 
 <div class="notice"><strong>An unconfirmed signal is not a discovery.</strong> Neither lead is validated. "New" means absent from the catalogue snapshots we checked, not proven first. No candidate has been named, submitted or announced. Null-control results and failed leads are on this page on purpose.</div>
 
@@ -231,7 +248,21 @@ html = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name
 <section class="section" id="files">{files_sec}</section>
 <footer>Planethunt / Kuber Mehta. Public archival research, updated 11 October 2026.<br>Research candidates remain unconfirmed. No candidate submission, naming or outreach is performed.</footer>
 </main>{script}
-<script>(()=>{{const l=[...document.querySelectorAll('header.top nav a')],s=l.map(a=>document.querySelector(a.getAttribute('href')));const o=new IntersectionObserver(e=>{{e.forEach(x=>{{if(x.isIntersecting){{l.forEach(a=>a.classList.remove('on'));const i=s.indexOf(x.target);if(i>=0)l[i].classList.add('on')}}}})}},{{rootMargin:'-30% 0px -60% 0px'}});s.forEach(x=>x&&o.observe(x))}})()</script>
+<div class="lb" aria-modal="true" role="dialog" aria-label="Enlarged figure"><div class="bg"></div><div class="stage"></div><div class="cap"></div><button class="x press" type="button" aria-label="Close">×</button></div>
+<script>{SITEJS}</script>
 </body></html>'''
+import re as _re
+for cid,ct in SHEET_IDS.items():
+    html = html.replace(f'<section class="section" id="{cid}">', f'<section class="section" id="{cid}" data-chap="{ct}">')
+html = html.replace('<h2 class="deep-h" id="deep">', '<h2 class="deep-h" id="deep" data-chap="Deep dive">')
+html = _re.sub(r'<figure class="(?!lensfig|meter)([^"]*)"', lambda m: f'<figure class="{m.group(1)} rv"', html)
+html = html.replace('<article class="card', '<article class="rv card').replace('<div class="card', '<div class="rv card').replace('<div class="test ', '<div class="rv test ').replace('<div class="fail"', '<div class="rv fail"').replace('<div class="note-strip"', '<div class="rv note-strip"').replace('<div class="triptych">', '<div class="triptych rv">')
+html = html.replace('<a href="#links">','<a href="#links">')
+m = _re.search(r'(id="fpp"[^>]*><div class="eyebrow">Statistical validation</div><h2>How likely is a false positive\?</h2>)', html)
+assert m
+html = html.replace(m.group(1), m.group(1)+METER, 1)
+for c in ('btn','directory'):
+    pass
+html = html.replace('class="btn"','class="btn press"').replace('<div class="directory">','<div class="directory">').replace('<meta name="theme-color" content="#0b1020">','<meta name="theme-color" content="#05070d">')
 open('index.html', 'w').write(html)
 print(len(html))
