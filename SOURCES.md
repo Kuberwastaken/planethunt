@@ -46,3 +46,7 @@ Context references checked on 12 October 2026:
 Social metadata follows the [Open Graph protocol](https://ogp.me/); search metadata follows
 [Google Search Central guidance](https://developers.google.com/search/docs/appearance/site-names).
 The favicon is an original code-rendered planetary mark, not a measured phase.
+
+## Website icon
+
+The navigation GitHub mark comes from [Primer Octicons](https://github.com/primer/octicons), under the MIT license retained in `docs/icons/octicons-LICENSE.txt`.

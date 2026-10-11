@@ -40,7 +40,7 @@ async function renderSignal() {
       d.fold.forEach(([x,y,e])=>{p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="#666666" stroke-width="1.2"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="3.5" fill="${palette.sage}"><title>${x.toFixed(2)} hours: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
       p.parts.push(`<path d="${d.transitModel.map(([x,y],i)=>`${i?'L':'M'}${p.X(x).toFixed(2)},${p.Y(y).toFixed(2)}`).join('')}" fill="none" stroke="${palette.white}" stroke-width="2.4"/></g>`);
       d.fold.forEach(([x,y,e])=>hit(x,y,'15-minute transit bin',[['Hours from mid-transit',x.toFixed(3)],['Flux',`${y.toFixed(2)} ppm`],['Uncertainty',`±${e.toFixed(2)} ppm`]]));
-      caption='Full-baseline fold; error bars show bin uncertainty.';
+      caption='Stack the observations on a 13.77-day clock: a dip emerges. White line: transit model. Bars: uncertainty.';
       filename='kic5689121_folded_15min_bins.csv';meta=`${d.fold.length} bins · 15-minute intervals`;
       $('signal-legend').innerHTML='<span><i></i> Kepler measurements</span><span><i class="model"></i> Transit model</span>';
     } else if(currentView==='events') {
@@ -49,7 +49,7 @@ async function renderSignal() {
       p.parts.push(`<path d="M${p.X(-50)} ${p.Y(2400)}H${p.X(28)}" stroke="${palette.white}" stroke-dasharray="4 5"/><g clip-path="url(#plot-clip)">`);
       rows.forEach(([x,y,e,hold,q])=>{const c=hold?palette.yellow:palette.sage;p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="${c}" opacity=".55"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="4" fill="${c}"><title>Event ${x}, Q${q}${hold?', reserved quarter':''}: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
       rows.forEach(([x,y,e,hold,q])=>hit(x,y,`Event ${x} / Q${q}`,[['Depth',`${y.toFixed(2)} ppm`],['Uncertainty',`±${e.toFixed(2)} ppm`],['Selection',hold?'Reserved':'Search']]));
-      p.parts.push('</g>');caption='Dashed line: 2,400 ppm reference depth.';
+      p.parts.push('</g>');caption='The dip returns across many events, but each depth is noisy. White points come from the held-back quarters; the dashed line marks 2,400 ppm.';
       filename='kic5689121_per_transit_depths.csv';meta=`${rows.length} events shown · error bars ±1σ`;
       $('signal-legend').innerHTML='<span><i></i> Discovery quarters</span><span><i style="background:#ffffff"></i> Reserved quarters</span>';
     } else {
@@ -60,7 +60,7 @@ async function renderSignal() {
       p=svgPlot({title:`Kepler light curve ${q==='all'?'all quarters':`quarter ${q}`}`,xr,yr:[-7500,7500],xticks,yticks:[-6000,-3000,0,3000,6000],xlabel:'Time in BTJD (BJD TDB − 2,457,000)',ylabel:'Detrended brightness (ppm)'});
       for(const transit of [false,true]) {const path=rows.filter(r=>r[3]===transit).map(([t,y])=>`M${p.X(t).toFixed(1)},${p.Y(y).toFixed(1)}h.1`).join('');p.parts.push(`<path clip-path="url(#plot-clip)" d="${path}" stroke="${transit?palette.white:palette.sage}" stroke-width="${q==='all'?1.5:2.3}" stroke-linecap="round" opacity="${transit?.9:.4}"/>`);}
       const outside=rows.filter(r=>Math.abs(r[1])>7500).length;
-      caption=`${outside} points outside ±7,500 ppm are clipped; the CSV retains all values.`;
+      caption=`Every point is one brightness measurement. The long record lets us test whether the same timing holds years later. ${outside} points outside ±7,500 ppm are clipped; the CSV retains all values.`;
       filename='kic5689121_lightcurve_psf.csv';meta=`${rows.length.toLocaleString()} measurements · ${q==='all'?'2009–2013':`quarter ${q}`}`;
       $('signal-legend').innerHTML='<span><i></i> Original cadences</span><span><i style="background:#ffffff"></i> In-transit selection</span>';
     }
@@ -109,7 +109,7 @@ document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener(
  const hypothetical=button.dataset.fpp==='hypothetical',v=hypothetical?2.694156338609677:6.88513079714933;
  $('fpp-value').innerHTML=`${v.toFixed(1)}<span>%</span>`;$('fpp-bar').setAttribute('d',`M20 65H${20+v/10*480}`);
  $('fpp-scale').setAttribute('aria-label',`${hypothetical?'Hypothetical imaging scenario':'Available evidence'}: ${v.toFixed(1)} percent false-positive probability, above 1.5 percent threshold`);
- $('fpp-caption').textContent=hypothetical?'Simulated Keck K-band imaging. Two runs: 2.2–3.2%; still above the validation threshold.':'Modelled false-positive probability. Four runs: 5.8–8.9%. Conditional on model inputs.';
+ $('fpp-caption').textContent=hypothetical?'With hypothetical sharper imaging, the model gives 2.2–3.2% in alternative scenarios. That still misses the 1.5% threshold. These images have not been obtained.':'Modelled false-positive probability: 6.9%. Mostly a planet on a hidden companion; validation requires below 1.5%.';
  document.querySelectorAll('[data-fpp]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
 }));
 // Colour appears on interaction; the first static presentation remains monochrome.
