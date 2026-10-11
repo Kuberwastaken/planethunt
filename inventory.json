@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3331,
-      "sha256": "71f9abbe977b1459dfda639c555679d46fe81c2dd8848bf032d1e5c05b131f0c"
+      "bytes": 3966,
+      "sha256": "8ccdec757e72145e281197412a043eb2035d65d23b48f91e548dbee7960de964"
     },
     {
       "path": "SOURCES.md",
@@ -871,6 +871,111 @@
       "path": "docs/assets/tess-source.png",
       "bytes": 22199,
       "sha256": "49ce5d189ffe9dcda180f73ae089960ea933b6485d4d55a72c0c851e70dcef84"
+    },
+    {
+      "path": "docs/charts/coverage.svg",
+      "bytes": 2286,
+      "sha256": "152de438de355aa986442d7e5b25493e664d430aa02fe8a38d9c0c7ff02f5ae8"
+    },
+    {
+      "path": "docs/charts/fpp-runs.svg",
+      "bytes": 5677,
+      "sha256": "d1a291b377d26e540c98c3e047e47cbaffaa77ea85f5541983e2c470da8e4f3b"
+    },
+    {
+      "path": "docs/charts/fpp-scenarios.svg",
+      "bytes": 4584,
+      "sha256": "7766ef5850ad4e3c179a9b0ff8e40587a8c154c977e668c2754fe006f23228a8"
+    },
+    {
+      "path": "docs/charts/gaia-field.svg",
+      "bytes": 14475,
+      "sha256": "a211fc232b71ea1f8e890b57fd77394d8311112119c9fed9fd55a495680e6a1a"
+    },
+    {
+      "path": "docs/charts/kepler-centroid.svg",
+      "bytes": 4464,
+      "sha256": "b4561fc3af95b7ad291b08a153a956f033c01aced19a8f850263070fd1661248"
+    },
+    {
+      "path": "docs/charts/kepler-diffimage.svg",
+      "bytes": 11766,
+      "sha256": "377d5844a814e51a10bf446e44124bbee9706d3e10beaa48c59da3bcb166f108"
+    },
+    {
+      "path": "docs/charts/kepler-dilution.svg",
+      "bytes": 9437,
+      "sha256": "ad9d43d10fa3fc16c270336d171f98e336a33ca2e63c5707003ee023deb05f3f"
+    },
+    {
+      "path": "docs/charts/kepler-ephemeris-null.svg",
+      "bytes": 5116,
+      "sha256": "6477c0f7408fa47c625419d9cf74d4395f58d1590317f48d1140b015df65ff76"
+    },
+    {
+      "path": "docs/charts/kepler-event-depths.svg",
+      "bytes": 17803,
+      "sha256": "27975dd165fa9ba7d08e1bf52ebf711a987c486ceaee079b4c2cf04f1e0a49a3"
+    },
+    {
+      "path": "docs/charts/kepler-fold.svg",
+      "bytes": 20032,
+      "sha256": "1aeb80faec1142a46f8dcdd586e8e336f56a028d7ba92fdf70452c4b7e010432"
+    },
+    {
+      "path": "docs/charts/null-control.svg",
+      "bytes": 3364,
+      "sha256": "9a833b677e18d3974cc72f4f81b72cc42997e51dd6dd5dfc010a82f46b53b802"
+    },
+    {
+      "path": "docs/charts/tess-bls.svg",
+      "bytes": 3841,
+      "sha256": "da525a5710826f9fe501380a86e6f6fb7553ff8452be76775562e5ca0b4cb56c"
+    },
+    {
+      "path": "docs/charts/tess-depth-consistency.svg",
+      "bytes": 4325,
+      "sha256": "f5a88ec48b9d35a01f585f198f73676cff1485dad926f73891e1ba1c725b2bba"
+    },
+    {
+      "path": "docs/charts/tess-fold.svg",
+      "bytes": 9798,
+      "sha256": "e450a6159fc0a90197cd59f04f859dbf9fd458e98295f287baea7e0344c137a3"
+    },
+    {
+      "path": "docs/sky/2mass-10arcmin.jpg",
+      "bytes": 143519,
+      "sha256": "b4ec5964104287e3666a26b23fdf005fb711c0fa531517f178544d30abfb7088"
+    },
+    {
+      "path": "docs/sky/SOURCES.json",
+      "bytes": 759,
+      "sha256": "ad8cf8175ab761e3d05bd94d9a793bcf5b8e18041b7f4631d45ee174d9b9da45"
+    },
+    {
+      "path": "docs/sky/allwise-10arcmin.jpg",
+      "bytes": 43493,
+      "sha256": "4aecb57e9983bc40ac4a9e3eb481425ed7cf5be802dac049b5c18a53142d5a58"
+    },
+    {
+      "path": "docs/sky/dss2-15arcmin.jpg",
+      "bytes": 154706,
+      "sha256": "0234225456b349d73c3c02d7c23f55e073ed4052b1c77eaa74ad5a2bc80e8f77"
+    },
+    {
+      "path": "docs/sky/ps1-10arcmin.jpg",
+      "bytes": 235743,
+      "sha256": "b57d8ba18773b405f6f328df09bc2902e3de262fa8f3e3998a48b3a90319c723"
+    },
+    {
+      "path": "docs/sky/ps1-2arcmin-clean.jpg",
+      "bytes": 220766,
+      "sha256": "7c2f980af5e8cfbc769c489b78dd4a908fe3ddf1b2fac1e5975dfa6e990db3db"
+    },
+    {
+      "path": "docs/sky/ps1-2arcmin.jpg",
+      "bytes": 213071,
+      "sha256": "9b73c6e7b3a42f5c575cbdeb271ab32346fd62deee29b25e870faf2728e142dd"
     },
     {
       "path": "evidence/codex/FINAL_STATUS.json",
@@ -10714,18 +10819,48 @@
     },
     {
       "path": "index.html",
-      "bytes": 28474,
-      "sha256": "b2a2596f8118bf2177bc82ece44115e6ac940e001fd8ebfe6aa962cb43790596"
+      "bytes": 179609,
+      "sha256": "0e1b0ddb8db42b0a4c978287ccf1a824a80b5f55360b1ade1b78411394a291fd"
     },
     {
       "path": "planethunt.md",
-      "bytes": 10323,
-      "sha256": "f466c474cd788e3fc2b9f49e46c2493e8d3e59638a0035fdc77ee3954f071038"
+      "bytes": 12209,
+      "sha256": "c36a929895c3a0c3a6dcf62121ad9c29b2d37ad98901062f156908d3caa07fba"
     },
     {
       "path": "scripts/build_visuals.py",
       "bytes": 3042,
       "sha256": "6f0cb90cafe29d28e79a43961aa01916a3846dcd67b1a17e8462c87eda6287c5"
+    },
+    {
+      "path": "scripts/site/build_site.py",
+      "bytes": 34235,
+      "sha256": "155c107a09f2a6dbf762d6ca67c20e2c51842b62923b35c88a3d97f001917430"
+    },
+    {
+      "path": "scripts/site/charts.py",
+      "bytes": 21813,
+      "sha256": "917612ddb1321b4128c63ccb8eaedefafb3109d2d8d4a56a82eec525dd74e0f1"
+    },
+    {
+      "path": "scripts/site/legacy_sections.html",
+      "bytes": 28474,
+      "sha256": "b2a2596f8118bf2177bc82ece44115e6ac940e001fd8ebfe6aa962cb43790596"
+    },
+    {
+      "path": "scripts/site/refresh_manifests.py",
+      "bytes": 1060,
+      "sha256": "e39993f9c381c5ffec8d46761d76cdafd50bd8926f362bc810c639e21b292537"
+    },
+    {
+      "path": "scripts/site/site.css",
+      "bytes": 8216,
+      "sha256": "145c6ee2501f8dfadf2a6cdf12af60016da9535800a5a61d0fc52da69138fdd1"
+    },
+    {
+      "path": "scripts/site/sky.py",
+      "bytes": 3534,
+      "sha256": "fe0e50bf4f2fe21c8f6396b871f26f64e1211f3c2211743c33612928b3218dcc"
     },
     {
       "path": "third_party/eumemic-LICENSE.txt",
@@ -10738,5 +10873,5 @@
       "sha256": "f35472e087ff76e4eb93c717d28a8fcfef0d1b2bdffa1fe1ccffa6d87cb1c3e9"
     }
   ],
-  "updated": "2026-10-11 validation pack added"
+  "updated": "2026-10-11 validation pack added; site redesign"
 }
