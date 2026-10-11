@@ -48,6 +48,7 @@ The repository root remains deployable as a static GitHub Pages site, including 
 python3 scripts/site/charts.py
 python3 scripts/site/build_site.py
 python3 -m unittest discover -s scripts/site -p 'test_*.py'
+node --test scripts/site/test_scroll_interactions.cjs
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
@@ -55,6 +56,9 @@ Open `http://127.0.0.1:8765/`. The build runs offline from the saved evidence.
 
 - `scripts/site/page.html`: public narrative and accessible HTML template.
 - `scripts/site/site.css`, `site.js`: responsive styles and browser interactions.
+  Scrolling advances the signal and survey comparisons; an explicit selection keeps
+  that view. Reduced-motion preferences disable automatic switching and animation.
+  The illustrative orbit animation uses one second per day, preserving the period ratio.
 - `docs/charts/`: 20 reproducible SVG diagnostics, including a Lyra locator.
 - `scripts/site/evidence_atlas.py`: five additional diagnostics, run automatically by the
   page build. Derived residuals, event histogram and quarter coverage have CSV sidecars

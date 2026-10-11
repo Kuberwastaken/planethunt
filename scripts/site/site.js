@@ -133,9 +133,42 @@ $('file-explorer').addEventListener('toggle',()=>{if($('file-explorer').open)loa
 // One scroll-linked movement, only while the footer is near the viewport.
 const footer=document.querySelector('.site-footer'),reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let footerVisible=false,footerFrame=0;
-function paintFooter(){footerFrame=0;const rect=footer.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.min(innerHeight,rect.height)));footer.style.setProperty('--footer-shift',`${reduceMotion.matches?0:(1-progress)*55}px`);footer.style.setProperty('--star-turn',`${reduceMotion.matches?0:progress*135}deg`);}
+function paintFooter(){footerFrame=0;const rect=footer.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.min(innerHeight,rect.height)));footer.style.setProperty('--footer-progress',reduceMotion.matches?1:progress);footer.style.setProperty('--footer-shift',`${reduceMotion.matches?0:(1-progress)*55}px`);footer.style.setProperty('--star-turn',`${reduceMotion.matches?0:progress*135}deg`);}
 new IntersectionObserver(entries=>{footerVisible=entries[0].isIntersecting;footer.classList.toggle('in-view',footerVisible);if(footerVisible)paintFooter();},{rootMargin:'100px'}).observe(footer);
 addEventListener('scroll',()=>{if(footerVisible&&!footerFrame)footerFrame=requestAnimationFrame(paintFooter);},{passive:true});
 addEventListener('resize',paintFooter);reduceMotion.addEventListener('change',paintFooter);
+// Scroll advances comparison views without moving focus or taking over scrolling.
+// Any explicit choice locks that comparison for the rest of the visit.
+const comparisons=[
+ {anchor:$('signal-chart'),buttons:[...document.querySelectorAll('[data-view]')],index:0,locked:false,choose(i){currentView=this.buttons[i].dataset.view;renderSignal();}},
+ {anchor:$('survey-frame'),buttons:[...document.querySelectorAll('[data-survey]')],index:0,locked:false,choose(i){survey=this.buttons[i].dataset.survey;renderSky();}}
+];
+comparisons.forEach(rule=>{
+ rule.buttons.forEach(button=>button.addEventListener('click',()=>{rule.locked=true;},true));
+ // Focus and touch in a plot mean someone is inspecting it; preserve that view.
+ rule.anchor.addEventListener('focusin',()=>{rule.locked=true;});
+ rule.anchor.addEventListener('click',()=>{rule.locked=true;});
+});
+[$('quarter'),$('heldout-only')].forEach(control=>control.addEventListener('change',()=>{comparisons[0].locked=true;},true));
+let comparisonFrame=0,previousScroll=scrollY;
+function advanceComparisons(){
+ comparisonFrame=0;
+ const down=scrollY>=previousScroll;previousScroll=scrollY;
+ if(reduceMotion.matches||dialog.open)return;
+ comparisons.forEach(rule=>{
+  if(rule.locked)return;
+  const rect=rule.anchor.getBoundingClientRect();
+  if(rect.bottom<=0||rect.top>=innerHeight)return;
+  const middle=rect.top+rect.height/2;
+  const progress=Math.max(0,Math.min(.999,(innerHeight*.8-middle)/(innerHeight*.6)));
+  const index=Math.floor(progress*rule.buttons.length);
+  if(index===rule.index||(down&&index<rule.index)||(!down&&index>rule.index))return;
+  rule.index=index;rule.choose(index);
+ });
+}
+addEventListener('scroll',()=>{if(!comparisonFrame)comparisonFrame=requestAnimationFrame(advanceComparisons);},{passive:true});
+// Illustrative orbits keep the period ratio; no motion is applied to measured points.
+const orbitObserver=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('is-in-view',entry.isIntersecting)),{threshold:.15});
+document.querySelectorAll('.orbit-diagram').forEach(svg=>orbitObserver.observe(svg));
 const navLinks=[...document.querySelectorAll('nav a')];const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}),{rootMargin:'-15% 0px -65% 0px'});navLinks.forEach(a=>navObserver.observe(document.querySelector(a.hash)));
 })();
