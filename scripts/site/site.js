@@ -1,85 +1,108 @@
-(()=>{
-const RM=matchMedia('(prefers-reduced-motion: reduce)');
-const doc=document.documentElement;
-/* Spring: velocity-aware, interruptible. zeta=1 is critically damped (no bounce). */
-class Spring{
-  constructor(v,o={}){this.x=v;this.v=0;this.t=v;this.k=o.k||260;this.z=o.z==null?1:o.z;this.cb=o.cb;this.raf=0;this.last=0}
-  cfg(o){if(o.k)this.k=o.k;if(o.z!=null)this.z=o.z;return this}
-  to(t,o={}){this.cfg(o);this.t=t;if(o.v!=null)this.v=o.v;
-    if(RM.matches){this.x=t;this.v=0;cancelAnimationFrame(this.raf);this.raf=0;this.cb(this.x,true);return this}
-    if(!this.raf){this.last=performance.now();this.raf=requestAnimationFrame(n=>this.tick(n))}return this}
-  set(x){cancelAnimationFrame(this.raf);this.raf=0;this.x=x;this.t=x;this.v=0;this.cb(x,false);return this}
-  tick(n){let dt=Math.min(.032,(n-this.last)/1000);this.last=n;const c=2*this.z*Math.sqrt(this.k);
-    for(let i=0;i<4;i++){const h=dt/4,a=-this.k*(this.x-this.t)-c*this.v;this.v+=a*h;this.x+=this.v*h}
-    if(Math.abs(this.x-this.t)<.0008&&Math.abs(this.v)<.01){this.x=this.t;this.v=0;this.raf=0;this.cb(this.x,true);return}
-    this.cb(this.x,false);this.raf=requestAnimationFrame(m=>this.tick(m))}
+/* Presentation only: all plotted measurements come from committed evidence exports. */
+(() => {
+'use strict';
+document.documentElement.classList.add('js');
+const $ = id => document.getElementById(id);
+const V = 'analysis/validation-20261011/';
+const palette = {ink:'#eeeae2', muted:'#adb2a8', line:'#343733', orange:'#eda878', sage:'#b4c6b2', yellow:'#d7c18d'};
+const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let dataPromise;
+function getData() {
+  if (!dataPromise) dataPromise = fetch('docs/site-data.json').then(r => {if(!r.ok) throw new Error('data'); return r.json();}).catch(e => {dataPromise = null; throw e;});
+  return dataPromise;
 }
-const clamp=(a,b,c)=>Math.min(c,Math.max(b,a));
-doc.classList.add('js');
-document.querySelectorAll('.directory a').forEach(a=>a.classList.add('press'));
-document.querySelectorAll('.press').forEach(el=>{
-  const s=new Spring(1,{k:700,cb:v=>{el.style.transform=v===1?'':`scale(${v})`}});
-  const dn=()=>s.to(.955,{k:900,z:1});const up=()=>s.to(1,{k:380,z:.62});
-  el.addEventListener('pointerdown',dn);['pointerup','pointercancel','pointerleave'].forEach(e=>el.addEventListener(e,up));
-});
-/* reveal on scroll */
-const rv=[...document.querySelectorAll('.rv')];let batch=0,bt=0;
-const showNow=el=>{el.style.opacity=1;el.style.transform='';el.classList.remove('rv')};
-const io=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting&&e.boundingClientRect.top<0){showNow(e.target);io.unobserve(e.target);return}
-  if(!e.isIntersecting)return;io.unobserve(e.target);const el=e.target,d=(batch++)*55;clearTimeout(bt);bt=setTimeout(()=>batch=0,200);
-  if(RM.matches){showNow(el);return}
-  const s=new Spring(0,{k:120,z:1,cb:(p,end)=>{const q=clamp(p,0,1);el.style.opacity=q;el.style.transform=`translateY(${(1-q)*28}px)`;if(end)showNow(el)}});
-  setTimeout(()=>s.to(1),d)})},{rootMargin:'0px 0px -8% 0px'});
-rv.forEach(el=>io.observe(el));
-setTimeout(()=>{document.querySelectorAll('.rv').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight*1.5&&getComputedStyle(el).opacity==='0')showNow(el)})},4000);
-/* chapters: nav label, progress, active menu item */
-const chapters=[...document.querySelectorAll('[data-chap]')];
-const now=document.querySelector('.now'),prog=document.querySelector('.prog'),links=[...document.querySelectorAll('.sheet a')];
-const hero=document.querySelector('.lens .ph');let tick=0;
-const onScroll=()=>{if(tick)return;tick=requestAnimationFrame(()=>{tick=0;const y=scrollY,h=doc.scrollHeight-innerHeight;prog.style.transform=`scaleX(${h>0?clamp(y/h,0,1):0})`;
-  let cur=null;for(const c of chapters){if(c.getBoundingClientRect().top<innerHeight*.4)cur=c}
-  now.textContent=cur?cur.dataset.chap:'';links.forEach(a=>a.classList.toggle('on',!!cur&&a.getAttribute('href')==='#'+cur.id));
-  if(hero&&!RM.matches&&y<innerHeight*1.2)hero.style.transform=`translateY(${y*.07}px)`})};
-addEventListener('scroll',onScroll,{passive:true});onScroll();
-/* menu sheet: springs out of the button, same path back */
-const sheet=document.querySelector('.sheet'),scrim=document.querySelector('.scrim'),btn=document.querySelector('.menu');let open=false,dragY=0;
-const paint=p=>{const q=clamp(p,0,1.06);const r=btn.getBoundingClientRect(),s=sheet.getBoundingClientRect();
-  sheet.style.visibility=p>.001?'visible':'hidden';sheet.style.opacity=clamp(p*1.6,0,1);
-  sheet.style.transformOrigin=`${r.left+r.width/2-s.left}px 0px`;
-  sheet.style.transform=`translateY(${dragY}px) scale(${.3+.7*q})`;scrim.style.opacity=clamp(p,0,1)};
-const sp=new Spring(0,{k:320,z:.9,cb:(p,end)=>{paint(p);if(end&&p===0){sheet.style.visibility='hidden'}}});
-const setOpen=o=>{open=o;btn.setAttribute('aria-expanded',o);scrim.classList.toggle('on',o);sheet.toggleAttribute('inert',!o);
-  if(o){dragY=0;sp.to(1,{z:.86})}else{sp.to(0,{z:1})}};
-sheet.setAttribute('inert','');btn.addEventListener('click',()=>setOpen(!open));scrim.addEventListener('click',()=>setOpen(false));
-sheet.addEventListener('click',e=>{if(e.target.closest('a'))setOpen(false)});
-addEventListener('keydown',e=>{if(e.key==='Escape'){if(lb.classList.contains('on'))closeLB();else if(open)setOpen(false)}});
-let sd=null;sheet.addEventListener('pointerdown',e=>{if(e.target.closest('a')&&e.pointerType==='mouse')return;sd={y:e.clientY,t:performance.now(),py:e.clientY,pt:performance.now(),v:0,id:e.pointerId,drag:false}});
-addEventListener('pointermove',e=>{if(!sd||e.pointerId!==sd.id)return;const dy=e.clientY-sd.y;if(!sd.drag&&Math.abs(dy)>8&&sheet.scrollTop<=0){sd.drag=true;sheet.setPointerCapture(e.pointerId)}
-  if(sd.drag){const n=performance.now();sd.v=(e.clientY-sd.py)/Math.max(1,n-sd.pt)*1000;sd.py=e.clientY;sd.pt=n;dragY=dy<0?dy:dy*.25;paint(sp.x)}});
-const sEnd=()=>{if(!sd)return;const d=sd.drag,v=sd.v;sd=null;if(!d)return;const proj=dragY+v*.25;if(proj<-70)setOpen(false);else{const s=new Spring(dragY,{k:300,z:.8,cb:x=>{dragY=x;paint(sp.x)}});s.v=v;s.to(0)}};
-addEventListener('pointerup',sEnd);addEventListener('pointercancel',sEnd);
-/* lightbox: grows from the tapped figure, drag any way to dismiss with momentum */
-const lb=document.querySelector('.lb'),stage=lb.querySelector('.stage'),bg=lb.querySelector('.bg'),cap=lb.querySelector('.cap'),xb=lb.querySelector('.x');
-let src=null,from=null,ox=0,oy=0,opener=null;
-const place=p=>{const q=p;const f=from,r=stage.__r;if(!r)return;const dx=(f.x+f.w/2)-(r.x+r.w/2),dy=(f.y+f.h/2)-(r.y+r.h/2),sx=f.w/r.w,sy=f.w/r.w;
-  const u=1-q;stage.style.transform=`translate(${dx*u+ox}px,${dy*u+oy}px) scale(${sx*u+q})`;
-  const f2=clamp(q,0,1)*(1-clamp(Math.hypot(ox,oy)/500,0,.7));bg.style.opacity=f2;cap.style.opacity=clamp(q*q,0,1)*(1-clamp(Math.hypot(ox,oy)/160,0,1));xb.style.opacity=clamp(q,0,1)};
-const lp=new Spring(0,{k:260,z:.92,cb:(p,end)=>{place(p);if(end&&p===0){lb.classList.remove('on');stage.innerHTML='';doc.style.overflow='';if(opener)opener.focus({preventScroll:true})}}});
-function openLB(fig){opener=fig;const m=fig.querySelector('img,svg');if(!m)return;const r=m.getBoundingClientRect();from={x:r.left,y:r.top,w:r.width,h:r.height};
-  stage.innerHTML='';const c=m.cloneNode(true);c.removeAttribute('loading');c.removeAttribute('width');c.removeAttribute('height');stage.appendChild(c);
-  cap.textContent=(fig.querySelector('figcaption')||{}).textContent||'';lb.classList.add('on');doc.style.overflow='hidden';ox=oy=0;
-  stage.style.transform='';const go=()=>{const b=stage.getBoundingClientRect();stage.__r={x:b.left,y:b.top,w:b.width,h:b.height};lp.set(0);lp.to(1,{z:.9,k:260});xb.focus({preventScroll:true})};
-  if(c.tagName==='IMG'&&!c.complete)c.onload=go;else go()}
-function closeLB(v){lp.to(0,{z:1,k:300})}
-let ld=null;stage.addEventListener('pointerdown',e=>{ld={x:e.clientX,y:e.clientY,px:e.clientX,py:e.clientY,pt:performance.now(),vx:0,vy:0,id:e.pointerId,ox,oy};stage.setPointerCapture(e.pointerId);lp.set(lp.x)});
-stage.addEventListener('pointermove',e=>{if(!ld||e.pointerId!==ld.id)return;const n=performance.now(),dt=Math.max(1,n-ld.pt);ld.vx=(e.clientX-ld.px)/dt*1000;ld.vy=(e.clientY-ld.py)/dt*1000;ld.px=e.clientX;ld.py=e.clientY;ld.pt=n;ox=e.clientX-ld.x;oy=e.clientY-ld.y;place(lp.x)});
-const lEnd=e=>{if(!ld)return;const d=ld;ld=null;const moved=Math.hypot(ox,oy);const px=ox+d.vx*.2,py=oy+d.vy*.2;
-  if(moved<6){ox=oy=0;lp.set(1);closeLB();return}
-  if(Math.hypot(px,py)>140){const sx=new Spring(ox,{k:200,z:1,cb:x=>{ox=x;place(lp.x)}}),sy=new Spring(oy,{k:200,z:1,cb:y=>{oy=y;place(lp.x)}});sx.v=d.vx;sy.v=d.vy;sx.to(0);sy.to(0);closeLB()}
-  else{const sx=new Spring(ox,{k:300,z:.75,cb:x=>{ox=x;place(lp.x)}}),sy=new Spring(oy,{k:300,z:.75,cb:y=>{oy=y;place(lp.x)}});sx.v=d.vx;sy.v=d.vy;sx.to(0);sy.to(0);lp.to(1)}};
-stage.addEventListener('pointerup',lEnd);stage.addEventListener('pointercancel',lEnd);
-bg.addEventListener('click',closeLB);xb.addEventListener('click',()=>closeLB());
-document.querySelectorAll('figure').forEach(f=>{if(!f.querySelector('img,svg')||f.closest('.lb'))return;f.dataset.zoom='';f.tabIndex=0;f.setAttribute('role','button');f.setAttribute('aria-label','Enlarge: '+((f.querySelector('figcaption')||{}).textContent||'figure').slice(0,80));f.classList.add('press');
-  const s=new Spring(1,{k:700,cb:v=>{f.style.transform=v===1?'':`scale(${v})`}});f.addEventListener('pointerdown',()=>s.to(.97,{k:900,z:1}));['pointerup','pointercancel','pointerleave'].forEach(t=>f.addEventListener(t,()=>s.to(1,{k:380,z:.62})));
-  f.addEventListener('click',e=>{if(e.target.closest('a'))return;openLB(f)});f.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openLB(f)}})});
+function svgPlot({title, xr, yr, xticks, yticks, xlabel, ylabel}) {
+  const w=1000,h=430,L=76,R=24,T=30,B=64;
+  const X=x=>L+(x-xr[0])/(xr[1]-xr[0])*(w-L-R);
+  const Y=y=>h-B-(y-yr[0])/(yr[1]-yr[0])*(h-T-B);
+  const parts=[`<svg viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="dynamic-chart-title dynamic-chart-desc"><title id="dynamic-chart-title">${escape(title)}</title><desc id="dynamic-chart-desc">${escape(ylabel)} against ${escape(xlabel)}. Data download and description below.</desc><defs><clipPath id="plot-clip"><rect x="${L}" y="${T}" width="${w-L-R}" height="${h-T-B}"/></clipPath></defs>`];
+  const text=(x,y,t,anchor='middle',color=palette.muted,size=13)=>`<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${color}" font-family="Helvetica Neue,Helvetica,sans-serif" font-size="${size}">${escape(t)}</text>`;
+  yticks.forEach(y=>{parts.push(`<path d="M${L} ${Y(y)}H${w-R}" stroke="${y===0?'#676d63':palette.line}"/>`);parts.push(text(L-12,Y(y)+5,y.toLocaleString(),'end'));});
+  xticks.forEach(x=>{parts.push(text(X(x),h-B+27,x));});
+  parts.push(text((L+w-R)/2,h-10,xlabel));
+  parts.push(`<text x="18" y="${(T+h-B)/2}" transform="rotate(-90 18 ${(T+h-B)/2})" text-anchor="middle" fill="${palette.muted}" font-size="13" font-family="Helvetica Neue,Helvetica,sans-serif">${escape(ylabel)}</text>`);
+  return {X,Y,parts,finish:()=>parts.join('')+'</svg>'};
+}
+let currentView='fold', renderTicket=0;
+async function renderSignal() {
+  const ticket=++renderTicket;
+  try {
+    const d=await getData(); if(ticket!==renderTicket)return;
+    if($('quarter').options.length===1) [...new Set(d.light.map(r=>r[2]))].sort((a,b)=>a-b).forEach(q=>{const o=new Option(`Quarter ${q}`,String(q));$('quarter').add(o);});
+    let p,caption,filename,meta;
+    $('event-controls').hidden=currentView!=='events'; $('light-controls').hidden=currentView!=='light';
+    if(currentView==='fold') {
+      p=svgPlot({title:'Folded transit of KIC 5689121',xr:[-8.5,8.5],yr:[-3400,1200],xticks:[-8,-6,-4,-2,0,2,4,6,8],yticks:[-3000,-2000,-1000,0,1000],xlabel:'Hours from the middle of the transit',ylabel:'Change in brightness (ppm)'});
+      p.parts.push('<g clip-path="url(#plot-clip)">');
+      d.fold.forEach(([x,y,e])=>{p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="#667864" stroke-width="1.2"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="3.5" fill="${palette.sage}"><title>${x.toFixed(2)} hours: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
+      p.parts.push(`<path d="${d.transitModel.map(([x,y],i)=>`${i?'L':'M'}${p.X(x).toFixed(2)},${p.Y(y).toFixed(2)}`).join('')}" fill="none" stroke="${palette.orange}" stroke-width="2.4"/></g>`);
+      caption='Saved full-light-curve fold at 13.769448 days, shown in 15-minute bins. Error bars show the exported bin errors; orange is the fitted transit model. This display is not a new holdout test.';
+      filename='kic5689121_folded_15min_bins.csv';meta=`${d.fold.length} bins · 15-minute intervals`;
+      $('signal-legend').innerHTML='<span><i></i> Kepler measurements</span><span><i class="model"></i> Transit model</span>';
+    } else if(currentView==='events') {
+      const rows=d.events.filter(r=>!$('heldout-only').checked||r[3]);
+      p=svgPlot({title:'Individual event depths, 74 measured events',xr:[-50,28],yr:[-2500,8500],xticks:[-48,-36,-24,-12,0,12,24],yticks:[-2000,0,2000,4000,6000,8000],xlabel:'Transit number relative to the saved reference epoch',ylabel:'Measured transit depth (ppm)'});
+      p.parts.push(`<path d="M${p.X(-50)} ${p.Y(2400)}H${p.X(28)}" stroke="${palette.orange}" stroke-dasharray="4 5"/><g clip-path="url(#plot-clip)">`);
+      rows.forEach(([x,y,e,hold,q])=>{const c=hold?palette.yellow:palette.sage;p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="${c}" opacity=".55"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="4" fill="${c}"><title>Event ${x}, Q${q}${hold?', reserved quarter':''}: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
+      p.parts.push('</g>');caption='All 74 events in the later measurement export, 23 from reserved quarters. The original stricter vetter retained 70 / 22. Event scatter is much larger than the formal error on a combined fold.';
+      filename='kic5689121_per_transit_depths.csv';meta=`${rows.length} events shown · error bars ±1σ`;
+      $('signal-legend').innerHTML='<span><i></i> Discovery quarters</span><span><i style="background:#d7c18d"></i> Reserved quarters</span>';
+    } else {
+      const q=$('quarter').value,rows=d.light.filter(r=>q==='all'||r[2]===Number(q));
+      const lo=rows[0][0],hi=rows[rows.length-1][0],xr=[lo-1,hi+1];
+      const xticks=Array.from({length:6},(_,i)=>Math.round(lo+(hi-lo)*i/5));
+      p=svgPlot({title:`Kepler light curve ${q==='all'?'all quarters':`quarter ${q}`}`,xr,yr:[-7500,7500],xticks,yticks:[-6000,-3000,0,3000,6000],xlabel:'Time in BTJD (BJD TDB − 2,457,000)',ylabel:'Detrended brightness (ppm)'});
+      for(const transit of [false,true]) {const path=rows.filter(r=>r[3]===transit).map(([t,y])=>`M${p.X(t).toFixed(1)},${p.Y(y).toFixed(1)}h.1`).join('');p.parts.push(`<path clip-path="url(#plot-clip)" d="${path}" stroke="${transit?palette.orange:palette.sage}" stroke-width="${q==='all'?1.5:2.3}" stroke-linecap="round" opacity="${transit?.9:.4}"/>`);}
+      const outside=rows.filter(r=>Math.abs(r[1])>7500).length;
+      caption=`${rows.length.toLocaleString()} original detrended cadences. Orange marks the export’s in-transit selection. Gaps reflect missing observations. The plot clips ${outside} points outside ±7,500 ppm; the CSV keeps every value. Choose a quarter to inspect individual dips.`;
+      filename='kic5689121_lightcurve_psf.csv';meta=`${rows.length.toLocaleString()} measurements · ${q==='all'?'2009–2013':`quarter ${q}`}`;
+      $('signal-legend').innerHTML='<span><i></i> Original cadences</span><span><i style="background:#eda878"></i> In-transit selection</span>';
+    }
+    $('signal-chart').innerHTML=p.finish();$('signal-caption').textContent=caption;$('chart-meta').textContent=meta;$('signal-download').href=V+'post/data/'+filename;
+    document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===currentView)));
+  } catch(e) {$('chart-meta').textContent='Interactive data could not load. The saved chart and CSV remain available; select a view to retry.';}
+}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>{currentView=b.dataset.view;renderSignal();}));
+$('heldout-only').addEventListener('change',renderSignal);$('quarter').addEventListener('change',renderSignal);
+// Load only when approaching the plot; the static SVG remains available before then.
+const signalObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){renderSignal();signalObserver.disconnect();}},{rootMargin:'200px'});signalObserver.observe($('signal'));
+
+const surveys={
+ ps1:{src:V+'post/source_images/ps1_2arcmin.png',fov:.0333,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'2′',scale:'20″',bar:20,credit:'Pan-STARRS1 / STScI via CDS',desc:'The clearest view of the pair. The host is the fainter red star; its neighbour is about 2.1 times brighter in Gaia G. This is why separating their light matters.'},
+ wide:{src:V+'post/source_images/ps1_10arcmin.png',fov:.1667,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'10′',scale:'1′',bar:60,credit:'Pan-STARRS1 / STScI via CDS',desc:'A wider view of this crowded region of Lyra. The candidate is at the same central coordinates; the larger field makes the abundance of neighbouring stars clear.'},
+ dss:{src:V+'post/source_images/dss2_15arcmin.png',fov:.25,hips:'CDS/P/DSS2/color',name:'DSS2 photographic plates',width:'15′',scale:'2′',bar:120,credit:'DSS2 / STScI, AURA, Palomar, UK Schmidt via CDS',desc:'Older photographic survey plates provide historical context. Their lower resolution cannot by itself settle the close-companion question.'},
+ mass:{src:'docs/sky/2mass-10arcmin-clean.png',fov:.1667,hips:'CDS/P/2MASS/color',name:'2MASS near-infrared',width:'10′',scale:'1′',bar:60,credit:'2MASS / UMass, IPAC-Caltech via CDS',desc:'Near-infrared J, H and K bands show the field at longer wavelengths. Colours and resolution differ from Pan-STARRS; this is not a planet image.'},
+ wise:{src:'docs/sky/allwise-10arcmin-clean.png',fov:.1667,hips:'CDS/P/allWISE/color',name:'AllWISE mid-infrared',width:'10′',scale:'1′',bar:60,credit:'AllWISE / NASA, JPL-Caltech, UCLA via CDS',desc:'The much coarser mid-infrared view blends the close pair. A catalogue-position marker can locate the star but does not mean the image resolves it.'}
+};
+let survey='ps1';
+function renderSky(){
+ const s=surveys[survey],span=s.fov*3600,neighbor=500+7.1/span*1000,r=survey==='ps1'?36:14;
+ $('survey-image').src=s.src;$('survey-image').alt=`${s.name} survey centred on KIC 5689121, ${s.width} wide, north up and east left`;
+ $('survey-overlay').innerHTML=`<g ${$('sky-labels').checked?'':'visibility="hidden"'}><circle cx="500" cy="500" r="${r}" fill="none" stroke="${palette.orange}" stroke-width="2"/><circle cx="${neighbor}" cy="500" r="${survey==='ps1'?30:10}" fill="none" stroke="${palette.sage}" stroke-width="2" stroke-dasharray="5 5"/></g><g stroke="${palette.ink}" stroke-width="2" fill="none"><path d="M50 920h${s.bar/span*1000}M920 120V65m0 55h-55"/></g><g fill="${palette.ink}" font-size="18" font-family="Helvetica Neue,Helvetica,sans-serif"><text x="50" y="903">${s.scale}</text><text x="912" y="48">N</text><text x="840" y="126">E</text></g>`;
+ $('survey-description').textContent=s.desc;$('survey-caption').textContent=`${s.name}, ${s.width} wide. ${s.credit}. Orange: candidate host; dashed: bright neighbour. Markers use catalogue positions; coarse surveys may not resolve the pair.`;
+ $('survey-source').href='https://alasky.cds.unistra.fr/hips-image-services/hips2fits?'+new URLSearchParams({hips:s.hips,width:1200,height:1200,fov:s.fov,projection:'TAN',coordsys:'icrs',ra:285.907827,dec:40.941988,format:'png'});
+ document.querySelectorAll('[data-survey]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.survey===survey)));
+}
+document.querySelectorAll('[data-survey]').forEach(b=>b.addEventListener('click',()=>{survey=b.dataset.survey;renderSky();}));$('sky-labels').addEventListener('change',renderSky);renderSky();
+const dialog=$('image-dialog');$('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
+$('close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
+
+document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener('click',()=>{
+ const hypothetical=button.dataset.fpp==='hypothetical',v=hypothetical?2.694156338609677:6.88513079714933;
+ $('fpp-value').innerHTML=`${v.toFixed(1)}<span>%</span>`;$('fpp-bar').setAttribute('d',`M20 65H${20+v/10*480}`);
+ $('fpp-scale').setAttribute('aria-label',`${hypothetical?'Hypothetical imaging scenario':'Available evidence'}: ${v.toFixed(1)} percent false-positive probability, above 1.5 percent threshold`);
+ $('fpp-caption').textContent=hypothetical?'Hypothetical result, not an observation. A simulated Keck K-band contrast curve reduces the mean to 2.7% (two runs: 2.2–3.2%), still above the validation threshold.':'Mean modelled false-positive probability. Four runs span 5.8–8.9%. This is a conditional model result, not a direct measurement of “the chance we found a planet.”';
+ document.querySelectorAll('[data-fpp]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+}));
+$('albedo').addEventListener('input',()=>{const a=Number($('albedo').value);$('albedo-output').textContent=a+'%';$('temperature').textContent=Math.round(417.4280973054799*Math.pow(1-a/100,.25))+' K';});
+
+let files=null,limit=30,fileLoading=false;
+async function loadFiles(){
+ if(files){renderFiles();return;}if(fileLoading)return;fileLoading=true;$('file-count').textContent='Loading the checksummed inventory…';
+ try{const responses=await Promise.all(['inventory.json','analysis/bulk-files.json'].map(async u=>{const r=await fetch(u);if(!r.ok)throw Error(u);return r.json();}));files=[...responses[0].files.map(f=>({...f,kind:'repo'})),...responses[1].files.map(f=>({...f,kind:'bulk'}))];renderFiles();}
+ catch(e){$('file-count').textContent='File index could not load. Use the full inventory link, or close and reopen to retry.';}finally{fileLoading=false;}
+}
+function renderFiles(){if(!files)return;const query=$('file-query').value.trim().toLowerCase(),kind=$('file-type').value,terms=query.split(/\s+/).filter(Boolean);const filtered=files.filter(f=>(kind==='all'||kind===f.kind)&&terms.every(q=>f.path.toLowerCase().includes(q)));const list=$('file-list');list.replaceChildren();filtered.slice(0,limit).forEach(f=>{const item=document.createElement('li');if(f.kind==='repo'){const a=document.createElement('a');a.href=f.path.split('/').map(encodeURIComponent).join('/');a.textContent=f.path;item.append(a);}else{const path=document.createElement('div');path.className='bulk-path';path.textContent=f.path;item.append(path);const a=document.createElement('a');a.href='https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261010';a.textContent='Find in the source release archives ↗';item.append(a);}const meta=document.createElement('div');meta.className='file-meta';meta.textContent=`${f.kind==='repo'?'Repository':'Archive'} · ${(f.bytes/1024).toLocaleString(undefined,{maximumFractionDigits:1})} KB · SHA-256 ${f.sha256}`;item.append(meta);list.append(item);});$('file-count').textContent=filtered.length?`Showing ${Math.min(limit,filtered.length)} of ${filtered.length.toLocaleString()} matching files (${files.length.toLocaleString()} total).`:'No matching files. Try a target number or a shorter term.';$('file-more').hidden=limit>=filtered.length;}
+$('file-explorer').addEventListener('toggle',()=>{if($('file-explorer').open)loadFiles();});$('file-query').addEventListener('input',()=>{limit=30;renderFiles();});$('file-type').addEventListener('change',()=>{limit=30;renderFiles();});$('file-more').addEventListener('click',()=>{limit+=30;renderFiles();});
+const navLinks=[...document.querySelectorAll('nav a')];const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}),{rootMargin:'-15% 0px -65% 0px'});navLinks.forEach(a=>navObserver.observe(document.querySelector(a.hash)));
 })();

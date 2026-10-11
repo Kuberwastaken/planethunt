@@ -5,9 +5,9 @@ V = 'analysis/validation-20261011/'
 D = V + 'post/data/'
 OUT = 'docs/charts/'
 os.makedirs(OUT, exist_ok=True)
-BG, PANEL, LINE, TXT, MUT = '#10172a', '#10172a', '#2a3552', '#e8ecf5', '#9aa6c0'
-OR, BL, GR, RD, YE = '#ff8a50', '#6cb4ff', '#5fd0a0', '#ff6b6b', '#f2c75c'
-FONT = 'font-family="system-ui,-apple-system,Segoe UI,sans-serif"'
+BG, PANEL, LINE, TXT, MUT = '#181a19', '#181a19', '#343733', '#eeeae2', '#a8aea5'
+OR, BL, GR, RD, YE = '#eda878', '#b4c6b2', '#9fc5ac', '#db998b', '#d7c18d'
+FONT = 'font-family="Helvetica Neue,Helvetica,sans-serif"'
 
 def rcsv(p): return list(csv.DictReader(open(p)))
 def rjson(p): return json.load(open(p))
@@ -65,7 +65,7 @@ def fold():
     p.yaxis([-3000, -2000, -1000, 0, 1000], 'Flux change (ppm)'); p.xaxis([-8, -4, 0, 4, 8], 'Hours from mid-transit', grid=True)
     for r in b:
         x, y, e = float(r['hours_from_mid']), float(r['flux_ppm']), float(r['err_ppm'])
-        ebar(p, x, y, e, '#4a6aa0'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        ebar(p, x, y, e, '#667864'); p.circ(p.X(x), p.Y(y), 3.4, BL)
     pts = ' '.join(f'{p.X(float(r["hours_from_mid"])):.1f},{p.Y(float(r["model_ppm"])):.1f}' for r in m[::4])
     p.add(f'<polyline points="{pts}" fill="none" stroke="{OR}" stroke-width="2.4"/>')
     p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, 70 transits folded, 15-minute bins', 13, TXT)
@@ -152,7 +152,7 @@ def gaia_map():
         dx = (float(q['ra']) - ra0) * math.cos(math.radians(de0)) * 3600; dy = (float(q['dec']) - de0) * 3600
         g = float(q['phot_g_mean_mag']); rad = max(1.8, 7 - 0.42 * (g - 14))
         nb = abs(float(q['sep']) - 7.1) < .3
-        p.circ(p.X(dx), p.Y(dy), rad, GR if nb else '#6b7fa8', op=.85)
+        p.circ(p.X(dx), p.Y(dy), rad, GR if nb else '#899485', op=.85)
     p.circ(p.X(0), p.Y(0), 7.5, 'none', OR, 2.5)
     p.text(p.X(0) + 12, p.Y(0) - 10, 'KIC 5689121', 13, OR, weight='600')
     p.text(p.X(-7.1) + 4, p.Y(0) + 24, 'KIC 5689116 (7.1")', 12, GR)
@@ -206,7 +206,7 @@ def tess_fold():
     p.yaxis([-600, -400, -200, 0, 200, 400], 'Flux change (ppm)'); p.xaxis([-3, -2, -1, 0, 1, 2, 3], 'Hours from mid-transit', grid=True)
     for r in d:
         x, y, e = r['hours'], r['flux_ppm'], r['standard_error_ppm']
-        ebar(p, x, y, e, '#4a6aa0'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        ebar(p, x, y, e, '#667864'); p.circ(p.X(x), p.Y(y), 3.4, BL)
     p.text(p.l + 10, p.t + 20, 'TESS, P = 8.72361 d, presentation fold of 46 events', 13, TXT)
     p.text(p.l + 10, p.t + 38, 'dip is shallow (about 400 ppm) and short (about 1 h)', 13, OR)
     save('tess-fold', p.svg('TIC 309780779 folded dip', 'Folded TESS photometry of TIC 309780779 showing a shallow dip of about 400 parts per million.'))
@@ -284,7 +284,7 @@ def diffimg():
         p.text(ox, 20, f'Season {i}', 13, TXT, weight='600')
         for r_, row in enumerate(g):
             for c_, v in enumerate(row):
-                t = max(0, min(1, v / 7)); col = lerp((18, 28, 52), (255, 138, 80), t) if v > 0 else ('#0b1020' if v < -8 else '#1b2442')
+                t = max(0, min(1, v / 7)); col = lerp((18, 28, 52), (255, 138, 80), t) if v > 0 else ('#121412' if v < -8 else '#222922')
                 p.rect(ox + c_ * cw, 30 + r_ * cw, cw - 2, cw - 2, col, 2)
                 if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#10172a' if t > .45 else TXT, 'middle', '700')
     p.text(8, 200, 'Signal-to-noise of the light lost during transit, per Kepler pixel (orange = most missing light).', 12)
@@ -295,7 +295,7 @@ def rcsv_nohdr(p): return [[float(x) if x.strip() else -9 for x in r] for r in c
 def lerp(a, b, t): return '#%02x%02x%02x' % tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
 def coverage():
-    rows = [('Kepler Bonus: pilot + extension (matched null control)', 1736, OR), ('TESS extension, assigned targets', 540, BL), ('Upstream TESS results inherited (not redone)', 526, '#6b7fa8'), ('Codex TESS pilot', 175, GR)]
+    rows = [('Kepler Bonus: pilot + extension (matched null control)', 1736, OR), ('TESS extension, assigned targets', 540, BL), ('Upstream TESS results inherited (not redone)', 526, '#899485'), ('Codex TESS pilot', 175, GR)]
     p = Plot(640, 250, l=20, r=20, t=10, b=30, xr=(0, 1900), yr=(0, 1))
     rh = (p.h - p.t - p.b) / 4
     for i, (lab, n, c) in enumerate(rows):
