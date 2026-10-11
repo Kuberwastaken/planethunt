@@ -20,7 +20,7 @@ Third-party code license notices are retained in `third_party/`. Paras's reposit
 
 ## Website typography
 
-Self-hosted [Barlow Condensed Light](https://github.com/google/fonts/tree/main/ofl/barlowcondensed)
+Self-hosted [Barlow Condensed Light and ExtraBold](https://github.com/google/fonts/tree/main/ofl/barlowcondensed)
 and [IBM Plex Mono Regular](https://github.com/google/fonts/tree/main/ofl/ibmplexmono),
 obtained from the official Google Fonts repository on 12 October 2026. Both use the
 SIL Open Font License 1.1; the complete notices are retained in `docs/fonts/`.

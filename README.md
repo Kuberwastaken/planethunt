@@ -47,6 +47,7 @@ The repository root remains deployable as a static GitHub Pages site, including 
 ```sh
 python3 scripts/site/charts.py
 python3 scripts/site/build_site.py
+python3 -m unittest discover -s scripts/site -p 'test_*.py'
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 

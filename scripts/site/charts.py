@@ -1,6 +1,6 @@
 """Builds the SVG charts and sky images used by index.html from data saved in this repo.
 Run from the repo root: python3 scripts/site/charts.py  (needs numpy-free stdlib + Pillow for images)."""
-import csv, json, math, os
+import csv, json, math, os, html
 V = 'analysis/validation-20261011/'
 D = V + 'post/data/'
 OUT = 'docs/charts/'
@@ -15,7 +15,7 @@ def rjson(p): return json.load(open(p))
 class Plot:
     def __init__(s, w=640, h=360, l=62, r=16, t=16, b=46, xr=(0, 1), yr=(0, 1), xlog=False):
         s.w, s.h, s.l, s.r, s.t, s.b, s.xr, s.yr, s.xlog = w, h, l, r, t, b, xr, yr, xlog
-        s.o = []
+        s.o = []; s.hits = []
     def X(s, v):
         a, b = s.xr
         if s.xlog: v, a, b = math.log10(max(v, 1e-9)), math.log10(a), math.log10(b)
@@ -24,6 +24,11 @@ class Plot:
         a, b = s.yr
         return s.h - s.b - (v - a) / (b - a) * (s.h - s.t - s.b)
     def add(s, x): s.o.append(x)
+    def hit(s, x, y, w, h, title, rows):
+        detail = html.escape(json.dumps([title, rows], ensure_ascii=False), quote=True)
+        s.hits.append(f'<rect class="chart-hit" x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}" fill="transparent" data-chart-detail="{detail}"><title>{esc(title)}</title></rect>')
+    def point(s, x, y, title, rows):
+        s.hit(x-8, y-8, 16, 16, title, rows)
     def text(s, x, y, t, size=14, fill=MUT, anchor='start', weight='400', rot=None):
         tr = f' transform="rotate({rot} {x:.1f} {y:.1f})"' if rot else ''
         s.add(f'<text x="{x:.1f}" y="{y:.1f}" font-size="{size}" fill="{fill}" text-anchor="{anchor}" font-weight="{weight}" {FONT}{tr}>{esc(t)}</text>')
@@ -48,7 +53,7 @@ class Plot:
     def svg(s, title, desc):
         return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {s.w} {s.h}" role="img" aria-labelledby="t d">'
                 f'<title id="t">{esc(title)}</title><desc id="d">{esc(desc)}</desc>'
-                f'<rect width="{s.w}" height="{s.h}" fill="{BG}" rx="0"/>' + ''.join(s.o) + '</svg>')
+                f'<rect width="{s.w}" height="{s.h}" fill="{BG}" rx="0"/>' + ''.join(s.o) + ''.join(s.hits) + '</svg>')
 
 def esc(t): return str(t).replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 def save(name, svg): open(OUT + name + '.svg', 'w').write(svg)
@@ -66,6 +71,7 @@ def fold():
     for r in b:
         x, y, e = float(r['hours_from_mid']), float(r['flux_ppm']), float(r['err_ppm'])
         ebar(p, x, y, e, '#666666'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        p.point(p.X(x),p.Y(y),'Transit bin', [('Time',f'{x:.3f} hours'),('Flux',f'{y:,.2f} ppm'),('Uncertainty',f'±{e:,.2f} ppm')])
     pts = ' '.join(f'{p.X(float(r["hours_from_mid"])):.1f},{p.Y(float(r["model_ppm"])):.1f}' for r in m[::4])
     p.add(f'<polyline points="{pts}" fill="none" stroke="{OR}" stroke-width="2.4"/>')
     p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, saved full-series fold, 15-minute bins', 13, TXT)
@@ -74,14 +80,15 @@ def fold():
 
 def depths():
     r = rcsv(D + 'kic5689121_per_transit_depths.csv')
-    p = Plot(640, 380, xr=(-50, 28), yr=(-2500, 8500))
+    p = Plot(640, 380, xr=(-50, 28), yr=(-3000, 11000))
     p.yaxis([0, 2000, 4000, 6000, 8000], 'Depth per event (ppm)', lambda v: f'{v:,.0f}')
     p.xaxis([-48, -36, -24, -12, 0, 12, 24], 'Transit number from epoch 0 (about 13.77 days each)', grid=False)
     p.rect(p.X(-50), p.Y(2400) - 1, p.X(28) - p.X(-50), 2, OR, 0, .7)
     for q in r:
         e = int(q['epoch']); d = float(q['depth_ppm']); s = float(q['err_ppm']); ho = q['held_out'] == 'True'
         c = YE if ho else BL
-        ebar(p, e, d, s, c, -2500, 8500); p.circ(p.X(e), p.Y(d), 3.6, c)
+        ebar(p, e, d, s, c, -3000, 11000); p.circ(p.X(e), p.Y(d), 3.6, c)
+        p.point(p.X(e),p.Y(d),f"Event {e} / Q{q['quarter']}",[('Depth',f'{d:,.2f} ppm'),('Uncertainty',f'±{s:,.2f} ppm'),('Selection','Reserved' if ho else 'Search')])
     p.text(p.l + 10, p.t + 18, 'every measurable transit, one dot each', 13, TXT)
     p.circ(p.l + 14, p.t + 34, 4, BL); p.text(p.l + 24, p.t + 39, 'discovery events (51)', 13)
     p.circ(p.l + 178, p.t + 34, 4, YE); p.text(p.l + 188, p.t + 39, 'held-out quarters (23)', 13)
@@ -101,6 +108,7 @@ def dilution():
             if n < 2: continue
             ye = min(d + e, 4400); ys = max(d - e, -400)
             p.line(x + off, p.Y(ye), x + off, p.Y(ys), c, 1.2); p.circ(x + off, p.Y(d), 3.6, c)
+        p.hit(x-16,p.t+40,32,p.h-p.b-p.t-40,f"Quarter {r['q']}", [('PSF depth',f"{r['psf'][1]:,.1f} ± {r['psf'][2]:,.1f} ppm"),('SAP depth',f"{r['sap'][1]:,.1f} ± {r['sap'][2]:,.1f} ppm"),('PSF / SAP count',f"{r['psf'][0]} / {r['sap'][0]}")])
         p.text(x, p.h - p.b + 18, f"Q{r['q']}", 12, anchor='middle')
     p.circ(p.l + 14, p.t + 14, 4, BL); p.text(p.l + 24, p.t + 19, 'PSF / target', 13)
     p.circ(p.l + 230, p.t + 14, 4, OR); p.text(p.l + 240, p.t + 19, 'SAP / blended aperture', 13)
@@ -122,6 +130,7 @@ def ephem_null():
         y = p.t + rh * (i + .5) + 8
         p.text(p.l, y - 14, f'{lab}  (n={n})', 13, TXT)
         p.line(p.X(dp - e), y, p.X(dp + e), y, c, 2); p.circ(p.X(dp), y, 5, c)
+        p.hit(p.l,y-26,p.w-p.l-p.r,rh,lab,[('Depth',f'{dp:,.2f} ppm'),('Uncertainty',f'±{e:,.2f} ppm'),('Count',str(n))])
         p.text(p.X(dp - e) - 8 if dp > 1500 else p.X(dp + e) + 8, y + 5, f'{dp:,.0f} ± {e:,.0f}', 12, MUT, 'end' if dp > 1500 else 'start')
     save('kepler-ephemeris-null', p.svg('Depth at candidate and Kepler-169 ephemerides', 'The target shows a 2,350 ppm dip at the candidate ephemeris and no depth at any of the five Kepler-169 planet ephemerides or in the neighbour light curve.'))
 
@@ -142,6 +151,7 @@ def centroid():
         p.circ(p.X(value),y+3,5,colour)
         p.text(932,y+8,f'{value:,.0f}',16,colour,'end')
         p.line(24,y+34,936,y+34,LINE,.5)
+        p.hit(24,y-22,912,55,'Gaia '+r['source_id'], [('Separation',f"{float(r['sep']):.3f} arcsec"),('G magnitude',f"{float(r['phot_g_mean_mag']):.3f}"),('Δχ² vs target',f'{value:,.3f}'),('χ²',f"{float(r['centroid_chi2']):,.3f}")])
     p.text(576,558,'Δχ² versus target · logarithmic scale · larger = poorer fit',12,MUT,'middle')
     save('kepler-centroid',p.svg('Raw-pixel centroid source comparison','Seven resolved Gaia sources within 30 arcseconds, each compared with the target model. The closest bright neighbour has delta chi-square 934; other sources fit still worse. Numeric values are aligned at right; logarithmic lollipop positions show relative scale.'))
 
@@ -158,6 +168,7 @@ def gaia_map():
         g = float(q['phot_g_mean_mag']); rad = max(1.8, 7 - 0.42 * (g - 14))
         nb = abs(float(q['sep']) - 7.1) < .3
         p.circ(p.X(dx), p.Y(dy), rad, GR if nb else '#888888', op=.85)
+        p.point(p.X(dx),p.Y(dy),'Gaia DR3 '+q['source_id'], [('RA',f"{float(q['ra']):.7f}°"),('Dec',f"{float(q['dec']):+.7f}°"),('Separation',f"{float(q['sep']):.3f} arcsec"),('G magnitude',f'{g:.3f}')])
     p.circ(p.X(0), p.Y(0), 7.5, 'none', OR, 2.5)
     p.text(p.X(0) + 12, p.Y(0) - 10, 'KIC 5689121', 13, OR, weight='600')
     p.text(p.X(-7.1) + 4, p.Y(0) + 24, 'KIC 5689116 (7.1")', 12, GR)
@@ -179,6 +190,7 @@ def fpp():
         y = p.t + 52 + rh * i + 16
         p.text(p.l, y - 14, lab, 13, TXT)
         for v in S[k]['FPP']: p.circ(p.X(v), y + 4, 5, c, op=.8)
+        p.hit(p.l,y-28,p.w-p.l-p.r,rh,lab,[('Run '+str(j+1),f'{v:.6f} ({v*100:.3f}%)') for j,v in enumerate(S[k]['FPP'])]+[('Mean',f"{S[k]['FPP_mean']:.6f}")])
         m = S[k]['FPP_mean']; p.line(p.X(m), y - 6, p.X(m), y + 14, TXT, 2)
         p.text(p.X(max(S[k]['FPP'])) + 12, y + 9, f'mean {m:.3f}', 12, MUT)
     save('fpp-runs', p.svg('TRICERATOPS false-positive probabilities', 'KIC 5689121 has a false positive probability of about 0.07 and TIC 309780779 about 0.57; validation requires below 0.015.'))
@@ -196,6 +208,7 @@ def scenarios():
         for cl, keys, c in cats:
             v = agg(mp, keys) / tot; w = v * (p.w - p.l - p.r)
             p.rect(x, y + 8, w, 26, c, 0)
+            p.hit(x,y+8,max(w,1),26,lab,[('Scenario',cl),('Probability share',f'{v*100:.4f}%')])
             if v > .06: p.text(x + w / 2, y + 26, f'{v*100:.0f}%', 13, '#080808', 'middle', '700')
             x += w
     y = 170
@@ -212,6 +225,7 @@ def tess_fold():
     for r in d:
         x, y, e = r['hours'], r['flux_ppm'], r['standard_error_ppm']
         ebar(p, x, y, e, '#666666'); p.circ(p.X(x), p.Y(y), 3.4, BL)
+        p.point(p.X(x),p.Y(y),'Transit bin', [('Time',f'{x:.3f} hours'),('Flux',f'{y:,.2f} ppm'),('Uncertainty',f'±{e:,.2f} ppm')])
     p.text(p.l + 10, p.t + 20, 'TESS, P = 8.72361 d, presentation fold of 46 events', 13, TXT)
     p.text(p.l + 10, p.t + 38, 'dip is shallow (about 400 ppm) and short (about 1 h)', 13, OR)
     save('tess-fold', p.svg('TIC 309780779 folded dip', 'Folded TESS photometry of TIC 309780779 showing a shallow dip of about 400 parts per million.'))
@@ -229,6 +243,7 @@ def tess_depths():
         y = p.t + rh * (i + .5) + 10
         p.text(p.l, y - 14, lab, 13, TXT)
         p.line(p.X(d - e), y, p.X(d + e), y, c, 2); p.circ(p.X(d), y, 5, c)
+        p.hit(p.l,y-26,p.w-p.l-p.r,rh,lab,[('Depth',f'{d:,} ppm'),('Uncertainty',f'±{e:,} ppm')])
     save('tess-depth-consistency', p.svg('TIC 309780779 depth consistency', 'Odd and even depths agree within 1.3 sigma, three cadence eras agree, and the held-out late sectors show a 450 ppm dip at the frozen ephemeris.'))
 
 def bls():
@@ -244,6 +259,7 @@ def bls():
         p.rect(p.l, y + 16, p.X(a) - p.l, 14, OR, 2); p.text(p.X(a) + 6, y + 28, f'{a} real', 12, MUT)
         if b: p.rect(p.l, y + 34, p.X(b) - p.l, 14, '#666666', 2); p.text(p.X(b) + 6, y + 46, f'{b} inverted', 12, MUT)
         else: p.text(p.l, y + 46, 'inverted peak not saved for this half', 12, MUT)
+        p.hit(p.l,y,p.w-p.l-p.r,rh,lab,[('Real SDE',str(a)),('Inverted SDE',str(b) if b is not None else 'Not saved')])
     save('tess-bls', p.svg('Blind period search, real versus inverted', 'The real TESS light curve gives a strong 8.72 day peak in the full data and in each half; the inverted light curve gives weaker peaks.'))
 
 def nullc():
@@ -258,6 +274,7 @@ def nullc():
         p.text(p.l, y + 12, lab, 13, TXT)
         p.rect(p.l, y + 18, p.X(a) - p.l, 16, OR, 2); p.text(p.X(a) + 6, y + 31, f'{a} real', 12, MUT)
         p.rect(p.l, y + 38, p.X(b) - p.l, 16, '#666666', 2); p.text(p.X(b) + 6, y + 51, f'{b} inverted (null)', 12, MUT)
+        p.hit(p.l,y,p.w-p.l-p.r,rh,lab,[('Real first-screen signals',str(a)),('Inverted first-screen signals',str(b))])
     save('null-control', p.svg('Real versus inverted searches', 'Real Kepler searches find no more first-screen signals than matched inverted null searches.'))
 
 def model():
@@ -288,15 +305,17 @@ def diffimg():
         ox = x0 + i * 158
         p.text(ox, 20, f'Season {i}', 13, TXT, weight='600')
         for r_, row in enumerate(g):
-            for c_, v in enumerate(row):
+            for c_, saved in enumerate(row):
+                v = -9 if saved is None else saved
                 t = max(0, min(1, v / 7)); col = lerp((24, 24, 24), (255, 255, 255), t) if v > 0 else ('#080808' if v < -8 else '#222222')
                 p.rect(ox + c_ * cw, 30 + r_ * cw, cw - 2, cw - 2, col, 2)
+                p.hit(ox+c_*cw,30+r_*cw,cw-2,cw-2,f'Season {i} / pixel [{r_}, {c_}]',[('Lost-light S/N',f'{v:.3f}' if saved is not None else 'Not available'),('Index convention','Row, column; zero-based')])
                 if v >= 2: p.text(ox + c_ * cw + cw / 2 - 1, 30 + r_ * cw + 18, f'{v:.0f}', 11, '#080808' if t > .45 else TXT, 'middle', '700')
     p.text(8, 200, 'Lost-light S/N per Kepler pixel. White ≥ 7; numbers give S/N.', 12)
     p.text(8, 220, 'Stored pixel orientation; see the registered sky overlay below.', 12)
     save('kepler-diffimage', p.svg('Missing-light pixels by season', 'Per-pixel signal to noise of the light lost during transit in four Kepler seasons, peaking on a few pixels.'))
 
-def rcsv_nohdr(p): return [[float(x) if x.strip() else -9 for x in r] for r in csv.reader(open(p)) if r]
+def rcsv_nohdr(p): return [[float(x) if x.strip() else None for x in r] for r in csv.reader(open(p)) if r]
 def lerp(a, b, t): return '#%02x%02x%02x' % tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
 def coverage():
@@ -306,6 +325,7 @@ def coverage():
     for i, (lab, n, c) in enumerate(rows):
         y = p.t + rh * i
         p.text(p.l, y + 14, lab, 13, TXT); p.rect(p.l, y + 22, p.X(n) - p.l, 16, c, 2); p.text(p.X(n) + 6, y + 35, f'{n:,}', 13, MUT)
+        p.hit(p.l,y,p.w-p.l-p.r,rh,lab,[('Count',f'{n:,}'),('Scope','Different search stages; not additive')])
     p.text(p.l, p.h - 6, 'Stars per search. Not a success-rate chart; counts of different kinds are not added together.', 11)
     save('coverage', p.svg('Search coverage', 'Number of stars in each search, on a shared scale.'))
 

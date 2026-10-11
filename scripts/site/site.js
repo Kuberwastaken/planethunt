@@ -22,7 +22,7 @@ function svgPlot({title, xr, yr, xticks, yticks, xlabel, ylabel}) {
   xticks.forEach(x=>{parts.push(text(X(x),h-B+27,x));});
   parts.push(text((L+w-R)/2,h-10,xlabel));
   parts.push(`<text x="18" y="${(T+h-B)/2}" transform="rotate(-90 18 ${(T+h-B)/2})" text-anchor="middle" fill="${palette.muted}" font-size="12" font-family="IBM Plex Mono,monospace">${escape(ylabel)}</text>`);
-  return {X,Y,parts,finish:()=>parts.join('')+'</svg>'};
+  return {X,Y,parts,bounds:{x:L,y:T,width:w-L-R,height:h-T-B},finish:()=>parts.join('')+'</svg>'};
 }
 let currentView='fold', renderTicket=0;
 async function renderSignal() {
@@ -30,13 +30,16 @@ async function renderSignal() {
   try {
     const d=await getData(); if(ticket!==renderTicket)return;
     if($('quarter').options.length===1) [...new Set(d.light.map(r=>r[2]))].sort((a,b)=>a-b).forEach(q=>{const o=new Option(`Quarter ${q}`,String(q));$('quarter').add(o);});
-    let p,caption,filename,meta;
+    let p,caption,filename,meta,denseRows;
+    const hits=[];
+    const hit=(x,y,title,rows)=>hits.push(`<rect class="chart-hit" x="${p.X(x)-8}" y="${p.Y(y)-8}" width="16" height="16" fill="transparent" data-chart-detail="${escape(JSON.stringify([title,rows]))}"/>`);
     $('event-controls').hidden=currentView!=='events'; $('light-controls').hidden=currentView!=='light';
     if(currentView==='fold') {
       p=svgPlot({title:'Folded transit of KIC 5689121',xr:[-8.5,8.5],yr:[-3400,1200],xticks:[-8,-6,-4,-2,0,2,4,6,8],yticks:[-3000,-2000,-1000,0,1000],xlabel:'Hours from the middle of the transit',ylabel:'Change in brightness (ppm)'});
       p.parts.push('<g clip-path="url(#plot-clip)">');
       d.fold.forEach(([x,y,e])=>{p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="#666666" stroke-width="1.2"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="3.5" fill="${palette.sage}"><title>${x.toFixed(2)} hours: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
       p.parts.push(`<path d="${d.transitModel.map(([x,y],i)=>`${i?'L':'M'}${p.X(x).toFixed(2)},${p.Y(y).toFixed(2)}`).join('')}" fill="none" stroke="${palette.white}" stroke-width="2.4"/></g>`);
+      d.fold.forEach(([x,y,e])=>hit(x,y,'15-minute transit bin',[['Hours from mid-transit',x.toFixed(3)],['Flux',`${y.toFixed(2)} ppm`],['Uncertainty',`±${e.toFixed(2)} ppm`]]));
       caption='Full-baseline fold; error bars show bin uncertainty.';
       filename='kic5689121_folded_15min_bins.csv';meta=`${d.fold.length} bins · 15-minute intervals`;
       $('signal-legend').innerHTML='<span><i></i> Kepler measurements</span><span><i class="model"></i> Transit model</span>';
@@ -45,11 +48,13 @@ async function renderSignal() {
       p=svgPlot({title:'Individual event depths, 74 measured events',xr:[-50,28],yr:[-3000,11000],xticks:[-48,-36,-24,-12,0,12,24],yticks:[-2000,0,2000,4000,6000,8000,10000],xlabel:'Transit number relative to the saved reference epoch',ylabel:'Measured transit depth (ppm)'});
       p.parts.push(`<path d="M${p.X(-50)} ${p.Y(2400)}H${p.X(28)}" stroke="${palette.white}" stroke-dasharray="4 5"/><g clip-path="url(#plot-clip)">`);
       rows.forEach(([x,y,e,hold,q])=>{const c=hold?palette.yellow:palette.sage;p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="${c}" opacity=".55"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="4" fill="${c}"><title>Event ${x}, Q${q}${hold?', reserved quarter':''}: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
+      rows.forEach(([x,y,e,hold,q])=>hit(x,y,`Event ${x} / Q${q}`,[['Depth',`${y.toFixed(2)} ppm`],['Uncertainty',`±${e.toFixed(2)} ppm`],['Selection',hold?'Reserved':'Search']]));
       p.parts.push('</g>');caption='Dashed line: 2,400 ppm reference depth.';
       filename='kic5689121_per_transit_depths.csv';meta=`${rows.length} events shown · error bars ±1σ`;
       $('signal-legend').innerHTML='<span><i></i> Discovery quarters</span><span><i style="background:#ffffff"></i> Reserved quarters</span>';
     } else {
       const q=$('quarter').value,rows=d.light.filter(r=>q==='all'||r[2]===Number(q));
+      denseRows=rows;
       const lo=rows[0][0],hi=rows[rows.length-1][0],xr=[lo-1,hi+1];
       const xticks=Array.from({length:6},(_,i)=>Math.round(lo+(hi-lo)*i/5));
       p=svgPlot({title:`Kepler light curve ${q==='all'?'all quarters':`quarter ${q}`}`,xr,yr:[-7500,7500],xticks,yticks:[-6000,-3000,0,3000,6000],xlabel:'Time in BTJD (BJD TDB − 2,457,000)',ylabel:'Detrended brightness (ppm)'});
@@ -59,7 +64,10 @@ async function renderSignal() {
       filename='kic5689121_lightcurve_psf.csv';meta=`${rows.length.toLocaleString()} measurements · ${q==='all'?'2009–2013':`quarter ${q}`}`;
       $('signal-legend').innerHTML='<span><i></i> Original cadences</span><span><i style="background:#ffffff"></i> In-transit selection</span>';
     }
-    $('signal-chart').innerHTML=p.finish();$('signal-caption').textContent=caption;$('chart-meta').textContent=meta;$('signal-download').href=V+'post/data/'+filename;
+    window.chartInspector.hide();p.parts.push(...hits);$('signal-chart').innerHTML=p.finish();
+    const svg=$('signal-chart').querySelector('svg');
+    if(denseRows)window.chartInspector.register(svg,{rows:denseRows,X:p.X,Y:p.Y,bounds:p.bounds});
+    window.chartInspector.enhance(svg);$('signal-caption').textContent=caption;$('chart-meta').textContent=meta;$('signal-download').href=V+'post/data/'+filename;
     document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===currentView)));
   } catch(e) {$('chart-meta').textContent='Interactive data could not load. The saved chart and CSV remain available; select a view to retry.';}
 }
@@ -91,7 +99,7 @@ const dialog=$('image-dialog');
 document.querySelectorAll('figure').forEach(fig=>{
  if(!fig.querySelector('svg')||fig.classList.contains('hero-figure')||fig.querySelector('#survey-frame'))return;
  const button=document.createElement('button');button.className='enlarge';button.textContent='Enlarge chart ↗';button.setAttribute('aria-label','Enlarge '+(fig.querySelector('h3,svg title')?.textContent||'chart'));
- button.addEventListener('click',()=>{const source=fig.querySelector('svg');if(!source)return;const clone=source.cloneNode(true);clone.querySelectorAll('[id]').forEach(el=>{const old=el.id;el.id='dialog-'+old;clone.querySelectorAll('[clip-path]').forEach(c=>{if(c.getAttribute('clip-path')===`url(#${old})`)c.setAttribute('clip-path',`url(#dialog-${old})`);});});clone.removeAttribute('aria-labelledby');clone.setAttribute('aria-label',source.querySelector('title')?.textContent||'Enlarged chart');dialog.querySelector('.dialog-media').replaceChildren(clone);$('dialog-title').textContent=fig.querySelector('h3,svg title')?.textContent||'Measurement';$('dialog-caption').textContent=fig.querySelector('figcaption')?.textContent||'';dialog.showModal();});fig.append(button);
+ button.addEventListener('click',()=>{const source=fig.querySelector('svg');if(!source)return;const clone=source.cloneNode(true);clone.querySelectorAll('[id]').forEach(el=>{const old=el.id;el.id='dialog-'+old;clone.querySelectorAll('[clip-path]').forEach(c=>{if(c.getAttribute('clip-path')===`url(#${old})`)c.setAttribute('clip-path',`url(#dialog-${old})`);});});clone.removeAttribute('aria-labelledby');clone.setAttribute('aria-label',source.querySelector('title')?.textContent||'Enlarged chart');dialog.querySelector('.dialog-media').replaceChildren(clone);window.chartInspector.copy(source,clone);$('dialog-title').textContent=fig.querySelector('h3,svg title')?.textContent||'Measurement';$('dialog-caption').textContent=fig.querySelector('figcaption')?.textContent||'';dialog.showModal();});fig.append(button);
 });
 let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(dataPromise)renderSignal();},160);});
 $('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
@@ -122,5 +130,12 @@ async function loadFiles(){
 }
 function renderFiles(){if(!files)return;const query=$('file-query').value.trim().toLowerCase(),kind=$('file-type').value,terms=query.split(/\s+/).filter(Boolean);const filtered=files.filter(f=>(kind==='all'||kind===f.kind)&&terms.every(q=>f.path.toLowerCase().includes(q)));const list=$('file-list');list.replaceChildren();filtered.slice(0,limit).forEach(f=>{const item=document.createElement('li');if(f.kind==='repo'){const a=document.createElement('a');a.href=f.path.split('/').map(encodeURIComponent).join('/');a.textContent=f.path;item.append(a);}else{const path=document.createElement('div');path.className='bulk-path';path.textContent=f.path;item.append(path);const a=document.createElement('a');a.href='https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261010';a.textContent='Find in the source release archives ↗';item.append(a);}const meta=document.createElement('div');meta.className='file-meta';meta.textContent=`${f.kind==='repo'?'Repository':'Archive'} · ${(f.bytes/1024).toLocaleString(undefined,{maximumFractionDigits:1})} KB · SHA-256 ${f.sha256}`;item.append(meta);list.append(item);});$('file-count').textContent=filtered.length?`Showing ${Math.min(limit,filtered.length)} of ${filtered.length.toLocaleString()} matching files (${files.length.toLocaleString()} total).`:'No matching files. Try a target number or a shorter term.';$('file-more').hidden=limit>=filtered.length;}
 $('file-explorer').addEventListener('toggle',()=>{if($('file-explorer').open)loadFiles();});$('file-query').addEventListener('input',()=>{limit=30;renderFiles();});$('file-type').addEventListener('change',()=>{limit=30;renderFiles();});$('file-more').addEventListener('click',()=>{limit+=30;renderFiles();});
+// One scroll-linked movement, only while the footer is near the viewport.
+const footer=document.querySelector('.site-footer'),reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+let footerVisible=false,footerFrame=0;
+function paintFooter(){footerFrame=0;const rect=footer.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.min(innerHeight,rect.height)));footer.style.setProperty('--footer-shift',`${reduceMotion.matches?0:(1-progress)*55}px`);footer.style.setProperty('--star-turn',`${reduceMotion.matches?0:progress*135}deg`);}
+new IntersectionObserver(entries=>{footerVisible=entries[0].isIntersecting;footer.classList.toggle('in-view',footerVisible);if(footerVisible)paintFooter();},{rootMargin:'100px'}).observe(footer);
+addEventListener('scroll',()=>{if(footerVisible&&!footerFrame)footerFrame=requestAnimationFrame(paintFooter);},{passive:true});
+addEventListener('resize',paintFooter);reduceMotion.addEventListener('change',paintFooter);
 const navLinks=[...document.querySelectorAll('nav a')];const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)navLinks.forEach(a=>{if(a.hash==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}),{rootMargin:'-15% 0px -65% 0px'});navLinks.forEach(a=>navObserver.observe(document.querySelector(a.hash)));
 })();
