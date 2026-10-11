@@ -12,15 +12,16 @@ function getData() {
   return dataPromise;
 }
 function svgPlot({title, xr, yr, xticks, yticks, xlabel, ylabel}) {
-  const w=1000,h=430,L=76,R=24,T=30,B=64;
+  const w=Math.max(320,Math.round($('signal-chart').clientWidth)),compact=w<600,h=compact?310:430,L=compact?64:76,R=compact?12:24,T=30,B=compact?58:64;
+  if(compact) xticks=xticks.filter((_,i)=>i%2===0);
   const X=x=>L+(x-xr[0])/(xr[1]-xr[0])*(w-L-R);
   const Y=y=>h-B-(y-yr[0])/(yr[1]-yr[0])*(h-T-B);
   const parts=[`<svg viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="dynamic-chart-title dynamic-chart-desc"><title id="dynamic-chart-title">${escape(title)}</title><desc id="dynamic-chart-desc">${escape(ylabel)} against ${escape(xlabel)}. Data download and description below.</desc><defs><clipPath id="plot-clip"><rect x="${L}" y="${T}" width="${w-L-R}" height="${h-T-B}"/></clipPath></defs>`];
   const text=(x,y,t,anchor='middle',color=palette.muted,size=13)=>`<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${color}" font-family="Helvetica Neue,Helvetica,sans-serif" font-size="${size}">${escape(t)}</text>`;
-  yticks.forEach(y=>{parts.push(`<path d="M${L} ${Y(y)}H${w-R}" stroke="${y===0?'#676d63':palette.line}"/>`);parts.push(text(L-12,Y(y)+5,y.toLocaleString(),'end'));});
+  yticks.forEach(y=>{parts.push(`<path d="M${L} ${Y(y)}H${w-R}" stroke="${y===0?'#676d63':palette.line}"/>`);parts.push(text(L-12,Y(y)+5,compact&&Math.abs(y)>=1000?`${y/1000}k`:y.toLocaleString(),'end'));});
   xticks.forEach(x=>{parts.push(text(X(x),h-B+27,x));});
   parts.push(text((L+w-R)/2,h-10,xlabel));
-  parts.push(`<text x="18" y="${(T+h-B)/2}" transform="rotate(-90 18 ${(T+h-B)/2})" text-anchor="middle" fill="${palette.muted}" font-size="13" font-family="Helvetica Neue,Helvetica,sans-serif">${escape(ylabel)}</text>`);
+  parts.push(`<text x="18" y="${(T+h-B)/2}" transform="rotate(-90 18 ${(T+h-B)/2})" text-anchor="middle" fill="${palette.muted}" font-size="12" font-family="Helvetica Neue,Helvetica,sans-serif">${escape(ylabel)}</text>`);
   return {X,Y,parts,finish:()=>parts.join('')+'</svg>'};
 }
 let currentView='fold', renderTicket=0;
@@ -84,7 +85,15 @@ function renderSky(){
  document.querySelectorAll('[data-survey]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.survey===survey)));
 }
 document.querySelectorAll('[data-survey]').forEach(b=>b.addEventListener('click',()=>{survey=b.dataset.survey;renderSky();}));$('sky-labels').addEventListener('change',renderSky);renderSky();
-const dialog=$('image-dialog');$('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
+const dialog=$('image-dialog');
+// Native dialog gives Escape handling, focus trapping and focus restoration.
+document.querySelectorAll('figure').forEach(fig=>{
+ if(!fig.querySelector('svg')||fig.classList.contains('hero-figure')||fig.querySelector('#survey-frame'))return;
+ const button=document.createElement('button');button.className='enlarge';button.textContent='Enlarge chart ↗';button.setAttribute('aria-label','Enlarge '+(fig.querySelector('h3,svg title')?.textContent||'chart'));
+ button.addEventListener('click',()=>{const source=fig.querySelector('svg');if(!source)return;const clone=source.cloneNode(true);clone.querySelectorAll('[id]').forEach(el=>{const old=el.id;el.id='dialog-'+old;clone.querySelectorAll('[clip-path]').forEach(c=>{if(c.getAttribute('clip-path')===`url(#${old})`)c.setAttribute('clip-path',`url(#dialog-${old})`);});});clone.removeAttribute('aria-labelledby');clone.setAttribute('aria-label',source.querySelector('title')?.textContent||'Enlarged chart');dialog.querySelector('.dialog-media').replaceChildren(clone);$('dialog-title').textContent=fig.querySelector('h3,svg title')?.textContent||'Measurement';$('dialog-caption').textContent=fig.querySelector('figcaption')?.textContent||'';dialog.showModal();});fig.append(button);
+});
+let resizeTimer;addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{if(dataPromise)renderSignal();},160);});
+$('enlarge-sky').addEventListener('click',()=>{const copy=$('survey-frame').cloneNode(true);copy.removeAttribute('id');copy.querySelectorAll('[id]').forEach(el=>el.removeAttribute('id'));dialog.querySelector('.dialog-media').replaceChildren(copy);$('dialog-title').textContent=surveys[survey].name;$('dialog-caption').textContent=$('survey-caption').textContent;dialog.showModal();});
 $('close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
 
 document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener('click',()=>{

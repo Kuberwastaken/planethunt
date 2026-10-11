@@ -68,7 +68,7 @@ def fold():
         ebar(p, x, y, e, '#667864'); p.circ(p.X(x), p.Y(y), 3.4, BL)
     pts = ' '.join(f'{p.X(float(r["hours_from_mid"])):.1f},{p.Y(float(r["model_ppm"])):.1f}' for r in m[::4])
     p.add(f'<polyline points="{pts}" fill="none" stroke="{OR}" stroke-width="2.4"/>')
-    p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, 70 transits folded, 15-minute bins', 13, TXT)
+    p.text(p.l + 10, p.t + 20, 'Kepler PSF flux, saved full-series fold, 15-minute bins', 13, TXT)
     p.text(p.l + 10, p.t + 38, 'orange: MCMC transit model, depth about 2,400 ppm (0.24%)', 13, OR)
     save('kepler-fold', p.svg('KIC 5689121 folded transit', 'Folded Kepler photometry of KIC 5689121 with the fitted transit model, about 0.24 percent deep and 2.2 hours long.'))
 
@@ -304,6 +304,24 @@ def coverage():
     p.text(p.l, p.h - 6, 'Stars per search. Not a success-rate chart; counts of different kinds are not added together.', 11)
     save('coverage', p.svg('Search coverage', 'Number of stars in each search, on a shared scale.'))
 
+def lyra_locator():
+    # Approximate bright-star coordinates preserved from post_where.py, not new astrometry.
+    stars = {'Vega': (279.2347,38.7837,.03), 'ε Lyr': (281.084,39.670,4.7),
+             'ζ Lyr': (281.193,37.605,4.3), 'δ² Lyr': (283.626,36.899,4.3),
+             'Sheliak': (282.520,33.363,3.5), 'Sulafat': (284.736,32.690,3.3)}
+    p=Plot(640,480,l=60,r=24,t=24,b=56,xr=(288.2,277.6),yr=(31.5,42.6))
+    p.xaxis([288,286,284,282,280,278], 'Right ascension (degrees, east to the left)')
+    p.yaxis([32,34,36,38,40,42], 'Declination (degrees)')
+    for a,b in [('Vega','ζ Lyr'),('Vega','ε Lyr'),('ζ Lyr','δ² Lyr'),('δ² Lyr','Sulafat'),('Sulafat','Sheliak'),('Sheliak','ζ Lyr')]:
+        p.line(p.X(stars[a][0]),p.Y(stars[a][1]),p.X(stars[b][0]),p.Y(stars[b][1]),MUT)
+    for name,(ra,dec,mag) in stars.items():
+        p.circ(p.X(ra),p.Y(dec),max(3,8-mag),TXT)
+        p.text(p.X(ra)+12,p.Y(dec)+5,name,14,TXT)
+    p.circ(p.X(285.907827),p.Y(40.941988),10,'none',OR,2)
+    p.text(p.X(285.907827)+18,p.Y(40.941988)-6,'KIC 5689121',16,OR)
+    p.text(p.X(285.907827)+18,p.Y(40.941988)+15,'Too faint for the unaided eye',12)
+    save('lyra-locator',p.svg('The candidate in constellation Lyra','Schematic sky locator using approximate bright-star coordinates. Vega and five other familiar Lyra stars orient the candidate; this is not a telescope image.'))
+
 if __name__ == '__main__':
-    for f in (fold, depths, dilution, ephem_null, centroid, gaia_map, fpp, scenarios, tess_fold, tess_depths, bls, nullc, diffimg, coverage): f()
+    for f in (fold, depths, dilution, ephem_null, centroid, gaia_map, fpp, scenarios, tess_fold, tess_depths, bls, nullc, diffimg, coverage, lyra_locator): f()
     print(sorted(os.listdir(OUT)))

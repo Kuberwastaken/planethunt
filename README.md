@@ -10,7 +10,7 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 
 ## Current state: 11 October 2026
 
-KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The site (`index.html`) was redesigned on 11 October with charts and sky images; details in the validation pack below.
+KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The public site (`index.html`) was rebuilt on 12 October as an interactive field report. Scientific status remains the 11 October evidence snapshot; no new validation is implied.
 
 ## Earlier state: 10 October 2026
 
@@ -38,3 +38,36 @@ Codex's Kepler Bonus search was extended to 1,672 more stars with matched invert
 
 ## Validation pack 2026-10-11
 [`analysis/validation-20261011/README.md`](analysis/validation-20261011/README.md): false-positive and holdout vetting of both candidates, an independent re-check, sky images and charts, with its own checksums.
+
+## Public website
+
+The repository root remains deployable as a static GitHub Pages site, including at
+`/planethunt/`. No package installation, external JavaScript, analytics, or API keys are required.
+
+```sh
+python3 scripts/site/charts.py
+python3 scripts/site/build_site.py
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8765/`. The build runs offline from the saved evidence.
+
+- `scripts/site/page.html`: public narrative and accessible HTML template.
+- `scripts/site/site.css`, `site.js`: responsive styles and browser interactions.
+- `docs/charts/`: reproducible SVG diagnostics, including a Lyra locator.
+- `docs/site-data.json`: compact export of the actual folded bins, transit model,
+  74 event measurements, and all 46,523 original detrended cadences.
+- Survey switching uses local, unaltered cutouts with separate SVG markers, scale bars,
+  and orientation. Credits and fetch parameters are in `docs/sky/SOURCES.json`.
+- The page preserves the original evidence sections in dated expandable appendices.
+  The file explorer reads `inventory.json` and `analysis/bulk-files.json` on demand.
+
+Charts and content remain available without JavaScript. Interactive data are loaded as
+needed; failure messages retain links to the source CSVs. Native dialogs support keyboard
+focus and Escape. Motion is disabled for reduced-motion preferences.
+
+`sky.py` is the earlier annotation pipeline and is not required for this build.
+Do not rerun scientific analyses just to rebuild the website.
+
+After changing tracked presentation files, run `python3 scripts/site/refresh_manifests.py`
+to update the root inventory/checksums. Original evidence-pack checksums remain unchanged.
