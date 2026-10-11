@@ -38,11 +38,11 @@ test('offscreen plots do not change; filtering locks the visible plot',()=>{
 
 function setupDetails(){
  const events={},frames=[];
- function element(){return {events:{},style:{values:{},setProperty(k,v){this.values[k]=v;}},addEventListener(type,fn){(this.events[type]??=[]).push(fn);},fire(type){this.events[type]?.forEach(fn=>fn());},getBoundingClientRect(){return this.rect;}};}
+ function element(){return {events:{},style:{values:{},setProperty(k,v){this.values[k]=v;}},addEventListener(type,fn){(this.events[type]??=[]).push(fn);},fire(type,event={}){this.events[type]?.forEach(fn=>fn(event));},getBoundingClientRect(){return this.rect;}};}
  const albedo=element();albedo.value='0';
  const nodes={albedo,'albedo-output':{},temperature:{}};
  const lab=element();lab.rect={top:900,bottom:1250,height:350};
- const svg=element();svg.rect={top:1000,bottom:1360,height:360};svg.querySelector=()=>true;
+ const svg=element();svg.rect={top:1000,bottom:1360,height:360};svg.querySelector=()=>true;svg.querySelectorAll=()=>[];
  const context={document:{querySelectorAll:()=>[svg],querySelector:()=>lab},$:id=>nodes[id],innerHeight:1000,reduceMotion:{matches:false,addEventListener(){}},dialog:{open:false},requestAnimationFrame(fn){frames.push(fn);return frames.length;},addEventListener(type,fn){events[type]=fn;}};
  vm.createContext(context);
  const inputCode=source.slice(source.indexOf('function updateTemperature'),source.indexOf('let files=null'));
@@ -65,4 +65,10 @@ test('bar entrance grows once, never shrinks, and inspection reveals the full da
 });
 test('reduced motion completes the plot and preserves the chosen temperature',()=>{
  const t=setupDetails();t.context.reduceMotion.matches=true;t.lab.rect={top:100,bottom:450,height:350};t.paint();assert.equal(t.svg.style.values['--chart-reveal'],1);assert.equal(t.albedo.value,'0');
+});
+
+test('a chart entering under a stationary cursor does not skip the bar entrance',()=>{
+ const t=setupDetails();t.svg.rect={top:800,bottom:1160,height:360};t.paint();const progress=t.svg.style.values['--chart-reveal'];
+ t.svg.fire('pointerover');t.svg.fire('pointermove',{movementX:0,movementY:0});assert.equal(t.svg.style.values['--chart-reveal'],progress);
+ t.svg.fire('pointermove',{movementX:2,movementY:0});assert.equal(t.svg.style.values['--chart-reveal'],1);
 });

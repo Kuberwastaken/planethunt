@@ -145,10 +145,10 @@ $('file-explorer').addEventListener('toggle',()=>{if($('file-explorer').open)loa
 // One scroll-linked movement, only while the footer is near the viewport.
 const footer=document.querySelector('.site-footer'),reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 let footerVisible=false,footerFrame=0;
-function paintFooter(){footerFrame=0;const rect=footer.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.min(innerHeight,rect.height)));footer.style.setProperty('--footer-progress',reduceMotion.matches?1:progress);footer.style.setProperty('--footer-shift',`${reduceMotion.matches?0:(1-progress)*55}px`);footer.style.setProperty('--star-turn',`${reduceMotion.matches?0:progress*135}deg`);}
+function paintFooter(){footerFrame=0;const rect=footer.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.min(innerHeight,rect.height)));if(rect.bottom>0&&footer.querySelector('.footer-wordmark').getBoundingClientRect().top<innerHeight*.9)footer.classList.add('footer-revealed');footer.style.setProperty('--footer-progress',reduceMotion.matches?1:progress);footer.style.setProperty('--footer-shift',`${reduceMotion.matches?0:(1-progress)*55}px`);footer.style.setProperty('--star-turn',`${reduceMotion.matches?0:progress*135}deg`);}
 new IntersectionObserver(entries=>{footerVisible=entries[0].isIntersecting;footer.classList.toggle('in-view',footerVisible);if(footerVisible)paintFooter();},{rootMargin:'100px'}).observe(footer);
 addEventListener('scroll',()=>{if(footerVisible&&!footerFrame)footerFrame=requestAnimationFrame(paintFooter);},{passive:true});
-addEventListener('resize',paintFooter);reduceMotion.addEventListener('change',paintFooter);
+addEventListener('resize',paintFooter);reduceMotion.addEventListener('change',paintFooter);paintFooter();
 // Scroll advances comparison views without moving focus or taking over scrolling.
 // Any explicit choice locks that comparison for the rest of the visit.
 const comparisons=[
@@ -182,15 +182,18 @@ addEventListener('scroll',()=>{if(!comparisonFrame)comparisonFrame=requestAnimat
 // Scroll reveals data marks while axes stay fixed. Inspection always shows final values.
 const growingCharts=[...document.querySelectorAll('svg')].filter(svg=>svg.querySelector('.chart-grow-bar,.chart-grow-horizontal')).map(svg=>({svg,progress:0}));
 growingCharts.forEach(rule=>{
- const complete=()=>{rule.progress=1;rule.svg.style.setProperty('--chart-reveal',1);};
- ['pointerover','focusin','touchstart'].forEach(type=>rule.svg.addEventListener(type,complete,{passive:true}));
+ rule.svg.querySelectorAll('.chart-grow-bar,.chart-grow-horizontal').forEach((bar,i)=>bar.style.setProperty('--bar-order',i));
+ const complete=()=>{rule.progress=1;rule.svg.style.setProperty('--chart-duration','0ms');rule.svg.style.setProperty('--chart-reveal',1);};
+ // Scroll-induced pointer entry is not an instruction to skip the entrance.
+ rule.svg.addEventListener('pointermove',event=>{if(event.movementX||event.movementY)complete();},{passive:true});
+ ['pointerdown','focusin','touchstart'].forEach(type=>rule.svg.addEventListener(type,complete,{passive:true}));
 });
 let detailFrame=0;
 function paintDetails(){
  detailFrame=0;
  growingCharts.forEach(rule=>{
   const rect=rule.svg.getBoundingClientRect();if(!rect.height)return;
-  const progress=reduceMotion.matches?1:Math.max(0,Math.min(1,(innerHeight*.9-rect.top)/(Math.min(rect.height,innerHeight)*.65)));
+  const progress=reduceMotion.matches?1:Math.max(0,Math.min(1,(innerHeight*.85-rect.top)/(Math.min(rect.height,innerHeight)*.95)));
   rule.progress=Math.max(rule.progress,progress);rule.svg.style.setProperty('--chart-reveal',rule.progress);
  });
  if(reduceMotion.matches||dialog.open||albedoManual)return;

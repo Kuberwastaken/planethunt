@@ -156,3 +156,12 @@ button.planet-image{display:block;width:100%;padding:0;border:0;border-radius:0;
 @media print{.data-download{display:none!important}.chart-grow-horizontal{transform:none!important}}
 
 @media(max-width:760px){.dialog-media{overflow:auto}.dialog-media>.expanded-chart{min-width:720px;max-height:none;height:auto}}
+/* One entrance, then a stable record. Only the marks move; axes stay fixed. */
+@media(prefers-reduced-motion:no-preference){
+ .chart-grow-bar,.chart-grow-horizontal{transition:transform var(--chart-duration,360ms) cubic-bezier(.2,.65,.3,1)}
+ .chart-grow-bar{transform:scaleY(clamp(0,calc(var(--chart-reveal,1)*1.3 - var(--bar-order,0)*.012),1))}
+ .chart-grow-horizontal{transform:scaleX(clamp(0,calc(var(--chart-reveal,1)*1.3 - var(--bar-order,0)*.012),1))}
+ .footer-revealed .footer-letters>span{animation:footer-rise 850ms cubic-bezier(.16,1,.3,1) both;animation-delay:calc(var(--i)*35ms)}
+}
+@keyframes footer-rise{from{transform:translateY(115%);opacity:0}to{transform:translateY(0);opacity:1}}
+.expanded-chart .chart-grow-bar,.expanded-chart .chart-grow-horizontal{transform:none;transition:none}
