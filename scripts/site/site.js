@@ -37,7 +37,7 @@ async function renderSignal() {
       p.parts.push('<g clip-path="url(#plot-clip)">');
       d.fold.forEach(([x,y,e])=>{p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="#666666" stroke-width="1.2"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="3.5" fill="${palette.sage}"><title>${x.toFixed(2)} hours: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
       p.parts.push(`<path d="${d.transitModel.map(([x,y],i)=>`${i?'L':'M'}${p.X(x).toFixed(2)},${p.Y(y).toFixed(2)}`).join('')}" fill="none" stroke="${palette.white}" stroke-width="2.4"/></g>`);
-      caption='Saved full-light-curve fold at 13.769448 days, shown in 15-minute bins. Error bars show the exported bin errors; white is the fitted transit model. This display is not a new holdout test.';
+      caption='Full-baseline fold; error bars show bin uncertainty.';
       filename='kic5689121_folded_15min_bins.csv';meta=`${d.fold.length} bins · 15-minute intervals`;
       $('signal-legend').innerHTML='<span><i></i> Kepler measurements</span><span><i class="model"></i> Transit model</span>';
     } else if(currentView==='events') {
@@ -45,7 +45,7 @@ async function renderSignal() {
       p=svgPlot({title:'Individual event depths, 74 measured events',xr:[-50,28],yr:[-3000,11000],xticks:[-48,-36,-24,-12,0,12,24],yticks:[-2000,0,2000,4000,6000,8000,10000],xlabel:'Transit number relative to the saved reference epoch',ylabel:'Measured transit depth (ppm)'});
       p.parts.push(`<path d="M${p.X(-50)} ${p.Y(2400)}H${p.X(28)}" stroke="${palette.white}" stroke-dasharray="4 5"/><g clip-path="url(#plot-clip)">`);
       rows.forEach(([x,y,e,hold,q])=>{const c=hold?palette.yellow:palette.sage;p.parts.push(`<path d="M${p.X(x)} ${p.Y(y-e)}V${p.Y(y+e)}" stroke="${c}" opacity=".55"/><circle cx="${p.X(x)}" cy="${p.Y(y)}" r="4" fill="${c}"><title>Event ${x}, Q${q}${hold?', reserved quarter':''}: ${Math.round(y)} ± ${Math.round(e)} ppm</title></circle>`);});
-      p.parts.push('</g>');caption='All 74 events in the later measurement export, 23 from reserved quarters. The original stricter vetter retained 70 / 22. Event scatter is much larger than the formal error on a combined fold.';
+      p.parts.push('</g>');caption='Dashed line: 2,400 ppm reference depth.';
       filename='kic5689121_per_transit_depths.csv';meta=`${rows.length} events shown · error bars ±1σ`;
       $('signal-legend').innerHTML='<span><i></i> Discovery quarters</span><span><i style="background:#ffffff"></i> Reserved quarters</span>';
     } else {
@@ -55,7 +55,7 @@ async function renderSignal() {
       p=svgPlot({title:`Kepler light curve ${q==='all'?'all quarters':`quarter ${q}`}`,xr,yr:[-7500,7500],xticks,yticks:[-6000,-3000,0,3000,6000],xlabel:'Time in BTJD (BJD TDB − 2,457,000)',ylabel:'Detrended brightness (ppm)'});
       for(const transit of [false,true]) {const path=rows.filter(r=>r[3]===transit).map(([t,y])=>`M${p.X(t).toFixed(1)},${p.Y(y).toFixed(1)}h.1`).join('');p.parts.push(`<path clip-path="url(#plot-clip)" d="${path}" stroke="${transit?palette.white:palette.sage}" stroke-width="${q==='all'?1.5:2.3}" stroke-linecap="round" opacity="${transit?.9:.4}"/>`);}
       const outside=rows.filter(r=>Math.abs(r[1])>7500).length;
-      caption=`${rows.length.toLocaleString()} original detrended cadences. White marks the export’s in-transit selection. Gaps reflect missing observations. The plot clips ${outside} points outside ±7,500 ppm; the CSV keeps every value. Choose a quarter to inspect individual dips.`;
+      caption=`${outside} points outside ±7,500 ppm are clipped; the CSV retains all values.`;
       filename='kic5689121_lightcurve_psf.csv';meta=`${rows.length.toLocaleString()} measurements · ${q==='all'?'2009–2013':`quarter ${q}`}`;
       $('signal-legend').innerHTML='<span><i></i> Original cadences</span><span><i style="background:#ffffff"></i> In-transit selection</span>';
     }
@@ -69,18 +69,18 @@ $('heldout-only').addEventListener('change',renderSignal);$('quarter').addEventL
 const signalObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){renderSignal();signalObserver.disconnect();}},{rootMargin:'200px'});signalObserver.observe($('signal'));
 
 const surveys={
- ps1:{src:V+'post/source_images/ps1_2arcmin.png',fov:.0333,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'2′',scale:'20″',bar:20,credit:'Pan-STARRS1 / STScI via CDS',desc:'The clearest view of the pair. The host is the fainter red star; its neighbour is about 2.1 times brighter in Gaia G. This is why separating their light matters.'},
- wide:{src:V+'post/source_images/ps1_10arcmin.png',fov:.1667,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'10′',scale:'1′',bar:60,credit:'Pan-STARRS1 / STScI via CDS',desc:'A wider view of this crowded region of Lyra. The candidate is at the same central coordinates; the larger field makes the abundance of neighbouring stars clear.'},
- dss:{src:V+'post/source_images/dss2_15arcmin.png',fov:.25,hips:'CDS/P/DSS2/color',name:'DSS2 photographic plates',width:'15′',scale:'2′',bar:120,credit:'DSS2 / STScI, AURA, Palomar, UK Schmidt via CDS',desc:'Older photographic survey plates provide historical context. Their lower resolution cannot by itself settle the close-companion question.'},
- mass:{src:'docs/sky/2mass-10arcmin-clean.png',fov:.1667,hips:'CDS/P/2MASS/color',name:'2MASS near-infrared',width:'10′',scale:'1′',bar:60,credit:'2MASS / UMass, IPAC-Caltech via CDS',desc:'Near-infrared J, H and K bands show the field at longer wavelengths. Colours and resolution differ from Pan-STARRS; this is not a planet image.'},
- wise:{src:'docs/sky/allwise-10arcmin-clean.png',fov:.1667,hips:'CDS/P/allWISE/color',name:'AllWISE mid-infrared',width:'10′',scale:'1′',bar:60,credit:'AllWISE / NASA, JPL-Caltech, UCLA via CDS',desc:'The much coarser mid-infrared view blends the close pair. A catalogue-position marker can locate the star but does not mean the image resolves it.'}
+ ps1:{src:V+'post/source_images/ps1_2arcmin.png',fov:.0333,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'2′',scale:'20″',bar:20,credit:'Pan-STARRS1 / STScI via CDS',desc:'The neighbour is 2.1× brighter than the host in Gaia G.'},
+ wide:{src:V+'post/source_images/ps1_10arcmin.png',fov:.1667,hips:'CDS/P/PanSTARRS/DR1/color-z-zg-g',name:'Pan-STARRS1 DR1',width:'10′',scale:'1′',bar:60,credit:'Pan-STARRS1 / STScI via CDS',desc:'The surrounding 10′ field in Lyra.'},
+ dss:{src:V+'post/source_images/dss2_15arcmin.png',fov:.25,hips:'CDS/P/DSS2/color',name:'DSS2 photographic plates',width:'15′',scale:'2′',bar:120,credit:'DSS2 / STScI, AURA, Palomar, UK Schmidt via CDS',desc:'Older photographic plates; insufficient resolution to exclude a close companion.'},
+ mass:{src:'docs/sky/2mass-10arcmin-clean.png',fov:.1667,hips:'CDS/P/2MASS/color',name:'2MASS near-infrared',width:'10′',scale:'1′',bar:60,credit:'2MASS / UMass, IPAC-Caltech via CDS',desc:'The field in near-infrared J, H and K bands.'},
+ wise:{src:'docs/sky/allwise-10arcmin-clean.png',fov:.1667,hips:'CDS/P/allWISE/color',name:'AllWISE mid-infrared',width:'10′',scale:'1′',bar:60,credit:'AllWISE / NASA, JPL-Caltech, UCLA via CDS',desc:'The close pair is unresolved at this mid-infrared resolution.'}
 };
 let survey='ps1';
 function renderSky(){
  const s=surveys[survey],span=s.fov*3600,neighbor=500+7.1/span*1000,r=survey==='ps1'?36:14;
  $('survey-image').src=s.src;$('survey-image').alt=`${s.name} survey centred on KIC 5689121, ${s.width} wide, north up and east left`;
  $('survey-overlay').innerHTML=`<g ${$('sky-labels').checked?'':'visibility="hidden"'}><circle cx="500" cy="500" r="${r}" fill="none" stroke="${palette.white}" stroke-width="2"/><circle cx="${neighbor}" cy="500" r="${survey==='ps1'?30:10}" fill="none" stroke="${palette.sage}" stroke-width="2" stroke-dasharray="5 5"/></g><g stroke="${palette.ink}" stroke-width="2" fill="none"><path d="M50 920h${s.bar/span*1000}M920 120V65m0 55h-55"/></g><g fill="${palette.ink}" font-size="18" font-family="IBM Plex Mono,monospace"><text x="50" y="903">${s.scale}</text><text x="912" y="48">N</text><text x="840" y="126">E</text></g>`;
- $('survey-description').textContent=s.desc;$('survey-caption').textContent=`${s.name}, ${s.width} wide. ${s.credit}. Solid ring: candidate host; dashed: bright neighbour. Monochrome presentation; original survey colour is available. Catalogue-position markers do not imply that coarse surveys resolve the pair.`;
+ $('survey-description').textContent=s.desc;$('survey-caption').textContent=`${s.credit}. Solid: host. Dashed: neighbour. Markers show catalogue positions.`;
  $('survey-source').href='https://alasky.cds.unistra.fr/hips-image-services/hips2fits?'+new URLSearchParams({hips:s.hips,width:1200,height:1200,fov:s.fov,projection:'TAN',coordsys:'icrs',ra:285.907827,dec:40.941988,format:'png'});
  document.querySelectorAll('[data-survey]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.survey===survey)));
 }
@@ -101,7 +101,7 @@ document.querySelectorAll('[data-fpp]').forEach(button=>button.addEventListener(
  const hypothetical=button.dataset.fpp==='hypothetical',v=hypothetical?2.694156338609677:6.88513079714933;
  $('fpp-value').innerHTML=`${v.toFixed(1)}<span>%</span>`;$('fpp-bar').setAttribute('d',`M20 65H${20+v/10*480}`);
  $('fpp-scale').setAttribute('aria-label',`${hypothetical?'Hypothetical imaging scenario':'Available evidence'}: ${v.toFixed(1)} percent false-positive probability, above 1.5 percent threshold`);
- $('fpp-caption').textContent=hypothetical?'Hypothetical result, not an observation. A simulated Keck K-band contrast curve reduces the mean to 2.7% (two runs: 2.2–3.2%), still above the validation threshold.':'Mean modelled false-positive probability. Four runs span 5.8–8.9%. This is a conditional model result, not a direct measurement of “the chance we found a planet.”';
+ $('fpp-caption').textContent=hypothetical?'Simulated Keck K-band imaging. Two runs: 2.2–3.2%; still above the validation threshold.':'Modelled false-positive probability. Four runs: 5.8–8.9%. Conditional on model inputs.';
  document.querySelectorAll('[data-fpp]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
 }));
 $('albedo').addEventListener('input',()=>{const a=Number($('albedo').value);$('albedo-output').textContent=a+'%';$('temperature').textContent=Math.round(417.4280973054799*Math.pow(1-a/100,.25))+' K';});

@@ -75,3 +75,13 @@ The revised layout was checked at 320, 390, 768 and 1440 CSS pixels with no docu
 Event and reserved-event views, full light curve, original survey colour, chart enlargement and
 console state were rechecked. Chart text and numerical attributes were inspected for clipping
 and invalid values. Full data and local-link validation was rerun after the redesign.
+
+## Copy edit
+
+Removed six checklist rows that repeated the evidence map and companion discussion,
+retaining the unique shape and catalogue-novelty findings. Shortened introductions, captions,
+survey descriptions and follow-up prose; kept data, charts, source destinations and material
+scientific qualifications. The public HTML template has approximately 29% fewer words
+(excluding SVG content and the unchanged historical appendices). Typography and styles are
+unchanged. Rebuilt the page, checked local references and data fidelity, and inspected the
+updated desktop and narrow layouts plus runtime captions.
