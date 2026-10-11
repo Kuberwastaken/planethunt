@@ -1,0 +1,72 @@
+{
+ "bg": "bg_gaia_G21.csv",
+ "N": 100000,
+ "seed": 0,
+ "contrast_curve": null,
+ "depth_input": 0.0022115625113119375,
+ "flux_err": 0.0010947910909396548,
+ "FPP": 0.006035870059970638,
+ "NFPP": 0.0,
+ "probs": [
+  {
+   "scenario": "TP",
+   "prob": 0.7557250844203066
+  },
+  {
+   "scenario": "EB",
+   "prob": 7.823405240800744e-136
+  },
+  {
+   "scenario": "EBx2P",
+   "prob": 5.27256783391381e-57
+  },
+  {
+   "scenario": "PTP",
+   "prob": 0.2263882652855921
+  },
+  {
+   "scenario": "PEB",
+   "prob": 9.717826172325772e-134
+  },
+  {
+   "scenario": "PEBx2P",
+   "prob": 5.282217922967599e-49
+  },
+  {
+   "scenario": "STP",
+   "prob": 0.0043833636415784175
+  },
+  {
+   "scenario": "SEB",
+   "prob": 3.359840915387511e-67
+  },
+  {
+   "scenario": "SEBx2P",
+   "prob": 4.524814698185288e-36
+  },
+  {
+   "scenario": "DTP",
+   "prob": 0.01185078023413065
+  },
+  {
+   "scenario": "DEB",
+   "prob": 2.461562096716536e-134
+  },
+  {
+   "scenario": "DEBx2P",
+   "prob": 1.2514037110728613e-41
+  },
+  {
+   "scenario": "BTP",
+   "prob": 0.0010081692157596323
+  },
+  {
+   "scenario": "BEB",
+   "prob": 0.0006418189164185243
+  },
+  {
+   "scenario": "BEBx2P",
+   "prob": 2.51828626013601e-06
+  }
+ ]
+}

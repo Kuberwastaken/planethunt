@@ -1,0 +1,12 @@
+{
+ "a_AU": 0.0895562602330138,
+ "L_Lsun": 0.04041980036194754,
+ "insolation_earth": 5.039671918163298,
+ "Teq_K_zero_albedo": 417.4280973054799,
+ "star_angular_diam_deg": 3.019779679281134,
+ "sun_angular_diam_deg": 0.533,
+ "radius_earth": [
+  2.5,
+  3.0
+ ]
+}

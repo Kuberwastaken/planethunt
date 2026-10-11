@@ -1,0 +1,18 @@
+{
+ "disc_P": 8.723599236691795,
+ "disc_P_err": 4.812667116027569e-05,
+ "disc_T0": 2280.020087121796,
+ "cycles": 89.0,
+ "predicted_late_T0": 3056.420419187366,
+ "predicted_err_d": 0.005217883504601982,
+ "measured_late_T0": 3056.4197611303553,
+ "measured_err_d": 0.0019347225379533484,
+ "offset_min": -0.9476020954025444,
+ "offset_sigma": -0.11824879040242273,
+ "period_diff_sigma": -1.1902554541572676,
+ "late_depth_at_frozen_ephem_ppm": 450.3734271276193,
+ "late_depth_err_ppm": 47.033092777590724,
+ "late_events": 22,
+ "late_snr": 9.575671097313064,
+ "positive_event_fraction": 1.0
+}
