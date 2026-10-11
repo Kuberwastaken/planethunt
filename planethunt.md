@@ -84,3 +84,12 @@ The website's file explorer reads `inventory.json` and `analysis/bulk-files.json
 
 ## Extension 2026-10-11
 `analysis/kbonus-extension-20261011/README.md`: Codex's Kepler Bonus pipeline run on ranks 65-1800 of the same frozen selection (1,672 searched) with matched inverted controls. Real and null first-screen passes are not different (ranks 65-576: 10 vs 10; ranks 577-1800: 19 vs 22 signals); no second candidate; KIC 9851000 is a neighbor's known false-positive eclipse. Second-stage tables are in `ranks577-1800/`. Data in `signals_real_and_inverted.csv` and `stars_searched.csv` in that folder.
+
+## Validation pack 2026-10-11
+`analysis/validation-20261011/README.md` (start here): vetting of KIC 5689121 / TIC 120686465 and TIC 309780779 - Kepler and TESS holdouts, centroid and Kepler-169 checks, TRICERATOPS false-positive runs, an independent re-derivation, real Pan-STARRS/DSS2 sky images registered to Gaia DR3, charts and the plotted data as CSV/JSON.
+- `SCIENCE.md`: every test with numbers and caveats. `TASKS.md`: task list, blocked items, next steps. `LINKS.md`: datasets, hashes, image sources and credits.
+- `results/kepler/`, `results/tess/`, `results/triceratops/` (with `logs/`): outputs. `scripts/kepler/`, `scripts/tess/`, `scripts/triceratops/`, `scripts/sky/`, `scripts/post/`: code (scripts keep original scratch paths and are not a one-command rerun).
+- `independent_check/`: second agent's from-scratch check, own README. `figures/`: diagnostic figures.
+- `post/sky_images/`, `post/charts/`, `post/source_images/`, `post/data/`: graphics and every plotted number; `post/README.md` maps them. Images are JPEG for sky photos, PNG for charts. The `kic5689121_panstarrs_*` images and `scripts/sky/stack.py` came from a separate working session.
+- Headline: KIC 5689121 FPP about 0.07 (TRICERATOPS), still a candidate; TIC 309780779 FPP about 0.57 (eclipsing-binary dominated). No planet is claimed. Each folder has its own `SHA256SUMS`.
+

@@ -31,3 +31,6 @@ Download all three and merge their `planet-search/` folders. All are audited, so
 
 ## Extension 2026-10-11
 Codex's Kepler Bonus search was extended to 1,672 more stars with matched inverted controls: no second candidate, and the real run passed the first screen no more often than the null. See `analysis/kbonus-extension-20261011/README.md`.
+
+## Validation pack 2026-10-11
+[`analysis/validation-20261011/README.md`](analysis/validation-20261011/README.md): false-positive and holdout vetting of both candidates, an independent re-check, sky images and charts, with its own checksums.

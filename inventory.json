@@ -14,8 +14,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3089,
-      "sha256": "9aba57af73b95b5bf736a979ca6d492c29415bdba65391fb5b47d37e4ed4fb73"
+      "bytes": 3331,
+      "sha256": "71f9abbe977b1459dfda639c555679d46fe81c2dd8848bf032d1e5c05b131f0c"
     },
     {
       "path": "SOURCES.md",
@@ -101,6 +101,711 @@
       "path": "analysis/review.md",
       "bytes": 7744,
       "sha256": "3356c9f26ea09e95696488d04230bc3892216b5036784bec1b2bb678035780ef"
+    },
+    {
+      "path": "analysis/validation-20261011/LINKS.md",
+      "bytes": 3132,
+      "sha256": "60f6d836760b223c2e6969638b057a6a1780e4cc52b7790213137743aea9af66"
+    },
+    {
+      "path": "analysis/validation-20261011/README.md",
+      "bytes": 5904,
+      "sha256": "fb213d6db4f9e37745868efae7c161f46e9ba1423f8c1fc85be1fdd81159b1ba"
+    },
+    {
+      "path": "analysis/validation-20261011/SCIENCE.md",
+      "bytes": 11094,
+      "sha256": "572fd4d3d66624bd5838168691207d229d100e75eae2ded48ff509bdf0c4abd0"
+    },
+    {
+      "path": "analysis/validation-20261011/SHA256SUMS",
+      "bytes": 14327,
+      "sha256": "25e997d1c49595bcc7fd8a653ca7cb249ee0eeeb582e5f5f0c73d3b5c60e50af"
+    },
+    {
+      "path": "analysis/validation-20261011/TASKS.md",
+      "bytes": 3864,
+      "sha256": "85aff17bea3124b41d72e153ed0c872f27aaca98885c9163ee149a46d01d7c61"
+    },
+    {
+      "path": "analysis/validation-20261011/figures/kic5689121_dilution_centroid.png",
+      "bytes": 149853,
+      "sha256": "f0da6735299de3eaa1d1840d8329875e51e98c26eacf87fef2248538f8bc31ff"
+    },
+    {
+      "path": "analysis/validation-20261011/figures/tic309780779_holdout_phase_scan.png",
+      "bytes": 143779,
+      "sha256": "5bfd157702bde14567cc8ccfbcafd9c206fd607e44f99cdf82378bb31275dc16"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/README.md",
+      "bytes": 1133,
+      "sha256": "5eaf2ced83c619dac690f1df4f209cdcf69e3932c2ed2a6a2af1949ac46ae3a6"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/k.py",
+      "bytes": 2545,
+      "sha256": "bbe138f9679c4d493cc6533eff722c8c877eb26fcf183ba2eab451321b70e343"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/k2.py",
+      "bytes": 894,
+      "sha256": "e42e4f60156fac8c531562490d476181575fde5d6e6413e1ee4e1360b756c920"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/k3.py",
+      "bytes": 794,
+      "sha256": "8c6e381bfd100d021d930704bcf3ffe15e0127cdae7eda68085c9caa25c6a228"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/n.py",
+      "bytes": 1729,
+      "sha256": "9c928da068d9817ea5834da9f5093d97e732d01efa9de937c21a190d0dc9a414"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/t.py",
+      "bytes": 2772,
+      "sha256": "c8b3e4c8a260cabfc2bf1d5638771b8778241192d72eb7e97b9a6fbfb57f6290"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/t2.py",
+      "bytes": 1629,
+      "sha256": "551bec80af9264f92f23fcf3f68681ea8ceb45ef9a92464839f2786f20a727e0"
+    },
+    {
+      "path": "analysis/validation-20261011/independent_check/t3.py",
+      "bytes": 653,
+      "sha256": "9c8af6767bf7c743a4a67e6c2d9cfb2af1df23522a596ccb18f576bc4e1a1035"
+    },
+    {
+      "path": "analysis/validation-20261011/post/README.md",
+      "bytes": 2672,
+      "sha256": "1c9d636091e5a3bc5ffae2551d387d4220081b40f041edf94abed160ea66442c"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_01_where.png",
+      "bytes": 295912,
+      "sha256": "b04b5f8007f3e93216abe58d82abf9a6b7b784c70098233f5892f1ea3751f3b9"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_02_lightcurve.png",
+      "bytes": 285411,
+      "sha256": "56b0a5380a6c81c97189b2406a9c896deaed965dca2d2c8812c2419702f98dd1"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_03_folded_dip.png",
+      "bytes": 301743,
+      "sha256": "d8a0a8f75c514b01f180ac22c435414d9817c3d835169a2a8254777c56605896"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_04_status.png",
+      "bytes": 314763,
+      "sha256": "57ab835fb5c6e3ec1baad13ea4231ab1c711c3a5932908c7870a5b05b392cb39"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_05_three_views.png",
+      "bytes": 715740,
+      "sha256": "4528beb075ea7921e5ec756d6b86d5bc4070b7b5dcdf1ad6bdaf9f3cfe28257d"
+    },
+    {
+      "path": "analysis/validation-20261011/post/charts/post_07_model.png",
+      "bytes": 197551,
+      "sha256": "9a8e8ddd68b2bc16e574e06d5c333c00b8834caf3b8e08cb82a764e966579309"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season0_electrons_per_s.csv",
+      "bytes": 395,
+      "sha256": "85456e8fe3872169bc45724469c6a141a6e13b05136f259e8e27a27d71e66d84"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season0_snr.csv",
+      "bytes": 129,
+      "sha256": "1327ab0d828bee089000e468f1d840b422f889272d5325bc1a51af630ae223d2"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season1_electrons_per_s.csv",
+      "bytes": 463,
+      "sha256": "73ec69b08b50717a2a274d5cacbdf834a41f701a6a8befd178d504e8a3dd37d1"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season1_snr.csv",
+      "bytes": 148,
+      "sha256": "020b82c60db9d1d028cba33cf289a00d16f3705497e39e135d71492cea452f6b"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season2_electrons_per_s.csv",
+      "bytes": 398,
+      "sha256": "8f96950628bfeda93db90f7cb52c1d6bb2b54f229c3814939f7388c29d8523ea"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season2_snr.csv",
+      "bytes": 126,
+      "sha256": "ad06766f200120dc1a19526f0a2ec3c1aec131abfea200ad8326e9ccecfb7387"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season3_electrons_per_s.csv",
+      "bytes": 391,
+      "sha256": "aef56a878391c280157e87ab04afe3826e9451fe4fdbdb439340720ca5b100eb"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_diffimage_season3_snr.csv",
+      "bytes": 130,
+      "sha256": "ecf162bcdb8817aa52ca43962144eb43194a51eaa9bf93bcc56a9d53bf3ddb8e"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_folded_15min_bins.csv",
+      "bytes": 1789,
+      "sha256": "d75c7088aa1745c14b8c828e48b3a27db2b5fbd7f5732a53e4f0b4552c34d696"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_gaia_neighbours_120arcsec.csv",
+      "bytes": 9674,
+      "sha256": "78c54b3ba1486b6c5745018cf467cc07c1c09e9bc8850d2c4fb6cc9ea2ad41b2"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_key_numbers.json",
+      "bytes": 5633,
+      "sha256": "f513dd8e9dae83f7f056d5a237c1cf914a2d97f8aae2f8f3b54284cb3756aad6"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_lightcurve_psf.csv",
+      "bytes": 3173650,
+      "sha256": "75e38daa3a90988ac4e867cde13357e86380f4cd33a56340ff57b84c294799d1"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_model_numbers.json",
+      "bytes": 257,
+      "sha256": "b0658707c5efcec90120f9f36d5ef59202ff793d2e89fb1ce1b33c06b4b97193"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_per_transit_depths.csv",
+      "bytes": 4846,
+      "sha256": "a1eded7754a9ee790908103e5bcca8d71e93330fee8b446259315fbef4912308"
+    },
+    {
+      "path": "analysis/validation-20261011/post/data/kic5689121_transit_model.csv",
+      "bytes": 19733,
+      "sha256": "a67454e1eee46b7ead2846c7493db16403e55ff6be817732e25258d8231b8551"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/kic5689121_panstarrs_side.jpg",
+      "bytes": 1281954,
+      "sha256": "610831d0ed057e7595d0a921960e1bbea584db84d27b9844f54c030cb5f5446e"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/kic5689121_panstarrs_vertical.jpg",
+      "bytes": 1282261,
+      "sha256": "651287850d72914438c2240de067ba9846b001d2bddd7f77b63eed73828f7eda"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/post_00_real_sky.jpg",
+      "bytes": 833559,
+      "sha256": "fab16c9474318825c5a2f33b58f250e9f3347006e0c87dd211b032b28145d470"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/post_00_real_sky_pair.jpg",
+      "bytes": 1154197,
+      "sha256": "e5c0728406d43b2fa53bdd52971a98d6927515f220dbcbf67d4384564157d6da"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/post_00_real_sky_stack.jpg",
+      "bytes": 1140171,
+      "sha256": "874bcdf98fd468df66b30a0c96718e56849207b5205039700b34ccfb1f5213f3"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/post_06_kepler_pixels_pair.jpg",
+      "bytes": 368454,
+      "sha256": "e6805f32562fb9ceee03ed8063899b352cc8be0244aeee71dbba4d5d881ebd9f"
+    },
+    {
+      "path": "analysis/validation-20261011/post/sky_images/post_06_kepler_pixels_stack.jpg",
+      "bytes": 365785,
+      "sha256": "f4c2ddca623c34d2adaa010943d22964bf148027e51016d8e788c2a1f7bb941d"
+    },
+    {
+      "path": "analysis/validation-20261011/post/source_images/dss2_15arcmin.png",
+      "bytes": 2448986,
+      "sha256": "783b9b14a9c61c04b6e4dc1fc81643d431aa6479d5f95b9dbe76227dfb0323eb"
+    },
+    {
+      "path": "analysis/validation-20261011/post/source_images/ps1_10arcmin.png",
+      "bytes": 3267238,
+      "sha256": "a9f26a87495fffd74ca95980f2c443c17165ddcede4f165ac3371d2175f9891a"
+    },
+    {
+      "path": "analysis/validation-20261011/post/source_images/ps1_2arcmin.png",
+      "bytes": 2906537,
+      "sha256": "dc8d31d48040136ec5fe063ed79365b88dbca24d3816dedc52946bb70188e565"
+    },
+    {
+      "path": "analysis/validation-20261011/post/source_images/ps1_stsci_2arcmin.png",
+      "bytes": 242636,
+      "sha256": "adff812673dcfdf88226020382824895eb4231d3a4b9f8a02e19513f89aef9d1"
+    },
+    {
+      "path": "analysis/validation-20261011/post/source_images/registration.json",
+      "bytes": 442,
+      "sha256": "b9ccc7bb6b13c0189bb0ea6875ae50cd5b8f7fca6c14d70dab731cdbb12485c4"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/diffimg.json",
+      "bytes": 41689,
+      "sha256": "5b59d84e885002fa0851400762f455642d7126a4dc2725ba5bc7f58c21833c0f"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/k169_overlap.json",
+      "bytes": 658,
+      "sha256": "0c0da7b6dc51d12c899aca040bd46d522b7ff440c581e2c2a56ef5586053b337"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kcentroid.json",
+      "bytes": 3801,
+      "sha256": "3450d566bfa3ec7d7d5bfe8c3637725e693b2f0fc7f5a2e6601baa674fd5cbed"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kcentroid_all_sources.csv",
+      "bytes": 711,
+      "sha256": "483d6d7f7208c49a859148e22583055f8c43d5749ef2f490b29d0963e2acb595"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kcentroid_tpf.json",
+      "bytes": 5146,
+      "sha256": "b54b9359f63581f10738dd4c48047b644f77456bdbaca01bba404cf77ec32a88"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kcrowd.json",
+      "bytes": 4476,
+      "sha256": "55d3d6a14baf458a653349ff27a949147eb71b0ffaf8e9259888fa11b2226e61"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kdepth.json",
+      "bytes": 1131,
+      "sha256": "7253ac2ec94a29e64d63bab0a5f41f0e581423756dc92235f42298a7f957ecdc"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kdilution.json",
+      "bytes": 276,
+      "sha256": "3dd3bb4e7b6e2bc8a03bdebbc5c0ca95ca534024f5b66c67e4616c7ce12e88ab"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kdilution_pooled.json",
+      "bytes": 491,
+      "sha256": "4e6474b1fe4b845299e85b9065a435966068c6fa497e7121f2cf4c2c9bcc0fb7"
+    },
+    {
+      "path": "analysis/validation-20261011/results/kepler/kfit_psf.json",
+      "bytes": 758,
+      "sha256": "c568b1d5d47d83fad751318132320fd585f204442d3b2d55b429d73d42ed3b53"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/bls_disc.json",
+      "bytes": 2052,
+      "sha256": "a9c25496d224cd4f157d2d59445afec228d58406a7405c4742c91cb06d1bcf43"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/bls_full.json",
+      "bytes": 1339,
+      "sha256": "1c605a7056eaafa4e9daebc8c1025b99f0e2e37f87c51640015da4540366ba9b"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/holdout.json",
+      "bytes": 584,
+      "sha256": "bae7c6cc62d5b32ec84d4e9f3db883d9367f2b419906975a12aea65b84f4f23e"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/scan.json",
+      "bytes": 1179,
+      "sha256": "33b54d2395da1eecd7e0ed82deec13b64654f66e87ddb6ed67aa2a1d70d518f6"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/tfit_free_all.json",
+      "bytes": 1263,
+      "sha256": "94c98c46ae6447df6feee1d9b6d5bf5a03909ed0f5fcd83728633a187d4386a8"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/tfit_free_disc.json",
+      "bytes": 1201,
+      "sha256": "e24c6f5ac0f87800d70721c618005b2e195e3cb59178cbcc8d6c354b9d8a1dca"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/tfit_free_late.json",
+      "bytes": 1120,
+      "sha256": "bb81b4c99c5ecf4431331b255149abca312c0cd3774262af66e7e210ca4b4f1f"
+    },
+    {
+      "path": "analysis/validation-20261011/results/tess/tfit_rho_all.json",
+      "bytes": 1275,
+      "sha256": "2b08bf1d7c2db2a60b7613223e1a4bb79327197ec910f3171462de36f253ca2e"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/bg_gaia_G21.csv",
+      "bytes": 413342,
+      "sha256": "6369d072ad6dbe1f88ed25d29838e8008ac23300afbee029d16a8f5c6ae6a6fa"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/bg_gaia_G22p5.csv",
+      "bytes": 761373,
+      "sha256": "904f201655f03e52dc293f92677fa756769c189b7fe0adaa3b92b930f4a4a00a"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/bg_tess_G20.csv",
+      "bytes": 307478,
+      "sha256": "eb1324b4941aa5ac65c68a6a6ba3c7f84d15b0d36f3df2d3ed28c7735cd1672e"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/fpp_summary.json",
+      "bytes": 4163,
+      "sha256": "1573a2bcd882db1367f11c8f76c5181bd688a676d2891f049ab4a20be36d6569"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s1.json",
+      "bytes": 1178,
+      "sha256": "311ea514c0bcef65b3ec503da9851342b435c494a1ec87ff48fa9372e734c2d0"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s1_cc.json",
+      "bytes": 1203,
+      "sha256": "df0725f4d1247a55c104ec91221e0da1ac7e852df120764cc9a555bc9ed7a9c0"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s2.json",
+      "bytes": 1177,
+      "sha256": "fe5c5b06f7d74a1a8c358695a0fa4b194a4ad84b9b8844708233a6e0b6fc55a9"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s2_cc.json",
+      "bytes": 1203,
+      "sha256": "96e9d9b60203b6d7253c1c7cb9bee85d7d688284076a96b6072f06629effc006"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s3.json",
+      "bytes": 1181,
+      "sha256": "d67ba82555cdd9a5f838a135ceb7b20caac9618a8aeebba67ff2d45b8e479e9f"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N1000000_s4.json",
+      "bytes": 1183,
+      "sha256": "68a98c6fc7092b24b13901fd2628eed0e07405c91559ceacbdb8f6a80040b716"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G21_N100000_s0.json",
+      "bytes": 1179,
+      "sha256": "ec43651c3dfb704f73a93b5224e85bc15e4f92b030e440458fa22a4d69d7175d"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G22p5_N1000000_s1.json",
+      "bytes": 1186,
+      "sha256": "73034b07f703b21f93e11a309fb699394fa28a419569becdfecdfba5778b0e81"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/kepler_fpp_bg_gaia_G22p5_N1000000_s2.json",
+      "bytes": 1180,
+      "sha256": "d1ba4c7bc288e6a3bb257f529f40841c71455fcb38e5fbb2c10c5031bc55c21f"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21_s1.txt",
+      "bytes": 1443,
+      "sha256": "49bbe54a3eda4a73434f0dc86725eb1d9da9080379a0e088b29cf062865a9244"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21_s2.txt",
+      "bytes": 1459,
+      "sha256": "400f28f2ce64c8afb4e04389c1f613a19bf813d4eccbb39b01c4d54e78f5a070"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21_s3.txt",
+      "bytes": 1458,
+      "sha256": "dcdb845784e07e4f247b24185d2390b75c8fd24724c4a7c23431080dba5c1947"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21_s4.txt",
+      "bytes": 1443,
+      "sha256": "1f3f5e13190383911defa2e87338a7f61dacc4961af7cc84e6f61ef2c4f1f3da"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21cc_s1.txt",
+      "bytes": 1443,
+      "sha256": "6ecb62f79023e16130aab85b1441a16d271b061e031499054dbe3043d905e20a"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G21cc_s2.txt",
+      "bytes": 1459,
+      "sha256": "60c4bb1348160eb53fb2851aa39294a6fc56e3cb33065289cad4011c7e9f7181"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G22p5_s1.txt",
+      "bytes": 1443,
+      "sha256": "30e00bf10b318044a47b8ef260a419af6336b8b57954e8210af986910f795a70"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_G22p5_s2.txt",
+      "bytes": 1459,
+      "sha256": "17b27589c27a4a29f638c8ac896f142889ac7c0141e3726570a0c123860778c7"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_tess600_s1.txt",
+      "bytes": 1426,
+      "sha256": "54a3339f1c4f3fe386dc54e67278a376ed671a7e5e2639a3b87b376007c11a90"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_tess600_s2.txt",
+      "bytes": 1426,
+      "sha256": "2b91e41925ef91e001fcdb8f3d462aded44528b478827af179ab6d5adb47e630"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_tess600_s3.txt",
+      "bytes": 1442,
+      "sha256": "b66cd1abea1755f0e6940e54b1769f13783baa8e638b9f04e5f03273136b4203"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_tess600cc_s1.txt",
+      "bytes": 1426,
+      "sha256": "36d545f7c39595b6dbd58d648c36ea11ccc3295644e4a8385c857e9f34eb022d"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/logs/log_tess600cc_s2.txt",
+      "bytes": 1426,
+      "sha256": "dbe8ed5a6e016b5ba107433ffd7c905ec863010e20ada33db6f12967a5cccf43"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/prep_kepler.json",
+      "bytes": 223,
+      "sha256": "b5e5dac0eaa30ae9f4a468bee35859bdd32ed357f9222d199dbe4b8c96ed2dec"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/tess_fpp_tess_fold_600eq_N1000000_s1.json",
+      "bytes": 3059,
+      "sha256": "58643151792beaf1f68c9d3764a922db82f37061ca0ca59bcd01c3ac0da59fd3"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/tess_fpp_tess_fold_600eq_N1000000_s1_cc.json",
+      "bytes": 3083,
+      "sha256": "c018da416187c15695adef8316c206fe8da6f773b224e1187951afaa0106202d"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/tess_fpp_tess_fold_600eq_N1000000_s2.json",
+      "bytes": 3075,
+      "sha256": "4aa7a5c8ba706fdbbaf0f7e568476aa62f5d009834d461eebf3d2bdfdb51abc5"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/tess_fpp_tess_fold_600eq_N1000000_s2_cc.json",
+      "bytes": 3098,
+      "sha256": "f449ac03f0357bdab11785f76725f703c9a198392547b2fcde7b71ef7b2166dd"
+    },
+    {
+      "path": "analysis/validation-20261011/results/triceratops/tess_fpp_tess_fold_600eq_N1000000_s3.json",
+      "bytes": 3062,
+      "sha256": "b3fad415c1c932bd43294b6094817fa74f4fb869001768346905904d9bdad1cb"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/k169_overlap.py",
+      "bytes": 1152,
+      "sha256": "b62a3415cf5c122c490491679af300eb44a6a31c029df723515952895418bfea"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kcentroid.py",
+      "bytes": 2601,
+      "sha256": "316ebbdf767099ba61b323aa9351dd3cd163a54f92f177b4e45d911eea67ea55"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kcentroid2.py",
+      "bytes": 1703,
+      "sha256": "34ea8bd24f74190f6b7157b240723991706a08d0e00aabb350e0b64509774ad6"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kcentroid_all.py",
+      "bytes": 1860,
+      "sha256": "38f265c11a625f1bd75f9359e5a9f8aacf7b32c7970114f80c6435e9e8e87c06"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kcentroid_tpf.py",
+      "bytes": 3234,
+      "sha256": "3c3b2dc6e52a5974e213a7b3ba26c500e5ec0c46a2f2a15a06580ee170a8c9ee"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kcrowd.py",
+      "bytes": 1456,
+      "sha256": "918ae6546a0ffd4d8754f5d569bee615a70569c9d5db8eb07354bb26aebb5cb6"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kdepth.py",
+      "bytes": 2014,
+      "sha256": "1af344dfc66491b1feeb2080cabf808a175bf24135c8d3c2191343636ca813a9"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kdilution.py",
+      "bytes": 1634,
+      "sha256": "b1241ed050cb6ac633132554feb169869642cff675314eeb15c1e00466eaee11"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kdilution_pooled.py",
+      "bytes": 1370,
+      "sha256": "a3ebb291376e8f1346c0d08897b88dfad6185a7a48cf90b217da7a5efdce1823"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/kfit.py",
+      "bytes": 4465,
+      "sha256": "422e005429b81c5276b8fa261e326ffc188a056062438f7c49f154d69487ebe6"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/null_fap.py",
+      "bytes": 2384,
+      "sha256": "3d36fb6273ef494c5a000a19ce1e38371ea51cead456510b4dd99dc1be525edf"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/kepler/null_fap2.py",
+      "bytes": 1318,
+      "sha256": "43f283a15151c6bf205ec68351fd34448b552c8a92aef93e60af4a9188e0a702"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/plots.py",
+      "bytes": 5172,
+      "sha256": "ac9d90b894a7f66f42480e56786be423d4fd465d6387fcbc5f21885a1ce55c93"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/diffimg.py",
+      "bytes": 3160,
+      "sha256": "4d4be8689acf01a51010b22d5ccabccb691c22b22a3defaca5688db8c49a95f0"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/export_data.py",
+      "bytes": 2622,
+      "sha256": "1b2b9b09c284469bbb20c7237bfdedbdbb73a3f85842ee4aa3576ed42879d323"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/model_fig.py",
+      "bytes": 3023,
+      "sha256": "761f17b91c3b1e344c70ae856adb31bfa3a11da86ac371039e9ac01e3d43eace"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/post_card.py",
+      "bytes": 2556,
+      "sha256": "d78906b9b275eb4bc42096c5495242c0b0f324f572bc65d5b5e2ec7a5b95e058"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/post_figs.py",
+      "bytes": 6792,
+      "sha256": "c45b596339a0ebf37c0b12b35d312f1cbe179b768af3a9e1dd1865eaea5967ee"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/post/post_where.py",
+      "bytes": 5814,
+      "sha256": "449f5cb65015795e272c96c116fb732c083ca3c2a7e88dcf5b5988037afa8057"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/clean_kepler.py",
+      "bytes": 2238,
+      "sha256": "077b01dd563649ed2fd84d2d1201c8307e7b5bdfda584abcf87be76ae354d375"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/clean_stack.py",
+      "bytes": 1474,
+      "sha256": "926699ba5e3f4b06d1d3df09372b6e0cf84158194951d70cee80e3d291e805ba"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/model_fig.py",
+      "bytes": 3023,
+      "sha256": "761f17b91c3b1e344c70ae856adb31bfa3a11da86ac371039e9ac01e3d43eace"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/register.py",
+      "bytes": 2016,
+      "sha256": "641847628e933ac9879b6bc7dbe74310601d9eb5cb393772f992b2b463cd99c1"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/sky_figs.py",
+      "bytes": 7999,
+      "sha256": "1bd939bcfd6bcc1b44bcbdcaf724fdb6185fcd4afcf0a6cea2d04e70404def76"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/sky/stack.py",
+      "bytes": 3048,
+      "sha256": "f44faf922d07e354b7b86353ceea9cdad366ec4f051aa7067e3ea8153d1b5ff7"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/batch_tfit.sh",
+      "bytes": 300,
+      "sha256": "a6c15c0669478e8b489209f8e3b61b8c3253c866ea9ad2dd076fe931e8f0226b"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/bls.py",
+      "bytes": 1978,
+      "sha256": "e48e30c1d4c2549202f0124cfe3254b4e352eb3883a751aae3ef84af52d36b96"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/common.py",
+      "bytes": 936,
+      "sha256": "b109c64d9b1efe418ce69452774e686f0497e38fb1f679c240afff6cddb1fa92"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/holdout.py",
+      "bytes": 1607,
+      "sha256": "2205b03a76300aeabbc82737c41b5913464f3cb7a2e7ff065e824c5f7706460d"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/scan.py",
+      "bytes": 3348,
+      "sha256": "b3daf61cf8477953e5eba007ba00ccb695bdef4b8468f5d29605064c3671414b"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/tess/tfit.py",
+      "bytes": 4314,
+      "sha256": "5b0540f19ec47e786db191a19345ae52d467d83d5b8a7c98df07e28494068924"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/batch_cc.sh",
+      "bytes": 192,
+      "sha256": "4f6d116a771e937fff21854dd0aa56979b6c2fd2bcb22980d3badd2650688c0a"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/batch_kepler.sh",
+      "bytes": 301,
+      "sha256": "081f13e731355ad14c2bd62aaa4fb933f8c0585ff0e22414ad2ac5924d65496b"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/batch_kepler2.sh",
+      "bytes": 481,
+      "sha256": "f225c788642af21627272893bcda5694492e78dcde3ad0ded3f92893ae82cf4d"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/batch_tess.sh",
+      "bytes": 328,
+      "sha256": "523e58ad37ddd4e4a08e7236824256070f1abf88fb2dfd4566acd3c56b602ade"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/batch_tess2.sh",
+      "bytes": 406,
+      "sha256": "3e211dc46bc5aaa7a0019bf85bb8a3143ed17003a4623622aefdb752f739d878"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/hypo_cc_keckK.txt",
+      "bytes": 82,
+      "sha256": "e1dc76ee787d8c6a99dfe9a99fc5ac7b494819544fb664e81f83750b42b6f4a4"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/hypo_cc_speckle832.txt",
+      "bytes": 65,
+      "sha256": "f4926609fd39f9f9dbc99c781a0b9018b8a6cdf03b061cb5b74182f0760987cd"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/prep_kepler.py",
+      "bytes": 4892,
+      "sha256": "ddc0858d1c06f141e76793537cc90fdf4c9597213c16cdf0f405f53ec3830fd3"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/prep_tess.py",
+      "bytes": 3868,
+      "sha256": "24353061b68ccbce40d1cd35527b5ac1c7170b9cf9da67d90d48ebc0dcf5a7dd"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/run_kepler.py",
+      "bytes": 1734,
+      "sha256": "89b9fd3be23da464b157d7038f5049a0ac81a2fb5e5cf87c699d59046286313c"
+    },
+    {
+      "path": "analysis/validation-20261011/scripts/triceratops/run_tess.py",
+      "bytes": 2110,
+      "sha256": "f63d59a64b5776c09abf164a669007ec4b87aaa421834c7ec2d9d707f6ca33f4"
     },
     {
       "path": "docs/assets/305054512-amplitudes.png",
@@ -10009,13 +10714,13 @@
     },
     {
       "path": "index.html",
-      "bytes": 28032,
-      "sha256": "f15a8d0904677ccc00f6bc865e57402425f2a9f812bb02f45f942f10cdcfd6cb"
+      "bytes": 28474,
+      "sha256": "b2a2596f8118bf2177bc82ece44115e6ac940e001fd8ebfe6aa962cb43790596"
     },
     {
       "path": "planethunt.md",
-      "bytes": 8962,
-      "sha256": "574cc057ecbfe69203e5f671f69339d2dcce8c757456b301a2304fa94a7a3424"
+      "bytes": 10323,
+      "sha256": "f466c474cd788e3fc2b9f49e46c2493e8d3e59638a0035fdc77ee3954f071038"
     },
     {
       "path": "scripts/build_visuals.py",
@@ -10033,5 +10738,5 @@
       "sha256": "f35472e087ff76e4eb93c717d28a8fcfef0d1b2bdffa1fe1ccffa6d87cb1c3e9"
     }
   ],
-  "updated": "2026-10-11 extension added"
+  "updated": "2026-10-11 validation pack added"
 }
