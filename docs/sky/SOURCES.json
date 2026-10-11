@@ -1,0 +1,19 @@
+{
+ "centre": {
+  "ra_deg": 285.907827,
+  "dec_deg": 40.941988,
+  "frame": "ICRS"
+ },
+ "orientation": "north up, east left",
+ "fetched": "2026-10-11",
+ "service": "CDS hips2fits (alasky.cds.unistra.fr)",
+ "images": {
+  "ps1-2arcmin": "CDS/P/PanSTARRS/DR1/color-z-zg-g, fov 0.0333 deg",
+  "ps1-10arcmin": "same, fov 0.1667 deg",
+  "dss2-15arcmin": "CDS/P/DSS2/color, fov 0.25 deg",
+  "2mass-10arcmin": "CDS/P/2MASS/color, fov 0.1667 deg",
+  "allwise-10arcmin": "CDS/P/allWISE/color, fov 0.1667 deg"
+ },
+ "pan-starrs and dss2 inputs": "analysis/validation-20261011/post/source_images/ (registered to Gaia DR3, offsets in registration.json)",
+ "markers": "orange ring = KIC 5689121, blue dashed ring = KIC 5689116 at 7.1 arcsec west (drawn at catalogue offset)"
+}
