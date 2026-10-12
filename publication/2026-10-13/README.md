@@ -6,7 +6,7 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 
 - Kuber Mehta is the sole listed manuscript author.
 - The RNAAS note is a draft for human review, not submitted, accepted or peer reviewed.
-- No Zenodo DOI has been issued at packaging time. The GitHub integration is enabled. Original code is MIT; original text, figures and analysis products are CC BY 4.0; third-party terms remain in force (see `LICENSE` and `SOURCES.md`).
+- Zenodo evidence DOI: https://doi.org/10.5281/zenodo.23325261 (published 12 October UTC / 13 October IST). The GitHub integration is enabled. Original code is MIT; original text, figures and analysis products are CC BY 4.0; third-party terms remain in force (see `LICENSE` and `SOURCES.md`).
 - The signal remains unvalidated. The modelled FPP is 0.06885, with unresolved host ambiguity and provisional novelty.
 
 ## Files and reproduction
@@ -21,8 +21,8 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 
 1. Author metadata supplied: Independent researcher, New Delhi, India; kuberhob@gmail.com; ORCID 0009-0003-1379-7856.
 2. Author reads and verifies the text, claims, figure, citations, attribution and AI disclosure. Resolve the THYME light-curve identity if possible; otherwise retain the explicit provisional-novelty language.
-3. Replace the release citation with the verified version DOI if one is issued. Never insert a guessed DOI.
-4. Compile `rnaas.tex` with AASTeX 7, inspect the generated PDF, then recount after any changes. Current draft: 1,196 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
+3. The working manuscript now cites the verified evidence DOI 10.5281/zenodo.23325261. This citation-only update postdates the frozen r2 evidence snapshot.
+4. Compile `rnaas.tex` with AASTeX 7, inspect the generated PDF, then recount after any changes. Current draft: 1,203 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
 5. Submit through https://aas.msubmit.net/ with journal Research Notes of the AAS. Review the portal's actual declarations and publication agreement; do not fabricate authorship, originality, funding or conflict answers. `cover-letter.txt` is a proposed cover note, not a sent message.
 
 ## Official guidance checked 13 October 2026 (local date)
@@ -36,3 +36,5 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 - https://help.zenodo.org/docs/github/archive-software/github-upload/ — processing can take time; verify the finished record and DOI.
 
 If the GitHub release precedes integration setup, preserve that release and manually deposit its exact archived snapshot in Zenodo, or create a subsequent properly versioned release after enabling integration. Do not delete and recreate the historical release to manufacture an earlier DOI date.
+
+The published Zenodo record metadata is preserved in `zenodo-record.json`. GitHub integration archived the repository source ZIP (118.2 MB), not the external bulk-data archives. Both the initial GitHub release and the DOI-backed r2 snapshot remain intact.

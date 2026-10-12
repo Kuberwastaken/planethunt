@@ -46,9 +46,10 @@
     "Gaia Collaboration, Vallenari, A., Brown, A. G. A., et al. 2023, A&A, 674, A1. doi:10.1051/0004-6361/202243940",
     "Giacalone, S., Dressing, C. D., Jensen, E. L. N., et al. 2021, AJ, 161, 24. arXiv:2002.00691",
     "Martínez-Palomera, J., Hedges, C., and Dotson, J. 2023, AJ, 166, 265. doi:10.3847/1538-3881/ad0727",
-    "Mehta, K. 2026, Planethunt: archival evidence snapshot, evidence-20261013-r2. https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261013-r2",
+    "Mehta, K. 2026, Planethunt: archival evidence for the KIC 5689121 transit candidate, version evidence-20261013-r2, Zenodo. doi:10.5281/zenodo.23325261",
     "Rowe, J. F., Bryson, S. T., Marcy, G. W., et al. 2014, ApJ, 784, 45. doi:10.1088/0004-637X/784/1/45",
     "Stassun, K. G., Oelkers, R. J., Paegert, M., et al. 2019, AJ, 158, 138. doi:10.3847/1538-3881/ab3467"
   ],
-  "revision": 2
+  "revision": 2,
+  "evidence_doi": "10.5281/zenodo.23325261"
 }

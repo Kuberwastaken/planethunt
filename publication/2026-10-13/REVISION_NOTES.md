@@ -14,3 +14,5 @@ Bibliography verified against primary archive/publication metadata:
 Author supplied ORCID 0009-0003-1379-7856 and email kuberhob@gmail.com and authorized the independent-researcher affiliation and split MIT / CC BY 4.0 licensing. No institution was inferred. Human review of the final revision remains required before journal submission.
 
 The initial release stays frozen. The second release is the evidence version intended for Zenodo ingestion; once verified, its DOI replaces the temporary GitHub citation in the working journal manuscript.
+
+Zenodo published revision 2 as **10.5281/zenodo.23325261**. The subsequent working-manuscript citation update points to that frozen evidence version. It does not alter or backdate the archived release.

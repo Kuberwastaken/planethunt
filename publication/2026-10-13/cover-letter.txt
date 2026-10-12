@@ -6,7 +6,7 @@ Please consider “A 13.77-day transit candidate on the background M dwarf KIC 5
 
 The note describes a transit-like signal in Kepler Bonus photometry, the tests associating it with the catalogue target rather than resolved neighbours, and an archival follow-up audit. It also states the unresolved companion ambiguity and why the candidate is not validated. I am sharing the analysis record to make targeted follow-up possible, rather than claiming a confirmed discovery.
 
-The draft has one two-panel figure. The underlying measurements, scripts and provenance are preserved in the versioned Planethunt evidence release. Material AI assistance is disclosed in the manuscript. Kuber Mehta is the sole listed author.
+The draft has one two-panel figure. The underlying measurements, scripts and provenance are preserved in the versioned Planethunt evidence release (https://doi.org/10.5281/zenodo.23325261). Material AI assistance is disclosed in the manuscript. Kuber Mehta is the sole listed author.
 
 Thank you for considering the note.
 

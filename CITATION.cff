@@ -15,7 +15,7 @@ abstract: >-
   Dated evidence snapshot for an unconfirmed 13.769-day transit candidate
   associated with KIC 5689121. Includes Kepler signal vetting, source attribution,
   archival follow-up, limitations, provenance and an RNAAS manuscript draft.
-  Novelty and host identity remain provisional. No Zenodo DOI has yet been issued.
+  Novelty and host identity remain provisional.
 keywords:
   - exoplanet candidates
   - Kepler
@@ -24,3 +24,4 @@ keywords:
 license:
   - MIT
   - CC-BY-4.0
+doi: 10.5281/zenodo.23325261

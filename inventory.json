@@ -24,8 +24,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1080,
-      "sha256": "1f929fe1b0efa5c512ef73e19109aed9bb664aa7d32d162ef6b84643abfdfa9f"
+      "bytes": 1074,
+      "sha256": "c1af23844321f74beb6602513d9bb9749e1d1bf8da393bdffba1853aa670a2c8"
     },
     {
       "path": "LICENSE",
@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8783,
-      "sha256": "ca17258ebe1db8f41393ec20dcc4e097d164985ee6ae752028430ccfa3cfa7e3"
+      "bytes": 9029,
+      "sha256": "e73e7d2aa7d8a110062f69a548ad54792a756be3fbd88a237b779ca40dea09ed"
     },
     {
       "path": "SOURCES.md",
@@ -12899,8 +12899,8 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 4199,
-      "sha256": "4219153c99e00eaeebaca32746a1385bfbc33e75615e96d1d380967170253730"
+      "bytes": 4561,
+      "sha256": "89f21461b3946ecbfce7f3b2bca3b7a45e173f98df35948beb202c7a44b64681"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
@@ -12909,8 +12909,8 @@
     },
     {
       "path": "publication/2026-10-13/REVISION_NOTES.md",
-      "bytes": 1950,
-      "sha256": "23f83f3b862d67cdf8b47ebbaef68583a271500e4e390515c0fec73c3e83c678"
+      "bytes": 2153,
+      "sha256": "32cd4a2d9176deca4e169aa1307f6bc8e1d6dd22ae1d0daff7d2218fbd5a523a"
     },
     {
       "path": "publication/2026-10-13/build_manuscript.py",
@@ -12929,8 +12929,8 @@
     },
     {
       "path": "publication/2026-10-13/cover-letter.txt",
-      "bytes": 980,
-      "sha256": "097bde7d371c970a69192a83e1f183fe0e552b8d1be948193f17d4efc09cd997"
+      "bytes": 1022,
+      "sha256": "66049c04beeb02603a7d2c02897ca2935a0b7e1fa126508189b75fca7bd2b21d"
     },
     {
       "path": "publication/2026-10-13/figure1.pdf",
@@ -12959,28 +12959,33 @@
     },
     {
       "path": "publication/2026-10-13/manuscript.json",
-      "bytes": 9428,
-      "sha256": "c144cc7a0fc31b16b2551aa71d58f7ecf6b60905eab91d2bab2081f09e2874a3"
+      "bytes": 9468,
+      "sha256": "f344f0d4391c74e0b3c3f3ced82b41a083d722f740357d5ab5c974488649289d"
     },
     {
       "path": "publication/2026-10-13/rnaas-review.pdf",
-      "bytes": 110082,
-      "sha256": "c23d8727a31f17c0b382bd27ad73ac997a233701f8942bbdc8c0645069e33488"
+      "bytes": 110081,
+      "sha256": "b7c72d386d29c0361a8153f582b01740585e127def19381bfc6dba96bc98d86b"
     },
     {
       "path": "publication/2026-10-13/rnaas.tex",
-      "bytes": 9078,
-      "sha256": "722585b99553c65b6e464c20f583c19e1319069356d70f5ef2b352bad9a5d480"
+      "bytes": 9073,
+      "sha256": "2ea34fe5370446411004ea0a3042786490c16c55f0ab60ed75c9e3f718211e95"
     },
     {
       "path": "publication/2026-10-13/rnaas.txt",
-      "bytes": 8864,
-      "sha256": "e55a35325dbe9a38deb9ae6d598f29f5e37c397bd9408762cbd7e791e7d0e4e8"
+      "bytes": 8859,
+      "sha256": "28e9be77942f2ee72a5f66b1384b6516c49f891db273ce37f92160fbb32c16d7"
     },
     {
       "path": "publication/2026-10-13/word-count.json",
       "bytes": 221,
-      "sha256": "dd5a4b0e314208f8058a0a513562979ed230b920413878d8b1bf0e4d42388227"
+      "sha256": "e69297091c8dc0025e3b19ba32cc215eae97ef399b1072387aa409bd14aeb0d3"
+    },
+    {
+      "path": "publication/2026-10-13/zenodo-record.json",
+      "bytes": 4677,
+      "sha256": "2b4dbdc8a87e18d8793a1adcc55e3d480216cd0b0161c01c6522f42bc9705b66"
     },
     {
       "path": "scripts/build_visuals.py",

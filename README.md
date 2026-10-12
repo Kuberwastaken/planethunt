@@ -1,5 +1,7 @@
 # Planethunt
 
+**Citable evidence snapshot:** [Zenodo DOI 10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261) · [RNAAS author-review draft](publication/2026-10-13/rnaas-review.pdf). The candidate is unconfirmed; the note has not been submitted.
+
 A public, inspectable record of two archival transit searches. **No confirmed planet is claimed.**
 
 - Read the digest in `index.html` (GitHub Pages serves the repository root).
