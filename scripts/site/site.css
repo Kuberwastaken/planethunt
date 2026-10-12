@@ -168,3 +168,5 @@ button.planet-image{display:block;width:100%;padding:0;border:0;border-radius:0;
 /* GitHub mark: fixed box and fixed icon size at every viewport and embed size */
 .repo-link{box-sizing:border-box;flex:none;width:40px;height:40px;min-width:40px;min-height:40px;max-width:40px;max-height:40px;overflow:hidden;line-height:0}
 .repo-link svg{display:block;flex:none;width:23px;height:23px;min-width:23px;min-height:23px;max-width:23px;max-height:23px;overflow:hidden}
+@media(max-width:760px){.repo-link{top:13px;right:-4px;width:32px;height:32px;min-width:32px;min-height:32px;max-width:32px;max-height:32px}
+.repo-link svg{width:20px;height:20px;min-width:20px;min-height:20px;max-width:20px;max-height:20px}}
