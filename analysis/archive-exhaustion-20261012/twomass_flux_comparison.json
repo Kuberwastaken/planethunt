@@ -1,0 +1,60 @@
+{
+  "target": [
+    {
+      "band": "J",
+      "wavelength_micron": 1.235,
+      "magnitude": 13.883,
+      "magnitude_error": 0.024,
+      "flux_mjy": 4.45952206474031,
+      "stat_error_mjy": 0.09857691867023104,
+      "zeropoint_fractional_uncertainty": 0.017440401505646172
+    },
+    {
+      "band": "H",
+      "wavelength_micron": 1.662,
+      "magnitude": 13.213,
+      "magnitude_error": 0.026,
+      "flux_mjy": 5.310066459503003,
+      "stat_error_mjy": 0.12715955067357657,
+      "zeropoint_fractional_uncertainty": 0.01953125
+    },
+    {
+      "band": "K",
+      "wavelength_micron": 2.159,
+      "magnitude": 12.969,
+      "magnitude_error": 0.028,
+      "flux_mjy": 4.328430564995805,
+      "stat_error_mjy": 0.11162569258421431,
+      "zeropoint_fractional_uncertainty": 0.018899055047247634
+    }
+  ],
+  "neighbour": [
+    {
+      "band": "J",
+      "wavelength_micron": 1.235,
+      "magnitude": 14.32,
+      "magnitude_error": 0.027,
+      "flux_mjy": 2.9818673317430813,
+      "stat_error_mjy": 0.07415283528746155,
+      "zeropoint_fractional_uncertainty": 0.017440401505646172
+    },
+    {
+      "band": "H",
+      "wavelength_micron": 1.662,
+      "magnitude": 13.914,
+      "magnitude_error": 0.03,
+      "flux_mjy": 2.78419697090787,
+      "stat_error_mjy": 0.07693020529405968,
+      "zeropoint_fractional_uncertainty": 0.01953125
+    },
+    {
+      "band": "K",
+      "wavelength_micron": 2.159,
+      "magnitude": 13.926,
+      "magnitude_error": 0.052,
+      "flux_mjy": 1.7927942685845006,
+      "stat_error_mjy": 0.08586367623907495,
+      "zeropoint_fractional_uncertainty": 0.018899055047247634
+    }
+  ]
+}

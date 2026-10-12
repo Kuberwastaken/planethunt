@@ -1217,5 +1217,119 @@
       "time_total": 3.090587,
       "ssl_verify_result": 0
     }
+  },
+  {
+    "name": "wise_allwise_p3as_psd",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "allwise_p3as_psd",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "1"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:20:41.607533+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allwise_p3as_psd&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=1",
+      "size_download": 6523,
+      "time_connect": 0.003595,
+      "time_appconnect": 2.93436,
+      "time_starttransfer": 5.809471,
+      "time_total": 5.809862,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "wise_allsky_4band_p1bs_psd",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "allsky_4band_p1bs_psd",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "1"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:20:42.107580+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allsky_4band_p1bs_psd&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=1",
+      "size_download": 18133,
+      "time_connect": 0.003524,
+      "time_appconnect": 2.931455,
+      "time_starttransfer": 6.296738,
+      "time_total": 6.306357,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "wise_allsky_2band_p1bs_psd",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "allsky_2band_p1bs_psd",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "1"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:20:41.887179+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=allsky_2band_p1bs_psd&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=1",
+      "size_download": 21229,
+      "time_connect": 0.003149,
+      "time_appconnect": 2.925203,
+      "time_starttransfer": 6.056004,
+      "time_total": 6.079885,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "twomass_pair",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "fp_psc",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "15",
+      "radunits": "arcsec",
+      "outfmt": "1"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:28:57.928870+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&objstr=285.907827+%2b40.941988&spatial=Cone&radius=15&radunits=arcsec&outfmt=1",
+      "size_download": 6134,
+      "time_connect": 0.003,
+      "time_appconnect": 0.087904,
+      "time_starttransfer": 1.96246,
+      "time_total": 1.963264,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "spherex_joint_spectrophotometry_result",
+    "url": "https://irsa.ipac.caltech.edu/api/spherex/spectrophotometry/async/b148a5d1-742d-4796-97a7-30932b8b94cf/results/phot-tool-result.vot",
+    "method": "GET",
+    "retrieved_utc": "2026-10-12T18:34:08.446186+00:00",
+    "retrieved_utc_precision": "local output file modification timestamp after successful download",
+    "returncode": 0,
+    "size_bytes": 119513,
+    "output": "spherex_result.vot"
   }
 ]

@@ -1,0 +1,8 @@
+{
+  "n_images": 288,
+  "date_min": "2025-04-25T21:19:56.986",
+  "date_max": "2026-05-13T12:08:41.856",
+  "in_nominal_window": 0,
+  "closest_midpoint_hours": 3.366844834311287,
+  "timing": "Approximate geocentric correction; SPHEREx orbit not included. Image footprint intersecting cone is not guaranteed target coverage."
+}

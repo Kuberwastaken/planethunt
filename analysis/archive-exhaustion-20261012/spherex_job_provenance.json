@@ -1,0 +1,17 @@
+{
+  "jobId": "b148a5d1-742d-4796-97a7-30932b8b94cf",
+  "phase": "COMPLETED",
+  "creationTime": "2026-10-12T18:18:27.635424Z",
+  "startTime": "2026-10-12T18:18:32.816369Z",
+  "endTime": "2026-10-12T18:33:22.998883Z",
+  "service": "https://irsa.ipac.caltech.edu/api/spherex/spectrophotometry/async",
+  "input_file": "spherex_pair.csv",
+  "result_file": "spherex_result.vot",
+  "input_morphology": "two point sources fitted jointly",
+  "wavelength_selection": "all",
+  "deep_fields": false,
+  "position_epoch_file": "spherex_position_epoch.json",
+  "result_sha256": "28a7a7d6d97f4c47e3675ecae33221ecd9a5896d0003a5d93942717ca62e2b5c",
+  "ui": "Codex in-app browser: job COMPLETED, both sources loaded in result table. Image previews returned Service Unavailable; image-level residual inspection was not completed.",
+  "docs": "https://irsa.ipac.caltech.edu/onlinehelp/spherex/spherex/sp.html"
+}

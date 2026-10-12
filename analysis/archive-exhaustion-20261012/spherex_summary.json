@@ -1,0 +1,155 @@
+{
+  "method": "Joint fixed-position point-source Tractor extraction. Conservative bad-bit mask; fit_ql <= 2 is an analyst-selected screen, not an official acceptance threshold.",
+  "bad_bits": [
+    0,
+    1,
+    2,
+    6,
+    7,
+    9,
+    10,
+    11,
+    14,
+    15,
+    17,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    32,
+    33
+  ],
+  "informational_bits_allowed": [
+    12,
+    21
+  ],
+  "sources": {
+    "KIC5689121": {
+      "n_returned": 287,
+      "n_clean_flags": 249,
+      "n_selected": 238,
+      "fit_ql_median": 1.1448686,
+      "wavelength_range_um": [
+        0.74430496,
+        4.992491
+      ],
+      "date_range_utc": [
+        "2025-04-25T21:20:54.536",
+        "2026-05-13T12:07:44.295"
+      ],
+      "in_transit": 0,
+      "closest_midpoint_hours": 3.3828400089576647,
+      "clean_fit_threshold_counts": {
+        "1.5": 186,
+        "2": 238,
+        "2.5": 248,
+        "3": 249
+      },
+      "flag_bit_counts": {
+        "0": 24,
+        "2": 17,
+        "6": 10,
+        "7": 1,
+        "11": 3,
+        "17": 12,
+        "21": 287,
+        "28": 8,
+        "32": 38
+      },
+      "median_selected_fractional_error": 0.03942087377818374,
+      "selected_by_detector": {
+        "1": {
+          "n": 32,
+          "median_fit_ql": 1.2662392
+        },
+        "2": {
+          "n": 44,
+          "median_fit_ql": 1.4084181999999998
+        },
+        "3": {
+          "n": 40,
+          "median_fit_ql": 1.55412245
+        },
+        "4": {
+          "n": 31,
+          "median_fit_ql": 1.1448686
+        },
+        "5": {
+          "n": 46,
+          "median_fit_ql": 0.83087277
+        },
+        "6": {
+          "n": 45,
+          "median_fit_ql": 0.8247434
+        }
+      }
+    },
+    "KIC5689116": {
+      "n_returned": 287,
+      "n_clean_flags": 254,
+      "n_selected": 249,
+      "fit_ql_median": 1.1331311,
+      "wavelength_range_um": [
+        0.74431276,
+        4.9922347
+      ],
+      "date_range_utc": [
+        "2025-04-25T21:20:54.536",
+        "2026-05-13T12:07:44.295"
+      ],
+      "in_transit": 0,
+      "closest_midpoint_hours": 3.382844781054537,
+      "clean_fit_threshold_counts": {
+        "1.5": 196,
+        "2": 249,
+        "2.5": 254,
+        "3": 254
+      },
+      "flag_bit_counts": {
+        "0": 20,
+        "2": 14,
+        "6": 9,
+        "7": 1,
+        "11": 3,
+        "17": 7,
+        "21": 287,
+        "28": 10,
+        "32": 33
+      },
+      "median_selected_fractional_error": 0.04605650804376096,
+      "selected_by_detector": {
+        "1": {
+          "n": 35,
+          "median_fit_ql": 1.239168
+        },
+        "2": {
+          "n": 49,
+          "median_fit_ql": 1.5235962
+        },
+        "3": {
+          "n": 43,
+          "median_fit_ql": 1.5301257
+        },
+        "4": {
+          "n": 31,
+          "median_fit_ql": 1.1411028
+        },
+        "5": {
+          "n": 45,
+          "median_fit_ql": 0.8333821
+        },
+        "6": {
+          "n": 46,
+          "median_fit_ql": 0.818446665
+        }
+      }
+    }
+  },
+  "limitations": "No bandpass-integrated stellar fit, close-companion exclusion, atmosphere inference or FPP update. Geocentric timing neglects satellite orbit. Cross-survey comparison is illustrative; bandpasses, calibration and epochs differ."
+}

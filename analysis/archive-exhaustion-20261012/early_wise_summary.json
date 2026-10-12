@@ -1,0 +1,60 @@
+{
+  "allsky_4band_p1bs_psd": {
+    "n_all": 28,
+    "mjd_min": 55302.785827,
+    "mjd_max": 55304.836733,
+    "bands": {
+      "W1": {
+        "n_good": 28,
+        "n_in": 0,
+        "median_mag": 12.7675,
+        "median_error_mag": 0.0305,
+        "closest_midpoint_hours": 84.18929809204263
+      },
+      "W2": {
+        "n_good": 28,
+        "n_in": 0,
+        "median_mag": 12.748999999999999,
+        "median_error_mag": 0.053,
+        "closest_midpoint_hours": 84.18929809204263
+      }
+    }
+  },
+  "allsky_2band_p1bs_psd": {
+    "n_all": 50,
+    "mjd_min": 55482.362287,
+    "mjd_max": 55486.793261,
+    "bands": {
+      "W1": {
+        "n_good": 50,
+        "n_in": 0,
+        "median_mag": 12.733,
+        "median_error_mag": 0.029,
+        "closest_midpoint_hours": 97.9650545274267
+      },
+      "W2": {
+        "n_good": 50,
+        "n_in": 0,
+        "median_mag": 12.71,
+        "median_error_mag": 0.047,
+        "closest_midpoint_hours": 97.9650545274267
+      }
+    }
+  },
+  "allwise_source": {
+    "designation": "J190337.86+405631.1",
+    "ra": 285.9077704,
+    "dec": 40.941982,
+    "dist": 0.164602,
+    "w1mpro": 12.909,
+    "w1sigmpro": 0.025,
+    "w2mpro": 12.853,
+    "w2sigmpro": 0.026,
+    "w3mpro": 12.492,
+    "w3sigmpro": null,
+    "w4mpro": 8.948,
+    "w4sigmpro": null,
+    "cc_flags": "0000",
+    "ph_qual": "AAUU"
+  }
+}

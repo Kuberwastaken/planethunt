@@ -1,8 +1,10 @@
 # From archival candidate to a defensible planet claim
 
-Prepared 12 October 2026. This is a scientific collaboration and observing brief, not an approved proposal or a promise of confirmation.
+Prepared 12 October 2026; infrared extraction completed that evening UTC. This is a scientific collaboration and observing brief, not an approved proposal or a promise of confirmation.
 
 **Second-pass update:** Read [the subsequent archive results](../archive-exhaustion-20261012/README.md) before using this brief. HST/JWST footprint checks now succeeded; new TGLC, ZTF, PTF, NEOWISE and CFHT data were examined. The exact star also occurs in the Barber et al. 2022 MELANGE-3 candidate list, without a confirmed age or membership. Its authors are relevant scientific-review contacts. The new PRF pixel injections also show why TESS has weak rejection power: an assumed 2,400 ppm dip on the target gives about 987 ppm in a 1.5-pixel aperture, versus 1,294 ppm off-phase scatter. This is conditional sensitivity, not completeness.
+
+The completed SPHEREx joint extraction now adds 287 measurements per star (238 target / 249 neighbour after the stated quality screen), spanning 0.74–5.0 μm. None samples a nominal transit. Use these data alongside 2MASS and Spitzer for stellar modelling, with calibration/blending uncertainties; they do not exclude an unresolved companion. Image-preview service errors prevented image-level residual inspection.
 
 ## The question to answer
 
@@ -60,6 +62,6 @@ The [NIRC2 instrument page](https://www2.keck.hawaii.edu/inst/nirc2/) and the ca
 
 The two audit packs contain reproducible Spitzer reductions, ten-sector TESS aperture analysis, six-sector TGLC target/neighbour checks, conditional pixel injections, ZTF target/neighbour fits, PTF and NEOWISE timing checks, CFHT registration/saturation diagnostics, and the relevant catalogue/footprint searches. The current MAST browser UI and ESA footprint service resolved the earlier HST/JWST service gap: no exact-target footprint was returned. Four Robo-AO survey catalogues also returned no match within 30″.
 
-Remaining work is substantive modelling or access to different data: recover a trustworthy unsaturated CFHT product if one exists; calibrate a time-dependent TESS scene and blind-search completeness; fit the stellar SED with extinction and multiplicity; and reconcile the THYME light-curve identity. The 62 IRSA dataset matches include repeated releases and coarse maps, not 62 useful independent host constraints. Proprietary and unindexed observations remain unverified. This audit does not establish that every possible archive product is exhausted.
+Remaining work is substantive modelling or access to different data: recover a trustworthy unsaturated CFHT product if one exists; calibrate a time-dependent TESS scene and blind-search completeness; inspect the SPHEREx image residuals when the service is available and fit the stellar SED with extinction and multiplicity; and reconcile the THYME light-curve identity. The 62 IRSA dataset matches include repeated releases and coarse maps, not 62 useful independent host constraints. Proprietary and unindexed observations remain unverified. This audit does not establish that every possible archive product is exhausted.
 
 The strongest new next step is the THYME provenance question, followed by an experienced AO collaborator’s review. Neither requires presenting the candidate as confirmed or waiting for every possible model variant. Use the [updated draft reply](../archive-exhaustion-20261012/reply-to-steve.txt); no outreach has been sent.

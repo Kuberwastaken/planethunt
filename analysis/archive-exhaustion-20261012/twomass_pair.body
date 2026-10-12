@@ -1,0 +1,105 @@
+\                                                                               
+\fixlen = T
+\RowsRetrieved =                 2
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\SIMULATED_TABLE  = 'n'
+\DATETIME= '2026-10-12 11:28:56'
+\DATABASE= '2MASS All-Sky Point Source Catalog (PSC) (fp_psc)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 15 arcsec of  ra=285.90783 dec=+40.94199 Eq J2000 '
+\StatusFile = '/workspace/TMP_Eej4CP_771360/Gator/irsa/771360/log.771360.html'
+\SQL     = 'WHERE (no constraints) 
+\SQL     = 'SELECT (39 column names follow in next row.)'
+\ 
+\ ra (deg) 
+\ ___ right ascension (J2000 decimal deg)
+\ dec (deg) 
+\ ___ declination (J2000 decimal deg)
+\ clon 
+\ ___ Right ascention in Sexagesimal format.
+\ clat 
+\ ___ Declination in Sexagesimal format.
+\ err_maj (arcsec) 
+\ ___ Semi-major axis length of the one sigma position uncertainty ellipse
+\ err_min (arcsec) 
+\ ___ Semi-minor axis length of the one sigma position uncertainty ellipse
+\ err_ang (deg) 
+\ ___ angle of error ellipse major axis (E of N)
+\ designation 
+\ ___ source designation formed from sexigesimal coordinates
+\ j_m (mag) 
+\ ___ J band selected "default" magnitude
+\ j_cmsig (mag) 
+\ ___ corrected J band photometric uncertainty
+\ j_msigcom (mag) 
+\ ___ combined (total) J band photometric uncertainty
+\ j_snr 
+\ ___ J band "scan" signal-to-noise ratio
+\ h_m (mag) 
+\ ___ H band selected "default" magnitude
+\ h_cmsig (mag) 
+\ ___ corrected H band photometric uncertainty
+\ h_msigcom (mag) 
+\ ___ combined (total) H band photometric uncertainty
+\ h_snr 
+\ ___ H band "scan" signal-to-noise ratio
+\ k_m (mag) 
+\ ___ K band selected "default" magnitude
+\ k_cmsig (mag) 
+\ ___ corrected K band photometric uncertainty
+\ k_msigcom (mag) 
+\ ___ combined (total) K band photometric uncertainty
+\ k_snr 
+\ ___ K band "scan" signal-to-noise ratio
+\ ph_qual 
+\ ___ flag indicating photometric quality of source
+\ rd_flg 
+\ ___ source of JHK "default" mags (AKA "read flag")
+\ bl_flg 
+\ ___ indicates # JHK components fit simultaneously to source
+\ cc_flg 
+\ ___ indicates JHK artifact contamination and/or confusion
+\ ndet 
+\ ___ number of >3-sig. ap. mag measurements, # possible (jjhhkk)
+\ gal_contam 
+\ ___ flag indicating if src is contaminated by extended source
+\ mp_flg 
+\ ___ src is positionally associated with an asteroid, comet, etc
+\ hemis 
+\ ___ hemisphere (N/S) of facility from which src was observed
+\ xdate 
+\ ___ observation reference date
+\ scan 
+\ ___ scan number (unique within date)
+\ glon (deg) 
+\ ___ galactic longitude (decimal deg)
+\ glat (deg) 
+\ ___ galactic latitude (decimal deg)
+\ a 
+\ ___ optical source catalog identifier of closest match within 5"
+\ dist_opt (arcsec) 
+\ ___ distance in arcsec relative to associated optical source
+\ phi_opt (deg) 
+\ ___ position angle relative to optical source (E of N)
+\ b_m_opt (mag) 
+\ ___ catalog blue mag of associated optical source
+\ vr_m_opt (mag) 
+\ ___ catalog visual or red mag of associated optical source
+\ nopt_mchs 
+\ ___ number of optical sources matched to this 2MASS source
+\ ext_key 
+\ ___ key to extended source data DB record
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ 
+\ j_h ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+\ h_k ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+\ j_k ->  Reference:    Input column(s): j_m, h_m, k_m, rd_flg
+|         ra|        dec|          clon|          clat| err_maj| err_min| err_ang|       designation|    j_m| j_cmsig| j_msigcom|      j_snr|    h_m| h_cmsig| h_msigcom|      h_snr|    k_m| k_cmsig| k_msigcom|      k_snr| ph_qual| rd_flg| bl_flg| cc_flg|   ndet| gal_contam| mp_flg| hemis|      xdate| scan|    glon|    glat|    a| dist_opt| phi_opt| b_m_opt| vr_m_opt| nopt_mchs| ext_key|           dist|       angle|      j_h|      h_k|      j_k|
+|     double|     double|          char|          char|  double|  double|     int|              char| double|  double|    double|     double| double|  double|    double|     double| double|  double|    double|     double|    char|   char|   char|   char|   char|        int|    int|  char|       char|  int|  double|  double| char|   double|     int|  double|   double|       int|     int|         double|      double|   double|   double|   double|
+|        deg|        deg|              |              |  arcsec|  arcsec|     deg|                  |    mag|     mag|       mag|           |    mag|     mag|       mag|           |    mag|     mag|       mag|           |        |       |       |       |       |           |       |      |           |     |     deg|     deg|     |   arcsec|     deg|     mag|      mag|          |        |         arcsec|         deg|         |         |         |
+|       null|       null|          null|          null|    null|    null|    null|              null|   null|    null|      null|       null|   null|    null|      null|       null|   null|    null|      null|       null|    null|   null|   null|   null|   null|       null|   null|  null|       null| null|    null|    null| null|     null|    null|    null|     null|      null|    null|           null|        null|        -|        -|        -|
+  285.907857   40.941978   19h03m37.89s   40d56m31.12s     0.07     0.06        0   19033788+4056311  13.883    0.021      0.024       112.0  13.213    0.025      0.026        92.0  12.969    0.027      0.028        60.8      AAA     222     111     000  666666           0       0      n  1998-05-23    78   71.503   15.251     U       0.5      120    17.90     15.80          1     null        0.085178   120.471571    0.6700    0.2440    0.9140 
+  285.905261   40.942135   19h03m37.26s   40d56m31.69s     0.07     0.06        0   19033726+4056316  14.320    0.024      0.027        74.9  13.914    0.029      0.030        48.2  13.926    0.051      0.052        25.2      AAA     222     111     000  666666           0       0      n  1998-05-23    78   71.502   15.253     U       1.1      243    16.00     15.00          1     null        7.005463   274.274099    0.4060   -0.0120    0.3940 

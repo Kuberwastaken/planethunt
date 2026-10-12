@@ -37,6 +37,26 @@ This closes the earlier gap between simply multiplying the extracted light curve
 
 The separately extracted **ZTF neighbour** series also gives no signal at the predicted ephemeris: **−1,116 ± 2,767 ppm**, with off-phase scatter **4,062 ppm**. The negative depth indicates a noise-consistent brightening, not an eclipse. It cannot by itself rule out the neighbour at the relevant shallow depth.
 
+## Early WISE epochs and the catalogue SED
+
+An additional **28 four-band-era and 50 post-cryogenic WISE measurements** were retrieved at the target position. All 78 W1/W2 measurements pass the chosen artifact/photometric-quality screen; **none falls in the nominal transit window**. The nearest predicted midpoint is 84 h away for the first set and 98 h for the second. This fills in early epochs absent from the NEOWISE-R screen.
+
+The AllWISE source J190337.86+405631.1 lies 0.165″ from the query position: **W1=12.909 ±0.025**, **W2=12.853 ±0.026**, with quality **AAUU**. W3=12.492 and W4=8.948 are **upper-limit magnitudes**, not detections. These profile-fit values differ from the single-exposure medians; blending and differing reductions prevent interpreting that difference alone as intrinsic variability. Do not fit a stellar SED treating all reductions as independent precise measurements.
+
+`irsa_dataset_triage.json` accounts for every one of the 62 browser inventory entries and distinguishes processed data, overlapping releases, and products unsuitable for the close-companion question. No claim is made that every listed image has been re-reduced.
+
+## SPHEREx: a new infrared spectrum for each star
+
+The browser inventory returned **288 spectral-image footprints**. A joint two-point-source run in the official [SPHEREx spectrophotometry tool](https://irsa.ipac.caltech.edu/onlinehelp/spherex/spherex/sp.html) completed on 12 October 2026 after about 15 minutes. Both Gaia positions were propagated to the median image epoch, 2025.7546; the exact inputs and sanitized job provenance are retained. The result has **287 measurements per star**, from **0.744 to 4.992 μm**, observed April 2025–May 2026. Footprint matches and successful extracted measurements are different counts.
+
+The target has **249** measurements without the selected bad flags; the neighbour has **254**. Adding an exploratory `fit_ql <= 2` screen retains **238 / 249**. This threshold is our choice, not an official acceptance rule. The full flag mask and sensitivity to thresholds 1.5, 2, 2.5 and 3 are saved. SOURCE (bit 21) and FULLSAMPLE (bit 12) are informational and are not rejected. Median reported fractional errors in the selected points are **3.94% / 4.61%**. These errors are not a complete calibration or deblending uncertainty budget.
+
+![SPHEREx pair spectra with archival photometry](spherex_pair_spectra.png)
+
+The broad spectral shapes and levels are visually consistent with the resolved 2MASS and exploratory Spitzer photometry. The target becomes substantially brighter than the neighbour in the infrared. This is useful input for a joint stellar/extinction/multiplicity fit, **not evidence that the star is single or that a planet atmosphere has been measured**. Broad-band points are shown at reference wavelengths, not synthetic bandpass-integrated predictions; no statistical cross-survey agreement or variability claim is made. 2MASS uncertainties use `*_msigcom` plus separately propagated zero-point errors from the [official calibration FAQ](https://www.ipac.caltech.edu/2mass/releases/allsky/faq.html). Spitzer points retain the earlier reduction's calibration limitations.
+
+**No returned measurement is in the nominal transit window**; the closest is 3.38 hours from a predicted midpoint. Timing uses an approximate geocentric barycentric correction. No independent transit was recovered, and FPP remains unchanged. Joint fitting mitigates the known 7.1″ blend but cannot resolve the much closer hypothetical companion. The viewer loaded both spectra, but its image previews returned “Service Unavailable”; image-level residual inspection remains incomplete. The original VOTable, all measurements, selected/rejected labels and quality summaries are saved. Astropy rejected the service's multidimensional string-array format, so the script reads numeric XML TABLEDATA explicitly and verifies array lengths without altering the original file.
+
 ## CFHT image: useful, with a real limitation
 
 CADC records four MegaCam exposures and a MegaPipe stack footprint at this position. One public 2009 r-band processed cutout, **1098087**, was retrieved (320.17 s; 0.185″/pixel). Its header explicitly lacks a solved astrometric calibration. Matching 18 bright Gaia field stars gives an approximate translation of **−91.49, −59.56 pixels**, with 1.22-pixel RMS. This registration identifies the target and 7.1″ neighbour; using the original WCS without checking would point to the wrong pixels.
@@ -78,6 +98,9 @@ python analyze_ztf.py --neighbour
 python analyze_pixel_injection.py
 python analyze_cfht.py
 python analyze_sparse.py
+python analyze_early_wise.py
+python analyze_spherex_inventory.py
+python analyze_spherex.py
 ```
 
 These are exploratory analyses with explicit assumptions, not validation pipelines. The period and epoch reproduce `../archive-followup-20261012/spitzer/kfit_psf.json`. No fitted astrophysical probability has been recomputed.

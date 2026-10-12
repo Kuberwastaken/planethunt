@@ -19,8 +19,8 @@
     },
     {
       "path": "SOURCES.md",
-      "bytes": 5244,
-      "sha256": "3b2747de2426c9823b62aa5bb00231a6f38dd47cf63f9f086f43b530fe340775"
+      "bytes": 6004,
+      "sha256": "13f4120b31b2b4502fc60fd0856d7d70f5f907956abc8130ba89cdb6b9f696d6"
     },
     {
       "path": "analysis/305054512-display-bins.json",
@@ -34,13 +34,18 @@
     },
     {
       "path": "analysis/archive-exhaustion-20261012/README.md",
-      "bytes": 12512,
-      "sha256": "2ec5565faa23e1b1de6370a1d5e8f4bc6522d225b66f0cb67d30c80947ecf416"
+      "bytes": 16575,
+      "sha256": "1f7a99a99d3beb5dfb2c0544f9e229b5409e1a1a414169ebb0aa3b89fee8dcc9"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/analyze_cfht.py",
       "bytes": 3355,
       "sha256": "c223fbfdf76a8f66f0915500aad3a2dc1c56ac2ba1cf2e582979244677bd712e"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/analyze_early_wise.py",
+      "bytes": 2479,
+      "sha256": "1d59648eba154e3b38b6a5b7c0ade46793c8222c8b48f1de16d5fd467e802ebe"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/analyze_pixel_injection.py",
@@ -51,6 +56,16 @@
       "path": "analysis/archive-exhaustion-20261012/analyze_sparse.py",
       "bytes": 2680,
       "sha256": "59e8bdad7c1d15ab6d7d2a76d4f045986362f0e8325b52772df104655c6a009e"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/analyze_spherex.py",
+      "bytes": 8173,
+      "sha256": "4b1bbd01d29790388ec59f4c118d54c0dbe7c1d03f25dbad3a9a4d38cfb4e927"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/analyze_spherex_inventory.py",
+      "bytes": 1334,
+      "sha256": "46a1c215b6e2f3a06f8d46e0d835bbce04de34dfd749fec8816d28265ae31f5a"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/analyze_tglc.py",
@@ -123,6 +138,11 @@
       "sha256": "516d2a99592b539f09128edcf5d7a5f5a7d1027ef249b9a399381c18ed9a1475"
     },
     {
+      "path": "analysis/archive-exhaustion-20261012/early_wise_summary.json",
+      "bytes": 1359,
+      "sha256": "6dff7b2176cbfb2214fce4fb0e0aff56a3a62a9bebffddcaa9a14451687f22d8"
+    },
+    {
       "path": "analysis/archive-exhaustion-20261012/ehst_footprint.body",
       "bytes": 425,
       "sha256": "24805fce99293c085696cfa469341adfe062337d36f7949e252b62bade17fb8d"
@@ -141,6 +161,11 @@
       "path": "analysis/archive-exhaustion-20261012/hst_browser_5arcmin.csv",
       "bytes": 2856,
       "sha256": "7e4e5d1575a1ce5a762cbcadbcf613b23fba6a7b52ec1cd8f998b64e1ca82ed3"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/irsa_dataset_triage.json",
+      "bytes": 22609,
+      "sha256": "810ce3d928e6a5344e0621c4dff455c903e114df5e13c9e57089d3940384abca"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/jwst_browser_5arcmin.csv",
@@ -231,6 +256,11 @@
       "path": "analysis/archive-exhaustion-20261012/planethunt-irsa-62-datasets.tbl",
       "bytes": 52472,
       "sha256": "f9b7c6e7ec6fc459eaf26ab860c841f2f1656305f25c068b2c8bc5f29ad99170"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/planethunt-spherex-288-images.tbl",
+      "bytes": 434393,
+      "sha256": "7fc37efaec382144bc0b6efc2a27bcf52bba1a3b7c5ddb8921178d9dc790fa57"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/prf_models/LICENSE",
@@ -444,13 +474,13 @@
     },
     {
       "path": "analysis/archive-exhaustion-20261012/reply-to-steve.txt",
-      "bytes": 1572,
-      "sha256": "5eb6d498809d03e7b350568ab2a7d09672618646efb05d77d2a35d7e4ce7f4e5"
+      "bytes": 1632,
+      "sha256": "bf1cf2910010a1b61c1489fe94f6ccd47d1cca027b6456f6647cab64ae73403f"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/requests.json",
-      "bytes": 45228,
-      "sha256": "1a1f3ca45bc52b8966e4edec06c85e13dbcfb5f58bcedc7eb30b907574f405bb"
+      "bytes": 49046,
+      "sha256": "30a3afc13f4ba8f052d8115108afa0df54a527675e7d4839f2100ebdf776a9cf"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/roboao_paper1.body",
@@ -486,6 +516,56 @@
       "path": "analysis/archive-exhaustion-20261012/simbad_reference.body",
       "bytes": 214,
       "sha256": "73b3cf62f903a6dddfeaac8efd0f0064925f560b4bf786fdc4b844070154a6ff"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_inventory_summary.json",
+      "bytes": 324,
+      "sha256": "58fccc7076473aab3f8ce940a78b462bc0167e9c2f85a354ecbaf750bebe4506"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_job_phases.json",
+      "bytes": 1703,
+      "sha256": "8b73dc0d552fe05453f8752e5fe8fd812c4a69ccbb2689b36518510eca93c648"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_job_provenance.json",
+      "bytes": 891,
+      "sha256": "d4b0018cf1d22dc15b9bb45b69d5b5f7ea237c6534ce825fa2a103262aff8b86"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_neighbour.ecsv",
+      "bytes": 43279,
+      "sha256": "2888c98d013cda1fb0e701829b30c37795a343d575784b7b452388393f1dd4ec"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_pair.csv",
+      "bytes": 107,
+      "sha256": "f2e522e6de674af8e271539df0d5a45de0002a0f7770042da56902be8537bd08"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_pair_spectra.png",
+      "bytes": 243978,
+      "sha256": "0b1300a0d213c81e4bd2e99e33f867caa4922dbf6a4e8083fa11bfb78c510b06"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_position_epoch.json",
+      "bytes": 171,
+      "sha256": "b0a9ea856bf923d7151bb79832df3e184f204349c16e0fd12b54d819330496ff"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_result.vot",
+      "bytes": 119513,
+      "sha256": "28a7a7d6d97f4c47e3675ecae33221ecd9a5896d0003a5d93942717ca62e2b5c"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_summary.json",
+      "bytes": 3313,
+      "sha256": "d94bb79156e00505da6af7a0e3a72fe4ffd910d037443a9d55d42c47509c7dfe"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/spherex_target.ecsv",
+      "bytes": 43326,
+      "sha256": "e74e5b1b29b021cfa7334aff61856d0a43528aa024a32be042a9d8c59a0687c6"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/tglc_correct_0014_2103792427466721792.body",
@@ -638,6 +718,36 @@
       "sha256": "4b7fd3ba351df0bd5c9f9ca4e8d4bc61aa4320fe902fc1c6fa7568d5e8feb92d"
     },
     {
+      "path": "analysis/archive-exhaustion-20261012/thyme-provenance-question.txt",
+      "bytes": 1409,
+      "sha256": "f30798fd9e86e984861a0e9af74897f669790e070b1f26f860100fa41eb185c2"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/twomass_flux_comparison.json",
+      "bytes": 1640,
+      "sha256": "8c18a565bc05cea8ed2aae2531f557c586dec87ce35a7f684f558e2a900f5172"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/twomass_pair.body",
+      "bytes": 6134,
+      "sha256": "8a459ba379d5cf0bf9fddba75358e8029e4f5915133720d498157cbc57568cdd"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/wise_allsky_2band_p1bs_psd.body",
+      "bytes": 21229,
+      "sha256": "a1a99eaf167074b05bf656111a5e115ae25b2edce9d34da2b4212fde40abb6df"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/wise_allsky_4band_p1bs_psd.body",
+      "bytes": 18133,
+      "sha256": "5cbeb5ba9882146717ab66f1c0193bebc876c666113be6c66e8a17d36d6fd841"
+    },
+    {
+      "path": "analysis/archive-exhaustion-20261012/wise_allwise_p3as_psd.body",
+      "bytes": 6523,
+      "sha256": "002de82611b730fa5a09c35e8ab015a145781382b44184ff280a17d46d478412"
+    },
+    {
       "path": "analysis/archive-exhaustion-20261012/ztf_dr24_lightcurves.body",
       "bytes": 533220,
       "sha256": "c91b306e32b111234b7bea5e3f5c9b34366283827fd1157b51e0b243ec35d521"
@@ -684,8 +794,8 @@
     },
     {
       "path": "analysis/archive-followup-20261012/FOLLOWUP_PLAN.md",
-      "bytes": 10698,
-      "sha256": "3440f7e732ebffcbd7958428f1789480b629db90789d05d1c926a09848abb028"
+      "bytes": 11234,
+      "sha256": "5c87b825ab88123b90d1682c05b9cacbf9ac4896d88f3d031a4a0192c02e5fb0"
     },
     {
       "path": "analysis/archive-followup-20261012/README.md",

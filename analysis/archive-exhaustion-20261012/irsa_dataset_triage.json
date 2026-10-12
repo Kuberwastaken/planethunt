@@ -1,0 +1,436 @@
+[
+  {
+    "mission": "WISE",
+    "dataset": "AllWISE Source Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "AllWISE Multiepoch Photometry Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "AllWISE Atlas Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "AllWISE Merged Atlas Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "NEOWISE-R Single Exposure (L1b) Source Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "NEOWISE-R Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "NEOWISE-R Merged Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE All-Sky Source Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE All-Sky Single Exposure (L1b) Source Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE All-Sky Reject Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE All-Sky Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE All-Sky Atlas Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Post-Cryo Single Exposure (L1b) Source Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Post-Cryo Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "CatWISE2020 Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "CatWISE2020 Reject Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "CatWISE Preliminary Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "unWISE Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "Unblurred Coadds of the WISE (unWISE) Images",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Post-Cryo Single Exposure (L1b)  Source Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Post-Cryo Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Release Source Catalog",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Release Single Exposure (L1b) Source Table",
+    "data_type": "Catalog",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Release Single Exposure (L1b) Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "WISE",
+    "dataset": "WISE Preliminary Release Atlas Image Inventory Table",
+    "data_type": "Image",
+    "status": "principal epoch tables screened",
+    "rationale": "NEOWISE-R, 2010 four-band and post-cryo single-exposure tables screened; AllWISE W1/W2 catalogue and W3/W4 upper limits checked. Alternate catalogue/coadd reductions are overlapping inputs, not independent constraints; not all image-level reductions repeated."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS All-Sky Point Source Catalog (PSC)",
+    "data_type": "Catalog",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS All-Sky Release Survey Images",
+    "data_type": "Image",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS Survey Point Source Reject Table",
+    "data_type": "Catalog",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS Survey Merged Point Source Information Table",
+    "data_type": "Catalog",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS Full Survey Images",
+    "data_type": "Image",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS Second Incremental Release Point Source Catalog (PSC)",
+    "data_type": "Catalog",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "2MASS",
+    "dataset": "2MASS Images",
+    "data_type": "Image",
+    "status": "catalogue checked",
+    "rationale": "Target/neighbour JHKs photometry and flags checked. Release/reject/merged/image entries are not independent stellar observations. Image-level re-reduction not performed."
+  },
+  {
+    "mission": "Spitzer",
+    "dataset": "Spitzer Heritage Archive",
+    "data_type": "Archive",
+    "status": "pixels analysed",
+    "rationale": "Eight public CBCD exposures reduced and timed in the first audit. They miss the predicted transit."
+  },
+  {
+    "mission": "SPHEREx",
+    "dataset": "SPHEREx Data Explorer Search",
+    "data_type": "Image",
+    "status": "joint two-source spectrophotometry completed",
+    "rationale": "288 footprint records; 287 extracted measurements per source. Conservative screen retains 238 target / 249 neighbour points. No nominal in-transit exposure; no close-companion imaging constraint. Viewer image previews unavailable."
+  },
+  {
+    "mission": "Planck",
+    "dataset": "Planck Multiple Frequency Cutout Visualization PR1",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Coarse microwave maps are not suitable for resolving this stellar pair or testing a shallow optical transit."
+  },
+  {
+    "mission": "Planck",
+    "dataset": "Planck Multiple Frequency Cutout Visualization PR2",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Coarse microwave maps are not suitable for resolving this stellar pair or testing a shallow optical transit."
+  },
+  {
+    "mission": "Gaia",
+    "dataset": "Gaia Source Catalogue (DR3)",
+    "data_type": "Catalog",
+    "status": "DR3 checked",
+    "rationale": "DR3 astrometry, photometry, source quality and neighbours checked. Earlier releases are correlated, not independent multiplicity tests."
+  },
+  {
+    "mission": "Gaia",
+    "dataset": "Gaia Source Catalogue (eDR3)",
+    "data_type": "Catalog",
+    "status": "DR3 checked",
+    "rationale": "DR3 astrometry, photometry, source quality and neighbours checked. Earlier releases are correlated, not independent multiplicity tests."
+  },
+  {
+    "mission": "Gaia",
+    "dataset": "Gaia Source Catalogue (DR2)",
+    "data_type": "Catalog",
+    "status": "DR3 checked",
+    "rationale": "DR3 astrometry, photometry, source quality and neighbours checked. Earlier releases are correlated, not independent multiplicity tests."
+  },
+  {
+    "mission": "Gaia",
+    "dataset": "Gaia Catalogue (DR1)",
+    "data_type": "Catalog",
+    "status": "DR3 checked",
+    "rationale": "DR3 astrometry, photometry, source quality and neighbours checked. Earlier releases are correlated, not independent multiplicity tests."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF DR24 Objects",
+    "data_type": "Catalog",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF DR23 Objects",
+    "data_type": "Catalog",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF DR22 Objects",
+    "data_type": "Catalog",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF DR21 Objects",
+    "data_type": "Catalog",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF DR20 Objects",
+    "data_type": "Catalog",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF Science Exposure Images",
+    "data_type": "Image",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "ZTF",
+    "dataset": "ZTF Reference (coadd) Images",
+    "data_type": "Image",
+    "status": "DR24 light curves analysed",
+    "rationale": "Target and neighbour DR24 light curves tested. Earlier cumulative releases not double-counted; images not independently re-reduced."
+  },
+  {
+    "mission": "PTF",
+    "dataset": "PTF Lightcurve Table",
+    "data_type": "Catalog",
+    "status": "light curve analysed",
+    "rationale": "24 target samples timed; none in nominal transit. Source and light-curve catalogue entries represent the same observations; image-level re-reduction not performed."
+  },
+  {
+    "mission": "PTF",
+    "dataset": "PTF Sources Catalog",
+    "data_type": "Catalog",
+    "status": "light curve analysed",
+    "rationale": "24 target samples timed; none in nominal transit. Source and light-curve catalogue entries represent the same observations; image-level re-reduction not performed."
+  },
+  {
+    "mission": "PTF",
+    "dataset": "PTF Objects",
+    "data_type": "Catalog",
+    "status": "light curve analysed",
+    "rationale": "24 target samples timed; none in nominal transit. Source and light-curve catalogue entries represent the same observations; image-level re-reduction not performed."
+  },
+  {
+    "mission": "PTF",
+    "dataset": "PTF Level 1 Images",
+    "data_type": "Image",
+    "status": "light curve analysed",
+    "rationale": "24 target samples timed; none in nominal transit. Source and light-curve catalogue entries represent the same observations; image-level re-reduction not performed."
+  },
+  {
+    "mission": "PTF",
+    "dataset": "PTF Level 2 Images",
+    "data_type": "Image",
+    "status": "light curve analysed",
+    "rationale": "24 target samples timed; none in nominal transit. Source and light-curve catalogue entries represent the same observations; image-level re-reduction not performed."
+  },
+  {
+    "mission": "IRAS",
+    "dataset": "IRAS Sky Survey Atlas (ISSA)",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Coarse far-IR maps cannot resolve the close companion question; a footprint is not a detected stellar source."
+  },
+  {
+    "mission": "IRAS",
+    "dataset": "Improved Reprocessing of the IRAS Survey (IRIS)",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Coarse far-IR maps cannot resolve the close companion question; a footprint is not a detected stellar source."
+  },
+  {
+    "mission": "AKARI",
+    "dataset": "AKARI Far-infrared All-Sky Survey Maps (AKARI)",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Far-IR all-sky maps cannot resolve the close companion question; no source detection inferred from footprint."
+  },
+  {
+    "mission": "USNO",
+    "dataset": "USNO-B1 (United States Naval Observatory B1.0 Catalog)",
+    "data_type": "Catalog",
+    "status": "not selected",
+    "rationale": "Older optical astrometric catalogues; Gaia DR3 supplies current primary astrometry. Not an independent high-resolution image or precise transit series."
+  },
+  {
+    "mission": "USNO",
+    "dataset": "USNO CCD Astrograph Catalog (UCAC4)",
+    "data_type": "Catalog",
+    "status": "not selected",
+    "rationale": "Older optical astrometric catalogues; Gaia DR3 supplies current primary astrometry. Not an independent high-resolution image or precise transit series."
+  },
+  {
+    "mission": "USNO",
+    "dataset": "USNO CCD Astrograph Catalog (UCAC5)",
+    "data_type": "Catalog",
+    "status": "not selected",
+    "rationale": "Older optical astrometric catalogues; Gaia DR3 supplies current primary astrometry. Not an independent high-resolution image or precise transit series."
+  },
+  {
+    "mission": "USNO",
+    "dataset": "The First USNO Robotic Astrometric Telescope Catalog (URAT1)",
+    "data_type": "Catalog",
+    "status": "not selected",
+    "rationale": "Older optical astrometric catalogues; Gaia DR3 supplies current primary astrometry. Not an independent high-resolution image or precise transit series."
+  },
+  {
+    "mission": "Composite_Catalogs",
+    "dataset": "PPMXL: A Proper Motion Catalog Combining USNO-B and 2MASS",
+    "data_type": "Catalog",
+    "status": "not selected",
+    "rationale": "PPMXL recombines USNO-B and 2MASS. Not independent of those inputs; Gaia used for astrometry."
+  },
+  {
+    "mission": "IRTS",
+    "dataset": "Infrared Telescope in Space",
+    "data_type": "Image|Spectrum",
+    "status": "not selected",
+    "rationale": "Coarse infrared survey products do not resolve the stellar pair or the unresolved-host problem. No target detection inferred."
+  },
+  {
+    "mission": "IRTS",
+    "dataset": "IRTS Images",
+    "data_type": "Image",
+    "status": "not selected",
+    "rationale": "Coarse infrared survey products do not resolve the stellar pair or the unresolved-host problem. No target detection inferred."
+  }
+]
