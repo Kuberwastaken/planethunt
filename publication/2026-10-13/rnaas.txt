@@ -1,0 +1,57 @@
+Archival vetting of a 13.769-day transit candidate associated with KIC 5689121
+
+Kuber Mehta
+
+[Affiliation pending]
+
+[Corresponding email pending]
+
+Draft for author review; not submitted or accepted by RNAAS
+
+ABSTRACT
+
+I report archival vetting of a 13.769-day transit-like signal associated with the M dwarf KIC 5689121 (TIC 120686465). Kepler Bonus photometry, reserved-quarter recovery, aperture-dilution behaviour and raw-pixel centroid shifts favour this source over its resolved neighbours. Transit timing distinguishes the signal from nearby Kepler-169 e despite their similar periods. Conditional on the adopted host and a planetary interpretation, the inferred radius is approximately 2.5-3 Earth radii. An exploratory TRICERATOPS calculation gives a mean false-positive probability of 0.069, dominated by a planet orbiting an unresolved bound companion; the candidate is not statistically validated. Additional archival photometry provides no independent transit recovery or measured close-companion contrast curve. I identify the remaining host ambiguity and provide the analysis record to support high-resolution imaging and resolved transit follow-up.
+
+Signal and data
+
+Kepler Bonus provides point-spread-function (PSF) photometry for sources recorded in Kepler target-pixel files, including stars absent from the primary target list (Martinez-Palomera et al. 2023). An archival search identified a repeating dip associated with KIC 5689121, Gaia DR3 2103792461826460288, at ICRS RA 285.907827 deg, Dec +40.941988 deg. The adopted catalogue estimates are approximately 3633 K and 0.51 solar radii; Gaia G is 16.28 and 2MASS Ks is 12.97.
+
+The saved PSF series contains 46,523 detrended measurements across 13 quarters. An exposure-integrated full-baseline transit fit gives P = 13.769448 +/- 0.000065 days and reference mid-transit BJD_TDB = 2455630.24543 +/- 0.00200. These are rounded marginal posterior uncertainties, not a scheduling covariance model. The fitted planet-to-star radius ratio is 0.0460 (+0.0038, -0.0021). The inferred planetary radius is approximately 2.5-3 Earth radii, conditional on the stellar model and dilution. Local measured depths range from 1830 to 2430 ppm with extraction choices; the duration is approximately 2.1-2.4 hours.
+
+In the original search extraction, 22 events in reserved quarters give 1929 +/- 159 ppm at the search ephemeris. The later full-baseline fit uses 74 measured events with different selection and is not an independent holdout test. The original local errors omit some baseline and correlated-noise uncertainty. In 1736 matched inverted-light-curve searches, two stars meet comparable first-screen detection and holdout thresholds. Detection strength alone therefore does not establish a globally calibrated discovery significance.
+
+Which source varies?
+
+The brighter optical neighbour KIC 5689116 lies 7.1 arcsec away. Its own Kepler Bonus PSF photometry gives 24 +/- 41 ppm at the candidate ephemeris, whereas hosting the observed signal would require roughly 1100 ppm. Across quarters, the shallower aperture depths track the target's estimated fraction of aperture light: the target-dilution model gives chi-squared = 15.4 for 12 degrees of freedom. This supports dilution of a target-associated signal.
+
+A separate flux-weighted centroid calculation on calibrated target-pixel files favours dimming of KIC 5689121 over the bright neighbour by delta chi-squared = 934; other tested Gaia neighbours fit still worse. The target model itself has chi-squared = 43.9 for 24 degrees of freedom, indicating residual model inadequacy. These are conditional comparisons sharing the same Kepler photons, not calibrated probabilities or independent observations. They cannot separate an unresolved companion from the catalogue target.
+
+The nearby Kepler-169 system contains a planet with a nearly matching period. Its predicted events do not overlap the candidate's events across the Kepler baseline; their nearest midpoints differ by about 67 hours. Tests at the five Kepler-169 ephemerides show no significant corresponding dip in the target PSF series. The timing and localization evidence disfavours contamination from that known system.
+
+Host ambiguity and archival follow-up
+
+An exploratory offline TRICERATOPS 1.1 calculation (Giacalone et al. 2021), using Kepler exposure settings and a Gaia-derived background population, gives mean FPP = 0.06885 across four runs, spanning 0.058-0.089. This exceeds the 0.015 validation threshold. The dominant adverse scenario is a planet transiting an unresolved bound companion, rather than the adopted host. Resolved neighbours were omitted from this calculation and tested separately; its reported zero nearby-FPP is consequently not an empirical constraint. Hypothetical imaging curves are sensitivity experiments only, not observations or validation evidence.
+
+The subsequent archive audit adds Spitzer photometry, ten-sector TESS pixel extraction, six-sector TESS-Gaia Light Curves, ZTF, PTF, WISE and joint SPHEREx spectrophotometry for the known pair. No independent transit recovery results. Spitzer and all 287 returned SPHEREx measurements per source miss the nominal transit windows. Conditional TESS pixel injections dilute an assumed 2400-ppm target transit to approximately 987 ppm in a 1.5-pixel aperture, compared with 1294-ppm off-phase scatter; this is not a completeness estimate. The retrieved CFHT image resolves the pair but saturates both cores, preventing a trustworthy close-companion contrast curve.
+
+The exact Gaia source occurs in the candidate-member table of Barber et al. (2022), with a Kepler-data flag but no listed rotation period, lithium or radial velocity. Association membership and the light-curve identity require clarification; I do not assign the association's age or claim that the source was never previously searched. Novelty remains provisional.
+
+The evidence warrants further investigation, not a confirmed-planet claim. Useful next steps are an independently recovered transit with resolved target/neighbour photometry, high-resolution infrared imaging with measured companion sensitivity, and a joint stellar/multiplicity analysis. Imaging alone need not remove companions at the smallest separations.
+
+Data, attribution and AI disclosure
+
+The versioned Planethunt release (Mehta 2026) preserves scripts, measurements, query provenance, limitations and checksums, with links to the original bulk-data release. Selected checks were rerun; the full historical workflow is not a one-command independently reproduced pipeline. I acknowledge NASA/MAST, the Kepler Bonus team, ESA/Gaia, IRSA, CADC and the original survey teams. Upstream search-code attribution is retained in SOURCES.md.
+
+OpenAI ChatGPT/Codex and Anthropic Claude assisted the research workflow, including code, analysis and scientific synthesis. OpenAI Codex assisted preparation of this draft and the code-rendered figure from saved measurements. The human author is responsible for reviewing the evidence, references and final text; AI tools are not authors.
+
+Figure 1. Left: saved 15-minute phase-folded Kepler PSF bins with reported uncertainties and the exposure-integrated model. Right: conditional raw-pixel centroid-fit differences relative to KIC 5689121 for resolved Gaia neighbours; larger values indicate worse agreement. Gaia identifiers are abbreviated to their last six digits. Neither panel is new independent photometry. The plotting code was prepared with OpenAI Codex; original numeric inputs are preserved.
+
+REFERENCES
+
+Barber, M. G., Mann, A. W., Bush, J. L., et al. 2022, AJ, 164, 88. doi:10.3847/1538-3881/ac7b28
+
+Giacalone, S., Dressing, C. D., Jensen, E. L. N., et al. 2021, AJ, 161, 24. arXiv:2002.00691
+
+Martinez-Palomera, J., Hedges, C., and Dotson, J. 2023, Kepler Bonus: Light Curves of Kepler Background Sources. arXiv:2310.17733
+
+Mehta, K. 2026, Planethunt: archival evidence snapshot, evidence-20261013. https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261013

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this versioned evidence snapshot when using the Planethunt analysis. The RNAAS manuscript is a draft, not an accepted publication."
+type: software
+title: "Planethunt: archival vetting of the KIC 5689121 transit candidate"
+authors:
+  - family-names: Mehta
+    given-names: Kuber
+version: evidence-20261013
+date-released: 2026-10-13
+repository-code: "https://github.com/Kuberwastaken/planethunt"
+url: "https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261013"
+abstract: >-
+  Dated evidence snapshot for an unconfirmed 13.769-day transit candidate
+  associated with KIC 5689121. Includes Kepler signal vetting, source attribution,
+  archival follow-up, limitations, provenance and an RNAAS manuscript draft.
+  Novelty and host identity remain provisional. No Zenodo DOI has yet been issued.
+keywords:
+  - exoplanet candidates
+  - Kepler
+  - archival astronomy
+  - KIC 5689121

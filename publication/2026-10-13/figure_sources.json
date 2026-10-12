@@ -1,0 +1,14 @@
+[
+  {
+    "path": "analysis/validation-20261011/post/data/kic5689121_folded_15min_bins.csv",
+    "sha256": "d75c7088aa1745c14b8c828e48b3a27db2b5fbd7f5732a53e4f0b4552c34d696"
+  },
+  {
+    "path": "analysis/validation-20261011/post/data/kic5689121_transit_model.csv",
+    "sha256": "a67454e1eee46b7ead2846c7493db16403e55ff6be817732e25258d8231b8551"
+  },
+  {
+    "path": "analysis/validation-20261011/results/kepler/kcentroid_all_sources.csv",
+    "sha256": "483d6d7f7208c49a859148e22583055f8c43d5749ef2f490b29d0963e2acb595"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "method": "whitespace-separated words including title, headings, abstract, body, caption and references; author metadata excluded",
+  "abstract": 124,
+  "total": 1074,
+  "limit_total": 1500,
+  "limit_abstract": 150
+}

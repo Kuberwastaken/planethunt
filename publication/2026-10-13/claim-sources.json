@@ -1,0 +1,31 @@
+{
+  "signal, fitted parameters and event selections": [
+    "analysis/validation-20261011/SCIENCE.md",
+    "analysis/validation-20261011/README.md",
+    "analysis/validation-20261011/results/kepler/kfit_psf.json",
+    "analysis/validation-20261011/post/data/kic5689121_model_numbers.json",
+    "analysis/validation-20261011/post/data/kic5689121_key_numbers.json"
+  ],
+  "source attribution and timing": [
+    "analysis/validation-20261011/results/kepler/kcentroid_tpf.json",
+    "analysis/validation-20261011/results/kepler/kcentroid_all_sources.csv",
+    "analysis/validation-20261011/results/kepler/kdilution_pooled.json",
+    "analysis/validation-20261011/results/kepler/k169_overlap.json"
+  ],
+  "exploratory FPP": [
+    "analysis/validation-20261011/results/triceratops/fpp_summary.json",
+    "analysis/validation-20261011/SCIENCE.md"
+  ],
+  "archive audit and limitations": [
+    "analysis/archive-exhaustion-20261012/README.md",
+    "analysis/archive-exhaustion-20261012/spherex_summary.json",
+    "analysis/archive-exhaustion-20261012/pixel_injection_results/summary.json",
+    "analysis/archive-exhaustion-20261012/cfht_quality.json"
+  ],
+  "attribution": [
+    "SOURCES.md"
+  ],
+  "figure": [
+    "publication/2026-10-13/figure_sources.json"
+  ]
+}

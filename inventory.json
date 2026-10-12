@@ -13,6 +13,11 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "CITATION.cff",
+      "bytes": 932,
+      "sha256": "5912885f31662283c0d730ad5317d0b41b094b45ef4cc02f408b4c0a44fd4b81"
+    },
+    {
       "path": "README.md",
       "bytes": 8783,
       "sha256": "ca17258ebe1db8f41393ec20dcc4e097d164985ee6ae752028430ccfa3cfa7e3"
@@ -12878,6 +12883,81 @@
       "sha256": "e10a451b62c8c9790147ee7515d8a9afaa4c3aa296561e4fe8eaba02b6db0f3c"
     },
     {
+      "path": "publication/2026-10-13/README.md",
+      "bytes": 4131,
+      "sha256": "86237d34c399a5a306b7a158a12954d35d192c6c41c3b91ce9d81113d6a7be82"
+    },
+    {
+      "path": "publication/2026-10-13/RELEASE_NOTES.md",
+      "bytes": 2328,
+      "sha256": "cf787b1686fdbd70a28eabd69b741e436d1f5ece96d3677d1ebc328508b010df"
+    },
+    {
+      "path": "publication/2026-10-13/build_manuscript.py",
+      "bytes": 4660,
+      "sha256": "3b8bf3683695da64bae13663fa03137e99689ab200ec7f17a78ac7218688c61a"
+    },
+    {
+      "path": "publication/2026-10-13/bulk-data-manifest.json",
+      "bytes": 1243,
+      "sha256": "2203766f1f26c8ab025bbcf7f6d5b3e9b96d852d427517b81339cd6799426f7c"
+    },
+    {
+      "path": "publication/2026-10-13/claim-sources.json",
+      "bytes": 1258,
+      "sha256": "3dcab31bda953c68a95275eb2677c1a3bd8e701fe49051b44be16e65739dadc5"
+    },
+    {
+      "path": "publication/2026-10-13/cover-letter.txt",
+      "bytes": 924,
+      "sha256": "2ebe822c1af9054c3260834b4e10e625eb692ba207db21e95fa0b2bec40066f4"
+    },
+    {
+      "path": "publication/2026-10-13/figure1.pdf",
+      "bytes": 23082,
+      "sha256": "c3177c531bd9059379dc97d35d4b8466cf74c6951920c03fe2ee4bdcb4bd083f"
+    },
+    {
+      "path": "publication/2026-10-13/figure1.png",
+      "bytes": 85004,
+      "sha256": "074c03f2c68340214dced163f0a33fba187b284f1e508552233cc6a4d8dca0ed"
+    },
+    {
+      "path": "publication/2026-10-13/figure_sources.json",
+      "bytes": 528,
+      "sha256": "8dbd5e61a1ff45d1c36b903aa865d088a8d71002030498fb2bffe2f63f2d3e66"
+    },
+    {
+      "path": "publication/2026-10-13/make_figure.py",
+      "bytes": 2158,
+      "sha256": "1c9d9a16548b3abec1c7d6b462649f642cfc10e555792d363af0b90320aaea21"
+    },
+    {
+      "path": "publication/2026-10-13/manuscript.json",
+      "bytes": 8524,
+      "sha256": "01c0e72111f6b90793b9a1702c85209c9916edbd0ec89e47592c4428892efe0c"
+    },
+    {
+      "path": "publication/2026-10-13/rnaas-review.pdf",
+      "bytes": 109092,
+      "sha256": "2a06f177f20004ad6b67a12b8934ebafbd89d792562a1220c90f9e6b63256f43"
+    },
+    {
+      "path": "publication/2026-10-13/rnaas.tex",
+      "bytes": 8281,
+      "sha256": "5c85ba3495475801a12223196ea171402e16e6fa297a92167e2fe533623709d2"
+    },
+    {
+      "path": "publication/2026-10-13/rnaas.txt",
+      "bytes": 8030,
+      "sha256": "924b35eec62c4b0e112b481ae8bbbec6a35e2409ca6b1f612e838dafcd76e222"
+    },
+    {
+      "path": "publication/2026-10-13/word-count.json",
+      "bytes": 221,
+      "sha256": "4f25ab085083232abdc63b09aaf35ad520ec404637c0fa33c57811f6661363a9"
+    },
+    {
       "path": "scripts/build_visuals.py",
       "bytes": 3042,
       "sha256": "6f0cb90cafe29d28e79a43961aa01916a3846dcd67b1a17e8462c87eda6287c5"
@@ -12929,8 +13009,8 @@
     },
     {
       "path": "scripts/site/refresh_manifests.py",
-      "bytes": 1106,
-      "sha256": "98cd97b2a912389ae3ff9136fe129e173368e060021da668a753a8b789ef7b93"
+      "bytes": 1115,
+      "sha256": "becfab138e190fbd4b28a2d51b6b3e18416c551863fb45ef0dc4063ab8bc9044"
     },
     {
       "path": "scripts/site/site.css",
@@ -12978,5 +13058,5 @@
       "sha256": "f35472e087ff76e4eb93c717d28a8fcfef0d1b2bdffa1fe1ccffa6d87cb1c3e9"
     }
   ],
-  "updated": "2026-10-12 archival follow-up and public field report; validation baseline remains 2026-10-11"
+  "updated": "2026-10-13 publication snapshot; archival follow-up 2026-10-12; validation baseline remains 2026-10-11"
 }

@@ -1,0 +1,25 @@
+{
+  "release": "https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261010",
+  "published_at_utc": "2026-10-10T15:41:31Z",
+  "note": "Existing release assets; linked, not duplicated in this publication package. Hashes recorded from the archive audit. A later Zenodo source snapshot does not by itself preserve these external assets.",
+  "assets": [
+    {
+      "name": "planet-search-kepler-data.zip",
+      "bytes": 163854848,
+      "sha256": "4fd59efb1f252116b37d9f6a076c84e67a93249d00c7cb152e373d36c58640dd",
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-kepler-data.zip"
+    },
+    {
+      "name": "planet-search-results.zip",
+      "bytes": 294813531,
+      "sha256": "60e86d7e2fc42f78d6b80b5925d13c38cd07a6117467a23cb7d484e132380f3f",
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-results.zip"
+    },
+    {
+      "name": "planet-search-tess-data.zip",
+      "bytes": 448391783,
+      "sha256": "98a5dec45bb2c74fccd7788ace394c698a8d973ee63347a1c0686ad15bbfac85",
+      "url": "https://github.com/Kuberwastaken/planethunt/releases/download/evidence-20261010/planet-search-tess-data.zip"
+    }
+  ]
+}

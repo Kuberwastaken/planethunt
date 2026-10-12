@@ -6,7 +6,7 @@ files = sorted(set(files))
 def h(p): return hashlib.sha256(open(p, 'rb').read()).hexdigest()
 old = json.load(open('inventory.json'))
 old['files'] = [{'path': f, 'bytes': len(open(f, 'rb').read()), 'sha256': h(f)} for f in files]
-old['updated'] = '2026-10-12 archival follow-up and public field report; validation baseline remains 2026-10-11'
+old['updated'] = '2026-10-13 publication snapshot; archival follow-up 2026-10-12; validation baseline remains 2026-10-11'
 json.dump(old, open('inventory.json', 'w'), indent=2); open('inventory.json', 'a').write('\n')
 lines = [f'{e["sha256"]}  {e["path"]}' for e in old['files']] + [f'{h("inventory.json")}  inventory.json']
 lines.sort(key=lambda l: l.split('  ', 1)[1])
