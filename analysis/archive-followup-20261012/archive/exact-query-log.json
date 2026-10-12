@@ -1,0 +1,163 @@
+[
+  {
+    "table": "CUMULATIVE",
+    "query": "select * from CUMULATIVE where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:41.701943+00:00"
+  },
+  {
+    "table": "KEPLERSTELLAR",
+    "query": "select * from KEPLERSTELLAR where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:42.916411+00:00"
+  },
+  {
+    "table": "Q1_Q12_KOI",
+    "query": "select * from Q1_Q12_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:42.458003+00:00"
+  },
+  {
+    "table": "Q1_Q12_KS",
+    "query": "select * from Q1_Q12_KS where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:42.883354+00:00"
+  },
+  {
+    "table": "Q1_Q12_TCE",
+    "query": "select * from Q1_Q12_TCE where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:43.174968+00:00"
+  },
+  {
+    "table": "Q1_Q16_KOI",
+    "query": "select * from Q1_Q16_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:44.508253+00:00"
+  },
+  {
+    "table": "Q1_Q16_KS",
+    "query": "select * from Q1_Q16_KS where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:45.239535+00:00"
+  },
+  {
+    "table": "Q1_Q16_TCE",
+    "query": "select * from Q1_Q16_TCE where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:44.616893+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR24_KOI",
+    "query": "select * from Q1_Q17_DR24_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:44.662478+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR24_KS",
+    "query": "select * from Q1_Q17_DR24_KS where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:46.772559+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR24_TCE",
+    "query": "select * from Q1_Q17_DR24_TCE where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:46.060276+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR25_KOI",
+    "query": "select * from Q1_Q17_DR25_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:46.102178+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR25_KS",
+    "query": "select * from Q1_Q17_DR25_KS where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:47.632265+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KOI",
+    "query": "select * from Q1_Q17_DR25_SUP_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:47.904527+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KS",
+    "query": "select * from Q1_Q17_DR25_SUP_KS where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:48.268233+00:00"
+  },
+  {
+    "table": "Q1_Q17_DR25_TCE",
+    "query": "select * from Q1_Q17_DR25_TCE where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:48.101276+00:00"
+  },
+  {
+    "table": "Q1_Q6_KOI",
+    "query": "select * from Q1_Q6_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:49.165302+00:00"
+  },
+  {
+    "table": "Q1_Q8_KOI",
+    "query": "select * from Q1_Q8_KOI where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:49.798219+00:00"
+  },
+  {
+    "table": "keplernames",
+    "query": "select * from keplernames where kepid=5689121",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:49.945651+00:00"
+  },
+  {
+    "table": "toi",
+    "query": "select * from toi where tid=120686465",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:49.949306+00:00"
+  },
+  {
+    "table": "ps",
+    "query": "select * from ps where tic_id='TIC 120686465'",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:50.933575+00:00"
+  },
+  {
+    "table": "stellarhosts",
+    "query": "select * from stellarhosts where tic_id='TIC 120686465'",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:51.357917+00:00"
+  },
+  {
+    "table": "KEPLERTIMESERIES",
+    "query": "select * from keplertimeseries where star_id='5689121'",
+    "rows": 0,
+    "returncode": 0,
+    "utc": "2026-10-12T16:44:51.241965+00:00"
+  }
+]

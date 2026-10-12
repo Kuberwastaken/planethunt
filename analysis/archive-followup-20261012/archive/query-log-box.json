@@ -1,0 +1,282 @@
+[
+  {
+    "table": "keplernames",
+    "query": "select * from keplernames where kepid in (5689121,5689116)",
+    "utc": "2026-10-12T16:41:54.281284+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "KEPLERTIMESERIES",
+    "query": "select * from KEPLERTIMESERIES where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:55.755305+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "f9a6d0cd247cc2445341869e2accc3086f4ddd384824e13354c01d9856b112ef",
+    "rows": 319
+  },
+  {
+    "table": "KEPLERSTELLAR",
+    "query": "select * from KEPLERSTELLAR where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:56.468303+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "95f8ab925c55ec2c932ae28c0705941d5251e399515cdb36aa1e601ab2d8462f",
+    "rows": 150
+  },
+  {
+    "table": "Q1_Q12_KS",
+    "query": "select * from Q1_Q12_KS where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:55.799236+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "57ac749d5d8c4f04d4b6b993545062ed68a3c68fbb321915a7b127a09515f9fd",
+    "rows": 30
+  },
+  {
+    "table": "Q1_Q16_KS",
+    "query": "select * from Q1_Q16_KS where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:56.590707+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "8f8e9726d8d318725901e68be6228cf879198da40b2919865fa0d76059da6a51",
+    "rows": 30
+  },
+  {
+    "table": "Q1_Q17_DR24_KS",
+    "query": "select * from Q1_Q17_DR24_KS where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:59.540514+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "5bca360e0d8e799cddc8791c7797d3c616c463d9c4e63bcead583607a945a18d",
+    "rows": 30
+  },
+  {
+    "table": "Q1_Q17_DR25_KS",
+    "query": "select * from Q1_Q17_DR25_KS where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:59.318319+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "e4eb35b25dd2c07086ac9872d0315f0b7c309ea8084d2a4939993a3b7b3a6138",
+    "rows": 30
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KS",
+    "query": "select * from Q1_Q17_DR25_SUP_KS where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:59.874906+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "6bd1ed59dee7dc88f582cee492b496e96f770d83bad32c9490ff25b456f167a8",
+    "rows": 30
+  },
+  {
+    "table": "Q1_Q6_KOI",
+    "query": "select * from Q1_Q6_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:58.105783+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "e5dd43ac3c6c6078cfab15bce6b5b8faf1a42b2819b0aa5f227cc0eb81346da4",
+    "rows": 2
+  },
+  {
+    "table": "Q1_Q8_KOI",
+    "query": "select * from Q1_Q8_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:41:59.883286+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "b7dd27ae59f69166140fe567699929fa70cf08a2be9417bf4eaefda55c29b53a",
+    "rows": 5
+  },
+  {
+    "table": "CUMULATIVE",
+    "query": "select * from CUMULATIVE where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:06.101964+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "89da2f448ffdd774d0f0b42cfa5658805b6f24b64a64826dbe9b59ff741b9c30",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q17_DR24_KOI",
+    "query": "select * from Q1_Q17_DR24_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:01.386836+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "d9f98a91456fb0a8de569d5c5784b8cec97640dd6effd0d7779786de53e6bbb9",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q17_DR25_KOI",
+    "query": "select * from Q1_Q17_DR25_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:01.512177+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "ea60f87d46999d89d1f317df9d810a0f81e5ac534153b94ce56aedf5d0e77b05",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q12_KOI",
+    "query": "select * from Q1_Q12_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:02.019708+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "e813c2fe9c1aaed85a7d0a42e915377e5d42ddfb5b9c1faa6a11f45577bdef45",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q16_KOI",
+    "query": "select * from Q1_Q16_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:03.187209+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3b244db1984df17507e018a93b355a1394f52360456bac24bbd2cf6dabe9c26a",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q16_TCE",
+    "query": "select * from Q1_Q16_TCE where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:03.734864+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "dc360509ffd4a8aa405a269aec5cd1929f32e5f5b558417f7bec1d59f1181609",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q17_DR24_TCE",
+    "query": "select * from Q1_Q17_DR24_TCE where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:03.945282+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "be597ba0e2d394d285358d53090d01837c065d00a26843a9cb18a0d0e5c3247e",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KOI",
+    "query": "select * from Q1_Q17_DR25_SUP_KOI where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:10.024649+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "a1054546a9269236f7da84781d5ed5041e3d8dcbbe246262b9df3911f2d40f52",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q12_TCE",
+    "query": "select * from Q1_Q12_TCE where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:05.544381+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "a7286efe1a3ef9b43895eb152b3d710113fe078cd37ba55d5deed8fdaf2a6f35",
+    "rows": 6
+  },
+  {
+    "table": "Q1_Q17_DR25_TCE",
+    "query": "select * from Q1_Q17_DR25_TCE where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:05.627542+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "442be949878128f8041a53fce0101e72334bfc51c928b95734899ea5b3b8fd43",
+    "rows": 7
+  },
+  {
+    "table": "ps",
+    "query": "select * from ps where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:08.056466+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "6a5079d1398f2ca014fcee6e8e96359c2cdc97e74ec5e7d7c7eb7ff38c5fe630",
+    "rows": 59
+  },
+  {
+    "table": "pscomppars",
+    "query": "select * from pscomppars where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:07.572716+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "7bca0218288ef963a907c478681969ac8fb6cb8e19d8c22397ef4206cc6ed510",
+    "rows": 5
+  },
+  {
+    "table": "toi",
+    "query": "select * from toi where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:13.082686+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "stellarhosts",
+    "query": "select * from stellarhosts where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:09.537400+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "6315aaa7a492898330bf40ba0639024cd68d8ad674b430b0825cc17138d2cb70",
+    "rows": 40
+  },
+  {
+    "table": "k2pandc",
+    "query": "select * from k2pandc where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:10.149317+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "observations",
+    "query": "select * from observations where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:10.960903+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 400\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "nexolist",
+    "query": "select * from nexolist where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:11.472201+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "ukirttimeseries",
+    "query": "select * from ukirttimeseries where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:11.616316+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "kelttimeseries",
+    "query": "select * from kelttimeseries where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:13.782355+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "superwasptimeseries",
+    "query": "select * from superwasptimeseries where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T16:42:13.187457+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "794041737d16e616cab8eadcdd0c68483697381595dc336628c648930cfa6309",
+    "rows": 42
+  },
+  {
+    "table": "object_aliases",
+    "query": "select * from object_aliases where resolved_name like '%5689121%' or resolved_name like '%120686465%' or resolved_name like '%2103792461826460288%'",
+    "utc": "2026-10-12T16:42:14.418084+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  }
+]

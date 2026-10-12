@@ -1,0 +1,9 @@
+{
+  "source": "https://exoplanetarchive.ipac.caltech.edu/data/Contributed/spikes/SpiKeS-Final-210515.csv",
+  "download_bytes": 128291379,
+  "sha256": "938ef17446285d635769c9024bab075ecc75d979079f9643aae4139de2177a06",
+  "data_rows_scanned": 191984,
+  "target_rows": 0,
+  "selected_rows": 2,
+  "note": "Original column-preserving selection included. JSON selection overwrites duplicate RAJ2000/DEJ2000 headings; use original CSV for these fields."
+}

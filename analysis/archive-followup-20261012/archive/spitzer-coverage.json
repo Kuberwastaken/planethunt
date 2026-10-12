@@ -1,0 +1,81 @@
+{
+  "checked_utc": "2026-10-12T16:51:09.375669+00:00",
+  "service": "Spitzer Heritage Archive",
+  "url": "https://irsa.ipac.caltech.edu/applications/Spitzer/SHA/",
+  "method": "Browser position form: RA 285.907827, Dec 40.941988, radius 1 arcsecond; spatial constraints on Individual data products. Level 1 (BCD) table returned eight rows.",
+  "program_id": 10067,
+  "pi": "Werner, Michael",
+  "aors": [
+    {
+      "aorkey": 50050048,
+      "label": "Kepler 03 - center",
+      "start": "2013-12-22 19:24:15.413",
+      "end": "2013-12-22 23:35:23.781"
+    },
+    {
+      "aorkey": 50057216,
+      "label": "Kepler 03 - middle2",
+      "start": "2013-12-23 12:13:04.893",
+      "end": "2013-12-23 16:24:12.827"
+    }
+  ],
+  "frames": [
+    {
+      "bcd_id": 386201492,
+      "aorkey": 50050048,
+      "channel": 1,
+      "wavelength_um": 3.6,
+      "filename": "r50050048/ch1/bcd/SPITZER_I1_50050048_0021_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386201493,
+      "aorkey": 50050048,
+      "channel": 1,
+      "wavelength_um": 3.6,
+      "filename": "r50050048/ch1/bcd/SPITZER_I1_50050048_0022_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386226917,
+      "aorkey": 50057216,
+      "channel": 1,
+      "wavelength_um": 3.6,
+      "filename": "r50057216/ch1/bcd/SPITZER_I1_50057216_0040_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386226926,
+      "aorkey": 50057216,
+      "channel": 1,
+      "wavelength_um": 3.6,
+      "filename": "r50057216/ch1/bcd/SPITZER_I1_50057216_0038_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386226927,
+      "aorkey": 50057216,
+      "channel": 1,
+      "wavelength_um": 3.6,
+      "filename": "r50057216/ch1/bcd/SPITZER_I1_50057216_0039_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386330125,
+      "aorkey": 50057216,
+      "channel": 2,
+      "wavelength_um": 4.5,
+      "filename": "r50057216/ch2/bcd/SPITZER_I2_50057216_0036_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386330126,
+      "aorkey": 50057216,
+      "channel": 2,
+      "wavelength_um": 4.5,
+      "filename": "r50057216/ch2/bcd/SPITZER_I2_50057216_0034_0000_2_bcd.fits"
+    },
+    {
+      "bcd_id": 386330152,
+      "aorkey": 50057216,
+      "channel": 2,
+      "wavelength_um": 4.5,
+      "filename": "r50057216/ch2/bcd/SPITZER_I2_50057216_0035_0000_2_bcd.fits"
+    }
+  ],
+  "limits": "Metadata/coverage discovery only. FITS not downloaded, WCS not independently validated, fluxes not extracted. No transit detection or companion exclusion claimed."
+}

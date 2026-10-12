@@ -1,0 +1,122 @@
+{
+  "kelttimeseries-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "keplernames-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "Q1_Q16_TCE-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q17_DR25_TCE-box": {
+    "box_rows": 7,
+    "within_300_arcsec": 7
+  },
+  "k2pandc-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "Q1_Q17_DR24_TCE-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q16_KS-box": {
+    "box_rows": 30,
+    "within_300_arcsec": 25
+  },
+  "ps-box": {
+    "box_rows": 59,
+    "within_300_arcsec": 59
+  },
+  "Q1_Q12_KOI-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "stellarhosts-box": {
+    "box_rows": 40,
+    "within_300_arcsec": 40
+  },
+  "CUMULATIVE-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "object_aliases-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "pscomppars-box": {
+    "box_rows": 5,
+    "within_300_arcsec": 5
+  },
+  "Q1_Q6_KOI-box": {
+    "box_rows": 2,
+    "within_300_arcsec": 2
+  },
+  "Q1_Q17_DR24_KS-box": {
+    "box_rows": 30,
+    "within_300_arcsec": 25
+  },
+  "toi-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "Q1_Q17_DR25_KOI-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q16_KOI-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q17_DR25_SUP_KOI-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q17_DR24_KOI-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "KEPLERSTELLAR-box": {
+    "box_rows": 150,
+    "within_300_arcsec": 125
+  },
+  "nexolist-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "Q1_Q8_KOI-box": {
+    "box_rows": 5,
+    "within_300_arcsec": 5
+  },
+  "KEPLERTIMESERIES-box": {
+    "box_rows": 319,
+    "within_300_arcsec": 263
+  },
+  "Q1_Q17_DR25_KS-box": {
+    "box_rows": 30,
+    "within_300_arcsec": 25
+  },
+  "Q1_Q12_KS-box": {
+    "box_rows": 30,
+    "within_300_arcsec": 25
+  },
+  "ukirttimeseries-box": {
+    "box_rows": 0,
+    "within_300_arcsec": 0
+  },
+  "Q1_Q12_TCE-box": {
+    "box_rows": 6,
+    "within_300_arcsec": 6
+  },
+  "Q1_Q17_DR25_SUP_KS-box": {
+    "box_rows": 30,
+    "within_300_arcsec": 25
+  },
+  "superwasptimeseries-box": {
+    "box_rows": 42,
+    "within_300_arcsec": 32
+  }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="ERROR">
+ORA-00942: table or view does not exist
+</INFO>
+</RESOURCE>
+</VOTABLE>

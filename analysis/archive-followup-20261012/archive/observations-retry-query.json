@@ -1,0 +1,6 @@
+{
+  "query": "select pl_name,hostname,ra,dec,facility,instrument from observations where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+  "utc": "2026-10-12T16:49:35.505580+00:00",
+  "returncode": 0,
+  "stderr": ""
+}

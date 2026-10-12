@@ -1,0 +1,96 @@
+KIC 5689121 — archive audit, 12 October 2026
+
+RESULT
+No existing high-resolution image or contrast curve was found in the checked
+public records. The archive is not fully exhausted: a SpiKeS lead led to eight
+Spitzer calibrated image products near the exact position, worth analysing.
+This audit does not confirm a planet or change the false-positive probability.
+
+TARGET
+KIC 5689121; TIC 120686465; Gaia DR3 2103792461826460288;
+2MASS J19033788+4056311; WISE J190337.86+405631.1.
+Search centre: RA 285.907827 deg, Dec +40.941988 deg.
+
+CATALOGUE COVERAGE
+The exact-ID log contains 23 successful queries with zero matching rows:
+8 KOI lists (cumulative and historical), 4 TCE releases, 6 stellar tables,
+Kepler names, Kepler time series, confirmed planetary systems, stellar hosts,
+and TESS project candidates. Separate positional queries covered a rectangle
+enclosing a 300-arcsecond circle; returned rows were filtered by great-circle
+separation. Query text, timestamps, responses and failures are bundled.
+A missing target row is expected for a background source; it does not establish
+priority or rule out an observation under a different designation.
+
+Within 300 arcsec: 5 confirmed Kepler-169 planets (host KIC 5689351, 263.33 arcsec
+away); KOI 3784.01/KIC 5688997 (189.19 arcsec), a 23.8706941-day FALSE POSITIVE.
+DR25 also lists a sixth pipeline event on Kepler-169 at 199.592 days; that is not
+a sixth confirmed planet. No corresponding target candidate was found.
+Kepler time-series archive: 263 rows in the circle, including 13 quarter files
+for bright neighbour KIC 5689116; no direct target entry. These are not new
+independent confirmation data. SuperWASP: 32 rows in the circle; nearest source
+73.04 arcsec away, not a target light curve. No matches in the checked positional
+TOI, K2 planet/candidate, KELT, UKIRT or NExoList queries.
+
+EXOFOP — LIVE RECORDS
+https://exofop.ipac.caltech.edu/tess/target.php?id=120686465
+No TOIs, CTOIs, imaging observations, spectroscopy, time-series uploads,
+stellar-companion entries or uploaded files listed. This is a record-level
+negative result, not proof that nobody has observed the target.
+Bright neighbour TIC 120686466/KIC 5689116 likewise lists no follow-up records.
+https://exofop.ipac.caltech.edu/tess/target.php?id=120686466
+
+Useful target catalogue values for an observing feasibility request:
+J = 13.883 +/- 0.024; H = 13.213 +/- 0.026; K = 12.969 +/- 0.028.
+TIC v8.2 estimates: Teff 3633 +/- 157 K; radius 0.50748 +/- 0.01628 R_sun;
+mass 0.50540 +/- 0.02115 M_sun; distance 297.992 +/- 4.4925 pc.
+These are existing catalogue estimates, not fresh stellar measurements. WISE
+W3/W4 entries without errors must not be used as secure detections without flags.
+
+KECK
+Public KOA NIRC2 image-footprint query within 30 arcsec returned 'no data found'.
+https://koa.ipac.caltech.edu/cgi-bin/VOServ/nph-searchImage?POS=CIRCLE%20285.907827%2040.941988%200.0083333333&INSTRUMENT=NIRC2&RESULTFORMAT=csv
+The wider 5-arcmin query failed twice ('TransientFault: search database error').
+That failure is NOT a negative result. Other Keck instruments, proprietary data,
+and other observatory archives were not exhaustively checked.
+
+SPITZER — A USEFUL FOLLOW-UP LEAD
+https://exoplanetarchive.ipac.caltech.edu/docs/spikes.html
+Searched the full SpiKeS catalogue: 191,984 records. No KIC 5689121 entry.
+KIC 5689116 (7.1-arcsec bright neighbour) is present:
+3.6 um: 0.86378 +/- 0.01813938 mJy; 13.78037 +/- 0.021 mag; 5 observations.
+4.5 um: 0.54842 +/- 0.01261366 mJy; 13.78859 +/- 0.023 mag; 2 observations.
+SpiKeS flags _000. These are NEIGHBOUR fluxes; do not assign them to the target.
+Kepler-169 also has a catalogue row; both extracted rows are bundled.
+
+Followed the lead to the Spitzer Heritage Archive browser:
+https://irsa.ipac.caltech.edu/applications/Spitzer/SHA/
+Explicit UI query: target coordinates, radius 1 arcsec, spatial constraints on
+individual data products. Level 1 (BCD) returned 8 calibrated image files:
+5 channel-1 (3.6 um), 3 channel-2 (4.5 um). Programme 10067, PI Michael Werner.
+AOR 50050048: 22 December 2013. AOR 50057216: 23 December 2013.
+Exact product filenames and identifiers are in spitzer-coverage.json.
+The earlier broader position query returned 9 files; the one-arcsec check
+excluded SPITZER_I2_50057216_0037_0000_2_bcd.fits.
+
+NEXT SCIENTIFIC USE
+Download the calibrated frames and ancillary uncertainties/masks; verify target
+and neighbour WCS positions and edge coverage, then fit their infrared fluxes
+separately with a suitable IRAC PSF/PRF and calibration. Compare the target SED
+with its stellar model and assess blending. No such photometry was performed
+here. Roughly 1.8–2 arcsec resolution can help separate the 7.1-arcsec neighbour,
+but cannot replace an AO contrast curve for a much closer unresolved companion.
+Sparse survey images are not an established infrared transit measurement.
+
+REMAINING GAPS
+The archive observations TAP table returned ORA-00942 (table/view unavailable)
+even with explicit selected columns. The widened KOA query failed. Not all
+contributed files or all observatory holdings were searched. A full Gaia/MAST/
+Gemini/Subaru/Keck instrument and literature audit is outside this search.
+An empty ExoFOP follow-up section is not an all-sky observation census.
+No analysis change, website edit, message, proposal or publication was made.
+
+PROVENANCE
+See exact-query-log.json, query-log-box.json, spatial-summary.json and saved
+responses. Initial failed queries are preserved rather than called zero results.
+The 122-MB full SpiKeS file is omitted from the small evidence bundle; its URL,
+byte count and SHA-256 plus the column-preserving extract are included.

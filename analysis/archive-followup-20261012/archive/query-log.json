@@ -1,0 +1,310 @@
+[
+  {
+    "table": "keplernames",
+    "query": "select * from keplernames where (kepid in (5689121,5689116))",
+    "utc": "2026-10-12T16:40:45.300514+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  },
+  {
+    "table": "KEPLERTIMESERIES",
+    "query": "select * from KEPLERTIMESERIES where (star_id in ('005689121','005689116','5689121','5689116')) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.075186+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "KEPLERSTELLAR",
+    "query": "select * from KEPLERSTELLAR where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.069708+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q12_KS",
+    "query": "select * from Q1_Q12_KS where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.071795+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q16_KS",
+    "query": "select * from Q1_Q16_KS where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.188752+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR24_KS",
+    "query": "select * from Q1_Q17_DR24_KS where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.196246+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR25_KS",
+    "query": "select * from Q1_Q17_DR25_KS where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.203872+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KS",
+    "query": "select * from Q1_Q17_DR25_SUP_KS where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.309601+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q6_KOI",
+    "query": "select * from Q1_Q6_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.320642+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q8_KOI",
+    "query": "select * from Q1_Q8_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.315227+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "CUMULATIVE",
+    "query": "select * from CUMULATIVE where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.436448+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR24_KOI",
+    "query": "select * from Q1_Q17_DR24_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.444902+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR25_KOI",
+    "query": "select * from Q1_Q17_DR25_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.453191+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q12_KOI",
+    "query": "select * from Q1_Q12_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.553827+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q16_KOI",
+    "query": "select * from Q1_Q16_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.556802+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q16_TCE",
+    "query": "select * from Q1_Q16_TCE where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.582313+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR24_TCE",
+    "query": "select * from Q1_Q17_DR24_TCE where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.693469+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR25_SUP_KOI",
+    "query": "select * from Q1_Q17_DR25_SUP_KOI where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.701535+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q12_TCE",
+    "query": "select * from Q1_Q12_TCE where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.712283+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "Q1_Q17_DR25_TCE",
+    "query": "select * from Q1_Q17_DR25_TCE where (kepid in (5689121,5689116)) or (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:44.820744+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "ps",
+    "query": "select * from ps where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1 or tic_id='TIC 120686465')",
+    "utc": "2026-10-12T16:40:44.828248+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "pscomppars",
+    "query": "select * from pscomppars where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1 or tic_id='TIC 120686465')",
+    "utc": "2026-10-12T16:40:44.837485+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "toi",
+    "query": "select * from toi where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1 or tid=120686465)",
+    "utc": "2026-10-12T16:40:44.954418+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "stellarhosts",
+    "query": "select * from stellarhosts where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1 or tic_id='TIC 120686465')",
+    "utc": "2026-10-12T16:40:44.956375+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "k2pandc",
+    "query": "select * from k2pandc where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1 or tic_id='TIC 120686465')",
+    "utc": "2026-10-12T16:40:44.960248+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "observations",
+    "query": "select * from observations where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:45.092953+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "nexolist",
+    "query": "select * from nexolist where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:45.087771+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "ukirttimeseries",
+    "query": "select * from ukirttimeseries where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:45.120693+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "kelttimeseries",
+    "query": "select * from kelttimeseries where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:45.208361+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "superwasptimeseries",
+    "query": "select * from superwasptimeseries where (contains(point('icrs',ra,dec),circle('icrs',285.907827,40.941988,0.0833333333333))=1)",
+    "utc": "2026-10-12T16:40:45.211385+00:00",
+    "returncode": 22,
+    "stderr": "curl: (22) The requested URL returned error: 403\n",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rows": null,
+    "error": ""
+  },
+  {
+    "table": "object_aliases",
+    "query": "select * from object_aliases where resolved_name like '%5689121%' or resolved_name like '%120686465%' or resolved_name like '%2103792461826460288%'",
+    "utc": "2026-10-12T16:40:48.290764+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "sha256": "3fbbd4c6d76130399b0c79cdf41758669224a91e05b7b216953f0c9728750865",
+    "rows": 0
+  }
+]
