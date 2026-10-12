@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9029,
-      "sha256": "e73e7d2aa7d8a110062f69a548ad54792a756be3fbd88a237b779ca40dea09ed"
+      "bytes": 9349,
+      "sha256": "e8768326b5cd31f7a4fc222d5a096aeb567056dc08422c7ae57f32ae0aff6641"
     },
     {
       "path": "SOURCES.md",
@@ -12889,8 +12889,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 419473,
-      "sha256": "fa6f701b2d7e63575552adc80e28fb556ea592275f62d31c5e00aec81a00384a"
+      "bytes": 420060,
+      "sha256": "429e8ac2c0bac598e26703f4140319386baea0682e10b1c491f99f14caa97c4c"
     },
     {
       "path": "planethunt.md",
@@ -13029,8 +13029,8 @@
     },
     {
       "path": "scripts/site/page.html",
-      "bytes": 52862,
-      "sha256": "da2932a7475f4cd246d31716bf92d1ad81863205cb7df4148ebaa7508fd09c11"
+      "bytes": 53449,
+      "sha256": "de4173b908fc94dd1bea6751589dc56b065c44ce3e215ee5d24816c40352b947"
     },
     {
       "path": "scripts/site/planet_facts.py",
@@ -13044,8 +13044,8 @@
     },
     {
       "path": "scripts/site/site.css",
-      "bytes": 50098,
-      "sha256": "4c5e2a5da1f5b32b4c2d9c93429a48dfc5e1f1bad12daf4c70cc45c80446be23"
+      "bytes": 50822,
+      "sha256": "242b949522a0e9c54c504a79a81dcc21d9883b418cd7615319fb992751cce567"
     },
     {
       "path": "scripts/site/site.js",

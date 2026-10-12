@@ -1,6 +1,10 @@
 # Planethunt
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23325261.svg)](https://doi.org/10.5281/zenodo.23325261)
+
 **Citable evidence snapshot:** [Zenodo DOI 10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261) · [RNAAS author-review draft](publication/2026-10-13/rnaas-review.pdf). The candidate is unconfirmed; the note has not been submitted.
+
+**Cite as:** Mehta, K. 2026, *Planethunt: archival evidence for the KIC 5689121 transit candidate*, version evidence-20261013-r2, Zenodo, [doi:10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261).
 
 A public, inspectable record of two archival transit searches. **No confirmed planet is claimed.**
 

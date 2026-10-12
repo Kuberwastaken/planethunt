@@ -170,3 +170,10 @@ button.planet-image{display:block;width:100%;padding:0;border:0;border-radius:0;
 .repo-link svg{display:block;flex:none;width:23px;height:23px;min-width:23px;min-height:23px;max-width:23px;max-height:23px;overflow:hidden}
 @media(max-width:760px){.repo-link{top:13px;right:-4px;width:32px;height:32px;min-width:32px;min-height:32px;max-width:32px;max-height:32px}
 .repo-link svg{width:20px;height:20px;min-width:20px;min-height:20px;max-width:20px;max-height:20px}}
+
+/* Citation belongs with the evidence record, above the closing footer. */
+.citation-record{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:start;gap:20px 32px;padding:24px 0;border-top:1px solid var(--line)}
+.citation-record p{margin:0;max-width:86ch;font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.citation-record strong{display:block;margin-bottom:6px;font:11px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.citation-record cite{font-style:normal}.doi-badge{display:inline-block;margin-top:3px;max-width:100%}.doi-badge img{width:auto;height:20px;filter:grayscale(1)}
+@media(max-width:760px){.citation-record{grid-template-columns:1fr;gap:16px}.citation-record p{font-size:12px}}
