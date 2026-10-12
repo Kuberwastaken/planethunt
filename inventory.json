@@ -1118,6 +1118,11 @@
       "sha256": "d89b7e6605f130b039f811d1b7dfb4a7d8bee32bc15aa4e99f952bcde4fde567"
     },
     {
+      "path": "docs/planet/kic5689121-social-v2.png",
+      "bytes": 1238168,
+      "sha256": "c27a2fc9b0301ee1bf252fcc6dbc64f0b57120b726652d3d147d78e46be555b6"
+    },
+    {
       "path": "docs/planet/share.png",
       "bytes": 1238168,
       "sha256": "c27a2fc9b0301ee1bf252fcc6dbc64f0b57120b726652d3d147d78e46be555b6"
@@ -11034,8 +11039,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 419180,
-      "sha256": "6b5f12437c35e8d2489648a2857e9eb1ea860025e66532dd93a987b4cfb238a9"
+      "bytes": 419449,
+      "sha256": "90b369e42510fb1d872ab4239022e8838b2ef43d06a5284c3ce1813c9c9a352a"
     },
     {
       "path": "planethunt.md",
@@ -11084,8 +11089,8 @@
     },
     {
       "path": "scripts/site/page.html",
-      "bytes": 52569,
-      "sha256": "a74138d5f6daaf3d48f658cacdf4a54930658c506dffbf4cbe0c2f2608963a13"
+      "bytes": 52838,
+      "sha256": "fc830e63d7435942fce671d3ec81fc760a909da738dad2c44270eaa166fa24ba"
     },
     {
       "path": "scripts/site/planet_facts.py",
@@ -11121,6 +11126,11 @@
       "path": "scripts/site/test_scroll_interactions.cjs",
       "bytes": 6128,
       "sha256": "de638ee1f8b29fdd0839a362c947ada2f061c1c79ed38a38b87ba4ae34599d2f"
+    },
+    {
+      "path": "scripts/site/test_social_card.py",
+      "bytes": 2525,
+      "sha256": "f696caf9b3a675103d0253dd52fad7cf4151a56f27b01d18fbdd5fa614f1d9c2"
     },
     {
       "path": "sitemap.xml",
