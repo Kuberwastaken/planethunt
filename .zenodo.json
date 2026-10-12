@@ -1,0 +1,34 @@
+{
+  "title": "Planethunt: archival evidence for the KIC 5689121 transit candidate",
+  "version": "evidence-20261013-r2",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Mehta, Kuber",
+      "orcid": "0009-0003-1379-7856",
+      "affiliation": "Independent researcher, New Delhi, India"
+    }
+  ],
+  "description": "Dated scripts, measurements, query provenance, scientific limitations and an author-review RNAAS manuscript for an unconfirmed 13.769-day transit candidate associated with KIC 5689121. Modelled FPP is approximately 6.9%; unresolved host identity and novelty remain provisional. Original text, figures and analysis products are CC BY 4.0; original code is MIT. Third-party material retains its existing terms; see LICENSE and SOURCES.md. Large bulk-data archives are linked in publication/2026-10-13/bulk-data-manifest.json and are not included merely by being linked. The manuscript is a draft, not a journal submission or accepted publication.",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "Kepler",
+    "exoplanet candidate",
+    "KIC 5689121",
+    "Kepler Bonus",
+    "archival astronomy"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Kuberwastaken/planethunt",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.17909/7jbr-w430",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    }
+  ]
+}

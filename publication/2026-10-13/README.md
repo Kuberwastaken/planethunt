@@ -1,12 +1,12 @@
 # Publication snapshot — 13 October 2026 (Asia/Kolkata)
 
-This package accompanies `evidence-20261013`. The GitHub publication timestamp is recorded in UTC and can fall on 12 October. The prior evidence release was already public on 10 October 2026 at 15:41:31 UTC. Neither timestamp proves priority or that the signal is a previously unknown planet.
+This package revision accompanies `evidence-20261013-r2`. The GitHub publication timestamp is recorded in UTC and can fall on 12 October. The prior evidence release was already public on 10 October 2026 at 15:41:31 UTC. Neither timestamp proves priority or that the signal is a previously unknown planet.
 
 ## Status
 
 - Kuber Mehta is the sole listed manuscript author.
 - The RNAAS note is a draft for human review, not submitted, accepted or peer reviewed.
-- No Zenodo DOI has been issued at packaging time. Account sign-in and an explicit rights decision are pending. No new blanket licence is granted by this release; existing third-party terms remain in force (see `SOURCES.md`).
+- No Zenodo DOI has been issued at packaging time. The GitHub integration is enabled. Original code is MIT; original text, figures and analysis products are CC BY 4.0; third-party terms remain in force (see `LICENSE` and `SOURCES.md`).
 - The signal remains unvalidated. The modelled FPP is 0.06885, with unresolved host ambiguity and provisional novelty.
 
 ## Files and reproduction
@@ -19,10 +19,10 @@ This package accompanies `evidence-20261013`. The GitHub publication timestamp i
 
 ## Before RNAAS submission
 
-1. Author supplies affiliation, corresponding email and optional ORCID.
+1. Author metadata supplied: Independent researcher, New Delhi, India; kuberhob@gmail.com; ORCID 0009-0003-1379-7856.
 2. Author reads and verifies the text, claims, figure, citations, attribution and AI disclosure. Resolve the THYME light-curve identity if possible; otherwise retain the explicit provisional-novelty language.
 3. Replace the release citation with the verified version DOI if one is issued. Never insert a guessed DOI.
-4. Compile `rnaas.tex` with AASTeX 7, inspect the generated PDF, then recount after any changes. Current draft: 1,074 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
+4. Compile `rnaas.tex` with AASTeX 7, inspect the generated PDF, then recount after any changes. Current draft: 1,196 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
 5. Submit through https://aas.msubmit.net/ with journal Research Notes of the AAS. Review the portal's actual declarations and publication agreement; do not fabricate authorship, originality, funding or conflict answers. `cover-letter.txt` is a proposed cover note, not a sent message.
 
 ## Official guidance checked 13 October 2026 (local date)

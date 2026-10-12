@@ -11,7 +11,6 @@ from reportlab.platypus import (
     Paragraph,
     Spacer,
     Image,
-    PageBreak,
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
@@ -42,7 +41,11 @@ lines = [
     r"\documentclass[twocolumn]{aastex7}",
     r"\begin{document}",
     r"\title{" + tex(m["title"]) + "}",
-    r"\author{" + tex(m["author"]) + "}",
+    r"\author"
+    + ("[" + m["orcid"] + "]" if m.get("orcid") else "")
+    + "{"
+    + tex(m["author"])
+    + "}",
 ]
 if m["affiliation"]:
     lines.append(r"\affiliation{" + tex(m["affiliation"]) + "}")
@@ -74,6 +77,7 @@ text = [
     m["author"],
     m.get("affiliation") or "[Affiliation pending]",
     m.get("email") or "[Corresponding email pending]",
+    "ORCID: " + m["orcid"] if m.get("orcid") else "",
     m["status"],
     "ABSTRACT",
     m["abstract"],
@@ -119,6 +123,17 @@ flow = [
 ]
 if m["affiliation"]:
     flow.append(Paragraph(escape(m["affiliation"]), styles["PaperSmall"]))
+if m.get("orcid"):
+    flow.append(
+        Paragraph(
+            'ORCID: <link href="https://orcid.org/'
+            + m["orcid"]
+            + '">'
+            + m["orcid"]
+            + "</link>",
+            styles["PaperSmall"],
+        )
+    )
 if m["email"]:
     flow.append(Paragraph(escape(m["email"]), styles["PaperSmall"]))
 flow.extend(
@@ -138,7 +153,7 @@ for r in m["references"]:
     flow.append(Paragraph(escape(r), styles["PaperSmall"]))
 flow.extend(
     [
-        PageBreak(),
+        Spacer(1, 18),
         Image(str(P / "figure1.png"), width=480, height=192),
         Spacer(1, 12),
         Paragraph(escape(m["figure_caption"]), styles["PaperBody"]),
@@ -163,3 +178,19 @@ SimpleDocTemplate(
     title=m["title"],
     author=m["author"],
 ).build(flow, onFirstPage=footer, onLaterPages=footer)
+
+# Count the same text that appears in the manuscript, excluding author metadata.
+counted = [m["title"], m["abstract"], "References"]
+for section in m["sections"]:
+    counted.extend([section["heading"], *section["paragraphs"]])
+counted.extend([m["figure_caption"], *m["references"]])
+counts = {
+    "method": "whitespace-separated words including title, headings, abstract, body, caption and references; author metadata excluded",
+    "abstract": len(m["abstract"].split()),
+    "total": len(" ".join(counted).split()),
+    "limit_total": 1500,
+    "limit_abstract": 150,
+}
+assert counts["total"] <= 1500 and counts["abstract"] <= 150
+(P / "word-count.json").write_text(json.dumps(counts, indent=2) + "\n")
+print(json.dumps(counts))

@@ -18,9 +18,19 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": ".zenodo.json",
+      "bytes": 1440,
+      "sha256": "40cc1639fbd2907113eeb522e948454787ee415ae63924681550d3cb7ccaf954"
+    },
+    {
       "path": "CITATION.cff",
-      "bytes": 932,
-      "sha256": "5912885f31662283c0d730ad5317d0b41b094b45ef4cc02f408b4c0a44fd4b81"
+      "bytes": 1080,
+      "sha256": "1f929fe1b0efa5c512ef73e19109aed9bb664aa7d32d162ef6b84643abfdfa9f"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1982,
+      "sha256": "590eee4de0838b7af3a1decc9002a221aa2f4155aeb428ce04d027b2d07d7d81"
     },
     {
       "path": "README.md",
@@ -12889,18 +12899,23 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 4131,
-      "sha256": "86237d34c399a5a306b7a158a12954d35d192c6c41c3b91ce9d81113d6a7be82"
+      "bytes": 4199,
+      "sha256": "4219153c99e00eaeebaca32746a1385bfbc33e75615e96d1d380967170253730"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
-      "bytes": 2328,
-      "sha256": "cf787b1686fdbd70a28eabd69b741e436d1f5ece96d3677d1ebc328508b010df"
+      "bytes": 2886,
+      "sha256": "587f11564811fd5567c60a5315fdb23de9bb580eb11dfe49beae14a6f1d5e153"
+    },
+    {
+      "path": "publication/2026-10-13/REVISION_NOTES.md",
+      "bytes": 1950,
+      "sha256": "23f83f3b862d67cdf8b47ebbaef68583a271500e4e390515c0fec73c3e83c678"
     },
     {
       "path": "publication/2026-10-13/build_manuscript.py",
-      "bytes": 4660,
-      "sha256": "3b8bf3683695da64bae13663fa03137e99689ab200ec7f17a78ac7218688c61a"
+      "bytes": 5760,
+      "sha256": "0654fb4593361943dfbfddc7b983c6a4d6bea9c787dad2d199b5235e41550460"
     },
     {
       "path": "publication/2026-10-13/bulk-data-manifest.json",
@@ -12909,13 +12924,13 @@
     },
     {
       "path": "publication/2026-10-13/claim-sources.json",
-      "bytes": 1258,
-      "sha256": "3dcab31bda953c68a95275eb2677c1a3bd8e701fe49051b44be16e65739dadc5"
+      "bytes": 1958,
+      "sha256": "aebdb5e099ddab36e6bc2ceb118980da2630cca101c690d6ef1f569252234f04"
     },
     {
       "path": "publication/2026-10-13/cover-letter.txt",
-      "bytes": 924,
-      "sha256": "2ebe822c1af9054c3260834b4e10e625eb692ba207db21e95fa0b2bec40066f4"
+      "bytes": 980,
+      "sha256": "097bde7d371c970a69192a83e1f183fe0e552b8d1be948193f17d4efc09cd997"
     },
     {
       "path": "publication/2026-10-13/figure1.pdf",
@@ -12933,34 +12948,39 @@
       "sha256": "8dbd5e61a1ff45d1c36b903aa865d088a8d71002030498fb2bffe2f63f2d3e66"
     },
     {
+      "path": "publication/2026-10-13/kbonus-journal-crossref.json",
+      "bytes": 14433,
+      "sha256": "c0804610347fe0febc0d6e9b131c2635b452e0d5c9be8f7d2aeb455acc906b93"
+    },
+    {
       "path": "publication/2026-10-13/make_figure.py",
       "bytes": 2158,
       "sha256": "1c9d9a16548b3abec1c7d6b462649f642cfc10e555792d363af0b90320aaea21"
     },
     {
       "path": "publication/2026-10-13/manuscript.json",
-      "bytes": 8524,
-      "sha256": "01c0e72111f6b90793b9a1702c85209c9916edbd0ec89e47592c4428892efe0c"
+      "bytes": 9428,
+      "sha256": "c144cc7a0fc31b16b2551aa71d58f7ecf6b60905eab91d2bab2081f09e2874a3"
     },
     {
       "path": "publication/2026-10-13/rnaas-review.pdf",
-      "bytes": 109092,
-      "sha256": "2a06f177f20004ad6b67a12b8934ebafbd89d792562a1220c90f9e6b63256f43"
+      "bytes": 110082,
+      "sha256": "c23d8727a31f17c0b382bd27ad73ac997a233701f8942bbdc8c0645069e33488"
     },
     {
       "path": "publication/2026-10-13/rnaas.tex",
-      "bytes": 8281,
-      "sha256": "5c85ba3495475801a12223196ea171402e16e6fa297a92167e2fe533623709d2"
+      "bytes": 9078,
+      "sha256": "722585b99553c65b6e464c20f583c19e1319069356d70f5ef2b352bad9a5d480"
     },
     {
       "path": "publication/2026-10-13/rnaas.txt",
-      "bytes": 8030,
-      "sha256": "924b35eec62c4b0e112b481ae8bbbec6a35e2409ca6b1f612e838dafcd76e222"
+      "bytes": 8864,
+      "sha256": "e55a35325dbe9a38deb9ae6d598f29f5e37c397bd9408762cbd7e791e7d0e4e8"
     },
     {
       "path": "publication/2026-10-13/word-count.json",
       "bytes": 221,
-      "sha256": "4f25ab085083232abdc63b09aaf35ad520ec404637c0fa33c57811f6661363a9"
+      "sha256": "dd5a4b0e314208f8058a0a513562979ed230b920413878d8b1bf0e4d42388227"
     },
     {
       "path": "scripts/build_visuals.py",

@@ -27,5 +27,18 @@
   ],
   "figure": [
     "publication/2026-10-13/figure_sources.json"
+  ],
+  "search design and quarter normalization": [
+    "evidence/codex/database_expansion/kbonus/pilot.py",
+    "evidence/codex/database_expansion/kbonus/pilot_targets.csv",
+    "evidence/codex/database_expansion/kbonus/manifests/2103792461826460288_split.json",
+    "evidence/codex/database_expansion/audit_kbonus_candidate.py"
+  ],
+  "dated catalogue audit": [
+    "evidence/codex/catalogs/kbonus2103792461826460288_novelty_report.json",
+    "analysis/archive-followup-20261012/archive/exact-query-log.json",
+    "analysis/archive-followup-20261012/archive/exofop-target.json",
+    "analysis/archive-followup-20261012/archive/exofop-nearby.csv",
+    "analysis/archive-followup-20261012/README.md"
   ]
 }

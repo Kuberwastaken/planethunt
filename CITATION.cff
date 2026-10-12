@@ -5,10 +5,12 @@ title: "Planethunt: archival vetting of the KIC 5689121 transit candidate"
 authors:
   - family-names: Mehta
     given-names: Kuber
-version: evidence-20261013
+    orcid: "https://orcid.org/0009-0003-1379-7856"
+    affiliation: "Independent researcher, New Delhi, India"
+version: evidence-20261013-r2
 date-released: 2026-10-13
 repository-code: "https://github.com/Kuberwastaken/planethunt"
-url: "https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261013"
+url: "https://github.com/Kuberwastaken/planethunt/releases/tag/evidence-20261013-r2"
 abstract: >-
   Dated evidence snapshot for an unconfirmed 13.769-day transit candidate
   associated with KIC 5689121. Includes Kepler signal vetting, source attribution,
@@ -19,3 +21,6 @@ keywords:
   - Kepler
   - archival astronomy
   - KIC 5689121
+license:
+  - MIT
+  - CC-BY-4.0

@@ -2,7 +2,7 @@ Draft cover note — not sent
 
 Dear RNAAS Editors,
 
-Please consider “Archival vetting of a 13.769-day transit candidate associated with KIC 5689121” as a Research Note.
+Please consider “A 13.77-day transit candidate on the background M dwarf KIC 5689121 from Kepler Bonus photometry” as a Research Note.
 
 The note describes a transit-like signal in Kepler Bonus photometry, the tests associating it with the catalogue target rather than resolved neighbours, and an archival follow-up audit. It also states the unresolved companion ambiguity and why the candidate is not validated. I am sharing the analysis record to make targeted follow-up possible, rather than claiming a confirmed discovery.
 
@@ -11,4 +11,6 @@ The draft has one two-panel figure. The underlying measurements, scripts and pro
 Thank you for considering the note.
 
 Kuber Mehta
-[Affiliation and corresponding email to be supplied by the author]
+Independent researcher, New Delhi, India
+ORCID: https://orcid.org/0009-0003-1379-7856
+kuberhob@gmail.com
