@@ -1117,5 +1117,105 @@
       "time_total": 1.851251,
       "ssl_verify_result": 0
     }
+  },
+  {
+    "name": "roboao_paper1",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/ApJ/791/35",
+      "-c": "285.907827 +40.941988",
+      "-c.eq": "J2000",
+      "-c.rs": "30",
+      "-out.max": "unlimited"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:08:02.875390+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fApJ%2f791%2f35&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited",
+      "size_download": 6379,
+      "time_connect": 1.013402,
+      "time_appconnect": 2.472305,
+      "time_starttransfer": 3.096638,
+      "time_total": 3.096913,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "roboao_paper2",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/AJ/152/18",
+      "-c": "285.907827 +40.941988",
+      "-c.eq": "J2000",
+      "-c.rs": "30",
+      "-out.max": "unlimited"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:08:02.828914+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f152%2f18&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited",
+      "size_download": 7108,
+      "time_connect": 1.017575,
+      "time_appconnect": 2.444505,
+      "time_starttransfer": 3.054479,
+      "time_total": 3.05476,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "roboao_paper3",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/AJ/153/66",
+      "-c": "285.907827 +40.941988",
+      "-c.eq": "J2000",
+      "-c.rs": "30",
+      "-out.max": "unlimited"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:08:02.713145+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f153%2f66&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited",
+      "size_download": 11690,
+      "time_connect": 1.022924,
+      "time_appconnect": 2.358783,
+      "time_starttransfer": 2.943423,
+      "time_total": 2.943751,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "roboao_paper4",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/AJ/155/161",
+      "-c": "285.907827 +40.941988",
+      "-c.eq": "J2000",
+      "-c.rs": "30",
+      "-out.max": "unlimited"
+    },
+    "post": false,
+    "utc": "2026-10-12T18:08:02.875658+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f155%2f161&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited",
+      "size_download": 5161,
+      "time_connect": 1.00767,
+      "time_appconnect": 2.518054,
+      "time_starttransfer": 3.090348,
+      "time_total": 3.090587,
+      "ssl_verify_result": 0
+    }
   }
 ]

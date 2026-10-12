@@ -1,0 +1,75 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T18:08:02 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T18:08:02	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f155%2f161&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=30.	
+#Constraint -out.max=unlimited
+
+#RESOURCE=yCat_51550161
+#Name: J/AJ/155/161
+#Title: Stars nearby Robo-AO Kepler planetary candidates (Ziegler+, 2018)
+#INFO	ivoid=ivo://cds.vizier/j/aj/155/161	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/155/161	    IVOID of underlying data collection
+#INFO	creator=Ziegler C.	    First author or institution
+#INFO	cites=bibcode:2018AJ....155..161Z	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2018	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/155/161	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51550161	    Dataset identifier that can be used for citation
+#INFO	publication_date=2019-01-07	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#Table	J_AJ_155_161_table3:
+#Name: J/AJ/155/161/table3
+#Title: Detections of objects outside 2.5" and within 4.0" of Kepler planet candidates from Law et al. (2014, J/ApJ/791/35) targets
+#Column	KOI	(A4)	Kepler Object of Interest identifier (KOI-NNNN in Simbad)	[ucd=meta.id;meta.main]
+#Column	Kpmag	(F6.3)	[7.899/18.59] Kepler apparent magnitude	[ucd=phot.mag;em.opt]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filt	(A5)	Filter (LP600 or i)	[ucd=meta.id;instr.filter]
+#Column	sigma	(F4.1)	[3/60.1] Detection significance of detected companions {sigma}	[ucd=stat.likelihood;obs]
+#Column	Sep	(F5.2)	[0.53/3.95] Separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.06] Uncertainty in Sep	[ucd=stat.error]
+#Column	PA	(I3)	[0/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/6]? Uncertainty in PA	[ucd=stat.error]
+#Column	Dmag	(F5.2)	[-0.67/6.92] Magnitude difference	[ucd=phot.mag;arith.diff]
+#Column	e_Dmag	(F5.2)	[0/1.58] Uncertainty in Dmag	[ucd=stat.error;phot.mag;arith.diff]
+#Column	Ref	(a13)	Reference of previous high-resolution observation (1)	[ucd=meta.ref]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_155_161_table8:
+#Name: J/AJ/155/161/table8
+#Title: Implications on derived radius of Kepler planetary candidates
+#Column	KOI	(A7)	Planet candidate KOI number (KOI-NNNN.NN in Simbad)	[ucd=meta.id;meta.main]
+#Column	Sep	(F5.2)	[0.21/4.54] Separation	[ucd=pos.angDistance]
+#Column	Dmag	(F5.2)	[-0.36/7.22] Magnitude difference between target and secondary {Delta}m	[ucd=phot.mag;arith.diff]
+#Column	Ref	(A2)	Reference code for nearby star detection (1)	[ucd=meta.note]
+#Column	R*(p)	(F5.2)	[0.12/13.55] Primary stellar radius (2)	[ucd=phys.size.radius]
+#Column	R*(s)	(F5.2)	[0.22/2.58] Estimated secondary stellar radius (3)	[ucd=phys.size.radius]
+#Column	Rp	(F6.2)	[0.35/576.1] Original planetary radius estimate (4)	[ucd=phys.size.radius]
+#Column	Rp(p)	(F6.2)	[0.35/589.4] Estimated eclipsing object radius (5)	[ucd=phys.size.radius]
+#Column	Rp(s)	(F6.1)	[0.7/1392] Estimated eclipsing object radius (6)	[ucd=phys.size.radius]
+#Column	SimbadName	(A11)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from the NASA Exoplanet Archive (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from the NASA Exoplanet Archive (declination part)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_155_161_table9:
+#Name: J/AJ/155/161/table9
+#Title: Full Robo-AO observation list
+#Column	KOI	(A6)	Kepler Object of Interest identifier (K0NNNN)	[ucd=meta.id;meta.main]
+#Column	Np	(I1)	[0/8] Number of planetary candidate(s) in Table 8	[ucd=meta.id]
+#Column	Kpmag	(F5.2)	[7.9/18.79] Kepler apparent magnitude	[ucd=phot.mag;em.opt]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Qual	(A6)	Observation quality (high, medium or low) (1)	[ucd=meta.code.qual;obs.param;obs]
+#Column	Comp	(A3)	[yes ] Companion detected?	[ucd=meta.code]
+#Column	SimbadName	(A8)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from the NASA Exoplanet Archive (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from the NASA Exoplanet Archive (declination part)	[ucd=pos.eq.dec;meta.main]

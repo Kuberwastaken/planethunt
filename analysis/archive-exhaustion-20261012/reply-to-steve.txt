@@ -1,0 +1,17 @@
+Subject: Re: Quick question: high-res imaging for a Kepler candidate (KIC 5689121)
+
+Hi Steve,
+
+Thank you — that sent me down a useful path. I checked the Exoplanet Archive and followed through to the linked archives. I haven’t found usable high-resolution imaging of this target. A public CFHT image resolves the known 7″ pair, but both cores are saturated, so I can’t use it to constrain a close companion reliably.
+
+I also reduced archival Spitzer exposures and checked TESS, TGLC, ZTF, PTF and NEOWISE photometry. None provides an independent transit detection: Spitzer misses the predicted transits, and the other measurements are too noisy or sparsely sampled for a useful test at this depth. The unresolved-host ambiguity remains.
+
+One unexpected lead: the exact Gaia source appears in Barber et al. (2022), THYME VIII, with a Kepler-data flag. I plan to ask the authors which light curve they searched and whether they examined this period; I’m not assuming membership in the young association.
+
+The searches, reductions and limitations are here:
+https://github.com/Kuberwastaken/planethunt/tree/main/analysis/archive-exhaustion-20261012
+
+Would you recommend an AO observer or group for a Keck/NIRC2 feasibility assessment at Ks ≈13? David Ciardi’s work on planets in multiple-star systems looked relevant. I understand that imaging would constrain companions rather than confirm the planet by itself, and that the NASA-Keck route would require a US-based PI. I’d be glad to contribute the analysis and help prepare a proposal.
+
+Thanks again,
+Kuber

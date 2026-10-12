@@ -1,0 +1,104 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T18:08:02 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T18:08:02	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f152%2f18&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=30.	
+#Constraint -out.max=unlimited
+
+#RESOURCE=yCat_51520018
+#Name: J/AJ/152/18
+#Title: Robo-AO Kepler planetary candidate survey. II. (Baranec+, 2016)
+#INFO	ivoid=ivo://cds.vizier/j/aj/152/18	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/152/18	    IVOID of underlying data collection
+#INFO	creator=Baranec C.	    First author or institution
+#INFO	cites=bibcode:2016AJ....152...18B	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2016	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/152/18	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51520018	    Dataset identifier that can be used for citation
+#INFO	publication_date=2018-05-02	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_AJ_152_18_table2:
+#Name: J/AJ/152/18/table2
+#Title: Detections of objects within ~4.0'' of Kepler planet candidates at >=5{sigma} significance
+#Column	KOI	(I4)	[4/4871] Kepler Object of Interest identifier	[ucd=meta.id;meta.main]
+#Column	T3	(A2)	Indicates a companion also in Table 3 (probable companion)	[ucd=meta.ref.url]
+#Column	imag	(F4.1)	[9.2/15.8]? The i band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of observation	[ucd=time.epoch]
+#Column	Flt	(A5)	Filter (mostly LP600, or i') (1)	[ucd=meta.note]
+#Column	Signi	(F5.1)	[2/613] Significance {sigma}	[ucd=stat.fit.goodness]
+#Column	Sep	(F5.2)	[0.23/4.54] Separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.06/0.06] Error in Separation	[ucd=stat.error]
+#Column	PA	(I3)	Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/7] Error in PA	[ucd=stat.error]
+#Column	dmag	(F5.2)	[0.01/6.7] Magnitude difference	[ucd=phot.mag;arith.diff]
+#Column	e_dmag	(F5.2)	[0.03/0.51] Error in dmag	[ucd=stat.error;phot.mag]
+#Column	Prev	(a16)	Reference for previous detection(s) (2)	[ucd=meta.bib]
+#Column	f_Prev	(A1)	[a] Flag "a" on Prev means that companion identity is ambiguous (see Section 5.2)	[ucd=meta.code]
+#Column	NIRC2	(A3)	[yes] NIRC2 detection? (yes)	[ucd=meta.note]
+#Column	SimbadName	(a23)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from Simbad database (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from Simbad database (declination part)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_152_18_table3:
+#Name: J/AJ/152/18/table3
+#Title: Detections of objects within ~4.0'' of Kepler planet candidates at <5{sigma} significance
+#Column	KOI	(I4)	[4/4871] Kepler Object of Interest identifier	[ucd=meta.id;meta.main]
+#Column	T2	(A2)	Indicates a companion also in Table 2 (with secure detection)	[ucd=meta.ref.url]
+#Column	imag	(F4.1)	[9.2/15.8]? The i band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of observation	[ucd=time.epoch]
+#Column	Flt	(A5)	Filter (mostly LP600, or i') (1)	[ucd=meta.note]
+#Column	Signi	(F5.1)	[2/613] Significance {sigma}	[ucd=stat.fit.goodness]
+#Column	Sep	(F5.2)	[0.23/4.54] Separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.06/0.06] Error in Separation	[ucd=stat.error]
+#Column	PA	(I3)	Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/7] Error in PA	[ucd=stat.error]
+#Column	dmag	(F5.2)	[0.01/6.7] Magnitude difference	[ucd=phot.mag;arith.diff]
+#Column	e_dmag	(F5.2)	[0.03/0.51] Error in dmag	[ucd=stat.error;phot.mag]
+#Column	Prev	(a16)	Reference for previous detection(s) (2)	[ucd=meta.bib]
+#Column	f_Prev	(A1)	[a] Flag "a" on Prev means that companion identity is ambiguous (see Section 5.2)	[ucd=meta.code]
+#Column	NIRC2	(A3)	[yes] NIRC2 detection? (yes)	[ucd=meta.note]
+#Column	SimbadName	(a23)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from Simbad database (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from Simbad database (declination part)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_152_18_table4:
+#Name: J/AJ/152/18/table4
+#Title: Full Keck-NIRC2 observation list and detected companions
+#Column	KOI	(I4)	[190/4871] Kepler Object of Interest identifier	[ucd=meta.id;meta.main]
+#Column	Np	(I1)	Number of planets for this star (in table5)	[ucd=meta.number]
+#Column	Date	(A10)	Date of observation	[ucd=time.epoch]
+#Column	Flt	(A2)	Filter (K, Kp, or Ks)	[ucd=meta.id;instr.filter]
+#Column	Sep	(F6.3)	[0.18/4.2] Separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F6.3)	[0.005/0.01] Error in Sep	[ucd=stat.error]
+#Column	PA	(I3)	[4/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[1/3] Error in PA	[ucd=stat.error]
+#Column	dmag	(F5.2)	[-0.26/5.93] Magnitude difference between companion and primary	[ucd=phot.mag;arith.diff]
+#Column	e_dmag	(F5.2)	[0.05/0.34] Error in dmag (1)	[ucd=stat.error;phot.mag]
+#Column	Table	(I1)	[2/3]? Number of the table in which the object detection is presented (2 or 3) (2)	[ucd=meta.id]
+#Column	Note	(A1)	[abc] Additional note (3)	[ucd=meta.code]
+#Column	SimbadName	(a23)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from Simbad database (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from Simbad database (declination part)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_152_18_table5:
+#Name: J/AJ/152/18/table5
+#Title: Full Robo-AO observation list
+#Column	KOI	(F7.2)	Kepler Object of Interest identifier	[ucd=meta.id;meta.main]
+#Column	Nnirc2	(I1)	Number of Keck-NIRC2 observation for the companion (in table4)	[ucd=meta.number]
+#Column	imag	(F4.1)	[9.2/17]? The i band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Qual	(A6)	Observation quality (low, medium, or high) (1)	[ucd=meta.code.qual;obs.param;obs]
+#Column	n_Qual	(A7)	Note on Qual (i'-band)	[ucd=meta.note]
+#Column	Comp	(A3)	[yes] Flag for companion (yes)	[ucd=meta.code.error]
+#Column	f_Comp	(A1)	[d] Flag on Comp (d=companion originally discovered in image from NIRC2 instrument, see Table 4)	[ucd=meta.code]
+#Column	Q1-12	(a5)	Display the Q1-Q12 Kepler data from Rowe et al. 2015 (Cat. J/ApJS/217/16)	[ucd=meta.ref.url]
+#Column	SimbadName	(a17)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Position from NASA exoplanet archive (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position from NASA exoplanet archive (declination part)	[ucd=pos.eq.dec;meta.main]

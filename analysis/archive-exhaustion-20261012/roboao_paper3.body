@@ -1,0 +1,153 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T18:08:02 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T18:08:02	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f153%2f66&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=30.	
+#Constraint -out.max=unlimited
+
+#RESOURCE=yCat_51530066
+#Name: J/AJ/153/66
+#Title: Robo-AO Kepler Planetary Candidate Survey. III. (Ziegler+, 2017)
+#INFO	ivoid=ivo://cds.vizier/j/aj/153/66	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/153/66	    IVOID of underlying data collection
+#INFO	creator=Ziegler C.	    First author or institution
+#INFO	cites=bibcode:2017AJ....153...66Z	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2017	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/153/66	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51530066	    Dataset identifier that can be used for citation
+#INFO	publication_date=2019-02-04	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#Table	J_AJ_153_66_table4:
+#Name: J/AJ/153/66/table4
+#Title: Secure Detections of Objects within 2.5" of Kepler Planet Candidates
+#Column	KOI	(I4)	[51/7448] Kepler Object of Interest number	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	[9/16.3] i' band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filter	(A5)	[LP600 i'] Filter used in the observation	[ucd=instr.setup;obs]
+#Column	Signi	(F5.1)	[2.3/224] Detection significance (in {sigma} units)	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	[0.21/3.99] Angular separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.03/0.06] Uncertainty in Sep	[ucd=stat.error]
+#Column	n_Sep	(A1)	[d] Note on Sep (only in tables 4 and 6) (1)	[ucd=meta.note]
+#Column	PA	(I3)	[4/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/2] Uncertainty in PA	[ucd=stat.error]
+#Column	n_PA	(A1)	[d] Note on PA (only in tables 4 and 6) (1)	[ucd=meta.note]
+#Column	Dmag	(F5.2)	[-0.36/7.22] Differential magnitude in Filter	[ucd=phot.mag;arith.diff]
+#Column	e_Dmag	(F5.2)	[0.02/0.28] Uncertainty in Dmag	[ucd=stat.error;phot.mag;arith.diff]
+#Column	SpType	(A2)	MK spectral type (2)	[ucd=src.spType]
+#Column	DetHigh	(a8)	Previous high resolution detection reference(s) (3)	[ucd=meta.bib]
+#Column	DetLow	(a17)	Previous low resolution detection reference (4)	[ucd=meta.bib]
+#Column	FPP1	(F5.2)	[0.01/0.02]? Probability that planetary transit signal is a false positive based on Kepler data, first value	[ucd=stat.fit.goodness]
+#Column	FPP2	(F5.2)	[0.02]? Probability that planetary transit signal is a false positive based on Kepler data, second value (not in table 5)	[ucd=stat.fit.goodness]
+#Column	NKOI	(I1)	[1/5] Number of planet candidate(s) detected orbiting KOI	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_153_66_table5:
+#Name: J/AJ/153/66/table5
+#Title: Secure Detections of Objects Outside 2.5" and within 4.0" of Kepler Planet Candidates
+#Column	KOI	(I4)	[51/7448] Kepler Object of Interest number	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	[9/16.3] i' band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filter	(A5)	[LP600 i'] Filter used in the observation	[ucd=instr.setup;obs]
+#Column	Signi	(F5.1)	[2.3/224] Detection significance (in {sigma} units)	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	[0.21/3.99] Angular separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.03/0.06] Uncertainty in Sep	[ucd=stat.error]
+#Column	PA	(I3)	[4/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/2] Uncertainty in PA	[ucd=stat.error]
+#Column	Dmag	(F5.2)	[-0.36/7.22] Differential magnitude in Filter	[ucd=phot.mag;arith.diff]
+#Column	e_Dmag	(F5.2)	[0.02/0.28] Uncertainty in Dmag	[ucd=stat.error;phot.mag;arith.diff]
+#Column	SpType	(A2)	MK spectral type (2)	[ucd=src.spType]
+#Column	DetHigh	(a8)	Previous high resolution detection reference(s) (3)	[ucd=meta.bib]
+#Column	DetLow	(a17)	Previous low resolution detection reference (4)	[ucd=meta.bib]
+#Column	FPP1	(F5.2)	[0.01/0.02]? Probability that planetary transit signal is a false positive based on Kepler data, first value	[ucd=stat.fit.goodness]
+#Column	NKOI	(I1)	[1/5] Number of planet candidate(s) detected orbiting KOI	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_153_66_table6:
+#Name: J/AJ/153/66/table6
+#Title: Likely Detections of Objects within 2.5" of Kepler Planet Candidates
+#Column	KOI	(I4)	[51/7448] Kepler Object of Interest number	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	[9/16.3] i' band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filter	(A5)	[LP600 i'] Filter used in the observation	[ucd=instr.setup;obs]
+#Column	Signi	(F5.1)	[2.3/224] Detection significance (in {sigma} units)	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	[0.21/3.99] Angular separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.03/0.06] Uncertainty in Sep	[ucd=stat.error]
+#Column	n_Sep	(A1)	[d] Note on Sep (only in tables 4 and 6) (1)	[ucd=meta.note]
+#Column	PA	(I3)	[4/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/2] Uncertainty in PA	[ucd=stat.error]
+#Column	n_PA	(A1)	[d] Note on PA (only in tables 4 and 6) (1)	[ucd=meta.note]
+#Column	Dmag	(F5.2)	[-0.36/7.22] Differential magnitude in Filter	[ucd=phot.mag;arith.diff]
+#Column	e_Dmag	(F5.2)	[0.02/0.28] Uncertainty in Dmag	[ucd=stat.error;phot.mag;arith.diff]
+#Column	SpType	(A2)	MK spectral type (2)	[ucd=src.spType]
+#Column	DetHigh	(a8)	Previous high resolution detection reference(s) (3)	[ucd=meta.bib]
+#Column	DetLow	(a17)	Previous low resolution detection reference (4)	[ucd=meta.bib]
+#Column	FPP1	(F5.2)	[0.01/0.02]? Probability that planetary transit signal is a false positive based on Kepler data, first value	[ucd=stat.fit.goodness]
+#Column	FPP2	(F5.2)	[0.02]? Probability that planetary transit signal is a false positive based on Kepler data, second value (not in table 5)	[ucd=stat.fit.goodness]
+#Column	FPP3	(F5.2)	[0.03]? Probability that planetary transit signal is a false positive based on Kepler data, third value (only in table 6)	[ucd=stat.fit.goodness]
+#Column	NKOI	(I1)	[1/5] Number of planet candidate(s) detected orbiting KOI	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_153_66_table7:
+#Name: J/AJ/153/66/table7
+#Title: Likely Detections of Objects Outside 2.5" and within 4.0" of Kepler Planet Candidates
+#Column	KOI	(I4)	[51/7448] Kepler Object of Interest number	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	[9/16.3] i' band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filter	(A5)	[LP600 i'] Filter used in the observation	[ucd=instr.setup;obs]
+#Column	Signi	(F5.1)	[2.3/224] Detection significance (in {sigma} units)	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	[0.21/3.99] Angular separation	[ucd=pos.angDistance]
+#Column	e_Sep	(F5.2)	[0.03/0.06] Uncertainty in Sep	[ucd=stat.error]
+#Column	PA	(I3)	[4/357] Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	[2/2] Uncertainty in PA	[ucd=stat.error]
+#Column	Dmag	(F5.2)	[-0.36/7.22] Differential magnitude in Filter	[ucd=phot.mag;arith.diff]
+#Column	e_Dmag	(F5.2)	[0.02/0.28] Uncertainty in Dmag	[ucd=stat.error;phot.mag;arith.diff]
+#Column	SpType	(A2)	MK spectral type (2)	[ucd=src.spType]
+#Column	DetHigh	(a8)	Previous high resolution detection reference(s) (3)	[ucd=meta.bib]
+#Column	DetLow	(a17)	Previous low resolution detection reference (4)	[ucd=meta.bib]
+#Column	FPP1	(F5.2)	[0.01/0.02]? Probability that planetary transit signal is a false positive based on Kepler data, first value	[ucd=stat.fit.goodness]
+#Column	FPP2	(F5.2)	[0.02]? Probability that planetary transit signal is a false positive based on Kepler data, second value (not in table 5)	[ucd=stat.fit.goodness]
+#Column	NKOI	(I1)	[1/5] Number of planet candidate(s) detected orbiting KOI	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_153_66_table8:
+#Name: J/AJ/153/66/table8
+#Title: Habitable Zone Candidates with Robo-AO Detected Companions
+#Column	Planet	(F7.2)	[227.01/6745.01] Planet candidate KOI number	[ucd=meta.id;meta.main]
+#Column	n_Planet	(A1)	[c] Note on Planet (1)	[ucd=meta.note]
+#Column	Per	(F5.1)	[17.7/436.2] Period	[ucd=time.period]
+#Column	Rpi	(F5.2)	[0.98/3.81] Initial planetary radius estimate	[ucd=phys.size.radius]
+#Column	Rpc	(F5.2)	[1.03/4.46] Corrected planetary radius estimate	[ucd=phys.size.radius]
+#Column	Teq	(I3)	[257/364] Equilibrium temperature	[ucd=phys.temperature]
+#Column	Sep	(F5.2)	[0.33/4.27] Angular separation	[ucd=pos.angDistance]
+#Column	Dmag	(F5.2)	[0.04/5.26] Differential magnitude	[ucd=phot.mag;arith.diff]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_AJ_153_66_table9:
+#Name: J/AJ/153/66/table9
+#Title: Full Robo-AO Observation List
+#Column	KOI	(A6)	Kepler Object of Interest identifier (K0NNNN)	[ucd=meta.id;meta.main]
+#Column	imag	(F5.2)	[8.72/18.23] Exoplanet archive i' band magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	Date of the observation	[ucd=time.epoch]
+#Column	Filter	(A5)	[LP600 i'] Filter used in the observation	[ucd=instr.setup;obs]
+#Column	Q	(A6)	Observation quality description (high, low or medium)	[ucd=meta.code.qual;obs.param;obs]
+#Column	SpType	(A2)	Latest detectable companion spectral type	[ucd=src.spType]
+#Column	Det	(A3)	[yes ] Companion detected?	[ucd=meta.code]
+#Column	SimbadName	(A9)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]

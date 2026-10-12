@@ -1,0 +1,95 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T18:08:02 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T18:08:02	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fApJ%2f791%2f35&-c=285.907827+%2b40.941988&-c.eq=J2000&-c.rs=30&-out.max=unlimited	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=30.	
+#Constraint -out.max=unlimited
+
+#RESOURCE=yCat_17910035
+#Name: J/ApJ/791/35
+#Title: Detection of 715 Kepler planet candidates host stars (Law+, 2014)
+#INFO	ivoid=ivo://cds.vizier/j/apj/791/35	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/apj/791/35	    IVOID of underlying data collection
+#INFO	creator=Law N.M.	    First author or institution
+#INFO	cites=bibcode:2014ApJ...791...35L	    Article or Data origin sources
+#INFO	journal=ApJ	    Journal name
+#INFO	original_date=2014	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/ApJ/791/35	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.17910035	    Dataset identifier that can be used for citation
+#INFO	publication_date=2017-12-07	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#Table	J_ApJ_791_35_table2:
+#Name: J/ApJ/791/35/table2
+#Title: Secure Detections of Objects within 2.5'' of Kepler Planet Candidates
+#Column	KOI	(A8)	Kepler Object of Interest identifier (KOI-NNNN)	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	? i-band apparent magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	KOI observation date	[ucd=time.epoch;obs]
+#Column	Filter	(a5)	[i/LP600 ] Filter used for the observation	[ucd=instr.setup;instr.filter]
+#Column	Signi	(I3)	? Detection significance in sigma unit	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	Detectable separation range	[ucd=pos.angDistance;src.orbital]
+#Column	e_Sep	(F5.2)	Error on Sep	[ucd=stat.error]
+#Column	PA	(I3)	? Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	? Error on PA	[ucd=stat.error]
+#Column	magdiff	(F5.2)	Magnitude difference in the Kepler band	[ucd=phot.mag;arith.diff]
+#Column	e_magdiff	(F5.2)	? Error on magdiff	[ucd=stat.error]
+#Column	Ks	(A2)	Ks if magnitude difference in Ks-band	[ucd=phot.mag;em.IR.K]
+#Column	PrevDetec	(a18)	Previous detection (1)	[ucd=meta.bib]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_ApJ_791_35_table3:
+#Name: J/ApJ/791/35/table3
+#Title: Likely Detections of Objects within 2.5'' of Kepler Planet Candidates
+#Column	KOI	(A8)	Kepler Object of Interest identifier (KOI-NNNN)	[ucd=meta.id;meta.main]
+#Column	imag	(F4.1)	i-band apparent magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	KOI observation date	[ucd=time.epoch;obs]
+#Column	Filter	(a5)	[i/LP600 ] Filter used for the observation	[ucd=instr.setup;instr.filter]
+#Column	Signi	(F4.1)	Detection significance in sigma unit	[ucd=stat.fit.goodness;instr.saturation]
+#Column	Sep	(F5.2)	Detectable separation range	[ucd=pos.angDistance;src.orbital]
+#Column	e_Sep	(F5.2)	Error on Sep	[ucd=stat.error]
+#Column	PA	(I3)	Position angle	[ucd=pos.posAng]
+#Column	e_PA	(I1)	Error on PA	[ucd=stat.error]
+#Column	magdiff	(F5.2)	Magnitude difference in the Kepler band	[ucd=phot.mag;arith.diff]
+#Column	e_magdiff	(F5.2)	Error on magdiff	[ucd=stat.error]
+#Column	PrevDetec	(A3)	Previous detection (1)	[ucd=meta.bib]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_ApJ_791_35_table4:
+#Name: J/ApJ/791/35/table4
+#Title: Implications on Derived Radius of Kepler Planet Candidates
+#Column	KOI	(F7.2)	Kepler Object of Interest identifier (NNNN.NN)	[ucd=meta.id;meta.main]
+#Column	P	(F7.3)	Period (1)	[ucd=time.period]
+#Column	Rp	(F5.2)	Planet radius (1)	[ucd=phys.size.radius]
+#Column	RA	(F5.2)	? Estimated radius of the target star (1)	[ucd=phys.size.radius]
+#Column	magdiff	(F4.1)	? Magnitude difference in the Kepler band	[ucd=phot.mag;arith.diff]
+#Column	Sep	(F5.2)	? Detectable separation range	[ucd=pos.angDistance;src.orbital]
+#Column	RB	(F5.2)	? Estimated radius of the stellar companion (2)	[ucd=phys.size.radius]
+#Column	RpA	(F4.1)	Eclipsing target star radius (3)	[ucd=phys.size.radius]
+#Column	RpB	(F4.1)	Eclipsing stellar companion radius	[ucd=phys.size.radius]
+#Column	RpBbg	(F5.1)	Eclipsing stellar companion radius (4)	[ucd=phys.size.radius]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]
+#Table	J_ApJ_791_35_table5:
+#Name: J/ApJ/791/35/table5
+#Title: Full Robo-AO Observation List
+#Column	KOI	(A9)	Kepler Object of Interest identifier (K0NNNN.NN)	[ucd=meta.id;meta.main]
+#Column	imag	(F6.3)	? i-band apparent magnitude	[ucd=phot.mag;em.opt.I]
+#Column	Date	(A10)	KOI observation date	[ucd=time.epoch;obs]
+#Column	Filter	(a5)	[i/LP600 ] Filter used for the observation	[ucd=instr.setup;instr.filter]
+#Column	Obsqual	(A6)	[high/medium/low ] Observation quality	[ucd=meta.code.qual]
+#Column	Comp	(A3)	[yes ] Presence of detected companion	[ucd=meta.code]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Right Ascension (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Declination (J2000) from SIMBAD (not part of the original data)	[ucd=pos.eq.dec;meta.main]

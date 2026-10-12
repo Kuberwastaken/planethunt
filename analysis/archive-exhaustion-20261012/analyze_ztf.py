@@ -1,4 +1,5 @@
 from pathlib import Path
+import argparse
 import numpy as np, json
 from astropy.table import Table
 from astropy.time import Time
@@ -11,10 +12,22 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 P = Path(__file__).parent
-O = P / "ztf_results"
+parser = argparse.ArgumentParser()
+parser.add_argument("--neighbour", action="store_true")
+args = parser.parse_args()
+label = "neighbour" if args.neighbour else "target"
+O = P / ("ztf_neighbour_results" if args.neighbour else "ztf_results")
 O.mkdir(exist_ok=True)
 iers.conf.auto_download = False
-z = Table.read(P / "ztf_dr24_lightcurves.body", format="ascii.csv")
+z = Table.read(
+    P
+    / (
+        "ztf_neighbour_lightcurves.body"
+        if args.neighbour
+        else "ztf_dr24_lightcurves.body"
+    ),
+    format="ascii.csv",
+)
 z = z[
     (z["catflags"] == 0)
     & np.isfinite(z["mag"])
@@ -23,7 +36,10 @@ z = z[
 ]
 loc = EarthLocation.from_geodetic(-116.8648 * u.deg, 33.3563 * u.deg, 1706 * u.m)
 t = Time(np.array(z["mjd"]), format="mjd", scale="utc", location=loc)
-coord = SkyCoord(285.907827 * u.deg, 40.941988 * u.deg)
+coord = SkyCoord(
+    *((285.90521895334, 40.94207048408) if args.neighbour else (285.907827, 40.941988)),
+    unit="deg",
+)
 bjd = (t.tdb + t.light_travel_time(coord)).jd
 T0 = 2455630.245430646
 PER = 13.769448251493595
@@ -107,7 +123,7 @@ ax.set(
     ylim=(-100, 100),
     xlabel="Hours from Kepler-predicted transit",
     ylabel="Magnitude residual (mmag)",
-    title="ZTF DR24 · target · per-source / 100-day baseline",
+    title=f"ZTF DR24 · {label} · per-source / 100-day baseline",
 )
 ax.invert_yaxis()
 fig.savefig(O / "ztf_fixed_ephemeris.png", dpi=160)

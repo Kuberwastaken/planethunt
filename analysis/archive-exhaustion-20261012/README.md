@@ -19,9 +19,23 @@ The old MAST portal stayed blank in Chrome. The [current MAST interface](https:/
 | **PTF** | 24 target measurements, barycentric timing checked | **Zero** points in the nominal 2.3-hour transit windows; closest is **13.97 h** from a predicted midpoint. Median uncertainty 0.0305 mag. No transit test. |
 | **NEOWISE-R** | 514 measurements within 5″; artifact flags and frame-quality screening | 475 accepted per band, just **3** nominal in-transit samples. Median errors **0.029 / 0.058 mag** in W1/W2. Global-baseline contrasts are consistent with zero; blending and systematics preclude a shallow-transit constraint. |
 
-TGLC uses the same TESS photons as the earlier aperture check, not an independent observation. Its pipeline models neighbouring light using Gaia. The target and neighbour calibrated PSF series still correlate from 0.05 to 0.92 by sector; neither a pipeline label nor those correlations prove correct separation of the variable flux. This is not a pixel-level injection/completeness experiment. The [TGLC archive documentation](https://archive.stsci.edu/hlsp/tglc) explains that sectors 12–55 are not all indexed in the usual MAST searches; the bulk files were essential. See DOI [10.17909/610m-9474](https://doi.org/10.17909/610m-9474).
+TGLC uses the same TESS photons as the earlier aperture check, not an independent observation. Its pipeline models neighbouring light using Gaia. The target and neighbour calibrated PSF series still correlate from 0.05 to 0.92 by sector; neither a pipeline label nor those correlations prove correct separation of the variable flux. These TGLC checks are not themselves a pixel-level injection/completeness experiment; the separate conditional experiment below tests the aperture extraction. The [TGLC archive documentation](https://archive.stsci.edu/hlsp/tglc) explains that sectors 12–55 are not all indexed in the usual MAST searches; the bulk files were essential. See DOI [10.17909/610m-9474](https://doi.org/10.17909/610m-9474).
 
 Uncertainties in the local TESS estimator include baseline fitting, a 30-minute correlated-noise factor and between-event scatter. ZTF errors include residual-scatter inflation; phase controls demonstrate that even these formal uncertainties do not capture every systematic. Off-phase controls are diagnostics, not planet probabilities. All checks use the saved Kepler period and epoch; ±60-minute TGLC timing checks are saved without optimizing a new ephemeris.
+
+## Conditional TESS pixel-injection test
+
+`analyze_pixel_injection.py` now injects a source-specific decrement into all ten saved TESS pixel cubes, re-estimates each affected cadence’s sky background, repeats the three aperture extractions and applies the same local transit estimator. It uses 33 published TESS PRF files, bilinearly interpolated on the detector using [Keaton Bell’s TESS_PRF](https://github.com/keatonb/TESS_PRF); its MIT-licensed interpolation code and upstream commit are retained. Gaia positions are propagated to each sector’s approximate epoch. The box transit is integrated over the cadence duration.
+
+The assumed target TESS magnitude is 15.2979 from the TGLC header; neighbour 14.9996. Fluxes use the [TESS zero point of 20.44](https://tess.mit.edu/public/tesstransients/pages/readme.html). **This is a catalogue-based flux assumption, not a newly measured deblended flux.** Tests at half and twice the target flux are retained.
+
+A 2,400 ppm intrinsic target dip produces nominal aperture-depth increments of **1,062 / 987 / 827 ppm** for radii **1 / 1.5 / 2 pixels**. At radius 1.5, halving/doubling the assumed target flux produces **493 / 1,974 ppm**. Across 24 off-phase trials, the median increment is **987 ppm**, while the original depth scatter is **1,294 ppm**. One trial exceeds positive 3σ both before and after injection; that count is not a calibrated detection probability. The two stars’ PRF templates correlate **0.868–0.961**, illustrating the difficult separation.
+
+![Conditional pixel injection and aperture dilution](pixel_injection_results/conditional_injection.png)
+
+This closes the earlier gap between simply multiplying the extracted light curve and injecting light at a particular source position. It still assumes a fixed PRF within a sector, an estimated source brightness and a box-shaped transit. It does not refit a time-dependent scene, simulate pointing jitter, run a blind transit search or establish completeness. It explains why these TESS apertures have weak power to reject this shallow candidate; it does not confirm the transit or its host.
+
+The separately extracted **ZTF neighbour** series also gives no signal at the predicted ephemeris: **−1,116 ± 2,767 ppm**, with off-phase scatter **4,062 ppm**. The negative depth indicates a noise-consistent brightening, not an eclipse. It cannot by itself rule out the neighbour at the relevant shallow depth.
 
 ## CFHT image: useful, with a real limitation
 
@@ -39,7 +53,7 @@ The exact Gaia source **2103792461826460288** appears in Table 5 of [Barber et a
 - Kepler light-curve flag: **Y**; TESS flag: **N** under that paper's quality criteria.
 - No listed rotation period, lithium measurement or radial velocity for this source.
 
-The association age is about 105 ± 10 Myr, but this star's membership is **not established** by being in the initial candidate list. The paper explicitly discusses substantial field contamination. Do not assign that age to the star or change the planet parameters on this basis. This creates a specific expert-review question: what light curve was associated with the star, was its 13.77-day signal examined, and can membership be assessed? The paper searches for planets; its listed planet-host discussions do not identify KIC 5689121/TIC 120686465.
+The association age is about 105 ± 10 Myr, but this star's membership is **not established** by being in the initial candidate list. The paper explicitly discusses substantial field contamination. Do not assign that age to the star or change the planet parameters on this basis. Section 3.3 says the Kepler curves used were PDCSAP, while our inventory returns the nearby KIC 5689116. The association between the Gaia row and an actual light-curve file therefore needs reconciliation. The flag is not proof this deblended signal was previously examined, and it prevents an unqualified “never searched” claim. This creates a specific expert-review question: what light curve was associated with the star, was its 13.77-day signal examined, and can membership be assessed? The paper searches for planets; its listed planet-host discussions do not identify KIC 5689121/TIC 120686465.
 
 The raw CDS table is retained because a VizieR coordinate query applied an unexpected epoch/equinox transformation and missed the row. Exact-string matching in the published table recovered it. A blank query is not sufficient until the identity and coordinate convention are checked.
 
@@ -47,9 +61,9 @@ The raw CDS table is retained because a VizieR coordinate query applied an unexp
 
 For the repeated legacy MAST API failures, TCP and TLS connections completed and certificate verification passed; no response body arrived before 55 seconds. That identifies a response timeout, **not its underlying server-side cause**. The current browser UI and ESA footprint service provide alternate checks. NEOWISE's Gator route eventually succeeded even though a separate TAP request timed out.
 
-The selected APOGEE DR17, LAMOST DR7/DR9/DR10 and Kepler imaging-compilation queries are retained. Empty results apply to the queried products only; catalogue names and epochs matter. Scratch probes aimed at an incorrectly identified Robo-AO catalogue were discarded and are not counted as completed searches.
+The selected APOGEE DR17, LAMOST DR7/DR9/DR10 and Kepler imaging-compilation queries are retained. Empty results apply to the queried products only; catalogue names and epochs matter. An initial probe aimed at an incorrectly identified Robo-AO catalogue was discarded. The corrected 30″ J2000 cone searches of all four Robo-AO Kepler survey catalogues—J/ApJ/791/35, J/AJ/152/18, J/AJ/153/66 and J/AJ/155/161—return no rows. These catalogue non-matches do not exclude unpublished imaging or sensitivity outside their selection.
 
-Still uncompleted: calibrated TESS pixel-level source injections; a trustworthy unsaturated CFHT/MegaPipe product or empirically calibrated companion limits; a joint stellar/multiplicity fit; a complete audit of unindexed or proprietary imaging. None can honestly be labelled exhausted by these checks. No outreach has been sent.
+Still uncompleted: a calibrated, time-dependent TESS scene fit and blind-search completeness analysis; a trustworthy unsaturated CFHT/MegaPipe product or empirically calibrated companion limits; a joint stellar/multiplicity fit; a complete audit of unindexed or proprietary imaging. None can honestly be labelled exhausted by these checks. No outreach has been sent.
 
 ## Reproduction and provenance
 
@@ -60,8 +74,12 @@ Run with the dependencies in the preceding archive-followup pack:
 ```
 python analyze_tglc.py
 python analyze_ztf.py
+python analyze_ztf.py --neighbour
+python analyze_pixel_injection.py
 python analyze_cfht.py
 python analyze_sparse.py
 ```
 
 These are exploratory analyses with explicit assumptions, not validation pipelines. The period and epoch reproduce `../archive-followup-20261012/spitzer/kfit_psf.json`. No fitted astrophysical probability has been recomputed.
+
+The current [follow-up plan](../archive-followup-20261012/FOLLOWUP_PLAN.md) incorporates these results and the newly identified literature contacts. The [reply to Steve](reply-to-steve.txt) is a draft only; no message was sent.

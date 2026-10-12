@@ -1,0 +1,132 @@
+[
+  {
+    "sector": 14,
+    "cam": 2,
+    "ccd": 3,
+    "col": 1266,
+    "row": 433,
+    "models": [
+      "tess2019107181901-prf-2-3-row0001-col1069.fits",
+      "tess2019107181901-prf-2-3-row0001-col1580.fits",
+      "tess2019107181901-prf-2-3-row0513-col1069.fits",
+      "tess2019107181901-prf-2-3-row0513-col1580.fits"
+    ]
+  },
+  {
+    "sector": 26,
+    "cam": 2,
+    "ccd": 4,
+    "col": 2050,
+    "row": 783,
+    "models": [
+      "tess2019107181901-prf-2-4-row0513-col1580.fits",
+      "tess2019107181901-prf-2-4-row0513-col2092.fits",
+      "tess2019107181901-prf-2-4-row1025-col1580.fits",
+      "tess2019107181901-prf-2-4-row1025-col2092.fits"
+    ]
+  },
+  {
+    "sector": 40,
+    "cam": 2,
+    "ccd": 4,
+    "col": 792,
+    "row": 422,
+    "models": [
+      "tess2019107181901-prf-2-4-row0001-col0557.fits",
+      "tess2019107181901-prf-2-4-row0001-col1069.fits",
+      "tess2019107181901-prf-2-4-row0513-col0557.fits",
+      "tess2019107181901-prf-2-4-row0513-col1069.fits"
+    ]
+  },
+  {
+    "sector": 41,
+    "cam": 2,
+    "ccd": 3,
+    "col": 811,
+    "row": 532,
+    "models": [
+      "tess2019107181901-prf-2-3-row0513-col0557.fits",
+      "tess2019107181901-prf-2-3-row0513-col1069.fits",
+      "tess2019107181901-prf-2-3-row1025-col0557.fits",
+      "tess2019107181901-prf-2-3-row1025-col1069.fits"
+    ]
+  },
+  {
+    "sector": 53,
+    "cam": 2,
+    "ccd": 4,
+    "col": 1767,
+    "row": 673,
+    "models": [
+      "tess2019107181901-prf-2-4-row0513-col1580.fits",
+      "tess2019107181901-prf-2-4-row0513-col2092.fits",
+      "tess2019107181901-prf-2-4-row1025-col1580.fits",
+      "tess2019107181901-prf-2-4-row1025-col2092.fits"
+    ]
+  },
+  {
+    "sector": 54,
+    "cam": 3,
+    "ccd": 1,
+    "col": 1958,
+    "row": 1569,
+    "models": [
+      "tess2019107181901-prf-3-1-row1536-col1580.fits",
+      "tess2019107181901-prf-3-1-row1536-col2092.fits",
+      "tess2019107181901-prf-3-1-row2048-col1580.fits",
+      "tess2019107181901-prf-3-1-row2048-col2092.fits"
+    ]
+  },
+  {
+    "sector": 74,
+    "cam": 4,
+    "ccd": 1,
+    "col": 2073,
+    "row": 1684,
+    "models": [
+      "tess2019107181902-prf-4-1-row1536-col1580.fits",
+      "tess2019107181902-prf-4-1-row1536-col2092.fits",
+      "tess2019107181902-prf-4-1-row2048-col1580.fits",
+      "tess2019107181902-prf-4-1-row2048-col2092.fits"
+    ]
+  },
+  {
+    "sector": 75,
+    "cam": 4,
+    "ccd": 2,
+    "col": 2067,
+    "row": 1253,
+    "models": [
+      "tess2019107181902-prf-4-2-row1025-col1580.fits",
+      "tess2019107181902-prf-4-2-row1025-col2092.fits",
+      "tess2019107181902-prf-4-2-row1536-col1580.fits",
+      "tess2019107181902-prf-4-2-row1536-col2092.fits"
+    ]
+  },
+  {
+    "sector": 80,
+    "cam": 3,
+    "ccd": 2,
+    "col": 1463,
+    "row": 1471,
+    "models": [
+      "tess2019107181902-prf-3-2-row1025-col1069.fits",
+      "tess2019107181902-prf-3-2-row1025-col1580.fits",
+      "tess2019107181902-prf-3-2-row1536-col1069.fits",
+      "tess2019107181902-prf-3-2-row1536-col1580.fits"
+    ]
+  },
+  {
+    "sector": 81,
+    "cam": 3,
+    "ccd": 1,
+    "col": 1655,
+    "row": 1350,
+    "models": [
+      "tess2019107181901-prf-3-1-row1025-col1580.fits",
+      "tess2019107181901-prf-3-1-row1025-col2092.fits",
+      "tess2019107181901-prf-3-1-row1536-col1580.fits",
+      "tess2019107181901-prf-3-1-row1536-col2092.fits"
+    ]
+  }
+]

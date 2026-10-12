@@ -1,0 +1,5 @@
+{
+  "repository": "https://github.com/keatonb/TESS_PRF",
+  "commit": "ae1d06c28429df4b136952dbe09d521a9f8eba10",
+  "modification": "Move optional online-only imports into online branch; all interpolation code unchanged."
+}
