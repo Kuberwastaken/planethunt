@@ -3,6 +3,11 @@
   "scope": "git-publication files; full source archives available as release assets",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 13,
+      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+    },
+    {
       "path": ".gitignore",
       "bytes": 81,
       "sha256": "8d5a62a595d4a2fa75111e015ce707e8f82b7ded1faa3fc20a1b4220e1f885fa"
