@@ -1,0 +1,35 @@
+{
+  "journal": "Research Notes of the AAS (RNAAS)",
+  "manuscript_number": "AAS82222",
+  "revision": 0,
+  "title": "A 13.77-day transit candidate on the background M dwarf KIC 5689121 from Kepler Bonus photometry",
+  "author": "Kuber Mehta",
+  "status": "Submitted; editorial decision pending",
+  "portal_stage": "Manuscript Submission",
+  "scientific_editor": "Not Assigned",
+  "portal_submission_date_display": "12-Oct-2026 16:20:10",
+  "portal_timezone": "Not labelled in the displayed record",
+  "verified_at_utc": "2026-10-12T20:21:13Z",
+  "local_submission_date": "2026-10-13",
+  "local_timezone": "Asia/Kolkata",
+  "verification": "Authenticated AAS Live Manuscripts listing and manuscript detail page",
+  "portal": "https://aas.msubmit.net/",
+  "evidence_doi": "10.5281/zenodo.23325261",
+  "funding": "No external funding or sponsorship; self-funded",
+  "author_certification": "Accepted directly by the author in the AAS portal",
+  "submitted_files": [
+    {
+      "path": "rnaas.tex",
+      "sha256": "2ea34fe5370446411004ea0a3042786490c16c55f0ab60ed75c9e3f718211e95"
+    },
+    {
+      "path": "figure1.pdf",
+      "sha256": "c3177c531bd9059379dc97d35d4b8466cf74c6951920c03fe2ee4bdcb4bd083f"
+    },
+    {
+      "path": "rnaas-author.pdf",
+      "sha256": "517db78623356a62f8e7ee9a0d2b95db13276a6eff7d5baee1fbed54929c0ddc"
+    }
+  ],
+  "note": "Submission is not acceptance, peer review, or planet validation. Draft-labelled source metadata and earlier review artifacts are retained as preparation history; rnaas-author.pdf is the uploaded author PDF."
+}

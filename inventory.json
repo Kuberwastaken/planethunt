@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9349,
-      "sha256": "e8768326b5cd31f7a4fc222d5a096aeb567056dc08422c7ae57f32ae0aff6641"
+      "bytes": 9477,
+      "sha256": "71e1fdc030bd8d3137f479853b496e4e4d27d4e37c791558cb85d2d877a77313"
     },
     {
       "path": "SOURCES.md",
@@ -12899,8 +12899,8 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 4857,
-      "sha256": "33c51a1cec2c29cd83155becd251a6ddf892e6573f93119f171a28950b8b25aa"
+      "bytes": 5325,
+      "sha256": "bb2206130b02e8c7616d409d2a675d8fb1647a2a71881721bca3a556f9df0cbd"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
@@ -12981,6 +12981,11 @@
       "path": "publication/2026-10-13/rnaas.txt",
       "bytes": 8859,
       "sha256": "28e9be77942f2ee72a5f66b1384b6516c49f891db273ce37f92160fbb32c16d7"
+    },
+    {
+      "path": "publication/2026-10-13/submission-record.json",
+      "bytes": 1565,
+      "sha256": "0ad69ddce3d951b8f3eace991d937feeb5288a54c83bf3d95b06c6d632e1fc57"
     },
     {
       "path": "publication/2026-10-13/word-count.json",
