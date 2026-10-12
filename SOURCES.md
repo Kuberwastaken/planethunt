@@ -50,3 +50,7 @@ The favicon is an original code-rendered planetary mark, not a measured phase.
 ## Website icon
 
 The navigation GitHub mark comes from [Primer Octicons](https://github.com/primer/octicons), under the MIT license retained in `docs/icons/octicons-LICENSE.txt`.
+
+## Archival extension — 12 October 2026
+
+[Archive follow-up provenance and methods](analysis/archive-followup-20261012/README.md) records NASA Exoplanet Archive/SpiKeS, IRSA Spitzer CBCD/CBUNC/mask products and official warm IRAC PRFs, ESA Gaia DR3, public Keck/Gemini metadata, and STScI/MAST TESScut images from NASA TESS/SPOC. Input URLs, query failures, retrieval dates and hashes are preserved within the pack. Generated photometry, residual figures and TESS diagnostics are analysis products, not new telescope observations. No third-party data license is replaced by this repository.

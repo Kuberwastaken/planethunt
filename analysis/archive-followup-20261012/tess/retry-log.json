@@ -1,0 +1,57 @@
+[
+  {
+    "sector": 41,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=41",
+    "utc": "2026-10-12T17:20:31.635555+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "7f9e4dec1cc3d96fb740ca9bce023d59902a24690adc23d843cc7fdf3b952009",
+    "fits": "tess-s0041-2-3_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "90115f39fe76643120d98090ed69fb5b6ab88247407f94e7d86149fd78cec3f2"
+  },
+  {
+    "sector": 54,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=54",
+    "utc": "2026-10-12T17:20:32.280548+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "00c3ea5b3e6110e529600f53ce2ba39454cb5476c8bf1e48e4b0ec24a8ac4d66",
+    "fits": "tess-s0054-3-1_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "d815487504484e028234407f5251855cf3e840cfdc93f9e9f532a1e0517693b2"
+  },
+  {
+    "sector": 74,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=74",
+    "utc": "2026-10-12T17:20:53.104914+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "d94250ffbcb56b86e98cbaeb7f36d9ab5038889d1a305c1ff90652de3183f705",
+    "fits": "tess-s0074-4-1_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "56e9a366b0e2bffe7728407e903be2b8e3e0a284c3ea3a896728c0b79cf5f182"
+  },
+  {
+    "sector": 75,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=75",
+    "utc": "2026-10-12T17:21:29.020235+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "2c6c5e5816a8177bbe7da9c9ae95bf1754e32f19f7d1d7e5d054ee6c2c93a7f9",
+    "fits": "tess-s0075-4-2_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "89404e90249745f56a08228554d19ddd699f6646a90513a8ab56ec1e9df85ddd"
+  },
+  {
+    "sector": 80,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=80",
+    "utc": "2026-10-12T17:21:45.091062+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "035bf16cd8a600ec19b3d2a7adec2f941ca932387dcfb19bd7327fdd216f9a61",
+    "fits": "tess-s0080-3-2_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "75b55679ace2b9234b7213c2cea94f1af45d2022bb364ae660cd850887bf7036"
+  }
+]

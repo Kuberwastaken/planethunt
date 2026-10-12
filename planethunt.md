@@ -2,7 +2,7 @@
 
 ## Read in this order
 1. `README.md`: current scientific and transfer status.
-2. `analysis/full-archive-review.md` for the full pack update, then `analysis/review.md`: critical comparison, numbers, contradictions and limitations.
+2. `analysis/archive-followup-20261012/README.md` and its TESS report / observing brief for the latest archival extension; then `analysis/full-archive-review.md` for the full pack update, then `analysis/review.md`: critical comparison, numbers, contradictions and limitations.
 3. `inventory.json`: every received file's path, bytes and SHA-256. It is the complete file map for this publication, not a declaration that the original archives are complete.
 4. `evidence/tess/README.md` and `evidence/codex/README.md`: original run context (TESS wording cleaned as documented in `analysis/publication-notes.md`).
 5. Exact numeric artifacts below before answering a question about a candidate.
@@ -121,3 +121,7 @@ The light-travel comparison uses the **2009–2013 observing epoch**, so the app
 emission epoch is 1040 CE at 298 pc. The saved zero-albedo temperature is 417 K (about 420 K).
 No updated astronomical catalogue status, new telescope observations, discovery claim,
 scientific validation, naming, submission or outreach is implied by this website rebuild.
+
+## Archival extension: 12 October 2026
+
+`analysis/archive-followup-20261012/` preserves live archive responses, eight Spitzer frames with calibration/masks, ten compressed TESS pixel cutouts, offline reduction scripts and all derived tables. Spitzer supplies exploratory stellar infrared fluxes, not a transit or close-companion contrast curve. TESS supplies a noisy blended-aperture non-recovery, not a planet rejection. Gaia RUWE≈0.984 and no DR3 orbital entry do not rule out companions. Nearby Keck images cover Kepler-169, not this target. General MAST inventory remains blocked, despite successful TESScut retrieval. No FPP update, validation, telescope allocation or automated outreach resulted. See `FOLLOWUP_PLAN.md` for a dated, sourced collaboration route.

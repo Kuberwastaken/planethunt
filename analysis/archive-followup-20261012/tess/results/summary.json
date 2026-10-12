@@ -1,0 +1,230 @@
+{
+  "1.0": {
+    "depth_ppm": -483.38126934511354,
+    "error_ppm": 957.8102726357924,
+    "depth_over_error": -0.5046732982043505,
+    "n_events": 20,
+    "between_event_error_inflation": 1.104704116574292,
+    "control_depth_std_ppm": 1188.747249804571,
+    "control_median_depth_ppm": 55.70653939223236,
+    "control_fraction_at_least_as_deep": 0.6,
+    "injection_checks": [
+      {
+        "injected_aperture_ppm": 500,
+        "increment_recovered_ppm": 500.24083457314794
+      },
+      {
+        "injected_aperture_ppm": 1000,
+        "increment_recovered_ppm": 1000.4816691464016
+      },
+      {
+        "injected_aperture_ppm": 2400,
+        "increment_recovered_ppm": 2401.1560059513236
+      }
+    ],
+    "timing_offsets": [
+      {
+        "offset_minutes": -60,
+        "result": {
+          "depth_ppm": 404.3606763501341,
+          "error_ppm": 1007.8589650428852,
+          "depth_over_error": 0.40120759984798887,
+          "n_events": 20,
+          "between_event_error_inflation": 1.1693112341117968
+        }
+      },
+      {
+        "offset_minutes": -30,
+        "result": {
+          "depth_ppm": -284.1183291875062,
+          "error_ppm": 962.3029445190531,
+          "depth_over_error": -0.29524832154546193,
+          "n_events": 20,
+          "between_event_error_inflation": 1.1290305294286669
+        }
+      },
+      {
+        "offset_minutes": 0,
+        "result": {
+          "depth_ppm": -483.38126934511354,
+          "error_ppm": 957.8102726357924,
+          "depth_over_error": -0.5046732982043505,
+          "n_events": 20,
+          "between_event_error_inflation": 1.104704116574292
+        }
+      },
+      {
+        "offset_minutes": 30,
+        "result": {
+          "depth_ppm": 177.9715849506876,
+          "error_ppm": 924.723161527321,
+          "depth_over_error": 0.19245931361418528,
+          "n_events": 20,
+          "between_event_error_inflation": 1.0689207312997417
+        }
+      },
+      {
+        "offset_minutes": 60,
+        "result": {
+          "depth_ppm": -20.616434624639847,
+          "error_ppm": 888.8914159884447,
+          "depth_over_error": -0.023193423014119707,
+          "n_events": 19,
+          "between_event_error_inflation": 1.0
+        }
+      }
+    ]
+  },
+  "1.5": {
+    "depth_ppm": -1221.424275048188,
+    "error_ppm": 1235.5575854695028,
+    "depth_over_error": -0.9885611884160428,
+    "n_events": 20,
+    "between_event_error_inflation": 1.1412344680926578,
+    "control_depth_std_ppm": 1490.3827639963179,
+    "control_median_depth_ppm": 109.57434572007969,
+    "control_fraction_at_least_as_deep": 0.75,
+    "injection_checks": [
+      {
+        "injected_aperture_ppm": 500,
+        "increment_recovered_ppm": 500.60955860436263
+      },
+      {
+        "injected_aperture_ppm": 1000,
+        "increment_recovered_ppm": 1001.2191172088287
+      },
+      {
+        "injected_aperture_ppm": 2400,
+        "increment_recovered_ppm": 2402.925881301143
+      }
+    ],
+    "timing_offsets": [
+      {
+        "offset_minutes": -60,
+        "result": {
+          "depth_ppm": 133.13399861712458,
+          "error_ppm": 1260.6216138120265,
+          "depth_over_error": 0.10560980167120665,
+          "n_events": 20,
+          "between_event_error_inflation": 1.1781409187081862
+        }
+      },
+      {
+        "offset_minutes": -30,
+        "result": {
+          "depth_ppm": -781.3521401155496,
+          "error_ppm": 1232.2024839348585,
+          "depth_over_error": -0.6341101809991615,
+          "n_events": 20,
+          "between_event_error_inflation": 1.1562153078482629
+        }
+      },
+      {
+        "offset_minutes": 0,
+        "result": {
+          "depth_ppm": -1221.424275048188,
+          "error_ppm": 1235.5575854695028,
+          "depth_over_error": -0.9885611884160428,
+          "n_events": 20,
+          "between_event_error_inflation": 1.1412344680926578
+        }
+      },
+      {
+        "offset_minutes": 30,
+        "result": {
+          "depth_ppm": -1048.0273125656308,
+          "error_ppm": 1175.9215307009642,
+          "depth_over_error": -0.8912391560182626,
+          "n_events": 20,
+          "between_event_error_inflation": 1.0746728946305746
+        }
+      },
+      {
+        "offset_minutes": 60,
+        "result": {
+          "depth_ppm": -1077.6373417804316,
+          "error_ppm": 1103.5894236199824,
+          "depth_over_error": -0.9764839338941623,
+          "n_events": 19,
+          "between_event_error_inflation": 1.0
+        }
+      }
+    ]
+  },
+  "2.0": {
+    "depth_ppm": -2075.360806390844,
+    "error_ppm": 1383.9639995303935,
+    "depth_over_error": -1.4995771617578602,
+    "n_events": 20,
+    "between_event_error_inflation": 1.0710317524450164,
+    "control_depth_std_ppm": 1761.6915136300051,
+    "control_median_depth_ppm": 19.868302203339546,
+    "control_fraction_at_least_as_deep": 0.8125,
+    "injection_checks": [
+      {
+        "injected_aperture_ppm": 500,
+        "increment_recovered_ppm": 501.0363513450343
+      },
+      {
+        "injected_aperture_ppm": 1000,
+        "increment_recovered_ppm": 1002.0727026901732
+      },
+      {
+        "injected_aperture_ppm": 2400,
+        "increment_recovered_ppm": 2404.974486456373
+      }
+    ],
+    "timing_offsets": [
+      {
+        "offset_minutes": -60,
+        "result": {
+          "depth_ppm": -598.2568311323647,
+          "error_ppm": 1491.3642470377938,
+          "depth_over_error": -0.4011473604256277,
+          "n_events": 20,
+          "between_event_error_inflation": 1.161282431906052
+        }
+      },
+      {
+        "offset_minutes": -30,
+        "result": {
+          "depth_ppm": -1486.769895523848,
+          "error_ppm": 1433.1230351643585,
+          "depth_over_error": -1.0374335343464332,
+          "n_events": 20,
+          "between_event_error_inflation": 1.107486700657509
+        }
+      },
+      {
+        "offset_minutes": 0,
+        "result": {
+          "depth_ppm": -2075.360806390844,
+          "error_ppm": 1383.9639995303935,
+          "depth_over_error": -1.4995771617578602,
+          "n_events": 20,
+          "between_event_error_inflation": 1.0710317524450164
+        }
+      },
+      {
+        "offset_minutes": 30,
+        "result": {
+          "depth_ppm": -2034.9285543457138,
+          "error_ppm": 1357.306530514577,
+          "depth_over_error": -1.4992402295259268,
+          "n_events": 20,
+          "between_event_error_inflation": 1.0308744877786122
+        }
+      },
+      {
+        "offset_minutes": 60,
+        "result": {
+          "depth_ppm": -1784.089127187965,
+          "error_ppm": 1321.1806251406401,
+          "depth_over_error": -1.3503748792849941,
+          "n_events": 19,
+          "between_event_error_inflation": 1.0
+        }
+      }
+    ]
+  }
+}

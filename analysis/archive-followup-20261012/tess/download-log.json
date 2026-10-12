@@ -1,0 +1,97 @@
+[
+  {
+    "sector": 14,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=14",
+    "utc": "2026-10-12T17:13:32.806977+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "601c22965d62e23262f432368266825e71001a51540c47f610d7adcfe6ab6ffb",
+    "fits": "tess-s0014-2-3_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "e1f7010c66548bd966d5d2f65b717bbd6c72965dc5d9da8c646ef660be798b8f"
+  },
+  {
+    "sector": 26,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=26",
+    "utc": "2026-10-12T17:13:00.793278+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "b3b041e461887b12a04f23737c786e4a3ad0b131c248c28d80abebbbc48f9ebd",
+    "fits": "tess-s0026-2-4_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "3a738a148d70b2674c03d0acec32d56345f1e11eedd4da6c9b0c49af6648c4f5"
+  },
+  {
+    "sector": 40,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=40",
+    "utc": "2026-10-12T17:13:27.204045+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "ef65bb0df638b156cf0b1db85fdc683ce1f0c9a8716e3b83a4c1c249469a9beb",
+    "fits": "tess-s0040-2-4_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "d773ac366dcd2a4b1a8a64993576115ff0d980c885b49e60c67de2bbc126b092"
+  },
+  {
+    "sector": 41,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=41",
+    "utc": "2026-10-12T17:16:00.855153+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 180006 milliseconds with 0 bytes received\n",
+    "valid_zip": false
+  },
+  {
+    "sector": 53,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=53",
+    "utc": "2026-10-12T17:14:08.859038+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "cbf228122fcaedc227afe5e9b547fc67d83eebf96624a516168d47ccc6497cbc",
+    "fits": "tess-s0053-2-4_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "b4e741b6b1f48fdbf847510f6930bfdec32ec9027a7a181f6773426ffb7828cd"
+  },
+  {
+    "sector": 54,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=54",
+    "utc": "2026-10-12T17:16:32.885447+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 180006 milliseconds with 0 bytes received\n",
+    "valid_zip": false
+  },
+  {
+    "sector": 74,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=74",
+    "utc": "2026-10-12T17:17:08.911464+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 180001 milliseconds with 0 bytes received\n",
+    "valid_zip": false
+  },
+  {
+    "sector": 75,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=75",
+    "utc": "2026-10-12T17:17:34.546657+00:00",
+    "returncode": 35,
+    "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to stpubdata.s3.amazonaws.com:443 \n",
+    "valid_zip": false
+  },
+  {
+    "sector": 80,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=80",
+    "utc": "2026-10-12T17:17:40.867549+00:00",
+    "returncode": 35,
+    "stderr": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to stpubdata.s3.amazonaws.com:443 \n",
+    "valid_zip": false
+  },
+  {
+    "sector": 81,
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=81",
+    "utc": "2026-10-12T17:18:57.226839+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "valid_zip": true,
+    "sha256": "e14a06c6373b12015d98a8aed36f436278d69b00b51cb49bd82d970545131ba6",
+    "fits": "tess-s0081-3-1_285.907827_40.941988_9x9_astrocut.fits",
+    "fits_sha256": "2d0972eca31845fb847d85f151a716c51767d6df6ab5fc87dd47d87838d7d020"
+  }
+]

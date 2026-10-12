@@ -8,9 +8,13 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 - Original evidence: [`evidence/tess/`](evidence/tess/) and [`evidence/codex/`](evidence/codex/).
 - Completeness and file-level checksums: [`inventory.json`](inventory.json) and `SHA256SUMS`.
 
-## Current state: 11 October 2026
+## Current state: 12 October 2026
 
-KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The public site (`index.html`) was rebuilt on 12 October as a monochrome evidence atlas. Scientific status remains the 11 October evidence snapshot; no new validation is implied.
+The [new archival follow-up pack](analysis/archive-followup-20261012/README.md) adds eight reduced Spitzer images, ten TESS sectors, live catalogue/imaging-archive checks, raw inputs and reproducible measurements. Spitzer resolves the known pair but misses the transit; the exploratory TESS extraction has no convincing recovery and cannot reject the candidate. Gaia/Keck/Gemini checks add no measured close-companion contrast curve. **The FPP and unconfirmed status are unchanged.** The [observing brief](analysis/archive-followup-20261012/FOLLOWUP_PLAN.md) identifies the next measurements and prospective collaborators. General MAST inventory timeouts remain a documented gap.
+
+## Validation baseline: 11 October 2026
+
+KIC 5689121 / TIC 120686465 is a well-vetted **planet candidate**: it passes held-out, Kepler-169, raw-pixel centroid and dilution tests, with a TRICERATOPS false-positive probability of about 0.07 (validation needs below 0.015; the open loophole is a planet around an unresolved bound companion). TIC 309780779 is a real repeating signal that is probably an eclipsing binary (false-positive probability about 0.57). Nothing is confirmed or validated, and novelty is provisional. The public site (`index.html`) was rebuilt on 12 October as a monochrome evidence atlas. The validation result remains the 11 October baseline; the 12 October archival extension above does not validate the candidate.
 
 ## Earlier state: 10 October 2026
 

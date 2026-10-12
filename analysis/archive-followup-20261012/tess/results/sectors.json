@@ -1,0 +1,142 @@
+[
+  {
+    "sector": 14,
+    "n_total": 1241,
+    "n_quality0_finite": 1237,
+    "cadence_minutes": 29.970703125,
+    "time_min_btjd": 1683.3673706054688,
+    "time_max_btjd": 1710.1796264648438,
+    "target_neighbour_separation_pixels": 0.3442654054977393,
+    "median_aperture_flux_e_s": [
+      98.82063618130715,
+      164.88941394049317,
+      239.20913024436496
+    ]
+  },
+  {
+    "sector": 26,
+    "n_total": 1148,
+    "n_quality0_finite": 1146,
+    "cadence_minutes": 29.970703125,
+    "time_min_btjd": 2010.2836303710938,
+    "time_max_btjd": 2035.1172485351562,
+    "target_neighbour_separation_pixels": 0.3646492058854785,
+    "median_aperture_flux_e_s": [
+      117.54714484524922,
+      176.01520541050516,
+      231.52664043994912
+    ]
+  },
+  {
+    "sector": 40,
+    "n_total": 3927,
+    "n_quality0_finite": 3917,
+    "cadence_minutes": 10.000128057981783,
+    "time_min_btjd": 2390.6584696333057,
+    "time_max_btjd": 2418.85319632167,
+    "target_neighbour_separation_pixels": 0.34773508392654423,
+    "median_aperture_flux_e_s": [
+      124.7687038660394,
+      199.79706735689493,
+      274.84972869229387
+    ]
+  },
+  {
+    "sector": 41,
+    "n_total": 3668,
+    "n_quality0_finite": 3658,
+    "cadence_minutes": 9.999843563418835,
+    "time_min_btjd": 2419.9990240899697,
+    "time_max_btjd": 2446.5751076442684,
+    "target_neighbour_separation_pixels": 0.34645075812011006,
+    "median_aperture_flux_e_s": [
+      108.90058298830289,
+      185.4230219030008,
+      273.34465534950925
+    ]
+  },
+  {
+    "sector": 53,
+    "n_total": 3466,
+    "n_quality0_finite": 3454,
+    "cadence_minutes": 10.000077410004451,
+    "time_min_btjd": 2744.019451344172,
+    "time_max_btjd": 2768.9780435715747,
+    "target_neighbour_separation_pixels": 0.35947745588950203,
+    "median_aperture_flux_e_s": [
+      115.04480008097656,
+      193.6916179918762,
+      263.74073119173715
+    ]
+  },
+  {
+    "sector": 54,
+    "n_total": 3605,
+    "n_quality0_finite": 3571,
+    "cadence_minutes": 9.999927324824966,
+    "time_min_btjd": 2769.909203086762,
+    "time_max_btjd": 2796.124188890613,
+    "target_neighbour_separation_pixels": 0.33573269966886826,
+    "median_aperture_flux_e_s": [
+      139.15569108847862,
+      214.0798621125863,
+      288.23459481875284
+    ]
+  },
+  {
+    "sector": 74,
+    "n_total": 11284,
+    "n_quality0_finite": 11268,
+    "cadence_minutes": 3.333293928517378,
+    "time_min_btjd": 3312.8645863171505,
+    "time_max_btjd": 3339.565661313636,
+    "target_neighbour_separation_pixels": 0.33544186832515,
+    "median_aperture_flux_e_s": [
+      142.06076325091286,
+      198.06172992508274,
+      265.428943679648
+    ]
+  },
+  {
+    "sector": 75,
+    "n_total": 11694,
+    "n_quality0_finite": 11678,
+    "cadence_minutes": 3.333366598963039,
+    "time_min_btjd": 3339.783262233974,
+    "time_max_btjd": 3367.4779770750774,
+    "target_neighbour_separation_pixels": 0.36603373038994863,
+    "median_aperture_flux_e_s": [
+      123.6821193819516,
+      189.53143734188185,
+      247.1868914498265
+    ]
+  },
+  {
+    "sector": 80,
+    "n_total": 11157,
+    "n_quality0_finite": 11120,
+    "cadence_minutes": 3.3333733732433757,
+    "time_min_btjd": 3479.8932279057863,
+    "time_max_btjd": 3506.3379026520256,
+    "target_neighbour_separation_pixels": 0.3496147781265701,
+    "median_aperture_flux_e_s": [
+      120.9595084560828,
+      207.38036841955733,
+      304.7236781405197
+    ]
+  },
+  {
+    "sector": 81,
+    "n_total": 11076,
+    "n_quality0_finite": 11033,
+    "cadence_minutes": 3.333293899704586,
+    "time_min_btjd": 3506.557846912665,
+    "time_max_btjd": 3533.1778748738034,
+    "target_neighbour_separation_pixels": 0.33716273815390657,
+    "median_aperture_flux_e_s": [
+      136.8927940167625,
+      206.8976537246953,
+      295.79904943056613
+    ]
+  }
+]

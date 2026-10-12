@@ -1,0 +1,82 @@
+[
+  {
+    "path": "frames/tess-s0014-2-3_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=14",
+    "retrieved_utc": "2026-10-12T17:13:32.806977+00:00",
+    "fits_sha256": "e1f7010c66548bd966d5d2f65b717bbd6c72965dc5d9da8c646ef660be798b8f",
+    "gzip_sha256": "71f2714434d9bed220b4b93b4de0eaa41f074d8e3f4e5e3e473e79e728f4543a",
+    "gzip_bytes": 744026
+  },
+  {
+    "path": "frames/tess-s0026-2-4_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=26",
+    "retrieved_utc": "2026-10-12T17:13:00.793278+00:00",
+    "fits_sha256": "3a738a148d70b2674c03d0acec32d56345f1e11eedd4da6c9b0c49af6648c4f5",
+    "gzip_sha256": "e6e598fc70e9aa1d92dc5cfebc63e610a575f3bba0917da756efff9c5d8437a6",
+    "gzip_bytes": 681066
+  },
+  {
+    "path": "frames/tess-s0040-2-4_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=40",
+    "retrieved_utc": "2026-10-12T17:13:27.204045+00:00",
+    "fits_sha256": "d773ac366dcd2a4b1a8a64993576115ff0d980c885b49e60c67de2bbc126b092",
+    "gzip_sha256": "4ec88cfbb4d254a7d1f3668d25e7bbd8cf545d4db6a3bc521ccb08d19ca9aa19",
+    "gzip_bytes": 2357034
+  },
+  {
+    "path": "frames/tess-s0041-2-3_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=41",
+    "retrieved_utc": "2026-10-12T17:20:31.635555+00:00",
+    "fits_sha256": "90115f39fe76643120d98090ed69fb5b6ab88247407f94e7d86149fd78cec3f2",
+    "gzip_sha256": "bb97966acbfd6ecbafefad664d79b8d792bca39bed8fe497ac2524cd50327b43",
+    "gzip_bytes": 2237554
+  },
+  {
+    "path": "frames/tess-s0053-2-4_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=53",
+    "retrieved_utc": "2026-10-12T17:14:08.859038+00:00",
+    "fits_sha256": "b4e741b6b1f48fdbf847510f6930bfdec32ec9027a7a181f6773426ffb7828cd",
+    "gzip_sha256": "30b1266aa5ad3fc232282a140f66fcfacd293d818f15ec662a62aa12596eeda1",
+    "gzip_bytes": 2068279
+  },
+  {
+    "path": "frames/tess-s0054-3-1_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=54",
+    "retrieved_utc": "2026-10-12T17:20:32.280548+00:00",
+    "fits_sha256": "d815487504484e028234407f5251855cf3e840cfdc93f9e9f532a1e0517693b2",
+    "gzip_sha256": "d9db8f30d0bdfeda97bce260f75be73ed9734f5c06b7fa211b2cfd6f105bcb0f",
+    "gzip_bytes": 2160366
+  },
+  {
+    "path": "frames/tess-s0074-4-1_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=74",
+    "retrieved_utc": "2026-10-12T17:20:53.104914+00:00",
+    "fits_sha256": "56e9a366b0e2bffe7728407e903be2b8e3e0a284c3ea3a896728c0b79cf5f182",
+    "gzip_sha256": "bfd4ff55ed9480802a3e0dcd287f2ce849953bc1da1b91f3962605667d2e04b3",
+    "gzip_bytes": 6791645
+  },
+  {
+    "path": "frames/tess-s0075-4-2_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=75",
+    "retrieved_utc": "2026-10-12T17:21:29.020235+00:00",
+    "fits_sha256": "89404e90249745f56a08228554d19ddd699f6646a90513a8ab56ec1e9df85ddd",
+    "gzip_sha256": "1498f158b4881056ba5782b97a3217b32cdd92a8ac9957d209b5e246a9a0201b",
+    "gzip_bytes": 7002363
+  },
+  {
+    "path": "frames/tess-s0080-3-2_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=80",
+    "retrieved_utc": "2026-10-12T17:21:45.091062+00:00",
+    "fits_sha256": "75b55679ace2b9234b7213c2cea94f1af45d2022bb364ae660cd850887bf7036",
+    "gzip_sha256": "45fcdd4b8aa1b7c223bfbc2764de356c5bb4b2da31fb5bbe9a327304019f3afe",
+    "gzip_bytes": 6745695
+  },
+  {
+    "path": "frames/tess-s0081-3-1_285.907827_40.941988_9x9_astrocut.fits.gz",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/astrocut?ra=285.907827&dec=40.941988&x=9&y=9&units=px&sector=81",
+    "retrieved_utc": "2026-10-12T17:18:57.226839+00:00",
+    "fits_sha256": "2d0972eca31845fb847d85f151a716c51767d6df6ab5fc87dd47d87838d7d020",
+    "gzip_sha256": "30afa1ed350cf5760bea524f2ddd76ce17118196ba9d32379774187ad8d762b3",
+    "gzip_bytes": 6755371
+  }
+]

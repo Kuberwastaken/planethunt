@@ -51,11 +51,15 @@ The [initial audit](archive/initial-audit.txt) preserves the exact queries and t
 | Keck TAP, rectangle enclosing 5′, NIRC2/HIRES/NIRC/NIRSPEC/OSIRIS | 13 NIRC2 + 2 HIRES records near Kepler-169; zero in other three instruments | All NIRC2 records name KOI-0505, use narrow 5.1″ or 10.2″ fields, ~263″ away; they do not cover this target |
 | Gemini, 5′ pointing cone | Empty result | No records returned in this query, not an all-instrument footprint proof |
 | MAST general inventory, GET and filtered POST | Timeouts | HST/JWST inventory unresolved; this is not a negative result |
-| TESScut sector service | Ten sectors returned | Separate endpoint works; pixel analysis is recorded below when complete |
+| TESScut sector service | All ten sectors downloaded and reduced | 62,082 usable cadences; 20 predicted windows; no convincing aperture recovery, and insufficient sensitivity for a rejection |
 
 The fresh Gaia parallax is **3.40648 ± 0.03973 mas**. It has not been zero-point corrected or incorporated into a joint stellar fit. We do not silently replace the older adopted ~298 pc estimate or recompute planet properties from its reciprocal.
 
 This is a bounded, reproducible audit, **not a claim that every archive is exhausted**. Unindexed/proprietary observations, other observatories and MAST inventory failures remain possible. The raw failures are retained alongside successful null results.
+
+## TESS and the observing route
+
+The [TESS reduction](tess/README.md) checks all ten returned sectors with fixed apertures, timing offsets and shifted-epoch controls. It does not provide a new confirmation or a calibrated exclusion. The [follow-up plan](FOLLOWUP_PLAN.md) gives an observer-ready target card, contacts, the current NASA-Keck eligibility/deadline situation, and the measurements needed to address the unresolved-host branch.
 
 ## Reproduce the Spitzer measurement
 
