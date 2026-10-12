@@ -1,0 +1,42 @@
+[
+  {
+    "table": "koa_nirc2",
+    "query": "select koaid,ra,dec,date_obs from koa_nirc2 where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T17:02:54.106468+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "preview": "[\n{\"koaid\": \"N2.20140730.41199.fits\",\n\"ra\": 285.99988,\n\"dec\": 40.91932,\n\"date_obs\": \"2014-07-30 00:00:00\"},\n{\"koaid\": \"N2.20140730.41327.fits\",\n\"ra\": 285.99988,\n\"dec\": 40.91932,\n\"date_obs\": \"2014-07-3"
+  },
+  {
+    "table": "koa_nirc",
+    "query": "select koaid,ra,dec,date_obs from koa_nirc where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T17:02:49.507976+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "preview": "[\n]\n"
+  },
+  {
+    "table": "koa_hires",
+    "query": "select koaid,ra,dec,date_obs from koa_hires where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T17:02:51.312324+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "preview": "[\n{\"koaid\": \"HI.20120703.27256.fits\",\n\"ra\": 285.99900,\n\"dec\": 40.91881,\n\"date_obs\": \"2012-07-03 00:00:00\"},\n{\"koaid\": \"HI.20170701.37656.fits\",\n\"ra\": 286.00000,\n\"dec\": 40.91944,\n\"date_obs\": \"2017-07-0"
+  },
+  {
+    "table": "koa_nirspec",
+    "query": "select koaid,ra,dec,date_obs from koa_nirspec where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T17:03:04.831980+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "preview": "[\n]\n"
+  },
+  {
+    "table": "koa_osiris",
+    "query": "select koaid,ra,dec,date_obs from koa_osiris where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+    "utc": "2026-10-12T17:02:57.354397+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "preview": "[\n]\n"
+  }
+]

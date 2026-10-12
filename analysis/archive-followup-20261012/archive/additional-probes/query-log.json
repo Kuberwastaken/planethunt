@@ -1,0 +1,81 @@
+[
+  {
+    "name": "gaia_source",
+    "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from gaiadr3.gaia_source where source_id=2103792461826460288"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T16:59:51.305710+00:00",
+    "bytes": 3915,
+    "preview": "solution_id,designation,source_id,random_index,ref_epoch,ra,ra_error,dec,dec_error,parallax,parallax_error,parallax_over_error,pm,pmra,pmra_error,pmde"
+  },
+  {
+    "name": "gaia_nss",
+    "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from gaiadr3.nss_two_body_orbit where source_id=2103792461826460288"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T16:59:52.205125+00:00",
+    "bytes": 1273,
+    "preview": "solution_id,source_id,nss_solution_type,ra,ra_error,dec,dec_error,parallax,parallax_error,pmra,pmra_error,pmdec,pmdec_error,a_thiele_innes,a_thiele_in"
+  },
+  {
+    "name": "gemini_300arcsec",
+    "url": "https://archive.gemini.edu/jsonsummary/canonical/ra=285.907827/dec=40.941988/sr=300",
+    "params": {},
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T16:59:50.551647+00:00",
+    "bytes": 2,
+    "preview": "[]"
+  },
+  {
+    "name": "koa_tables",
+    "url": "https://koa.ipac.caltech.edu/TAP/sync",
+    "params": {
+      "query": "select table_name from TAP_SCHEMA.tables",
+      "format": "json"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T16:59:51.165306+00:00",
+    "bytes": 633,
+    "preview": "[\n{\"table_name\": \"koa_reduced_data\"},\n{\"table_name\": \"koa_guider\"},\n{\"table_name\": \"koa_kcwi\"},\n{\"table_name\": \"koa_deimos\"},\n{\"table_name\": \"koa_esi\""
+  },
+  {
+    "name": "koa_nirc2_300arcsec",
+    "url": "https://koa.ipac.caltech.edu/cgi-bin/VOServ/nph-searchImage",
+    "params": {
+      "POS": "CIRCLE 285.907827 40.941988 0.0833333333",
+      "INSTRUMENT": "NIRC2",
+      "RESULTFORMAT": "csv"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T16:59:53.826307+00:00",
+    "bytes": 38,
+    "preview": "TransientFault: search database error\n"
+  },
+  {
+    "name": "mast_cone",
+    "url": "https://mast.stsci.edu/api/v0/invoke",
+    "params": {
+      "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 285.907827, \"dec\": 40.941988, \"radius\": 0.0083333333}, \"format\": \"json\", \"pagesize\": 10000, \"page\": 1}"
+    },
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 45005 milliseconds with 0 bytes received\n",
+    "utc": "2026-10-12T17:00:36.205214+00:00",
+    "bytes": 0,
+    "preview": ""
+  }
+]

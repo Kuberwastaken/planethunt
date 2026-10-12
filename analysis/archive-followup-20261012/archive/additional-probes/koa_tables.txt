@@ -1,0 +1,22 @@
+[
+{"table_name": "koa_reduced_data"},
+{"table_name": "koa_guider"},
+{"table_name": "koa_kcwi"},
+{"table_name": "koa_deimos"},
+{"table_name": "koa_esi"},
+{"table_name": "koa_hires"},
+{"table_name": "koa_lws"},
+{"table_name": "koa_mosfire"},
+{"table_name": "koa_nirc2"},
+{"table_name": "koa_nirc"},
+{"table_name": "koa_nires"},
+{"table_name": "koa_nirspec"},
+{"table_name": "koa_osiris"},
+{"table_name": "koa_lris"},
+{"table_name": "TAP_SCHEMA.schemas"},
+{"table_name": "TAP_SCHEMA.tables"},
+{"table_name": "TAP_SCHEMA.columns"},
+{"table_name": "TAP_SCHEMA.keys"},
+{"table_name": "TAP_SCHEMA.key_columns"},
+{"table_name": "koa_kpf"}
+]

@@ -1,0 +1,25 @@
+{
+  "request": {
+    "service": "Mast.Caom.Filtered.Position",
+    "params": {
+      "columns": "*",
+      "filters": [
+        {
+          "paramName": "obs_collection",
+          "values": [
+            "HST",
+            "JWST",
+            "TESS"
+          ]
+        }
+      ],
+      "position": "285.907827,40.941988,0.0083333333"
+    },
+    "format": "json",
+    "pagesize": 10000,
+    "page": 1
+  },
+  "returncode": 28,
+  "stderr": "curl: (28) Operation timed out after 50003 milliseconds with 0 bytes received\n",
+  "utc": "2026-10-12T17:04:16.304568+00:00"
+}

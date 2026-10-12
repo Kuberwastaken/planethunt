@@ -1,0 +1,49 @@
+{
+  "1": {
+    "n_frames": 5,
+    "exposure_total_s": 52.0,
+    "target": {
+      "mean_prf_mjy": 2.19034868255654,
+      "frame_scatter_mjy": 0.029488752086061647,
+      "sem_mjy": 0.013187770847214514,
+      "mean_ap2_mjy": 2.0662487522527466,
+      "mean_ap3_mjy": 2.072804918665283,
+      "mean_strict_mask_mjy": 2.19034868255654,
+      "mean_radius5_mjy": 2.1901414359979228
+    },
+    "neighbour": {
+      "mean_prf_mjy": 0.8773083909763525,
+      "frame_scatter_mjy": 0.026406207912407942,
+      "sem_mjy": 0.011809215184027394,
+      "mean_ap2_mjy": 0.873703222920437,
+      "mean_ap3_mjy": 0.9002425052558148,
+      "mean_strict_mask_mjy": 0.8773083909763525,
+      "mean_radius5_mjy": 0.8761861904883685
+    },
+    "mean_flux_ratio_target_neighbour": 2.498320379712445
+  },
+  "2": {
+    "n_frames": 3,
+    "exposure_total_s": 31.200000000000003,
+    "target": {
+      "mean_prf_mjy": 1.3131350927365286,
+      "frame_scatter_mjy": 0.041636636113639824,
+      "sem_mjy": 0.024038923068360446,
+      "mean_ap2_mjy": 1.3269633058239598,
+      "mean_ap3_mjy": 1.3289468337284782,
+      "mean_strict_mask_mjy": 1.3075363578214423,
+      "mean_radius5_mjy": 1.3125048403791553
+    },
+    "neighbour": {
+      "mean_prf_mjy": 0.5321757352399917,
+      "frame_scatter_mjy": 0.029336275815734565,
+      "sem_mjy": 0.01693730673923546,
+      "mean_ap2_mjy": 0.5375101451842648,
+      "mean_ap3_mjy": 0.5422328673046075,
+      "mean_strict_mask_mjy": 0.5283729032214272,
+      "mean_radius5_mjy": 0.5326633565426017
+    },
+    "mean_flux_ratio_target_neighbour": 2.470509721737976
+  },
+  "limits": "Exploratory photometry. Fit amplitude errors condition on fitted positions. No array-location/aperture pixel-phase or colour correction applied; PRF includes subpixel response. Method/mask discrepancies and calibration systematics dominate. Do not use as a contrast curve or transit depth."
+}

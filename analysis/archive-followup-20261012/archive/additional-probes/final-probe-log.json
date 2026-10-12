@@ -1,0 +1,26 @@
+[
+  {
+    "name": "koa_nirc2-all-metadata",
+    "url": "https://koa.ipac.caltech.edu/TAP/sync",
+    "params": {
+      "query": "select koaid,ra,dec,date_obs,object,targname,camname,naxis1,naxis2,pixscal1,pixscal2,filter from koa_nirc2 where ra between 285.7974 and 286.0183 and dec between 40.85865 and 41.02533",
+      "format": "json"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T17:12:01.983595+00:00",
+    "bytes": 3612
+  },
+  {
+    "name": "tesscut-sectors",
+    "url": "https://mast.stsci.edu/tesscut/api/v0.1/sector",
+    "params": {
+      "ra": "285.907827",
+      "dec": "40.941988"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "utc": "2026-10-12T17:11:55.018938+00:00",
+    "bytes": 723
+  }
+]
