@@ -11,7 +11,7 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 
 ## Files and reproduction
 
-`manuscript.json` is the text source; `build_manuscript.py` produces `rnaas.tex`, `rnaas.txt`, `rnaas-review.pdf` and `word-count.json`. The editable journal source uses AASTeX 7. The review PDF is separately typeset with ReportLab, not a compiled AASTeX proof. Compile the final AASTeX source in the journal portal or Overleaf and inspect it before submission.
+`manuscript.json` is the text source; `build_manuscript.py` produces `rnaas.tex`, `rnaas.txt`, `rnaas-review.pdf` and `word-count.json`. The editable journal source uses AASTeX 7. The review PDF is separately typeset with ReportLab, not a compiled AASTeX proof. The journal portal is converting the AASTeX source. `build_manuscript.py --submission-pdf` also produces `rnaas-author.pdf`, a separately typeset author-supplied PDF of the same text and figure, without review-status labels. This uses ReportLab, not a LaTeX compiler. The portal explicitly permits an author-supplied PDF when its converter is delayed; inspect this PDF before approval.
 
 `make_figure.py` renders one two-panel scientific figure from preserved numeric inputs. It does not refit the data. `figure_sources.json` records input paths and SHA-256 hashes. Run from a Python environment containing numpy/matplotlib; the manuscript builder requires ReportLab. Run both scripts from any directory (they resolve paths relative to this package).
 
@@ -22,7 +22,7 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 1. Author metadata supplied: Independent researcher, New Delhi, India; kuberhob@gmail.com; ORCID 0009-0003-1379-7856.
 2. Author reads and verifies the text, claims, figure, citations, attribution and AI disclosure. Resolve the THYME light-curve identity if possible; otherwise retain the explicit provisional-novelty language.
 3. The working manuscript now cites the verified evidence DOI 10.5281/zenodo.23325261. This citation-only update postdates the frozen r2 evidence snapshot.
-4. Compile `rnaas.tex` with AASTeX 7, inspect the generated PDF, then recount after any changes. Current draft: 1,203 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
+4. Inspect the journal-converted PDF or the permitted author-supplied PDF, then recount after any changes. Current draft: 1,203 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
 5. Submit through https://aas.msubmit.net/ with journal Research Notes of the AAS. Review the portal's actual declarations and publication agreement; do not fabricate authorship, originality, funding or conflict answers. `cover-letter.txt` is a proposed cover note, not a sent message.
 
 ## Official guidance checked 13 October 2026 (local date)

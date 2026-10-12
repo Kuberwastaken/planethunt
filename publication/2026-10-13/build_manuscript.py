@@ -5,6 +5,7 @@ The PDF is a review copy, not a claim that AASTeX compiled locally.
 
 from pathlib import Path
 import json
+import argparse
 from xml.sax.saxutils import escape
 from reportlab.platypus import (
     SimpleDocTemplate,
@@ -14,6 +15,10 @@ from reportlab.platypus import (
 )
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--submission-pdf", action="store_true", help="Produce a clean author-supplied PDF from the same text")
+args = parser.parse_args()
 
 P = Path(__file__).resolve().parent
 m = json.loads((P / "manuscript.json").read_text())
@@ -138,7 +143,7 @@ if m["email"]:
     flow.append(Paragraph(escape(m["email"]), styles["PaperSmall"]))
 flow.extend(
     [
-        Paragraph(escape(m["status"]), styles["PaperSmall"]),
+        *([] if args.submission_pdf else [Paragraph(escape(m["status"]), styles["PaperSmall"])]),
         Spacer(1, 7),
         Paragraph("Abstract", styles["PaperHead"]),
         Paragraph(escape(m["abstract"]), styles["PaperBody"]),
@@ -164,12 +169,12 @@ flow.extend(
 def footer(canvas, doc):
     canvas.setFont("Helvetica", 8)
     canvas.setFillColor(colors.HexColor("#666666"))
-    canvas.drawString(54, 30, "PLANETHUNT | Author-review draft | 13 October 2026")
+    canvas.drawString(54, 30, "Kuber Mehta | KIC 5689121" if args.submission_pdf else "PLANETHUNT | Author-review draft | 13 October 2026")
     canvas.drawRightString(558, 30, str(doc.page))
 
 
 SimpleDocTemplate(
-    str(P / "rnaas-review.pdf"),
+    str(P / ("rnaas-author.pdf" if args.submission_pdf else "rnaas-review.pdf")),
     pagesize=(612, 792),
     rightMargin=54,
     leftMargin=54,

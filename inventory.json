@@ -12899,8 +12899,8 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 4561,
-      "sha256": "89f21461b3946ecbfce7f3b2bca3b7a45e173f98df35948beb202c7a44b64681"
+      "bytes": 4857,
+      "sha256": "33c51a1cec2c29cd83155becd251a6ddf892e6573f93119f171a28950b8b25aa"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
@@ -12914,8 +12914,8 @@
     },
     {
       "path": "publication/2026-10-13/build_manuscript.py",
-      "bytes": 5760,
-      "sha256": "0654fb4593361943dfbfddc7b983c6a4d6bea9c787dad2d199b5235e41550460"
+      "bytes": 6104,
+      "sha256": "947d9f9e00fa993d59dc3aeed527c8671ccafe49f160dc811903ef61142ddece"
     },
     {
       "path": "publication/2026-10-13/bulk-data-manifest.json",
@@ -12961,6 +12961,11 @@
       "path": "publication/2026-10-13/manuscript.json",
       "bytes": 9468,
       "sha256": "f344f0d4391c74e0b3c3f3ced82b41a083d722f740357d5ab5c974488649289d"
+    },
+    {
+      "path": "publication/2026-10-13/rnaas-author.pdf",
+      "bytes": 109955,
+      "sha256": "517db78623356a62f8e7ee9a0d2b95db13276a6eff7d5baee1fbed54929c0ddc"
     },
     {
       "path": "publication/2026-10-13/rnaas-review.pdf",
