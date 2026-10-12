@@ -2,6 +2,8 @@
 
 Prepared 12 October 2026. This is a scientific collaboration and observing brief, not an approved proposal or a promise of confirmation.
 
+**Second-pass update:** Read [the subsequent archive results](../archive-exhaustion-20261012/README.md) before using this brief. HST/JWST footprint checks now succeeded; new TGLC, ZTF, PTF, NEOWISE and CFHT data were examined. The exact star also occurs in the Barber et al. 2022 MELANGE-3 candidate list, without a confirmed age or membership. Its authors are relevant scientific-review contacts. The original archive limitations below are historical and are superseded where the second pass supplies results.
+
 ## The question to answer
 
 The Kepler transit signal survives the existing holdout, pixel, contamination and timing checks. The largest remaining model branch is a planet transiting an unresolved bound companion rather than the adopted M dwarf. Existing survey images do not exclude that configuration. We need to identify the host, constrain hidden stars, and independently recover the transit.

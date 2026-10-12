@@ -1,0 +1,2354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/STC/v1.30 http://www.ivoa.net/xml/STC/v1.30">
+  <RESOURCE>
+    <INFO name="ORIGIN" value="IPAC Infrared Science Archive (IRSA), Caltech/JPL"/>
+    <INFO name="SIMULATED_TABLE" value="n"/>
+    <INFO name="DATETIME" value="2026-10-12 10:48:46"/>
+    <INFO name="DATABASE" value="PTF Sources Catalog (ptf_sources)"/>
+    <INFO name="EQUINOX" value="J2000"/>
+    <INFO name="SKYAREA" value="within 5 arcsec of  ra=285.90783 dec=+40.94199 Eq J2000 "/>
+    <INFO name="StatusFile" value="/workspace/TMP_biqFpJ_487501/Gator/irsa/487501/log.487501.html"/>
+    <INFO name="SQL" value="WHERE (no constraints)"/>
+    <INFO name="SQL" value="SELECT (77 column names follow in next row.)"/>
+    <TABLE>
+      <DESCRIPTION>                                                                              
+
+ra (deg) 
+___ Object Right Ascension
+dec (deg) 
+___ Object Declination
+clon 
+___ Right ascention in Sexagesimal format.
+clat 
+___ Declination in Sexagesimal format.
+sid 
+___ Source database ID (= procimage database ID x1000000 + SExtractor NUMBER)
+hmjd (d) 
+___ Helocentric MJD plus one half of the exposure time
+obsmjd (d) 
+___ Observation MJD plus one half of the exposure time
+zone 
+___ Declination zone database ID
+pid 
+___ Processed-image database ID
+ccdid 
+___ CCD ID
+nid 
+___ Night database ID
+fid 
+___ Filter identifier (1 = g; 2 = R)
+qaflags 
+___ Source QA flags [bit flags]
+sextractor 
+___ SExtractor NUMBER
+flags 
+___ SExtractor IMAFLAGS_ISO (upper 16 bits) and FLAGS (lower 16 bits) [bit flags]
+flux_auto (count) 
+___ SExtractor FLUX_AUTO
+fluxerr_auto (count) 
+___ SExtractor FLUXERR_AUTO
+mag_auto (mag) 
+___ Calibrated SExtractor MAG_AUTO
+magerr_auto (mag) 
+___ Calibrated SExtractor MAGERR_AUTO
+mag_iso (mag) 
+___ Calibrated SExtractor MAG_ISO
+magerr_iso (mag) 
+___ Calibrated SExtractor MAGERR_ISO
+mag_aper_1 (mag) 
+___ Calibrated SExtractor MAG_APERTURE #1
+magerr_aper_1 (mag) 
+___ Calibrated SExtractor MAGERR_APERTURE #1
+mag_aper_2 (mag) 
+___ Calibrated SExtractor MAG_APERTURE #2
+magerr_aper_2 (mag) 
+___ Calibrated SExtractor MAGERR_APERTURE #2
+mag_aper_3 (mag) 
+___ Calibrated SExtractor MAG_APERTURE #3
+magerr_aper_3 (mag) 
+___ Calibrated SExtractor MAGERR_APERTURE #3
+mag_aper_4 (mag) 
+___ Calibrated SExtractor MAG_APERTURE #4
+magerr_aper_4 (mag) 
+___ Calibrated SExtractor MAGERR_APERTURE #4
+mag_aper_5 (mag) 
+___ Calibrated SExtractor MAG_APERTURE #5
+magerr_aper_5 (mag) 
+___ Calibrated SExtractor MAGERR_APERTURE #5
+mag_petro (mag) 
+___ Calibrated SExtractor MAG_PETRO
+magerr_petro (mag) 
+___ Calibrated SExtractor MAGERR_PETRO
+absphotzp (mag) 
+___ Absolute photometric zeropoint
+mu_threshold (mag/arcsec**2) 
+___ SExtractor MU_THRESHOLD (detection, above background)
+mu_max (mag/arcsec**2) 
+___ SExtractor MU_MAX (peak surface brightness above background)
+background (count) 
+___ SExtractor BACKGROUND
+threshold (count) 
+___ SExtractor THRESHOLD (detection, above background)
+xpeak_image (pixel) 
+___ SExtractor XPEAK_IMAGE (x-coordinate of brightest pixel)
+ypeak_image (pixel) 
+___ SExtractor YPEAK_IMAGE (y-coordinate of brightest pixel)
+x_image (pixel) 
+___ SExtractor XWIN_IMAGE (image x-coordinate of source)
+y_image (pixel) 
+___ SExtractor YWIN_IMAGE (image y-coordinate of source)
+ismerged 
+___ Flag indicating that source has been merged [0=NO, 1=YES]
+x2_image (pixel**2) 
+___ SExtractor X2WIN_IMAGE (source-position variance along x-axis)
+y2_image (pixel**2) 
+___ SExtractor Y2WIN_IMAGE (source-position variance along y-axis)
+xy_image (pixel**2) 
+___ SExtractor XYWIN_IMAGE (source-position x-y covariance)
+a_world (arcsec) 
+___ SExtractor AWIN_WORLD (profile RMS along world major axis)
+b_world (arcsec) 
+___ SExtractor BWIN_WORLD (profile RMS along world minor axis)
+theta_j2000 (deg) 
+___ SExtractor THETAWIN_J2000 (ellipse angle E of N in J2000)
+isoarea_world (deg**2) 
+___ SExtractor ISOAREA_WORLD (Isophotal A above threshold)
+fwhm_image (pixel) 
+___ SExtractor FWHM_IMAGE
+kron_radius 
+___ SExtractor KRON_RADIUS [AorB]
+petro_radius 
+___ SExtractor PETRO_RADIUS [AorB]
+class_star 
+___ SExtractor CLASS_STAR (star/galaxy classifier output)
+errx2_image (pixel**2) 
+___ SExtractor ERRX2WIN_IMAGE (error in source-position variance along x-axis)
+erry2_image (pixel**2) 
+___ SExtractor ERRY2WIN_IMAGE (error in source-position variance along y-axis)
+errxy_image (pixel**2) 
+___ SExtractor ERRXYWIN_IMAGE (error in source-position x-y covariance)
+flux_radius_1 (pixel) 
+___ SExtractor FLUX_RADIUS(1)
+flux_radius_2 (pixel) 
+___ SExtractor FLUX_RADIUS(2)
+flux_radius_3 (pixel) 
+___ SExtractor FLUX_RADIUS(3)
+flux_radius_4 (pixel) 
+___ SExtractor FLUX_RADIUS(4)
+flux_radius_5 (pixel) 
+___ SExtractor FLUX_RADIUS(5)
+ptffield 
+___ PTF field number
+exptime (s) 
+___ Exposure time
+fwhmsex (arcsec) 
+___ SExtractor FWHM
+airmass 
+___ Airmass
+colorterm (mag) 
+___ Absolute photometric calibration colorterm
+airmasscolorterm (mag) 
+___ Absolute photometric calibration airmass-colorterm
+bsrms (mag) 
+___ Absolute photometric calibration bright-star RMS
+limitmag (mag) 
+___ Limiting magnitude
+medianskymag (mag) 
+___ Median sky magnitude
+moonphas (deg) 
+___ Moon phase angle
+moonesb (mag) 
+___ Moon excess in sky brightness [V-band]
+photcalflag 
+___ Flag indicating source is photometrically calibrated [0=NO, 1=YES]
+goodflag 
+___ Flag indicating source is good [0=NO, 1=YES]
+ipac_gid 
+___ IPAC Group ID
+ipac_pub_date 
+___ IPAC Publication Date
+dist (arcsec) 
+___ Distance between the target position and each source in arcsec.
+angle (deg) 
+___ Position Angle in degree.
+</DESCRIPTION>
+      <FIELD name="ra" datatype="double" precision="7" ucd="pos.eq.ra;meta.main" unit="deg" width="11">
+        <DESCRIPTION>Object Right Ascension</DESCRIPTION>
+      </FIELD>
+      <FIELD name="dec" datatype="double" precision="7" ucd="pos.eq.dec;meta.main" unit="deg" width="11">
+        <DESCRIPTION>Object Declination</DESCRIPTION>
+      </FIELD>
+      <FIELD name="clon" datatype="char" arraysize="*"/>
+      <FIELD name="clat" datatype="char" arraysize="*"/>
+      <FIELD name="sid" datatype="long" ucd="null" unit="null">
+        <DESCRIPTION>Source database ID (= procimage database ID x1000000 + SExtractor NUMBER)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="hmjd" datatype="double" precision="9" ucd="null" unit="d" width="16">
+        <DESCRIPTION>Helocentric MJD plus one half of the exposure time</DESCRIPTION>
+      </FIELD>
+      <FIELD name="obsmjd" datatype="double" precision="9" ucd="null" unit="d" width="16">
+        <DESCRIPTION>Observation MJD plus one half of the exposure time</DESCRIPTION>
+      </FIELD>
+      <FIELD name="zone" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Declination zone database ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="pid" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Processed-image database ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ccdid" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>CCD ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="nid" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Night database ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="fid" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Filter identifier (1 = g; 2 = R)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="qaflags" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Source QA flags [bit flags]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="sextractor" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>SExtractor NUMBER</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flags" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>SExtractor IMAFLAGS_ISO (upper 16 bits) and FLAGS (lower 16 bits) [bit flags]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_auto" datatype="double" precision="6" ucd="null" unit="count" width="19">
+        <DESCRIPTION>SExtractor FLUX_AUTO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="fluxerr_auto" datatype="double" precision="8" ucd="null" unit="count" width="15">
+        <DESCRIPTION>SExtractor FLUXERR_AUTO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_auto" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_AUTO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_auto" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_AUTO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_iso" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_ISO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_iso" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_ISO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_aper_1" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_APERTURE #1</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_aper_1" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_APERTURE #1</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_aper_2" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_APERTURE #2</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_aper_2" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_APERTURE #2</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_aper_3" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_APERTURE #3</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_aper_3" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_APERTURE #3</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_aper_4" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_APERTURE #4</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_aper_4" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_APERTURE #4</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_aper_5" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_APERTURE #5</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_aper_5" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_APERTURE #5</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mag_petro" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAG_PETRO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="magerr_petro" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Calibrated SExtractor MAGERR_PETRO</DESCRIPTION>
+      </FIELD>
+      <FIELD name="absphotzp" datatype="double" precision="4" ucd="null" unit="mag" width="9">
+        <DESCRIPTION>Absolute photometric zeropoint</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mu_threshold" datatype="double" precision="4" ucd="null" unit="mag/arcsec**2" width="9">
+        <DESCRIPTION>SExtractor MU_THRESHOLD (detection, above background)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="mu_max" datatype="double" precision="4" ucd="null" unit="mag/arcsec**2" width="9">
+        <DESCRIPTION>SExtractor MU_MAX (peak surface brightness above background)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="background" datatype="double" precision="4" ucd="null" unit="count" width="9">
+        <DESCRIPTION>SExtractor BACKGROUND</DESCRIPTION>
+      </FIELD>
+      <FIELD name="threshold" datatype="double" precision="4" ucd="null" unit="count" width="9">
+        <DESCRIPTION>SExtractor THRESHOLD (detection, above background)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="xpeak_image" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor XPEAK_IMAGE (x-coordinate of brightest pixel)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ypeak_image" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor YPEAK_IMAGE (y-coordinate of brightest pixel)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="x_image" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor XWIN_IMAGE (image x-coordinate of source)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="y_image" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor YWIN_IMAGE (image y-coordinate of source)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ismerged" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Flag indicating that source has been merged [0=NO, 1=YES]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="x2_image" datatype="double" precision="4" ucd="null" unit="pixel**2" width="9">
+        <DESCRIPTION>SExtractor X2WIN_IMAGE (source-position variance along x-axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="y2_image" datatype="double" precision="4" ucd="null" unit="pixel**2" width="9">
+        <DESCRIPTION>SExtractor Y2WIN_IMAGE (source-position variance along y-axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="xy_image" datatype="double" precision="4" ucd="null" unit="pixel**2" width="9">
+        <DESCRIPTION>SExtractor XYWIN_IMAGE (source-position x-y covariance)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="a_world" datatype="double" precision="4" ucd="null" unit="arcsec" width="9">
+        <DESCRIPTION>SExtractor AWIN_WORLD (profile RMS along world major axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="b_world" datatype="double" precision="4" ucd="null" unit="arcsec" width="9">
+        <DESCRIPTION>SExtractor BWIN_WORLD (profile RMS along world minor axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="theta_j2000" datatype="double" precision="4" ucd="null" unit="deg" width="9">
+        <DESCRIPTION>SExtractor THETAWIN_J2000 (ellipse angle E of N in J2000)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="isoarea_world" datatype="double" precision="6" ucd="null" unit="deg**2" width="16">
+        <DESCRIPTION>SExtractor ISOAREA_WORLD (Isophotal A above threshold)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="fwhm_image" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FWHM_IMAGE</DESCRIPTION>
+      </FIELD>
+      <FIELD name="kron_radius" datatype="double" precision="4" ucd="null" unit="null" width="9">
+        <DESCRIPTION>SExtractor KRON_RADIUS [AorB]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="petro_radius" datatype="double" precision="4" ucd="null" unit="null" width="9">
+        <DESCRIPTION>SExtractor PETRO_RADIUS [AorB]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="class_star" datatype="double" precision="4" ucd="null" unit="null" width="9">
+        <DESCRIPTION>SExtractor CLASS_STAR (star/galaxy classifier output)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="errx2_image" datatype="double" precision="4" ucd="null" unit="pixel**2" width="9">
+        <DESCRIPTION>SExtractor ERRX2WIN_IMAGE (error in source-position variance along x-axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="erry2_image" datatype="double" precision="4" ucd="null" unit="pixel**2" width="9">
+        <DESCRIPTION>SExtractor ERRY2WIN_IMAGE (error in source-position variance along y-axis)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="errxy_image" datatype="double" precision="6" ucd="null" unit="pixel**2" width="14">
+        <DESCRIPTION>SExtractor ERRXYWIN_IMAGE (error in source-position x-y covariance)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_radius_1" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FLUX_RADIUS(1)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_radius_2" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FLUX_RADIUS(2)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_radius_3" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FLUX_RADIUS(3)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_radius_4" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FLUX_RADIUS(4)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="flux_radius_5" datatype="double" precision="4" ucd="null" unit="pixel" width="9">
+        <DESCRIPTION>SExtractor FLUX_RADIUS(5)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ptffield" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>PTF field number</DESCRIPTION>
+      </FIELD>
+      <FIELD name="exptime" datatype="double" precision="3" ucd="null" unit="s" width="7">
+        <DESCRIPTION>Exposure time</DESCRIPTION>
+      </FIELD>
+      <FIELD name="fwhmsex" datatype="double" precision="3" ucd="null" unit="arcsec" width="7">
+        <DESCRIPTION>SExtractor FWHM</DESCRIPTION>
+      </FIELD>
+      <FIELD name="airmass" datatype="double" precision="3" ucd="null" unit="null" width="7">
+        <DESCRIPTION>Airmass</DESCRIPTION>
+      </FIELD>
+      <FIELD name="colorterm" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Absolute photometric calibration colorterm</DESCRIPTION>
+      </FIELD>
+      <FIELD name="airmasscolorterm" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Absolute photometric calibration airmass-colorterm</DESCRIPTION>
+      </FIELD>
+      <FIELD name="bsrms" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Absolute photometric calibration bright-star RMS</DESCRIPTION>
+      </FIELD>
+      <FIELD name="limitmag" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Limiting magnitude</DESCRIPTION>
+      </FIELD>
+      <FIELD name="medianskymag" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Median sky magnitude</DESCRIPTION>
+      </FIELD>
+      <FIELD name="moonphas" datatype="double" precision="3" ucd="null" unit="deg" width="7">
+        <DESCRIPTION>Moon phase angle</DESCRIPTION>
+      </FIELD>
+      <FIELD name="moonesb" datatype="double" precision="3" ucd="null" unit="mag" width="7">
+        <DESCRIPTION>Moon excess in sky brightness [V-band]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="photcalflag" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Flag indicating source is photometrically calibrated [0=NO, 1=YES]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="goodflag" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>Flag indicating source is good [0=NO, 1=YES]</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ipac_gid" datatype="int" ucd="null" unit="null">
+        <DESCRIPTION>IPAC Group ID</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ipac_pub_date" datatype="char" arraysize="*" ucd="null" unit="null">
+        <DESCRIPTION>IPAC Publication Date</DESCRIPTION>
+      </FIELD>
+      <FIELD name="dist" datatype="double" unit="arcsec"/>
+      <FIELD name="angle" datatype="double" unit="deg"/>
+      <DATA>
+        <TABLEDATA>
+          <TR>
+            <TD>285.90783099999999</TD>
+            <TD>40.941983999999998</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.14s</TD>
+            <TD>9672536007121</TD>
+            <TD>55720.344277199998</TD>
+            <TD>55720.342277199998</TD>
+            <TD>4913</TD>
+            <TD>9672536</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7121</TD>
+            <TD>131075</TD>
+            <TD>9384.3085940000001</TD>
+            <TD>123.89424133</TD>
+            <TD>17.864000000000001</TD>
+            <TD>0.035000000000000003</TD>
+            <TD>17.860399999999998</TD>
+            <TD>0.035200000000000002</TD>
+            <TD>19.2928</TD>
+            <TD>0.042000000000000003</TD>
+            <TD>18.252199999999998</TD>
+            <TD>0.035200000000000002</TD>
+            <TD>18.0504</TD>
+            <TD>0.034799999999999998</TD>
+            <TD>17.832799999999999</TD>
+            <TD>0.035499999999999997</TD>
+            <TD>17.814499999999999</TD>
+            <TD>0.036700000000000003</TD>
+            <TD>17.773599999999998</TD>
+            <TD>0.040000000000000001</TD>
+            <TD>27.795000000000002</TD>
+            <TD>-3.4996999999999998</TD>
+            <TD>-7.5285000000000002</TD>
+            <TD>294.37880000000001</TD>
+            <TD>24.4757</TD>
+            <TD>877</TD>
+            <TD>2275</TD>
+            <TD>876.64089999999999</TD>
+            <TD>2274.9857999999999</TD>
+            <TD>0</TD>
+            <TD>0.82899999999999996</TD>
+            <TD>0.74560000000000004</TD>
+            <TD>-0.0129</TD>
+            <TD>0.92159999999999997</TD>
+            <TD>0.87119999999999997</TD>
+            <TD>81.521500000000003</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.7025999999999999</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.97970000000000002</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.9617</TD>
+            <TD>1.4656</TD>
+            <TD>2.5514000000000001</TD>
+            <TD>3.1656</TD>
+            <TD>3.4990999999999999</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.6499999999999999</TD>
+            <TD>1.0600000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.873999999999999</TD>
+            <TD>21.623000000000001</TD>
+            <TD>99.683000000000007</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.019439000000000001</TD>
+            <TD>172.824466</TD>
+          </TR>
+          <TR>
+            <TD>285.90784000000002</TD>
+            <TD>40.941980999999998</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.13s</TD>
+            <TD>9672539006892</TD>
+            <TD>55720.300207200002</TD>
+            <TD>55720.298207200001</TD>
+            <TD>4913</TD>
+            <TD>9672539</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>6892</TD>
+            <TD>131075</TD>
+            <TD>10160.041992</TD>
+            <TD>136.83779906999999</TD>
+            <TD>17.753699999999998</TD>
+            <TD>0.035099999999999999</TD>
+            <TD>17.794599999999999</TD>
+            <TD>0.035499999999999997</TD>
+            <TD>19.303699999999999</TD>
+            <TD>0.042000000000000003</TD>
+            <TD>18.233899999999998</TD>
+            <TD>0.035400000000000001</TD>
+            <TD>18.0139</TD>
+            <TD>0.035099999999999999</TD>
+            <TD>17.719100000000001</TD>
+            <TD>0.035299999999999998</TD>
+            <TD>17.665099999999999</TD>
+            <TD>0.036200000000000003</TD>
+            <TD>17.6617</TD>
+            <TD>0.038699999999999998</TD>
+            <TD>27.771000000000001</TD>
+            <TD>-3.5181</TD>
+            <TD>-7.3423999999999996</TD>
+            <TD>389.97230000000002</TD>
+            <TD>26.055700000000002</TD>
+            <TD>870</TD>
+            <TD>2294</TD>
+            <TD>869.65340000000003</TD>
+            <TD>2294.366</TD>
+            <TD>0</TD>
+            <TD>1.0255000000000001</TD>
+            <TD>0.95220000000000005</TD>
+            <TD>0.038800000000000001</TD>
+            <TD>1.0331999999999999</TD>
+            <TD>0.97919999999999996</TD>
+            <TD>-66.427300000000002</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>3.1103999999999998</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.97019999999999995</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>1.9999999999999999e-06</TD>
+            <TD>1.0246999999999999</TD>
+            <TD>1.6686000000000001</TD>
+            <TD>2.7705000000000002</TD>
+            <TD>3.2707000000000002</TD>
+            <TD>3.601</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.9500000000000002</TD>
+            <TD>1.167</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.588000000000001</TD>
+            <TD>21.303000000000001</TD>
+            <TD>100.25700000000001</TD>
+            <TD>-0.95899999999999996</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.029481</TD>
+            <TD>139.993132</TD>
+          </TR>
+          <TR>
+            <TD>285.90783900000002</TD>
+            <TD>40.941983</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.14s</TD>
+            <TD>9672543006851</TD>
+            <TD>55720.477177200002</TD>
+            <TD>55720.475177200002</TD>
+            <TD>4913</TD>
+            <TD>9672543</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>6851</TD>
+            <TD>131075</TD>
+            <TD>9561.5732420000004</TD>
+            <TD>153.9506073</TD>
+            <TD>17.832000000000001</TD>
+            <TD>0.036400000000000002</TD>
+            <TD>17.844200000000001</TD>
+            <TD>0.036600000000000001</TD>
+            <TD>18.9816</TD>
+            <TD>0.039699999999999999</TD>
+            <TD>18.0748</TD>
+            <TD>0.035700000000000003</TD>
+            <TD>17.925899999999999</TD>
+            <TD>0.035799999999999998</TD>
+            <TD>17.790600000000001</TD>
+            <TD>0.038199999999999998</TD>
+            <TD>17.773800000000001</TD>
+            <TD>0.040599999999999997</TD>
+            <TD>17.7745</TD>
+            <TD>0.042099999999999999</TD>
+            <TD>27.7834</TD>
+            <TD>-3.9218000000000002</TD>
+            <TD>-7.6825000000000001</TD>
+            <TD>1014.41</TD>
+            <TD>37.062100000000001</TD>
+            <TD>886</TD>
+            <TD>2297</TD>
+            <TD>885.52779999999996</TD>
+            <TD>2297.2827000000002</TD>
+            <TD>0</TD>
+            <TD>0.59640000000000004</TD>
+            <TD>0.56820000000000004</TD>
+            <TD>0.021600000000000001</TD>
+            <TD>0.78839999999999999</TD>
+            <TD>0.75600000000000001</TD>
+            <TD>-61.333599999999997</TD>
+            <TD>1.9999999999999999e-06</TD>
+            <TD>2.4137</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.98960000000000004</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>9.9999999999999995e-07</TD>
+            <TD>0.84079999999999999</TD>
+            <TD>1.3105</TD>
+            <TD>2.2021999999999999</TD>
+            <TD>2.7176</TD>
+            <TD>3.0480999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.25</TD>
+            <TD>1.0780000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.382000000000001</TD>
+            <TD>20.288</TD>
+            <TD>97.948999999999998</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.029481</TD>
+            <TD>135.83721499999999</TD>
+          </TR>
+          <TR>
+            <TD>285.907849</TD>
+            <TD>40.941989</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.16s</TD>
+            <TD>9672431007626</TD>
+            <TD>55720.326847199998</TD>
+            <TD>55720.324847199998</TD>
+            <TD>4913</TD>
+            <TD>9672431</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7626</TD>
+            <TD>131075</TD>
+            <TD>9559.6669920000004</TD>
+            <TD>116.90225220000001</TD>
+            <TD>17.836400000000001</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>17.821200000000001</TD>
+            <TD>0.034700000000000002</TD>
+            <TD>19.123699999999999</TD>
+            <TD>0.040500000000000001</TD>
+            <TD>18.113800000000001</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>17.9314</TD>
+            <TD>0.034299999999999997</TD>
+            <TD>17.7883</TD>
+            <TD>0.035200000000000002</TD>
+            <TD>17.770600000000002</TD>
+            <TD>0.036299999999999999</TD>
+            <TD>17.770600000000002</TD>
+            <TD>0.037400000000000003</TD>
+            <TD>27.787500000000001</TD>
+            <TD>-3.4632000000000001</TD>
+            <TD>-7.7680999999999996</TD>
+            <TD>289.44709999999998</TD>
+            <TD>24.186900000000001</TD>
+            <TD>874</TD>
+            <TD>2297</TD>
+            <TD>873.99159999999995</TD>
+            <TD>2296.8762000000002</TD>
+            <TD>0</TD>
+            <TD>0.64159999999999995</TD>
+            <TD>0.63280000000000003</TD>
+            <TD>-0.0134</TD>
+            <TD>0.81720000000000004</TD>
+            <TD>0.79920000000000002</TD>
+            <TD>53.910600000000002</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.4260999999999999</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.97789999999999999</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.86799999999999999</TD>
+            <TD>1.3527</TD>
+            <TD>2.27</TD>
+            <TD>2.7023000000000001</TD>
+            <TD>3.1032000000000002</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.0940000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>22.004000000000001</TD>
+            <TD>21.632999999999999</TD>
+            <TD>99.909999999999997</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.044114</TD>
+            <TD>93.985708000000002</TD>
+          </TR>
+          <TR>
+            <TD>285.90784100000002</TD>
+            <TD>40.942003</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.21s</TD>
+            <TD>21846619010534</TD>
+            <TD>56828.317647199998</TD>
+            <TD>56828.315367199997</TD>
+            <TD>4913</TD>
+            <TD>21846619</TD>
+            <TD>10</TD>
+            <TD>1897</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10534</TD>
+            <TD>131075</TD>
+            <TD>33609.554687999997</TD>
+            <TD>177.52148438</TD>
+            <TD>16.3414</TD>
+            <TD>0.0263</TD>
+            <TD>16.304200000000002</TD>
+            <TD>0.0264</TD>
+            <TD>17.324999999999999</TD>
+            <TD>0.027400000000000001</TD>
+            <TD>16.546299999999999</TD>
+            <TD>0.0263</TD>
+            <TD>16.426100000000002</TD>
+            <TD>0.026200000000000001</TD>
+            <TD>16.314800000000002</TD>
+            <TD>0.0264</TD>
+            <TD>16.293099999999999</TD>
+            <TD>0.026499999999999999</TD>
+            <TD>16.289200000000001</TD>
+            <TD>0.026599999999999999</TD>
+            <TD>27.657499999999999</TD>
+            <TD>-3.6307</TD>
+            <TD>-9.4901</TD>
+            <TD>523.77639999999997</TD>
+            <TD>28.555299999999999</TD>
+            <TD>861</TD>
+            <TD>2281</TD>
+            <TD>861.14279999999997</TD>
+            <TD>2280.6772000000001</TD>
+            <TD>0</TD>
+            <TD>0.43690000000000001</TD>
+            <TD>0.43919999999999998</TD>
+            <TD>-0.0118</TD>
+            <TD>0.6804</TD>
+            <TD>0.65880000000000005</TD>
+            <TD>42.345799999999997</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>1.8057000000000001</TD>
+            <TD>2.5</TD>
+            <TD>3.96</TD>
+            <TD>0.96619999999999995</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.73029999999999995</TD>
+            <TD>1.1576</TD>
+            <TD>2.0821999999999998</TD>
+            <TD>2.7258</TD>
+            <TD>3.2290000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>1.75</TD>
+            <TD>1.0529999999999999</TD>
+            <TD>0.22900000000000001</TD>
+            <TD>-0.0050000000000000001</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.878</TD>
+            <TD>20.870000000000001</TD>
+            <TD>263.38099999999997</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.045276999999999998</TD>
+            <TD>32.585169</TD>
+          </TR>
+          <TR>
+            <TD>285.90784200000002</TD>
+            <TD>40.941997000000001</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.19s</TD>
+            <TD>9672541007538</TD>
+            <TD>55720.318437200003</TD>
+            <TD>55720.316437200003</TD>
+            <TD>4913</TD>
+            <TD>9672541</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7538</TD>
+            <TD>131075</TD>
+            <TD>9731.8515619999998</TD>
+            <TD>117.88967896</TD>
+            <TD>17.8126</TD>
+            <TD>0.034500000000000003</TD>
+            <TD>17.790500000000002</TD>
+            <TD>0.034799999999999998</TD>
+            <TD>19.081</TD>
+            <TD>0.040000000000000001</TD>
+            <TD>18.107600000000001</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>17.9314</TD>
+            <TD>0.0344</TD>
+            <TD>17.762699999999999</TD>
+            <TD>0.035200000000000002</TD>
+            <TD>17.753</TD>
+            <TD>0.036299999999999999</TD>
+            <TD>17.745200000000001</TD>
+            <TD>0.038899999999999997</TD>
+            <TD>27.783100000000001</TD>
+            <TD>-3.484</TD>
+            <TD>-7.6955999999999998</TD>
+            <TD>295.4588</TD>
+            <TD>24.349</TD>
+            <TD>875</TD>
+            <TD>2273</TD>
+            <TD>874.85220000000004</TD>
+            <TD>2272.6786999999999</TD>
+            <TD>0</TD>
+            <TD>0.65159999999999996</TD>
+            <TD>0.63990000000000002</TD>
+            <TD>-0.00020000000000000001</TD>
+            <TD>0.81720000000000004</TD>
+            <TD>0.81000000000000005</TD>
+            <TD>86.817499999999995</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.5278999999999998</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.97989999999999999</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.86299999999999999</TD>
+            <TD>1.3607</TD>
+            <TD>2.3147000000000002</TD>
+            <TD>2.8281999999999998</TD>
+            <TD>3.1606000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.1140000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.986000000000001</TD>
+            <TD>21.600999999999999</TD>
+            <TD>100.02</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.045276999999999998</TD>
+            <TD>52.323059999999998</TD>
+          </TR>
+          <TR>
+            <TD>285.90782000000002</TD>
+            <TD>40.941997000000001</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.19s</TD>
+            <TD>9672516007833</TD>
+            <TD>55720.468727200001</TD>
+            <TD>55720.466727200001</TD>
+            <TD>4913</TD>
+            <TD>9672516</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7833</TD>
+            <TD>131075</TD>
+            <TD>9764.5185550000006</TD>
+            <TD>118.85025786999999</TD>
+            <TD>17.813500000000001</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>17.7851</TD>
+            <TD>0.0349</TD>
+            <TD>18.929400000000001</TD>
+            <TD>0.038199999999999998</TD>
+            <TD>18.056100000000001</TD>
+            <TD>0.034500000000000003</TD>
+            <TD>17.9086</TD>
+            <TD>0.0344</TD>
+            <TD>17.7608</TD>
+            <TD>0.035299999999999998</TD>
+            <TD>17.7273</TD>
+            <TD>0.036400000000000002</TD>
+            <TD>17.717300000000002</TD>
+            <TD>0.037600000000000001</TD>
+            <TD>27.787700000000001</TD>
+            <TD>-3.5097999999999998</TD>
+            <TD>-7.7789999999999999</TD>
+            <TD>371.47570000000002</TD>
+            <TD>25.541399999999999</TD>
+            <TD>884</TD>
+            <TD>2299</TD>
+            <TD>884.43550000000005</TD>
+            <TD>2298.8831</TD>
+            <TD>0</TD>
+            <TD>0.58960000000000001</TD>
+            <TD>0.56330000000000002</TD>
+            <TD>0.0027000000000000001</TD>
+            <TD>0.77759999999999996</TD>
+            <TD>0.75960000000000005</TD>
+            <TD>-84.613</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.3123</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.9506</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.82909999999999995</TD>
+            <TD>1.2949999999999999</TD>
+            <TD>2.1859000000000002</TD>
+            <TD>2.7315999999999998</TD>
+            <TD>3.0769000000000002</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.1499999999999999</TD>
+            <TD>1.0620000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.963999999999999</TD>
+            <TD>21.359000000000002</TD>
+            <TD>98.058999999999997</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.048108999999999999</TD>
+            <TD>312.82109300000002</TD>
+          </TR>
+          <TR>
+            <TD>285.90782799999999</TD>
+            <TD>40.941974000000002</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.11s</TD>
+            <TD>9672444005123</TD>
+            <TD>55720.485697199998</TD>
+            <TD>55720.483687200001</TD>
+            <TD>4913</TD>
+            <TD>9672444</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>5123</TD>
+            <TD>131075</TD>
+            <TD>9489.0253909999992</TD>
+            <TD>294.67645263999998</TD>
+            <TD>17.8354</TD>
+            <TD>0.046399999999999997</TD>
+            <TD>17.8354</TD>
+            <TD>0.046399999999999997</TD>
+            <TD>19.0625</TD>
+            <TD>0.050900000000000001</TD>
+            <TD>18.1022</TD>
+            <TD>0.043700000000000003</TD>
+            <TD>17.9343</TD>
+            <TD>0.0448</TD>
+            <TD>17.7865</TD>
+            <TD>0.0533</TD>
+            <TD>17.7318</TD>
+            <TD>0.0596</TD>
+            <TD>17.705200000000001</TD>
+            <TD>0.069800000000000001</TD>
+            <TD>27.778400000000001</TD>
+            <TD>-4.7531999999999996</TD>
+            <TD>-7.7187999999999999</TD>
+            <TD>4925.8671999999997</TD>
+            <TD>80.671999999999997</TD>
+            <TD>884</TD>
+            <TD>2285</TD>
+            <TD>883.93619999999999</TD>
+            <TD>2285.3407999999999</TD>
+            <TD>0</TD>
+            <TD>0.63270000000000004</TD>
+            <TD>0.63109999999999999</TD>
+            <TD>0.0097999999999999997</TD>
+            <TD>0.81000000000000005</TD>
+            <TD>0.79920000000000002</TD>
+            <TD>-46.865600000000001</TD>
+            <TD>1.9999999999999999e-06</TD>
+            <TD>2.5022000000000002</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.88490000000000002</TD>
+            <TD>0.00040000000000000002</TD>
+            <TD>0.00040000000000000002</TD>
+            <TD>0</TD>
+            <TD>0.86850000000000005</TD>
+            <TD>1.3492999999999999</TD>
+            <TD>2.2265000000000001</TD>
+            <TD>2.7050999999999998</TD>
+            <TD>3.0531000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.0960000000000001</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>20.478000000000002</TD>
+            <TD>18.568999999999999</TD>
+            <TD>97.837999999999994</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.048305000000000001</TD>
+            <TD>185.39397299999999</TD>
+          </TR>
+          <TR>
+            <TD>285.90785</TD>
+            <TD>40.942</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.20s</TD>
+            <TD>9672463006942</TD>
+            <TD>55720.292377199999</TD>
+            <TD>55720.290377199999</TD>
+            <TD>4913</TD>
+            <TD>9672463</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>6942</TD>
+            <TD>131075</TD>
+            <TD>9625.0117190000001</TD>
+            <TD>135.30439758</TD>
+            <TD>17.8062</TD>
+            <TD>0.035400000000000001</TD>
+            <TD>17.787099999999999</TD>
+            <TD>0.035799999999999998</TD>
+            <TD>19.182300000000001</TD>
+            <TD>0.0407</TD>
+            <TD>18.1693</TD>
+            <TD>0.035299999999999998</TD>
+            <TD>17.992699999999999</TD>
+            <TD>0.035200000000000002</TD>
+            <TD>17.767299999999999</TD>
+            <TD>0.035999999999999997</TD>
+            <TD>17.735800000000001</TD>
+            <TD>0.0373</TD>
+            <TD>17.709</TD>
+            <TD>0.039600000000000003</TD>
+            <TD>27.764700000000001</TD>
+            <TD>-3.5768</TD>
+            <TD>-7.3601999999999999</TD>
+            <TD>480.34719999999999</TD>
+            <TD>27.916399999999999</TD>
+            <TD>871</TD>
+            <TD>2292</TD>
+            <TD>870.56740000000002</TD>
+            <TD>2292.4319</TD>
+            <TD>0</TD>
+            <TD>0.84189999999999998</TD>
+            <TD>0.81679999999999997</TD>
+            <TD>-0.030300000000000001</TD>
+            <TD>0.93959999999999999</TD>
+            <TD>0.90359999999999996</TD>
+            <TD>56.339700000000001</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.9443000000000001</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.94359999999999999</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>-1.9999999999999999e-06</TD>
+            <TD>0.94399999999999995</TD>
+            <TD>1.5317000000000001</TD>
+            <TD>2.5179999999999998</TD>
+            <TD>3.0322</TD>
+            <TD>3.3559000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.75</TD>
+            <TD>1.194</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.547999999999998</TD>
+            <TD>21.077000000000002</TD>
+            <TD>100.35899999999999</TD>
+            <TD>-0.96399999999999997</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.058236000000000003</TD>
+            <TD>56.498451000000003</TD>
+          </TR>
+          <TR>
+            <TD>285.90785199999999</TD>
+            <TD>40.942</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.20s</TD>
+            <TD>9672504007678</TD>
+            <TD>55720.3095072</TD>
+            <TD>55720.307507199999</TD>
+            <TD>4913</TD>
+            <TD>9672504</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7678</TD>
+            <TD>131075</TD>
+            <TD>10187.326171999999</TD>
+            <TD>119.1335144</TD>
+            <TD>17.757400000000001</TD>
+            <TD>0.0344</TD>
+            <TD>17.744299999999999</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>18.9298</TD>
+            <TD>0.038199999999999998</TD>
+            <TD>18.026299999999999</TD>
+            <TD>0.034299999999999997</TD>
+            <TD>17.872</TD>
+            <TD>0.034200000000000001</TD>
+            <TD>17.7148</TD>
+            <TD>0.035000000000000003</TD>
+            <TD>17.712499999999999</TD>
+            <TD>0.0361</TD>
+            <TD>17.701499999999999</TD>
+            <TD>0.037199999999999997</TD>
+            <TD>27.7776</TD>
+            <TD>-3.4470999999999998</TD>
+            <TD>-7.7164999999999999</TD>
+            <TD>319.4042</TD>
+            <TD>24.442900000000002</TD>
+            <TD>873</TD>
+            <TD>2272</TD>
+            <TD>872.62130000000002</TD>
+            <TD>2272.3047000000001</TD>
+            <TD>0</TD>
+            <TD>0.64529999999999998</TD>
+            <TD>0.57579999999999998</TD>
+            <TD>0.0044999999999999997</TD>
+            <TD>0.81359999999999999</TD>
+            <TD>0.76680000000000004</TD>
+            <TD>-86.007900000000006</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.3868</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.92730000000000001</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.83909999999999996</TD>
+            <TD>1.323</TD>
+            <TD>2.2515000000000001</TD>
+            <TD>2.8066</TD>
+            <TD>3.1221000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.25</TD>
+            <TD>1.1379999999999999</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.989999999999998</TD>
+            <TD>21.521000000000001</TD>
+            <TD>100.136</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.058236000000000003</TD>
+            <TD>58.962595</TD>
+          </TR>
+          <TR>
+            <TD>285.90784600000001</TD>
+            <TD>40.942008999999999</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.23s</TD>
+            <TD>21846605010559</TD>
+            <TD>56828.293767199997</TD>
+            <TD>56828.2914972</TD>
+            <TD>4913</TD>
+            <TD>21846605</TD>
+            <TD>10</TD>
+            <TD>1897</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10559</TD>
+            <TD>131075</TD>
+            <TD>34226.691405999998</TD>
+            <TD>176.29600525000001</TD>
+            <TD>16.3111</TD>
+            <TD>0.026200000000000001</TD>
+            <TD>16.2758</TD>
+            <TD>0.0264</TD>
+            <TD>17.236499999999999</TD>
+            <TD>0.027199999999999998</TD>
+            <TD>16.5</TD>
+            <TD>0.0263</TD>
+            <TD>16.389500000000002</TD>
+            <TD>0.026200000000000001</TD>
+            <TD>16.2803</TD>
+            <TD>0.0263</TD>
+            <TD>16.2563</TD>
+            <TD>0.026499999999999999</TD>
+            <TD>16.254000000000001</TD>
+            <TD>0.026499999999999999</TD>
+            <TD>27.646999999999998</TD>
+            <TD>-3.6718999999999999</TD>
+            <TD>-9.3754000000000008</TD>
+            <TD>543.56849999999997</TD>
+            <TD>28.869599999999998</TD>
+            <TD>858</TD>
+            <TD>2278</TD>
+            <TD>858.45569999999998</TD>
+            <TD>2277.7539000000002</TD>
+            <TD>0</TD>
+            <TD>0.44700000000000001</TD>
+            <TD>0.41399999999999998</TD>
+            <TD>-0.0016000000000000001</TD>
+            <TD>0.67679999999999996</TD>
+            <TD>0.65159999999999996</TD>
+            <TD>87.328500000000005</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>1.9162999999999999</TD>
+            <TD>2.5</TD>
+            <TD>3.96</TD>
+            <TD>0.99029999999999996</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.73850000000000005</TD>
+            <TD>1.1286</TD>
+            <TD>2.0506000000000002</TD>
+            <TD>2.6831</TD>
+            <TD>3.1297999999999999</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>1.8500000000000001</TD>
+            <TD>1.099</TD>
+            <TD>0.22900000000000001</TD>
+            <TD>-0.0050000000000000001</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.786999999999999</TD>
+            <TD>20.817</TD>
+            <TD>263.685</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.072015999999999997</TD>
+            <TD>32.460593000000003</TD>
+          </TR>
+          <TR>
+            <TD>285.90784200000002</TD>
+            <TD>40.941968000000003</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.08s</TD>
+            <TD>9672477007675</TD>
+            <TD>55720.335887200003</TD>
+            <TD>55720.333887200002</TD>
+            <TD>4913</TD>
+            <TD>9672477</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>7675</TD>
+            <TD>131075</TD>
+            <TD>9903.0498050000006</TD>
+            <TD>120.92173767</TD>
+            <TD>17.802299999999999</TD>
+            <TD>0.034599999999999999</TD>
+            <TD>17.777200000000001</TD>
+            <TD>0.0349</TD>
+            <TD>19.016200000000001</TD>
+            <TD>0.038800000000000001</TD>
+            <TD>18.0807</TD>
+            <TD>0.034500000000000003</TD>
+            <TD>17.922699999999999</TD>
+            <TD>0.034299999999999997</TD>
+            <TD>17.773199999999999</TD>
+            <TD>0.035099999999999999</TD>
+            <TD>17.7424</TD>
+            <TD>0.0361</TD>
+            <TD>17.745999999999999</TD>
+            <TD>0.037600000000000001</TD>
+            <TD>27.791699999999999</TD>
+            <TD>-3.4697</TD>
+            <TD>-7.7351000000000001</TD>
+            <TD>284.58940000000001</TD>
+            <TD>24.187000000000001</TD>
+            <TD>874</TD>
+            <TD>2271</TD>
+            <TD>874.38739999999996</TD>
+            <TD>2271.1804000000002</TD>
+            <TD>0</TD>
+            <TD>0.6179</TD>
+            <TD>0.59960000000000002</TD>
+            <TD>0.025399999999999999</TD>
+            <TD>0.80640000000000001</TD>
+            <TD>0.77039999999999997</TD>
+            <TD>-54.5563</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.4053</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.98019999999999996</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>9.9999999999999995e-07</TD>
+            <TD>0.86329999999999996</TD>
+            <TD>1.3262</TD>
+            <TD>2.2845</TD>
+            <TD>2.8618000000000001</TD>
+            <TD>3.274</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.075</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>22.013999999999999</TD>
+            <TD>21.649999999999999</TD>
+            <TD>99.792000000000002</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.077998999999999999</TD>
+            <TD>157.60726099999999</TD>
+          </TR>
+          <TR>
+            <TD>285.90781800000002</TD>
+            <TD>40.941969</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.09s</TD>
+            <TD>12365444010695</TD>
+            <TD>55335.4706572</TD>
+            <TD>55335.469287200001</TD>
+            <TD>4913</TD>
+            <TD>12365444</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10695</TD>
+            <TD>131075</TD>
+            <TD>35071.863280999998</TD>
+            <TD>182.96968079000001</TD>
+            <TD>16.372900000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.3612</TD>
+            <TD>0.0269</TD>
+            <TD>17.328700000000001</TD>
+            <TD>0.027699999999999999</TD>
+            <TD>16.597100000000001</TD>
+            <TD>0.0269</TD>
+            <TD>16.470600000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.3462</TD>
+            <TD>0.0269</TD>
+            <TD>16.328600000000002</TD>
+            <TD>0.027099999999999999</TD>
+            <TD>16.3264</TD>
+            <TD>0.027300000000000001</TD>
+            <TD>27.735299999999999</TD>
+            <TD>-3.7122999999999999</TD>
+            <TD>-9.3829999999999991</TD>
+            <TD>561.07449999999994</TD>
+            <TD>30.640899999999998</TD>
+            <TD>844</TD>
+            <TD>2360</TD>
+            <TD>844.50340000000006</TD>
+            <TD>2359.9636</TD>
+            <TD>0</TD>
+            <TD>0.49709999999999999</TD>
+            <TD>0.43509999999999999</TD>
+            <TD>-0.0293</TD>
+            <TD>0.71999999999999997</TD>
+            <TD>0.65880000000000005</TD>
+            <TD>68.554400000000001</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>1.948</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.96599999999999997</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.74660000000000004</TD>
+            <TD>1.2012</TD>
+            <TD>2.1732999999999998</TD>
+            <TD>2.7827999999999999</TD>
+            <TD>3.2281</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>1.8500000000000001</TD>
+            <TD>1.012</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.838000000000001</TD>
+            <TD>20.838999999999999</TD>
+            <TD>109.875</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.079736000000000001</TD>
+            <TD>203.347061</TD>
+          </TR>
+          <TR>
+            <TD>285.90782200000001</TD>
+            <TD>40.941972</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.10s</TD>
+            <TD>12365468010498</TD>
+            <TD>55335.477917199998</TD>
+            <TD>55335.476537199997</TD>
+            <TD>4913</TD>
+            <TD>12365468</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10498</TD>
+            <TD>131075</TD>
+            <TD>34901.734375</TD>
+            <TD>178.95039367999999</TD>
+            <TD>16.380099999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.3902</TD>
+            <TD>0.0269</TD>
+            <TD>17.508199999999999</TD>
+            <TD>0.0281</TD>
+            <TD>16.6568</TD>
+            <TD>0.0269</TD>
+            <TD>16.502099999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.347899999999999</TD>
+            <TD>0.0269</TD>
+            <TD>16.3262</TD>
+            <TD>0.027</TD>
+            <TD>16.3215</TD>
+            <TD>0.027300000000000001</TD>
+            <TD>27.737200000000001</TD>
+            <TD>-3.6166</TD>
+            <TD>-9.2589000000000006</TD>
+            <TD>490.64929999999998</TD>
+            <TD>28.556000000000001</TD>
+            <TD>846</TD>
+            <TD>2338</TD>
+            <TD>846.41150000000005</TD>
+            <TD>2337.9940999999999</TD>
+            <TD>0</TD>
+            <TD>0.62090000000000001</TD>
+            <TD>0.5302</TD>
+            <TD>0.0080999999999999996</TD>
+            <TD>0.79920000000000002</TD>
+            <TD>0.73440000000000005</TD>
+            <TD>-84.495199999999997</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>2.2467999999999999</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.97709999999999997</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.82430000000000003</TD>
+            <TD>1.3162</TD>
+            <TD>2.2949000000000002</TD>
+            <TD>2.8784000000000001</TD>
+            <TD>3.2841999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.1499999999999999</TD>
+            <TD>1.0149999999999999</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.765999999999998</TD>
+            <TD>21.018000000000001</TD>
+            <TD>109.779</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.079736000000000001</TD>
+            <TD>198.55801600000001</TD>
+          </TR>
+          <TR>
+            <TD>285.90783699999997</TD>
+            <TD>40.941969</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.09s</TD>
+            <TD>12365463009336</TD>
+            <TD>55335.4409572</TD>
+            <TD>55335.439587200002</TD>
+            <TD>4913</TD>
+            <TD>12365463</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>9336</TD>
+            <TD>131075</TD>
+            <TD>36056.4375</TD>
+            <TD>189.24583435</TD>
+            <TD>16.335899999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.369800000000001</TD>
+            <TD>0.027</TD>
+            <TD>17.9084</TD>
+            <TD>0.029700000000000001</TD>
+            <TD>16.865300000000001</TD>
+            <TD>0.027199999999999998</TD>
+            <TD>16.631900000000002</TD>
+            <TD>0.027</TD>
+            <TD>16.327100000000002</TD>
+            <TD>0.0269</TD>
+            <TD>16.2654</TD>
+            <TD>0.027</TD>
+            <TD>16.2286</TD>
+            <TD>0.0276</TD>
+            <TD>27.728300000000001</TD>
+            <TD>-3.5948000000000002</TD>
+            <TD>-8.8206000000000007</TD>
+            <TD>370.53530000000001</TD>
+            <TD>27.5716</TD>
+            <TD>851</TD>
+            <TD>2360</TD>
+            <TD>850.81110000000001</TD>
+            <TD>2360.0681</TD>
+            <TD>0</TD>
+            <TD>0.94279999999999997</TD>
+            <TD>0.89700000000000002</TD>
+            <TD>-0.00069999999999999999</TD>
+            <TD>0.98280000000000001</TD>
+            <TD>0.95760000000000001</TD>
+            <TD>88.875699999999995</TD>
+            <TD>5.0000000000000004e-06</TD>
+            <TD>2.7856000000000001</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.9869</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1.0543</TD>
+            <TD>1.6538999999999999</TD>
+            <TD>2.8974000000000002</TD>
+            <TD>3.4872999999999998</TD>
+            <TD>3.8138000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.75</TD>
+            <TD>1.0149999999999999</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.616</TD>
+            <TD>21.257000000000001</TD>
+            <TD>110.267</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.080560999999999994</TD>
+            <TD>165.86720399999999</TD>
+          </TR>
+          <TR>
+            <TD>285.90780100000001</TD>
+            <TD>40.941997000000001</TD>
+            <TD>19h03m37.87s</TD>
+            <TD>40d56m31.19s</TD>
+            <TD>9672482005822</TD>
+            <TD>55720.353097200001</TD>
+            <TD>55720.3510972</TD>
+            <TD>4913</TD>
+            <TD>9672482</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>5822</TD>
+            <TD>131075</TD>
+            <TD>5114.2333980000003</TD>
+            <TD>96.660728449999993</TD>
+            <TD>18.5259</TD>
+            <TD>0.037999999999999999</TD>
+            <TD>18.6995</TD>
+            <TD>0.039100000000000003</TD>
+            <TD>20.224299999999999</TD>
+            <TD>0.054600000000000003</TD>
+            <TD>19.079699999999999</TD>
+            <TD>0.040000000000000001</TD>
+            <TD>18.7927</TD>
+            <TD>0.038300000000000001</TD>
+            <TD>18.475300000000001</TD>
+            <TD>0.038699999999999998</TD>
+            <TD>18.4267</TD>
+            <TD>0.040599999999999997</TD>
+            <TD>18.348700000000001</TD>
+            <TD>0.0458</TD>
+            <TD>27.797899999999998</TD>
+            <TD>-3.2240000000000002</TD>
+            <TD>-6.5574000000000003</TD>
+            <TD>160.53280000000001</TD>
+            <TD>19.880500000000001</TD>
+            <TD>876</TD>
+            <TD>2299</TD>
+            <TD>876.06700000000001</TD>
+            <TD>2298.5798</TD>
+            <TD>0</TD>
+            <TD>1.2122999999999999</TD>
+            <TD>1.0620000000000001</TD>
+            <TD>0.001</TD>
+            <TD>1.1124000000000001</TD>
+            <TD>1.044</TD>
+            <TD>-89.373400000000004</TD>
+            <TD>1.9999999999999999e-06</TD>
+            <TD>3.3999999999999999</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.95469999999999999</TD>
+            <TD>0.00029999999999999997</TD>
+            <TD>0.00029999999999999997</TD>
+            <TD>0</TD>
+            <TD>1.1196999999999999</TD>
+            <TD>1.7472000000000001</TD>
+            <TD>2.7418</TD>
+            <TD>3.1844999999999999</TD>
+            <TD>3.4146999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.9500000000000002</TD>
+            <TD>1.046</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>22.094000000000001</TD>
+            <TD>22.300000000000001</TD>
+            <TD>99.567999999999998</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.085675000000000001</TD>
+            <TD>287.721273</TD>
+          </TR>
+          <TR>
+            <TD>285.90781500000003</TD>
+            <TD>40.941966999999998</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.08s</TD>
+            <TD>12365455010895</TD>
+            <TD>55335.367187199998</TD>
+            <TD>55335.365807200003</TD>
+            <TD>4913</TD>
+            <TD>12365455</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10895</TD>
+            <TD>131075</TD>
+            <TD>35162.992187999997</TD>
+            <TD>179.51231383999999</TD>
+            <TD>16.336600000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.300799999999999</TD>
+            <TD>0.0269</TD>
+            <TD>17.439699999999998</TD>
+            <TD>0.0281</TD>
+            <TD>16.6084</TD>
+            <TD>0.0269</TD>
+            <TD>16.466999999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.314599999999999</TD>
+            <TD>0.0269</TD>
+            <TD>16.292100000000001</TD>
+            <TD>0.027</TD>
+            <TD>16.285499999999999</TD>
+            <TD>0.027099999999999999</TD>
+            <TD>27.701799999999999</TD>
+            <TD>-3.5669</TD>
+            <TD>-9.1295999999999999</TD>
+            <TD>419.16609999999997</TD>
+            <TD>27.033999999999999</TD>
+            <TD>847</TD>
+            <TD>2354</TD>
+            <TD>847.36559999999997</TD>
+            <TD>2354.3996999999999</TD>
+            <TD>0</TD>
+            <TD>0.54490000000000005</TD>
+            <TD>0.53200000000000003</TD>
+            <TD>-0.0022000000000000001</TD>
+            <TD>0.74519999999999997</TD>
+            <TD>0.73799999999999999</TD>
+            <TD>78.867699999999999</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>2.1709999999999998</TD>
+            <TD>2.5</TD>
+            <TD>3.96</TD>
+            <TD>0.96409999999999996</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.81379999999999997</TD>
+            <TD>1.2573000000000001</TD>
+            <TD>2.282</TD>
+            <TD>2.9592000000000001</TD>
+            <TD>3.4270999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.0499999999999998</TD>
+            <TD>1.1259999999999999</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.859999999999999</TD>
+            <TD>21.140999999999998</TD>
+            <TD>111.242</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.094633999999999996</TD>
+            <TD>206.226473</TD>
+          </TR>
+          <TR>
+            <TD>285.90781500000003</TD>
+            <TD>40.941966000000001</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.08s</TD>
+            <TD>12365467009745</TD>
+            <TD>55335.487147200001</TD>
+            <TD>55335.4857672</TD>
+            <TD>4913</TD>
+            <TD>12365467</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>9745</TD>
+            <TD>131075</TD>
+            <TD>35674.078125</TD>
+            <TD>208.42694091999999</TD>
+            <TD>16.3569</TD>
+            <TD>0.027</TD>
+            <TD>16.3019</TD>
+            <TD>0.027199999999999998</TD>
+            <TD>17.577100000000002</TD>
+            <TD>0.028400000000000002</TD>
+            <TD>16.677499999999998</TD>
+            <TD>0.027</TD>
+            <TD>16.512699999999999</TD>
+            <TD>0.027</TD>
+            <TD>16.3246</TD>
+            <TD>0.027099999999999999</TD>
+            <TD>16.289400000000001</TD>
+            <TD>0.027300000000000001</TD>
+            <TD>16.2638</TD>
+            <TD>0.027699999999999999</TD>
+            <TD>27.7377</TD>
+            <TD>-3.9142000000000001</TD>
+            <TD>-9.0300999999999991</TD>
+            <TD>923.85820000000001</TD>
+            <TD>36.700800000000001</TD>
+            <TD>853</TD>
+            <TD>2361</TD>
+            <TD>852.56759999999997</TD>
+            <TD>2361.4533999999999</TD>
+            <TD>0</TD>
+            <TD>0.60289999999999999</TD>
+            <TD>0.67149999999999999</TD>
+            <TD>-0.052400000000000002</TD>
+            <TD>0.84599999999999997</TD>
+            <TD>0.76680000000000004</TD>
+            <TD>28.865400000000001</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>2.4074</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.97799999999999998</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>-9.9999999999999995e-07</TD>
+            <TD>0.84540000000000004</TD>
+            <TD>1.371</TD>
+            <TD>2.4319999999999999</TD>
+            <TD>3.0264000000000002</TD>
+            <TD>3.4333</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.02</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.337</TD>
+            <TD>20.344000000000001</TD>
+            <TD>109.657</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.094633999999999996</TD>
+            <TD>205.27239800000001</TD>
+          </TR>
+          <TR>
+            <TD>285.90786900000001</TD>
+            <TD>40.941980999999998</TD>
+            <TD>19h03m37.89s</TD>
+            <TD>40d56m31.13s</TD>
+            <TD>9672439006616</TD>
+            <TD>55720.270587200001</TD>
+            <TD>55720.2685872</TD>
+            <TD>4913</TD>
+            <TD>9672439</TD>
+            <TD>10</TD>
+            <TD>818</TD>
+            <TD>1</TD>
+            <TD>0</TD>
+            <TD>6616</TD>
+            <TD>131075</TD>
+            <TD>9355.3359380000002</TD>
+            <TD>146.64233397999999</TD>
+            <TD>17.8157</TD>
+            <TD>0.036200000000000003</TD>
+            <TD>17.8308</TD>
+            <TD>0.036400000000000002</TD>
+            <TD>19.2697</TD>
+            <TD>0.043799999999999999</TD>
+            <TD>18.215199999999999</TD>
+            <TD>0.036299999999999999</TD>
+            <TD>17.997800000000002</TD>
+            <TD>0.035900000000000001</TD>
+            <TD>17.774799999999999</TD>
+            <TD>0.037199999999999997</TD>
+            <TD>17.788900000000002</TD>
+            <TD>0.0395</TD>
+            <TD>17.768699999999999</TD>
+            <TD>0.044200000000000003</TD>
+            <TD>27.743400000000001</TD>
+            <TD>-3.7583000000000002</TD>
+            <TD>-7.3981000000000003</TD>
+            <TD>638.23159999999996</TD>
+            <TD>32.292499999999997</TD>
+            <TD>868</TD>
+            <TD>2271</TD>
+            <TD>868.048</TD>
+            <TD>2271.2770999999998</TD>
+            <TD>0</TD>
+            <TD>0.83230000000000004</TD>
+            <TD>0.76239999999999997</TD>
+            <TD>-0.0071000000000000004</TD>
+            <TD>0.92520000000000002</TD>
+            <TD>0.88200000000000001</TD>
+            <TD>84.398200000000003</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.8978000000000002</TD>
+            <TD>2.5</TD>
+            <TD>5.2800000000000002</TD>
+            <TD>0.96379999999999999</TD>
+            <TD>0.0001</TD>
+            <TD>0.0001</TD>
+            <TD>0</TD>
+            <TD>0.98719999999999997</TD>
+            <TD>1.49</TD>
+            <TD>2.4998</TD>
+            <TD>3.0163000000000002</TD>
+            <TD>3.3109999999999999</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.6499999999999999</TD>
+            <TD>1.2869999999999999</TD>
+            <TD>0.081000000000000003</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>0.032000000000000001</TD>
+            <TD>21.408999999999999</TD>
+            <TD>20.736000000000001</TD>
+            <TD>100.643</TD>
+            <TD>-0.97999999999999998</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.106295</TD>
+            <TD>106.988083</TD>
+          </TR>
+          <TR>
+            <TD>285.90782000000002</TD>
+            <TD>40.941960999999999</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.06s</TD>
+            <TD>12365436011031</TD>
+            <TD>55335.431707199998</TD>
+            <TD>55335.430337199999</TD>
+            <TD>4913</TD>
+            <TD>12365436</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>11031</TD>
+            <TD>131075</TD>
+            <TD>35007.785155999998</TD>
+            <TD>172.47865295</TD>
+            <TD>16.366099999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.325299999999999</TD>
+            <TD>0.0269</TD>
+            <TD>17.399699999999999</TD>
+            <TD>0.028000000000000001</TD>
+            <TD>16.595700000000001</TD>
+            <TD>0.0269</TD>
+            <TD>16.460000000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.328299999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.308299999999999</TD>
+            <TD>0.027</TD>
+            <TD>16.3062</TD>
+            <TD>0.027</TD>
+            <TD>27.726500000000001</TD>
+            <TD>-3.5181</TD>
+            <TD>-9.5252999999999997</TD>
+            <TD>403.95979999999997</TD>
+            <TD>26.3596</TD>
+            <TD>852</TD>
+            <TD>2336</TD>
+            <TD>851.85990000000004</TD>
+            <TD>2335.7429000000002</TD>
+            <TD>0</TD>
+            <TD>0.49480000000000002</TD>
+            <TD>0.45090000000000002</TD>
+            <TD>-0.0028</TD>
+            <TD>0.71279999999999999</TD>
+            <TD>0.6804</TD>
+            <TD>86.505700000000004</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>1.8261000000000001</TD>
+            <TD>2.5</TD>
+            <TD>3.96</TD>
+            <TD>0.97589999999999999</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.76959999999999995</TD>
+            <TD>1.2082999999999999</TD>
+            <TD>2.1621000000000001</TD>
+            <TD>2.7248999999999999</TD>
+            <TD>3.1185999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>1.8500000000000001</TD>
+            <TD>1.02</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>22.021000000000001</TD>
+            <TD>21.219000000000001</TD>
+            <TD>110.389</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.10660500000000001</TD>
+            <TD>194.599636</TD>
+          </TR>
+          <TR>
+            <TD>285.90781299999998</TD>
+            <TD>40.941960999999999</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.06s</TD>
+            <TD>12365458010535</TD>
+            <TD>55335.456957199996</TD>
+            <TD>55335.455577200002</TD>
+            <TD>4913</TD>
+            <TD>12365458</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10535</TD>
+            <TD>131075</TD>
+            <TD>33707.34375</TD>
+            <TD>171.33702087</TD>
+            <TD>16.4131</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.395299999999999</TD>
+            <TD>0.0269</TD>
+            <TD>17.654699999999998</TD>
+            <TD>0.0286</TD>
+            <TD>16.708100000000002</TD>
+            <TD>0.027</TD>
+            <TD>16.5382</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.376300000000001</TD>
+            <TD>0.0269</TD>
+            <TD>16.353300000000001</TD>
+            <TD>0.027</TD>
+            <TD>16.348199999999999</TD>
+            <TD>0.027199999999999998</TD>
+            <TD>27.732399999999998</TD>
+            <TD>-3.5413000000000001</TD>
+            <TD>-9.0679999999999996</TD>
+            <TD>405.64159999999998</TD>
+            <TD>26.298400000000001</TD>
+            <TD>846</TD>
+            <TD>2360</TD>
+            <TD>845.81949999999995</TD>
+            <TD>2360.2939000000001</TD>
+            <TD>0</TD>
+            <TD>0.64470000000000005</TD>
+            <TD>0.58079999999999998</TD>
+            <TD>0.019699999999999999</TD>
+            <TD>0.81720000000000004</TD>
+            <TD>0.76680000000000004</TD>
+            <TD>-73.819500000000005</TD>
+            <TD>3.0000000000000001e-06</TD>
+            <TD>2.3719000000000001</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.98089999999999999</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.84760000000000002</TD>
+            <TD>1.3290999999999999</TD>
+            <TD>2.3104</TD>
+            <TD>2.8538000000000001</TD>
+            <TD>3.2439</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.25</TD>
+            <TD>1.0109999999999999</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.812999999999999</TD>
+            <TD>21.216999999999999</TD>
+            <TD>110.056</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.108276</TD>
+            <TD>203.884017</TD>
+          </TR>
+          <TR>
+            <TD>285.90781399999997</TD>
+            <TD>40.941960999999999</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.06s</TD>
+            <TD>12365464010908</TD>
+            <TD>55335.4641672</TD>
+            <TD>55335.462787199998</TD>
+            <TD>4913</TD>
+            <TD>12365464</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10908</TD>
+            <TD>131075</TD>
+            <TD>35782.640625</TD>
+            <TD>177.12437439000001</TD>
+            <TD>16.349900000000002</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.341899999999999</TD>
+            <TD>0.0269</TD>
+            <TD>17.520199999999999</TD>
+            <TD>0.028400000000000002</TD>
+            <TD>16.639399999999998</TD>
+            <TD>0.0269</TD>
+            <TD>16.485800000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.321000000000002</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.290600000000001</TD>
+            <TD>0.0269</TD>
+            <TD>16.2807</TD>
+            <TD>0.027099999999999999</TD>
+            <TD>27.734100000000002</TD>
+            <TD>-3.5337999999999998</TD>
+            <TD>-9.4189000000000007</TD>
+            <TD>414.06200000000001</TD>
+            <TD>26.5093</TD>
+            <TD>843</TD>
+            <TD>2360</TD>
+            <TD>843.17819999999995</TD>
+            <TD>2359.8975</TD>
+            <TD>0</TD>
+            <TD>0.60089999999999999</TD>
+            <TD>0.505</TD>
+            <TD>0.0172</TD>
+            <TD>0.78480000000000005</TD>
+            <TD>0.71640000000000004</TD>
+            <TD>-79.7042</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>1.9955000000000001</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.98060000000000003</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.78939999999999999</TD>
+            <TD>1.3069999999999999</TD>
+            <TD>2.3332000000000002</TD>
+            <TD>3.0001000000000002</TD>
+            <TD>3.4030999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.0499999999999998</TD>
+            <TD>1.0109999999999999</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.902999999999999</TD>
+            <TD>21.195</TD>
+            <TD>109.95999999999999</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.108276</TD>
+            <TD>202.62432100000001</TD>
+          </TR>
+          <TR>
+            <TD>285.90786000000003</TD>
+            <TD>40.942014999999998</TD>
+            <TD>19h03m37.89s</TD>
+            <TD>40d56m31.25s</TD>
+            <TD>21846580010204</TD>
+            <TD>56828.268797199999</TD>
+            <TD>56828.266517199998</TD>
+            <TD>4913</TD>
+            <TD>21846580</TD>
+            <TD>10</TD>
+            <TD>1897</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10204</TD>
+            <TD>131075</TD>
+            <TD>33707.984375</TD>
+            <TD>180.20840454</TD>
+            <TD>16.313099999999999</TD>
+            <TD>0.0263</TD>
+            <TD>16.277899999999999</TD>
+            <TD>0.0264</TD>
+            <TD>17.409500000000001</TD>
+            <TD>0.027900000000000001</TD>
+            <TD>16.541699999999999</TD>
+            <TD>0.0263</TD>
+            <TD>16.412099999999999</TD>
+            <TD>0.0263</TD>
+            <TD>16.287099999999999</TD>
+            <TD>0.0264</TD>
+            <TD>16.271699999999999</TD>
+            <TD>0.026599999999999999</TD>
+            <TD>16.267399999999999</TD>
+            <TD>0.026599999999999999</TD>
+            <TD>27.632400000000001</TD>
+            <TD>-3.702</TD>
+            <TD>-9.3592999999999993</TD>
+            <TD>574.07219999999995</TD>
+            <TD>29.5627</TD>
+            <TD>856</TD>
+            <TD>2277</TD>
+            <TD>855.87959999999998</TD>
+            <TD>2277.0972000000002</TD>
+            <TD>0</TD>
+            <TD>0.55679999999999996</TD>
+            <TD>0.498</TD>
+            <TD>-0.0068999999999999999</TD>
+            <TD>0.75600000000000001</TD>
+            <TD>0.71279999999999999</TD>
+            <TD>83.674199999999999</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>2.0489000000000002</TD>
+            <TD>2.5</TD>
+            <TD>3.96</TD>
+            <TD>0.9788</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>0.74880000000000002</TD>
+            <TD>1.2788999999999999</TD>
+            <TD>2.1865000000000001</TD>
+            <TD>2.7711000000000001</TD>
+            <TD>3.2696999999999998</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>1.95</TD>
+            <TD>1.171</TD>
+            <TD>0.22900000000000001</TD>
+            <TD>-0.0050000000000000001</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.687000000000001</TD>
+            <TD>20.744</TD>
+            <TD>264.00299999999999</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.11651300000000001</TD>
+            <TD>42.190660999999999</TD>
+          </TR>
+          <TR>
+            <TD>285.907805</TD>
+            <TD>40.941960999999999</TD>
+            <TD>19h03m37.87s</TD>
+            <TD>40d56m31.06s</TD>
+            <TD>12365453010842</TD>
+            <TD>55335.449667200002</TD>
+            <TD>55335.448287200001</TD>
+            <TD>4913</TD>
+            <TD>12365453</TD>
+            <TD>10</TD>
+            <TD>435</TD>
+            <TD>2</TD>
+            <TD>0</TD>
+            <TD>10842</TD>
+            <TD>12713987</TD>
+            <TD>35400.199219000002</TD>
+            <TD>174.92578125</TD>
+            <TD>16.3581</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.339500000000001</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>17.5428</TD>
+            <TD>0.028299999999999999</TD>
+            <TD>16.660399999999999</TD>
+            <TD>0.0269</TD>
+            <TD>16.4969</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.322199999999999</TD>
+            <TD>0.026800000000000001</TD>
+            <TD>16.296800000000001</TD>
+            <TD>0.0269</TD>
+            <TD>16.2913</TD>
+            <TD>0.027099999999999999</TD>
+            <TD>27.730599999999999</TD>
+            <TD>-3.5438000000000001</TD>
+            <TD>-9.1210000000000004</TD>
+            <TD>431.44580000000002</TD>
+            <TD>26.278099999999998</TD>
+            <TD>848</TD>
+            <TD>2359</TD>
+            <TD>848.35230000000001</TD>
+            <TD>2359.4589999999998</TD>
+            <TD>0</TD>
+            <TD>0.65839999999999999</TD>
+            <TD>0.55049999999999999</TD>
+            <TD>0.0608</TD>
+            <TD>0.83879999999999999</TD>
+            <TD>0.73080000000000001</TD>
+            <TD>-65.354299999999995</TD>
+            <TD>3.9999999999999998e-06</TD>
+            <TD>2.4108999999999998</TD>
+            <TD>2.5</TD>
+            <TD>4.6200000000000001</TD>
+            <TD>0.98399999999999999</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>9.9999999999999995e-07</TD>
+            <TD>0.84230000000000005</TD>
+            <TD>1.3280000000000001</TD>
+            <TD>2.3517000000000001</TD>
+            <TD>2.9304999999999999</TD>
+            <TD>3.2715000000000001</TD>
+            <TD>4505</TD>
+            <TD>60</TD>
+            <TD>2.3500000000000001</TD>
+            <TD>1.012</TD>
+            <TD>0.20599999999999999</TD>
+            <TD>0.0089999999999999993</TD>
+            <TD>0.025999999999999999</TD>
+            <TD>21.734999999999999</TD>
+            <TD>21.155999999999999</TD>
+            <TD>110.152</TD>
+            <TD>0</TD>
+            <TD>0</TD>
+            <TD>1</TD>
+            <TD>101</TD>
+            <TD>2015-12-31 23:59:59</TD>
+            <TD>0.12798799999999999</TD>
+            <TD>213.07154499999999</TD>
+          </TR>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>

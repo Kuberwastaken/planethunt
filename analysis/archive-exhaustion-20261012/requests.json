@@ -1,0 +1,1121 @@
+[
+  {
+    "name": "gaia_field",
+    "url": "https://gea.esac.esa.int/tap-server/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select source_id,ra,dec,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,pmra,pmdec,parallax,ruwe from gaiadr3.gaia_source where 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',285.907827,40.941988,0.04)) and phot_g_mean_mag<20"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:31:30.344004+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+source_id%2cra%2cdec%2cphot_g_mean_mag%2cphot_bp_mean_mag%2cphot_rp_mean_mag%2cpmra%2cpmdec%2cparallax%2cruwe+from+gaiadr3.gaia_source+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2cra%2cdec%29%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.04%29%29+and+phot_g_mean_mag%3c20",
+      "size_download": 16996,
+      "time_connect": 0.238924,
+      "time_appconnect": 2.007183,
+      "time_starttransfer": 3.189453,
+      "time_total": 3.189932,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ehst_footprint",
+    "url": "https://hst.esac.esa.int/tap-server/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.ObsCore where 1=CONTAINS(POINT('ICRS',285.907827,40.941988),s_region)"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:56.894884+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://hst.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.ObsCore+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2c285.907827%2c40.941988%29%2cs_region%29",
+      "size_download": 425,
+      "time_connect": 0.006542,
+      "time_appconnect": 1.134755,
+      "time_starttransfer": 1.597508,
+      "time_total": 1.597852,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "jwst_footprint",
+    "url": "https://jwst.esac.esa.int/server/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.ObsCore where 1=CONTAINS(POINT('ICRS',285.907827,40.941988),s_region)"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:47:25.482441+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://jwst.esac.esa.int/server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.ObsCore+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2c285.907827%2c40.941988%29%2cs_region%29",
+      "size_download": 480,
+      "time_connect": 0.003232,
+      "time_appconnect": 1.047583,
+      "time_starttransfer": 1.516714,
+      "time_total": 1.517081,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "eso_footprint",
+    "url": "https://archive.eso.org/tap_obs/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.ObsCore where INTERSECTS(s_region,CIRCLE('ICRS',285.907827,40.941988,0.00028))=1"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:03.176069+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.eso.org/tap_obs/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.ObsCore+where+INTERSECTS%28s_region%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.00028%29%29%3d1",
+      "size_download": 591,
+      "time_connect": 0.743945,
+      "time_appconnect": 4.115707,
+      "time_starttransfer": 4.560032,
+      "time_total": 4.560349,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cadc_cfht",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.ObsCore where obs_collection='CFHT' and obs_id='3220116'"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:56.838259+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.ObsCore+where+obs_collection%3d%27CFHT%27+and+obs_id%3d%273220116%27",
+      "size_download": 1994,
+      "time_connect": 0.012597,
+      "time_appconnect": 1.213526,
+      "time_starttransfer": 1.547678,
+      "time_total": 1.548409,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cadc_footprint",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select obs_collection,obs_id,instrument_name,s_ra,s_dec,s_fov,s_resolution,t_min,t_max,dataproduct_type,access_url from ivoa.ObsCore where INTERSECTS(s_region,CIRCLE('ICRS',285.907827,40.941988,0.00028))=1"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:31:55.384670+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/argus/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+obs_collection%2cobs_id%2cinstrument_name%2cs_ra%2cs_dec%2cs_fov%2cs_resolution%2ct_min%2ct_max%2cdataproduct_type%2caccess_url+from+ivoa.ObsCore+where+INTERSECTS%28s_region%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.00028%29%29%3d1",
+      "size_download": 42308233,
+      "time_connect": 0.150119,
+      "time_appconnect": 1.583619,
+      "time_starttransfer": 3.20497,
+      "time_total": 28.24549,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cutout_1098087",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "ID": "cadc:CFHT/1098087p.fits.fz",
+      "CIRCLE": "285.907827 40.941988 0.025"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:45.518076+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws-uv.canfar.net/minoc/files/dXJpPWNhZGM6Q0ZIVC8xMDk4MDg3cC5maXRzLmZ6JmdudD1SZWFkR3JhbnQ=~l2fKEVV8ZlpIaWzx3qiNiQHE9Tv8yEQNdytqARv8uJm3DPQbfQfeWQCXFkWxtoybKCE4BsrDJ9iHBydZkYk5LOAuimjEFlr0gpt0pQfFuHidpFTyPMak60KDaw0nthL8Is8aiTV5E60PYt_NuL8a11vanY0CYGgreirmB92RTiiNBHYsVND1whaVcyWV8LjCi4_zs2RFpgs008s4ulzgtix4f4cM0AXoTGNs7PlRxxhHYV9Nq9xMJIZJKPHfKUwGq5cW55X2ihwyiIjY5ZD3GXF64WDhCf-avtDGMp7M3jW6uq0y4Uy8ge4Bk5Cux-IW3TlK5hHmQ2qc49a8R7eH9okRb2VdSzrCUGDA5Q141XEXK_8EXzFo69aeuGU3-6GQMFdVB-0JFYiaF_o25_WFzf-V_82M83BCpePF_5t2NynGyC1EeLf5c9WL9FbQJ5IJynKTuGTrlRVeBCNRwUk4m82LyEOqMKr789OAXVba5VHvgXamwUEVUt04ZAbhkM9Qf177MpqaQS615x9bOJkwEoMGhIuAx8HH5XoISOIZ3cO_BqX4xsQfVJ5k2AYngjy3l0zsNHaYurevVL6f-RUJ9aYHnbMDFZ6hl3SKAEAULXo99D1-HEoBseTwfGVdyiYMzOXF_S0vuJObFaZ6VECqjQ_vRAr53dLGaUJzopa0UeQ=/cadc:CFHT/1098087p.fits.fz?SUB=%5B21%5D%5B1025%3A1991%2C734%3A1700%5D",
+      "size_download": 1906560,
+      "time_connect": 0.101019,
+      "time_appconnect": 5.920499,
+      "time_starttransfer": 9.78411,
+      "time_total": 15.197699,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cutout_1098097",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "ID": "cadc:CFHT/1098097p.fits.fz",
+      "CIRCLE": "285.907827 40.941988 0.025"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:30.247343+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 404,
+      "url_effective": "https://cadc-west-01.canfar.net/raven/files/cadc:CFHT/1098097p.fits.fz?SUB=%5B21%5D%5B1025%3A1991%2C734%3A1700%5D",
+      "size_download": 38,
+      "time_connect": 0.10842,
+      "time_appconnect": 3.746268,
+      "time_starttransfer": 4.664969,
+      "time_total": 4.6655,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cutout_1098107",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "ID": "cadc:CFHT/1098107p.fits.fz",
+      "CIRCLE": "285.907827 40.941988 0.025"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:34.663671+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 404,
+      "url_effective": "https://cadc-west-01.canfar.net/raven/files/cadc:CFHT/1098107p.fits.fz?SUB=%5B21%5D%5B1025%3A1991%2C734%3A1700%5D",
+      "size_download": 38,
+      "time_connect": 0.007385,
+      "time_appconnect": 3.486916,
+      "time_starttransfer": 4.373056,
+      "time_total": 4.37525,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cutout_3220116",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "ID": "cadc:CFHT/3220116p.fits.fz",
+      "CIRCLE": "285.907827 40.941988 0.025"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:30.287635+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 403,
+      "url_effective": "https://cadc-west-01.canfar.net/raven/files/cadc:CFHT/3220116p.fits.fz?SUB=%5B6%5D%5B657%3A1625%2C1609%3A2587%5D",
+      "size_download": 18,
+      "time_connect": 0.110455,
+      "time_appconnect": 3.83919,
+      "time_starttransfer": 4.714958,
+      "time_total": 4.715528,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "cutout_MegaPipe_432_262",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync",
+    "params": {
+      "ID": "cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits",
+      "CIRCLE": "285.907827 40.941988 0.025"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:30.320591+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 404,
+      "url_effective": "https://cadc-west-01.canfar.net/raven/files/cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits?SUB=%5B0%5D%5B8832%3A9804%2C3397%3A4369%5D",
+      "size_download": 54,
+      "time_connect": 0.086261,
+      "time_appconnect": 3.877237,
+      "time_starttransfer": 4.744563,
+      "time_total": 4.744974,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "simbad_cone",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select main_id,otype,ra,dec,sp_type,rvz_radvel,nbref,oid from basic where 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',285.907827,40.941988,0.001))"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:34:58.760834+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+main_id%2cotype%2cra%2cdec%2csp_type%2crvz_radvel%2cnbref%2coid+from+basic+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2cra%2cdec%29%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.001%29%29",
+      "size_download": 135,
+      "time_connect": 0.29692,
+      "time_appconnect": 1.483584,
+      "time_starttransfer": 1.788357,
+      "time_total": 1.788762,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "simbad_ids",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select id from ident where oidref=25004526"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:46.374941+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+id+from+ident+where+oidref%3d25004526",
+      "size_download": 34,
+      "time_connect": 0.003881,
+      "time_appconnect": 0.682456,
+      "time_starttransfer": 0.994219,
+      "time_total": 0.994583,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "simbad_reference",
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select r.bibcode,r.title,r.doi from has_ref h join ref r on h.oidbibref=r.oidbib where h.oidref=25004526"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:47:25.493930+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://simbad.cds.unistra.fr/simbad/sim-tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+r.bibcode%2cr.title%2cr.doi+from+has_ref+h+join+ref+r+on+h.oidbibref%3dr.oidbib+where+h.oidref%3d25004526",
+      "size_download": 214,
+      "time_connect": 0.019125,
+      "time_appconnect": 1.026128,
+      "time_starttransfer": 1.519394,
+      "time_total": 1.519636,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "melange_table5",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/164/88/table5.dat",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:51:39.416802+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/164/88/table5.dat",
+      "size_download": 80264,
+      "time_connect": 0.003227,
+      "time_appconnect": 0.769513,
+      "time_starttransfer": 1.931288,
+      "time_total": 2.802353,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "melange_readme",
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/164/88/ReadMe",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:49:24.535797+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/164/88/ReadMe",
+      "size_download": 11106,
+      "time_connect": 0.239436,
+      "time_appconnect": 1.25086,
+      "time_starttransfer": 1.794171,
+      "time_total": 1.794523,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "lamost_dr9_actual",
+    "url": "https://sky.esa.int/esasky-tap/tap/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from catalogues.mv_lamost_dr9_lrs_fdw where 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',285.907827,40.941988,0.00138889))"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:47:25.825887+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://sky.esa.int/esasky-tap/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+catalogues.mv_lamost_dr9_lrs_fdw+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2cra%2cdec%29%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.00138889%29%29",
+      "size_download": 319,
+      "time_connect": 0.003551,
+      "time_appconnect": 1.393733,
+      "time_starttransfer": 1.856423,
+      "time_total": 1.856742,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "lamost_dr10_mstars",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/A+A/704/A274/table1",
+      "-c": "285.907827 +40.941988",
+      "-c.rs": "5",
+      "-out.max": "100"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:45:23.588338+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fA%2bA%2f704%2fA274%2ftable1&-c=285.907827+%2b40.941988&-c.rs=5&-out.max=100",
+      "size_download": 2929,
+      "time_connect": 0.508989,
+      "time_appconnect": 2.275818,
+      "time_starttransfer": 3.098684,
+      "time_total": 3.099021,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "lamost_dr7_mstars",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "V/156/dr7mslrs",
+      "-c": "285.907827 +40.941988",
+      "-c.rs": "5",
+      "-out.max": "100"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:45:23.595407+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=V%2f156%2fdr7mslrs&-c=285.907827+%2b40.941988&-c.rs=5&-out.max=100",
+      "size_download": 3308,
+      "time_connect": 0.503113,
+      "time_appconnect": 2.269401,
+      "time_starttransfer": 3.09968,
+      "time_total": 3.100039,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "apogee_dr17",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "III/286",
+      "-c": "285.907827 40.941988",
+      "-c.rs": "5",
+      "-out.all": "1",
+      "-out.max": "100"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:34:59.528432+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=III%2f286&-c=285.907827+40.941988&-c.rs=5&-out.all=1&-out.max=100",
+      "size_download": 30722,
+      "time_connect": 0.306184,
+      "time_appconnect": 1.756425,
+      "time_starttransfer": 2.546974,
+      "time_total": 2.549613,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "kepler_highres_compilation",
+    "url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv",
+    "params": {
+      "-source": "J/AJ/153/71/table2",
+      "-c": "285.907827 40.941988",
+      "-c.rs": "15",
+      "-out.all": "1",
+      "-out.max": "100"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:35:46.660680+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f153%2f71%2ftable2&-c=285.907827+40.941988&-c.rs=15&-out.all=1&-out.max=100",
+      "size_download": 4365,
+      "time_connect": 0.003358,
+      "time_appconnect": 0.681723,
+      "time_starttransfer": 1.266353,
+      "time_total": 1.266881,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ztf_objects_dr24",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "ztf_objects_dr24",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "3"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:48:48.182911+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=ztf_objects_dr24&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=3",
+      "size_download": 8817,
+      "time_connect": 0.003621,
+      "time_appconnect": 0.255795,
+      "time_starttransfer": 3.164497,
+      "time_total": 3.164853,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ztf_dr24_lightcurves",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+    "params": {
+      "POS": "CIRCLE 285.907827 40.941988 0.001388889",
+      "COLLECTION": "ztf_dr24",
+      "FORMAT": "CSV"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:49:48.695646+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE+285.907827+40.941988+0.001388889&COLLECTION=ztf_dr24&FORMAT=CSV",
+      "size_download": 533220,
+      "time_connect": 0.0046,
+      "time_appconnect": 0.171614,
+      "time_starttransfer": 25.76672,
+      "time_total": 25.965656,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ztf_neighbour_lightcurves",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+    "params": {
+      "POS": "CIRCLE 285.90521895334 40.94207048408 0.000555556",
+      "COLLECTION": "ztf_dr24",
+      "FORMAT": "CSV"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:52:02.806841+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE+285.90521895334+40.94207048408+0.000555556&COLLECTION=ztf_dr24&FORMAT=CSV",
+      "size_download": 536866,
+      "time_connect": 0.055737,
+      "time_appconnect": 0.867534,
+      "time_starttransfer": 25.810438,
+      "time_total": 26.183508,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ptf_lightcurves",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "ptf_lightcurves",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "3"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:48:48.375110+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=ptf_lightcurves&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=3",
+      "size_download": 39659,
+      "time_connect": 0.004124,
+      "time_appconnect": 0.259699,
+      "time_starttransfer": 3.33921,
+      "time_total": 3.362023,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "ptf_sources",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "ptf_sources",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "3"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:48:49.006810+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=ptf_sources&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=3",
+      "size_download": 85877,
+      "time_connect": 0.003637,
+      "time_appconnect": 0.326472,
+      "time_starttransfer": 3.937236,
+      "time_total": 3.977736,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "neowiser_p1bs_psd",
+    "url": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query",
+    "params": {
+      "catalog": "neowiser_p1bs_psd",
+      "objstr": "285.907827 +40.941988",
+      "spatial": "Cone",
+      "radius": "5",
+      "radunits": "arcsec",
+      "outfmt": "3"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:49:31.068109+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=neowiser_p1bs_psd&objstr=285.907827+%2b40.941988&spatial=Cone&radius=5&radunits=arcsec&outfmt=3",
+      "size_download": 731564,
+      "time_connect": 0.003039,
+      "time_appconnect": 0.31602,
+      "time_starttransfer": 45.546306,
+      "time_total": 46.030188,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_get_shortpoll",
+    "url": "https://mast.stsci.edu/api/v0/invoke",
+    "params": {
+      "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 285.907827, \"dec\": 40.941988, \"radius\": 0.0083333333}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1, \"timeout\": 5, \"cachebreaker\": \"planethunt-20261012-v2\"}"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:22.152745+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55002 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/api/v0/invoke?request=%7b%22service%22%3a+%22Mast.Caom.Cone%22%2c+%22params%22%3a+%7b%22ra%22%3a+285.907827%2c+%22dec%22%3a+40.941988%2c+%22radius%22%3a+0.0083333333%7d%2c+%22format%22%3a+%22json%22%2c+%22pagesize%22%3a+1000%2c+%22page%22%3a+1%2c+%22timeout%22%3a+5%2c+%22cachebreaker%22%3a+%22planethunt-20261012-v2%22%7d",
+      "size_download": 0,
+      "time_connect": 0.008151,
+      "time_appconnect": 1.120194,
+      "time_starttransfer": 0.0,
+      "time_total": 55.002694,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_post_shortpoll",
+    "url": "https://mast.stsci.edu/api/v0/invoke",
+    "params": {
+      "request": "{\"service\": \"Mast.Caom.Cone\", \"params\": {\"ra\": 285.907827, \"dec\": 40.941988, \"radius\": 0.0083333333}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1, \"timeout\": 5, \"cachebreaker\": \"planethunt-20261012-v2\"}"
+    },
+    "post": true,
+    "utc": "2026-10-12T17:32:22.145383+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55006 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/api/v0/invoke",
+      "size_download": 0,
+      "time_connect": 0.02269,
+      "time_appconnect": 1.13547,
+      "time_starttransfer": 0.0,
+      "time_total": 55.006691,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_tap_hst",
+    "url": "https://mast.stsci.edu/vo-tap/api/v0.1/caom/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.obscore where obs_collection='HST' AND CONTAINS(POINT('ICRS',285.907827,40.941988),s_region)=1"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:33:50.310803+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55002 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/vo-tap/api/v0.1/caom/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.obscore+where+obs_collection%3d%27HST%27+AND+CONTAINS%28POINT%28%27ICRS%27%2c285.907827%2c40.941988%29%2cs_region%29%3d1",
+      "size_download": 0,
+      "time_connect": 0.00665,
+      "time_appconnect": 1.138448,
+      "time_starttransfer": 0.0,
+      "time_total": 55.002832,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_tap_jwst",
+    "url": "https://mast.stsci.edu/vo-tap/api/v0.1/caom/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select * from ivoa.obscore where obs_collection='JWST' AND CONTAINS(POINT('ICRS',285.907827,40.941988),s_region)=1"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:33:50.308509+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55004 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/vo-tap/api/v0.1/caom/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+%2a+from+ivoa.obscore+where+obs_collection%3d%27JWST%27+AND+CONTAINS%28POINT%28%27ICRS%27%2c285.907827%2c40.941988%29%2cs_region%29%3d1",
+      "size_download": 0,
+      "time_connect": 0.005118,
+      "time_appconnect": 1.142008,
+      "time_starttransfer": 0.0,
+      "time_total": 55.004315,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_sia_hst",
+    "url": "https://mast.stsci.edu/vo-sia/api/v0.1/query",
+    "params": {
+      "POS": "CIRCLE 285.907827 40.941988 0.00028",
+      "COLLECTION": "HST",
+      "MAXREC": "10000"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:47.017306+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55002 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/vo-sia/api/v0.1/query?POS=CIRCLE+285.907827+40.941988+0.00028&COLLECTION=HST&MAXREC=10000",
+      "size_download": 0,
+      "time_connect": 0.004874,
+      "time_appconnect": 1.050783,
+      "time_starttransfer": 0.0,
+      "time_total": 55.002137,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "mast_sia_jwst",
+    "url": "https://mast.stsci.edu/vo-sia/api/v0.1/query",
+    "params": {
+      "POS": "CIRCLE 285.907827 40.941988 0.00028",
+      "COLLECTION": "JWST",
+      "MAXREC": "10000"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:32:47.026701+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55002 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://mast.stsci.edu/vo-sia/api/v0.1/query?POS=CIRCLE+285.907827+40.941988+0.00028&COLLECTION=JWST&MAXREC=10000",
+      "size_download": 0,
+      "time_connect": 0.008752,
+      "time_appconnect": 1.102794,
+      "time_starttransfer": 0.0,
+      "time_total": 55.002653,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "neowise_tap",
+    "url": "https://irsa.ipac.caltech.edu/TAP/sync",
+    "params": {
+      "REQUEST": "doQuery",
+      "LANG": "ADQL",
+      "FORMAT": "csv",
+      "QUERY": "select ra,dec,mjd,w1mpro,w1sigmpro,w2mpro,w2sigmpro,cc_flags,qual_frame,ph_qual from neowiser_p1bs_psd where 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',285.907827,40.941988,0.001388889))"
+    },
+    "post": false,
+    "utc": "2026-10-12T17:52:31.623108+00:00",
+    "returncode": 28,
+    "stderr": "curl: (28) Operation timed out after 55005 milliseconds with 0 bytes received\n",
+    "metrics": {
+      "http_code": 0,
+      "url_effective": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=select+ra%2cdec%2cmjd%2cw1mpro%2cw1sigmpro%2cw2mpro%2cw2sigmpro%2ccc_flags%2cqual_frame%2cph_qual+from+neowiser_p1bs_psd+where+1%3dCONTAINS%28POINT%28%27ICRS%27%2cra%2cdec%29%2cCIRCLE%28%27ICRS%27%2c285.907827%2c40.941988%2c0.001388889%29%29",
+      "size_download": 0,
+      "time_connect": 0.064101,
+      "time_appconnect": 0.906001,
+      "time_starttransfer": 0.0,
+      "time_total": 55.005208,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0040_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0040/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0040-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:31.575989+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0040/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0040-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 152640,
+      "time_connect": 0.009707,
+      "time_appconnect": 0.665156,
+      "time_starttransfer": 2.334888,
+      "time_total": 2.361157,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0026_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0026/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0026-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:30.773444+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0026/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0026-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 51840,
+      "time_connect": 0.004221,
+      "time_appconnect": 0.641931,
+      "time_starttransfer": 1.764838,
+      "time_total": 1.779629,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0041_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0041/cam2-ccd3/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0041-cam2-ccd3_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:33.083558+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0041/cam2-ccd3/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0041-cam2-ccd3_tess_v1_llc.fits",
+      "size_download": 141120,
+      "time_connect": 0.004288,
+      "time_appconnect": 0.609159,
+      "time_starttransfer": 2.255767,
+      "time_total": 2.284218,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0054_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0054/cam3-ccd1/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0054-cam3-ccd1_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:34.517831+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0054/cam3-ccd1/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0054-cam3-ccd1_tess_v1_llc.fits",
+      "size_download": 141120,
+      "time_connect": 0.005123,
+      "time_appconnect": 0.599897,
+      "time_starttransfer": 2.237677,
+      "time_total": 2.843224,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0014_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0014/cam2-ccd3/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0014-cam2-ccd3_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:29.175424+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0014/cam2-ccd3/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0014-cam2-ccd3_tess_v1_llc.fits",
+      "size_download": 54720,
+      "time_connect": 0.004402,
+      "time_appconnect": 0.648859,
+      "time_starttransfer": 1.776321,
+      "time_total": 1.802834,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0053_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0053/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0053-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:34.489965+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0053/cam2-ccd4/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0053-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 135360,
+      "time_connect": 0.003143,
+      "time_appconnect": 0.634173,
+      "time_starttransfer": 2.274112,
+      "time_total": 2.874111,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0026_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0026/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0026-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:29.175761+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0026/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0026-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 51840,
+      "time_connect": 0.004693,
+      "time_appconnect": 0.65429,
+      "time_starttransfer": 1.778297,
+      "time_total": 1.801191,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0040_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0040/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0040-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:31.087999+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0040/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0040-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 152640,
+      "time_connect": 0.007146,
+      "time_appconnect": 0.675316,
+      "time_starttransfer": 1.828531,
+      "time_total": 1.87063,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0014_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0014/cam2-ccd3/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0014-cam2-ccd3_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:29.185340+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0014/cam2-ccd3/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0014-cam2-ccd3_tess_v1_llc.fits",
+      "size_download": 54720,
+      "time_connect": 0.004169,
+      "time_appconnect": 0.638594,
+      "time_starttransfer": 1.816327,
+      "time_total": 1.830273,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0041_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0041/cam2-ccd3/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0041-cam2-ccd3_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:31.645056+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0041/cam2-ccd3/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0041-cam2-ccd3_tess_v1_llc.fits",
+      "size_download": 141120,
+      "time_connect": 0.004843,
+      "time_appconnect": 0.704145,
+      "time_starttransfer": 2.399445,
+      "time_total": 2.423736,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0054_2103792427466721792",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0054/cam3-ccd1/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0054-cam3-ccd1_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:36.242501+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0054/cam3-ccd1/0021/0379/2427/4667/hlsp_tglc_tess_ffi_gaiaid-2103792427466721792-s0054-cam3-ccd1_tess_v1_llc.fits",
+      "size_download": 141120,
+      "time_connect": 0.010197,
+      "time_appconnect": 1.3792,
+      "time_starttransfer": 3.083548,
+      "time_total": 3.115163,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "tglc_correct_0053_2103792461826460288",
+    "url": "https://archive.stsci.edu/hlsps/tglc/s0053/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0053-cam2-ccd4_tess_v1_llc.fits",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:34.383434+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://archive.stsci.edu/hlsps/tglc/s0053/cam2-ccd4/0021/0379/2461/8264/hlsp_tglc_tess_ffi_gaiaid-2103792461826460288-s0053-cam2-ccd4_tess_v1_llc.fits",
+      "size_download": 135360,
+      "time_connect": 0.004525,
+      "time_appconnect": 0.649858,
+      "time_starttransfer": 2.773773,
+      "time_total": 3.267216,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "links_3220116",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F3220116%2F3220116p",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:27.349120+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F3220116%2F3220116p",
+      "size_download": 7173,
+      "time_connect": 0.019494,
+      "time_appconnect": 1.437247,
+      "time_starttransfer": 1.872546,
+      "time_total": 1.873058,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "links_MegaPipe_432_262",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHTMEGAPIPE%3FMegaPipe.432.262%2FMegaPipe.432.262.R.MP9601",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:27.291549+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHTMEGAPIPE%3FMegaPipe.432.262%2FMegaPipe.432.262.R.MP9601",
+      "size_download": 6802,
+      "time_connect": 0.016802,
+      "time_appconnect": 1.413086,
+      "time_starttransfer": 1.812613,
+      "time_total": 1.813066,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "links_1098097",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098097%2F1098097p",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:27.307444+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098097%2F1098097p",
+      "size_download": 6874,
+      "time_connect": 0.020742,
+      "time_appconnect": 1.386236,
+      "time_starttransfer": 1.834857,
+      "time_total": 1.835272,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "links_1098107",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098107%2F1098107p",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:28.953321+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098107%2F1098107p",
+      "size_download": 6874,
+      "time_connect": 0.005055,
+      "time_appconnect": 1.214569,
+      "time_starttransfer": 1.623296,
+      "time_total": 1.623687,
+      "ssl_verify_result": 0
+    }
+  },
+  {
+    "name": "links_1098087",
+    "url": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098087%2F1098087p",
+    "params": {},
+    "post": false,
+    "utc": "2026-10-12T17:34:27.326081+00:00",
+    "returncode": 0,
+    "stderr": "",
+    "metrics": {
+      "http_code": 200,
+      "url_effective": "https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/datalink?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHT%3F1098087%2F1098087p",
+      "size_download": 6874,
+      "time_connect": 0.020524,
+      "time_appconnect": 1.427768,
+      "time_starttransfer": 1.850617,
+      "time_total": 1.851251,
+      "ssl_verify_result": 0
+    }
+  }
+]

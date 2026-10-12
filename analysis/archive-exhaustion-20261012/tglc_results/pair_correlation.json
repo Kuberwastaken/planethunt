@@ -1,0 +1,32 @@
+[
+  {
+    "sector": 14,
+    "n": 1237,
+    "cal_psf_correlation": 0.9081373843799432
+  },
+  {
+    "sector": 26,
+    "n": 1102,
+    "cal_psf_correlation": 0.8134904297652314
+  },
+  {
+    "sector": 40,
+    "n": 3917,
+    "cal_psf_correlation": 0.576529645196749
+  },
+  {
+    "sector": 41,
+    "n": 3658,
+    "cal_psf_correlation": 0.9182890810156408
+  },
+  {
+    "sector": 53,
+    "n": 3454,
+    "cal_psf_correlation": 0.6444924220029195
+  },
+  {
+    "sector": 54,
+    "n": 3571,
+    "cal_psf_correlation": 0.053510879426280133
+  }
+]

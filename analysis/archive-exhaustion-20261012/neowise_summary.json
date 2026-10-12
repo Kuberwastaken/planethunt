@@ -1,0 +1,22 @@
+{
+  "n_total": 514,
+  "note": "Geocentric barycentric correction; satellite position unavailable (<0.03 s impact). Broad WISE PSF: nearby-star blending remains.",
+  "w1": {
+    "n_quality": 475,
+    "n_inside": 3,
+    "median_magnitude": 12.771,
+    "median_error_mag": 0.029,
+    "robust_scatter_mag": 0.04744320000000004,
+    "global_baseline_delta_mag": -0.013520935894664632,
+    "formal_error_mag": 0.01671739213626134
+  },
+  "w2": {
+    "n_quality": 475,
+    "n_inside": 3,
+    "median_magnitude": 12.757,
+    "median_error_mag": 0.058,
+    "robust_scatter_mag": 0.07413000000000106,
+    "global_baseline_delta_mag": -0.0071422888612104884,
+    "formal_error_mag": 0.0374644792362698
+  }
+}

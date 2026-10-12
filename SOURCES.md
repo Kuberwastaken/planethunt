@@ -54,3 +54,7 @@ The navigation GitHub mark comes from [Primer Octicons](https://github.com/prime
 ## Archival extension — 12 October 2026
 
 [Archive follow-up provenance and methods](analysis/archive-followup-20261012/README.md) records NASA Exoplanet Archive/SpiKeS, IRSA Spitzer CBCD/CBUNC/mask products and official warm IRAC PRFs, ESA Gaia DR3, public Keck/Gemini metadata, and STScI/MAST TESScut images from NASA TESS/SPOC. Input URLs, query failures, retrieval dates and hashes are preserved within the pack. Generated photometry, residual figures and TESS diagnostics are analysis products, not new telescope observations. No third-party data license is replaced by this repository.
+
+## Second archive pass (12 October 2026)
+
+See [the reproducible pack](analysis/archive-exhaustion-20261012/README.md): Chrome exports from NASA Inventory, IRSA Data Discovery and current MAST HST/JWST searches; TGLC DOI 10.17909/610m-9474; ZTF DR24 and NEOWISE-R through IRSA; PTF through IRSA; CFHT MegaCam through CADC; ESA HST/JWST ObsCore footprint services; Barber et al. 2022 (AJ 164, 88), CDS J/AJ/164/88/table5. Exact requests and timestamps are saved in the pack. No new validation probability is claimed.

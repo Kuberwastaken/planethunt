@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/STC/v1.30 http://www.ivoa.net/xml/STC/v1.30">
+  <RESOURCE>
+    <INFO name="ORIGIN" value="IPAC Infrared Science Archive (IRSA), Caltech/JPL"/>
+    <INFO name="SIMULATED_TABLE" value="n"/>
+    <INFO name="DATETIME" value="2026-10-12 10:48:46"/>
+    <INFO name="DATABASE" value="ZTF DR24 Objects (ztf_objects_dr24)"/>
+    <INFO name="EQUINOX" value="J2000"/>
+    <INFO name="SKYAREA" value="within 5 arcsec of  ra=285.90783 dec=+40.94199 Eq J2000 "/>
+    <INFO name="StatusFile" value="/workspace/TMP_m6Sb5X_487491/Gator/irsa/487491/log.487491.html"/>
+    <INFO name="SQL" value="WHERE (no constraints)"/>
+    <INFO name="SQL" value="SELECT (23 column names follow in next row.)"/>
+    <TABLE>
+      <DESCRIPTION>                                                                              
+
+oid 
+___ Unique object identifier
+ra (deg) 
+___ Object Right Ascension
+dec (deg) 
+___ Object Declination
+clon 
+___ Right ascention in Sexagesimal format.
+clat 
+___ Declination in Sexagesimal format.
+field 
+___ Field identifier
+ccdid 
+___ CCD identifier (1-16)
+qid 
+___ Quadrant (1-4)
+filtercode 
+___ Filter code (zg, zr, zi)
+ngoodobs 
+___ Number of epochal detections that were not flagged or masked due to bad pixels
+ngoodobsrel 
+___ Number of epochal detections in this release not associated with bad pixels
+nobs 
+___ Total number of epochal detections (observation epochs) in the lightcurve
+nobsrel 
+___ Total number of epochal detections that are in this release
+refmag (mag) 
+___ Object magnitude from reference image if detected (not transient)
+refmagerr (mag) 
+___ Error in refMag
+astrometricrms (deg) 
+___ Root Mean Squared deviation in epochal positions relative to object RA,Dec
+chisq 
+___ Chi-square metric using nobs detections
+magrms (mag) 
+___ Root Mean Squared deviation over nobs magnitudes
+maxmag (mag) 
+___ Maximum magnitude over nobs detections
+medianabsdev (mag) 
+___ Median absolute deviation in magnitudes over nobs detections
+medianmag (mag) 
+___ Median magnitude over nobs detections
+medmagerr (mag) 
+___ Median of magerr values over nobs detections
+minmag (mag) 
+___ Minimum magnitude over nobs detections
+dist (arcsec) 
+___ Distance between the target position and each source in arcsec.
+angle (deg) 
+___ Position Angle in degree.
+</DESCRIPTION>
+      <FIELD name="oid" datatype="long" ucd="meta.id;src;meta.main" unit="">
+        <DESCRIPTION>Unique object identifier</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ra" datatype="double" precision="7" ucd="pos.eq.ra" unit="deg" width="11">
+        <DESCRIPTION>Object Right Ascension</DESCRIPTION>
+      </FIELD>
+      <FIELD name="dec" datatype="double" precision="7" ucd="pos.eq.dec" unit="deg" width="11">
+        <DESCRIPTION>Object Declination</DESCRIPTION>
+      </FIELD>
+      <FIELD name="clon" datatype="char" arraysize="*"/>
+      <FIELD name="clat" datatype="char" arraysize="*"/>
+      <FIELD name="field" datatype="int" ucd="meta.id;obs.field" unit="">
+        <DESCRIPTION>Field identifier</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ccdid" datatype="int" ucd="meta.id;instr.det" unit="">
+        <DESCRIPTION>CCD identifier (1-16)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="qid" datatype="int" ucd="meta.id" unit="">
+        <DESCRIPTION>Quadrant (1-4)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="filtercode" datatype="char" arraysize="*" ucd="instr.bandpass" unit="">
+        <DESCRIPTION>Filter code (zg, zr, zi)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ngoodobs" datatype="int" ucd="meta.number" unit="">
+        <DESCRIPTION>Number of epochal detections that were not flagged or masked due to bad pixels</DESCRIPTION>
+      </FIELD>
+      <FIELD name="ngoodobsrel" datatype="int" ucd="meta.number" unit="">
+        <DESCRIPTION>Number of epochal detections in this release not associated with bad pixels</DESCRIPTION>
+      </FIELD>
+      <FIELD name="nobs" datatype="int" ucd="meta.number" unit="">
+        <DESCRIPTION>Total number of epochal detections (observation epochs) in the lightcurve</DESCRIPTION>
+      </FIELD>
+      <FIELD name="nobsrel" datatype="int" ucd="meta.number" unit="">
+        <DESCRIPTION>Total number of epochal detections that are in this release</DESCRIPTION>
+      </FIELD>
+      <FIELD name="refmag" datatype="double" unit="mag"/>
+      <FIELD name="refmagerr" datatype="double" unit="mag"/>
+      <FIELD name="astrometricrms" datatype="double" unit="deg"/>
+      <FIELD name="chisq" datatype="double"/>
+      <FIELD name="magrms" datatype="double" unit="mag"/>
+      <FIELD name="maxmag" datatype="double" unit="mag"/>
+      <FIELD name="medianabsdev" datatype="double" unit="mag"/>
+      <FIELD name="medianmag" datatype="double" unit="mag"/>
+      <FIELD name="medmagerr" datatype="double" unit="mag"/>
+      <FIELD name="minmag" datatype="double" unit="mag"/>
+      <FIELD name="dist" datatype="double" unit="arcsec"/>
+      <FIELD name="angle" datatype="double" unit="deg"/>
+      <DATA>
+        <TABLEDATA>
+          <TR>
+            <TD>727211400017881</TD>
+            <TD>285.90782350000001</TD>
+            <TD>40.942003700000001</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.21s</TD>
+            <TD>727</TD>
+            <TD>11</TD>
+            <TD>4</TD>
+            <TD>zr</TD>
+            <TD>1185</TD>
+            <TD>1174</TD>
+            <TD>1233</TD>
+            <TD>1222</TD>
+            <TD>16.411999999999999</TD>
+            <TD>0.034000000000000002</TD>
+            <TD>4.3904370000000002e-07</TD>
+            <TD>2.550227</TD>
+            <TD>0.031645630000000001</TD>
+            <TD>16.522960000000001</TD>
+            <TD>0.021923069999999999</TD>
+            <TD>16.442360000000001</TD>
+            <TD>0.01274519</TD>
+            <TD>16.356380000000001</TD>
+            <TD>0.052430999999999998</TD>
+            <TD>340.28289100000001</TD>
+          </TR>
+          <TR>
+            <TD>1765102300006425</TD>
+            <TD>285.9078159</TD>
+            <TD>40.942005600000002</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.22s</TD>
+            <TD>1765</TD>
+            <TD>2</TD>
+            <TD>3</TD>
+            <TD>zg</TD>
+            <TD>73</TD>
+            <TD>53</TD>
+            <TD>83</TD>
+            <TD>58</TD>
+            <TD>17.859000000000002</TD>
+            <TD>0.016</TD>
+            <TD>3.068043e-07</TD>
+            <TD>1.489134</TD>
+            <TD>0.0394737</TD>
+            <TD>17.989139999999999</TD>
+            <TD>0.025264740000000001</TD>
+            <TD>17.902229999999999</TD>
+            <TD>0.02515388</TD>
+            <TD>17.791650000000001</TD>
+            <TD>0.067967</TD>
+            <TD>325.67703799999998</TD>
+          </TR>
+          <TR>
+            <TD>1765202300007907</TD>
+            <TD>285.90782730000001</TD>
+            <TD>40.942009200000001</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.23s</TD>
+            <TD>1765</TD>
+            <TD>2</TD>
+            <TD>3</TD>
+            <TD>zr</TD>
+            <TD>109</TD>
+            <TD>72</TD>
+            <TD>113</TD>
+            <TD>76</TD>
+            <TD>16.436</TD>
+            <TD>0.017000000000000001</TD>
+            <TD>4.8930470000000002e-07</TD>
+            <TD>2.7583350000000002</TD>
+            <TD>0.03198782</TD>
+            <TD>16.540690000000001</TD>
+            <TD>0.023946760000000001</TD>
+            <TD>16.459720000000001</TD>
+            <TD>0.01287134</TD>
+            <TD>16.372820000000001</TD>
+            <TD>0.069478999999999999</TD>
+            <TD>353.93653</TD>
+          </TR>
+          <TR>
+            <TD>727111400011169</TD>
+            <TD>285.90782089999999</TD>
+            <TD>40.942017200000002</TD>
+            <TD>19h03m37.88s</TD>
+            <TD>40d56m31.26s</TD>
+            <TD>727</TD>
+            <TD>11</TD>
+            <TD>4</TD>
+            <TD>zg</TD>
+            <TD>679</TD>
+            <TD>676</TD>
+            <TD>715</TD>
+            <TD>712</TD>
+            <TD>17.853000000000002</TD>
+            <TD>0.028000000000000001</TD>
+            <TD>6.8596980000000001e-07</TD>
+            <TD>1.7693490000000001</TD>
+            <TD>0.043635420000000001</TD>
+            <TD>18.20035</TD>
+            <TD>0.026931759999999999</TD>
+            <TD>17.884460000000001</TD>
+            <TD>0.022567070000000002</TD>
+            <TD>17.599720000000001</TD>
+            <TD>0.101008</TD>
+            <TD>345.81734899999998</TD>
+          </TR>
+        </TABLEDATA>
+      </DATA>
+    </TABLE>
+  </RESOURCE>
+</VOTABLE>

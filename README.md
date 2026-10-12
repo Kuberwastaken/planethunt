@@ -10,7 +10,7 @@ A public, inspectable record of two archival transit searches. **No confirmed pl
 
 ## Current state: 12 October 2026
 
-The [new archival follow-up pack](analysis/archive-followup-20261012/README.md) adds eight reduced Spitzer images, ten TESS sectors, live catalogue/imaging-archive checks, raw inputs and reproducible measurements. Spitzer resolves the known pair but misses the transit; the exploratory TESS extraction has no convincing recovery and cannot reject the candidate. Gaia/Keck/Gemini checks add no measured close-companion contrast curve. **The FPP and unconfirmed status are unchanged.** The [observing brief](analysis/archive-followup-20261012/FOLLOWUP_PLAN.md) identifies the next measurements and prospective collaborators. General MAST inventory timeouts remain a documented gap.
+The [new archival follow-up pack](analysis/archive-followup-20261012/README.md) adds eight reduced Spitzer images, ten TESS sectors, live catalogue/imaging-archive checks, raw inputs and reproducible measurements. Spitzer resolves the known pair but misses the transit; the exploratory TESS extraction has no convincing recovery and cannot reject the candidate. Gaia/Keck/Gemini checks add no measured close-companion contrast curve. **The FPP and unconfirmed status are unchanged.** The [observing brief](analysis/archive-followup-20261012/FOLLOWUP_PLAN.md) identifies the next measurements and prospective collaborators. The [second archive pass](analysis/archive-exhaustion-20261012/README.md) resolves the browser/HST/JWST checks, adds TGLC, ZTF, PTF, NEOWISE and CFHT data, and identifies the star in the MELANGE-3 candidate-member catalogue. Its quantitative limits and remaining work are explicit.
 
 ## Validation baseline: 11 October 2026
 

@@ -1,0 +1,61 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T17:35:46 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T17:35:46	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f153%2f71%2ftable2&-c=285.907827+40.941988&-c.rs=15&-out.all=1&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=15.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_51530071
+#Name: J/AJ/153/71
+#Title: Kepler follow-up observation program. I. Imaging (Furlan+, 2017)
+#INFO	ivoid=ivo://cds.vizier/j/aj/153/71	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/153/71	    IVOID of underlying data collection
+#INFO	creator=Furlan E.	    First author or institution
+#INFO	cites=bibcode:2017AJ....153...71F	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2017	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/153/71	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51530071	    Dataset identifier that can be used for citation
+#INFO	publication_date=2017-09-04	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Coosys	J2000_2000.000:	eq_FK5 J2000
+#Table	J_AJ_153_71_table2:
+#Name: J/AJ/153/71/table2
+#Title: Summary of KOI host stars observed with high-resolution imaging techniques
+#Column	_r	(F5.2)	Distance from center (285.90783+40.94199)[FK5/J2000], at Epoch=J2000.0	[ucd=pos.angDistance]
+#Column	recno	(I8)	Record number assigned by the VizieR team. Should Not be used for identification.	[ucd=meta.record]
+#Column	KOI	(I4)	[1/7591] Kepler Object of Interest number of the star	[ucd=meta.id;meta.main]
+#Column	KIC	(I8)	[757450/12885212] Kepler Input Catalog identifier of the star	[ucd=meta.id]
+#Column	Nc	(I3)	Number of companions around the primary star (table8)	[ucd=meta.number]
+#Column	Nobs	(I3)	Number of observations (table3)	[ucd=meta.number]
+#Column	corr	(A4)	Indicates planet correction factors (tables 9 and 10)	[ucd=meta.ref.url]
+#Column	Ncp	(I1)	[0/6] Number of confirmed planets	[ucd=meta.number]
+#Column	Npc	(I1)	[0/4] Number of planet candidates	[ucd=meta.number]
+#Column	Nfp	(I1)	[0/5] Number of false positives	[ucd=meta.number]
+#Column	Rp	(F8.1)	[0/200346] Radius of the smallest planet in the system (R_p,min_) (1)	[ucd=phys.size.radius]
+#Column	Kmin	(F7.2)	[1.01/7591.01] KOI number of the smallest planet in system	[ucd=meta.id.assoc]
+#Column	Teq	(I5)	[0/14225] Equilibrium temperature of the coolest planet in the system (1)	[ucd=phys.temperature]
+#Column	Kcool	(F7.2)	[1.01/7591.01] KOI number of the coolest planet in system	[ucd=meta.id.assoc]
+#Column	Kpmag	(F5.2)	[6.9/18.8] Kepler magnitude of the KOI host star	[ucd=phot.mag;em.opt]
+#Column	Vmag	(F5.2)	[7.5/19.6]? V band magnitude of KOI host	[ucd=phot.mag;em.opt.V]
+#Column	Ksmag	(F5.2)	[4.7/16.1]? Ks band magnitude of KOI host	[ucd=phot.mag;em.IR.K]
+#Column	Tel	(a35)	Telescope code(s) (see also table1) (G1)	[ucd=meta.code;instr.tel]
+#Column	OCat	(I3)	Other Kepler catalogs	[ucd=meta.number]
+#Column	A12	(I3)	Number of data in Adams et al. 2012 (Cat. J/AJ/144/42)	[ucd=meta.number]
+#Column	H11	(I3)	Number of data in Howell et al. 2011 (Cat. J/AJ/142/19)	[ucd=meta.number]
+#Column	B16	(I3)	Number of data in Baranec et al. 2016 (Cat. J/AJ/152/18)	[ucd=meta.number]
+#Column	LB12	(I3)	Number of data in Lillo-Box 2012 (Cat. J/A+A/546/A10)	[ucd=meta.number]
+#Column	LB14	(I3)	Number of data in Lillo-Box et al. 2014 (Cat. J/A+A/566/A103)	[ucd=meta.number]
+#Column	K16	(I3)	Number of data in Kraus et al. 2016 (Cat. J/AJ/152/8)	[ucd=meta.number]
+#Column	Simbad	(a6)	Simbad column added by the CDS	[ucd=meta.ref.url]
+#Column	_RA	(F9.5)	Position of the host star from SIMBAD database (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Position of the host star from SIMBAD database (declination part)	[ucd=pos.eq.dec;meta.main]

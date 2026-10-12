@@ -1,0 +1,10 @@
+{
+  "n_measurements": 24,
+  "n_inside_2p3h": 0,
+  "nearest_midtransit_hours": 13.973409213560267,
+  "median_magnitude_error": 0.0305,
+  "mjd_span": [
+    55335.3658072,
+    56828.3153672
+  ]
+}

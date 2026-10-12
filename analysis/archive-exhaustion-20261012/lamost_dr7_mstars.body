@@ -1,0 +1,52 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-10-12T17:45:23 [V7.6.1]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-10-12T17:45:23	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=V%2f156%2fdr7mslrs&-c=285.907827+%2b40.941988&-c.rs=5&-out.max=100	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6.1	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+#INFO	-c=285.907827+40.941988,rs=5.	
+#Constraint -out.max=100
+
+#RESOURCE=yCat_5156
+#Name: V/156
+#Title: LAMOST DR7 catalogs (Luo+, 2019)
+#INFO	ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/v/156	    IVOID of underlying data collection
+#INFO	creator=Luo A.-L.	    First author or institution
+#INFO	cites=2019RAA..in.prep..L	    Article or Data origin sources
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/V/156	    Dataset landing page
+#INFO	publication_date=2024-09-09	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	V_156_dr7mslrs:
+#Name: V/156/dr7mslrs
+#Title: LAMOST LRS M Star Catalog
+#Column	ObsID	(I9)	Unique ID for each observation of each target (obsid)	[ucd=meta.id]
+#Column	Target	(A19)	Target designation, JHHMMSS.ss+DDMMSS.s (designation)	[ucd=meta.id;meta.main]
+#Column	PlanId	(a20)	Plan Name (planid)	[ucd=obs.field]
+#Column	RAJ2000	(F14.10)	Fiber Pointing Right Ascension (J2000) (ra_obs)	[ucd=pos.eq.ra;meta.main]
+#Column	DEJ2000	(F14.10)	Fiber Pointing Declination (J2000) (dec_obs)	[ucd=pos.eq.dec;meta.main]
+#Column	snru	(F8.2)	? Signal Noise Ratio of u filter (snru)	[ucd=stat.snr]
+#Column	snrg	(F8.2)	? Signal Noise Ratio of g filter (snrg)	[ucd=stat.snr]
+#Column	snrr	(F8.2)	? Signal Noise Ratio of i filter (snrr)	[ucd=stat.snr]
+#Column	snri	(F8.2)	? Signal Noise Ratio of i filter (snri)	[ucd=stat.snr]
+#Column	snrz	(F8.2)	? Signal Noise Ratio of z filter (snrz)	[ucd=stat.snr]
+#Column	z	(F13.10)	? Redshift (z)	[ucd=src.redshift]
+#Column	magType	(a10)	Target Magnitude Type (magtype)	[ucd=meta.note]
+#Column	mag1	(F5.2)	? Magnitude in Band 1 of magType (mag1)	[ucd=phot.mag]
+#Column	mag2	(F5.2)	? Magnitude in Band 2 of magType (mag2)	[ucd=phot.mag]
+#Column	mag3	(F5.2)	? Magnitude in Band 3 of magType (mag3)	[ucd=phot.mag]
+#Column	mag4	(F5.2)	? Magnitude in Band 4 of magType (mag4)	[ucd=phot.mag]
+#Column	mag5	(F5.2)	? Magnitude in Band 5 of magType (mag5)	[ucd=phot.mag]
+#Column	mag6	(F5.2)	? Magnitude in Band 6 of magType (mag6)	[ucd=phot.mag]
+#Column	mag7	(F5.2)	? Magnitude in Band 7 of magType (mag7)	[ucd=phot.mag]
+#Column	Teff	(F8.2)	? Effective Temperature obtained by the cross correlation method (teff)	[ucd=stat.correlation]
+#Column	logg	(F9.3)	? Surface Gravity obtained by the cross correlation method (logg)	[ucd=stat.correlation]
+#Column	Z	(F9.3)	? Metallicity obtained by the cross correlation method (m_h)	[ucd=stat.correlation]
+#Column	EWHa	(F12.6)	? Halpha equivalent width (ewha)	[ucd=spect.line.eqWidth]

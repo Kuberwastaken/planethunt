@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+  <RESOURCE type="results">
+    <INFO name="standardID" value="ivo://ivoa.net/std/DataLink#links-1.1" />
+    <TABLE>
+      <FIELD name="ID" datatype="char" arraysize="*" ucd="meta.id;meta.main" />
+      <FIELD name="access_url" datatype="char" arraysize="*" ucd="meta.ref.url" />
+      <FIELD name="service_def" datatype="char" arraysize="*" ucd="meta.ref" />
+      <FIELD name="error_message" datatype="char" arraysize="*" ucd="meta.code.error" />
+      <FIELD name="semantics" datatype="char" arraysize="*" ucd="meta.code" />
+      <FIELD name="local_semantics" datatype="char" arraysize="*" ucd="meta.code">
+        <DESCRIPTION>local tag indicating equivalent meaning or role of this link (DataLink-1.1)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="description" datatype="char" arraysize="*" ucd="meta.note" />
+      <FIELD name="content_type" datatype="char" arraysize="*" ucd="meta.code.mime" />
+      <FIELD name="content_length" datatype="long" ucd="phys.size;meta.file" unit="byte" />
+      <FIELD name="content_qualifier" datatype="char" arraysize="*">
+        <DESCRIPTION>the nature of the thing the link will deliver (DataLink-1.1)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="link_auth" datatype="char" arraysize="*" ucd="meta.code">
+        <DESCRIPTION>link supports authentication (DataLink-1.1)</DESCRIPTION>
+      </FIELD>
+      <FIELD name="link_authorized" datatype="boolean" ucd="meta.code">
+        <DESCRIPTION>the current authenticated identity is authorized (DataLink-1.1)</DESCRIPTION>
+      </FIELD>
+      <DATA>
+        <TABLEDATA>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD>https://cadc-west-01.canfar.net/raven/files/cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits</TD><TD/><TD/><TD>#this</TD><TD/><TD>download cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits</TD><TD>application/fits</TD><TD>400006080</TD><TD/><TD>optional</TD><TD>true</TD></TR>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD/><TD>soda-42368e20-b130-4010-bedb-c1969f6d644a</TD><TD/><TD>#cutout</TD><TD/><TD>SODA-sync cutout of cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits</TD><TD>application/fits</TD><TD/><TD/><TD>optional</TD><TD>true</TD></TR>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD/><TD>soda-c925ebe9-22f4-4075-a8c1-29b4054864ab</TD><TD/><TD>#cutout</TD><TD/><TD>SODA-async cutout of cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits</TD><TD>application/fits</TD><TD/><TD/><TD>optional</TD><TD>true</TD></TR>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD>https://cadc-west-01.canfar.net/raven/files/cadc:CFHTSG/MegaPipe.432.262.R.MP9601.weight.fits.fz</TD><TD/><TD/><TD>#auxiliary</TD><TD/><TD>download cadc:CFHTSG/MegaPipe.432.262.R.MP9601.weight.fits.fz</TD><TD>application/fits</TD><TD>35706240</TD><TD/><TD>optional</TD><TD>true</TD></TR>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD>https://cadc-west-01.canfar.net/raven/files/cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits.gif</TD><TD/><TD/><TD>#preview</TD><TD/><TD>download cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits.gif</TD><TD>image/gif</TD><TD>339184</TD><TD/><TD>optional</TD><TD>true</TD></TR>
+<TR><TD>ivo://cadc.nrc.ca/CFHTMEGAPIPE?MegaPipe.432.262/MegaPipe.432.262.R.MP9601</TD><TD>https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/pkg?ID=ivo%3A%2F%2Fcadc.nrc.ca%2FCFHTMEGAPIPE%3FMegaPipe.432.262%2FMegaPipe.432.262.R.MP9601</TD><TD/><TD/><TD>#package</TD><TD/><TD>single download containing all files (previews and thumbnails excluded)</TD><TD>application/x-tar</TD><TD/><TD/><TD>optional</TD><TD>true</TD></TR></TABLEDATA>
+      </DATA>
+    </TABLE>
+    <INFO name="placeholder" value="ignore" />
+  </RESOURCE>
+  <RESOURCE type="meta" ID="soda-42368e20-b130-4010-bedb-c1969f6d644a" utype="adhoc:service">
+    <PARAM name="resourceIdentifier" datatype="char" arraysize="30" value="ivo://cadc.nrc.ca/CFHTMEGAPIPE" />
+    <PARAM name="standardID" datatype="char" arraysize="32" value="ivo://ivoa.net/std/SODA#sync-1.0" />
+    <PARAM name="contentType" datatype="char" arraysize="16" value="application/fits" />
+    <PARAM name="accessURL" datatype="char" arraysize="57" value="https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/sync" />
+    <GROUP name="inputParams">
+      <PARAM name="ID" datatype="char" arraysize="42" ucd="meta.id;meta.dataset" value="cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits" />
+      <PARAM name="POS" datatype="char" arraysize="*" ucd="obs.field" value="" />
+      <PARAM name="CIRCLE" datatype="double" arraysize="3" ucd="obs.field" unit="deg" xtype="circle" value="">
+        <VALUES>
+          <MAX value="286.2027723744833 41.000025800121875 0.3648790370933077" />
+        </VALUES>
+      </PARAM>
+      <PARAM name="POLYGON" datatype="double" arraysize="*" ucd="obs.field" unit="deg" xtype="polygon" value="">
+        <VALUES>
+          <MAX value="286.5459806839343 41.257526302147284 286.5433044900822 40.741515508722216 285.8622405251251 40.74151530856462 285.8595637960189 41.257526098315594" />
+        </VALUES>
+      </PARAM>
+    </GROUP>
+  </RESOURCE>
+  <RESOURCE type="meta" ID="soda-c925ebe9-22f4-4075-a8c1-29b4054864ab" utype="adhoc:service">
+    <PARAM name="resourceIdentifier" datatype="char" arraysize="30" value="ivo://cadc.nrc.ca/CFHTMEGAPIPE" />
+    <PARAM name="standardID" datatype="char" arraysize="33" value="ivo://ivoa.net/std/SODA#async-1.0" />
+    <PARAM name="contentType" datatype="char" arraysize="16" value="application/fits" />
+    <PARAM name="accessURL" datatype="char" arraysize="58" value="https://ws.cadc-ccda.hia-iha.nrc-cnrc.gc.ca/caom2ops/async" />
+    <GROUP name="inputParams">
+      <PARAM name="ID" datatype="char" arraysize="42" ucd="meta.id;meta.dataset" value="cadc:CFHTSG/MegaPipe.432.262.R.MP9601.fits" />
+      <PARAM name="POS" datatype="char" arraysize="*" ucd="obs.field" value="" />
+      <PARAM name="CIRCLE" datatype="double" arraysize="3" ucd="obs.field" unit="deg" xtype="circle" value="">
+        <VALUES>
+          <MAX value="286.2027723744833 41.000025800121875 0.3648790370933077" />
+        </VALUES>
+      </PARAM>
+      <PARAM name="POLYGON" datatype="double" arraysize="*" ucd="obs.field" unit="deg" xtype="polygon" value="">
+        <VALUES>
+          <MAX value="286.5459806839343 41.257526302147284 286.5433044900822 40.741515508722216 285.8622405251251 40.74151530856462 285.8595637960189 41.257526098315594" />
+        </VALUES>
+      </PARAM>
+    </GROUP>
+  </RESOURCE>
+</VOTABLE>
