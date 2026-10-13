@@ -60,8 +60,7 @@ this test. Only the raw-TPF version is quoted.
 **Search statistics alone do not single it out (new negative result).** Ranked against all
 1,736 matched inverted Kepler Bonus searches (pilot + both extension stages), 2 inverted stars
 pass the first screen at P > 1.5 d with BLS SNR ≥ 26.7 and holdout SNR ≥ 15.5 (KIC 8701308 at
-4.25 d, KIC 5283912 at 8.78 d). The empirical per-star false-alarm rate at this detection
-strength is therefore ≈ 1e−3, i.e. ≈ 2 expected null-level signals in a survey this size. The
+4.25 d, KIC 5283912 at 8.78 d). The observed inverted-control fraction is 2/1,736 for these retrospectively chosen thresholds. It is a diagnostic count, not a calibrated per-star or survey-wide false-alarm probability: inversion is not established as a representative null for every systematic, and the threshold comparison followed inspection of the candidate. (Interpretation corrected 13 October 2026.) The
 case for KIC 5689121 rests on the vetting (shape, density, localization, dilution pattern), not
 on detection strength. `null_fap2.py`.
 

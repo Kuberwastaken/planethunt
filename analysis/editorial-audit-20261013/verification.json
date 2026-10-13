@@ -1,0 +1,139 @@
+{
+  "catalogue_inputs": {
+    "mstars.fits": {
+      "url": "https://archive.stsci.edu/hlsps/kbonus-bkg/catalogs/hlsp_kbonus-bkg_kepler_kepler_mstars-catalog_kepler_v1.0_cat.fits",
+      "sha256": "406563951c367bb1ffe3c20f83c4684a4083a2fe2f3d7c36ad9a663b5f6977ef"
+    },
+    "source-catalog.fits": {
+      "url": "https://archive.stsci.edu/hlsps/kbonus-bkg/catalogs/hlsp_kbonus-bkg_kepler_kepler_source-catalog_kepler_v1.0_cat.fits",
+      "sha256": "2e6d5a87cb90f941bdc207aef93d61847df228ae7d56ffd38d3ab9255dd30fcf"
+    }
+  },
+  "selection": {
+    "published_mstar_entries": 29800,
+    "matched_source_catalogue": 29800,
+    "psffrac_gt_0_5": 9204,
+    "crowdsap_gt_0_7": 6477,
+    "at_least_8_psf_quarters": 2495,
+    "kic_differs_from_tpf_origin": 1836,
+    "after_saved_primary_exclusions": 1800,
+    "first_64_order_reproduced": true,
+    "primary_exclusion_source": "preserved mstar_primary_exclusion_check.csv; not a fresh archive primary-target query"
+  },
+  "search_counts": [
+    {
+      "stage": "pilot",
+      "inverted": false,
+      "sources_with_signal_records": 64,
+      "first_screen_signals": 2,
+      "first_screen_sources": 2
+    },
+    {
+      "stage": "pilot",
+      "inverted": true,
+      "sources_with_signal_records": 64,
+      "first_screen_signals": 0,
+      "first_screen_sources": 0
+    },
+    {
+      "stage": "ranks65-576",
+      "inverted": false,
+      "sources_with_signal_records": 497,
+      "first_screen_signals": 10,
+      "first_screen_sources": 9
+    },
+    {
+      "stage": "ranks65-576",
+      "inverted": true,
+      "sources_with_signal_records": 497,
+      "first_screen_signals": 10,
+      "first_screen_sources": 9
+    },
+    {
+      "stage": "ranks577-1800",
+      "inverted": false,
+      "sources_with_signal_records": 1175,
+      "first_screen_signals": 19,
+      "first_screen_sources": 18
+    },
+    {
+      "stage": "ranks577-1800",
+      "inverted": true,
+      "sources_with_signal_records": 1175,
+      "first_screen_signals": 22,
+      "first_screen_sources": 19
+    }
+  ],
+  "inverted_stronger_screen": [
+    {
+      "source_id": "2079757717459406848",
+      "kic": "8701308",
+      "period_d": "4.25448",
+      "bls_snr": "29.72",
+      "holdout_snr": "23.03"
+    },
+    {
+      "source_id": "2076541199275970688",
+      "kic": "5283912",
+      "period_d": "8.78455",
+      "bls_snr": "27.77",
+      "holdout_snr": "16.36"
+    }
+  ],
+  "rerun_checks": {
+    "tess_summary.json": {
+      "identical_bytes": true,
+      "sha256": "9f148d8badef71c846e1482843d99e2881a742b224e037ad1f97a18c2102d93e"
+    },
+    "tess_events.csv": {
+      "identical_bytes": true,
+      "sha256": "923cf8f3bda9e387e56531b9d5b045126b50aeabc7fc1dd20c64183bed9bf71d"
+    },
+    "tess_sectors.json": {
+      "identical_bytes": true,
+      "sha256": "99e74c2669cae00e70ed79b78f7e74944b5cc8b429ddd072b040a15f16ac200f"
+    },
+    "tglc_summary": {
+      "identical_json_values": true,
+      "rerun_sha256": "4b7fd3ba351df0bd5c9f9ca4e8d4bc61aa4320fe902fc1c6fa7568d5e8feb92d"
+    }
+  },
+  "tess_nominal": {
+    "1.0": {
+      "depth_ppm": -483.38126934511354,
+      "error_ppm": 957.8102726357924,
+      "n_events": 20,
+      "control_depth_std_ppm": 1188.747249804571
+    },
+    "1.5": {
+      "depth_ppm": -1221.424275048188,
+      "error_ppm": 1235.5575854695028,
+      "n_events": 20,
+      "control_depth_std_ppm": 1490.3827639963179
+    },
+    "2.0": {
+      "depth_ppm": -2075.360806390844,
+      "error_ppm": 1383.9639995303935,
+      "n_events": 20,
+      "control_depth_std_ppm": 1761.6915136300051
+    }
+  },
+  "tglc_cal_psf": {
+    "depth_ppm": 450.38781693233204,
+    "error_ppm": 1793.1416718130781,
+    "n_events": 12,
+    "control_depth_std_ppm": 2577.6430564445664
+  },
+  "barber": {
+    "url": "https://cdsarc.cds.unistra.fr/ftp/J/AJ/164/88/table5.dat",
+    "sha256": "915a140bfbb184ff4704d2dee0c98632de33312d1056408979779316bbbecd13",
+    "line": 546,
+    "row": "2103792461826460288 285.90783 40.94199 16.282 0.795 M1.6 N Y 3.406 0.04",
+    "identifier_release": "EDR3 (per catalogue ReadMe)"
+  },
+  "limits": [
+    "Reproduces preserved estimators; not an independent reduction or validation.",
+    "No calibrated false-alarm probability or blind-search completeness.",
+    "No joint period/epoch covariance propagation or time-dependent TESS scene model."
+  ]
+}

@@ -15,9 +15,9 @@ Scope: this applies Codex's own Kepler Bonus pilot code (`evidence/codex/databas
 | real | 497 | 10 signals on 9 stars |
 | inverted null | 497 | 10 signals on 9 stars |
 
-The real run did not produce more first-screen passes than the null. Six of the nine real passing stars have no inverted pass, but two (KIC 7436275 at 0.614 d, KIC 6206697 at 0.567 d) pass in both polarities, and KIC 5790842 (4.87 d) passes in both. Those are variability or systematics, not transits.
+The real run did not produce more first-screen passes than the null. Six of the nine real passing stars have no inverted pass, but two (KIC 7436275 at 0.614 d, KIC 6206697 at 0.567 d) pass in both polarities, and KIC 5790842 (4.87 d) passes in both. Passing both polarities is a warning for variability or systematics; it does not by itself classify the source or exclude a transit in the same light curve.
 
-Nothing here approaches KIC 5689121 (BLS SNR 26.7, holdout 15.5 in the same pipeline).
+This first extension did not establish an additional planet candidate. Across the later combined search, two inverted signals reach BLS and holdout scores at least as high as KIC 5689121; scores alone do not establish its nature (see the [13 October audit](../editorial-audit-20261013/README.md)).
 
 ## Individual real passes
 | KIC | P (d) | depth ppm | holdout SNR | status |
@@ -48,12 +48,14 @@ Real strict passes and what checks say (NASA Exoplanet Archive TCE/KOI cone, ~10
 |---|---|---|---|
 | 4544570 | 2.189 | ~5200-6950 | Rejected: four KOI false positives at the same 2.189 d within 85 arcsec |
 | 11724208 | 5.746 | ~5600 | Rejected: KOI K06244.01 (KIC 11724210, 5.746 d, false positive, 9.6 arcsec away) |
-| 12164160 | 19.42 | 5398 | No catalog match. G 18.4 background star with a 0.5% depth: too deep for a planet-size dip on an M dwarf, so likely an uncataloged blend or eclipsing binary |
-| 8743279 | 21.96 | 9917 | Same: G 18.6, ~1% depth, likely a blend/EB |
-| 8803342 | 5.010 | 2928 | Same: G 18.8, likely a blend/EB |
+| 12164160 | 19.42 | 5398 | Unresolved: no catalogue match; G 18.4 and ~0.54% depth. No source localization or stellar-radius assessment sufficient to classify it |
+| 8743279 | 21.96 | 9917 | Unresolved: G 18.6, ~0.99% depth; no source localization. Depth alone does not establish an eclipsing binary |
+| 8803342 | 5.010 | 2928 | Unresolved: G 18.8, ~0.29% depth; no source localization. Depth alone does not establish an eclipsing binary |
 
-No pixel/PRF localization was done on these. None is a candidate, and nothing was named or submitted.
+No pixel/PRF localization was done on these. None was promoted to an additional planet candidate or submitted. This is a disposition decision, not a demonstration that each signal is nonplanetary.
 
 ## Combined picture
-Across ranks 65-1800 (1,672 stars searched, plus Codex's 64) the real search never produced more first-screen passes than the matched inverted null. The only strong signal remains KIC 5689121 from the original Codex run.
+Across ranks 65-1800 (1,672 stars searched, plus Codex's 64) the real search never produced more first-screen passes than the matched inverted null. KIC 5689121 received the detailed follow-up analysis; other high-scoring real and inverted signals mean that detection strength alone does not uniquely distinguish it.
 Totals: ranks 65-576: 497 searched; ranks 577-1800: 1175 searched; sum 1,672. One unresolved weak item from the first stage: KIC 6629201 (2.638 d, faint, unlocalized).
+
+Editorial audit, 13 October 2026: the unlocalized depth-based classifications above have been corrected. The total search produced no validated planet, including KIC 5689121. See the linked audit for exact signal-versus-star counts and limits.

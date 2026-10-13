@@ -1,6 +1,6 @@
 # TESS check of KIC 5689121 / TIC 120686465
 
-**No convincing recovery in this exploratory aperture reduction. No rejection of the Kepler candidate is justified.** The 7.1″ pair is separated by only 0.34–0.36 TESS pixels; the extracted flux is blended and no target-specific dilution correction has been measured.
+**No convincing recovery in this exploratory aperture reduction. No calibrated exclusion of the Kepler signal has been established.** The 7.1″ pair is separated by only 0.34–0.36 TESS pixels; the extracted flux is blended and no target-specific dilution correction has been measured.
 
 The TESScut endpoint succeeded after the general MAST inventory failed. All ten listed sectors were downloaded: **14, 26, 40, 41, 53, 54, 74, 75, 80, 81**, spanning 2019–2024. Both initial failures and successful retries are preserved. This contains **62,082 quality-zero, finite cadences** and **20 adequately sampled predicted event windows**, not 20 detected transits.
 
@@ -40,3 +40,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /tmp/planethunt-irac-env/bin/python ana
 The script defaults to the committed gzip frames and preserved Kepler ephemeris. A fresh run from those compressed files reproduced `summary.json`, `sectors.json` and `events.csv` **byte-for-byte** on 12 October 2026. Images were visually inspected. Inputs need no network access. The live URLs may generate FITS files with changed creation headers on a later request; original hashes identify this exact snapshot.
 
 Data: NASA TESS/SPOC, accessed through STScI/MAST's [TESScut service](https://mast.stsci.edu/tesscut/docs/getting_started.html). These are new checks of KIC 5689121, separate from the repository's historical TESS searches of other TIC targets.
+
+## 13 October 2026 recheck
+
+The ten-sector reduction was rerun from the retained pixel cubes in a fresh environment; `summary.json`, `events.csv` and `sectors.json` reproduced byte-for-byte. Six-sector TGLC summary values also reproduced. This checks reproducibility, not an independent reduction. The point estimates, including negative aperture depths, must remain visible. The conditional PRF injection is not a completeness test; a joint period/epoch uncertainty propagation and calibrated recovery/exclusion analysis remain outstanding. See [the audit](../../editorial-audit-20261013/README.md).

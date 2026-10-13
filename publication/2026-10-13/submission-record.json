@@ -4,7 +4,7 @@
   "revision": 0,
   "title": "A 13.77-day transit candidate on the background M dwarf KIC 5689121 from Kepler Bonus photometry",
   "author": "Kuber Mehta",
-  "status": "Submitted; editorial decision pending",
+  "status": "Declined by RNAAS; decision dated 2026-10-13",
   "portal_stage": "Manuscript Submission",
   "scientific_editor": "Not Assigned",
   "portal_submission_date_display": "12-Oct-2026 16:20:10",
@@ -31,5 +31,12 @@
       "sha256": "517db78623356a62f8e7ee9a0d2b95db13276a6eff7d5baee1fbed54929c0ddc"
     }
   ],
-  "note": "Submission is not acceptance, peer review, or planet validation. Draft-labelled source metadata and earlier review artifacts are retained as preparation history; rnaas-author.pdf is the uploaded author PDF."
+  "note": "Submission is not acceptance, peer review, or planet validation. Draft-labelled source metadata and earlier review artifacts are retained as preparation history; rnaas-author.pdf is the uploaded author PDF.",
+  "decision": {
+    "date": "2026-10-13",
+    "outcome": "Declined",
+    "evidence": "Decision letter supplied by the author in this conversation; not independently checked in the portal",
+    "audit": "../../analysis/editorial-audit-20261013/README.md"
+  },
+  "portal_stage_note": "The portal fields above record the original submission-time observation, not a current status query."
 }
