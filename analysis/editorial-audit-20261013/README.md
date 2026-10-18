@@ -1,6 +1,6 @@
-# Post-decision audit — 13 October 2026
+# Technical audit of the submitted note — 13 October 2026
 
-RNAAS declined manuscript AAS82222. This audit addresses the selection, other search outcomes, TESS non-detection and Barber catalogue reference. It does not validate the candidate or establish a publication-ready revised analysis. The original submitted manuscript and DOI-backed release remain unchanged; this is a subsequent correction record.
+This audit of manuscript AAS82222 addresses the selection, other search outcomes, TESS non-detection and Barber catalogue reference. It does not validate the candidate or establish a publication-ready revised analysis. The original submitted manuscript and DOI-backed release remain unchanged; this is a subsequent correction record.
 
 ## 1. Sample construction reproduced
 

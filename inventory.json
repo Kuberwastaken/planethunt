@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9566,
-      "sha256": "6da036794a99c7f3d45d354d4b5c3c91a719a55eae6e0f89be340706ba17d636"
+      "bytes": 9584,
+      "sha256": "093e9ec01f531c1d9beb8ebf8c5d93c4ca4c9fd86179e75fd4db851e7913da29"
     },
     {
       "path": "SOURCES.md",
@@ -54,8 +54,8 @@
     },
     {
       "path": "analysis/archive-exhaustion-20261012/README.md",
-      "bytes": 16575,
-      "sha256": "1f7a99a99d3beb5dfb2c0544f9e229b5409e1a1a414169ebb0aa3b89fee8dcc9"
+      "bytes": 16496,
+      "sha256": "4f17f22724b49186db295fc5292f041e1fd2637de087d98ba45b680fce795791"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/analyze_cfht.py",
@@ -493,11 +493,6 @@
       "sha256": "92fd3ef21b394729a6d006a49cd036529e0f72fc3c2ebd01b435e46c7af13bdc"
     },
     {
-      "path": "analysis/archive-exhaustion-20261012/reply-to-steve.txt",
-      "bytes": 1632,
-      "sha256": "bf1cf2910010a1b61c1489fe94f6ccd47d1cca027b6456f6647cab64ae73403f"
-    },
-    {
       "path": "analysis/archive-exhaustion-20261012/requests.json",
       "bytes": 49046,
       "sha256": "30a3afc13f4ba8f052d8115108afa0df54a527675e7d4839f2100ebdf776a9cf"
@@ -738,11 +733,6 @@
       "sha256": "4b7fd3ba351df0bd5c9f9ca4e8d4bc61aa4320fe902fc1c6fa7568d5e8feb92d"
     },
     {
-      "path": "analysis/archive-exhaustion-20261012/thyme-provenance-question.txt",
-      "bytes": 1409,
-      "sha256": "f30798fd9e86e984861a0e9af74897f669790e070b1f26f860100fa41eb185c2"
-    },
-    {
       "path": "analysis/archive-exhaustion-20261012/twomass_flux_comparison.json",
       "bytes": 1640,
       "sha256": "8c18a565bc05cea8ed2aae2531f557c586dec87ce35a7f684f558e2a900f5172"
@@ -814,8 +804,8 @@
     },
     {
       "path": "analysis/archive-followup-20261012/FOLLOWUP_PLAN.md",
-      "bytes": 11234,
-      "sha256": "5c87b825ab88123b90d1682c05b9cacbf9ac4896d88f3d031a4a0192c02e5fb0"
+      "bytes": 11125,
+      "sha256": "5c6cff9b9d5e30664ad0a9479132ce85b5d75b4ce48b13bf87e0e7bb474eb222"
     },
     {
       "path": "analysis/archive-followup-20261012/README.md",
@@ -1889,8 +1879,8 @@
     },
     {
       "path": "analysis/editorial-audit-20261013/README.md",
-      "bytes": 9674,
-      "sha256": "760a18d8f0ffd713dc62ed31125c2ec3d83e5bfccad98e628c55652eb02a2fd5"
+      "bytes": 9679,
+      "sha256": "99ec60f6a47c55c0dc1efc4280fdb2674c6d2e823b9932b20115447e6e0b470f"
     },
     {
       "path": "analysis/editorial-audit-20261013/requirements.txt",
@@ -12919,8 +12909,8 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 5465,
-      "sha256": "e76cb762280cbba932ff89129c617ae8f283ea620653887a4636cf2207a81c97"
+      "bytes": 5392,
+      "sha256": "258711a218a42c32f840c89c41b0ea1215a68f074afe3ed6e51e0cccd1528ac7"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
@@ -12946,11 +12936,6 @@
       "path": "publication/2026-10-13/claim-sources.json",
       "bytes": 1958,
       "sha256": "aebdb5e099ddab36e6bc2ceb118980da2630cca101c690d6ef1f569252234f04"
-    },
-    {
-      "path": "publication/2026-10-13/cover-letter.txt",
-      "bytes": 1022,
-      "sha256": "66049c04beeb02603a7d2c02897ca2935a0b7e1fa126508189b75fca7bd2b21d"
     },
     {
       "path": "publication/2026-10-13/figure1.pdf",
@@ -13004,8 +12989,8 @@
     },
     {
       "path": "publication/2026-10-13/submission-record.json",
-      "bytes": 1958,
-      "sha256": "67f212ee048c2cc144912c3c49d4ee29a6e802dc1493d529bc1efb04543d8d99"
+      "bytes": 1967,
+      "sha256": "2cee4b9f922bcd0f3b67d00f5f7b221aa680151dbb0f71adeb7eb739d040d5f2"
     },
     {
       "path": "publication/2026-10-13/word-count.json",
