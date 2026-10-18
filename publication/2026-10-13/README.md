@@ -23,7 +23,7 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 2. Author reads and verifies the text, claims, figure, citations, attribution and AI disclosure. Resolve the THYME light-curve identity if possible; otherwise retain the explicit provisional-novelty language.
 3. The working manuscript now cites the verified evidence DOI 10.5281/zenodo.23325261. This citation-only update postdates the frozen r2 evidence snapshot.
 4. Inspect the journal-converted PDF or the permitted author-supplied PDF, then recount after any changes. Current draft: 1,203 words including 124-word abstract and one two-panel figure. Metadata additions may change the count.
-5. Submit through https://aas.msubmit.net/ with journal Research Notes of the AAS. Review the portal's actual declarations and publication agreement; do not fabricate authorship, originality, funding or conflict answers. `cover-letter.txt` is a proposed cover note, not a sent message.
+5. Submit through https://aas.msubmit.net/ with journal Research Notes of the AAS. Review the portal's actual declarations and publication agreement; do not fabricate authorship, originality, funding or conflict answers.
 
 ## Official guidance checked 13 October 2026 (local date)
 
