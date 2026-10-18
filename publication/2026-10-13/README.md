@@ -5,7 +5,7 @@ This package revision accompanies `evidence-20261013-r2`. The GitHub publication
 ## Status
 
 - Kuber Mehta is the sole listed manuscript author.
-- The RNAAS note was submitted as **AAS82222**, revision 0, on 13 October 2026 (Asia/Kolkata). The portal displays `12-Oct-2026 16:20:10` without a timezone label. The author subsequently received a rejection dated **13 October 2026**. See the [post-decision audit](../../analysis/editorial-audit-20261013/README.md). The original submission artifacts below are retained unchanged. This is not acceptance or planet validation. See `submission-record.json` for verification and exact uploaded-file hashes.
+- The RNAAS note was submitted as **AAS82222**, revision 0, on 13 October 2026 (Asia/Kolkata). The portal displays `12-Oct-2026 16:20:10` without a timezone label. The initial submission was not accepted; a revision is planned. See the [post-decision audit](../../analysis/editorial-audit-20261013/README.md). The original submission artifacts below are retained unchanged. This is not acceptance or planet validation. See `submission-record.json` for verification and exact uploaded-file hashes.
 - Zenodo evidence DOI: https://doi.org/10.5281/zenodo.23325261 (published 12 October UTC / 13 October IST). The GitHub integration is enabled. Original code is MIT; original text, figures and analysis products are CC BY 4.0; third-party terms remain in force (see `LICENSE` and `SOURCES.md`).
 - The signal remains unvalidated. The modelled FPP is 0.06885, with unresolved host ambiguity and provisional novelty.
 

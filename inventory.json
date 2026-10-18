@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9566,
-      "sha256": "6da036794a99c7f3d45d354d4b5c3c91a719a55eae6e0f89be340706ba17d636"
+      "bytes": 9584,
+      "sha256": "093e9ec01f531c1d9beb8ebf8c5d93c4ca4c9fd86179e75fd4db851e7913da29"
     },
     {
       "path": "SOURCES.md",
@@ -1879,8 +1879,8 @@
     },
     {
       "path": "analysis/editorial-audit-20261013/README.md",
-      "bytes": 9674,
-      "sha256": "760a18d8f0ffd713dc62ed31125c2ec3d83e5bfccad98e628c55652eb02a2fd5"
+      "bytes": 9679,
+      "sha256": "99ec60f6a47c55c0dc1efc4280fdb2674c6d2e823b9932b20115447e6e0b470f"
     },
     {
       "path": "analysis/editorial-audit-20261013/requirements.txt",
@@ -12909,8 +12909,8 @@
     },
     {
       "path": "publication/2026-10-13/README.md",
-      "bytes": 5465,
-      "sha256": "e76cb762280cbba932ff89129c617ae8f283ea620653887a4636cf2207a81c97"
+      "bytes": 5457,
+      "sha256": "043e51ba716808c8cab7aae3d67faa78b6333ad03fb469fce23b7c7ac999d3ea"
     },
     {
       "path": "publication/2026-10-13/RELEASE_NOTES.md",
@@ -12989,8 +12989,8 @@
     },
     {
       "path": "publication/2026-10-13/submission-record.json",
-      "bytes": 1958,
-      "sha256": "67f212ee048c2cc144912c3c49d4ee29a6e802dc1493d529bc1efb04543d8d99"
+      "bytes": 1967,
+      "sha256": "2cee4b9f922bcd0f3b67d00f5f7b221aa680151dbb0f71adeb7eb739d040d5f2"
     },
     {
       "path": "publication/2026-10-13/word-count.json",
