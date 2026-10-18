@@ -12938,11 +12938,6 @@
       "sha256": "aebdb5e099ddab36e6bc2ceb118980da2630cca101c690d6ef1f569252234f04"
     },
     {
-      "path": "publication/2026-10-13/cover-letter.txt",
-      "bytes": 1022,
-      "sha256": "66049c04beeb02603a7d2c02897ca2935a0b7e1fa126508189b75fca7bd2b21d"
-    },
-    {
       "path": "publication/2026-10-13/figure1.pdf",
       "bytes": 23082,
       "sha256": "c3177c531bd9059379dc97d35d4b8466cf74c6951920c03fe2ee4bdcb4bd083f"
