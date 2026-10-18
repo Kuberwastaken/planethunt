@@ -54,8 +54,8 @@
     },
     {
       "path": "analysis/archive-exhaustion-20261012/README.md",
-      "bytes": 16575,
-      "sha256": "1f7a99a99d3beb5dfb2c0544f9e229b5409e1a1a414169ebb0aa3b89fee8dcc9"
+      "bytes": 16496,
+      "sha256": "4f17f22724b49186db295fc5292f041e1fd2637de087d98ba45b680fce795791"
     },
     {
       "path": "analysis/archive-exhaustion-20261012/analyze_cfht.py",
@@ -493,11 +493,6 @@
       "sha256": "92fd3ef21b394729a6d006a49cd036529e0f72fc3c2ebd01b435e46c7af13bdc"
     },
     {
-      "path": "analysis/archive-exhaustion-20261012/reply-to-steve.txt",
-      "bytes": 1632,
-      "sha256": "bf1cf2910010a1b61c1489fe94f6ccd47d1cca027b6456f6647cab64ae73403f"
-    },
-    {
       "path": "analysis/archive-exhaustion-20261012/requests.json",
       "bytes": 49046,
       "sha256": "30a3afc13f4ba8f052d8115108afa0df54a527675e7d4839f2100ebdf776a9cf"
@@ -814,8 +809,8 @@
     },
     {
       "path": "analysis/archive-followup-20261012/FOLLOWUP_PLAN.md",
-      "bytes": 11234,
-      "sha256": "5c87b825ab88123b90d1682c05b9cacbf9ac4896d88f3d031a4a0192c02e5fb0"
+      "bytes": 11125,
+      "sha256": "5c6cff9b9d5e30664ad0a9479132ce85b5d75b4ce48b13bf87e0e7bb474eb222"
     },
     {
       "path": "analysis/archive-followup-20261012/README.md",

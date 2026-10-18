@@ -105,4 +105,4 @@ python analyze_spherex.py
 
 These are exploratory analyses with explicit assumptions, not validation pipelines. The period and epoch reproduce `../archive-followup-20261012/spitzer/kfit_psf.json`. No fitted astrophysical probability has been recomputed.
 
-The current [follow-up plan](../archive-followup-20261012/FOLLOWUP_PLAN.md) incorporates these results and the newly identified literature contacts. The [reply to Steve](reply-to-steve.txt) is a draft only; no message was sent.
+The current [follow-up plan](../archive-followup-20261012/FOLLOWUP_PLAN.md) incorporates these results and the newly identified literature contacts.
