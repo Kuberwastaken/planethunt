@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23325261.svg)](https://doi.org/10.5281/zenodo.23325261)
 
-**Citable evidence snapshot:** [Zenodo DOI 10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261) · [submitted RNAAS manuscript](publication/2026-10-13/rnaas-author.pdf). Submitted as **AAS82222** on 13 October 2026 (India time); initial submission not accepted; revision planned. [Post-decision audit and corrections](analysis/editorial-audit-20261013/README.md). [Submission record](publication/2026-10-13/submission-record.json). The candidate remains unconfirmed.
+**Citable evidence snapshot:** [Zenodo DOI 10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261) · [submitted RNAAS manuscript](publication/2026-10-13/rnaas-author.pdf). Submitted as **AAS82222** on 13 October 2026 (India time); initial submission not accepted; revision planned. [Technical audit and corrections](analysis/editorial-audit-20261013/README.md). [Submission record](publication/2026-10-13/submission-record.json). The candidate remains unconfirmed.
 
 **Cite as:** Mehta, K. 2026, *Planethunt: archival evidence for the KIC 5689121 transit candidate*, version evidence-20261013-r2, Zenodo, [doi:10.5281/zenodo.23325261](https://doi.org/10.5281/zenodo.23325261).
 
