@@ -1,0 +1,88 @@
+name: verify
+
+# This repository's value rests on its checksummed evidence, so two things need
+# to hold on every platform:
+#
+#   1. SHA256SUMS and inventory.json agree with the committed files.
+#   2. A checkout reproduces those exact bytes. Git's core.autocrlf rewrites
+#      LF -> CRLF in text files on Windows by default, which changes every hash
+#      without changing any content. .gitattributes pins that down; the
+#      windows job below is the regression test for it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    name: Checksums and manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Every tracked file matches SHA256SUMS
+        run: sha256sum -c SHA256SUMS
+
+      - name: Manifests are current (regenerating must be a no-op)
+        run: |
+          python3 scripts/site/refresh_manifests.py
+          if ! git diff --quiet -- SHA256SUMS inventory.json; then
+            echo "::error::SHA256SUMS / inventory.json are stale. Run python3 scripts/site/refresh_manifests.py and commit the result."
+            git diff -- SHA256SUMS inventory.json
+            exit 1
+          fi
+
+  integrity-windows:
+    name: Checksums (Windows, autocrlf on)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Force a CRLF checkout, then verify byte-exactness
+        shell: bash
+        run: |
+          # Regression test for line-ending conversion. Without `* -text` in
+          # .gitattributes, this rewrites LF -> CRLF in every text file and
+          # ~2,300 hashes fail even though the content is correct.
+          git config core.autocrlf true
+          git rm --cached -r . > /dev/null
+          git reset --hard
+          sha256sum -c SHA256SUMS
+
+  tests:
+    name: Site tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Windows runs this on a non-UTF-8 default encoding (cp1252). Any
+      # read_text() / open() without an explicit encoding will pass on Linux
+      # and fail here -- that is the point of the second matrix entry.
+      - name: Python unit tests
+        run: python -m unittest discover -s scripts/site -p "test_*.py" -v
+
+      - name: Node scroll-interaction tests
+        run: node --test scripts/site/test_scroll_interactions.cjs
