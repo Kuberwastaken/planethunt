@@ -27,7 +27,7 @@ class Head(HTMLParser):
 
 class SocialCard(unittest.TestCase):
     def setUp(self):
-        self.tags = Head((ROOT / 'index.html').read_text()).meta
+        self.tags = Head((ROOT / 'index.html').read_text(encoding='utf-8')).meta
     def one(self, name):
         values = self.tags.get(name, [])
         self.assertEqual(len(values), 1, f'{name}: missing or conflicting head tags')
