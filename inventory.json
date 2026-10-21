@@ -13059,8 +13059,8 @@
     },
     {
       "path": "scripts/site/refresh_manifests.py",
-      "bytes": 1115,
-      "sha256": "becfab138e190fbd4b28a2d51b6b3e18416c551863fb45ef0dc4063ab8bc9044"
+      "bytes": 1447,
+      "sha256": "44196c2f51d19799ad034e6dfd1f8e3b67b78eb84216c21297c0d600e28d3569"
     },
     {
       "path": "scripts/site/site.css",
