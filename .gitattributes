@@ -1,1 +1,13 @@
+# Byte-exact checkouts.
+#
+# SHA256SUMS and inventory.json are computed over exact file bytes, so a
+# checkout has to reproduce those bytes on every platform. By default Git
+# rewrites LF -> CRLF in text files when core.autocrlf is on (the Windows
+# default), which changes every hash: a Windows clone currently fails the
+# integrity check on ~2,300 files while the committed content is correct.
+#
+# "-text" disables all line-ending conversion, so what is committed is what
+# is checked out, everywhere.
+* -text
+
 *.pdf binary

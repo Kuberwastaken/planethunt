@@ -4,8 +4,13 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 13,
-      "sha256": "547f59603028195ff9f8a87d04c4651551e8bd0d68f075257dfd549cd846b25b"
+      "bytes": 525,
+      "sha256": "131c5c702c928eaabf5e5ca184cf0b6a472f2b55160950420a592bca8965dfee"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 2770,
+      "sha256": "147a9b3b1792d853d08e5162381f388cb8e5265f3ac63bbc91f9e3176a5bbfa4"
     },
     {
       "path": ".gitignore",
@@ -34,8 +39,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9584,
-      "sha256": "093e9ec01f531c1d9beb8ebf8c5d93c4ca4c9fd86179e75fd4db851e7913da29"
+      "bytes": 9580,
+      "sha256": "1898e457adfd8b88f681ad62b7c927e9daceb855e18658c8b3e54b79b4c2c93b"
     },
     {
       "path": "SOURCES.md",
@@ -13054,8 +13059,8 @@
     },
     {
       "path": "scripts/site/refresh_manifests.py",
-      "bytes": 1115,
-      "sha256": "becfab138e190fbd4b28a2d51b6b3e18416c551863fb45ef0dc4063ab8bc9044"
+      "bytes": 1447,
+      "sha256": "44196c2f51d19799ad034e6dfd1f8e3b67b78eb84216c21297c0d600e28d3569"
     },
     {
       "path": "scripts/site/site.css",
@@ -13084,8 +13089,8 @@
     },
     {
       "path": "scripts/site/test_social_card.py",
-      "bytes": 2525,
-      "sha256": "f696caf9b3a675103d0253dd52fad7cf4151a56f27b01d18fbdd5fa614f1d9c2"
+      "bytes": 2541,
+      "sha256": "b6db1faf78d05eb3b71a8d26238988f3539f45fdd9e767f559e0025dfeabdeeb"
     },
     {
       "path": "sitemap.xml",
